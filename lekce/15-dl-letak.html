@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>15 · Grafická úprava DL letáku | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Maturitní otázka 15: skládaný DL leták z A4 rozdělené na tři díly, layout respektující ohyby a textové okraje, znakové a odstavcové styly, úprava fotografií pro tisk, tiskové PDF; pojmy formátová řada papíru a zrcadlo sazby.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="15 · Grafická úprava DL letáku">
+<meta property="og:description" content="Maturitní otázka 15: skládaný DL leták z A4 rozdělené na tři díly, layout respektující ohyby a textové okraje, znakové a odstavcové styly, úprava fotografií pro tisk, tiskové PDF; pojmy formátová řada papíru a zrcadlo sazby.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styl.css">
+</head>
+<body data-page="15-dl-letak.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="../videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>OTÁZKA 15 / 23</b><span>InDesign a typografie</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="../img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="../index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="../lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="../lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="../lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="../lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="../lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="../lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="../lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="../lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="../lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="../lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true" class="active"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="../lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="../lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="../lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="../lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="../lekce/15-dl-letak.html" class="active"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="../lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="../lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="../lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="../lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="../lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="../lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="../lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="../lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="../kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="../cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="../videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="../zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-indesign">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Maturitní otázka 15</span><span class="blok">· InDesign a typografie</span></p>
+    <h1>Grafická úprava DL letáku</h1>
+    <p class="lead">Z listu A4 na šířku vznikne <b>leták DL</b> složený na třetiny – šest panelů (tři na líci, tři na rubu). Musíš navrhnout layout tak, aby panely respektovaly <b>ohyby</b> a <b>textové okraje</b>, nastavit <b>znakové a odstavcové styly</b>, připravit fotografie pro tisk ve Photoshopu a vyexportovat <b>tiskové PDF</b>. V teorii: formátová řada papíru a zrcadlo sazby.</p>
+    <ul class="zadani"><li><b>InDesign</b>A4 na šířku, 3 panely, oboustranně</li><li><b>Photoshop</b>fotografie CMYK 300 ppi</li><li><b>Illustrator</b>volitelně vektorové prvky</li><li><b>Výstup</b>tiskové PDF/X se spadávkou</li></ul>
+    <nav class="subnav" aria-label="Obsah lekce"><a href="#l15-otazka">Co se losuje</a><a href="#l15-panely">Panely a ohyby</a><a href="#l15-layout">Layout a styly</a><a href="#l15-formaty">Formátová řada papíru</a><a href="#l15-zrcadlo">Zrcadlo sazby</a><a href="#l15-postup">Postup pro 30 minut</a><a href="#l15-chyby">Časté chyby</a><a href="#l15-komise">Otázky komise</a><a href="#l15-kviz">Kvíz</a></nav>
+  </div>
+</section>
+<section class="section" id="l15-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Jednoduchý <b>leták formátu DL</b> z připravených souborů; základní papír <b>A4</b>.</li>
+          <li>Sazba rozdělená na <b>tři díly</b>, aby šel leták po vytištění složit na třetiny.</li>
+          <li>Šablona v <b>InDesignu</b>, fotografie upravené ve <b>Photoshopu</b>, vektorové prvky případně v <b>Illustratoru</b>.</li>
+          <li>Výstup: <b>tiskový PDF</b> se všemi tiskovými atributy (spadávka, značky, CMYK, FOGRA39).</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>podklady: texty, fotky, logo</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Jak jsi navrhl layout, aby respektoval <b>ohyby papíru a textové okraje</b> DL letáku.</li>
+          <li>Jak jsi nastavil <b>znakové a odstavcové styly</b> a jak jsi připravil fotografie pro tisk.</li>
+          <li>Pojmy <b>formátová řada papíru</b> a <b>zrcadlo sazby</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l15-panely">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 1</span><h2>Panely, ohyby a šířky</h2></div>
+      <p>DL (110 × 220 mm) je formát, který vznikne přeložením A4 (297 × 210) na třetiny – a zároveň velikost okénkové obálky DL (110 × 220 mm). Panely ale nejsou stejně široké: ten, který se skládá dovnitř, musí být užší.</p>
+    </div>
+    <div class="lab" data-widget="dl">
+      <div class="lab-head"><h3>DL leták ze složeného A4</h3><span class="hint">Typ skladu a šířky panelů</span></div>
+      <div class="lab-body wide">
+        <div class="lab-stage pad"><svg viewBox="0 0 640 330" aria-label="Líc a rub A4 rozdělené na tři panely s vyznačenými ohyby a okraji"></svg></div>
+        <div class="lab-ctrl">
+          <label><span>Typ skladu</span><div class="seg" data-typ><button type="button" data-v="C" aria-pressed="true">Zavinutý (C)</button><button type="button" data-v="Z">Harmonika (Z)</button></div></label>
+          <label><span>Textový okraj od ohybu <output>5</output> mm</span><input type="range" min="3" max="10" value="5" data-okraj></label>
+          <label class="check"><input type="checkbox" data-slozeny> Ukázat složený leták (přední strana)</label>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+    <div class="cols" style="margin-top:22px">
+      <div class="card"><h3>Zavinutý sklad (C-fold, „do psaníčka“)</h3><p>Nejčastější. Pravý panel se zahne dovnitř, levý ho překryje. <b>Vnitřní panel musí být o 2 mm užší</b>, jinak se leták po složení vyboulí: šířky <b>100 – 99 – 98 mm</b> (líc: zadní panel 100, přední obálka 99, vnitřní zahnutý 98). Na rubu je pořadí zrcadlově obrácené: 98 – 99 – 100.</p></div>
+      <div class="card"><h3>Harmonikový sklad (Z-fold)</h3><p>Panely se střídavě skládají tam a zpět, nic se nezasouvá dovnitř – <b>všechny tři panely 99 mm</b>. Leták se otevře jako harmonika; vhodné pro mapy a časové osy, kde se obsah čte přes panely.</p></div>
+      <div class="card"><h3>Co kam patří (C-fold)</h3><ul><li><b>Přední obálka</b> (líc vpravo): logo, titulek, hlavní obrázek – musí fungovat samostatně.</li><li><b>Zadní strana</b> (líc vlevo): kontakt, adresa, mapka, QR kód.</li><li><b>Vnitřní zahnutý panel</b> (líc uprostřed): úvodní text, který čtenář vidí po prvním otevření – ale pozor, je nejužší.</li><li><b>Rub – tři vnitřní panely</b>: hlavní obsah; fotografie a plochy mohou jít přes ohyby, text ne.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l15-layout">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 2</span><h2>Layout, styly a fotografie</h2></div>
+      <p>V InDesignu máš dvě cesty. Komise ocení, když vysvětlíš, proč jsi zvolil tu svou.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <h3>Dokument v InDesignu</h3>
+        <ol class="steps">
+          <li><b>Nový dokument</b>: A4 <b>na šířku</b> (297 × 210), <b>2 stránky</b> (líc a rub), protilehlé stránky <b>vypnuté</b>, spadávka 3 mm, okraje 5 mm, FOGRA39.</li>
+          <li><b>Panely vodítky</b>: líc – svislá vodítka na 100 a 199 mm; rub – na 98 a 197 mm (zrcadlově). Nebo nastav <em>Sloupce: 3</em> a vodítka posuň – InDesign dělí na třetiny po 99 mm, proto ruční vodítka. <span class="menu-path">Rozvržení <i>›</i> Vytvořit vodítka</span> + ručně upravit.</li>
+          <li><b>Textové okraje panelů</b>: 5 mm od ohybu a 5–7 mm od okraje papíru (vodítka, nebo každý panel jako samostatný textový rámeček s vsazením). <b>Text nikdy nesmí přes ohyb.</b></li>
+          <li><b>Styly</b>: Titulek (Condensed Bold, 24–30 pt), Mezititulek (12 pt), Text (8,5–9,5/11–12, vlevo nebo do bloku), Kontakt (8 pt, řádkování těsné), Popisek (7 pt). Znakové: Tučné, Zvýraznění (barva).</li>
+          <li><b>Objektový styl</b> pro fotky (tah 0, obtékání) a pro barevné podkladové plochy (výplň CMYK, dotažení na spadávku).</li>
+          <li><b>Export</b>: PDF/X-1a, značky, spadávka, FOGRA39, 2 stránky. Pro složení v tiskárně se někdy přidávají <em>značky ohybu</em> (čárkované čáry mimo formát) – nakresli je čárou 0,25 pt na spadávce.</li>
+        </ol>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:16px">
+          <h3>Fotografie pro tisk (Photoshop)</h3>
+          <ul>
+            <li>Velikost obrazu bez převzorkování → 300 ppi, zjistit reálnou velikost. Panel DL je 99 mm široký = 1170 px při 300 ppi.</li>
+            <li>Ořez na panel nebo na přesah přes ohyb; nikdy neroztahovat (deformace).</li>
+            <li>Křivky/Úrovně, případně doostření; <span class="menu-path">Obraz <i>›</i> Režim <i>›</i> CMYK</span>; uložit TIFF/PSD.</li>
+            <li>Loga a piktogramy raději vektorově (AI/EPS/PDF) – v Illustratoru CMYK, bez průhledností, text převedený na obrysy.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Design letáku – zásady</h3>
+          <ul>
+            <li>Jedna hlavní myšlenka na panel; hierarchie titulek → podtitulek → text.</li>
+            <li>Barevné plochy a fotky mohou jít přes ohyb a na spadávku – ohyb je „neviditelný“, text ne.</li>
+            <li>Konzistentní mřížka: stejné okraje v každém panelu, stejné odsazení nadpisů.</li>
+            <li>Kontaktní panel: čitelný, logo, telefon, web, QR kód (vektor), mapka.</li>
+            <li>Kontrola: text 5 mm od ohybu, 5 mm od okraje; 100 % K na text; ppi ≥ 300.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l15-formaty">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Teorie</span><h2>Formátová řada papíru</h2></div>
+      <p>Normalizované řady A, B, C (ISO 216): každý formát má poměr stran 1 : √2 (1 : 1,414), takže půlením delší strany vznikne další formát téhož poměru. A0 má plochu 1 m².</p>
+    </div>
+    <div class="cols-2">
+      <div>
+        <div class="table-scroll">
+          <table class="tech-table">
+            <thead><tr><th>Řada A</th><th>Řada B</th><th>Řada C (obálky)</th></tr></thead>
+            <tbody>
+              <tr><td>A0 841 × 1189</td><td>B0 1000 × 1414</td><td>C0 917 × 1297</td></tr>
+              <tr><td>A1 594 × 841</td><td>B1 707 × 1000</td><td>C1 648 × 917</td></tr>
+              <tr><td>A2 420 × 594</td><td>B2 500 × 707</td><td>C2 458 × 648</td></tr>
+              <tr><td>A3 297 × 420</td><td>B3 353 × 500</td><td>C3 324 × 458</td></tr>
+              <tr><td><b>A4 210 × 297</b></td><td>B4 250 × 353</td><td>C4 229 × 324</td></tr>
+              <tr><td>A5 148 × 210</td><td>B5 176 × 250</td><td>C5 162 × 229</td></tr>
+              <tr><td>A6 105 × 148</td><td>B6 125 × 176</td><td>C6 114 × 162</td></tr>
+              <tr><td colspan="3"><b>DL 110 × 220 mm</b> (A4 složená na třetiny; obálka DL) · <b>SRA3 320 × 450</b>, <b>SRA4 225 × 320</b> – „surové“ formáty s přídavkem na spadávku a ořez</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Jak to vysvětlit</h3>
+        <ul>
+          <li><b>Řada A</b> – běžné tiskoviny; A0 = 1 m², A4 = 1/16 m². Číslo = kolikrát byl A0 přeložen.</li>
+          <li><b>Řada B</b> – geometrický průměr sousedních formátů A; knihy (B5, B6), plakáty (B1, B2), tiskové archy (B1 700 × 1000).</li>
+          <li><b>Řada C</b> – obálky: C4 pojme A4 nesložené, C5 A4 přeložené napůl, C6 A4 přeložené na čtvrtiny, <b>DL</b> A4 na třetiny.</li>
+          <li><b>SRA</b> (Supplementary Raw A) – archy o něco větší, aby se na ně vešla spadávka a značky a po ořezu vznikl čistý formát A.</li>
+          <li>Americké formáty (Letter 216 × 279, Legal) poměr 1 : √2 nemají – pozor při zakládání dokumentu (předvolba Letter).</li>
+        </ul>
+        <p class="note">Poměr 1 : √2 znamená, že leták DL (1 : 2) poměr nedodržuje – je to formát odvozený skládáním, ne půlením.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l15-zrcadlo">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Teorie</span><h2>Zrcadlo sazby</h2></div>
+      <p>Zrcadlo sazby (sazební obrazec, sazební zrcadlo) je plocha na stránce vymezená okraji, do které se sází text a umisťuje grafika. V InDesignu je to fialový obdélník; sloupce jsou jeho vnitřní dělení.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Co zrcadlo určuje</h3><ul><li>Šířku a výšku sazby, počet a šířku sloupců, mezery mezi nimi.</li><li>Okraje: horní (hlava), dolní (pata), vnitřní (hřbet), vnější (vnější okraj). U dvoustránkové sazby se okraje zrcadlí – proto „zrcadlo“.</li><li>Pozici záhlaví, zápatí a čísel stránek (ty leží <em>mimo</em> zrcadlo, ale vztahují se k němu).</li><li>Mřížku účaří – rastr řádků, aby řádky na rubu i líci lícovaly (registr).</li></ul></div>
+      <div class="card"><h3>Klasické proporce</h3><p>Okraje vnitřní : horní : vnější : dolní = <b>2 : 3 : 4 : 6</b> (Tschichold) nebo jednodušší 1 : 1,5 : 2 : 2,5. Dolní okraj největší, aby sazba seděla v optickém středu; vnitřní nejmenší, protože dva vnitřní okraje dvoustrany se sčítají. U brožury a knihy od okraje k zrcadlu <b>≥ 20 mm</b>, u letáku stačí 5–7 mm (není tam vazba). Šířka sloupce 45–75 znaků.</p></div>
+      <div class="card"><h3>U DL letáku</h3><p>Každý panel má vlastní „malé zrcadlo“: 5 mm od ohybu, 5–7 mm od okraje papíru, 5 mm nahoře a dole. Obrázky a plochy zrcadlo nerespektují – jdou přes ohyby i na spadávku. Jen text se musí držet uvnitř. U skládaných tiskovin je proto zrcadlo vždy <em>za</em> ohybem, ne na něm.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l15-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–4<small>min</small></span><div><b>Dokument a vodítka</b><p>A4 na šířku, 2 strany, bez protilehlých, spadávka 3, okraje 5, FOGRA39. Vodítka: líc 100 / 199 mm, rub 98 / 197 mm. Textová vodítka 5 mm od ohybů.</p></div></li>
+        <li><span class="t">4–7<small>min</small></span><div><b>Rozvržení</b><p>Rozhodni, co bude na kterém panelu (obálka vpravo na líci, kontakt vlevo). Barevné plochy přes spadávku.</p></div></li>
+        <li><span class="t">7–12<small>min</small></span><div><b>Fotografie</b><p>Photoshop: 300 ppi, ořez, CMYK, TIFF. Umístit, přizpůsobit rámečku; hlavní fotka na obálku, 2–3 do vnitřních panelů.</p></div></li>
+        <li><span class="t">12–20<small>min</small></span><div><b>Text a styly</b><p>Umístit texty do rámečků panelů (vsazení 5 mm). Styly Titulek/Mezititulek/Text/Kontakt/Popisek; znakový styl Tučné. Čeština, dělení, optický kerning.</p></div></li>
+        <li><span class="t">20–24<small>min</small></span><div><b>Logo a vektory</b><p>Logo umístit jako AI/PDF/EPS. Piktogramy, QR kód. Zarovnat na mřížku panelu.</p></div></li>
+        <li><span class="t">24–27<small>min</small></span><div><b>Kontrola</b><p>Text 5 mm od ohybu? Nic přes ohyb? Vazby: CMYK, ppi ≥ 300. Pravopis, pevné mezery, pomlčky. Kontrola před výstupem (dole v okně – „žádné chyby“).</p></div></li>
+        <li><span class="t">27–30<small>min</small></span><div><b>Export</b><p>PDF/X-1a, ořezové značky, značky spadávky, spadávka z dokumentu, FOGRA39. Otevřít PDF – vidět značky a spadávku.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Co říct komisi</h3>
+          <p>„Leták je A4 na šířku složená zavinutým skladem na DL 110 × 220 (po složení 100 × 210). Panely mají 100–99–98 mm, protože vnitřní panel se zasouvá dovnitř a musí být užší. Na rubu je pořadí zrcadlově obrácené. Text drží 5 mm od ohybu a 5 mm od okraje – to je zrcadlo sazby každého panelu; fotografie a barvy jdou přes ohyby a na spadávku 3 mm. Styly: …; fotografie: 300 ppi, CMYK, TIFF; export PDF/X-1a s profilem Coated FOGRA39 a značkami.“</p>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l15-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Tři panely přesně po 99 mm u zavinutého skladu – leták se po složení vyboulí.</div>
+      <div class="tip chyba"><b>Chyba</b>Text přes ohyb nebo těsně u něj; nadpis „rozříznutý“ skladem.</div>
+      <div class="tip chyba"><b>Chyba</b>Rub se stejným pořadím panelů jako líc – přední obálka pak nelícuje se zadní.</div>
+      <div class="tip chyba"><b>Chyba</b>Fotky RGB/PNG, roztažené, pod 300 ppi; plochy nedotažené na spadávku.</div>
+      <div class="tip chyba"><b>Chyba</b>Logo jako malý JPEG místo vektoru; QR kód rozmazaný.</div>
+      <div class="tip chyba"><b>Chyba</b>Export bez značek a spadávky; „DL“ založené jako 110 × 220 bez vztahu k A4 (tiskárna pak neví, jak skládat).</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l15-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Jak jsi navrhl layout, aby respektoval ohyby?</summary><div class="odp">A4 na šířku rozdělená vodítky na tři panely 100/99/98 mm (zavinutý sklad; vnitřní panel užší), na rubu zrcadlově 98/99/100. Textové rámečky každého panelu mají okraje 5 mm od ohybu a od kraje papíru. Text nepřechází přes ohyb, fotografie a barevné plochy ano – jdou až na spadávku 3 mm.</div></details></li>
+      <li><details><summary>Co je formátová řada papíru?</summary><div class="odp">Normalizované řady ISO 216: A (A0 = 1 m², A4 210 × 297), B (geometrický průměr sousedních A; knihy, plakáty, tiskové archy) a C (obálky; C4 pro A4, DL 110 × 220 pro A4 na třetiny). Všechny mají poměr stran 1 : √2, půlením vzniká další formát. SRA jsou surové archy s přídavkem na spadávku.</div></details></li>
+      <li><details><summary>Co je zrcadlo sazby?</summary><div class="odp">Sazební obrazec – plocha na stránce vymezená okraji (hlava, pata, hřbet, vnější), do které se sází text; dělí se na sloupce. U dvoustrany se okraje zrcadlí. U knihy klasický poměr okrajů 2:3:4:6, od okraje ≥ 20 mm; u letáku má každý panel vlastní zrcadlo 5 mm od ohybu. V InDesignu fialový obdélník.</div></details></li>
+      <li><details><summary>Jak jsi nastavil styly?</summary><div class="odp">Odstavcové: Titulek, Mezititulek, Text, Kontakt, Popisek – písmo, stupeň/proklad, zarovnání, mezery, čeština, dělení, nerozdělovat řádky, optický kerning. Znakové: Tučné, Zvýraznění barvou. Objektové: rámeček fotky, barevná plocha. Díky stylům jsou všechny panely jednotné a úpravy hromadné.</div></details></li>
+      <li><details><summary>Jak jsi připravil fotografie?</summary><div class="odp">Ve Photoshopu: velikost obrazu bez převzorkování na 300 ppi (panel 99 mm = 1170 px), ořez na panel, korekce, převod do CMYK (FOGRA39), uložení TIFF/PSD. V InDesignu kontrola efektivního ppi v panelu Vazby.</div></details></li>
+      <li><details><summary>Proč je DL formát 110 × 220 a leták po složení 100 × 210?</summary><div class="odp">DL je formát obálky (110 × 220), do které se vejde A4 složená na třetiny (99–100 × 210 mm). Leták DL tedy má po složení rozměr třetiny A4, obálka DL je o něco větší. Někdy se „DL leták“ tiskne i rovnou na 99 × 210 jako jednolist.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l15-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz15" data-quiz='[
+      {"q":"Šířky panelů zavinutého (C) skladu z A4 jsou","o":["99 – 99 – 99 mm","100 – 99 – 98 mm","110 – 110 – 77 mm","105 – 105 – 87 mm"],"a":1,"w":"Vnitřní zahnutý panel musí být o 1–2 mm užší, aby se leták nevyboulil."},
+      {"q":"Formát DL má rozměr","o":["105 × 210 mm","99 × 210 mm","110 × 220 mm","100 × 200 mm"],"a":2,"w":"DL = 110 × 220 mm (obálka pro A4 složenou na třetiny). Složený leták má cca 100 × 210 mm."},
+      {"q":"Poměr stran formátů řady A je","o":["1 : 2","2 : 3","1 : √2","3 : 4"],"a":2,"w":"1 : 1,414 – půlením delší strany vzniká formát téhož poměru. A0 má plochu 1 m²."},
+      {"q":"Zrcadlo sazby je","o":["odraz stránky při kontrole","plocha vymezená okraji, do které se sází text","šablona vzorové stránky","mřížka účaří"],"a":1,"w":"Sazební obrazec. V InDesignu fialový obdélník; u dvoustrany se okraje zrcadlí."},
+      {"q":"Přes ohyb letáku smí jít","o":["nic","jen text","fotografie a barevné plochy","jen logo"],"a":2,"w":"Obrázky a plochy mohou přecházet přes ohyb a na spadávku; text musí zůstat 5 mm od ohybu."},
+      {"q":"Řada C formátů papíru slouží pro","o":["plakáty","knihy","obálky","tiskové archy"],"a":2,"w":"C4 pojme A4, C5 A4 napůl, C6 A4 na čtvrtiny, DL A4 na třetiny."},
+      {"q":"Na rubu A4 u C-skladu jsou šířky panelů","o":["stejné jako na líci 100-99-98","zrcadlově 98-99-100","vždy 99","libovolné"],"a":1,"w":"Rub je zrcadlově obrácený, protože list se otočí – nejužší panel musí lícovat."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l15-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="https://www.polygraficketahaky.cz/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><div><b>Polygrafické taháky</b><span>Formáty, skládání, spadávky.</span></div></a>
+      <a class="link-card" href="../lekce/21-import-wordu.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16"/><path d="M12 4v16"/></svg><div><b>Lekce 21: skládaný průvodce A4 → A5</b><span>Další skládaná tiskovina s ohybem.</span></div></a>
+      <a class="link-card" href="https://svoboda-koduje.github.io/enviro-projekty-3g/vyuka/04-obal-pos-pop.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M12 11l9-4M12 11L3 7M12 11v10"/></svg><div><b>Grafika pro klima: obal, POS a POP</b><span>Tiskoviny v místě prodeje – souvislosti z 3. ročníku.</span></div></a>
+      <a class="link-card" href="../kontrola.html#k-export"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><div><b>Kontrola: export PDF/X</b><span>Značky, spadávka, profil.</span></div></a>
+    </div>
+  </div>
+</section>
+<div class="wrap"><nav class="pager" aria-label="Další a předchozí lekce"><a class="prev" href="../lekce/14-brozura-archova-montaz.html"><small>← Předchozí lekce</small><b>14 · InDesign – sazba brožury + archová montáž</b></a><a class="next" href="../lekce/07-manual-loga.html"><small>Další lekce →</small><b>07 · InDesign – manuál loga</b></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="../img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="../zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="../zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/interaktivni.js"></script>
+</body>
+</html>

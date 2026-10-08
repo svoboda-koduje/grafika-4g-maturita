@@ -1,0 +1,4369 @@
+[
+ {
+  "id": "paleolit",
+  "obdobi": "pravek",
+  "vrstva": "evropa",
+  "od": -40000,
+  "do": -10000,
+  "nazev": "Paleolit",
+  "podtitul": "starší doba kamenná – lovci mamutů",
+  "datace": "cca 40 000 – 10 000 př. n. l.",
+  "ikona": "paleolit_altamira.jpg",
+  "strucne": "Nejstarší umění lidstva: jeskynní malby zvířat, drobné venuše a rytiny lovců doby ledové.",
+  "text": [
+   "Umění se rodí uprostřed poslední doby ledové. Krátce po Laschampské geomagnetické události (před cca 41 000 lety) se v Evropě usazuje člověk dnešního typu a s ním se objevují první obrazy: malby lvů a nosorožců v jeskyni Chauvet, „lví muž“ vyřezaný z mamutoviny, kostěné flétny. Umění tedy není pozdním luxusem civilizace – vzniká spolu s moderním člověkem.",
+   "Malby vznikaly hluboko v jeskyních, mimo obytné prostory, často na těžko přístupných místech. Nebyly určeny k prohlížení, ale k rituálu – loveckou magií, uctíváním zvířecích předků nebo šamanskými obřady. Malíři používali okr, uhel a manganovou čerň, foukali barvu přes ruku (negativní otisky) a využívali vypoukliny skály jako těla zvířat. Zobrazují se téměř výhradně zvířata; člověk je vzácný a schematický.",
+   "Drobná plastika – tzv. venuše – zdůrazňuje plodnost: mohutné boky a prsa, potlačený obličej. Věstonická venuše (cca 29 000 let) je nejstarší keramikou světa. Na konci paleolitu (magdalénien) vznikají nejslavnější „galerie“ Lascaux a Altamira s polychromními stády býků, koní a jelenů."
+  ],
+  "znaky": [
+   "Zobrazení zvířat (býk, kůň, mamut, jelen) – téměř bez lidí",
+   "Malba na skalní stěny hluboko v jeskyních, okr a uhel",
+   "Drobné plastiky venuší z kamene, kosti a hlíny",
+   "Rytiny na kostech, zdobené zbraně a nástroje",
+   "Magický a rituální účel, nikoli dekorace"
+  ],
+  "oblasti": {
+   "architektura": "Přírodní úkryty a jeskyně; na Moravě (Dolní Věstonice, Předmostí) chaty z mamutích kostí a kůží.",
+   "socharstvi": "Venuše (Willendorf, Věstonice, Petřkovice), lví muž, zvířecí sošky z mamutoviny a pálené hlíny, reliéfy ve skále.",
+   "malirstvi": "Jeskynní malby a rytiny: Chauvet, Lascaux, Altamira, Niaux, Rouffignac; v Čechách Mladečské jeskyně bez maleb – malba je u nás vzácná."
+  },
+  "faze": [
+   {
+    "nazev": "Aurignacien",
+    "kdy": "40–28 tis. let"
+   },
+   {
+    "nazev": "Gravettien",
+    "kdy": "28–20 tis. let"
+   },
+   {
+    "nazev": "Magdalénien",
+    "kdy": "17–12 tis. let"
+   }
+  ],
+  "osobnosti": [
+   "Anonymní šamani a malíři",
+   "Karel Absolon (objevitel Věstonické venuše)",
+   "Zdeněk Burian (rekonstrukce pravěku)"
+  ],
+  "cesko": "Dolní Věstonice a Pavlov – lovci mamutů, Věstonická venuše a nejstarší keramika; Petřkovická venuše; Předmostí u Přerova.",
+  "pamatky": [
+   {
+    "img": "paleolit_chauvet.jpg",
+    "nazev": "Jeskyně Chauvet (Francie)",
+    "popis": "Koně kreslení uhlem se stínováním, cca 36 000 let – nejstarší velké figurální malby Evropy."
+   },
+   {
+    "img": "paleolit_lascaux.jpg",
+    "nazev": "Lascaux (Francie)",
+    "popis": "„Síň býků“, cca 17 000 let; přes 600 maleb objevených roku 1940 čtyřmi chlapci."
+   },
+   {
+    "img": "paleolit_altamira.jpg",
+    "nazev": "Altamira (Španělsko)",
+    "popis": "Polychromní bizoni na stropě, využívající vypoukliny skály. Objevena 1879 – pro Páleše rok nástupu Michaela."
+   },
+   {
+    "img": "paleolit_vestonicka_venuse.jpg",
+    "nazev": "Věstonická venuše",
+    "popis": "Pálená hlína, 11,5 cm, cca 29 000 let. Nejstarší keramická soška na světě (objev 1925)."
+   },
+   {
+    "img": "paleolit_willendorf.jpg",
+    "nazev": "Willendorfská venuše",
+    "popis": "Vápenec, 11 cm, cca 29 000 let. Symbol plodnosti bez obličeje."
+   },
+   {
+    "img": "paleolit_otisky_rukou.jpg",
+    "nazev": "Otisky rukou",
+    "popis": "Negativní otisky foukané barvou – „podpis“ pravěkých tvůrců (Cueva de las Manos, Argentina)."
+   }
+  ],
+  "jung": {
+   "postoj": -0.95,
+   "nazevPostoje": "Hluboká introverze",
+   "funkce": "Intuice & vnímání (iracionální osa)",
+   "text": "Stadium urobora podle Ericha Neumanna: subjekt splývá s objektem (participation mystique). Jeskyně je lůnem Velké Matky, v němž šaman zhmotňuje vnitřní obrazy. Umění kompenzuje bezmoc před ledovou přírodou vytvořením vnitřního magického bezpečí."
+  },
+  "klima": "Vrchol poslední doby ledové (Würm): extrémní chlad, ledovce nad Skandinávií a Alpami, mamutí step. Nutnost fyzického i psychického úkrytu pod zemí. Umění vzniká krátce po Laschampské geomagnetické události, kdy zesláblo magnetické pole Země.",
+  "udalosti": [
+   "laschamp",
+   "lgm",
+   "dryas"
+  ],
+  "pales": "Předchází dějinnému rytmu duchů času; Páleš vidí v paleolitu ještě nediferencované „snové“ vědomí lidstva (měsíční, gabrielský princip obraznosti)."
+ },
+ {
+  "id": "mezolit",
+  "obdobi": "pravek",
+  "vrstva": "evropa",
+  "od": -10000,
+  "do": -6000,
+  "nazev": "Mezolit",
+  "podtitul": "střední doba kamenná",
+  "datace": "cca 10 000 – 6 000 př. n. l.",
+  "ikona": "pravek_amazonie.jpg",
+  "strucne": "Po oteplení mizí mamuti i velké jeskynní galerie; lovci lesa tvoří drobné rytiny, geometrické znaky a skalní malby loveckých scén.",
+  "text": [
+   "S koncem doby ledové (cca 11 700 let) se tundra mění v les. Mizí stáda mamutů a sobů a s nimi i důvod pro velké jeskynní svatyně. Menší, pohyblivé skupiny lovců, rybářů a sběračů žijí u řek a jezer.",
+   "Umění se zmenšuje a schematizuje: na skalách východního Španělska (Valltorta, Alpera) se poprvé objevují živé scény lovců s luky a tanečníků – člověk vstupuje do obrazu jako hlavní hrdina. Rozvíjí se drobná mikrolitická industrie, rytiny na jantaru a kostech, první geometrické znaky. V Amazonii (Serranía de la Lindosa) vznikají ve stejné době tisíce červených maleb ledovcové fauny."
+  ],
+  "znaky": [
+   "Drobné, schematické figury v pohybu",
+   "Lovecké a taneční scény – člověk jako hrdina",
+   "Geometrické znaky, ornament na nástrojích",
+   "Skalní přístřešky místo hlubokých jeskyní"
+  ],
+  "oblasti": {
+   "architektura": "Sezónní tábory, chaty z proutí a kůží, první dlouhodobější sídliště u vody.",
+   "socharstvi": "Drobné kostěné a jantarové přívěsky, zvířecí figurky.",
+   "malirstvi": "Levantské skalní umění Španělska; malby v Amazonii; rytiny na oblázcích (azilien)."
+  },
+  "faze": [
+   {
+    "nazev": "Epipaleolit",
+    "kdy": "10–9 tis. př. n. l."
+   },
+   {
+    "nazev": "Vlastní mezolit",
+    "kdy": "9–6 tis. př. n. l."
+   }
+  ],
+  "osobnosti": [
+   "Anonymní tvůrci"
+  ],
+  "cesko": "Mezolitická sídliště v Polabí a v pískovcových převisech Českého ráje (Kokořínsko).",
+  "pamatky": [
+   {
+    "img": "pravek_amazonie.jpg",
+    "nazev": "Serranía de la Lindosa (Kolumbie)",
+    "popis": "Skalní malby staré cca 12 500 let s ledovcovou faunou – objeveny roku 2020."
+   },
+   {
+    "img": "mezolit_valltorta.jpg",
+    "nazev": "Lovci z Valltorty (Španělsko)",
+    "popis": "Schematičtí lučištníci v pohybu – levantské skalní umění."
+   }
+  ],
+  "jung": {
+   "postoj": -0.5,
+   "nazevPostoje": "Introverze s otevíráním se světu",
+   "funkce": "Vnímání & intuice",
+   "text": "Člověk vstupuje do obrazu: přechod od magického splynutí se zvířetem k vědomí vlastní role. Pohyblivá, schematická figura je prvním krokem k abstrakci znaku."
+  },
+  "klima": "Prudké oteplení na začátku holocénu, vzestup hladiny moří (zaplavení Doggerlandu mezi Británií a Evropou), rozšíření lesa.",
+  "udalosti": [
+   "dryas"
+  ],
+  "pales": "Podle rytmu 354 let spadá do velkých saturnsko-venušských cyklů; Páleš klade do neolitu vznik trvalých sídel jako projev saturnského (orifielského) principu."
+ },
+ {
+  "id": "neolit",
+  "obdobi": "pravek",
+  "vrstva": "evropa",
+  "od": -9500,
+  "do": -4300,
+  "nazev": "Neolit",
+  "podtitul": "mladší doba kamenná – první zemědělci",
+  "datace": "cca 9 500 – 4 300 př. n. l. (u nás od 5 500)",
+  "ikona": "neolit_gobekli.jpg",
+  "strucne": "Neolitická revoluce: zemědělství, trvalé vesnice, keramika s geometrickým ornamentem a první svatyně.",
+  "text": [
+   "Zemědělství vzniká na Blízkém východě v „úrodném půlměsíci“ a šíří se do Evropy; do Čech a na Moravu přichází kolem roku 5 500 př. n. l. s kulturou s lineární keramikou. Člověk poprvé přetváří krajinu: kácí les, staví dlouhé kůlové domy a hliněné pece, chová dobytek.",
+   "Umění se proměňuje od naturalistického zvířete k abstraktnímu znaku. Na keramice se objevuje rytý a malovaný geometrický ornament (spirály, meandry, vlnice) – podle Worringera výraz „pudu k abstrakci“, potřeby řádu tváří v tvář nevyzpytatelné úrodě a počasí. Vznikají ženské idoly (kult plodnosti a Velké Matky) a domácí kultovní předměty.",
+   "Překvapením posledních desetiletí je Göbekli Tepe v Turecku: monumentální kruhové svatyně s pilíři ve tvaru T a reliéfy zvířat, postavené kolem 9 500 př. n. l. ještě lovci-sběrači. Chrám tedy možná předcházel vesnici. Çatalhöyük (7 500–5 700 př. n. l.) je první „město“ s nástěnnými malbami a sochami."
+  ],
+  "znaky": [
+   "Geometrický ornament na keramice (lineární, vypíchaná, moravská malovaná)",
+   "Trvalé domy a vesnice, dlouhé domy",
+   "Ženské idoly – kult plodnosti",
+   "První monumentální svatyně (Göbekli Tepe)",
+   "Broušené kamenné nástroje"
+  ],
+  "oblasti": {
+   "architektura": "Dlouhé kůlové domy (u nás Bylany u Kutné Hory), hliněné domy Çatalhöyüku, svatyně Göbekli Tepe, rondely – kruhové příkopové areály na Moravě.",
+   "socharstvi": "Hliněné venuše a idoly, zoomorfní nádoby, reliéfy na pilířích Göbekli Tepe.",
+   "malirstvi": "Malovaná keramika (moravská malovaná keramika, Cucuteni-Trypillia), nástěnné malby v Çatalhöyüku."
+  },
+  "faze": [
+   {
+    "nazev": "Předkeramický neolit",
+    "kdy": "9 500–7 000 př. n. l."
+   },
+   {
+    "nazev": "Lineární keramika",
+    "kdy": "5 500–5 000 př. n. l."
+   },
+   {
+    "nazev": "Moravská malovaná",
+    "kdy": "4 700–4 000 př. n. l."
+   }
+  ],
+  "osobnosti": [
+   "Anonymní zemědělské komunity",
+   "Klaus Schmidt (výzkum Göbekli Tepe)"
+  ],
+  "cesko": "Bylany u Kutné Hory (dlouhé domy), Vedrovice, moravská malovaná keramika, rondel v Kolíně – jedny z nejstarších monumentálních staveb Evropy.",
+  "pamatky": [
+   {
+    "img": "neolit_gobekli.jpg",
+    "nazev": "Göbekli Tepe (Turecko)",
+    "popis": "Pilíře ve tvaru T s reliéfy lišek, hadů a jeřábů, cca 9 500 př. n. l. – nejstarší chrám světa."
+   },
+   {
+    "img": "neolit_catalhoyuk.jpg",
+    "nazev": "Çatalhöyük (Turecko)",
+    "popis": "Nástěnná malba a reliéfy v domech prvního „města“, 7. tisíciletí př. n. l."
+   },
+   {
+    "img": "neolit_moravska_malovana.jpg",
+    "nazev": "Moravská malovaná keramika",
+    "popis": "Lengyelská kultura, 5. tisíciletí př. n. l. – malovaný geometrický ornament."
+   },
+   {
+    "img": "neolit_newgrange.jpg",
+    "nazev": "Newgrange (Irsko)",
+    "popis": "Chodbová hrobka z 3 200 př. n. l., do níž o zimním slunovratu vniká slunce – přechod k eneolitu."
+   }
+  ],
+  "jung": {
+   "postoj": -0.3,
+   "nazevPostoje": "Vznikající extraverze",
+   "funkce": "Myšlení & vnímání",
+   "text": "Cyklus Velké Matky a zemědělství: úzkost z nepředvídatelnosti přírody (sucho, neúroda) je kompenzována vtištěním geometrického řádu do krajiny i na nádoby. Zrození vědomého řádu – první pokus oddělit nebe od země."
+  },
+  "klima": "Holocénní oteplení, ústup ledovců; zemědělství vzniká po mladším dryasu. Ochlazení 8,2 tisíce let (6 200 př. n. l.) vyhání zemědělce z Anatolie do Evropy.",
+  "udalosti": [
+   "dryas",
+   "e8200",
+   "sahara"
+  ],
+  "pales": "Göbekli Tepe a vznik trvalé architektury spadají do saturnského (orifielského) principu kamene a trvalosti; Páleš spojuje s neolitem první „patriarchální“ organizaci společnosti."
+ },
+ {
+  "id": "eneolit",
+  "obdobi": "pravek",
+  "vrstva": "evropa",
+  "od": -4300,
+  "do": -2200,
+  "nazev": "Eneolit",
+  "podtitul": "pozdní doba kamenná – doba měděná",
+  "datace": "cca 4 300 – 2 200 př. n. l.",
+  "ikona": "neolit_stonehenge.jpg",
+  "strucne": "Doba prvních kovů, oradla, kola a megalitů – Stonehenge, Carnac, muž z ledovce Ötzi.",
+  "text": [
+   "Měď se začíná tavit a odlévat, objevuje se kolo, vůz a oradlo tažené dobytkem. Společnost se rozvrstvuje – bohaté hroby náčelníků, opevněná výšinná sídliště. V západní Evropě vrcholí megalitická architektura: menhiry, dolmeny, kromlechy (Stonehenge, Carnac), orientované podle Slunce a Měsíce.",
+   "Ötzi, muž z alpského ledovce (cca 3 300 př. n. l.), nese měděnou sekeru, luk, tetování a oděv z kůží – ukazuje, jak vypadal každodenní život té doby. Na východě zatím vznikají první města v Mezopotámii a písmo; pravěk Evropy a starověk Blízkého východu běží souběžně.",
+   "V českých zemích jde o kultury nálevkovitých pohárů, řivnáčskou, šňůrovou a zvoncovitých pohárů. Keramika je zdobena šňůrovými otisky, objevují se první měděné šperky a dýky."
+  ],
+  "znaky": [
+   "Měď a zlato – první kovy",
+   "Megality: menhir, dolmen, kromlech",
+   "Astronomická orientace staveb",
+   "Kolo, vůz, oradlo; bohaté hroby elit",
+   "Šňůrová keramika, zvoncovité poháry"
+  ],
+  "oblasti": {
+   "architektura": "Stonehenge (3 000–2 000 př. n. l.), Carnac, Newgrange; kolové stavby na jezerech v Alpách; výšinná hradiště.",
+   "socharstvi": "Menhiry-stély se schematickými postavami, měděné a zlaté šperky, idoly.",
+   "malirstvi": "Rytá a šňůrová výzdoba keramiky, skalní rytiny v Alpách (Val Camonica)."
+  },
+  "faze": [
+   {
+    "nazev": "Časný eneolit",
+    "kdy": "4 300–3 500"
+   },
+   {
+    "nazev": "Střední eneolit",
+    "kdy": "3 500–2 800"
+   },
+   {
+    "nazev": "Pozdní eneolit",
+    "kdy": "2 800–2 200"
+   }
+  ],
+  "osobnosti": [
+   "Ötzi – muž z ledovce",
+   "Stavitelé Stonehenge"
+  ],
+  "cesko": "Menhiry v Klobukách a Drahomyšli, hradiště Homolka u Stehelčevsi, řivnáčská kultura, hrob lukostřelce (zvoncovité poháry).",
+  "pamatky": [
+   {
+    "img": "neolit_stonehenge.jpg",
+    "nazev": "Stonehenge (Anglie)",
+    "popis": "Kruh sarsenových trilitů orientovaný na letní slunovrat, 3 000–2 000 př. n. l."
+   },
+   {
+    "img": "neolit_otzi.jpg",
+    "nazev": "Ötzi – rekonstrukce",
+    "popis": "Muž z ledovce v Ötztalských Alpách, cca 3 300 př. n. l., s měděnou sekerou a tetováním."
+   }
+  ],
+  "jung": {
+   "postoj": -0.2,
+   "nazevPostoje": "Řád vtištěný do krajiny",
+   "funkce": "Myšlení & vnímání (Te-Se)",
+   "text": "Geometrické vyměřování a astronomická orientace megalitů – racionální organizace posvátného prostoru. Vědomí (ego) se vyděluje z přírody a začíná ji měřit."
+  },
+  "klima": "Teplé a vlhké „atlantické“ období vrcholí a přechází v sušší subboreál; vysychání Sahary (3 900 př. n. l.) žene obyvatelstvo k Nilu. Na konci období megasucho 4,2 tisíce let.",
+  "udalosti": [
+   "sahara",
+   "otzi",
+   "e4200"
+  ],
+  "pales": "Stonehenge a egyptské pyramidy (2 700–2 400 př. n. l.) spadají podle Páleše do saturnského období Orifiela (2 726–2 372 př. n. l.) – ducha kamene, trvalosti a monumentality."
+ },
+ {
+  "id": "bronz",
+  "obdobi": "pravek",
+  "vrstva": "evropa",
+  "od": -2200,
+  "do": -800,
+  "nazev": "Doba bronzová",
+  "podtitul": "únětická, mohylová, popelnicová pole",
+  "datace": "cca 2 200 – 800 př. n. l.",
+  "ikona": "bronz_slunecni_vuz.jpg",
+  "strucne": "Bronz (měď + cín) přináší nové zbraně, šperky a dálkový obchod; umění je abstraktní, sluneční a ornamentální.",
+  "text": [
+   "Slitina mědi a cínu vyžaduje obchod na velké vzdálenosti (cín z Cornwallu a Krušných hor, jantar z Baltu) – Evropa se propojuje. Vznikají bohaté náčelnické hroby (mohyly), hradiště a depoty bronzových předmětů obětované bohům do vody a bažin.",
+   "Umění doby bronzové je převážně užité a abstraktní: spirály, soustředné kruhy, sluneční kotouče. Sluneční vůz z Trundholmu (Dánsko) a disk z Nebry (nejstarší zobrazení oblohy, cca 1 600 př. n. l.) ukazují kult Slunce a znalost astronomie. Figurální umění je vzácné – skalní rytiny lodí a bojovníků ve Skandinávii.",
+   "Ve Středomoří téže doby vrcholí mínojská a mykénská kultura a v Egyptě Nová říše; ve střední Evropě mluvíme o únětické kultuře (pojmenované podle Únětic u Prahy), mohylových kulturách a kulturách popelnicových polí (žárové pohřbívání)."
+  ],
+  "znaky": [
+   "Bronzové zbraně, šperky a nádoby, tepání a odlévání",
+   "Sluneční symbolika, spirály, kruhy",
+   "Depoty (obětiny) v bažinách a řekách",
+   "Mohyly a hradiště; později žárové hroby v popelnicích",
+   "Dálkový obchod: cín, jantar, sůl"
+  ],
+  "oblasti": {
+   "architektura": "Opevněná hradiště, mohylová pohřebiště, kolové osady.",
+   "socharstvi": "Bronzové figurky, sluneční vůz z Trundholmu, kultovní nádobky a vozíky.",
+   "malirstvi": "Rytý ornament na bronzu a keramice, skalní rytiny (Tanum, Val Camonica)."
+  },
+  "faze": [
+   {
+    "nazev": "Starší (únětická)",
+    "kdy": "2 200–1 600"
+   },
+   {
+    "nazev": "Střední (mohylová)",
+    "kdy": "1 600–1 300"
+   },
+   {
+    "nazev": "Mladší (popelnicová pole)",
+    "kdy": "1 300–800"
+   }
+  ],
+  "osobnosti": [
+   "Únětická kultura",
+   "Lužická kultura",
+   "Knovízská kultura"
+  ],
+  "cesko": "Únětice u Prahy – eponymní naleziště; depoty bronzů; kultovní nádobka z Kolínska; hradiště Plešivec.",
+  "pamatky": [
+   {
+    "img": "bronz_slunecni_vuz.jpg",
+    "nazev": "Sluneční vůz z Trundholmu (Dánsko)",
+    "popis": "Bronz a zlatý plech, cca 1 400 př. n. l. – kůň táhne Slunce po obloze."
+   },
+   {
+    "img": "bronz_nadobka.jpg",
+    "nazev": "Kultovní nádobka z Kolínska",
+    "popis": "Doba bronzová, české země."
+   },
+   {
+    "img": "bronz_nebra.jpg",
+    "nazev": "Disk z Nebry (Německo)",
+    "popis": "Bronz se zlatými intarziemi Slunce, Měsíce a Plejád, cca 1 600 př. n. l."
+   }
+  ],
+  "jung": {
+   "postoj": -0.4,
+   "nazevPostoje": "Abstraktní řád a sluneční kult",
+   "funkce": "Myšlení & intuice",
+   "text": "Ornament nahrazuje obraz: kompenzace nejistoty geometrickým řádem kosmu. Sluneční symbol = vznikající vědomí (ego) jako světlo oddělující se z temnoty nevědomí (Neumann)."
+  },
+  "klima": "Období začíná megasuchem 4,2 tisíce let a končí kolapsem doby bronzové (sucho, nájezdy, zánik obchodu s cínem kolem 1 200 př. n. l.).",
+  "udalosti": [
+   "e4200",
+   "thera",
+   "bronz_kolaps"
+  ],
+  "pales": "Kolaps doby bronzové a nástup železa se kryjí s marsovským obdobím Samaela (1 309–955 př. n. l.) – dobou válek, mořských národů a trojské války."
+ },
+ {
+  "id": "zelezo",
+  "obdobi": "pravek",
+  "vrstva": "evropa",
+  "od": -800,
+  "do": 0,
+  "nazev": "Doba železná",
+  "podtitul": "halštat a latén – Keltové",
+  "datace": "cca 800 př. n. l. – přelom letopočtu",
+  "ikona": "zelezo_keltsky_sperk.jpg",
+  "strucne": "Železo, keltská oppida, mince a dynamický spirálový ornament laténského umění.",
+  "text": [
+   "Železo je dostupnější než bronz – zbraně a nástroje se rozšiřují mezi všechny vrstvy. Starší doba železná (halštat, 800–450 př. n. l.) je dobou knížecích mohyl s vozy a orientálními importy (Hochdorf, Vix). Mladší doba železná (latén, 450 př. n. l. – 0) patří Keltům, prvnímu etniku u nás známému jménem (Bójové).",
+   "Keltské umění je abstraktní, dynamické a ornamentální: propletené spirály, trojlisty (triskely), stylizované masky a zvířata na sponách, náramcích a mečích. Keltové razí zlaté mince (duhovky), zakládají oppida – první městské útvary – a ovládají sklářství a hrnčířský kruh.",
+   "Zatímco střední Evropa žije v „pravěku“, ve Středomoří vrcholí řecká klasika a rozmach Říma. Kolem přelomu letopočtu Kelty vytlačují Germáni a do Podunají přichází Řím – pro naše území začíná doba římská."
+  ],
+  "znaky": [
+   "Železné zbraně a nástroje",
+   "Keltský ornament: spirála, triskel, maska",
+   "Oppida (Závist, Stradonice, Staré Hradisko)",
+   "Mince, sklo, hrnčířský kruh",
+   "Knížecí mohyly halštatu s vozy"
+  ],
+  "oblasti": {
+   "architektura": "Oppida s hradbami (murus gallicus), dvorce, čtyřúhelníkové valy (viereckschanze).",
+   "socharstvi": "Kamenná hlava z Mšeckých Žehrovic, keltské stély, bronzové figurky, zdobené spony.",
+   "malirstvi": "Malovaná keramika, email a korál na kovu, mince s abstraktní stylizací."
+  },
+  "faze": [
+   {
+    "nazev": "Halštat",
+    "kdy": "800–450 př. n. l."
+   },
+   {
+    "nazev": "Latén",
+    "kdy": "450 př. n. l. – 0"
+   }
+  ],
+  "osobnosti": [
+   "Keltové (Bójové)",
+   "Bylanská kultura",
+   "Germáni (Markomani)"
+  ],
+  "cesko": "Hlava Kelta z Mšeckých Žehrovic, oppidum Závist u Prahy, Stradonice, duhovky; komorové hroby bylanské kultury (Plaňany).",
+  "pamatky": [
+   {
+    "img": "zelezo_keltsky_sperk.jpg",
+    "nazev": "Keltský bronzový šperk (Cerhýnky)",
+    "popis": "Mladší doba železná, laténský styl."
+   },
+   {
+    "img": "zelezo_ozdoba.jpg",
+    "nazev": "Ozdoba doby železné",
+    "popis": "Užité umění halštatského období."
+   },
+   {
+    "img": "zelezo_msecke_zehrovice.jpg",
+    "nazev": "Hlava Kelta z Mšeckých Žehrovic",
+    "popis": "Opuka, 2. stol. př. n. l. – nejslavnější keltská plastika střední Evropy."
+   }
+  ],
+  "jung": {
+   "postoj": -0.3,
+   "nazevPostoje": "Introvertní ornament",
+   "funkce": "Intuice & cítění",
+   "text": "Keltský ornament rozpouští tvar v nekonečném pohybu linie – protiklad řecké extravertní míry. Worringerova abstrakce jako výraz sepětí s neviditelnými silami přírody (druidové)."
+  },
+  "klima": "Kolem 800 př. n. l. vlhké a chladné období (tzv. „Homérovo minimum“ sluneční aktivity) – expanze Keltů; od 250 př. n. l. římské klimatické optimum.",
+  "udalosti": [
+   "bronz_kolaps",
+   "rim_optimum"
+  ],
+  "pales": "Halštat spadá do měsíčního období Gabriela (955–600), latén do slunečního Michaela (600–246 př. n. l.) – doby řecké filosofie, kdy i keltská kultura razí mince a zakládá města."
+ },
+ {
+  "id": "mezopotamie",
+  "obdobi": "starovek",
+  "vrstva": "evropa",
+  "od": -3500,
+  "do": -539,
+  "nazev": "Mezopotámie",
+  "podtitul": "Sumer, Akkad, Babylon, Asýrie",
+  "datace": "cca 3 500 – 539 př. n. l.",
+  "ikona": "mezopotamie_istarina_brana.jpg",
+  "strucne": "Země mezi Eufratem a Tigridem: první města, klínové písmo, zikkuraty a reliéfy králů.",
+  "text": [
+   "V úrodné nížině mezi Eufratem a Tigridem vznikají kolem roku 3 500 př. n. l. první města (Uruk, Ur, Lagaš) a s nimi klínové písmo, kalendář, právo a stát. Sumery vystřídali Akkadové, Babyloňané (Chammurapi, cca 1 750 př. n. l.), Asyřané a Novobabylonská říše (Nabukadnezar II.), kterou roku 539 př. n. l. dobyli Peršané.",
+   "Architektura je z nepálených a pálených cihel – kámen chybí. Dominantou města je zikkurat, stupňovitá chrámová věž (biblická babylonská věž). Paláce zdobí glazované cihly (Ištařina brána s draky a býky) a asyrské kamenné reliéfy s loveckými a válečnými scénami – patos síly a moci.",
+   "Sochařství vytváří strnulé modlící se postavy s obrovskýma očima (Tell Asmar), okřídlené býky lamassu hlídající brány a portréty vládců. Chammurapiho zákoník je vytesán do dioritové stély pod reliéfem krále přijímajícího zákony od boha Slunce Šamaše."
+  ],
+  "znaky": [
+   "Cihlová architektura, zikkurat",
+   "Klínové písmo na hliněných tabulkách",
+   "Reliéfy vládců a lovů, lamassu",
+   "Glazované cihly, lapis lazuli, zlato",
+   "Strnulá frontální figura s velkýma očima"
+  ],
+  "oblasti": {
+   "architektura": "Zikkurat v Uru (cca 2 100 př. n. l.), Ištařina brána a visuté zahrady v Babylonu, asyrské paláce v Ninive a Chorsábádu.",
+   "socharstvi": "Sošky modlících se z Tell Asmar, standarta z Uru, Chammurapiho stéla, lamassu, reliéf Lov lvů (Aššurbanipal).",
+   "malirstvi": "Mozaiky z mušlí a lapisu (standarta z Uru), glazované reliéfy, pečetní válečky."
+  },
+  "faze": [
+   {
+    "nazev": "Sumer",
+    "kdy": "3 500–2 300"
+   },
+   {
+    "nazev": "Akkad a Babylon",
+    "kdy": "2 300–1 100"
+   },
+   {
+    "nazev": "Asýrie",
+    "kdy": "900–612"
+   },
+   {
+    "nazev": "Nový Babylon",
+    "kdy": "626–539"
+   }
+  ],
+  "osobnosti": [
+   "Gilgameš (epos)",
+   "Sargon Akkadský",
+   "Chammurapi",
+   "Aššurbanipal",
+   "Nabukadnezar II."
+  ],
+  "cesko": "Přímé památky u nás nejsou; české expedice (Bedřich Hrozný rozluštil chetitštinu, 1915) patří k dějinám orientalistiky.",
+  "pamatky": [
+   {
+    "img": "mezopotamie_zikkurat_ur.jpg",
+    "nazev": "Zikkurat v Uru (Irák)",
+    "popis": "Chrámová věž měsíčního boha Nanny, cca 2 100 př. n. l., rekonstruovaná ve 20. století."
+   },
+   {
+    "img": "mezopotamie_istarina_brana.jpg",
+    "nazev": "Ištařina brána (Babylon)",
+    "popis": "Glazované cihly s draky a býky, cca 575 př. n. l. Dnes v Pergamonském muzeu v Berlíně."
+   },
+   {
+    "img": "mezopotamie_chammurapi.jpg",
+    "nazev": "Chammurapiho stéla",
+    "popis": "Diorit, cca 1 750 př. n. l., Louvre – král přijímá zákony od boha Šamaše."
+   }
+  ],
+  "jung": {
+   "postoj": 0.5,
+   "nazevPostoje": "Rigidní extraverze",
+   "funkce": "Myšlení & cítění",
+   "text": "Umění opouští individuální duši a stává se nástrojem organizace sociálního davu: monumentální měřítko potlačuje jednotlivce a vštěpuje kolektivní řád. Vzestup patriarchálního vědomí (Logos) nad mateřskou přírodou."
+  },
+  "klima": "Zavlažovací zemědělství závislé na řekách; megasucho 4,2 tisíce let (2 200 př. n. l.) zničilo Akkadskou říši. Zasolování půdy vedlo k úpadku Sumeru.",
+  "udalosti": [
+   "otzi",
+   "e4200"
+  ],
+  "pales": "Chammurapiho zákoník (cca 1 750 př. n. l.) spadá do jupiterského období Zachariela (2 017–1 663 př. n. l.) – ducha práva a králů; asyrské válečné reliéfy do marsovských a slunečních období."
+ },
+ {
+  "id": "egypt",
+  "obdobi": "starovek",
+  "vrstva": "evropa",
+  "od": -3100,
+  "do": -30,
+  "nazev": "Starověký Egypt",
+  "podtitul": "Stará, Střední a Nová říše",
+  "datace": "cca 3 100 – 30 př. n. l.",
+  "ikona": "egypt_tutanchamon.jpg",
+  "strucne": "Tři tisíce let neměnného kánonu: pyramidy, chrámy, hieroglyfy a umění pro věčnost.",
+  "text": [
+   "Egyptská civilizace vznikla sjednocením Horního a Dolního Egypta kolem roku 3 100 př. n. l., když vysychající Sahara zahnala obyvatelstvo k Nilu. Každoroční záplavy dávaly zemi řád a jistotu, který se otiskl do umění: faraon je bůh, vše má své pevné místo (princip Maat).",
+   "Stará říše (2 700–2 180) je dobou pyramid: Džoserova stupňovitá pyramida v Sakkáře (architekt Imhotep), Cheopsova v Gíze (146 m). Střední říše přináší skalní hrobky a literaturu, Nová říše (1 550–1 070) obrovské chrámy v Karnaku a Luxoru, Údolí králů, Abú Simbel. Krátká Achnatonova reforma (Amarna, cca 1 350) uvolnila kánon – busta Nefertiti, portréty královské rodiny. Tutanchamonova hrobka (objevena 1922) ukazuje bohatství pohřební výbavy.",
+   "Kánon zobrazení: hlava a nohy z profilu, oko a ramena zepředu; velikost postavy podle významu; přísná symetrie a klid. Sochy jsou frontální, blokové, určené pro věčnost v hrobce (ka). Malba je plošná, bez perspektivy, doplněná hieroglyfy."
+  ],
+  "znaky": [
+   "Kánon: profil + čelní pohled, hierarchie velikostí",
+   "Monumentální kamenná architektura (pyramida, pylon, hypostyl)",
+   "Umění pro posmrtný život",
+   "Frontální, blokové sochy",
+   "Hieroglyfy, papyrus, malba na omítce"
+  ],
+  "oblasti": {
+   "architektura": "Mastaba → stupňovitá → pravá pyramida; chrámy s pylony a hypostylovými sály (Karnak), skalní chrámy (Abú Simbel), Údolí králů.",
+   "socharstvi": "Rachefova socha, písař, Nefertiti, kolosy Memnonovy, Tutanchamonova maska; reliéf zapuštěný i vystouplý.",
+   "malirstvi": "Hrobky v Údolí králů a šlechtické hrobky (Nebamon), Kniha mrtvých na papyru, fajjúmské portréty (římská doba)."
+  },
+  "faze": [
+   {
+    "nazev": "Stará říše",
+    "kdy": "2 700–2 180"
+   },
+   {
+    "nazev": "Střední říše",
+    "kdy": "2 055–1 650"
+   },
+   {
+    "nazev": "Nová říše",
+    "kdy": "1 550–1 070"
+   },
+   {
+    "nazev": "Pozdní a ptolemaiovská",
+    "kdy": "664–30"
+   }
+  ],
+  "osobnosti": [
+   "Imhotep",
+   "Cheops",
+   "Hatšepsut",
+   "Achnaton a Nefertiti",
+   "Tutanchamon",
+   "Ramesse II.",
+   "Kleopatra VII."
+  ],
+  "cesko": "Český egyptologický ústav UK zkoumá pohřebiště v Abúsíru (Zbyněk Žába, Miroslav Verner, Miroslav Bárta); Náprstkovo muzeum.",
+  "pamatky": [
+   {
+    "img": "egypt_dzoser.jpg",
+    "nazev": "Džoserova pyramida v Sakkáře",
+    "popis": "Nejstarší kamenná monumentální stavba světa, architekt Imhotep, cca 2 650 př. n. l."
+   },
+   {
+    "img": "egypt_giza.jpg",
+    "nazev": "Pyramidy v Gíze",
+    "popis": "Cheops, Rachef a Menkaure, cca 2 560–2 500 př. n. l. Jediný dochovaný div světa."
+   },
+   {
+    "img": "egypt_karnak.jpg",
+    "nazev": "Hypostylový sál v Karnaku",
+    "popis": "134 sloupů jako zkamenělý rákosový háj – řád (Maat) nad vodami chaosu. Nová říše."
+   },
+   {
+    "img": "egypt_abu_simbel.jpg",
+    "nazev": "Abú Simbel",
+    "popis": "Skalní chrám Ramesse II., 13. stol. př. n. l.; v 60. letech 20. století přesunut kvůli Asuánské přehradě."
+   },
+   {
+    "img": "egypt_nefertiti.jpg",
+    "nazev": "Busta Nefertiti",
+    "popis": "Vápenec a sádra, cca 1 345 př. n. l., dílna sochaře Thutmose v Amarně."
+   },
+   {
+    "img": "egypt_tutanchamon.jpg",
+    "nazev": "Tutanchamonova maska",
+    "popis": "Zlato, lapis lazuli, 11 kg, cca 1 323 př. n. l. Objevil Howard Carter 1922."
+   }
+  ],
+  "jung": {
+   "postoj": 0.6,
+   "nazevPostoje": "Okázalá, rigidní extraverze",
+   "funkce": "Myšlení & cítění (racionální osa)",
+   "text": "Totální podřízení individuality státně-náboženskému řádu. Hypostylový sál v Karnaku jako zkamenělý les představuje stabilitu řádu (Maat) nad nevědomými vodami chaosu (Nun); faraon je archetypem hrdiny-slunce. Přísný kánon = kolektivní identita místo osobní vize."
+  },
+  "klima": "Záplavové zemědělství Nilu dává jistotu a periodicitu – základ neměnného kánonu. Krize přicházejí se suchem: konec Staré říše (4,2 tisíce let), kolaps doby bronzové a nájezdy mořských národů.",
+  "udalosti": [
+   "sahara",
+   "e4200",
+   "bronz_kolaps"
+  ],
+  "pales": "Pyramidy Staré říše (Gíza, cca 2 560 př. n. l.) spadají do saturnského období Orifiela (2 726–2 372 př. n. l.) – ducha kamene a věčnosti; Achnatonova sluneční reforma do merkurského období Rafaela."
+ },
+ {
+  "id": "egejske",
+  "obdobi": "starovek",
+  "vrstva": "evropa",
+  "od": -2000,
+  "do": -1100,
+  "nazev": "Egejské kultury",
+  "podtitul": "Kréta (mínojská) a Mykény",
+  "datace": "cca 2 000 – 1 100 př. n. l.",
+  "ikona": "egejske_lvi_brana.jpg",
+  "strucne": "Radostné fresky krétských paláců a kyklopské hradby Mykén – předehra řeckého umění.",
+  "text": [
+   "Na Krétě vzkvétá od 2 000 př. n. l. mínojská kultura (podle bájného krále Mínóa): palácové komplexy bez hradeb (Knóssos, Faistos) s labyrintem místností, světlíky a kanalizací, zdobené freskami delfínů, lilií, tanečnic a skoků přes býka. Umění je hravé, pohyblivé, „extravertní“ – svět Středomoří je přátelský.",
+   "Kolem 1 600 př. n. l. vybuchla sopka Théra (Santorini); tsunami a popel oslabily Krétu, kterou ovládli válečnější Mykéňané z pevniny. Mykénská kultura (Mykény, Tíryns, Pylos) staví kyklopské hradby, Lví bránu a kupolové hrobky (Átreova pokladnice); zlaté masky z šachtových hrobů („Agamemnonova maska“) objevil Heinrich Schliemann. Homérova Ilias odráží svět mykénských králů a trojské války.",
+   "Kolem 1 200 př. n. l. mykénský svět zaniká (kolaps doby bronzové) – následují „temná staletí“ bez písma, z nichž se rodí Řecko."
+  ],
+  "znaky": [
+   "Palácová architektura bez hradeb (Kréta) × kyklopské hradby (Mykény)",
+   "Fresky s přírodními motivy, pohyb, radost",
+   "Keramika mořského stylu (chobotnice)",
+   "Zlaté masky, kupolové hrobky",
+   "Lineární písmo A a B"
+  ],
+  "oblasti": {
+   "architektura": "Palác v Knóssu, Lví brána v Mykénách, Átreova pokladnice (nepravá kupole), megaron – předchůdce řeckého chrámu.",
+   "socharstvi": "Bohyně s hady (fajáns), rhyton ve tvaru býčí hlavy, Lví brána – nejstarší monumentální plastika Evropy.",
+   "malirstvi": "Fresky v Knóssu a Akrotiri (Théra): Princ s liliemi, Delfíni, Skok přes býka; malovaná keramika."
+  },
+  "faze": [
+   {
+    "nazev": "Mínojská Kréta",
+    "kdy": "2 000–1 450"
+   },
+   {
+    "nazev": "Mykénské Řecko",
+    "kdy": "1 600–1 100"
+   }
+  ],
+  "osobnosti": [
+   "Mínós (legenda)",
+   "Daidalos (legenda)",
+   "Arthur Evans",
+   "Heinrich Schliemann"
+  ],
+  "cesko": "Doba bronzová u nás (mohylové kultury) je současníkem Mykén; jantar z Baltu putoval přes naše území do Řecka.",
+  "pamatky": [
+   {
+    "img": "egejske_lvi_brana.jpg",
+    "nazev": "Lví brána v Mykénách",
+    "popis": "Cca 1 250 př. n. l. – kyklopské zdivo a reliéf lvic nad překladem."
+   },
+   {
+    "img": "egejske_knossos_byk.jpg",
+    "nazev": "Skok přes býka (Knóssos)",
+    "popis": "Freska z paláce, cca 1 450 př. n. l., Archeologické muzeum Heraklion."
+   },
+   {
+    "img": "egejske_maska.jpg",
+    "nazev": "Agamemnonova maska",
+    "popis": "Zlato, cca 1 550 př. n. l., Národní muzeum Athény."
+   }
+  ],
+  "jung": {
+   "postoj": 0.7,
+   "nazevPostoje": "Radostná extraverze (Kréta) → vojenský řád (Mykény)",
+   "funkce": "Vnímání & cítění",
+   "text": "Mínojské umění je vzácným příkladem „naivního“ (Schiller) splynutí s přírodou bez úzkosti – teplé moře jako spolehlivý živitel. Mykény přinášejí patriarchální hrdinský archetyp (Ilias)."
+  },
+  "klima": "Teplá doba bronzová ve Středomoří; výbuch Théry (cca 1 600 př. n. l.) a sucho kolem 1 200 př. n. l. ukončují obě kultury.",
+  "udalosti": [
+   "thera",
+   "bronz_kolaps"
+  ],
+  "pales": "Trojská válka a zánik Mykén spadají do marsovského období Samaela (1 309–955 př. n. l.); rozkvět Kréty do jupiterského Zachariela a merkurského Rafaela (obchodní námořní říše)."
+ },
+ {
+  "id": "recko",
+  "obdobi": "starovek",
+  "vrstva": "evropa",
+  "od": -800,
+  "do": -146,
+  "nazev": "Řecká antika",
+  "podtitul": "archaické, klasické a helénistické období",
+  "datace": "cca 800 – 146 př. n. l.",
+  "ikona": "recko_parthenon.jpg",
+  "strucne": "Kolébka evropského umění: chrám s řády sloupů, ideální lidské tělo, divadlo a filosofie – „člověk mírou všech věcí“.",
+  "text": [
+   "Po temných staletích vzniká z městských států (polis) nová kultura. Geometrické období (900–700) zná jen abstraktní ornament na vázách; archaické období (700–480) přináší první chrámy a strnulé sochy mladíků (kúros) a dívek (koré) s „archaickým úsměvem“ – vliv Egypta. Vítězství nad Peršany (480) otevírá klasické období (480–323): Periklovy Athény, Parthenón (Iktinos, Kallikratés, sochař Feidiás), Myrónův Diskobolos, Polykleitův kánon proporcí, Práxitelés. Alexandrovy výboje přinášejí helénismus (323–146): patos, pohyb a emoce (Laokoón, Níké Samothrácká, Pergamský oltář).",
+   "Řecký chrám je „sochou“ v krajině: sloupy dórského, iónského a korintského řádu, optické korekce, harmonie proporcí. Sochařství objevuje kontrapost, anatomii a ideál krásy (kalokagathia – jednota krásy a dobra). Malba se dochovala hlavně na vázách (černofigurové, červenofigurové). Divadlo v Epidauru, olympijské hry a filosofie (Sókratés, Platón, Aristotelés) tvoří základ evropského myšlení.",
+   "Řekové poprvé zobrazují člověka jako svobodnou bytost a svět jako poznatelný kosmos – proto se k nim Evropa vrací v renesanci i klasicismu."
+  ],
+  "znaky": [
+   "Sloupové řády: dórský, iónský, korintský",
+   "Ideální nahé tělo, kontrapost, kánon proporcí",
+   "Míra, harmonie, symetrie – lidské měřítko",
+   "Vázové malířství (černo- a červenofigurové)",
+   "Helénistický patos a pohyb"
+  ],
+  "oblasti": {
+   "architektura": "Parthenón, Erechtheion s karyatidami, Propylaje, Diův chrám v Olympii, divadlo v Epidauru, Mauzoleum v Halikarnassu, Pergamský oltář.",
+   "socharstvi": "Kúros a koré; Myrón, Polykleitos, Feidiás, Práxitelés, Lýsippos; Venuše Mélská, Níké Samothrácká, Laokoón.",
+   "malirstvi": "Exekiás, Eufronios (vázy); nástěnná malba známa z římských kopií; mozaiky (Alexandrova bitva)."
+  },
+  "faze": [
+   {
+    "nazev": "Geometrické",
+    "kdy": "900–700"
+   },
+   {
+    "nazev": "Archaické",
+    "kdy": "700–480"
+   },
+   {
+    "nazev": "Klasické",
+    "kdy": "480–323"
+   },
+   {
+    "nazev": "Helénistické",
+    "kdy": "323–146"
+   }
+  ],
+  "osobnosti": [
+   "Feidiás",
+   "Iktinos a Kallikratés",
+   "Myrón",
+   "Polykleitos",
+   "Práxitelés",
+   "Lýsippos",
+   "Periklés",
+   "Alexandr Veliký"
+  ],
+  "cesko": "Antické sbírky Národního muzea a Univerzity Karlovy (odlitky); Keltové u nás obchodovali s řeckým světem (Bójové).",
+  "pamatky": [
+   {
+    "img": "recko_parthenon.jpg",
+    "nazev": "Parthenón (Athény)",
+    "popis": "447–432 př. n. l., dórský chrám Athény Parthenos; sochařská výzdoba Feidiás."
+   },
+   {
+    "img": "recko_akropolis.jpg",
+    "nazev": "Athénská Akropole",
+    "popis": "Posvátný okrsek nad městem – Parthenón, Erechtheion, Propylaje."
+   },
+   {
+    "img": "recko_erechtheion.jpg",
+    "nazev": "Erechtheion – síň karyatid",
+    "popis": "Iónský chrám, 421–406 př. n. l.; sloupy nahrazeny postavami dívek."
+   },
+   {
+    "img": "recko_rady.jpg",
+    "nazev": "Řecké sloupové řády",
+    "popis": "Dórský, iónský a korintský řád – základ evropské architektury až do 20. století."
+   },
+   {
+    "img": "recko_epidauros.jpg",
+    "nazev": "Divadlo v Epidauru",
+    "popis": "4. stol. př. n. l., architekt Polykleitos mladší; 14 000 diváků, dokonalá akustika."
+   },
+   {
+    "img": "recko_pergamon.jpg",
+    "nazev": "Pergamský oltář",
+    "popis": "Helénismus, cca 180 př. n. l.; gigantomachie – boj bohů s giganty, patos a pohyb."
+   }
+  ],
+  "jung": {
+   "postoj": 0.8,
+   "nazevPostoje": "Harmonická extraverze",
+   "funkce": "Myšlení & vnímání (Te-Se)",
+   "text": "Apollonský princip: triumf vědomého rozumu (Athéna) nad dionýským chaosem a animální nevědomostí (gigantomachie). Worringerovo vcítění v absolutní rovnováze s řádem; oslava svobodného občana a lidské míry."
+  },
+  "klima": "Řecké klimatické optimum – stabilní teplé počasí, rozkvět mořeplavby a obchodu; „Homérovo minimum“ (cca 800 př. n. l.) na počátku.",
+  "udalosti": [
+   "bronz_kolaps",
+   "rim_optimum"
+  ],
+  "pales": "Sluneční období Michaela (600–246 př. n. l.): zrození filosofie, demokracie a klasického umění – přesně to, co Páleš přisuzuje duchu Slunce, rozumu a individuality. Helénismus přechází do saturnského Orifiela."
+ },
+ {
+  "id": "etruskove",
+  "obdobi": "starovek",
+  "vrstva": "evropa",
+  "od": -800,
+  "do": -200,
+  "nazev": "Umění Etrusků",
+  "podtitul": "předřímská Itálie",
+  "datace": "cca 800 – 200 př. n. l.",
+  "ikona": null,
+  "strucne": "Tajemný národ střední Itálie: malované hrobky, terakotové sarkofágy manželů, bronzová vlčice a oblouk, který převzal Řím.",
+  "text": [
+   "Etruskové obývali Toskánsko a Lazio a vytvořili spolek dvanácti měst. Jejich jazyk dosud plně nerozumíme; umění známe hlavně z nekropolí – „měst mrtvých“ (Cerveteri, Tarquinia). Kruhové mohylové hrobky (tumuly) napodobují interiéry domů a jsou vymalovány veselými hostinami, tanečníky, hudebníky a hrami – smrt jako pokračování života.",
+   "Sochařství pracuje s terakotou a bronzem: Apollón z Vejí, sarkofág manželů z Cerveteri (usmívající se pár na hostině), Kapitolská vlčice, Chiméra z Arezza. Etruskové znají klenbu a oblouk, kanalizaci (Cloaca Maxima) a chrám na vysokém podiu – vše převzal Řím, který je ve 3. století př. n. l. pohltil."
+  ],
+  "znaky": [
+   "Nekropole s malovanými hrobkami",
+   "Terakotová plastika, sarkofágy",
+   "Bronzové odlévání (vlčice, Chiméra)",
+   "Oblouk a klenba",
+   "Radostný vztah ke smrti"
+  ],
+  "oblasti": {
+   "architektura": "Tumuly v Cerveteri, městské hradby, chrám na podiu (Veje), oblouk.",
+   "socharstvi": "Sarkofág manželů, Apollón z Vejí, Kapitolská vlčice, Chiméra z Arezza, Řečník (Arringatore).",
+   "malirstvi": "Hrobky v Tarquinii (hrobka Leopardů, Býků, Augurů), zrcadla s rytinami."
+  },
+  "faze": [
+   {
+    "nazev": "Villanovská",
+    "kdy": "900–700"
+   },
+   {
+    "nazev": "Orientalizující",
+    "kdy": "700–600"
+   },
+   {
+    "nazev": "Archaická a klasická",
+    "kdy": "600–300"
+   }
+  ],
+  "osobnosti": [
+   "Vulca z Vejí (sochař)",
+   "Lars Porsenna"
+  ],
+  "cesko": "Etruské bronzy a zboží se dostávaly přes Alpy i k Keltům ve střední Evropě (situly).",
+  "pamatky": [
+   {
+    "img": "etruskove_sarkofag.jpg",
+    "nazev": "Sarkofág manželů (Cerveteri)",
+    "popis": "Terakota, cca 520 př. n. l., Villa Giulia v Římě."
+   },
+   {
+    "img": "etruskove_tarquinia.jpg",
+    "nazev": "Hrobka Leopardů (Tarquinia)",
+    "popis": "Nástěnná malba hostiny, cca 470 př. n. l."
+   }
+  ],
+  "jung": {
+   "postoj": 0.5,
+   "nazevPostoje": "Extravertní radost ze života",
+   "funkce": "Cítění & vnímání",
+   "text": "Vítězství smyslového cítění nad strachem ze smrti: hrobka jako hostina. Etruské umění je „naivní“ a bezprostřední – před římským racionálním myšlením."
+  },
+  "klima": "Železná doba a mírné klima střední Itálie; rozvoj obchodu s Řeky a Féničany.",
+  "udalosti": [
+   "rim_optimum"
+  ],
+  "pales": "Rozkvět etruských měst spadá do měsíčního (Gabriel) a slunečního (Michael) období; pohlcení Římem do saturnského Orifiela – ducha říší a kamene."
+ },
+ {
+  "id": "rim",
+  "obdobi": "starovek",
+  "vrstva": "evropa",
+  "od": -500,
+  "do": 476,
+  "nazev": "Římská antika",
+  "podtitul": "republika a císařství",
+  "datace": "cca 500 př. n. l. – 476 n. l.",
+  "ikona": "rim_akvadukt.jpg",
+  "strucne": "Inženýrství a moc: beton, klenba, akvadukty, Koloseum, Pantheon a realistický portrét vládců světové říše.",
+  "text": [
+   "Řím převzal od Etrusků oblouk a od Řeků řády a sochařský ideál, ale přidal praktický duch: beton (opus caementicium), klenbu a kupoli, silnice, akvadukty, lázně, baziliky a amfiteátry. Architektura slouží státu a masám: Koloseum (80 n. l.) pro 50 000 diváků, Pantheon (cca 125) s kupolí o průměru 43 m, Trajánův sloup a vítězné oblouky oslavující císaře.",
+   "Sochařství vyniká portrétem – veristické busty republikánských politiků s každou vráskou (úcta k předkům, voskové masky) a idealizované sochy císařů (Augustus z Prima Porta). Malířství známe z Pompejí a Herculanea, které roku 79 zasypal Vesuv: čtyři pompejské styly, iluzivní architektury, krajiny, zátiší a mozaiky.",
+   "Za římského klimatického optima se říše rozprostírá od Británie po Egypt; její rozdělení (395) a pád Západořímské říše (476) uzavírají starověk. Římské právo, latina a města však tvoří základ Evropy."
+  ],
+  "znaky": [
+   "Oblouk, klenba, kupole, beton",
+   "Užitková a reprezentativní architektura (fórum, bazilika, lázně, amfiteátr)",
+   "Realistický portrét",
+   "Historický reliéf (Trajánův sloup)",
+   "Nástěnná malba a mozaika (Pompeje)"
+  ],
+  "oblasti": {
+   "architektura": "Pantheon, Koloseum, Pont du Gard, Forum Romanum, Trajánovo fórum, Caracallovy lázně, Diokleciánův palác ve Splitu.",
+   "socharstvi": "Augustus z Prima Porta, jezdecká socha Marka Aurelia, busty, sarkofágy, Trajánův sloup.",
+   "malirstvi": "Pompejské styly, Villa dei Misteri, fajjúmské portréty, mozaiky."
+  },
+  "faze": [
+   {
+    "nazev": "Republika",
+    "kdy": "509–27 př. n. l."
+   },
+   {
+    "nazev": "Principát",
+    "kdy": "27 př. n. l. – 284"
+   },
+   {
+    "nazev": "Pozdní císařství",
+    "kdy": "284–476"
+   }
+  ],
+  "osobnosti": [
+   "Vitruvius",
+   "Augustus",
+   "Apollodóros z Damašku",
+   "Hadrián",
+   "Konstantin Veliký"
+  ],
+  "cesko": "Římská pevnost v Mušově na Moravě (Markomanské války, Marcus Aurelius u Hronu), nálezy římských importů; Antické sbírky.",
+  "pamatky": [
+   {
+    "img": "rim_akvadukt.jpg",
+    "nazev": "Pont du Gard (Francie)",
+    "popis": "Akvadukt z 1. stol. n. l., 49 m vysoký; voda pro Nîmes – inženýrství jako umění."
+   },
+   {
+    "img": "rim_tetrarchove.jpg",
+    "nazev": "Tetrarchové (Benátky)",
+    "popis": "Porfyr, cca 300 n. l. – pozdně antický přechod od realismu k strnulé symbolice."
+   },
+   {
+    "img": "rim_pantheon.jpg",
+    "nazev": "Pantheon (Řím)",
+    "popis": "Kupole o průměru 43,3 m s okulem, cca 125 n. l."
+   },
+   {
+    "img": "rim_koloseum.jpg",
+    "nazev": "Koloseum",
+    "popis": "Flaviovský amfiteátr, 72–80 n. l."
+   }
+  ],
+  "jung": {
+   "postoj": 0.7,
+   "nazevPostoje": "Praktická extraverze",
+   "funkce": "Myšlení & vnímání",
+   "text": "Extravertní myšlení: svět je materiál k organizaci. Portrét = úcta k reálné osobě, ne ideálu. V pozdní antice (Tetrarchové) začíná odhmotnění a obrat k introverzi – příchod křesťanství."
+  },
+  "klima": "Římské klimatické optimum (250 př. n. l. – 400 n. l.) sytí říši; jeho konec, sucha a stěhování národů přispívají k pádu Říma. Výbuch Vesuvu 79 n. l. konzervuje Pompeje.",
+  "udalosti": [
+   "rim_optimum",
+   "vesuv"
+  ],
+  "pales": "Římské císařství (Augustus, Pantheon, akvadukty) spadá do saturnského období Orifiela (246 př. n. l. – 108 n. l.) – ducha kamene, řádu a císařů; Velká čínská zeď vzniká v témže cyklu."
+ },
+ {
+  "id": "krestanska_antika",
+  "obdobi": "starovek",
+  "vrstva": "evropa",
+  "od": 200,
+  "do": 550,
+  "nazev": "Křesťanská antika",
+  "podtitul": "raně křesťanské umění",
+  "datace": "cca 200 – 550 n. l.",
+  "ikona": "krestanska_dobry_pastyr.jpg",
+  "strucne": "Z katakomb do bazilik: symboly ryby a Dobrého pastýře, mozaiky se zlatým pozadím – umění nové víry.",
+  "text": [
+   "První křesťané tvoří skrytě v římských katakombách: jednoduché symboly (ryba, kotva, Kristův monogram), Dobrý pastýř, orantky. Po Milánském ediktu (313) císař Konstantin staví první velké kostely – baziliky (podélné, se sloupy, s apsidou) a centrální stavby (Santa Costanza, baptisteria).",
+   "Umění přebírá antické formy, ale mění jejich smysl: tělo se odhmotňuje, důležitý je pohled a gesto, zlaté pozadí ruší prostor. Vrcholem jsou mozaiky v Ravenně (mauzoleum Gally Placidie, Sant'Apollinare Nuovo, San Vitale) – most k Byzanci. Vznikají iluminované rukopisy (Rossanský kodex) a řezby ze slonoviny."
+  ],
+  "znaky": [
+   "Symbolika (ryba, beránek, pastýř, chí-ró)",
+   "Bazilika a centrála",
+   "Mozaika se zlatým pozadím",
+   "Odhmotnění těla, frontálnost",
+   "Sarkofágy s biblickými výjevy"
+  ],
+  "oblasti": {
+   "architektura": "Stará bazilika sv. Petra, Santa Maria Maggiore, Santa Costanza, Lateránské baptisterium, mauzoleum Gally Placidie.",
+   "socharstvi": "Sarkofág Junia Bassa, slonovinové diptychy, Dobrý pastýř (socha).",
+   "malirstvi": "Katakomby Priscilly a Kalixta, mozaiky Ravenny, Rossanský kodex."
+  },
+  "faze": [
+   {
+    "nazev": "Katakombové",
+    "kdy": "200–313"
+   },
+   {
+    "nazev": "Konstantinovské",
+    "kdy": "313–400"
+   },
+   {
+    "nazev": "Ravennské",
+    "kdy": "400–550"
+   }
+  ],
+  "osobnosti": [
+   "Konstantin Veliký",
+   "Galla Placidia",
+   "sv. Ambrož",
+   "Theodorich"
+  ],
+  "cesko": "Křesťanství přichází až v 9. století (Velká Morava); raně křesťanské formy (rotunda, bazilika) ovlivnily naše nejstarší kostely.",
+  "pamatky": [
+   {
+    "img": "krestanska_dobry_pastyr.jpg",
+    "nazev": "Dobrý pastýř (Ravenna)",
+    "popis": "Mozaika v mauzoleu Gally Placidie, cca 425 – Kristus jako antický pastýř."
+   },
+   {
+    "img": "krestanska_sant_apollinare.jpg",
+    "nazev": "Sant'Apollinare Nuovo (Ravenna)",
+    "popis": "Průvod mučedníků, 6. století – rytmus, frontálnost, zlaté pozadí."
+   },
+   {
+    "img": "krestanska_santa_costanza.jpg",
+    "nazev": "Santa Costanza (Řím)",
+    "popis": "Mozaika klenby, 4. století – vinná réva, ptáci, antický dekor s novým smyslem."
+   }
+  ],
+  "jung": {
+   "postoj": -0.3,
+   "nazevPostoje": "Obrat k introverzi",
+   "funkce": "Cítění & intuice",
+   "text": "Krize antického světa vede k odvrácení od těla a pozemského světa k nebeskému řádu: obraz už není okno do světa, ale znamení neviditelného. Počátek transcendentního cyklu (Neumann: od hrdiny k duchovní transformaci)."
+  },
+  "klima": "Konec římského klimatického optima, ochlazení a sucha ve 3.–5. století, stěhování národů; rok 536 a justiniánský mor uzavírají antiku.",
+  "udalosti": [
+   "rim_optimum",
+   "lalia"
+  ],
+  "pales": "Podle Páleše je 108–463 n. l. venušské období Anaela – ducha lásky a krásy: šíření křesťanství s poselstvím lásky k bližnímu a něžná symbolika katakomb tomu odpovídají."
+ },
+ {
+  "id": "byzanc",
+  "obdobi": "stredovek",
+  "vrstva": "evropa",
+  "od": 330,
+  "do": 1453,
+  "nazev": "Byzantské umění",
+  "podtitul": "Východořímská říše",
+  "datace": "330 – 1453",
+  "ikona": "byzanc_pantokrator.jpg",
+  "strucne": "Tisíc let Konstantinopole: Hagia Sofia, zlaté mozaiky, ikony a přísný duchovní řád východního křesťanství.",
+  "text": [
+   "Roku 330 založil Konstantin na místě řeckého Byzantia Nový Řím – Konstantinopol. Po rozdělení říše (395) a pádu Západu (476) Byzanc trvá dalších tisíc let, až do dobytí Turky roku 1453. Jazykem je řečtina, císař je hlavou církve (caesaropapismus). Uchovává antickou vzdělanost a vyzařuje kulturu na Balkán, Rus (křest 988) i na Velkou Moravu (Cyril a Metoděj, 863).",
+   "Zlatý věk Justiniána I. (527–565) vytváří Hagiu Sofii (532–537, architekti Anthemios a Isidoros) – obrovskou kupoli „zavěšenou na řetězu z nebe“ – a mozaiky v Ravenně (San Vitale s císařským párem). Obrazoborectví (726–843) přerušilo figurální tvorbu a upevnilo teologii ikony: obraz je oknem do věčnosti, ne popisem světa.",
+   "Byzantský styl je přísný, frontální, plošný, se zlatým pozadím a obrácenou perspektivou; typy jako Pantokrator, Deésis nebo Bohorodička (Vladimirská ikona) se opakují po staletí. Vliv na Itálii (San Marco v Benátkách, sienská malba) přetrvává až k počátkům renesance."
+  ],
+  "znaky": [
+   "Centrální kupolové chrámy (Hagia Sofia)",
+   "Mozaiky se zlatým pozadím",
+   "Ikony a jejich pevné typy (Pantokrator, Bohorodička)",
+   "Frontálnost, plošnost, obrácená perspektiva",
+   "Caesaropapismus, obrazoborectví"
+  ],
+  "oblasti": {
+   "architektura": "Hagia Sofia, San Vitale v Ravenně, chrám Chóra, San Marco v Benátkách, chrám Vasila Blaženého (ruská odnož).",
+   "socharstvi": "Sochařství ustupuje (obrazoborectví): slonovinové reliéfy (diptych Barberini), relikviáře, emaily.",
+   "malirstvi": "Mozaiky (Ravenna, Hagia Sofia, Daphni), ikony (Vladimirská, Sinaj), iluminované rukopisy, fresky."
+  },
+  "faze": [
+   {
+    "nazev": "Raná (Justinián)",
+    "kdy": "330–726"
+   },
+   {
+    "nazev": "Obrazoborectví",
+    "kdy": "726–843"
+   },
+   {
+    "nazev": "Střední (makedonská renesance)",
+    "kdy": "843–1204"
+   },
+   {
+    "nazev": "Pozdní (Palaiologové)",
+    "kdy": "1261–1453"
+   }
+  ],
+  "osobnosti": [
+   "Konstantin Veliký",
+   "Justinián I. a Theodora",
+   "Anthemios z Tralles",
+   "Cyril a Metoděj",
+   "Andrej Rubljov (ruská ikona)"
+  ],
+  "cesko": "Velkomoravská misie Cyrila a Metoděje (863), byzantské šperky z Mikulčic; pravoslavné chrámy v Praze (sv. Cyrila a Metoděje).",
+  "pamatky": [
+   {
+    "img": "byzanc_hagia_sophia.jpg",
+    "nazev": "Hagia Sofia (Konstantinopol)",
+    "popis": "532–537, kupole o průměru 31 m; minarety přidány po roce 1453."
+   },
+   {
+    "img": "byzanc_hagia_sophia_interier.jpg",
+    "nazev": "Hagia Sofia – interiér",
+    "popis": "Mozaika Bohorodičky s Justiniánem a Konstantinem, 10. století."
+   },
+   {
+    "img": "byzanc_san_vitale.jpg",
+    "nazev": "San Vitale (Ravenna)",
+    "popis": "Mozaiky presbytáře, kolem 547 – císař Justinián s dvořany, strnulá frontální reprezentace."
+   },
+   {
+    "img": "byzanc_pantokrator.jpg",
+    "nazev": "Kristus Pantokrator",
+    "popis": "Mozaika v Hagii Sofii (Deésis), 13. století – vrchol pozdně byzantské malby."
+   },
+   {
+    "img": "byzanc_vladimirska.jpg",
+    "nazev": "Vladimirská Bohorodička",
+    "popis": "Ikona z Konstantinopole, cca 1130, dnes Moskva – typ „něžnosti“ (Eleúsa)."
+   },
+   {
+    "img": "byzanc_sv_marek.jpg",
+    "nazev": "San Marco (Benátky)",
+    "popis": "Byzantský pětikupolový chrám v Itálii, od 1063; mozaiky ze 12.–13. století."
+   }
+  ],
+  "jung": {
+   "postoj": -0.7,
+   "nazevPostoje": "Návrat k introverzi",
+   "funkce": "Cítění & intuice (Fi-Ni)",
+   "text": "Dematerializace těla a odklon od pozemského světa k nebeskému řádu. Ikona jako mandala: obraz slouží integraci ohrožené psýché, ne popisu vnějšího světa. Kupole = nebeská klenba nad shromážděním věřících."
+  },
+  "klima": "Pozdně antická malá doba ledová (536–660) a justiniánský mor (541) přerušily antickou tradici – právě v době vzniku San Vitale. Středověké optimum (950–1250) přineslo makedonskou renesanci.",
+  "udalosti": [
+   "lalia",
+   "stredoveke_optimum"
+  ],
+  "pales": "Justinián a Hagia Sofia (537) spadají do jupiterského období Zachariela (463–817) – ducha zákonodárců a králů (Corpus iuris civilis); obrazoborectví do jeho konce, Cyril a Metoděj do merkurského Rafaela (817–1171) – ducha jazyka a písma."
+ },
+ {
+  "id": "rany_stredovek",
+  "obdobi": "stredovek",
+  "vrstva": "evropa",
+  "od": 476,
+  "do": 1000,
+  "nazev": "Raný středověk",
+  "podtitul": "stěhování národů, karolínské a otónské umění, Velká Morava",
+  "datace": "476 – cca 1000",
+  "ikona": "rany_book_of_kells.jpg",
+  "strucne": "Barbarské kmeny, kláštery a Karel Veliký: zlaté spony, iluminované rukopisy a první kamenné kostely severně od Alp.",
+  "text": [
+   "Po pádu Říma (476) se Evropou valí stěhování národů. Germánské „barbarské“ umění je užité a abstraktní: zlaté spony s granáty, zvířecí styl, pletence. Křesťanství přežívá v klášterech Irska a Británie, kde vznikají iluminované rukopisy s neuvěřitelně jemným ornamentem (Book of Kells, cca 800).",
+   "Karel Veliký (korunován císařem 800) chce obnovit Řím – karolínská renesance přináší kamenné baziliky, palácovou kapli v Cáchách (podle San Vitale), knižní malbu a školy. Ideální plán kláštera ze St. Gallen (cca 820) ukazuje klášter jako město. Otónské umění (Sasko, 10. století) zdůrazňuje expresivní gesto a připravuje románský sloh.",
+   "Na našem území vzniká Velká Morava (833–907): kamenné kostely v Mikulčicích a Uherském Hradišti, šperky s byzantskými vlivy a od roku 863 misie Cyrila a Metoděje se slovanskou liturgií a hlaholicí. Po pádu Velké Moravy přebírají roli Přemyslovci (rotunda sv. Víta, kolem 930; Vyšehrad)."
+  ],
+  "znaky": [
+   "Zlatnictví a zvířecí styl germánů",
+   "Iluminované rukopisy ostrovní a karolínské",
+   "Kamenné baziliky a centrály (Cáchy)",
+   "Kláštery jako centra kultury",
+   "Velkomoravské kostely a šperky"
+  ],
+  "oblasti": {
+   "architektura": "Palácová kaple v Cáchách (792–805), klášter St. Gallen (plán), brána v Lorschi, velkomoravské kostely, rotunda sv. Víta a sv. Jiří v Praze.",
+   "socharstvi": "Zlatnictví (Sutton Hoo, velkomoravské gombíky), slonovinové desky knižních vazeb, bronzové dveře v Hildesheimu (1015).",
+   "malirstvi": "Book of Kells, Lindisfarnské evangelia, Evangeliář Karla Velikého, Utrechtský žaltář, Codex Aureus."
+  },
+  "faze": [
+   {
+    "nazev": "Stěhování národů",
+    "kdy": "375–568"
+   },
+   {
+    "nazev": "Merovejské a ostrovní",
+    "kdy": "500–750"
+   },
+   {
+    "nazev": "Karolínské",
+    "kdy": "750–900"
+   },
+   {
+    "nazev": "Otónské",
+    "kdy": "919–1024"
+   }
+  ],
+  "osobnosti": [
+   "Karel Veliký",
+   "Alkuin",
+   "Cyril a Metoděj",
+   "kníže Rostislav",
+   "sv. Václav",
+   "Ota I."
+  ],
+  "cesko": "Velká Morava – Mikulčice, Staré Město, Pohansko, Sady; rotunda sv. Jiří na Řípu, bazilika sv. Jiří na Pražském hradě (920), Levý Hradec; Kristiánova legenda.",
+  "pamatky": [
+   {
+    "img": "rany_book_of_kells.jpg",
+    "nazev": "Book of Kells (Irsko)",
+    "popis": "Iluminovaný evangeliář, cca 800 – pletence, spirály a zvířecí motivy irského mnišství."
+   },
+   {
+    "img": "rany_sankt_gallen.jpg",
+    "nazev": "Plán kláštera ze St. Gallen",
+    "popis": "Cca 820 – ideální klášter jako soběstačné město; nejstarší dochovaný architektonický plán středověku."
+   },
+   {
+    "img": "rany_cachy.jpg",
+    "nazev": "Palácová kaple v Cáchách",
+    "popis": "Osmiboká centrála Karla Velikého, 792–805."
+   },
+   {
+    "img": "rany_gombik.jpg",
+    "nazev": "Velkomoravský gombík",
+    "popis": "Zlatý šperk z Mikulčic, 9. století."
+   }
+  ],
+  "jung": {
+   "postoj": -0.6,
+   "nazevPostoje": "Introvertní ornament a klášterní kontemplace",
+   "funkce": "Intuice & cítění",
+   "text": "Chaos stěhování národů kompenzuje nekonečný, uzavřený ornament rukopisů – Worringerova abstrakce jako útočiště. Klášter je psychickou pevností, „temenos“ uprostřed nejistého světa."
+  },
+  "klima": "Pozdně antická malá doba ledová (536–660) – chlad, neúroda, mor, doba největšího úpadku; od 9.–10. století oteplování a začátek středověkého optima.",
+  "udalosti": [
+   "lalia",
+   "stredoveke_optimum"
+  ],
+  "pales": "Karel Veliký a karolínská renesance spadají do jupiterského Zachariela (463–817, „velcí králové“); Cyril a Metoděj s hlaholicí (863) do merkurského Rafaela (817–1171) – ducha jazyka, písma a vzdělanosti."
+ },
+ {
+  "id": "romansky",
+  "obdobi": "stredovek",
+  "vrstva": "evropa",
+  "od": 1000,
+  "do": 1250,
+  "nazev": "Románský sloh",
+  "podtitul": "vrcholný středověk – doba klášterů a hradů",
+  "datace": "cca 1000 – 1250 (u nás 1050–1250)",
+  "ikona": "rany_sankt_gallen.jpg",
+  "strucne": "Těžké kamenné zdi, půlkruhový oblouk, klenba a šero: kostel jako pevnost Boží uprostřed feudální Evropy.",
+  "text": [
+   "Po roce 1000, kdy nenastal očekávaný konec světa, se Evropa „oděla do bílého pláště kostelů“ (mnich Raoul Glaber). Upevňuje se feudalismus, kláštery (Cluny, cisterciáci) organizují krajinu, rytíři vyrážejí na křížové výpravy (od 1096) a po poutních cestách (Santiago de Compostela) putují stavební hutě i motivy.",
+   "Románský sloh (název podle „římského“ oblouku) staví z kamene: silné zdi, malá okna, půlkruhové oblouky, valené a křížové klenby, věže. Bazilika s příčnou lodí a chórem, rotundy, hrady s obytnou věží (donjon). Sochařství se vrací na portály a hlavice sloupů: Poslední soud v tympanonu (Autun, Moissac), fantastická zvířata, přísně podřízené architektuře. Malba je plošná, s obrysem – fresky, iluminace, tapiserie z Bayeux.",
+   "V českých zemích jde o dobu prvního krále Vratislava II. (1085), bazilik sv. Jiří na Hradě, rotund (sv. Kateřina ve Znojmě s malbami Přemyslovců), kláštera v Třebíči, Juditina mostu a Kodexu vyšehradského."
+  ],
+  "znaky": [
+   "Půlkruhový oblouk, silné zdi, malá okna",
+   "Valená a křížová klenba, věže",
+   "Sochařství vázané na architekturu (portál, hlavice)",
+   "Plošná malba s obrysem, zlaté pozadí",
+   "Kláštery, poutní cesty, hrady"
+  ],
+  "oblasti": {
+   "architektura": "Cluny III, Speyer, Pisa, Durham, Santiago de Compostela; u nás bazilika sv. Jiří, rotunda sv. Kateřiny ve Znojmě, Třebíč, Doksany, Milevsko.",
+   "socharstvi": "Tympanony v Autunu (Gislebertus), Moissacu a Vézelay; hlavice sloupů; u nás reliéfy v Třebíči a na Juditině mostě.",
+   "malirstvi": "Fresky ve Znojmě (přemyslovská genealogie, 1134), Kodex vyšehradský (1085), tapiserie z Bayeux, Sant Climent de Taüll."
+  },
+  "faze": [
+   {
+    "nazev": "Raná",
+    "kdy": "1000–1080"
+   },
+   {
+    "nazev": "Vrcholná",
+    "kdy": "1080–1150"
+   },
+   {
+    "nazev": "Pozdní (přechod ke gotice)",
+    "kdy": "1150–1250"
+   }
+  ],
+  "osobnosti": [
+   "Gislebertus",
+   "opat Suger (přechod ke gotice)",
+   "Vratislav II.",
+   "Bernard z Clairvaux"
+  ],
+  "cesko": "Rotunda sv. Kateřiny ve Znojmě, bazilika sv. Jiří na Pražském hradě, bazilika sv. Prokopa v Třebíči, kostel v Tismicích, Kodex vyšehradský, románské domy pod Starým Městem.",
+  "pamatky": [
+   {
+    "img": "romansky_znojmo.jpg",
+    "nazev": "Rotunda sv. Kateřiny ve Znojmě",
+    "popis": "Malby z roku 1134 s genealogií Přemyslovců – povolání Přemysla Oráče."
+   },
+   {
+    "img": "romansky_autun.jpg",
+    "nazev": "Tympanon v Autunu (Gislebertus)",
+    "popis": "Poslední soud, cca 1130 – expresivní stylizace těl."
+   },
+   {
+    "img": "romansky_trebic.jpg",
+    "nazev": "Bazilika sv. Prokopa v Třebíči",
+    "popis": "Cca 1240–1260, přechod románsko-gotický, UNESCO."
+   }
+  ],
+  "jung": {
+   "postoj": -0.6,
+   "nazevPostoje": "Introverze pevnosti",
+   "funkce": "Cítění & myšlení",
+   "text": "Kostel jako Boží hrad: tlusté zdi a šero chrání vnitřní svět před vnějším nebezpečím. Poslední soud na portálu = konfrontace se Stínem. Sochařství podřízené architektuře = jedinec podřízený řádu."
+  },
+  "klima": "Středověké klimatické optimum (950–1250): teplo, růst populace, kolonizace, hospodářský přebytek pro stavbu klášterů. Halleyova kometa 1066 na tapiserii z Bayeux.",
+  "udalosti": [
+   "stredoveke_optimum",
+   "kometa1066"
+  ],
+  "pales": "Románský sloh spadá do merkurského období Rafaela (817–1171): doba poutních cest, obchodu, prvních univerzit (Bologna 1088) a arabské medicíny přicházející do Evropy (Salerno)."
+ },
+ {
+  "id": "gotika",
+  "obdobi": "stredovek",
+  "vrstva": "evropa",
+  "od": 1140,
+  "do": 1500,
+  "nazev": "Gotika",
+  "podtitul": "sloh katedrál – raná, vrcholná, pozdní",
+  "datace": "cca 1140 – 1500 (u nás 1230–1520)",
+  "ikona": "gotika_chartres.jpg",
+  "strucne": "Lomený oblouk, opěrný systém a vitráže: katedrála jako obraz nebeského Jeruzaléma; Karel IV. dělá z Prahy centrum Evropy.",
+  "text": [
+   "Gotika začíná v roce 1140 přestavbou chóru opatství Saint-Denis u Paříže (opat Suger): lomený oblouk, žebrová klenba a opěrný systém umožňují nahradit zdi okny. Světlo procházející vitrážemi je podle Sugera obrazem Boha. Katedrály (Chartres, Remeš, Amiens, Notre-Dame, Kolín) rostou do výšky ve „závodě“ měst, financovaném rozkvětem obchodu a měst za středověkého klimatického optima. Název „gotika“ (barbarský, „gótský“) dal slohu pohrdavě až renesanční Vasari.",
+   "Sochařství se osvobozuje od zdi: portály Chartres a Remeše, úsměv remešského anděla, krásné madony v esovitém prohnutí. Malba: vitráže, iluminace, deskové obrazy; v Itálii Giotto (kaple Scrovegni, 1305) objevuje prostor a lidský cit – předchůdce renesance; v Nizozemí Jan van Eyck (Gentský oltář 1432, Arnolfiniovi 1434) zdokonaluje olejomalbu a detail.",
+   "V Čechách vrcholí gotika za Karla IV. (1346–1378): katedrála sv. Víta (Matyáš z Arrasu, Petr Parléř), Karlův most, Karlštejn s kaplí sv. Kříže (Mistr Theodorik), Mistr Vyšebrodského oltáře, Mistr Třeboňského oltáře, krásný sloh (Krumlovská madona). Pozdní gotika Vladislava Jagellonského (Benedikt Ried, Vladislavský sál 1502) se už prolíná s renesancí."
+  ],
+  "znaky": [
+   "Lomený oblouk, žebrová klenba, opěrný systém",
+   "Vertikalita, odhmotnění, světlo vitráží",
+   "Katedrála, radnice, hrad, měšťanský dům",
+   "Krásné madony, esovité prohnutí, realismus detailu",
+   "Deskový obraz, olejomalba (van Eyck)"
+  ],
+  "oblasti": {
+   "architektura": "Saint-Denis, Chartres, Remeš, Amiens, Sainte-Chapelle, Kolín, Milánský dóm, Westminster; sv. Vít, Karlštejn, Karlův most, chrám sv. Barbory v Kutné Hoře, Vladislavský sál.",
+   "socharstvi": "Portály Chartres a Remeše, Naumburg (Uta), Claus Sluter; Petr Parléř (busty v triforiu), Krumlovská madona, Madona z Michle, Pieta.",
+   "malirstvi": "Giotto, Duccio, Simone Martini; bratři Limbourgové; Jan van Eyck, Rogier van der Weyden, Bosch; Mistr Vyšebrodského oltáře, Theodorik, Mistr Třeboňského oltáře, Madona svatovítská."
+  },
+  "faze": [
+   {
+    "nazev": "Raná",
+    "kdy": "1140–1230"
+   },
+   {
+    "nazev": "Vrcholná",
+    "kdy": "1230–1350"
+   },
+   {
+    "nazev": "Krásný sloh",
+    "kdy": "1380–1420"
+   },
+   {
+    "nazev": "Pozdní",
+    "kdy": "1420–1520"
+   }
+  ],
+  "osobnosti": [
+   "opat Suger",
+   "Giotto",
+   "Jan van Eyck",
+   "Karel IV.",
+   "Petr Parléř",
+   "Matyáš z Arrasu",
+   "Mistr Theodorik",
+   "Benedikt Ried"
+  ],
+  "cesko": "Sv. Vít, Karlštejn, Karlův most, Staroměstská mostecká věž, Anežský klášter, Zlatá Koruna, Kutná Hora (sv. Barbora), Pardubice – gotické jádro města a hrad Pernštejnů.",
+  "pamatky": [
+   {
+    "img": "gotika_chartres.jpg",
+    "nazev": "Katedrála v Chartres",
+    "popis": "1194–1220, vrcholná gotika; 176 vitráží, dvě nestejné věže."
+   },
+   {
+    "img": "gotika_notre_dame_pariz.jpg",
+    "nazev": "Notre-Dame v Paříži",
+    "popis": "1163–1345, raná gotika; rozeta, opěrné oblouky, chrliči."
+   },
+   {
+    "img": "gotika_sainte_chapelle.jpg",
+    "nazev": "Sainte-Chapelle (Paříž)",
+    "popis": "1242–1248, Ludvík IX. – stěny nahrazeny vitrážemi, „skleněná schránka“ na relikvie."
+   },
+   {
+    "img": "gotika_hlavni_lod.jpg",
+    "nazev": "Hlavní loď gotické katedrály",
+    "popis": "Vertikalita: arkády, triforium, bazilikální okna; žebrová klenba."
+   },
+   {
+    "img": "gotika_milano.jpg",
+    "nazev": "Milánský dóm",
+    "popis": "Od 1386, pozdní (plaménková) gotika; 135 fiál."
+   },
+   {
+    "img": "gotika_parler_karel.jpg",
+    "nazev": "Petr Parléř: busta Karla IV.",
+    "popis": "Triforium katedrály sv. Víta, 1374–1385 – nejstarší portrétní galerie střední Evropy."
+   },
+   {
+    "img": "gotika_krumlovska_madona.jpg",
+    "nazev": "Krumlovská madona",
+    "popis": "Krásný sloh, kolem 1390, Vídeň – esovité prohnutí, kaskády drapérie."
+   },
+   {
+    "img": "gotika_theodorik.jpg",
+    "nazev": "Mistr Theodorik: sv. Marek",
+    "popis": "Kaple sv. Kříže na Karlštejně, 1360–1365; 129 deskových obrazů."
+   },
+   {
+    "img": "gotika_vysebrodsky.jpg",
+    "nazev": "Mistr Vyšebrodského oltáře",
+    "popis": "Kolem 1350, Národní galerie – devět desek s Kristovým životem."
+   },
+   {
+    "img": "gotika_karlstejn.jpg",
+    "nazev": "Kaple sv. Kříže na Karlštejně",
+    "popis": "Stěny z polodrahokamů a zlata, strop s nebem – nebeský Jeruzalém."
+   },
+   {
+    "img": "gotika_giotto.jpg",
+    "nazev": "Giotto: Setkání Jáchyma a Anny",
+    "popis": "Kaple Scrovegni v Padově, 1305 – objev citu, prostoru a objemu."
+   },
+   {
+    "img": "gotika_van_eyck_arnolfini.jpg",
+    "nazev": "Jan van Eyck: Manželé Arnolfiniovi",
+    "popis": "1434, Londýn – olejomalba, zrcadlo, detail; „Jan van Eyck byl zde“."
+   }
+  ],
+  "jung": {
+   "postoj": -0.4,
+   "nazevPostoje": "Introvertní duchovní osa v extravertním těle",
+   "funkce": "Cítění & intuice (Fi-Ni)",
+   "text": "Katedrála je vnitřní mystický prostor pro masové společenství. Rozetová okna jako mandaly integrují psýché směrem k božskému středu (Self); katedrála jako kontejner spásy – Velká Matka proměněná v Církev. Světlo = vědomí pronikající hmotou."
+  },
+  "klima": "Středověké klimatické optimum financuje katedrály; po roce 1300 ochlazení, Velký hladomor (1315–17) a černá smrt (1347–51) – pozdní gotika je plná memento mori i mystické krásy. Halleyova kometa 1301 na Giottově fresce.",
+  "udalosti": [
+   "stredoveke_optimum",
+   "kometa1066",
+   "hladomor_mor",
+   "mala_doba_ledova"
+  ],
+  "pales": "Gotika téměř přesně vyplňuje marsovské období Samaela (1171–1525): křížové výpravy, rytířství, železo – a „ostrý“, vertikální, bojovný tvar lomeného oblouku. Husitské války a dobytí Konstantinopole (1453) jej uzavírají."
+ },
+ {
+  "id": "renesance",
+  "obdobi": "novovek",
+  "vrstva": "evropa",
+  "od": 1400,
+  "do": 1600,
+  "nazev": "Renesance",
+  "podtitul": "raná, vrcholná, pozdní (manýrismus)",
+  "datace": "cca 1400 – 1600 (u nás 1492–1620)",
+  "ikona": "renesance_mona_lisa.jpg",
+  "strucne": "Znovuzrození antiky ve Florencii: perspektiva, anatomie, umělec jako svébytný tvůrce; Leonardo, Michelangelo, Raffael.",
+  "text": [
+   "Renesance (it. rinascimento – znovuzrození) není jen sloh, ale proměna myšlení: člověk už není utopen v anonymním moři věřících, ale je individuem. Bohaté italské městské státy (Florencie – Medicejští) obnovují zájem o antiku; po pádu Konstantinopole (1453) přicházejí do Itálie řečtí učenci. Rok 1492 (Kolumbus, dobytí Granady, tovačovský portál) bývá brán za začátek novověku. Kritické myšlení vede k objevům (Koperník, Kepler) i k reformaci (Hus, Luther 1517).",
+   "Brunelleschi objevuje lineární perspektivu a staví kupoli florentského dómu (1436), Alberti píše teorii, Masaccio maluje prostor, Donatello vrací nahou sochu (David). Vrcholná renesance (1500–1520): Leonardo (Poslední večeře, Mona Lisa, sfumato), Michelangelo (David, strop Sixtinské kaple 1508–12, Poslední soud), Raffael (Athénská škola), Bramante (sv. Petr). Benátky: Tizian, Giorgione, Tintoretto – barva a světlo. Zaalpská renesance: Dürer, Holbein, Bosch, Bruegel. Po roce 1520 manýrismus: protažené figury, umělá elegance, Arcimboldo, El Greco.",
+   "Hlavní symboly: horizontalita, úměrnost, lidské měřítko, kruh, proporce, vyváženost; perspektiva jedno-, dvou- a později tříúběžníková. Do Čech přichází renesance koncem 15. století (Tovačov 1492, Vladislavský sál) a vrcholí za Ferdinanda I. (Belveder) a Rudolfa II. (rudolfínský manýrismus: Arcimboldo, Spranger, de Vries). Zámky s arkádami a sgrafity (Litomyšl, Telč, Jindřichův Hradec, Bučovice) a Pardubice Pernštejnů."
+  ],
+  "znaky": [
+   "Lineární perspektiva, anatomie, proporce",
+   "Návrat antických řádů, kupole, horizontalita",
+   "Umělec jako individualita a vědec",
+   "Olejomalba, sfumato, portrét, akt",
+   "Sgrafito, arkádové nádvoří (u nás)"
+  ],
+  "oblasti": {
+   "architektura": "Brunelleschi (kupole, kaple Pazziů), Alberti, Bramante (Tempietto), Michelangelo (sv. Petr), Palladio (Villa Rotonda); Belveder, Hvězda, Litomyšl, Telč, Pardubice.",
+   "socharstvi": "Ghiberti (Rajská brána), Donatello (David, Gattamelata), Verrocchio, Michelangelo (David, Pieta, Mojžíš), Cellini, Giambologna, Adrien de Vries.",
+   "malirstvi": "Masaccio, Fra Angelico, Botticelli, Leonardo, Raffael, Michelangelo, Tizian, Dürer, Holbein, Bruegel, Bosch, El Greco; Mistr Litoměřického oltáře."
+  },
+  "faze": [
+   {
+    "nazev": "Raná (quattrocento)",
+    "kdy": "1400–1500"
+   },
+   {
+    "nazev": "Vrcholná",
+    "kdy": "1500–1520"
+   },
+   {
+    "nazev": "Pozdní – manýrismus",
+    "kdy": "1520–1600"
+   }
+  ],
+  "osobnosti": [
+   "Brunelleschi",
+   "Donatello",
+   "Botticelli",
+   "Leonardo da Vinci",
+   "Michelangelo",
+   "Raffael",
+   "Tizian",
+   "Dürer",
+   "Bruegel",
+   "Palladio",
+   "Arcimboldo"
+  ],
+  "cesko": "Tovačovský portál (1492), Vladislavský sál, Belveder (1538–63), letohrádek Hvězda, zámky Litomyšl, Telč, Bučovice, Jindřichův Hradec, Nelahozeves; Pardubice – Pernštejnské renesanční město a zámek; Rudolf II. a rudolfínští umělci.",
+  "pamatky": [
+   {
+    "img": "renesance_botticelli_venuse.jpg",
+    "nazev": "Botticelli: Zrození Venuše",
+    "popis": "Cca 1485, Uffizi – antický mýtus, linie a půvab rané renesance."
+   },
+   {
+    "img": "renesance_vitruvius.jpg",
+    "nazev": "Leonardo: Vitruviánský muž",
+    "popis": "Cca 1490 – proporce lidského těla vepsané do kruhu a čtverce; člověk jako míra."
+   },
+   {
+    "img": "renesance_posledni_vecere.jpg",
+    "nazev": "Leonardo: Poslední večeře",
+    "popis": "1495–98, Milán – jednoúběžníková perspektiva sbíhající se ke Kristově hlavě."
+   },
+   {
+    "img": "renesance_mona_lisa.jpg",
+    "nazev": "Leonardo: Mona Lisa",
+    "popis": "1503–06, Louvre – sfumato, psychologický portrét."
+   },
+   {
+    "img": "renesance_stvoreni_adama.jpg",
+    "nazev": "Michelangelo: Stvoření Adama",
+    "popis": "Strop Sixtinské kaple, 1508–12 – jiskra vědomí předaná prstem."
+   },
+   {
+    "img": "renesance_posledni_soud.jpg",
+    "nazev": "Michelangelo: Poslední soud",
+    "popis": "1536–41 – pozdní dílo, dramatický patos a manýristické napětí."
+   },
+   {
+    "img": "renesance_athenska_skola.jpg",
+    "nazev": "Raffael: Athénská škola",
+    "popis": "1509–11, Vatikán – Platón a Aristotelés uprostřed antických myslitelů; perspektiva a harmonie."
+   },
+   {
+    "img": "renesance_svaty_petr.jpg",
+    "nazev": "Bazilika sv. Petra",
+    "popis": "Bramante, Michelangelo (kupole 1547–90), Maderna; největší chrám křesťanstva."
+   },
+   {
+    "img": "renesance_palladio_rotonda.jpg",
+    "nazev": "Palladio: Villa Rotonda",
+    "popis": "Vicenza, 1567 – centrální vila s chrámovými portiky, vzor klasicismu."
+   },
+   {
+    "img": "renesance_tizian_assumpta.jpg",
+    "nazev": "Tizian: Nanebevzetí Panny Marie",
+    "popis": "1516–18, Benátky – barva a světlo benátské školy."
+   },
+   {
+    "img": "renesance_durer_autoportret.jpg",
+    "nazev": "Dürer: Autoportrét (1500)",
+    "popis": "Umělec zobrazený jako Kristus – sebevědomí renesančního tvůrce."
+   },
+   {
+    "img": "renesance_durer_zajic.jpg",
+    "nazev": "Dürer: Zajíc",
+    "popis": "1502, akvarel – vědecké pozorování přírody."
+   },
+   {
+    "img": "renesance_bruegel_hostina.jpg",
+    "nazev": "Bruegel: Selská svatba",
+    "popis": "1567, Vídeň – žánr, každodennost, humor zaalpské renesance."
+   },
+   {
+    "img": "renesance_bosch.jpg",
+    "nazev": "Bosch: Zahrada pozemských rozkoší",
+    "popis": "Cca 1490–1510, Prado – vize a hybridní tvorové na prahu novověku."
+   },
+   {
+    "img": "renesance_arcimboldo.jpg",
+    "nazev": "Arcimboldo: Rudolf II. jako Vertumnus",
+    "popis": "1591 – manýristická hra u pražského dvora."
+   },
+   {
+    "img": "renesance_belveder.jpg",
+    "nazev": "Letohrádek královny Anny (Belveder)",
+    "popis": "Praha, 1538–63 – nejčistší italská renesance severně od Alp."
+   }
+  ],
+  "jung": {
+   "postoj": 0.8,
+   "nazevPostoje": "Dynamická extraverze",
+   "funkce": "Vnímání & myšlení (Se-Te)",
+   "text": "Aktivace archetypu Otce a Hrdiny: Adam probuzený Božím prstem = probuzení ega z nevědomého spánku přírody. Emancipace umělce jako originálního stvořitele; perspektiva = rozum ovládající prostor. Manýrismus je první únavou a stínem tohoto sebevědomí (Bosch, Arcimboldo)."
+  },
+  "klima": "Renesance se rozvíjí navzdory nastupující malé době ledové (Sporerovo minimum 1460–1550) – bohatství italských měst ji vyvažuje; Bruegelovy zimní krajiny (1565) a chladné dekády konce století předznamenávají barokní krizi. Nová astronomie (Koperník 1543, Tycho 1572, Kepler v Praze).",
+  "udalosti": [
+   "mala_doba_ledova",
+   "supernova1572"
+  ],
+  "pales": "Renesance ještě patří marsovskému Samaelovi (do 1525 – boj, sebevědomí, condottieři), manýrismus a konec 16. století už měsíčnímu Gabrielovi (1525–1879) – duchu obraznosti, snů a fantazie (Arcimboldo, rudolfínské kabinety kuriozit)."
+ },
+ {
+  "id": "baroko",
+  "obdobi": "novovek",
+  "vrstva": "evropa",
+  "od": 1600,
+  "do": 1750,
+  "nazev": "Baroko",
+  "podtitul": "rané, vrcholné, pozdní",
+  "datace": "cca 1600 – 1750 (u nás 1620–1780)",
+  "ikona": "experiment_baroko.jpg",
+  "strucne": "Pohyb, světlo a cit: elipsa místo kruhu, iluze místo míry; poslední jednotný sloh celé Evropy, u nás sloh krajiny.",
+  "text": [
+   "Baroko (portug. pérola barroca – nepravidelná perla; původně posměšně) vzniká v Itálii kolem 1600 jako umělecký jazyk katolické obnovy po Tridentském koncilu a šíří se do celé Evropy i kolonií. Domýšlí renesanci (znaky má „geneticky uložené“), ale zároveň ji popírá: proti statickému kruhu staví dynamickou elipsu, proti míře iluzi a nekonečno, proti rozumu cit a extázi. Je to poslední univerzální sloh Evropy.",
+   "Znakem je Gesamtkunstwerk – prolnutí architektury, sochy a malby v jeden účinek: iluzivní stropní fresky otevírají nebe, štuk přechází v malbu, sochy se vlní v drapérii (Bernini: Extáze sv. Terezie). Stavby jsou komponovány k obcházení, s „point de vue“ – sochou či kaplí na ose pohledu. Světlo a stín (Caravaggio, Rembrandt), barevná dynamika (Rubens), ticho interiéru (Vermeer). Zároveň vznikají Newtonova Principia (1687) – nový, matematický pohled na nekonečný vesmír.",
+   "Historické pozadí: třicetiletá válka (1618–48), morové rány, malá doba ledová (Maunderovo minimum 1645–1715) – baroko je zároveň slohem krize a útěchy. V Čechách po Bílé hoře rekatolizace: Dientzenhoferové (sv. Mikuláš), Santini (barokní gotika – Zelená hora), Braun (Kuks), Brokoff (Karlův most), Škréta, Brandl, Reiner; české baroko je slohem krajiny (poutní místa, kapličky, aleje). Hlavní symboly: dynamika, kontrast, napětí, morové sloupy, zámořské kolonie, Newton."
+  ],
+  "znaky": [
+   "Dynamika, pohyb, elipsa, křivka",
+   "Iluzivní malba, světlo a stín (šerosvit)",
+   "Gesamtkunstwerk – prolnutí umění",
+   "Emotivnost, extáze, patos, protireformace",
+   "Stavby komponované do krajiny, zahrady s osou"
+  ],
+  "oblasti": {
+   "architektura": "Bernini (kolonáda sv. Petra), Borromini (San Carlo), Versailles (barokní klasicismus); Dientzenhoferové (sv. Mikuláš na Malé Straně), Santini (Zelená hora, Kladruby), Fischer von Erlach, Alliprandi (Kuks).",
+   "socharstvi": "Bernini (Apollón a Dafné, Extáze sv. Terezie), Puget; Braun (Ctnosti a Neřesti v Kuksu), Brokoff (Karlův most), morové sloupy.",
+   "malirstvi": "Caravaggio, Rubens, Rembrandt, Vermeer, Velázquez, Poussin, Tiepolo; Škréta, Brandl, Kupecký, Reiner (fresky), Hollar (grafika)."
+  },
+  "faze": [
+   {
+    "nazev": "Rané",
+    "kdy": "1600–1650"
+   },
+   {
+    "nazev": "Vrcholné",
+    "kdy": "1650–1720"
+   },
+   {
+    "nazev": "Pozdní (přechod k rokoku)",
+    "kdy": "1720–1750"
+   }
+  ],
+  "osobnosti": [
+   "Caravaggio",
+   "Bernini",
+   "Borromini",
+   "Rubens",
+   "Rembrandt",
+   "Vermeer",
+   "Velázquez",
+   "Dientzenhoferové",
+   "Santini",
+   "Braun",
+   "Brandl"
+  ],
+  "cesko": "Sv. Mikuláš na Malé Straně, Klementinum, Kuks, Zelená hora (Santini), Karlův most (sochy), Valdštejnský palác, poutní krajina; Pardubice – kostel sv. Bartoloměje a Zelená brána v barokních úpravách, Kunětická hora.",
+  "pamatky": [
+   {
+    "img": "baroko_bernini_terezie.jpg",
+    "nazev": "Bernini: Extáze sv. Terezie",
+    "popis": "Řím, Santa Maria della Vittoria, 1647–52 – mramor jako světlo a cit."
+   },
+   {
+    "img": "baroko_caravaggio.jpg",
+    "nazev": "Caravaggio: Povolání sv. Matouše",
+    "popis": "1600, Řím – šerosvit, světlo jako Boží zásah."
+   },
+   {
+    "img": "baroko_rembrandt.jpg",
+    "nazev": "Rembrandt: Noční hlídka",
+    "popis": "1642, Amsterdam – skupinový portrét v pohybu."
+   },
+   {
+    "img": "baroko_vermeer.jpg",
+    "nazev": "Vermeer: Dívka s perlou",
+    "popis": "Cca 1665, Haag – ticho a světlo holandského baroka."
+   },
+   {
+    "img": "baroko_mikulas.jpg",
+    "nazev": "Sv. Mikuláš na Malé Straně (interiér)",
+    "popis": "K. I. Dientzenhofer, 1703–1755 – vrchol pražského baroka; varhany, na něž hrál Mozart."
+   },
+   {
+    "img": "baroko_kuks.jpg",
+    "nazev": "Braun: Kuks – Ctnosti a Neřesti",
+    "popis": "1718–1720, hrabě Špork – barokní alegorie v krajině."
+   },
+   {
+    "img": "experiment_baroko.jpg",
+    "nazev": "Žákovský malířský experiment: baroko",
+    "popis": "Kája a Áďa – parafráze barokní malby (projekt Malířský experiment, SPŠE Pardubice)."
+   }
+  ],
+  "jung": {
+   "postoj": -0.3,
+   "nazevPostoje": "Introvertní cit v extravertní formě",
+   "funkce": "Cítění & intuice (Fi-Ni)",
+   "text": "Transcendentní a krizový cyklus: kompenzace válek, moru a chladu obratem k nebeskému spasení. Iluzivní kupole jako mandala, extáze jako setkání ega s Bytostným Já; šerosvit = vědomí uprostřed nevědomé temnoty. Zároveň extravertní okázalost moci (Versailles)."
+  },
+  "klima": "Vrchol malé doby ledové: Maunderovo minimum (1645–1715), kruté zimy, neúroda, hladomory, čarodějnické procesy, třicetiletá válka a mor (1680, 1713) – baroko jako útěcha a obraz nejistoty. Nová astronomie (Kepler, Galileo, Newton) ruší uzavřený vesmír.",
+  "udalosti": [
+   "mala_doba_ledova",
+   "supernova1572"
+  ],
+  "pales": "Baroko je jádrem měsíčního období Gabriela (1525–1879): duch obraznosti, mateřství (kult Madony), světla a stínu, biologie (mikroskop, Leeuwenhoek) – „inspirátorka baroka“."
+ },
+ {
+  "id": "rokoko",
+  "obdobi": "novovek",
+  "vrstva": "evropa",
+  "od": 1730,
+  "do": 1780,
+  "nazev": "Rokoko",
+  "podtitul": "sloh Ludvíka XV.",
+  "datace": "cca 1730 – 1780",
+  "ikona": "experiment_rokoko.jpg",
+  "strucne": "Lehkost, rokaj a pastel: hravý dozvuk baroka v salonech, zahradách a módě před Francouzskou revolucí.",
+  "text": [
+   "Rokoko (z fr. rocaille – rokaj, ornament připomínající mušli či ušní boltec) je dozvukem baroka ve druhé čtvrtině 18. století. Ve Francii je samostatným slohem dvora Ludvíka XV.; ve střední Evropě plynule navazuje na pozdní baroko. Slavnostní monumentalitu střídá lehký tón, úsměvnost a zdrobnělé měřítko: interiéry pokryté bílým a zlatým štukem, pastelové barvy, zrcadla, porcelán, hedvábí.",
+   "Malířství zobrazuje galantní slavnosti, lásku a hravost (Watteau, Boucher, Fragonard: Houpačka), ale i intimní zátiší (Chardin) a portréty (Gainsborough). Sochařství a užité umění: porcelán z Míšně a Sèvres, nábytek, móda s napudrovanými parukami. V Čechách rokoko doznívá v zámeckých interiérech (Dobříš, Nové Hrady) a v malbě Norberta Grunda.",
+   "Pod povrchem však roste rozkol mezi šlechtou, měšťanstvem a poddanými; osvícenství (Voltaire, Rousseau), americká nezávislost (1776) a Velká francouzská revoluce (1789) rokoko ukončí."
+  ],
+  "znaky": [
+   "Rokaj, asymetrický ornament",
+   "Pastelové barvy, bílá a zlatá",
+   "Intimní měřítko, salon, boudoir",
+   "Galantní témata, hravost, erotika",
+   "Porcelán, nábytek, móda"
+  ],
+  "oblasti": {
+   "architektura": "Amalienburg (Mnichov), Sanssouci (Postupim), Wies (Bavorsko), hotel de Soubise (Paříž); u nás zámek Dobříš, Nové Hrady u Litomyšle („české Versailles“).",
+   "socharstvi": "Falconet, Clodion; porcelánová plastika (Kändler, Míšeň); Ignác František Platzer.",
+   "malirstvi": "Watteau, Boucher, Fragonard, Chardin, Tiepolo, Gainsborough; Norbert Grund."
+  },
+  "faze": [
+   {
+    "nazev": "Régence",
+    "kdy": "1715–1730"
+   },
+   {
+    "nazev": "Rokoko Ludvíka XV.",
+    "kdy": "1730–1770"
+   },
+   {
+    "nazev": "Doznívání",
+    "kdy": "1770–1790"
+   }
+  ],
+  "osobnosti": [
+   "Watteau",
+   "Boucher",
+   "Fragonard",
+   "Chardin",
+   "madame de Pompadour",
+   "Norbert Grund"
+  ],
+  "cesko": "Zámek Nové Hrady u Litomyšle (1774–77), Dobříš, interiéry Pražského hradu (Marie Terezie), Norbert Grund, Platzerova dílna.",
+  "pamatky": [
+   {
+    "img": "rokoko_fragonard.jpg",
+    "nazev": "Fragonard: Houpačka",
+    "popis": "1767, Wallace Collection – galantní hravost rokoka."
+   },
+   {
+    "img": "rokoko_nove_hrady.jpg",
+    "nazev": "Zámek Nové Hrady",
+    "popis": "1774–1777, „české Versailles“ – rokokový zámek u Litomyšle."
+   },
+   {
+    "img": "experiment_rokoko.jpg",
+    "nazev": "Žákovský malířský experiment: rokoko",
+    "popis": "Adam Bartoníček – parafráze rokokového portrétu (SPŠE Pardubice)."
+   }
+  ],
+  "jung": {
+   "postoj": 0.4,
+   "nazevPostoje": "Extravertní cítění",
+   "funkce": "Cítění & vnímání",
+   "text": "Vysoce konvenční, společenské umění: emoce, které jsou v kultuře žádoucí – půvab, flirt, úsměv. Persona (společenská maska) aristokracie na vrcholu; potlačený Stín se vrátí v revoluci."
+  },
+  "klima": "Mírné oteplení po Maunderově minimu; Laki (1783) – sopečná mlha nad Evropou, neúroda a hladomor přispívající k revoluci 1789.",
+  "udalosti": [
+   "mala_doba_ledova"
+  ],
+  "pales": "Stále měsíční Gabriel (1525–1879): hravá obraznost, kult dětství (Rousseau: Emil) a mateřství, zahradní labyrinty a sny."
+ },
+ {
+  "id": "klasicismus",
+  "obdobi": "novovek",
+  "vrstva": "evropa",
+  "od": 1760,
+  "do": 1830,
+  "nazev": "Klasicismus a empír",
+  "podtitul": "osvícenství a Napoleon",
+  "datace": "cca 1760 – 1830",
+  "ikona": "klasicismus_pantheon.jpg",
+  "strucne": "Střízlivý rozum, antické vzory a jasný řád: sloh osvícenských dvorů, revoluce i Napoleonova císařství.",
+  "text": [
+   "Klasicismus se inspiruje antickým Římem (a po objevu Pompejí 1748 a Winckelmannových spisech i Řeckem) a zdůrazňuje střízlivý rozum, uměřenost a pravidelný řád. První fáze – barokní klasicismus Ludvíka XIV. (Versailles) – ještě patří baroku; nový klasicismus (louis-seize) přináší osvícenský absolutismus (josefinismus), Velká francouzská revoluce jej šíří k měšťanům a Napoleon z něj dělá empír – návrat k ideálům římské říše.",
+   "Architektura: sloupový portikus, tympanon, kupole, symetrie – Pantheon v Paříži, americký Kapitol, Brandenburská brána, u nás Stavovské divadlo (1783) a zámek Kačina. Malířství: David (Přísaha Horatiů, Smrt Marata), Ingres – hladká kresba, jasné obrysy; sochařství: Canova, Thorvaldsen – bílý mramor, ideální krása. Klasicismus bývá také řečí pevnosti a moci – proto se ve 20. století vrací jako sloh totalitních režimů.",
+   "Hlavním symbolem je monumentální veřejná budova s antickými prvky. V Pardubicích je klasicismus vidět v přestavbách po požárech 19. století a v empírové zástavbě."
+  ],
+  "znaky": [
+   "Antické řády, portikus, tympanon, kupole",
+   "Symetrie, jasný řád, střízlivost",
+   "Hladká kresba, ideální tělo, bílý mramor",
+   "Hrdinské a morální náměty (David)",
+   "Empír: Napoleon, orlice, vavřín"
+  ],
+  "oblasti": {
+   "architektura": "Soufflot (Pantheon), Langhans (Brandenburská brána), Jefferson (Monticello), Kapitol; Stavovské divadlo, Kačina, Terezín a Josefov (pevnostní města).",
+   "socharstvi": "Canova (Paolina Borghese, Amor a Psyché), Thorvaldsen, Houdon; Václav Prachner, František Xaver Lederer.",
+   "malirstvi": "Jacques-Louis David, Ingres, Angelica Kauffmann; u nás Josef Bergler, Antonín Machek."
+  },
+  "faze": [
+   {
+    "nazev": "Barokní klasicismus",
+    "kdy": "1660–1720"
+   },
+   {
+    "nazev": "Klasicismus (louis-seize)",
+    "kdy": "1760–1800"
+   },
+   {
+    "nazev": "Empír",
+    "kdy": "1800–1830"
+   }
+  ],
+  "osobnosti": [
+   "Winckelmann",
+   "Jacques-Louis David",
+   "Ingres",
+   "Canova",
+   "Soufflot",
+   "Napoleon Bonaparte"
+  ],
+  "cesko": "Stavovské divadlo, zámek Kačina (1802–22), Kynžvart, empírové domy v Pardubicích, pevnosti Terezín a Josefov, Prachnerův Vltava-Terezka.",
+  "pamatky": [
+   {
+    "img": "klasicismus_pantheon.jpg",
+    "nazev": "Pantheon (Paříž)",
+    "popis": "Soufflot, 1758–1790 – původně kostel sv. Jenovéfy, od revoluce hrobka velikánů."
+   },
+   {
+    "img": "klasicismus_kapitol.jpg",
+    "nazev": "Kapitol (Washington)",
+    "popis": "Od 1793 – antika jako výraz nové republiky."
+   },
+   {
+    "img": "klasicismus_david_horatiove.jpg",
+    "nazev": "David: Přísaha Horatiů",
+    "popis": "1784, Louvre – manifest klasicismu: řád, ctnost, jasná kompozice."
+   }
+  ],
+  "jung": {
+   "postoj": 0.6,
+   "nazevPostoje": "Extravertní myšlení",
+   "funkce": "Myšlení & vnímání (Te-Se)",
+   "text": "Vláda rozumu (osvícenství) a objektivního řádu; potlačený cit a fantazie se vrátí v romantismu jako kompenzace. Apollonský princip po dionýském baroku."
+  },
+  "klima": "Konec malé doby ledové se blíží, ale Laki (1783) a Tambora (1815) přinášejí studená léta; revoluce a napoleonské války otřásají Evropou.",
+  "udalosti": [
+   "tambora"
+  ],
+  "pales": "Gabrielovo měsíční období (1525–1879) je krátce prosvíceno „michaelským“ osvícenstvím v rytmu 72 let – Páleš popisuje střídání menších duchů uvnitř velkých období; rozum je zde ale střídán romantickou citovostí."
+ },
+ {
+  "id": "romantismus",
+  "obdobi": "stoleti19",
+  "vrstva": "evropa",
+  "od": 1790,
+  "do": 1850,
+  "nazev": "Romantismus",
+  "podtitul": "cit, individualita, trýzněná duše",
+  "datace": "cca 1790 – 1850",
+  "ikona": "romantismus_friedrich.jpg",
+  "strucne": "Proti rozumu cit, proti řádu tajemství: osamělý poutník v krajině, středověk, exotika a revoluce.",
+  "text": [
+   "Romantismus vzniká na přelomu 18. a 19. století jako reakce na monopol rozumu v osvícenství a strohost klasicismu. Jeho základními kameny jsou cit, individualita a duše – zejména trýzněná. Proti touze poznat staví touhu prožít, proti jasnému mystérium, proti racionalitě fantazii. Podněty hledá ve středověku (gotický román, rytířské časy, pohádky bratří Grimmů a Boženy Němcové) a v exotických zemích. „Kdo praví romantismus, praví umění moderní – intimita, duchovost, barva, touha po nekonečnu“ (Baudelaire).",
+   "Malířství: Caspar David Friedrich (Poutník nad mořem mlhy, 1818 – postava zády k divákovi před nekonečnem), Turner (bouře, západy slunce po výbuchu Tambory), Constable, Géricault (Vor Medúzy), Delacroix (Svoboda vede lid, 1830), Goya (Hrůzy války, černé malby). Architektura obnovuje gotiku (Westminsterský palác, Hluboká, Lednice). U nás Josef Mánes, Antonín Mánes, Josef Navrátil; hudebně Chopin, Schumann, Berlioz."
+  ],
+  "znaky": [
+   "Cit, nálada, subjektivita",
+   "Krajina jako zrcadlo duše, nekonečno, noc, bouře",
+   "Návrat ke středověku (novogotika), exotika, folklor",
+   "Hrdina, revoluce, samota, smrt",
+   "Barva a dynamika proti kresbě klasicismu"
+  ],
+  "oblasti": {
+   "architektura": "Novogotika: Westminsterský palác, Hluboká, Lednice, dostavba kolínského dómu; anglické parky.",
+   "socharstvi": "Rude (Marseillaisa), Barye (zvířata); u nás Václav Levý.",
+   "malirstvi": "Friedrich, Turner, Constable, Blake, Géricault, Delacroix, Goya; Josef Mánes, Josef Navrátil, Antonín Machek."
+  },
+  "faze": [
+   {
+    "nazev": "Preromantismus",
+    "kdy": "1770–1800"
+   },
+   {
+    "nazev": "Vrcholný",
+    "kdy": "1800–1840"
+   },
+   {
+    "nazev": "Pozdní / biedermeier",
+    "kdy": "1830–1850"
+   }
+  ],
+  "osobnosti": [
+   "C. D. Friedrich",
+   "W. Turner",
+   "E. Delacroix",
+   "T. Géricault",
+   "F. Goya",
+   "Josef Mánes",
+   "K. H. Mácha"
+  ],
+  "cesko": "Josef Mánes (kalendárium orloje 1866), Josef Navrátil, zámek Hluboká a Lednice, Mácha (Máj 1836), národní obrození.",
+  "pamatky": [
+   {
+    "img": "romantismus_friedrich.jpg",
+    "nazev": "C. D. Friedrich: Poutník nad mořem mlhy",
+    "popis": "1818, Hamburk – jedinec před nekonečnem; obraz individuace."
+   },
+   {
+    "img": "romantismus_delacroix.jpg",
+    "nazev": "Delacroix: Svoboda vede lid na barikády",
+    "popis": "1830, Louvre – červencová revoluce, barva a pohyb."
+   },
+   {
+    "img": "romantismus_turner.jpg",
+    "nazev": "Turner: Déšť, pára a rychlost",
+    "popis": "1844, Londýn – železnice v mlze; předchůdce impresionismu."
+   }
+  ],
+  "jung": {
+   "postoj": -0.7,
+   "nazevPostoje": "Introvertní cítění a intuice",
+   "funkce": "Cítění & intuice (Fi-Ni)",
+   "text": "Kompenzace osvícenského rozumu: návrat citu, nevědomí a přírody. Poutník zády k divákovi = absence Persony, hledání Self v mlze nevědomí. Objev snu, šílenství a Stínu (Goya)."
+  },
+  "klima": "Výbuch Tambory (1815) a „rok bez léta“ 1816: hladomor, Turnerovy ohnivé oblohy, Frankenstein; konec malé doby ledové kolem 1850.",
+  "udalosti": [
+   "tambora"
+  ],
+  "pales": "Vrchol měsíčního období Gabriela: obraznost, sen, noc, mateřská příroda, biologie (Darwin 1859) – romantismus je podle Páleše nejčistším projevem měsíčního ducha."
+ },
+ {
+  "id": "historismus",
+  "obdobi": "stoleti19",
+  "vrstva": "evropa",
+  "od": 1840,
+  "do": 1900,
+  "nazev": "Historismus",
+  "podtitul": "novogotika, novorenesance, novobaroko",
+  "datace": "cca 1840 – 1900",
+  "ikona": null,
+  "strucne": "Architektura 19. století si oblékla kostýmy minulých slohů: parlamenty, muzea, divadla a nádraží v novogotice či novorenesanci.",
+  "text": [
+   "Rostoucí průmyslová města potřebují nové typy staveb – nádraží, muzea, divadla, banky, školy – a hledají pro ně vhodný „historický“ kabát. Novogotika je vnímána jako národní a křesťanská (Westminsterský palác, dostavba sv. Víta), novorenesance jako sloh vzdělanosti a měšťanské reprezentace (Národní divadlo 1881, Národní muzeum 1890, Rudolfinum), novobaroko jako sloh okázalosti (Opera v Paříži). Vídeňská Ringstrasse ukazuje celou paletu vedle sebe.",
+   "Za historickou fasádou se skrývají nové materiály: litina, ocel a sklo (Křišťálový palác 1851, Eiffelova věž 1889, nádražní haly). Generace Národního divadla (Zítek, Schulz, Myslbek, Aleš, Ženíšek, Hynais) vytváří v Čechách umělecký program národa."
+  ],
+  "znaky": [
+   "Napodobení historických slohů",
+   "Nové typy staveb: muzeum, divadlo, nádraží",
+   "Litina, ocel, sklo za historickou fasádou",
+   "Reprezentace národa a měšťanstva",
+   "Akademická malba, historické obrazy"
+  ],
+  "oblasti": {
+   "architektura": "Westminsterský palác, Opera Garnier, Ringstrasse; Národní divadlo (Zítek), Národní muzeum (Schulz), Rudolfinum, sv. Vít (Mocker), pardubická radnice (1894).",
+   "socharstvi": "J. V. Myslbek (sv. Václav, Hudba), Bohuslav Schnirch (trigy na ND).",
+   "malirstvi": "Akademismus: Bouguereau, Makart; Aleš, Ženíšek, Hynais (opona ND), Brožík; prerafaelité v Anglii."
+  },
+  "faze": [
+   {
+    "nazev": "Romantický historismus",
+    "kdy": "1830–1860"
+   },
+   {
+    "nazev": "Přísný historismus",
+    "kdy": "1860–1890"
+   },
+   {
+    "nazev": "Pozdní / eklektismus",
+    "kdy": "1890–1910"
+   }
+  ],
+  "osobnosti": [
+   "Josef Zítek",
+   "Josef Schulz",
+   "J. V. Myslbek",
+   "Mikoláš Aleš",
+   "Vojtěch Hynais",
+   "Gottfried Semper"
+  ],
+  "cesko": "Národní divadlo (1868–83), Národní muzeum, Rudolfinum, dostavba sv. Víta (1873–1929); Pardubice – novorenesanční radnice (Jan Vejrych, 1894) a Zelená brána.",
+  "pamatky": [
+   {
+    "img": "historismus_narodni_divadlo.jpg",
+    "nazev": "Národní divadlo v Praze",
+    "popis": "Josef Zítek, 1868–1881 (po požáru znovu 1883) – novorenesance, „zlatá kaplička“."
+   },
+   {
+    "img": "historismus_pardubice_radnice.jpg",
+    "nazev": "Pardubická radnice",
+    "popis": "Jan Vejrych, 1892–1894 – novorenesance se sgrafity."
+   }
+  ],
+  "jung": {
+   "postoj": 0.3,
+   "nazevPostoje": "Extravertní cítění (konvence)",
+   "funkce": "Cítění & vnímání",
+   "text": "Persona 19. století: fasáda tradice skrývá průmyslovou realitu. Kompenzací je únik do idealizované minulosti; nevědomí se ohlásí v symbolismu a expresionismu."
+  },
+  "klima": "Konec malé doby ledové, průmyslová revoluce, růst měst, železnice; první měření skleníkového efektu (Tyndall 1859, Arrhenius 1896).",
+  "udalosti": [
+   "prumysl"
+  ],
+  "pales": "Konec Gabrielova období (do 1879) – idealizace minulosti a národní mytologie; rok 1879 podle Páleše přináší nástup slunečního Michaela (impresionismus, věda, elektřina)."
+ },
+ {
+  "id": "realismus",
+  "obdobi": "stoleti19",
+  "vrstva": "evropa",
+  "od": 1840,
+  "do": 1880,
+  "nazev": "Realismus",
+  "podtitul": "pravda bez idealizace",
+  "datace": "cca 1840 – 1880",
+  "ikona": "realismus_marak.jpg",
+  "strucne": "Skutečnost objektivně, bez iluzí a fantazie: sedláci, dělníci a krajina jako hlavní hrdinové obrazu.",
+  "text": [
+   "Realismus (lat. realis – skutečný) se dívá na svět objektivně, bez iluzí a idealizace – je opakem romantismu. Sílící materialistické a vědecké pojetí (Comte, Darwin, Marx) vede k zájmu o všední skutečnost, chudé a pracující lidi. Courbet vystavuje Kameníky (1849) a Pohřeb v Ornans v životní velikosti historického obrazu – skandál. Millet maluje sběračky klasů, Daumier karikatury měšťanstva, barbizonská škola krajinu v plenéru.",
+   "Na první místo se staví rozum a pozorování; fotografie (1839) mění pojetí obrazu. Objevují se nové stavební materiály – železo a sklo. U nás Karel Purkyně (zátiší), Soběslav Pinkas, krajináři Julius Mařák (Šumavský prales) a jeho škola, Antonín Chittussi; Josef Mánes na pomezí romantismu a realismu."
+  ],
+  "znaky": [
+   "Objektivní zobrazení bez idealizace",
+   "Všední, sociální témata",
+   "Krajina v plenéru (Barbizon)",
+   "Vliv fotografie a vědy",
+   "Železo a sklo v architektuře"
+  ],
+  "oblasti": {
+   "architektura": "Křišťálový palác (Paxton 1851), Eiffelova věž (1889), nádraží, tržnice – inženýrská architektura.",
+   "socharstvi": "Meunier (dělníci), Dalou; u nás Myslbek (realistické portréty).",
+   "malirstvi": "Courbet, Millet, Daumier, Corot, Menzel, Repin; Purkyně, Mařák, Chittussi, Pinkas."
+  },
+  "faze": [
+   {
+    "nazev": "Barbizonská škola",
+    "kdy": "1830–1870"
+   },
+   {
+    "nazev": "Courbetův realismus",
+    "kdy": "1848–1870"
+   },
+   {
+    "nazev": "Naturalismus",
+    "kdy": "1870–1890"
+   }
+  ],
+  "osobnosti": [
+   "Gustave Courbet",
+   "J.-F. Millet",
+   "Honoré Daumier",
+   "Karel Purkyně",
+   "Julius Mařák",
+   "Antonín Chittussi"
+  ],
+  "cesko": "Karel Purkyně, Julius Mařák (krajinářská škola na AVU), Chittussi; Mánesovo kalendárium na orloji (1866).",
+  "pamatky": [
+   {
+    "img": "realismus_marak.jpg",
+    "nazev": "Julius Mařák: Šumavský prales",
+    "popis": "Cca 1890 – česká krajinomalba realismu."
+   },
+   {
+    "img": "realismus_manes_orloj.jpg",
+    "nazev": "Josef Mánes: kalendárium orloje",
+    "popis": "1866, Staroměstský orloj – měsíce jako výjevy z venkovského života."
+   },
+   {
+    "img": "realismus_courbet.jpg",
+    "nazev": "Courbet: Kameníci",
+    "popis": "1849 (zničeno 1945) – dělníci v životní velikosti."
+   }
+  ],
+  "jung": {
+   "postoj": 0.7,
+   "nazevPostoje": "Extravertní vnímání",
+   "funkce": "Vnímání & myšlení (Se-Te)",
+   "text": "Fakta bez hodnocení: mimořádná citlivost na materiální realitu. Pozitivismus jako vědomý postoj; kompenzací bude symbolismus a expresionismus."
+  },
+  "klima": "Konec malé doby ledové (cca 1850), industrializace, uhlí a smog velkoměst; hladomory v Irsku (1845–49) a sociální otřesy (1848).",
+  "udalosti": [
+   "prumysl"
+  ],
+  "pales": "Předěl 1879: podle Páleše Michaelovo sluneční období přináší vědecký pohled na svět; realismus je jeho předzvěstí (Darwin, fotografie, pozitivismus)."
+ },
+ {
+  "id": "impresionismus",
+  "obdobi": "stoleti19",
+  "vrstva": "evropa",
+  "od": 1870,
+  "do": 1890,
+  "nazev": "Impresionismus",
+  "podtitul": "dojem, světlo, okamžik",
+  "datace": "1870 – 1890",
+  "ikona": "impresionismus_manet_bar.jpg",
+  "strucne": "Malba v plenéru, čisté barvy a rychlý rukopis zachycují neopakovatelný okamžik světla – konec akademického umění, začátek moderny.",
+  "text": [
+   "Impresionismus vzniká ve Francii jako reakce na ateliérovou akademickou malbu: cílem je malba v přírodě (plenér), zachycení okamžité atmosféry, proměnlivého světla a barevných odstínů. Název dal posměšně kritik Louis Leroy podle Monetova obrazu Imprese, východ slunce, vystaveného roku 1874 na první výstavě nezávislých malířů. Malíři používají čisté barvy vedle sebe (optické míchání), krátké tahy, odstraňují černou; využívají i fotografii.",
+   "Monet (série katedrál, lekníny), Renoir, Degas (baletky, pastel), Pissarro, Sisley, Berthe Morisot; předchůdcem je Manet (Snídaně v trávě, Bar ve Folies-Bergère 1882). Sochařství: Rodin (Myslitel, Občané z Calais). Prosazení impresionismu ukončilo akademickou tradici a otevřelo moderní umění. U nás Antonín Slavíček, Václav Radimský, Joža Uprka; hudebně Debussy."
+  ],
+  "znaky": [
+   "Plenér, okamžik, atmosféra",
+   "Čisté barvy, optické míchání, bez černé",
+   "Krátký, viditelný tah štětce",
+   "Moderní život: kavárny, nádraží, bulváry",
+   "Série téhož motivu v různém světle"
+  ],
+  "oblasti": {
+   "architektura": "Haussmannova Paříž, Eiffelova věž (1889), litinová nádraží – témata obrazů.",
+   "socharstvi": "Auguste Rodin (Myslitel, Polibek, Balzac), Medardo Rosso.",
+   "malirstvi": "Manet, Monet, Renoir, Degas, Pissarro, Sisley, Morisot, Cézanne (rané); Slavíček, Radimský, Uprka."
+  },
+  "faze": [
+   {
+    "nazev": "Předchůdci (Manet)",
+    "kdy": "1863–1870"
+   },
+   {
+    "nazev": "Výstavy impresionistů",
+    "kdy": "1874–1886"
+   },
+   {
+    "nazev": "Pozdní Monet",
+    "kdy": "1890–1926"
+   }
+  ],
+  "osobnosti": [
+   "Claude Monet",
+   "Édouard Manet",
+   "Renoir",
+   "Degas",
+   "Auguste Rodin",
+   "Antonín Slavíček"
+  ],
+  "cesko": "Antonín Slavíček (U nás v Kameničkách), Václav Radimský (žák Moneta), výstava Rodina v Praze 1902.",
+  "pamatky": [
+   {
+    "img": "impresionismus_manet_bar.jpg",
+    "nazev": "Manet: Bar ve Folies-Bergère",
+    "popis": "1882, Londýn – zrcadlo, moderní život, poslední Manetovo velké dílo."
+   },
+   {
+    "img": "experiment_impresionismus.jpg",
+    "nazev": "Žákovský malířský experiment: impresionismus",
+    "popis": "Kája Samková – parafráze Manetova Baru (SPŠE Pardubice)."
+   },
+   {
+    "img": "impresionismus_monet_imprese.jpg",
+    "nazev": "Monet: Imprese, východ slunce",
+    "popis": "1872, Musée Marmottan – obraz, který dal směru jméno."
+   }
+  ],
+  "jung": {
+   "postoj": 0.9,
+   "nazevPostoje": "Extravertní vnímání",
+   "funkce": "Vnímání (Se) & cítění",
+   "text": "Cele zaměřeno na vnější svět, přijímaný bez filtru: mistrovství prchavého okamžiku světla. Jednostrannost však vede k hledání hloubky – postimpresionismus a symbolismus jako kompenzace."
+  },
+  "klima": "Krakatoa (1883) barví oblohy; průmyslová revoluce, železnice a plyn mění světlo měst; Monet maluje londýnský smog.",
+  "udalosti": [
+   "krakatoa",
+   "prumysl"
+  ],
+  "pales": "Nástup slunečního Michaela (1879): impresionismus je doslova malbou světla; současně vzniká fyzika světla a elektřiny (Edison 1879, Maxwell)."
+ },
+ {
+  "id": "postimpresionismus",
+  "obdobi": "stoleti19",
+  "vrstva": "evropa",
+  "od": 1885,
+  "do": 1905,
+  "nazev": "Postimpresionismus",
+  "podtitul": "Cézanne, van Gogh, Gauguin, Seurat",
+  "datace": "1885 – 1905",
+  "ikona": null,
+  "strucne": "Za dojmem hledají strukturu (Cézanne), výraz (van Gogh), symbol (Gauguin) nebo vědu (Seurat) – čtyři cesty k modernímu umění.",
+  "text": [
+   "Postimpresionisté vycházejí z impresionismu, ale chtějí víc než dojem. Cézanne hledá pevný řád: „vše v přírodě se modeluje podle koule, kužele a válce“ (hora Sainte-Victoire, zátiší) – otec kubismu. Van Gogh vyjadřuje vášeň a úzkost expresivní barvou a tahem (Hvězdná noc 1889, Slunečnice) – otec expresionismu. Gauguin utíká na Tahiti k „primitivní“ jednoduchosti, plošné barvě a symbolu – otec fauvismu a symbolismu. Seurat rozkládá barvu vědecky do bodů (pointilismus, Neděle na Grande Jatte 1886).",
+   "Vedle nich Toulouse-Lautrec (plakát, kabaret), Henri Rousseau (naivní umění), symbolisté (Moreau, Redon, Munch: Výkřik 1893) a nabisté. Tato generace položila základy všech avantgard 20. století."
+  ],
+  "znaky": [
+   "Barva jako výraz, ne popis",
+   "Zjednodušení tvaru, plošnost, obrys",
+   "Struktura a geometrie (Cézanne)",
+   "Pointilismus (Seurat)",
+   "Symbol, exotika, subjektivita"
+  ],
+  "oblasti": {
+   "architektura": "—",
+   "socharstvi": "Gauguin (dřevořezby), Rodin (pozdní).",
+   "malirstvi": "Cézanne, van Gogh, Gauguin, Seurat, Signac, Toulouse-Lautrec, Munch, Rousseau, Redon."
+  },
+  "faze": [
+   {
+    "nazev": "Neoimpresionismus",
+    "kdy": "1886–1900"
+   },
+   {
+    "nazev": "Syntetismus / Pont-Aven",
+    "kdy": "1888–1895"
+   },
+   {
+    "nazev": "Symbolismus",
+    "kdy": "1885–1910"
+   }
+  ],
+  "osobnosti": [
+   "Paul Cézanne",
+   "Vincent van Gogh",
+   "Paul Gauguin",
+   "Georges Seurat",
+   "Edvard Munch",
+   "Toulouse-Lautrec"
+  ],
+  "cesko": "Výstava Edvarda Muncha v Praze 1905 podnítila vznik skupiny Osma; Jan Preisler, Antonín Hudeček (symbolismus a nálada).",
+  "pamatky": [
+   {
+    "img": "postimpresionismus_van_gogh.jpg",
+    "nazev": "Van Gogh: Hvězdná noc",
+    "popis": "1889, MoMA – expresivní tahy, nebe jako vír."
+   },
+   {
+    "img": "postimpresionismus_cezanne.jpg",
+    "nazev": "Cézanne: Hora Sainte-Victoire",
+    "popis": "1890–1906 – stavba obrazu z barevných ploch."
+   },
+   {
+    "img": "postimpresionismus_munch.jpg",
+    "nazev": "Munch: Výkřik",
+    "popis": "1893, Oslo – úzkost moderního člověka; rudá obloha (možná Krakatoa)."
+   }
+  ],
+  "jung": {
+   "postoj": -0.5,
+   "nazevPostoje": "Obrat k introverzi",
+   "funkce": "Intuice & cítění / myšlení (Cézanne)",
+   "text": "Barva a tvar přestávají popisovat objekt a stávají se nositeli vnitřního stavu subjektu – začátek introvertního proudu moderny. Van Gogh: setkání ega s přívalem nevědomí; Cézanne: introvertní myšlení hledá strukturu za jevy."
+  },
+  "klima": "Rudé oblohy po Krakatoe (1883); elektrifikace, telefon, nervozita fin de siècle.",
+  "udalosti": [
+   "krakatoa",
+   "prumysl"
+  ],
+  "pales": "Michaelovo období: hledání podstaty za jevy (Cézanne) a pravdy prožitku (van Gogh); Páleš spojuje Michaela s individuální cestou za pravdou."
+ },
+ {
+  "id": "secese",
+  "obdobi": "stoleti19",
+  "vrstva": "evropa",
+  "od": 1890,
+  "do": 1914,
+  "nazev": "Secese",
+  "podtitul": "Art nouveau, Jugendstil, symbolismus",
+  "datace": "1890 – 1914",
+  "ikona": null,
+  "strucne": "Poslední univerzální sloh: vlnící se linie, květiny, ornament a užité umění od plakátu po nábytek – Mucha, Klimt, Gaudí.",
+  "text": [
+   "Secese (lat. secessio – odštěpení; podle spolků, které se v Mnichově 1892 a Vídni 1897 oddělily od akademií; fr. Art nouveau, něm. Jugendstil) je mezinárodní sloh přelomu století a posledním Gesamtkunstwerkem, který vtiskl svůj řád všem projevům moderního života – od architektury po plakát a šperk. Vychází z hnutí Arts and Crafts Williama Morrise, z prerafaelitů a z japonského dřevořezu.",
+   "Hlavní znaky: ornamentálnost, plošnost, plynulá vlnící se křivka, stylizace přírodních tvarů (listy, květy, ženské tělo, vlasy), neobvyklé barevné odstíny a materiály (sklo, kov). Architektura: Victor Horta (Brusel), Hector Guimard (pařížské metro), Otto Wagner a Olbrich (Vídeň), Antoni Gaudí (Sagrada Família, park Güell), u nás Obecní dům (Balšánek, Polívka), Kotěra a Fanta. Malířství a grafika: Gustav Klimt (Polibek 1908), Alfons Mucha (plakáty pro Sarah Bernhardt, Slovanská epopej), František Bílek (sochař-mystik), Jan Preisler. Užité umění: Tiffany, Gallé, Mackintosh. Secesi ukončila první světová válka (1914)."
+  ],
+  "znaky": [
+   "Vlnící se linie, ornament, plošnost",
+   "Stylizace rostlin, žena, vlasy",
+   "Nové materiály: sklo, litina, keramika",
+   "Užité umění, plakát, reklama",
+   "Gesamtkunstwerk – jednotný styl života"
+  ],
+  "oblasti": {
+   "architektura": "Horta (dům Tassel), Guimard (metro), Gaudí (Sagrada Família, Casa Batlló), Wagner, Olbrich (Secese ve Vídni), Obecní dům v Praze, Fantova hala hlavního nádraží, Kotěra.",
+   "socharstvi": "František Bílek, Stanislav Sucharda, Ladislav Šaloun (pomník Jana Husa), Jan Štursa.",
+   "malirstvi": "Klimt, Mucha, Beardsley, Preisler, Švabinský, Toulouse-Lautrec (plakát), Munch (symbolismus)."
+  },
+  "faze": [
+   {
+    "nazev": "Raná (Arts and Crafts)",
+    "kdy": "1880–1895"
+   },
+   {
+    "nazev": "Vrcholná",
+    "kdy": "1895–1905"
+   },
+   {
+    "nazev": "Pozdní – geometrická (Wagner, Hoffmann)",
+    "kdy": "1905–1914"
+   }
+  ],
+  "osobnosti": [
+   "Alfons Mucha",
+   "Gustav Klimt",
+   "Antoni Gaudí",
+   "Victor Horta",
+   "Otto Wagner",
+   "Jan Kotěra",
+   "František Bílek"
+  ],
+  "cesko": "Obecní dům (1912), Fantova hala, hotel Central a Evropa, Kotěra (Národní dům v Prostějově), Mucha (okno ve sv. Vítu, Slovanská epopej); Pardubice – secesní domy na třídě Míru, Kotěrovo dílo v Hradci Králové.",
+  "pamatky": [
+   {
+    "img": "secese_mucha.jpg",
+    "nazev": "Mucha: plakát Gismonda",
+    "popis": "1894, litografie pro Sarah Bernhardt – „styl Mucha“ zrozen přes noc."
+   },
+   {
+    "img": "secese_klimt.jpg",
+    "nazev": "Klimt: Polibek",
+    "popis": "1907–08, Vídeň – zlato, ornament, symbol."
+   },
+   {
+    "img": "secese_gaudi.jpg",
+    "nazev": "Gaudí: Sagrada Família",
+    "popis": "Barcelona, od 1882 – organická architektura."
+   },
+   {
+    "img": "secese_obecni_dum.jpg",
+    "nazev": "Obecní dům v Praze",
+    "popis": "Balšánek a Polívka, 1905–1912 – vrchol české secese."
+   }
+  ],
+  "jung": {
+   "postoj": -0.2,
+   "nazevPostoje": "Vyrovnaná náladovost",
+   "funkce": "Cítění & vnímání",
+   "text": "Secesní linie se vyhýbá citovým výkyvům i silnému vypětí vůle – kompenzace strojového světa organickým ornamentem a archetypem ženy-přírody (Anima). Symbolismus otevírá dveře nevědomí."
+  },
+  "klima": "Elektřina, automobil, kino; vrchol industrializace a kolonialismu před válkou; první ekologické parky (Yellowstone 1872).",
+  "udalosti": [
+   "prumysl"
+  ],
+  "pales": "Michaelovo období (od 1879) v podání „ženského“ ornamentu – Páleš vidí v secesi doznívání gabrielského měsíčního citu uvnitř nastupujícího slunečního věku."
+ },
+ {
+  "id": "fauvismus",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1905,
+  "do": 1910,
+  "nazev": "Fauvismus",
+  "podtitul": "„divoké šelmy“",
+  "datace": "1905 – 1910",
+  "ikona": null,
+  "strucne": "Čistá, křiklavá barva osvobozená od skutečnosti: Matisse, Derain, Vlaminck – první avantgarda 20. století.",
+  "text": [
+   "Na Podzimním salonu 1905 v Paříži vystavila skupina kolem Henriho Matisse obrazy s tak divokými barvami, že je kritik Louis Vauxcelles nazval „les fauves“ – šelmy. Fauvisté navazují na Gauguina a van Gogha: barva nemá popisovat, ale vyjadřovat radost a energii; tvar se zjednodušuje, prostor se plošně rozkládá. Matisse: Radost ze života (1906), Tanec (1910). Fauvismus je krátký, ale osvobodil barvu pro celé 20. století; vychází ze stejných základů jako expresionismus – ten se prosadil v německy mluvících zemích, fauvismus ve Francii."
+  ],
+  "znaky": [
+   "Čistá, nemíchaná barva z tuby",
+   "Barva jako výraz, ne popis",
+   "Zjednodušený tvar, plošnost",
+   "Radost, dekorativnost, slunce jihu",
+   "Vliv Gauguina a van Gogha"
+  ],
+  "oblasti": {
+   "architektura": "—",
+   "socharstvi": "Matisse (reliéfy Zády), Derain.",
+   "malirstvi": "Matisse, Derain, Vlaminck, Dufy, Marquet, van Dongen."
+  },
+  "faze": [
+   {
+    "nazev": "Podzimní salon",
+    "kdy": "1905"
+   },
+   {
+    "nazev": "Vrchol",
+    "kdy": "1905–1908"
+   }
+  ],
+  "osobnosti": [
+   "Henri Matisse",
+   "André Derain",
+   "Maurice de Vlaminck",
+   "Raoul Dufy"
+  ],
+  "cesko": "Vliv fauvismu na skupinu Osma (Kubišta, Filla, Procházka) po roce 1907.",
+  "pamatky": [
+   {
+    "img": "fauvismus_matisse_tanec.jpg",
+    "nazev": "Matisse: Tanec",
+    "popis": "1910, Ermitáž – tři barvy, kruh, energie."
+   }
+  ],
+  "jung": {
+   "postoj": 0.5,
+   "nazevPostoje": "Extravertní cítění a vnímání",
+   "funkce": "Cítění & vnímání",
+   "text": "Dionýská radost barvy: smyslové splynutí s objektem (Einfühlung), ale už osvobozené od jeho popisu."
+  },
+  "klima": "Belle époque, automobil a letadlo (1903), Einstein 1905.",
+  "udalosti": [
+   "prumysl"
+  ],
+  "pales": "Sluneční Michael: barva světla jako čistá energie; podle Páleše nástup „slunečního“ jasu a intenzity v umění."
+ },
+ {
+  "id": "expresionismus",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1905,
+  "do": 1925,
+  "nazev": "Expresionismus",
+  "podtitul": "Die Brücke, Der Blaue Reiter, Osma",
+  "datace": "1905 – 1925",
+  "ikona": "kubismus_filla.jpg",
+  "strucne": "Výraz vnitřního prožitku bez ohledu na konvence: deformace, křiklavá barva, úzkost velkoměsta a války.",
+  "text": [
+   "Expresionismus vzniká jako protiklad impresionismu a naturalismu: odmítá zobrazovat skutečnost i dojem z ní, chce vyjádřit vlastní pocity a prožitky – pro zvýšení účinku deformuje realitu. Předchůdci jsou van Gogh, Munch a Ensor; skupiny Die Brücke (Drážďany 1905: Kirchner, Heckel, Nolde – dřevořez, velkoměsto, úzkost) a Der Blaue Reiter (Mnichov 1911: Kandinskij, Marc, Klee – cesta k abstrakci a duchovnu). Rakouský expresionismus: Schiele, Kokoschka.",
+   "Po první světové válce expresionismus vyjadřuje pocity úpadku, marnosti a beznaděje (Beckmann, Dix, Grosz); v Německu byl po roce 1933 označen za „zvrhlé umění“ (výstava Entartete Kunst 1937). V Čechách skupina Osma (1907: Filla, Kubišta, Procházka) reaguje na Muncha; Kubištův Sv. Šebestián (1912) spojuje expresi s kubismem. Expresionismus zasáhl i film (Kabinet doktora Caligariho), literaturu a hudbu."
+  ],
+  "znaky": [
+   "Deformace tvaru, expresivní barva",
+   "Vnitřní prožitek, úzkost, extáze",
+   "Dřevořez, hrubý rukopis",
+   "Velkoměsto, válka, sociální kritika",
+   "Cesta k abstrakci (Kandinskij)"
+  ],
+  "oblasti": {
+   "architektura": "Expresionistická architektura: Mendelsohn (Einsteinova věž 1921), Poelzig; u nás kubismus.",
+   "socharstvi": "Barlach, Lehmbruck; Otto Gutfreund (Úzkost 1911).",
+   "malirstvi": "Kirchner, Nolde, Heckel, Marc, Kandinskij, Klee, Schiele, Kokoschka, Beckmann, Dix; Kubišta, Filla, Procházka, Josef Váchal."
+  },
+  "faze": [
+   {
+    "nazev": "Die Brücke",
+    "kdy": "1905–1913"
+   },
+   {
+    "nazev": "Der Blaue Reiter",
+    "kdy": "1911–1914"
+   },
+   {
+    "nazev": "Poválečný / Nová věcnost",
+    "kdy": "1918–1933"
+   }
+  ],
+  "osobnosti": [
+   "E. L. Kirchner",
+   "Emil Nolde",
+   "Franz Marc",
+   "Egon Schiele",
+   "Oskar Kokoschka",
+   "Bohumil Kubišta",
+   "Emil Filla"
+  ],
+  "cesko": "Skupina Osma (1907–08), Kubišta, Filla (Zátiší 1914 – přechod ke kubismu), Váchal, Zrzavý; Kokoschka v Praze (1934–38).",
+  "pamatky": [
+   {
+    "img": "kubismus_filla.jpg",
+    "nazev": "Emil Filla: Zátiší (1914)",
+    "popis": "Člen Osmy na cestě od expresionismu ke kubismu."
+   },
+   {
+    "img": "expresionismus_kirchner.jpg",
+    "nazev": "Kirchner: Ulice, Berlín",
+    "popis": "1913, MoMA – nervozita velkoměsta."
+   },
+   {
+    "img": "expresionismus_kubista.jpg",
+    "nazev": "Kubišta: Sv. Šebestián",
+    "popis": "1912, Národní galerie – autoportrét jako mučedník."
+   }
+  ],
+  "jung": {
+   "postoj": -0.8,
+   "nazevPostoje": "Introvertní cítění",
+   "funkce": "Cítění & intuice (Fi-Ni)",
+   "text": "Deformace vnějšího světa dává průchod vnitřnímu výkřiku úzkosti traumatizované duše. Kompenzace odcizeného industriálního světa; setkání se Stínem války."
+  },
+  "klima": "První světová válka (1914–18), španělská chřipka (1918), inflace a krize; velkoměsto, elektrické světlo, hluk.",
+  "udalosti": [
+   "valky",
+   "prumysl"
+  ],
+  "pales": "Michaelovo období: Páleš zdůrazňuje jeho stinnou stránku – „zápas s drakem“ (sv. Michael) jako obraz válek 20. století a rozpad starých forem."
+ },
+ {
+  "id": "kubismus",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1907,
+  "do": 1920,
+  "nazev": "Kubismus",
+  "podtitul": "analytický, syntetický, český kubismus",
+  "datace": "1907 – 1920",
+  "ikona": null,
+  "strucne": "Rozklad skutečnosti do geometrických ploch viděných z více úhlů najednou: Picasso, Braque – a jedinečná česká kubistická architektura.",
+  "text": [
+   "Kubismus zahajuje Picassův obraz Avignonské slečny (1907) pod vlivem Cézanna a afrických masek. Picasso a Braque rozkládají předmět do geometrických faset a zobrazují ho z více úhlů současně (analytický kubismus, 1909–12, hnědošedá barevnost); pak skládají obraz z ploch, písma a koláže (syntetický kubismus, 1912–14). Kubismus mění pojetí obrazu: není oknem do světa, ale samostatnou konstrukcí – jako Einsteinův časoprostor.",
+   "Praha byla po Paříži druhým centrem: Skupina výtvarných umělců (1911), Filla, Kubišta, Čapek, Gutfreund (kubistické sochařství) – a jedinečný kubismus v architektuře a nábytku (Gočár: dům U Černé Matky Boží 1912, lázeňský dům v Bohdanči; Janák, Chochol), po válce rondokubismus (národní sloh; Gočárova Legiobanka)."
+  ],
+  "znaky": [
+   "Geometrický rozklad tvaru, fasety",
+   "Více pohledů najednou",
+   "Potlačená barva (analytický), koláž (syntetický)",
+   "Obraz jako konstrukce, ne iluze",
+   "Český kubismus v architektuře a designu"
+  ],
+  "oblasti": {
+   "architektura": "Josef Gočár (U Černé Matky Boží, lázně Bohdaneč), Pavel Janák, Josef Chochol (domy pod Vyšehradem) – jediná kubistická architektura na světě.",
+   "socharstvi": "Picasso (Hlava ženy 1909), Archipenko, Lipchitz; Otto Gutfreund.",
+   "malirstvi": "Picasso, Braque, Gris, Léger, Delaunay (orfismus); Filla, Kubišta, Čapek, Kupka (cesta k abstrakci)."
+  },
+  "faze": [
+   {
+    "nazev": "Protokubismus",
+    "kdy": "1907–1909"
+   },
+   {
+    "nazev": "Analytický",
+    "kdy": "1909–1912"
+   },
+   {
+    "nazev": "Syntetický",
+    "kdy": "1912–1919"
+   }
+  ],
+  "osobnosti": [
+   "Pablo Picasso",
+   "Georges Braque",
+   "Juan Gris",
+   "Emil Filla",
+   "Otto Gutfreund",
+   "Josef Gočár",
+   "Pavel Janák"
+  ],
+  "cesko": "Dům U Černé Matky Boží (1912), Kovařovicova vila (Chochol), lázeňský dům v Lázních Bohdaneč u Pardubic (Gočár 1913), kubistický nábytek (Artěl), Gutfreundova Úzkost.",
+  "pamatky": [
+   {
+    "img": "kubismus_picasso.jpg",
+    "nazev": "Picasso: Tři hudebníci",
+    "popis": "1921, MoMA – syntetický kubismus: plošné tvary jako koláž. (Avignonské slečny z r. 1907, jimiž kubismus začal, jsou dosud autorsky chráněné.)"
+   },
+   {
+    "img": "kubismus_gocar.jpg",
+    "nazev": "Gočár: dům U Černé Matky Boží",
+    "popis": "Praha, 1911–12 – kubistická architektura."
+   },
+   {
+    "img": "kubismus_bohdanec.jpg",
+    "nazev": "Gočár: lázeňský dům v Bohdanči",
+    "popis": "1913 – kubismus u Pardubic."
+   }
+  ],
+  "jung": {
+   "postoj": -0.6,
+   "nazevPostoje": "Introvertní myšlení",
+   "funkce": "Myšlení & intuice (Ti-Ni)",
+   "text": "Podrobení vnější reality myšlenkové dekonstrukci: konceptuální umění redukované na esenciální struktury. Odpovídá nové fyzice (relativita, atom) – rozklad hmoty na struktury."
+  },
+  "klima": "Einsteinova relativita (1905, 1915), rentgen, letadlo – prostor a čas se relativizují; předválečné napětí.",
+  "udalosti": [
+   "prumysl",
+   "valky"
+  ],
+  "pales": "Michaelovo sluneční období: podle Páleše doba analýzy, fyziky a hledání struktury – kubismus jako výtvarný protějšek teorie relativity a atomové fyziky."
+ },
+ {
+  "id": "futurismus",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1909,
+  "do": 1918,
+  "nazev": "Futurismus",
+  "podtitul": "rychlost, stroj, dynamika",
+  "datace": "1909 – 1918",
+  "ikona": null,
+  "strucne": "Italská avantgarda oslavující rychlost, techniku, hluk továren a válku: obraz má zachytit pohyb sám.",
+  "text": [
+   "Marinettiho Futuristický manifest (1909) hlásá: „Řvoucí automobil je krásnější než Níké Samothrácká.“ Futuristé (Boccioni, Balla, Carrà, Severini, architekt Sant'Elia) chtějí zachytit dynamiku moderního života – pohyb rozkládají do fází (Balla: Dynamismus psa na vodítku), vytvářejí „silové linie“ a obdivují stroj, elektřinu i válku jako „hygienu světa“. Boccioniho socha Jedinečné formy kontinuity v prostoru (1913) je ikonou směru. Válka mnohé z nich zahubila a hnutí se později propojilo s fašismem. Vliv: ruský kubofuturismus, vorticismus, u nás Bohumil Kubišta a raný Kupka."
+  ],
+  "znaky": [
+   "Pohyb, rychlost, simultánnost",
+   "Stroj, automobil, město, elektřina",
+   "Silové linie, rozfázování pohybu",
+   "Manifesty, provokace, typografie",
+   "Oslava války a techniky"
+  ],
+  "oblasti": {
+   "architektura": "Antonio Sant'Elia (vize Città Nuova, 1914) – nerealizované návrhy.",
+   "socharstvi": "Umberto Boccioni (Jedinečné formy kontinuity v prostoru).",
+   "malirstvi": "Boccioni, Balla, Carrà, Severini, Russolo."
+  },
+  "faze": [
+   {
+    "nazev": "Manifest",
+    "kdy": "1909"
+   },
+   {
+    "nazev": "Vrchol",
+    "kdy": "1910–1915"
+   },
+   {
+    "nazev": "Druhý futurismus",
+    "kdy": "1918–1930"
+   }
+  ],
+  "osobnosti": [
+   "F. T. Marinetti",
+   "Umberto Boccioni",
+   "Giacomo Balla",
+   "Antonio Sant'Elia"
+  ],
+  "cesko": "Kubišta (Vlak v horách), Kupka (Klávesy piana), Devětsil a poetismus přejímají fascinaci technikou.",
+  "pamatky": [
+   {
+    "img": "futurismus_boccioni.jpg",
+    "nazev": "Boccioni: Jedinečné formy kontinuity v prostoru",
+    "popis": "1913, bronz – pohyb ztělesněný."
+   }
+  ],
+  "jung": {
+   "postoj": 0.9,
+   "nazevPostoje": "Hyper-extraverze",
+   "funkce": "Vnímání & myšlení (Se-Te)",
+   "text": "Extravertní proud moderny: plné ztotožnění s technologickou realitou a její dynamikou. Stín – oslava války – ukazuje nebezpečí jednostrannosti bez vnitřní reflexe."
+  },
+  "klima": "Automobil, letadlo, elektrifikace, první světová válka.",
+  "udalosti": [
+   "prumysl",
+   "valky"
+  ],
+  "pales": "Michaelovo období – Páleš: sluneční duch přináší energii, rychlost a technický rozum; futurismus je jeho nekritickou oslavou."
+ },
+ {
+  "id": "abstrakce",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1910,
+  "do": 1930,
+  "nazev": "Počátky abstrakce",
+  "podtitul": "Kandinskij, Kupka, Malevič, Mondrian, af Klint",
+  "datace": "1910 – 1930",
+  "ikona": "abstrakce_af_klint.jpg",
+  "strucne": "Obraz bez předmětu: barva a tvar jako hudba nebo duchovní zákon – Kupka, Kandinskij, Malevič, Mondrian.",
+  "text": [
+   "Kolem roku 1910 několik umělců nezávisle opouští předmět. Václav Kandinskij (Mnichov) maluje první abstraktní akvarel a píše O duchovnosti v umění (1911): barva má znít jako hudba. František Kupka vystavuje v Paříži 1912 Amorfu – dvoubarevnou fugu, první abstraktní obraz na Podzimním salonu. Švédka Hilma af Klint maluje své spirituální diagramy už od roku 1906, ale utajuje je. Kazimir Malevič vystaví 1915 Černý čtverec (suprematismus – „nula formy“), Piet Mondrian dospívá k mřížce základních barev (neoplasticismus, De Stijl 1917).",
+   "Společným zdrojem je hledání duchovní podstaty za viditelným světem (teosofie, hudba, matematika) uprostřed rozpadu starého světa ve válce. Abstrakce se pak rozvíjí do geometrické (Bauhaus, konstruktivismus) a lyrické (Kandinského pozdní dílo, Klee) linie."
+  ],
+  "znaky": [
+   "Bez předmětu – čistá barva, linie, tvar",
+   "Analogie s hudbou (fuga, kompozice)",
+   "Duchovní a teosofické zdroje",
+   "Geometrická × lyrická abstrakce",
+   "Mandala, kruh, čtverec, mřížka"
+  ],
+  "oblasti": {
+   "architektura": "De Stijl (Rietveld: dům Schröderové 1924).",
+   "socharstvi": "Brâncuși (Nekonečný sloup, Pták v prostoru), Pevsner, Gabo.",
+   "malirstvi": "Kandinskij, Kupka, Malevič, Mondrian, af Klint, Klee, Delaunay."
+  },
+  "faze": [
+   {
+    "nazev": "Průkopníci",
+    "kdy": "1906–1914"
+   },
+   {
+    "nazev": "Suprematismus / De Stijl",
+    "kdy": "1915–1925"
+   },
+   {
+    "nazev": "Bauhaus",
+    "kdy": "1919–1933"
+   }
+  ],
+  "osobnosti": [
+   "František Kupka",
+   "Vasilij Kandinskij",
+   "Kazimir Malevič",
+   "Piet Mondrian",
+   "Hilma af Klint",
+   "Paul Klee"
+  ],
+  "cesko": "František Kupka (Amorfa 1912) – jeden ze zakladatelů světové abstrakce; Zdeněk Pešánek (světelná kinetika).",
+  "pamatky": [
+   {
+    "img": "abstrakce_af_klint.jpg",
+    "nazev": "Hilma af Klint: Labuť č. 17",
+    "popis": "1915 – kruh jako mandala sjednocující protiklady; dílo utajené až do 80. let."
+   },
+   {
+    "img": "abstrakce_kupka.jpg",
+    "nazev": "Kupka: Amorfa – Dvoubarevná fuga",
+    "popis": "1912, Národní galerie – první veřejně vystavená abstrakce."
+   },
+   {
+    "img": "abstrakce_malevic.jpg",
+    "nazev": "Malevič: Černý čtverec",
+    "popis": "1915, Petrohrad – „nula formy“, ikona nové doby."
+   }
+  ],
+  "jung": {
+   "postoj": -0.9,
+   "nazevPostoje": "Introvertní intuice a myšlení",
+   "funkce": "Intuice & myšlení (Ni-Ti)",
+   "text": "Rezignace na vnější objekt ve prospěch čistých duchovních sil – archetyp kosmického řádu. Kruhy a mřížky fungují jako mandaly integrující protiklady v době totální destrukce vnějších hodnot (válka)."
+  },
+  "klima": "První světová válka, ruská revoluce (1917), atomová fyzika (Bohr 1913) – rozpad hmoty i společnosti.",
+  "udalosti": [
+   "valky"
+  ],
+  "pales": "Michael jako duch Slunce a pravdy: podle Páleše hledání „čisté ideje“ (Platón v antickém Michaelovi, abstrakce v moderním) – geometrie jako řeč ducha."
+ },
+ {
+  "id": "dada",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1916,
+  "do": 1923,
+  "nazev": "Dadaismus",
+  "podtitul": "anti-umění, náhoda, provokace",
+  "datace": "1916 – 1923",
+  "ikona": null,
+  "strucne": "Odpověď na absurditu války: náhoda, nonsens, koláž a ready-made – Duchampova Fontána mění definici umění.",
+  "text": [
+   "V curyšském Cabaret Voltaire (1916) zakládají Hugo Ball, Tristan Tzara a Hans Arp hnutí, jehož jméno vybrali náhodně ze slovníku. Dada odmítá logiku, rozum a kulturu, které vedly k válce: zvukové básně, koláž z náhodně padajících papírů (Arp), fotomontáž (Hausmann, Höch, Heartfield), performance. Marcel Duchamp vystavuje pisoár jako Fontánu (1917) – ready-made: uměním je to, co za umění prohlásí umělec. Kurt Schwitters staví Merz z odpadků.",
+   "Dada se šíří do Berlína, Paříže a New Yorku a kolem 1923 se mění v surrealismus. Jeho odkaz – náhoda, ready-made, ironie, happening – žije v celém umění 20. a 21. století (Cattelanův banán 2019)."
+  ],
+  "znaky": [
+   "Anti-umění, nonsens, náhoda",
+   "Ready-made, koláž, fotomontáž",
+   "Performance, kabaret, manifest",
+   "Ironie a provokace",
+   "Reakce na válku"
+  ],
+  "oblasti": {
+   "architektura": "—",
+   "socharstvi": "Duchamp (Fontána, Kolo od bicyklu), Arp (biomorfní reliéfy), Schwitters (Merzbau).",
+   "malirstvi": "Picabia, Ernst (koláže), Höch, Hausmann, Heartfield (fotomontáž)."
+  },
+  "faze": [
+   {
+    "nazev": "Curych",
+    "kdy": "1916–1919"
+   },
+   {
+    "nazev": "Berlín / Paříž / New York",
+    "kdy": "1918–1923"
+   }
+  ],
+  "osobnosti": [
+   "Marcel Duchamp",
+   "Tristan Tzara",
+   "Hans Arp",
+   "Kurt Schwitters",
+   "Hannah Höch"
+  ],
+  "cesko": "Dadaistické prvky v Devětsilu a poetismu (Teige, Nezval, Štyrský), Osvobozené divadlo (Voskovec a Werich).",
+  "pamatky": [
+   {
+    "img": "dada_duchamp.jpg",
+    "nazev": "Duchamp: Fontána",
+    "popis": "1917 (replika) – ready-made, který změnil definici umění."
+   }
+  ],
+  "jung": {
+   "postoj": -0.4,
+   "nazevPostoje": "Trickster",
+   "funkce": "Intuice (Ne) & myšlení",
+   "text": "Archetyp šibala (trickstera): převrácení hodnot, náhoda jako hlas nevědomí. Kompenzace kolektivní hrůzy z války smíchem a absurditou; alchymistické nigredo – rozklad starých forem."
+  },
+  "klima": "První světová válka, curyšská neutralita, španělská chřipka.",
+  "udalosti": [
+   "valky"
+  ],
+  "pales": "Michaelův „zápas s drakem“: Páleš spojuje s tímto obdobím krizi hodnot a nutnost individuálního rozhodování; dada je protestem rozumu proti rozumu."
+ },
+ {
+  "id": "konstruktivismus",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1917,
+  "do": 1939,
+  "nazev": "Konstruktivismus, Bauhaus a funkcionalismus",
+  "podtitul": "umění pro novou společnost",
+  "datace": "1917 – 1939",
+  "ikona": null,
+  "strucne": "Umění jako inženýrství: ruský konstruktivismus, Bauhaus a funkcionalistická architektura – forma sleduje funkci.",
+  "text": [
+   "Po ruské revoluci chtějí Tatlin (Věž III. internacionály 1919), Rodčenko, El Lisickij a Stěpanovová stavět nový svět: umění má být konstrukcí, užitečnou jako stroj – plakát, typografie, oděv, architektura. Bauhaus (Výmar 1919, Dessau 1925; Gropius, Mies van der Rohe; učitelé Kandinskij, Klee, Moholy-Nagy, Albers) propojuje řemeslo, umění a průmysl; jeho design (Breuerova židle, Wagenfeldova lampa) dodnes platí. De Stijl (Mondrian, Rietveld) redukuje na pravý úhel a základní barvy.",
+   "Funkcionalismus (Le Corbusier: „dům je stroj na bydlení“, pět bodů architektury; vila Savoye 1931) se stává mezinárodním stylem. Československo patří k jeho velmocím: Brno (vila Tugendhat 1930 – Mies), Praha (Veletržní palác, Baba), Zlín (Baťa), Hradec Králové (Gočár, Kotěra) a Pardubice (Krematorium Pavla Janáka 1923 – rondokubismus; funkcionalistické Grand hotel Josefa Gočára 1931, budova Průmyslového muzea). Nacisté uzavřeli Bauhaus roku 1933."
+  ],
+  "znaky": [
+   "Forma sleduje funkci, bez ornamentu",
+   "Nové materiály: beton, ocel, sklo",
+   "Geometrie, pravý úhel, základní barvy",
+   "Typografie, fotomontáž, design",
+   "Sociální program – bydlení pro všechny"
+  ],
+  "oblasti": {
+   "architektura": "Gropius (Bauhaus Dessau), Mies (Tugendhat, Barcelonský pavilon), Le Corbusier (Savoye), Rietveld; Fuchs (Brno), Havlíček a Honzík (Všeobecný penzijní ústav), Gočár (Hradec Králové, Grand hotel Pardubice), Krejcar, Baťa Zlín.",
+   "socharstvi": "Tatlin, Gabo, Pevsner, Moholy-Nagy (světelný modulátor); Pešánek.",
+   "malirstvi": "Malevič, Lisickij, Rodčenko (fotografie, plakát), Mondrian, Albers, Klee; Sutnar (design), Teige (typografie)."
+  },
+  "faze": [
+   {
+    "nazev": "Ruský konstruktivismus",
+    "kdy": "1917–1930"
+   },
+   {
+    "nazev": "Bauhaus",
+    "kdy": "1919–1933"
+   },
+   {
+    "nazev": "Mezinárodní styl / funkcionalismus",
+    "kdy": "1925–1939"
+   }
+  ],
+  "osobnosti": [
+   "Vladimir Tatlin",
+   "El Lisickij",
+   "Walter Gropius",
+   "Mies van der Rohe",
+   "Le Corbusier",
+   "Bohuslav Fuchs",
+   "Josef Gočár",
+   "Karel Teige"
+  ],
+  "cesko": "Vila Tugendhat (UNESCO), Veletržní palác, osada Baba, Zlín, Gočárův Hradec Králové; Pardubice – Grand hotel (Gočár 1931), Janákovo krematorium (1923), automatické mlýny (Gočár 1910, dnes galerie).",
+  "pamatky": [
+   {
+    "img": "funkcionalismus_tugendhat.jpg",
+    "nazev": "Vila Tugendhat (Brno)",
+    "popis": "Mies van der Rohe, 1929–30 – ikona funkcionalismu, UNESCO."
+   },
+   {
+    "img": "funkcionalismus_grand_pardubice.jpg",
+    "nazev": "Gočár: Grand hotel Pardubice",
+    "popis": "1927–31 – funkcionalismus v našem městě."
+   },
+   {
+    "img": "konstruktivismus_tatlin.jpg",
+    "nazev": "Tatlin: Věž III. internacionály",
+    "popis": "Model 1919–20 – nikdy nepostavená spirála nové doby."
+   }
+  ],
+  "jung": {
+   "postoj": 0.8,
+   "nazevPostoje": "Extravertní myšlení",
+   "funkce": "Myšlení & vnímání (Te-Se)",
+   "text": "Racionální propojení umění s průmyslem a sociálním inženýrstvím za účelem transformace vnější společnosti. Persona nové doby; stín – totalitní zneužití (stalinismus, nacismus)."
+  },
+  "klima": "Meziválečná průmyslová Evropa, hospodářská krize (1929), nástup totalit; elektrifikace, rozhlas, sériová výroba (Ford).",
+  "udalosti": [
+   "valky",
+   "prumysl"
+  ],
+  "pales": "Michael jako duch rozumu a techniky – Páleš: sluneční jasnost, geometrie a „stroj“ jako ideál; zároveň varuje před ztrátou duše (kompenzace v surrealismu)."
+ },
+ {
+  "id": "parizska_skola",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1905,
+  "do": 1940,
+  "nazev": "Pařížská škola a naivní umění",
+  "podtitul": "Modigliani, Chagall, Soutine, Rousseau",
+  "datace": "1905 – 1940",
+  "ikona": null,
+  "strucne": "Cizinci na Montparnassu: osobité, nezařaditelné hlasy moderny – a vedle nich „naivní“ celník Rousseau.",
+  "text": [
+   "Pojem Pařížská škola (École de Paris) označuje umělce z celého světa, kteří se před válkou a mezi válkami usadili v Paříži (Montmartre, Montparnasse) a tvořili mimo hlavní směry: Amedeo Modigliani (protáhlé portréty a akty), Marc Chagall (židovská Vitebsk, létající milenci, sen), Chaim Soutine (expresivní krajiny a poražené býčí maso), Kupka, Šíma, Foujita, Brâncuși (sochy redukované na čistý tvar). Spojuje je lyrika, subjektivita a nezávislost.",
+   "Naivní umění (Henri Rousseau zvaný Celník: Sen 1910, džungle; u nás Josef Lada, později Zbyněk Sekal) je tvorba školených samouků s dětskou bezprostředností, kterou avantgarda objevila a obdivovala jako čistý zdroj."
+  ],
+  "znaky": [
+   "Osobitý styl mimo směry",
+   "Lyrika, sen, melancholie",
+   "Portrét a figura (Modigliani)",
+   "Naivní umění: bezprostřednost, detail",
+   "Multikulturní Paříž"
+  ],
+  "oblasti": {
+   "architektura": "—",
+   "socharstvi": "Brâncuși, Modigliani (hlavy), Zadkine.",
+   "malirstvi": "Modigliani, Chagall, Soutine, Utrillo, Foujita, Rousseau, Šíma, Kars."
+  },
+  "faze": [
+   {
+    "nazev": "Před válkou (Montmartre)",
+    "kdy": "1905–1914"
+   },
+   {
+    "nazev": "Mezi válkami (Montparnasse)",
+    "kdy": "1918–1940"
+   }
+  ],
+  "osobnosti": [
+   "Amedeo Modigliani",
+   "Marc Chagall",
+   "Chaim Soutine",
+   "Constantin Brâncuși",
+   "Henri Rousseau",
+   "Josef Šíma"
+  ],
+  "cesko": "Josef Šíma, Georges Kars, Kupka v Paříži; Josef Lada jako český naivní klasik.",
+  "pamatky": [
+   {
+    "img": "naivni_rousseau.jpg",
+    "nazev": "Rousseau: Sen",
+    "popis": "1910, MoMA – naivní džungle a měsíční svit."
+   },
+   {
+    "img": "parizska_chagall.jpg",
+    "nazev": "Chagall: Já a vesnice",
+    "popis": "1911, MoMA – sen a vzpomínka."
+   }
+  ],
+  "jung": {
+   "postoj": -0.5,
+   "nazevPostoje": "Introvertní cítění",
+   "funkce": "Cítění & intuice",
+   "text": "Intimní lyrický projev, poezie forem – introvertní citový typ, který se nepodřizuje davu ani programu. Naivní umění = přímý přístup k dětské, nezkažené obraznosti."
+  },
+  "klima": "Meziválečná Paříž, emigrace z východní Evropy, krize 30. let.",
+  "udalosti": [
+   "valky"
+  ],
+  "pales": "Michaelovo období viděné z „měsíční“ strany: sen a lyrika Chagalla jako kompenzace slunečního racionalismu."
+ },
+ {
+  "id": "surrealismus",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1924,
+  "do": 1950,
+  "nazev": "Surrealismus",
+  "podtitul": "sen, nevědomí, náhodné setkání",
+  "datace": "1924 – 1950",
+  "ikona": "surrealismus_magritte.jpg",
+  "strucne": "Umění inspirované psychoanalýzou: sen, automatismus, nadskutečnost – Dalí, Magritte, Ernst, Miró, Toyen a Štyrský.",
+  "text": [
+   "André Breton vydává roku 1924 Manifest surrealismu: „čistý psychický automatismus“ má vyjádřit skutečné fungování myšlení bez kontroly rozumu. Zdrojem je Freud (sen, nevědomí, potlačené touhy) a dada. Dvě linie: automatická a biomorfní (Miró, Masson, Ernstova frotáž a koláž) a veristická – přesně malované snové výjevy (Dalí: Persistence paměti 1931, „paranoicko-kritická metoda“; Magritte: Syn člověka, Zrada obrazů – „Toto není dýmka“; Delvaux). Sochařství: Giacometti, Oppenheimová (Snídaně v kožešině), objekty.",
+   "Praha měla po Paříži nejsilnější skupinu: Surrealistická skupina v ČSR (1934: Štyrský, Toyen, Nezval, Teige; Breton v Praze 1935). Surrealismus přežil válku v exilu a jeho obraznost prostoupila film (Buñuel, Švankmajer), reklamu i popkulturu."
+  ],
+  "znaky": [
+   "Sen, nevědomí, psychoanalýza",
+   "Automatismus, náhoda, frotáž, koláž",
+   "Veristická snová malba (Dalí, Magritte)",
+   "Objekt, „náhodné setkání“ nesouvisejících věcí",
+   "Erotika, humor, tajemství"
+  ],
+  "oblasti": {
+   "architektura": "—",
+   "socharstvi": "Giacometti, Arp, Oppenheimová, objekty (Dalí: Telefon-humr).",
+   "malirstvi": "Dalí, Magritte, Ernst, Miró, Tanguy, Delvaux, de Chirico (metafyzická malba); Štyrský, Toyen, Šíma, Muzika."
+  },
+  "faze": [
+   {
+    "nazev": "Manifest a automatismus",
+    "kdy": "1924–1929"
+   },
+   {
+    "nazev": "Veristický surrealismus",
+    "kdy": "1929–1939"
+   },
+   {
+    "nazev": "Válka a exil",
+    "kdy": "1939–1950"
+   }
+  ],
+  "osobnosti": [
+   "André Breton",
+   "Salvador Dalí",
+   "René Magritte",
+   "Max Ernst",
+   "Joan Miró",
+   "Toyen",
+   "Jindřich Štyrský"
+  ],
+  "cesko": "Surrealistická skupina v ČSR (1934), Toyen, Štyrský, Nezval, Teige; po válce Medek, Švankmajer, Skupina Ra.",
+  "pamatky": [
+   {
+    "img": "surrealismus_magritte.jpg",
+    "nazev": "Magritte: Syn člověka",
+    "popis": "1964 – buřinka a jablko: Persona a vpád potlačené přírody."
+   },
+   {
+    "img": "surrealismus_dali.jpg",
+    "nazev": "Dalí: Persistence paměti",
+    "popis": "1931, MoMA – měkké hodiny, čas jako sen."
+   },
+   {
+    "img": "surrealismus_toyen.jpg",
+    "nazev": "Toyen: Spící",
+    "popis": "1937 – česká surrealistka světového významu."
+   }
+  ],
+  "jung": {
+   "postoj": -0.9,
+   "nazevPostoje": "Introvertní intuice",
+   "funkce": "Intuice & cítění (Ni-Fi)",
+   "text": "Nejúplnější vyjádření introvertního obratu: snové vize a automatické kresby jako metoda aktivní imaginace, integrace vytěsněných komplexů, setkání se Stínem a Animou. Magrittův oblek = Persona, jablko = vpád nevědomí."
+  },
+  "klima": "Meziválečná krize, nástup fašismu, druhá světová válka a exil.",
+  "udalosti": [
+   "valky"
+  ],
+  "pales": "Michael × Gabriel: v Michaelově slunečním období vyrůstá surrealismus jako „noční“, měsíční kompenzace – Páleš popisuje, jak se protilehlý duch ozývá jako stín vládnoucího."
+ },
+ {
+  "id": "abstraktni_expresionismus",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1945,
+  "do": 1960,
+  "nazev": "Abstraktní expresionismus a informel",
+  "podtitul": "akční malba, lyrická abstrakce, art brut",
+  "datace": "1945 – 1960",
+  "ikona": "abstraktni_expresionismus_pollock.jpg",
+  "strucne": "Po válce se centrum přesouvá do New Yorku: Pollockovo lité gesto, Rothkova barevná pole; v Evropě informel, hmota a stopa.",
+  "text": [
+   "Po roce 1945 se centrem umění stává New York. Jackson Pollock lije barvu na plátno na podlaze (dripping, 1947: Katedrála) – malba je záznamem tělesného pohybu a vnitřního napětí (akční malba; Rosenberg: „aréna“). Willem de Kooning, Franz Kline; druhá linie – barevná pole (Rothko, Newman, Still): velké plochy barvy jako meditace a tragédie. Umění jako výraz existenciální úzkosti jaderného věku i americké svobody (v kontrastu se socialistickým realismem Východu).",
+   "V Evropě odpovídá informel (art informel, tašismus, francouzská lyrická abstrakce: Fautrier, Wols, Dubuffet – art brut, Tàpies – hmota a stopa) a skupina CoBrA. V Československu vzniká český informel na neoficiálních „Konfrontacích“ (1960: Mikuláš Medek, Jan Koblasa, Aleš Veselý, Vladimír Boudník – explosionalismus)."
+  ],
+  "znaky": [
+   "Gesto, akce, náhoda, velké formáty",
+   "Dripping, lití barvy, tělo malíře",
+   "Barevná pole – meditace",
+   "Informel: hmota, struktura, stopa",
+   "Existenciální úzkost, svoboda"
+  ],
+  "oblasti": {
+   "architektura": "—",
+   "socharstvi": "David Smith, Giacometti (existencialismus), Chamberlain; Koblasa, Veselý.",
+   "malirstvi": "Pollock, de Kooning, Rothko, Kline, Newman; Fautrier, Wols, Dubuffet, Tàpies, Hartung; Medek, Boudník, Valenta."
+  },
+  "faze": [
+   {
+    "nazev": "Akční malba",
+    "kdy": "1947–1956"
+   },
+   {
+    "nazev": "Barevná pole",
+    "kdy": "1950–1965"
+   },
+   {
+    "nazev": "Informel / český informel",
+    "kdy": "1950–1965"
+   }
+  ],
+  "osobnosti": [
+   "Jackson Pollock",
+   "Mark Rothko",
+   "Willem de Kooning",
+   "Jean Dubuffet",
+   "Antoni Tàpies",
+   "Mikuláš Medek",
+   "Vladimír Boudník"
+  ],
+  "cesko": "Konfrontace (1960), Medek, Koblasa, Veselý, Boudník, Jiří Valenta; oficiálně potlačováno, tvoří se v soukromí.",
+  "pamatky": [
+   {
+    "img": "abstraktni_expresionismus_pollock.jpg",
+    "nazev": "Pollock: Katedrála",
+    "popis": "1947, Dallas – dripping; malba jako rituální pole aktivní imaginace."
+   },
+   {
+    "img": "abstraktni_rothko.jpg",
+    "nazev": "Rothko: Oranžová, červená, žlutá",
+    "popis": "1961 – barevné pole jako kontemplace."
+   },
+   {
+    "img": "informel_medek.jpg",
+    "nazev": "Medek: obraz z období informelu",
+    "popis": "Konec 50. a 60. léta – český informel: drásaná hmota barvy, znak, tíseň (Velké jídlo, 1956; Signály)."
+   }
+  ],
+  "jung": {
+   "postoj": -1,
+   "nazevPostoje": "Extrémní introverze",
+   "funkce": "Intuice & cítění (Ni-Fi)",
+   "text": "Alchymistické nigredo: rozbití formy jako rozpad starého kánonu. Malba jako rituální pole, v němž umělec projektuje archetypy z hlubin nevědomí bez kontroly rozumu; návrat k individuální duši po kolektivní katastrofě."
+  },
+  "klima": "Hirošima (1945), studená válka, atomová hrozba; poválečná prosperita USA × totalita Východu.",
+  "udalosti": [
+   "valky"
+  ],
+  "pales": "Michaelovo období – Páleš: rozštěpení světa (železná opona) a vnitřní zápas; Pollockovo gesto jako individuální hledání pravdy bez opory tradice."
+ },
+ {
+  "id": "popart",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1955,
+  "do": 1970,
+  "nazev": "Pop art a nový realismus",
+  "podtitul": "konzum, reklama, masová média",
+  "datace": "1955 – 1970",
+  "ikona": "popart_warhol.jpg",
+  "strucne": "Umění z plechovek polévky, komiksů a celebrit: Warhol, Lichtenstein, Hamilton – zrcadlo konzumní společnosti.",
+  "text": [
+   "Pop art vzniká v Londýně (Hamilton: Co vlastně dělá dnešní domovy tak odlišnými…, 1956) a rozkvétá v New Yorku: Andy Warhol (Campbellovy polévky 1962, Marilyn, sítotisk, Factory), Roy Lichtenstein (zvětšené komiksové políčko s rastrem), Claes Oldenburg (měkké obří předměty), Jasper Johns a Rauschenberg (kombinované malby). Náměty: reklama, zboží, celebrity, komiks; techniky průmyslové reprodukce; ironie i fascinace. „V budoucnu bude každý slavný patnáct minut.“",
+   "Evropský protějšek: nový realismus (Yves Klein – modrá IKB, antropometrie; Arman – akumulace; Tinguely – stroje; Christo – balení). V Československu 60. let se objevuje pop-artová figurace (Jiří Balcar, Jiří Kolář – koláže, Květa Pacovská) a nová figurace (Sopko, Načeradský)."
+  ],
+  "znaky": [
+   "Náměty z reklamy, zboží, komiksu, filmu",
+   "Sítotisk, opakování, průmyslová technika",
+   "Jasné barvy, rastr, velký formát",
+   "Ironie a fascinace konzumem",
+   "Umělec jako značka (Warhol)"
+  ],
+  "oblasti": {
+   "architektura": "Pop v architektuře: Archigram (vize), Venturi (Learning from Las Vegas 1972).",
+   "socharstvi": "Oldenburg, Segal (sádrové odlitky), Arman, César, Tinguely.",
+   "malirstvi": "Warhol, Lichtenstein, Hamilton, Rosenquist, Hockney, Johns, Rauschenberg; Klein; Kolář (koláž), Balcar."
+  },
+  "faze": [
+   {
+    "nazev": "Britský pop",
+    "kdy": "1955–1962"
+   },
+   {
+    "nazev": "Americký pop",
+    "kdy": "1960–1970"
+   },
+   {
+    "nazev": "Nový realismus",
+    "kdy": "1960–1970"
+   }
+  ],
+  "osobnosti": [
+   "Andy Warhol",
+   "Roy Lichtenstein",
+   "Richard Hamilton",
+   "Claes Oldenburg",
+   "Yves Klein",
+   "Jiří Kolář"
+  ],
+  "cesko": "Jiří Kolář (koláže, rolláže), Jiří Balcar, Květa Pacovská; vliv na grafiku 60. let a filmový plakát.",
+  "pamatky": [
+   {
+    "img": "popart_warhol.jpg",
+    "nazev": "Warhol: Západ slunce",
+    "popis": "1972, sítotisk – opakovaný obraz zbavený subjektivní hloubky."
+   },
+   {
+    "img": "popart_warhol_campbell.jpg",
+    "nazev": "Warhol: Campbellovy polévky",
+    "popis": "1962, MoMA – 32 pláten, zboží jako ikona."
+   },
+   {
+    "img": "popart_lichtenstein.jpg",
+    "nazev": "Lichtenstein: Whaam!",
+    "popis": "1963, Tate – komiks a rastr v muzeu."
+   }
+  ],
+  "jung": {
+   "postoj": 1,
+   "nazevPostoje": "Extravertní vnímání",
+   "funkce": "Vnímání & myšlení (Se-Te)",
+   "text": "Totální ztotožnění s povrchem reality a mechanickou reprodukcí: absolutní splynutí s archetypem Persony v davu spotřebitelů. Umění nezrcadlí hloubku, ale prázdnotu a masky své doby – to je jeho výpověď."
+  },
+  "klima": "Ekonomický boom, televize, supermarket, kosmické závody (1969 Měsíc); studená válka a Kuba (1962).",
+  "udalosti": [
+   "valky",
+   "antropocen"
+  ],
+  "pales": "Sluneční Michael v extravertní podobě – Páleš: kult individuality zvrácený v kult celebrity; masové sdělovací prostředky jako „slunce“ moderního světa."
+ },
+ {
+  "id": "kineticke",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1955,
+  "do": 1975,
+  "nazev": "Op art a kinetické umění",
+  "podtitul": "optická iluze, pohyb, světlo",
+  "datace": "1955 – 1975",
+  "ikona": null,
+  "strucne": "Obraz, který vibruje, a socha, která se hýbe: Vasarely, Riley, Calder, Tinguely – umění vědy a techniky.",
+  "text": [
+   "Op art (optické umění; výstava The Responsive Eye, MoMA 1965) vytváří geometrickými vzory a barevnými kontrasty iluzi pohybu, hloubky a vibrace: Victor Vasarely (Zebra, Vega), Bridget Riley (černobílé vlny), Jesús Rafael Soto. Kinetické umění pohyb skutečně realizuje: Calderovy mobily (1930s), Tinguelyho absurdní stroje (Pocta New Yorku se sama zničila 1960), Schöfferova kybernetická věž, světelné objekty (Le Parc, skupina GRAV, Zero).",
+   "V Československu má kinetismus tradici od Pešánkových světelných plastik (1930) k Zdeňku Sýkorovi (struktury generované počítačem, 1964 – jeden z prvních na světě), Hugo Demartinimu a Karlu Malichovi (drátěné energie). Op art pronikl do módy a grafického designu 60. let."
+  ],
+  "znaky": [
+   "Optická iluze pohybu, vibrace",
+   "Geometrie, moaré, kontrast",
+   "Skutečný pohyb: mobil, motor, vítr",
+   "Světlo, kybernetika, počítač",
+   "Divák jako součást díla"
+  ],
+  "oblasti": {
+   "architektura": "Světelné a kinetické fasády, Schöfferova věž (Liège 1961).",
+   "socharstvi": "Calder, Tinguely, Schöffer, Soto, Le Parc; Pešánek, Demartini, Malich.",
+   "malirstvi": "Vasarely, Riley, Anuszkiewicz; Sýkora, Kratina."
+  },
+  "faze": [
+   {
+    "nazev": "Předchůdci (Calder, Pešánek)",
+    "kdy": "1930–1950"
+   },
+   {
+    "nazev": "Vrchol op artu",
+    "kdy": "1960–1970"
+   }
+  ],
+  "osobnosti": [
+   "Victor Vasarely",
+   "Bridget Riley",
+   "Alexander Calder",
+   "Jean Tinguely",
+   "Zdeněk Sýkora",
+   "Zdeněk Pešánek"
+  ],
+  "cesko": "Zdeněk Pešánek (světelně-kinetické plastiky, 1930), Zdeněk Sýkora (počítačové struktury 1964), Radoslav Kratina (variabily), Hugo Demartini.",
+  "pamatky": [
+   {
+    "img": "opart_vasarely.jpg",
+    "nazev": "Vasarely: Vega",
+    "popis": "1968 – vypouklá koule z mřížky."
+   },
+   {
+    "img": "opart_sykora.jpg",
+    "nazev": "Sýkora: Linie",
+    "popis": "Od r. 1964 černobílé struktury komponované s pomocí počítače, od 70. let barevné Linie (na ukázce)."
+   }
+  ],
+  "jung": {
+   "postoj": 0.6,
+   "nazevPostoje": "Extravertní myšlení a vnímání",
+   "funkce": "Myšlení & vnímání",
+   "text": "Racionální, vědecký přístup k vnímání – umění jako experiment s okem a strojem. Divák je vtažen do hry; objekt se osamostatňuje od umělce."
+  },
+  "klima": "Kosmický věk, kybernetika, první počítače, televize.",
+  "udalosti": [
+   "antropocen"
+  ],
+  "pales": "Michaelovo období techniky a rozumu; Páleš by kinetismus zařadil k „michaelské“ fascinaci světlem a pohybem Slunce."
+ },
+ {
+  "id": "performance",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1958,
+  "do": 1985,
+  "nazev": "Happening, performance a akční umění",
+  "podtitul": "tělo, akce, divák",
+  "datace": "1958 – 1985",
+  "ikona": null,
+  "strucne": "Uměním se stává událost: Kaprowovy happeningy, Fluxus, Beuys, Abramovićová – a u nás Knížák, Mlčoch, Štembera.",
+  "text": [
+   "Allan Kaprow uspořádal roku 1959 v New Yorku 18 happeningů v 6 částech – umění je jednorázová událost s účastí diváků, bez trvalého objektu. Hnutí Fluxus (Maciunas, Yoko Ono, Nam June Paik – videoart) spojuje hudbu, akci a humor; Joseph Beuys (Jak vysvětlit obrazy mrtvému zajíci 1965, „každý člověk je umělec“, sociální plastika); vídeňský akcionismus (Nitsch – rituál a krev); Marina Abramović (Rhythm 0, 1974; Umělkyně je přítomna 2010) zkoumá hranice těla. Body art, videoart, konceptuální umění (Kosuth: Jedna a tři židle 1965 – myšlenka místo objektu).",
+   "V Československu za normalizace je akční umění útočištěm svobody: Milan Knížák (Aktual, 1964), Jan Mlčoch, Petr Štembera, Karel Miler, Jiří Kovanda (nenápadné akce v pražských ulicích 1976–78), Tomáš Ruller."
+  ],
+  "znaky": [
+   "Událost místo objektu",
+   "Tělo umělce jako médium",
+   "Účast diváka, náhoda, čas",
+   "Dokumentace fotografií a videem",
+   "Konceptuální umění – myšlenka je dílo"
+  ],
+  "oblasti": {
+   "architektura": "—",
+   "socharstvi": "Beuys (tuk, plst, sociální plastika), Paik (video-sochy).",
+   "malirstvi": "Klein (antropometrie), Nitsch (malby akcí)."
+  },
+  "faze": [
+   {
+    "nazev": "Happening / Fluxus",
+    "kdy": "1958–1970"
+   },
+   {
+    "nazev": "Body art / performance",
+    "kdy": "1965–1980"
+   },
+   {
+    "nazev": "Konceptuální umění",
+    "kdy": "1965–1980"
+   }
+  ],
+  "osobnosti": [
+   "Allan Kaprow",
+   "Joseph Beuys",
+   "Yoko Ono",
+   "Nam June Paik",
+   "Marina Abramović",
+   "Milan Knížák",
+   "Jiří Kovanda"
+  ],
+  "cesko": "Knížák (Aktual), Kovanda, Mlčoch, Štembera, Miler; Křižovnická škola čistého humoru bez vtipu; Ruller (8. 8. 88).",
+  "pamatky": [
+   {
+    "img": "performance_beuys.jpg",
+    "nazev": "Beuys: Jak vysvětlit obrazy mrtvému zajíci",
+    "popis": "1965, Düsseldorf – performance s medem a zlatem."
+   },
+   {
+    "img": "performance_kovanda.jpg",
+    "nazev": "Kovanda: Kontakt",
+    "popis": "1977, Praha – nenápadná akce v ulicích."
+   }
+  ],
+  "jung": {
+   "postoj": -0.2,
+   "nazevPostoje": "Rituál a šaman",
+   "funkce": "Intuice & cítění",
+   "text": "Návrat k rituálu a šamanovi (Beuys): umění opět jako obřad, ne zboží – kompenzace pop-artové Persony. Tělo jako místo setkání vědomí a nevědomí; kolektivní účast jako obnova participation mystique."
+  },
+  "klima": "Studená válka, Vietnam, 1968 (Paříž i Praha), ekologické hnutí, normalizace.",
+  "udalosti": [
+   "antropocen"
+  ],
+  "pales": "Michaelovo období – svoboda jednotlivce jako téma; Páleš vidí v druhé polovině 20. století zápas o lidskou individualitu proti masám a systémům."
+ },
+ {
+  "id": "land_art",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1965,
+  "do": 1985,
+  "nazev": "Land art a minimalismus",
+  "podtitul": "krajina, materiál, redukce",
+  "datace": "1965 – 1985",
+  "ikona": null,
+  "strucne": "Umění odchází z galerie do krajiny (Smithson, Christo, Goldsworthy) a redukuje se na základní tvar (Judd, LeWitt).",
+  "text": [
+   "Minimalismus (Judd, LeWitt, Andre, Flavin – zářivky; Stella: „co vidíte, je to, co vidíte“) odstraňuje z díla vše kromě základního tvaru a materiálu; sochy z průmyslových materiálů kladené přímo na podlahu. Land art (zemní umění) opouští galerii: Robert Smithson staví Spirálové molo ve Velkém Solném jezeře (1970), Michael Heizer vykopává Double Negative, Walter De Maria pole bleskosvodů, Christo a Jeanne-Claude balí budovy a pobřeží (Reichstag 1995), Richard Long chodí a řadí kameny, Andy Goldsworthy pracuje s listím, ledem a časem. Dílo podléhá erozi – příroda je spoluautor.",
+   "V Československu: Ivan Kafka, Miloš Šejn, Zorka Ságlová (Házení míčů do rybníka 1969), Jan Steklík – tiché akce v krajině jako útěk před normalizací; Kurt Gebauer."
+  ],
+  "znaky": [
+   "Krajina jako materiál i galerie",
+   "Monumentální zásahy nebo pomíjivé stopy",
+   "Průmyslový materiál, seriálnost (minimalismus)",
+   "Dokumentace fotografií",
+   "Ekologické vědomí, čas, eroze"
+  ],
+  "oblasti": {
+   "architektura": "Minimalistická architektura (Ando, Zumthor), krajinářské parky.",
+   "socharstvi": "Judd, Andre, Serra (ocelové plechy), Smithson, Heizer, Long, Goldsworthy; Kafka, Ságlová.",
+   "malirstvi": "Stella, Agnes Martin, Ryman (monochrom)."
+  },
+  "faze": [
+   {
+    "nazev": "Minimalismus",
+    "kdy": "1963–1975"
+   },
+   {
+    "nazev": "Land art",
+    "kdy": "1968–1985"
+   }
+  ],
+  "osobnosti": [
+   "Robert Smithson",
+   "Christo a Jeanne-Claude",
+   "Richard Long",
+   "Andy Goldsworthy",
+   "Donald Judd",
+   "Zorka Ságlová"
+  ],
+  "cesko": "Zorka Ságlová, Ivan Kafka (instalace v krajině), Miloš Šejn, Jan Steklík; dnes Land art v krajinářských projektech (Krajina Kuks).",
+  "pamatky": [
+   {
+    "img": "landart_smithson.jpg",
+    "nazev": "Smithson: Spirálové molo",
+    "popis": "1970, Utah – 460 m spirála z čediče, střídavě pod hladinou jezera."
+   },
+   {
+    "img": "landart_christo.jpg",
+    "nazev": "Christo: Zabalený Reichstag",
+    "popis": "1995, Berlín – dva týdny stříbrné látky."
+   }
+  ],
+  "jung": {
+   "postoj": 0.2,
+   "nazevPostoje": "Návrat k Velké Matce",
+   "funkce": "Vnímání & intuice",
+   "text": "Kompenzace technokratické civilizace obratem k Zemi: spirála jako archetyp (uroboros, mandala) vepsaná do krajiny. Minimalismus = introvertní myšlení redukující na podstatu; land art = smíření ega s přírodou (centroverze)."
+  },
+  "klima": "Ekologické hnutí (Den Země 1970), ropná krize (1973), první zprávy o oteplování.",
+  "udalosti": [
+   "antropocen"
+  ],
+  "pales": "Michaelovo období: Páleš popisuje po roce 1950 postupný obrat od techniky k celku Země (ekologie) – Michael jako duch „kosmického vědomí“ a odpovědnosti."
+ },
+ {
+  "id": "postmoderna",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 1975,
+  "do": 2000,
+  "nazev": "Postmoderna",
+  "podtitul": "citace, ironie, pluralita, street art",
+  "datace": "1975 – 2000",
+  "ikona": null,
+  "strucne": "Konec velkých pravd: architektura cituje historii, malba se vrací (transavantgarda, neoexpresionismus), graffiti vstupuje do galerií.",
+  "text": [
+   "Postmoderna odmítá jediný správný směr moderny („méně je nuda“ – Venturi proti Miesovu „méně je více“). Architektura opět cituje sloupy, oblouky a barvy, ironicky a hravě (Portlandská budova Michaela Gravese 1982, Tančící dům Gehryho a Miluniće 1996, dekonstruktivismus). Malba se vrací s italskou transavantgardou (Chia, Clemente, Cucchi) a německým neoexpresionismem (Baselitz – obrácené figury, Kiefer – dějiny a mýtus), americkým graffiti a street artem (Basquiat, Haring), fotografií (Cindy Sherman – role a masky) a apropriací (Koons – kýč jako umění, Hirst – žralok ve formaldehydu, Young British Artists).",
+   "V Československu 80. let: Tvrdohlaví (Róna, Diviš, Skála), Nová skupina, David Černý (Růžový tank 1991, Quo vadis), po roce 1989 otevření světu. Postmoderna přináší pluralitu, citaci, mix vysokého a nízkého, ironii i nostalgii – a připravuje globální umění 21. století."
+  ],
+  "znaky": [
+   "Citace a ironie, hra s historií",
+   "Pluralita stylů, mix vysokého a nízkého",
+   "Návrat malby a figury (neoexpresionismus)",
+   "Street art, graffiti, fotografie",
+   "Dekonstruktivismus v architektuře"
+  ],
+  "oblasti": {
+   "architektura": "Venturi, Graves, Rossi, Bofill, Gehry (Bilbao 1997, Tančící dům), Hadid, Libeskind; u nás Tančící dům, Jan Kaplický (vize).",
+   "socharstvi": "Koons, Hirst, Gormley, Kapoor; Róna, Černý, Skála.",
+   "malirstvi": "Baselitz, Kiefer, Richter, Basquiat, Haring, Sherman (foto); Tvrdohlaví, Sopko, Nešleha."
+  },
+  "faze": [
+   {
+    "nazev": "Postmoderní architektura",
+    "kdy": "1975–1990"
+   },
+   {
+    "nazev": "Transavantgarda / neoexpresionismus",
+    "kdy": "1978–1990"
+   },
+   {
+    "nazev": "YBA a globalizace",
+    "kdy": "1990–2000"
+   }
+  ],
+  "osobnosti": [
+   "Robert Venturi",
+   "Frank Gehry",
+   "Anselm Kiefer",
+   "Jean-Michel Basquiat",
+   "Jeff Koons",
+   "Damien Hirst",
+   "David Černý"
+  ],
+  "cesko": "Tančící dům (1996), Tvrdohlaví (1987), David Černý, Jiří Sopko, Vladimír Kokolia; Pardubice – Východočeská galerie, Divadlo 29.",
+  "pamatky": [
+   {
+    "img": "postmoderna_tancici_dum.jpg",
+    "nazev": "Gehry a Milunić: Tančící dům",
+    "popis": "Praha, 1992–96 – dekonstruktivismus na Vltavě."
+   },
+   {
+    "img": "postmoderna_basquiat.jpg",
+    "nazev": "Basquiat: Bez názvu (lebka)",
+    "popis": "1981 – graffiti v galerii."
+   }
+  ],
+  "jung": {
+   "postoj": 0.3,
+   "nazevPostoje": "Persona a její ironie",
+   "funkce": "Myšlení & cítění (hra)",
+   "text": "Hra s maskami (Sherman) a citacemi: vědomí, že každý styl je Persona. Kompenzace ztráty velkého vyprávění; nebezpečí povrchnosti, ale i krok k integraci – všechny minulé formy jsou k dispozici."
+  },
+  "klima": "Konec studené války (1989), globalizace, internet (1991), Černobyl (1986), první klimatické konference (Rio 1992).",
+  "udalosti": [
+   "antropocen"
+  ],
+  "pales": "Michaelovo období – Páleš k roku 1989 (michaelsko-jupiterský podcyklus 1989–2061) předpovídá dobu „velkých syntetiků“, kteří sjednotí roztříštěné poznání; postmoderní pluralita je surovinou této syntézy."
+ },
+ {
+  "id": "stoleti21",
+  "obdobi": "moderna",
+  "vrstva": "evropa",
+  "od": 2000,
+  "do": 2026,
+  "nazev": "První čtvrtina 21. století",
+  "podtitul": "instalace, digitální a generativní umění, street art",
+  "datace": "2000 – současnost",
+  "ikona": "21_kusama.jpg",
+  "strucne": "Globální, imerzivní a digitální: Kusama, Eliasson, Aj Wej-wej, Banksy, NFT a umělá inteligence – umění v antropocénu.",
+  "text": [
+   "Umění 21. století je globální a prostupuje média: velké instalace pro tělo diváka (Olafur Eliasson: The Weather Project 2003 – umělé slunce v Tate; Yayoi Kusama: zrcadlové nekonečné místnosti; Anish Kapoor), politické umění (Aj Wej-wej: Slunečnicová semínka 2010 – 100 milionů porcelánových semínek; Banksy – anonymní street art, Dívka s balónkem se skartovala v aukci 2018), provokace trhu (Cattelan: Comedian – banán přilepený páskou 2019), digitální umění (Beeple: Everydays – NFT prodané za 69 milionů dolarů 2021, Refik Anadol – generativní data) a od roku 2022 obrazy generované umělou inteligencí, které otevírají otázku autorství.",
+   "Česká scéna: Kateřina Šedá (sociální akce), Krištof Kintera (kinetické objekty), David Černý, Jakub Matuška (Masker), sklář Rony Plesl (EXPO 2025), Jiří David. Umění reaguje na klimatickou krizi (Eliasson: Ice Watch 2014), migraci, sociální sítě a virtuální realitu; hranice mezi uměním, designem, hrou a technologií se stírá."
+  ],
+  "znaky": [
+   "Imerzivní instalace a zážitek",
+   "Digitální, generativní a AI umění, NFT",
+   "Street art a politický aktivismus",
+   "Ekologie a antropocén jako téma",
+   "Sociální sítě jako galerie"
+  ],
+  "oblasti": {
+   "architektura": "Parametrická architektura (Hadid), udržitelné stavby, Kaplického vize; Pardubice – Automatické mlýny (Gočár, konverze 2023).",
+   "socharstvi": "Kapoor (Cloud Gate), Kintera, Kusama (dýně), Cattelan.",
+   "malirstvi": "Richter, Doig, Dumas; digitální obraz (Beeple, Anadol), Matuška, Jiří David."
+  },
+  "faze": [
+   {
+    "nazev": "Instalace a relační umění",
+    "kdy": "2000–2010"
+   },
+   {
+    "nazev": "Street art a aktivismus",
+    "kdy": "2005–2020"
+   },
+   {
+    "nazev": "Digitální / AI",
+    "kdy": "2015–dnes"
+   }
+  ],
+  "osobnosti": [
+   "Yayoi Kusama",
+   "Olafur Eliasson",
+   "Aj Wej-wej",
+   "Banksy",
+   "Maurizio Cattelan",
+   "Beeple",
+   "Krištof Kintera",
+   "Kateřina Šedá"
+  ],
+  "cesko": "Kintera, Šedá, Černý, Matuška (Masker), Plesl, Jiří David (Srdce nad Hradem 2002); Automatické mlýny v Pardubicích jako galerie (2023).",
+  "pamatky": [
+   {
+    "img": "21_kusama.jpg",
+    "nazev": "Kusama: Infinity Mirror Room",
+    "popis": "Zrcadlová místnost s LED světly – nekonečno a rozpuštění ega."
+   },
+   {
+    "img": "21_eliasson.jpg",
+    "nazev": "Eliasson: The Weather Project",
+    "popis": "2003, Tate Modern – umělé slunce a mlha; klima jako téma."
+   },
+   {
+    "img": "21_ai_weiwei.jpg",
+    "nazev": "Aj Wej-wej: Slunečnicová semínka",
+    "popis": "2010, Tate – 100 milionů ručně malovaných porcelánových semínek."
+   },
+   {
+    "img": "21_banksy.jpg",
+    "nazev": "Banksy: Dívka s balónkem",
+    "popis": "2002 (šablona), 2018 skartace v aukci – street art a trh."
+   },
+   {
+    "img": "21_cattelan.jpg",
+    "nazev": "Cattelan: Comedian",
+    "popis": "2019 – banán a lepicí páska; dědictví Duchampa."
+   },
+   {
+    "img": "21_beeple.jpg",
+    "nazev": "Beeple: Everydays – The First 5000 Days",
+    "popis": "2021 – koláž 5 000 denních digitálních obrazů prodaná jako NFT."
+   }
+  ],
+  "jung": {
+   "postoj": 0,
+   "nazevPostoje": "Centroverze – hledání celku",
+   "funkce": "Souběžná aktivace všech funkcí",
+   "text": "Extravertní technologie (LED, data, AI) slouží k vyvolání introvertních, kontemplativních prožitků (Kusama, Eliasson). Podle Neumanna centroverze: pokus vědomí o návrat k celistvosti Self, sjednocení techniky s archetypální obrazností. Rozštěpení i integrace zároveň."
+  },
+  "klima": "Antropocén: globální oteplování, tání ledovců, pandemie covidu (2020), digitální revoluce a umělá inteligence.",
+  "udalosti": [
+   "antropocen"
+  ],
+  "pales": "Michaelovo období pokračuje do roku 2234; michaelsko-jupiterský podcyklus (1989–2061) má podle Páleše přinést syntézu vědy, umění a duchovnosti – „velké syntetiky“ typu Platóna a Aristotela."
+ },
+ {
+  "id": "svet_nejstarsi",
+  "obdobi": "pravek",
+  "vrstva": "svet",
+  "od": -40000,
+  "do": -10000,
+  "nazev": "Nejstarší umění světa",
+  "podtitul": "Afrika, Indonésie, Amerika",
+  "datace": "cca 75 000 – 10 000 let",
+  "ikona": "pravek_migrace_mapa.jpg",
+  "strucne": "Symbolické myšlení začíná v Africe (Blombos, 75 000 let); nejstarší figurální malby jsou dnes na Sulawesi (45 000 let).",
+  "text": [
+   "Evropa nemá na počátek umění monopol. V jihoafrické jeskyni Blombos byl nalezen rytý okr a korálky staré přes 70 000 let – nejstarší doklad symbolického myšlení. Na indonéském ostrově Sulawesi objevili archeologové malbu divokého prasete a loveckou scénu staré 45 000 let, v Bhimbetce v Indii skalní malby od 10 000 let, v Amazonii (Serranía de la Lindosa) malby ledovcové fauny staré 12 500 let. Homo sapiens tedy přinášel umění všude, kam se z Afriky rozšířil."
+  ],
+  "znaky": [
+   "Rytý okr, korálky, otisky rukou",
+   "Zvířata a lovecké scény",
+   "Skalní přístřešky na všech kontinentech",
+   "Symbolika starší než evropské jeskyně"
+  ],
+  "oblasti": {
+   "architektura": "—",
+   "socharstvi": "Korálky, rytý okr (Blombos), sošky z Afriky a Sibiře (Malta).",
+   "malirstvi": "Sulawesi (Leang Tedongnge), Bhimbetka, Lindosa, Tassili n'Ajjer (Sahara, 10 000–4 000 př. n. l.)."
+  },
+  "faze": [],
+  "osobnosti": [],
+  "cesko": "—",
+  "pamatky": [
+   {
+    "img": "pravek_migrace_mapa.jpg",
+    "nazev": "Šíření člověka z Afriky",
+    "popis": "Mapa migrací Homo sapiens – umění vzniká souběžně na několika kontinentech."
+   },
+   {
+    "img": "svet_sulawesi.jpg",
+    "nazev": "Jeskyně Leang Tedongnge (Sulawesi)",
+    "popis": "V této jeskyni je malba prasete bradavičnatého stará cca 45 500 let – nejstarší datovaná figurální malba světa."
+   }
+  ],
+  "jung": {
+   "postoj": -0.9,
+   "nazevPostoje": "Uroboros",
+   "funkce": "Intuice & vnímání",
+   "text": "Počáteční stadium nediferencovaného vědomí, splynutí s přírodou – totéž ve všech kulturách."
+  },
+  "klima": "Doba ledová; migrace člověka z Afriky (před 70–50 tisíci lety), kolonizace Austrálie (před 65–50 tisíci lety) a Ameriky (před 20–15 tisíci lety).",
+  "udalosti": [
+   "laschamp",
+   "lgm"
+  ],
+  "pales": "—"
+ },
+ {
+  "id": "svet_australie",
+  "obdobi": "pravek",
+  "vrstva": "svet",
+  "od": -40000,
+  "do": 2026,
+  "nazev": "Umění původních Australanů",
+  "podtitul": "nejdelší nepřetržitá tradice",
+  "datace": "cca 40 000 let – dodnes",
+  "ikona": null,
+  "strucne": "Skalní malby v Kakadu a Kimberley, rentgenový styl a tečkovaná malba Snění – tradice trvající desítky tisíc let až do současných galerií.",
+  "text": [
+   "Aboriginské umění je nejdelší souvislou výtvarnou tradicí světa. Skalní galerie v Arnhemské zemi (Kakadu) ukazují vývoj od siluet zvířat přes „rentgenový styl“ (vnitřní orgány) po postavy duchů Wandjina a Mimi. Obrazy jsou součástí Snění (Dreamtime) – mýtu o stvoření krajiny předky; malovat znamená obnovovat svět. Ve 20. století přenesli umělci z Papunye (1971) tečkovanou malbu na plátno; dnes patří k nejcennějšímu současnému umění (Emily Kame Kngwarreye)."
+  ],
+  "znaky": [
+   "Rentgenový styl",
+   "Tečkovaná malba, mapy Snění",
+   "Okr, bílá hlinka, kůra",
+   "Umění jako obřad a vlastnictví příběhu"
+  ],
+  "oblasti": {
+   "architektura": "—",
+   "socharstvi": "Malované kmeny (pukumani), předměty z kůry.",
+   "malirstvi": "Skalní malby Kakadu, Kimberley (Gwion Gwion), malba na kůře, akrylová malba Papunya."
+  },
+  "faze": [],
+  "osobnosti": [
+   "Emily Kame Kngwarreye",
+   "Albert Namatjira",
+   "Clifford Possum"
+  ],
+  "cesko": "—",
+  "pamatky": [
+   {
+    "img": "svet_kakadu.jpg",
+    "nazev": "Rentgenový styl (Ubirr, Kakadu)",
+    "popis": "Arnhemská země – postavy a ryby malované tak, že jsou vidět kosti a vnitřní orgány skrz tělo."
+   }
+  ],
+  "jung": {
+   "postoj": -0.8,
+   "nazevPostoje": "Participation mystique",
+   "funkce": "Intuice",
+   "text": "Snění jako živé kolektivní nevědomí: krajina, mýtus a obraz jsou jedno."
+  },
+  "klima": "Vysychání australského vnitrozemí po době ledové; zatopení šíje k Nové Guineji.",
+  "udalosti": [
+   "dryas"
+  ],
+  "pales": "—"
+ },
+ {
+  "id": "svet_cina",
+  "obdobi": "starovek",
+  "vrstva": "svet",
+  "od": -1600,
+  "do": 1911,
+  "nazev": "Čína",
+  "podtitul": "bronzy, terakotová armáda, tušová malba, porcelán",
+  "datace": "1 600 př. n. l. – 1911",
+  "ikona": null,
+  "strucne": "Tři tisíce let císařské tradice: rituální bronzy, Velká zeď, terakotová armáda, kaligrafie, krajina tuší a porcelán.",
+  "text": [
+   "Dynastie Šang (1 600–1 046 př. n. l.) odlévá rituální bronzové nádoby s maskou tao-tie; první císař Čchin Š'-chuang-ti (221 př. n. l.) spojuje Velkou zeď a nechá se pohřbít s terakotovou armádou 8 000 vojáků. Za dynastie Chan a Tchang přichází buddhismus (jeskyně Tun-chuang, Lung-men). Sung (960–1279) vytváří vrchol tušové krajinomalby: prázdno, mlha, tao – „hory a vody“ (Fan Kchuan), a kaligrafie je nejvyšším uměním. Ming a Čching přinášejí Zakázané město (1420), modrobílý porcelán, zahrady v Su-čou.",
+   "Čínské umění nehledá perspektivu ani iluzi, ale rytmus dechu (čchi) a harmonii s přírodou; umělec je literát, ne řemeslník. Přes hedvábnou stezku ovlivnilo islámský svět a v 18. století evropské rokoko (chinoiserie)."
+  ],
+  "znaky": [
+   "Bronz, nefrit, lak, hedvábí, porcelán",
+   "Kaligrafie a tušová krajina",
+   "Prázdno a mlha, svitek",
+   "Palác, pagoda, zahrada",
+   "Umělec-literát, taoismus, konfucianismus"
+  ],
+  "oblasti": {
+   "architektura": "Velká zeď, Zakázané město, pagody, zahrady v Su-čou, Nebeský chrám.",
+   "socharstvi": "Terakotová armáda, buddhistické jeskyně (Lung-men, Jün-kang), bronzy Šang.",
+   "malirstvi": "Fan Kchuan, Kuo Si, Ma Jüan, literátská malba Ming; nástěnné malby Tun-chuangu."
+  },
+  "faze": [
+   {
+    "nazev": "Šang a Čou",
+    "kdy": "1 600–221 př. n. l."
+   },
+   {
+    "nazev": "Čchin, Chan, Tchang",
+    "kdy": "221 př. n. l. – 907"
+   },
+   {
+    "nazev": "Sung, Jüan",
+    "kdy": "960–1368"
+   },
+   {
+    "nazev": "Ming, Čching",
+    "kdy": "1368–1911"
+   }
+  ],
+  "osobnosti": [
+   "Čchin Š'-chuang-ti",
+   "Fan Kchuan",
+   "Wang Si-č' (kaligraf)",
+   "Šen Čou"
+  ],
+  "cesko": "Sbírky asijského umění Národní galerie (palác Kinských), Náprstkovo muzeum.",
+  "pamatky": [
+   {
+    "img": "svet_cina_terakota.jpg",
+    "nazev": "Terakotová armáda (Si-an)",
+    "popis": "Cca 210 př. n. l., 8 000 vojáků v životní velikosti."
+   },
+   {
+    "img": "svet_cina_fankuan.jpg",
+    "nazev": "Fan Kchuan: Cestovatelé mezi horami a potoky",
+    "popis": "Cca 1000, Tchaj-pej – monumentální tušová krajina."
+   }
+  ],
+  "jung": {
+   "postoj": -0.5,
+   "nazevPostoje": "Introvertní intuice a prázdno",
+   "funkce": "Intuice & cítění",
+   "text": "Taoistická krajina: člověk je malý, příroda je celek; prázdno jako obraz nevědomí. Jung studoval I-ťing a čínskou alchymii (Tajemství zlatého květu)."
+  },
+  "klima": "Monzunové cykly a povodně Žluté řeky určují dynastické cykly; sucho a chlad ve 3. a 17. století (pád Ming 1644) souvisí s malou dobou ledovou.",
+  "udalosti": [
+   "e4200",
+   "mala_doba_ledova"
+  ],
+  "pales": "Velká čínská zeď a první císař (221 př. n. l.) spadají do saturnského Orifiela (246 př. n. l. – 108) – stejně jako římské císařství; Konfucius a Lao-c' do slunečního Michaela (600–246 př. n. l.) spolu s řeckými filosofy."
+ },
+ {
+  "id": "svet_indie",
+  "obdobi": "starovek",
+  "vrstva": "svet",
+  "od": -2600,
+  "do": 1750,
+  "nazev": "Indie",
+  "podtitul": "Harappa, buddhistické a hinduistické umění, Mughalové",
+  "datace": "2 600 př. n. l. – 1750",
+  "ikona": null,
+  "strucne": "Od plánovaných měst na Indu přes stúpy, jeskyně v Adžantě a chrámy plné soch po Tádž Mahal.",
+  "text": [
+   "Harappská civilizace (2 600–1 900 př. n. l.; Mohendžodaro) staví města s kanalizací a vyrábí pečetě; zaniká s megasuchem 4,2 tisíce let. Buddhismus (od 5. stol. př. n. l.) přináší stúpu (Sáňčí), sochy Buddhy ovlivněné řeckým helénismem (Gandhára) a jeskynní chrámy s malbami (Adžanta, 2. stol. př. n. l. – 5. stol. n. l.). Hinduistické chrámy (Khadžuráho, 10.–11. stol.; Tandžávúr) jsou pokryté tisíci soch bohů, tanečnic a milenců – umění jako smyslová oslava božského. Mughalové (1526–1857) spojují islám a Indii: miniatury, Tádž Mahal (1632–53)."
+  ],
+  "znaky": [
+   "Stúpa, jeskynní chrám, chrámová věž (šikhara)",
+   "Bohatá figurální plastika, tanec, erotika",
+   "Buddha, Šiva Natarádža, jóga",
+   "Mughalská miniatura a mramor",
+   "Barva, ornament, symbolika"
+  ],
+  "oblasti": {
+   "architektura": "Sáňčí, Adžanta, Ellóra, Khadžuráho, Tandžávúr, Tádž Mahal, Fatehpur Síkrí.",
+   "socharstvi": "Buddha z Gandháry a Mathury, Šiva Natarádža (bronz Čóla), reliéfy Khadžuráha.",
+   "malirstvi": "Malby v Adžantě, mughalské a rádžputské miniatury."
+  },
+  "faze": [
+   {
+    "nazev": "Harappa",
+    "kdy": "2 600–1 900 př. n. l."
+   },
+   {
+    "nazev": "Buddhistické",
+    "kdy": "300 př. n. l. – 600"
+   },
+   {
+    "nazev": "Hinduistické",
+    "kdy": "600–1500"
+   },
+   {
+    "nazev": "Mughalské",
+    "kdy": "1526–1750"
+   }
+  ],
+  "osobnosti": [
+   "Ašóka",
+   "Šáhdžahán"
+  ],
+  "cesko": "Sbírky Náprstkova muzea a Národní galerie; indolog Vincenc Lesný, cestovatel Otakar Feistmantel.",
+  "pamatky": [
+   {
+    "img": "svet_indie_tadz.jpg",
+    "nazev": "Tádž Mahal (Ágra)",
+    "popis": "1632–1653, mauzoleum Mumtáz Mahal – bílý mramor, symetrie, zahrada."
+   },
+   {
+    "img": "svet_indie_siva.jpg",
+    "nazev": "Šiva Natarádža",
+    "popis": "Bronz Čóla, 11. století – kosmický tanec stvoření a zániku."
+   }
+  ],
+  "jung": {
+   "postoj": -0.4,
+   "nazevPostoje": "Mandala a celistvost",
+   "funkce": "Intuice & cítění",
+   "text": "Jung převzal pojem mandaly z indické tradice: chrámový půdorys i obraz jsou mapou psýché směřující ke středu (Self)."
+  },
+  "klima": "Monzun jako osud: sucho 4,2 tisíce let zničilo Harappu; mughalský rozkvět v 17. století uprostřed malé doby ledové.",
+  "udalosti": [
+   "e4200",
+   "stredoveke_optimum"
+  ],
+  "pales": "Buddha (cca 500 př. n. l.) patří do slunečního Michaela spolu s Konfuciem a Pythagorem – Páleš zdůrazňuje současnost velkých učitelů („osová doba“) jako doklad synchronicity."
+ },
+ {
+  "id": "svet_persie",
+  "obdobi": "starovek",
+  "vrstva": "svet",
+  "od": -550,
+  "do": 650,
+  "nazev": "Persie",
+  "podtitul": "Achaimenovci a Sásánovci",
+  "datace": "550 př. n. l. – 651 n. l.",
+  "ikona": null,
+  "strucne": "Persepolis – palácové město s reliéfy sta národů; sásánovské stříbro a klenby, most mezi Mezopotámií a islámem.",
+  "text": [
+   "Kýros Veliký a Dareios vytvářejí první světovou říši od Egypta po Indus. Persepolis (od 518 př. n. l.) shrnuje umění podmaněných národů: apadana se sloupy s býčími hlavicemi, reliéfy poddaných přinášejících dary, okřídlené býky – umění jako obraz tolerantní říše. Alexandr město roku 330 př. n. l. vypálil. Sásánovci (224–651) rozvíjejí klenutý palác (Ktésifón – největší cihlová klenba světa), skalní reliéfy králů, stříbrné mísy a hedvábí; jejich formy převzalo islámské a byzantské umění."
+  ],
+  "znaky": [
+   "Sloupová apadana, býčí hlavice",
+   "Reliéfy procesí, králů a lvů",
+   "Glazované cihly, zlato, stříbro",
+   "Klenba (Ktésifón)",
+   "Zoroastrismus, oheň, symetrie"
+  ],
+  "oblasti": {
+   "architektura": "Persepolis, Pasargady, Ktésifón (Táq Kasrá).",
+   "socharstvi": "Reliéfy Persepole, Nakš-e Rostam, sásánovské skalní reliéfy.",
+   "malirstvi": "Glazované cihly (lučištníci ze Sús), stříbrné a hedvábné motivy."
+  },
+  "faze": [
+   {
+    "nazev": "Achaimenovci",
+    "kdy": "550–330 př. n. l."
+   },
+   {
+    "nazev": "Parthové",
+    "kdy": "247 př. n. l. – 224"
+   },
+   {
+    "nazev": "Sásánovci",
+    "kdy": "224–651"
+   }
+  ],
+  "osobnosti": [
+   "Kýros II.",
+   "Dareios I.",
+   "Chosrau I."
+  ],
+  "cesko": "—",
+  "pamatky": [
+   {
+    "img": "svet_persie_persepolis.jpg",
+    "nazev": "Apadana v Persepoli",
+    "popis": "Reliéfy poddaných národů, 5. stol. př. n. l."
+   }
+  ],
+  "jung": {
+   "postoj": 0.4,
+   "nazevPostoje": "Řád říše",
+   "funkce": "Myšlení & cítění",
+   "text": "Zoroastrovský dualismus světla a tmy je podle Junga jedním z kořenů představy Stínu a psychických protikladů."
+  },
+  "klima": "Suché náhorní plošiny; kanáty (podzemní kanály) jako odpověď na nedostatek vody.",
+  "udalosti": [
+   "rim_optimum"
+  ],
+  "pales": "Achaimenovci vládnou v Michaelově slunečním období (600–246 př. n. l.); Zarathuštra jako prorok světla odpovídá slunečnímu duchu."
+ },
+ {
+  "id": "islam",
+  "obdobi": "stredovek",
+  "vrstva": "svet",
+  "od": 650,
+  "do": 1750,
+  "nazev": "Islámské umění",
+  "podtitul": "mešita, arabeska, kaligrafie, miniatura",
+  "datace": "650 – 1750",
+  "ikona": null,
+  "strucne": "Bez zobrazení Boha: geometrie, arabeska a písmo pokrývají mešity od Córdoby přes Isfahán po Indii.",
+  "text": [
+   "Islám (od 622) zakazuje zobrazovat Boha a v sakrálním umění i figury; energie tvůrců se obrací k architektuře, geometrii, rostlinné arabesce a kaligrafii – nekonečný vzor jako obraz jednoty Boha. Mešita (Skalní dóm v Jeruzalémě 691, Velká mešita v Córdobě s lesem oblouků 785, Alhambra v Granadě 14. stol., Modrá mešita, Isfahán) s minaretem, kupolí a mihrábem. Věda a lékařství (Avicenna) a překlady Aristotela přišly do Evropy právě přes islámský svět (Toledo, Sicílie). V Persii a u Mughalů vzkvétá knižní miniatura (Behzád), koberce, keramika s lustrem.",
+   "Islámské umění ovlivnilo evropský středověk (lomený oblouk, arabeska, damask) i modernu (Escher, Matisse)."
+  ],
+  "znaky": [
+   "Zákaz zobrazování v sakrálním umění",
+   "Geometrický ornament, arabeska, muqarnas",
+   "Kaligrafie jako nejvyšší umění",
+   "Mešita: kupole, minaret, mihráb, dvůr",
+   "Miniatura, koberec, keramika, sklo"
+  ],
+  "oblasti": {
+   "architektura": "Skalní dóm, Córdoba, Alhambra, Samarkand (Registán), Isfahán (Náměstí imáma), Tádž Mahal, Süleymaniye (Sinan).",
+   "socharstvi": "Reliéfní štuk, řezba dřeva a slonoviny, kovové nádoby s intarzií.",
+   "malirstvi": "Perské a mughalské miniatury (Šáhnáme), iluminace Koránu, dlaždice (Iznik)."
+  },
+  "faze": [
+   {
+    "nazev": "Umajjovci a Abbásovci",
+    "kdy": "661–1258"
+   },
+   {
+    "nazev": "Maurské Španělsko",
+    "kdy": "711–1492"
+   },
+   {
+    "nazev": "Osmané, Safíovci, Mughalové",
+    "kdy": "1300–1750"
+   }
+  ],
+  "osobnosti": [
+   "Sinan",
+   "Behzád",
+   "Ibn Síná (Avicenna)"
+  ],
+  "cesko": "Islámské sbírky Náprstkova muzea; maurský sloh v 19. století (Jubilejní synagoga v Praze).",
+  "pamatky": [
+   {
+    "img": "svet_islam_alhambra.jpg",
+    "nazev": "Alhambra – Lví dvůr",
+    "popis": "Granada, 14. století – muqarnas, štuk, voda a ornament."
+   },
+   {
+    "img": "svet_islam_cordoba.jpg",
+    "nazev": "Mešita v Córdobě",
+    "popis": "Od 785 – 856 sloupů s pruhovanými oblouky."
+   }
+  ],
+  "jung": {
+   "postoj": -0.7,
+   "nazevPostoje": "Introvertní abstrakce",
+   "funkce": "Myšlení & intuice",
+   "text": "Worringerova abstrakce v nejčistší podobě: nekonečný geometrický vzor jako kompenzace pouště a jako obraz transcendentna. Ornament = mandala bez středu."
+  },
+  "klima": "Poušť a oázy; středověké optimum umožnilo rozkvět Bagdádu a Córdoby; osmanský rozmach za malé doby ledové.",
+  "udalosti": [
+   "stredoveke_optimum"
+  ],
+  "pales": "Vznik islámu (622) a Umajjovci spadají do jupiterského Zachariela (463–817) – ducha zákona a velkých říší; arabská medicína a překlady do merkurského Rafaela (817–1171)."
+ },
+ {
+  "id": "svet_japonsko",
+  "obdobi": "stredovek",
+  "vrstva": "svet",
+  "od": 600,
+  "do": 1868,
+  "nazev": "Japonsko",
+  "podtitul": "zen, svitky, ukijo-e",
+  "datace": "600 – 1868",
+  "ikona": "japonsko_hokusai.jpg",
+  "strucne": "Buddhistické chrámy, zenové zahrady, tušová malba a dřevořezy ukijo-e (Hokusai, Hirošige), které po roce 1860 změnily evropské umění.",
+  "text": [
+   "Japonské umění přijímá z Číny buddhismus a tuš (Hórjúdži, 7. stol. – nejstarší dřevěné stavby světa), ale vyvíjí vlastní estetiku: wabi-sabi (krása nedokonalého), zenové suché zahrady (Rjóandži, 15. stol.), čajový obřad, svitky emakimono, lakové zboží. V období Edo (1603–1868), za izolace země, vzniká ukijo-e – „obrazy prchavého světa“: barevné dřevořezy herců, kurtizán a krajin (Hokusai: 36 pohledů na horu Fudži s Velkou vlnou, 1831; Hirošige; Utamaro).",
+   "Po otevření Japonska (1854) zaplavily dřevořezy Evropu a japonismus ovlivnil Maneta, Moneta, van Gogha, Toulouse-Lautreca i secesi (plošnost, výřez, linie)."
+  ],
+  "znaky": [
+   "Wabi-sabi, prázdno, asymetrie",
+   "Dřevořez ukijo-e, plošná barva, obrys",
+   "Zenová zahrada, čajovna, dřevo a papír",
+   "Svitky, lak, keramika raku",
+   "Vliv na evropskou modernu (japonismus)"
+  ],
+  "oblasti": {
+   "architektura": "Hórjúdži, Bjódóin, hrad Himedži, Rjóandži, Kacura.",
+   "socharstvi": "Buddhové z bronzu a dřeva (Unkei), masky nó, netsuke.",
+   "malirstvi": "Seššú (tuš), škola Kanó, Sótacu, Kórin, Hokusai, Hirošige, Utamaro."
+  },
+  "faze": [
+   {
+    "nazev": "Nara a Heian",
+    "kdy": "710–1185"
+   },
+   {
+    "nazev": "Kamakura a Muromači (zen)",
+    "kdy": "1185–1573"
+   },
+   {
+    "nazev": "Edo (ukijo-e)",
+    "kdy": "1603–1868"
+   }
+  ],
+  "osobnosti": [
+   "Kacušika Hokusai",
+   "Utagawa Hirošige",
+   "Seššú",
+   "Kitagawa Utamaro"
+  ],
+  "cesko": "Japonské dřevořezy ve sbírce Národní galerie (Joe Hloucha), Emil Orlik v Japonsku (1900), vliv na Muchu.",
+  "pamatky": [
+   {
+    "img": "japonsko_hokusai.jpg",
+    "nazev": "Hokusai: Velká vlna u Kanagawy",
+    "popis": "Cca 1831, dřevořez – vlna jako pohlcující nevědomí, Fudži jako Self."
+   },
+   {
+    "img": "svet_japonsko_ryoanji.jpg",
+    "nazev": "Rjóandži – zenová zahrada",
+    "popis": "Kjóto, cca 1500 – 15 kamenů v hrabaném štěrku."
+   }
+  ],
+  "jung": {
+   "postoj": -0.6,
+   "nazevPostoje": "Introvertní reflexe přírody",
+   "funkce": "Intuice & vnímání (Ni-Se)",
+   "text": "Umění jako cesta k vnitřnímu klidu a harmonii s kosmem: Velká vlna – srážka ega s nevědomím; hora Fudži – neochvějný střed (Self). Prázdno zenu odpovídá Jungovu zájmu o východní meditaci."
+  },
+  "klima": "Zemětřesení, tsunami a sopka Fudži (erupce 1707) jako stálá hrozba; izolace za období Edo; malá doba ledová a hladomory.",
+  "udalosti": [
+   "mala_doba_ledova"
+  ],
+  "pales": "Ukijo-e vzniká v měsíčním Gabrielově období (1525–1879) – obrazy „prchavého světa“, noci, gejš a snů; japonismus pak přechází do Michaelova věku moderny."
+ },
+ {
+  "id": "svet_mezoamerika",
+  "obdobi": "starovek",
+  "vrstva": "svet",
+  "od": -1200,
+  "do": 1521,
+  "nazev": "Mezoamerika",
+  "podtitul": "Olmékové, Teotihuacán, Mayové, Aztékové",
+  "datace": "1 200 př. n. l. – 1521",
+  "ikona": null,
+  "strucne": "Stupňovité pyramidy, kalendář, obří olmécké hlavy a mayské stély – civilizace nezávislé na Starém světě.",
+  "text": [
+   "Olmékové (1 200–400 př. n. l.) tesají kolosální čedičové hlavy; Teotihuacán (100–650) staví Pyramidu Slunce v největším městě Ameriky; Mayové (klasické období 250–900: Tikal, Palenque, Copán) vytvářejí hieroglyfické písmo, přesný kalendář, stély vládců a malované kodexy; kolaps mayských měst kolem roku 900 souvisí s dlouhým suchem. Toltékové a Aztékové (Tenochtitlán 1325–1521) staví dvojité chrámy, tesají Sluneční kámen a obětují lidi bohům – dokud roku 1521 nepřijde Cortés.",
+   "Mezoamerické umění je monumentální, symbolické a spojené s astronomií a krví; jeho objev v 19. a 20. století (Aztécký kalendář, Chichén Itzá) ovlivnil muralismus (Rivera, Orozco) a Henryho Moora (Chac Mool)."
+  ],
+  "znaky": [
+   "Stupňovitá pyramida s chrámem na vrcholu",
+   "Kalendář, astronomie, hieroglyfy",
+   "Stély vládců, kolosální hlavy",
+   "Nefrit, obsidián, peří, keramika",
+   "Rituál, oběť, míčová hra"
+  ],
+  "oblasti": {
+   "architektura": "Teotihuacán, Tikal, Palenque, Chichén Itzá (El Castillo), Uxmal, Tenochtitlán (Templo Mayor).",
+   "socharstvi": "Olmécké hlavy, mayské stély a reliéfy (Pakal), Chac Mool, Coatlicue, Sluneční kámen.",
+   "malirstvi": "Fresky v Bonampaku, kodexy (Dresdenský), keramika."
+  },
+  "faze": [
+   {
+    "nazev": "Olmékové",
+    "kdy": "1 200–400 př. n. l."
+   },
+   {
+    "nazev": "Klasické (Teotihuacán, Mayové)",
+    "kdy": "250–900"
+   },
+   {
+    "nazev": "Poklasické (Toltékové, Aztékové)",
+    "kdy": "900–1521"
+   }
+  ],
+  "osobnosti": [
+   "Pakal Veliký",
+   "Moctezuma II."
+  ],
+  "cesko": "Sbírky Náprstkova muzea; Alberto Vojtěch Frič (sběratel a cestovatel).",
+  "pamatky": [
+   {
+    "img": "svet_maya_chichen.jpg",
+    "nazev": "El Castillo (Chichén Itzá)",
+    "popis": "Kukulkánova pyramida, 9.–12. stol. – o rovnodennosti se po schodišti „plazí had“ ze stínů."
+   },
+   {
+    "img": "svet_olmek_hlava.jpg",
+    "nazev": "Olmécká kolosální hlava",
+    "popis": "San Lorenzo, cca 900 př. n. l., čedič, 2–3 m."
+   }
+  ],
+  "jung": {
+   "postoj": 0.4,
+   "nazevPostoje": "Kolektivní řád a oběť",
+   "funkce": "Myšlení & cítění",
+   "text": "Monumentální regulace davu podobná Egyptu; kult krve a Slunce jako archetyp hrdiny živícího kosmos (Neumann: patriarchální vědomí)."
+  },
+  "klima": "Mayský kolaps (800–950) způsobilo série suchých období; Aztékové stavěli město na jezeře s plovoucími zahradami (chinampy).",
+  "udalosti": [
+   "stredoveke_optimum"
+  ],
+  "pales": "Páleš uvádí mayské klasické období jako mimoevropskou paralelu „klasického“ cyklu; Aztécký Sluneční kámen (1479) vzniká na konci marsovského Samaela."
+ },
+ {
+  "id": "svet_andy",
+  "obdobi": "starovek",
+  "vrstva": "svet",
+  "od": -900,
+  "do": 1533,
+  "nazev": "Andské kultury",
+  "podtitul": "Chavín, Nazca, Moche, Inkové",
+  "datace": "900 př. n. l. – 1533",
+  "ikona": null,
+  "strucne": "Obrazce v poušti Nazca, portrétní keramika Moche, zlato a kamenné zdivo Inků – Machu Picchu.",
+  "text": [
+   "V Andách se střídají kultury Chavín (kočičí božstva), Paracas (textilie), Nazca (100 př. n. l. – 800: kilometrové geoglyfy kolibříka a opice viditelné jen z výšky), Moche (portrétní nádoby, zlato z hrobky Pána ze Sipánu), Tiwanaku a Chimú. Inkové (1438–1533) vybudovali říši od Ekvádoru po Chile se silnicemi, uzlovým písmem kipu a zdivem z dokonale lícovaných kamenů bez malty (Cuzco, Machu Picchu 1450); zlato a stříbro, které Španělé roztavili, bylo obrazem Slunce a Měsíce."
+  ],
+  "znaky": [
+   "Geoglyfy Nazca",
+   "Textilie a keramika jako hlavní média",
+   "Kamenné zdivo bez malty (Inkové)",
+   "Zlato = pot Slunce, stříbro = slzy Měsíce",
+   "Terasy, architektura v krajině"
+  ],
+  "oblasti": {
+   "architektura": "Chavín de Huántar, Machu Picchu, Sacsayhuamán, Cuzco.",
+   "socharstvi": "Stély Chavínu, brána Slunce (Tiwanaku), zlaté masky Moche a Chimú.",
+   "malirstvi": "Nazca (keramika, geoglyfy), textilie Paracas, malované nádoby Moche."
+  },
+  "faze": [
+   {
+    "nazev": "Chavín",
+    "kdy": "900–200 př. n. l."
+   },
+   {
+    "nazev": "Nazca, Moche",
+    "kdy": "100 př. n. l. – 800"
+   },
+   {
+    "nazev": "Inkové",
+    "kdy": "1438–1533"
+   }
+  ],
+  "osobnosti": [
+   "Pachacútec",
+   "Atahualpa"
+  ],
+  "cesko": "—",
+  "pamatky": [
+   {
+    "img": "svet_andy_machupicchu.jpg",
+    "nazev": "Machu Picchu",
+    "popis": "Cca 1450, Peru – incké město v Andách."
+   },
+   {
+    "img": "svet_andy_nazca.jpg",
+    "nazev": "Kolibřík z Nazca",
+    "popis": "Geoglyf dlouhý 93 m, cca 200 př. n. l. – 600 n. l."
+   }
+  ],
+  "jung": {
+   "postoj": 0.2,
+   "nazevPostoje": "Řád v krajině",
+   "funkce": "Myšlení & vnímání",
+   "text": "Geoglyfy jsou určeny bohům, ne lidem – obraz jako rituál v měřítku krajiny (paralela s land artem)."
+  },
+  "klima": "El Niño – periodické záplavy a sucha – ničilo pobřežní kultury (Moche kolem 600); terasy Inků jako adaptace na hory.",
+  "udalosti": [
+   "stredoveke_optimum"
+  ],
+  "pales": "—"
+ },
+ {
+  "id": "svet_afrika",
+  "obdobi": "starovek",
+  "vrstva": "svet",
+  "od": -500,
+  "do": 1900,
+  "nazev": "Subsaharská Afrika",
+  "podtitul": "Nok, Ife, Benin, Velké Zimbabwe, masky",
+  "datace": "500 př. n. l. – 1900",
+  "ikona": null,
+  "strucne": "Terakoty Nok, bronzové hlavy z Ife a Beninu, kamenné hradby Zimbabwe a masky, které inspirovaly Picassa.",
+  "text": [
+   "Kultura Nok (Nigérie, 500 př. n. l. – 200 n. l.) modeluje terakotové hlavy s výraznýma očima; Ife (12.–15. stol.) odlévá bronzové portréty králů s naturalismem srovnatelným s antikou; Benin (15.–19. stol.) vytváří bronzové reliéfy a slonovinové masky pro královský dvůr – odvezené Brity 1897 do evropských muzeí. Velké Zimbabwe (11.–15. stol.) je kamenné město obchodní říše; Lalibela v Etiopii (13. stol.) vytesala kostely do skály; Dogoni, Baule a Fangové vytvářejí masky a sochy pro obřady.",
+   "Africké masky a figury objevené v pařížských muzeích kolem roku 1906 změnily evropské umění: Picasso (Avignonské slečny), Matisse, Modigliani, Brâncuși, expresionisté. Dnešní africké umění (El Anatsui, Yinka Shonibare) je součástí globální scény."
+  ],
+  "znaky": [
+   "Terakota, bronz (ztracený vosk), dřevo, slonovina",
+   "Portrét a stylizace vedle sebe",
+   "Maska jako součást tance a obřadu",
+   "Královský dvůr jako objednavatel",
+   "Vliv na kubismus a expresionismus"
+  ],
+  "oblasti": {
+   "architektura": "Velké Zimbabwe, Lalibela, hliněné mešity Mali (Djenné), Benin City.",
+   "socharstvi": "Hlavy Nok, Ife, beninské bronzy, masky Dan, Fang, Dogon, Baule.",
+   "malirstvi": "Skalní umění Sahary a jižní Afriky (Sanové), etiopské ikony."
+  },
+  "faze": [
+   {
+    "nazev": "Nok",
+    "kdy": "500 př. n. l. – 200"
+   },
+   {
+    "nazev": "Ife a Zimbabwe",
+    "kdy": "1100–1500"
+   },
+   {
+    "nazev": "Benin",
+    "kdy": "1400–1897"
+   }
+  ],
+  "osobnosti": [
+   "Oba (králové) Beninu",
+   "El Anatsui (současnost)"
+  ],
+  "cesko": "Náprstkovo muzeum (sbírky Emila Holuba), sbírka afrického umění Národní galerie.",
+  "pamatky": [
+   {
+    "img": "svet_afrika_ife.jpg",
+    "nazev": "Hlava krále z Ife",
+    "popis": "Bronz, 12.–14. století – naturalistický portrét."
+   },
+   {
+    "img": "svet_afrika_benin.jpg",
+    "nazev": "Beninský bronzový reliéf",
+    "popis": "16.–17. století, Britské muzeum."
+   }
+  ],
+  "jung": {
+   "postoj": -0.3,
+   "nazevPostoje": "Maska a rituál",
+   "funkce": "Intuice & cítění",
+   "text": "Maska jako Persona a zároveň nástroj setkání s duchy (nevědomím); evropská avantgarda si v ní vypůjčila přímý přístup k archetypu."
+  },
+  "klima": "Vysychání Sahary oddělilo subsaharskou Afriku; Sahel a obchodní cesty zlata; Velké Zimbabwe zaniklo pravděpodobně vyčerpáním půdy a suchem.",
+  "udalosti": [
+   "sahara"
+  ],
+  "pales": "—"
+ },
+ {
+  "id": "asie_jihovychod",
+  "obdobi": "stredovek",
+  "vrstva": "svet",
+  "od": 800,
+  "do": 1450,
+  "nazev": "Jihovýchodní Asie",
+  "podtitul": "Borobudur, Angkor",
+  "datace": "800 – 1450",
+  "ikona": null,
+  "strucne": "Největší chrámy světa: buddhistický Borobudur na Jávě a hinduistický Angkor Vat v Kambodži – vrstevnatá mandala v kameni.",
+  "text": [
+   "Borobudur (Jáva, cca 800) je stupňovitá hora-mandala s 2 672 reliéfy a 504 sochami Buddhy, po níž poutník stoupá od světa tužeb k prázdnotě. Khmerská říše staví v Angkoru (9.–15. stol.) chrámová města: Angkor Vat (12. stol.) – největší náboženská stavba světa, pět věží jako hora Méru, kilometry reliéfů; Bayon s tvářemi. Města vyživoval složitý zavlažovací systém; jeho kolaps po suchách a monzunových extrémech 14.–15. století je jedním z nejlépe doložených případů klimatického pádu civilizace."
+  ],
+  "znaky": [
+   "Chrám jako hora Méru a mandala",
+   "Reliéfní pásy s mýty (Rámájana)",
+   "Vodní nádrže a zavlažování",
+   "Sochy Buddhy a hinduistických bohů",
+   "Kámen, laterit, symetrie"
+  ],
+  "oblasti": {
+   "architektura": "Borobudur, Prambanan, Angkor Vat, Bayon, Ta Prohm, Pagan (Barma).",
+   "socharstvi": "Buddhové, apsary, tváře Bayonu.",
+   "malirstvi": "Reliéfy, nástěnné malby v Paganu, textil (batika)."
+  },
+  "faze": [
+   {
+    "nazev": "Šailendrové (Jáva)",
+    "kdy": "750–850"
+   },
+   {
+    "nazev": "Angkor",
+    "kdy": "802–1431"
+   }
+  ],
+  "osobnosti": [
+   "Súrjavarman II.",
+   "Džajavarman VII."
+  ],
+  "cesko": "—",
+  "pamatky": [
+   {
+    "img": "svet_angkor.jpg",
+    "nazev": "Angkor Vat",
+    "popis": "Kambodža, 12. století – pět věží hory Méru."
+   },
+   {
+    "img": "svet_borobudur.jpg",
+    "nazev": "Borobudur",
+    "popis": "Jáva, cca 800 – stupňovitá mandala."
+   }
+  ],
+  "jung": {
+   "postoj": -0.5,
+   "nazevPostoje": "Mandala v krajině",
+   "funkce": "Intuice & myšlení",
+   "text": "Chrám jako mandala, jíž se prochází: architektura individuace od okraje ke středu."
+  },
+  "klima": "Středověké optimum umožnilo Angkor; monzunové sucho a povodně ve 14.–15. století (doložené letokruhy) zničily zavlažování a vedly k opuštění města (1431).",
+  "udalosti": [
+   "stredoveke_optimum",
+   "mala_doba_ledova"
+  ],
+  "pales": "Angkor Vat (12. stol.) vzniká v merkurském Rafaelovi a marsovském Samaelovi – souběžně s gotickými katedrálami Evropy (Páleš zdůrazňuje synchronicitu stavebních vln)."
+ },
+ {
+  "id": "svet_oceanie",
+  "obdobi": "stredovek",
+  "vrstva": "svet",
+  "od": 1000,
+  "do": 1900,
+  "nazev": "Oceánie",
+  "podtitul": "Polynésie, Melanésie, Rapa Nui",
+  "datace": "1000 – 1900",
+  "ikona": null,
+  "strucne": "Moai z Velikonočního ostrova, maorské řezby a tetování, masky Nové Guineje – umění ostrovů, které fascinovalo Gauguina.",
+  "text": [
+   "Polynésané osídlili Pacifik na katamaranech; na Rapa Nui (Velikonoční ostrov) vztyčili mezi 1250 a 1500 téměř tisíc soch předků moai – a odlesnili ostrov, což bývá uváděno jako varovný příklad ekologického kolapsu. Maorové na Novém Zélandu řežou domy setkání a tetují tvář (moko); Havajané tkají plášťe z peří; Nová Guinea a Melanésie vytvářejí masky a domy duchů. Gauguin na Tahiti (1891) hledal v Oceánii „primitivní ráj“; surrealisté sbírali masky."
+  ],
+  "znaky": [
+   "Sochy předků (moai, tiki)",
+   "Řezba dřeva, tetování, tapa",
+   "Peří, mušle, kost",
+   "Umění spojené s mana a tabu",
+   "Vliv na Gauguina a surrealisty"
+  ],
+  "oblasti": {
+   "architektura": "Maorský dům setkání (wharenui), domy duchů Sepik, ahu na Rapa Nui.",
+   "socharstvi": "Moai, tiki, štíty, masky malanggan.",
+   "malirstvi": "Kůrové látky (tapa), malby na domech."
+  },
+  "faze": [
+   {
+    "nazev": "Osídlení Polynésie",
+    "kdy": "1000–1300"
+   },
+   {
+    "nazev": "Moai",
+    "kdy": "1250–1500"
+   }
+  ],
+  "osobnosti": [],
+  "cesko": "Sbírky Náprstkova muzea.",
+  "pamatky": [
+   {
+    "img": "svet_oceanie_moai.jpg",
+    "nazev": "Moai na Rapa Nui",
+    "popis": "1250–1500 – sochy předků z tufu, až 10 m."
+   }
+  ],
+  "jung": {
+   "postoj": -0.4,
+   "nazevPostoje": "Předkové a mana",
+   "funkce": "Intuice & cítění",
+   "text": "Moai jako zhmotnění archetypu Otce-předka strážícího komunitu; kolaps ostrova jako varování před jednostranností."
+  },
+  "klima": "Odlesnění Rapa Nui a malá doba ledová; El Niño a hurikány.",
+  "udalosti": [
+   "mala_doba_ledova"
+  ],
+  "pales": "—"
+ }
+]

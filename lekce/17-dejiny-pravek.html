@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>17 · Dějiny umění – pravěk | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Maturitní otázka 17: obrazová prezentace památek pravěku s popisky (název, datace, souvislosti) uložená do PDF; charakteristika pravěkých kultur a jednotlivých památek.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="17 · Dějiny umění – pravěk">
+<meta property="og:description" content="Maturitní otázka 17: obrazová prezentace památek pravěku s popisky (název, datace, souvislosti) uložená do PDF; charakteristika pravěkých kultur a jednotlivých památek.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styl.css">
+</head>
+<body data-page="17-dejiny-pravek.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="../videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>OTÁZKA 17 / 23</b><span>Dějiny umění</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="../img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="../index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="../lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="../lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="../lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="../lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="../lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="../lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="../lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="../lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="../lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="../lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="../lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="../lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="../lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="../lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="../lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="../lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="../lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="../lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="../lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true" class="active"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="../lekce/17-dejiny-pravek.html" class="active"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="../lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="../lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="../lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="../kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="../cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="../videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="../zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-dejiny">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Maturitní otázka 17</span><span class="blok">· Dějiny umění</span></p>
+    <h1>Dějiny umění – pravěk</h1>
+    <p class="lead">Sestavíš <b>obrazovou prezentaci</b> vybraných památek pravěku – každý obrázek s <b>popiskem</b> (název, přibližná datace, místo, technika, sloh, autor) – a uložíš ji do <b>PDF</b>. U obhajoby ji spustíš, nejdřív <b>charakterizuješ období</b> jako celek a pak mluvíš ke každému obrázku: co to je, kdy, proč je to důležité a jaké má kulturní a výtvarné souvislosti. Tahle lekce má 6 epoch, 23 památek s popisky k převzetí a poznávačku.</p>
+    <ul class="zadani"><li><b>Editor</b>InDesign / Illustrator / PowerPoint – 16 : 9</li><li><b>Výstup</b>PDF prezentace s popisky</li><li><b>Teorie</b>charakteristika pravěkých kultur + památky</li><li><b>Obrázky</b>Wikimedia Commons – volná díla a CC</li></ul>
+    <nav class="subnav" aria-label="Obsah lekce"><a href="#l17-otazka">Co se losuje</a><a href="#l17-prehled">Přehled období</a><a href="#l17-prezentace">Jak na prezentaci</a><a href="#e-paleolit">Paleolit</a><a href="#e-mezolit">Mezolit</a><a href="#e-neolit">Neolit</a><a href="#e-eneolit">Eneolit</a><a href="#e-bronz">Doba bronzová</a><a href="#e-zelezo">Doba železná</a><a href="#l17-svet">Mimo Evropu</a><a href="#l17-poznavacka">Poznávačka</a><a href="#l17-postup">Postup pro 30 minut</a><a href="#l17-chyby">Časté chyby</a><a href="#l17-komise">Otázky komise</a><a href="#l17-kviz">Kvíz</a></nav>
+  </div>
+</section>
+<section class="section" id="l17-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Ve zvoleném grafickém editoru <b>jednoduchá obrazová prezentace</b> obrázků dokumentujících vybrané památky pravěku.</li>
+          <li>Ke každému obrázku <b>popisek</b>: název, <b>přibližná datace</b> a další související údaje (místo, materiál/technika, sloh, autor).</li>
+          <li>Prezentaci uložit do <b>PDF</b>.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>podklady: obrázky k období (nebo vlastní z Commons)</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Spustit prezentaci a nejdřív <b>charakterizovat pravěkých kultur</b> jako celek (časové vymezení, společnost, funkce umění, materiály, hlavní fáze).</li>
+          <li>Pak ke <b>každému obrázku</b>: charakteristika konkrétní památky + <b>kulturní a výtvarně-dějinné souvislosti</b> (co předcházelo, co následovalo, k čemu sloužilo, čím je typické).</li>
+        </ul>
+        <p class="note">Celý přehled všech období s mapou, osou a vyhledáváním: <a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a>. Výtvarná teorie (perspektiva, kánon): <a href="../lekce/16-perspektiva-kompozice.html">lekce 16</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l17-prehled">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Charakteristika období</span><h2>Pravěk v kostce</h2></div><p>Pravěk je nejdelší kapitola dějin umění – od prvních maleb v jeskyních doby ledové (před 40 000 lety) po keltská oppida na prahu letopočtu. Umění vzniká bez písma, bez měst a bez jmen autorů: víme, <b>co</b> lidé vytvořili, ale <b>proč</b> musíme vykládat z nálezů. Periodizace podle materiálu nástrojů: doba kamenná (paleolit, mezolit, neolit, eneolit), bronzová, železná.</p></div>
+    <div class="osa-epochy"><a class="osa-ep" href="#e-paleolit"><b>Paleolit</b><span>cca 40 000 – 10 000 př. n. l.</span></a><a class="osa-ep" href="#e-mezolit"><b>Mezolit</b><span>cca 10 000 – 6 000 př. n. l.</span></a><a class="osa-ep" href="#e-neolit"><b>Neolit</b><span>cca 9 500 – 4 300 př. n. l. (u nás od 5 500)</span></a><a class="osa-ep" href="#e-eneolit"><b>Eneolit</b><span>cca 4 300 – 2 200 př. n. l.</span></a><a class="osa-ep" href="#e-bronz"><b>Doba bronzová</b><span>cca 2 200 – 800 př. n. l.</span></a><a class="osa-ep" href="#e-zelezo"><b>Doba železná</b><span>cca 800 př. n. l. – přelom letopočtu</span></a></div>
+    <div class="card" style="margin-top:18px"><h3>Co říct na úvod obhajoby (2 minuty)</h3><ul class="kroky"><li><b>Paleolit</b> – lovci a sběrači, jeskynní malby zvířat (Chauvet, Lascaux, Altamira), venuše (Věstonická – nejstarší keramika světa), rytiny, loveckou magií a rituálem.</li><li><b>Mezolit</b> – oteplení po době ledové, drobné nástroje (mikrolity), skalní malby s postavami lovců a lučištníků (Valltorta).</li><li><b>Neolit</b> – zemědělství (neolitická revoluce), stálé osady, dlouhé domy, keramika (lineární, malovaná), megality (Stonehenge, Newgrange), kult plodnosti.</li><li><b>Eneolit</b> – měď, šňůrová keramika, Ötzi; <b>doba bronzová</b> – metalurgie, Nebeský disk z Nebry, Sluneční vůz z Trundholmu, mohyly, hradiště.</li><li><b>Doba železná</b> – halštat a latén, Keltové: hlava z Mšeckých Žehrovic, šperk, oppida (Závist, Stradonice), mince; na konci Germáni a Řím.</li></ul></div>
+  </div>
+</section>
+
+<section class="section" id="l17-prezentace">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Jak sestavit prezentaci s popisky</h2></div><p>Stejný postup pro všechny čtyři otázky z dějin umění. Rozhoduje výběr památek, správné popisky a čistý jednotný layout – ne efekty.</p></div>
+    <div class="cols">
+      <div class="card"><h3>Dokument</h3><ul><li><b>InDesign</b>: Nový › Web, 1920 × 1080 px (16 : 9), RGB; vzorová stránka s názvem období v hlavičce, číslem stránky a místem pro popisek; <b>objektový styl</b> pro rámeček obrázku (přizpůsobit proporčně, zarovnat na střed).</li><li>Odstavcové styly: <b>Titulek</b> (Barlow Condensed 56 px), <b>Popisek</b> (24 px), <b>Datace</b> (tučně, barevně), <b>Zdroj</b> (14 px, šedě).</li><li>Alternativa: Illustrator s plátny 1920 × 1080, nebo PowerPoint 16 : 9 – ale ukaž, že umíš layout (mřížka, zarovnání, kontrast).</li><li>Obrázky: Umístit (Ctrl+D) jako vazby, nikdy neroztahovat nepoměrně; u svislých obrazů dva vedle sebe.</li></ul></div>
+      <div class="card"><h3>Popisek – vzor</h3><p class="popisek-vzor"><b>Katedrála v Chartres</b><br>1194–1220, vrcholná gotika, Francie<br>kámen, žebrová klenba, 176 vitráží<br><small>foto: Wikimedia Commons, CC BY-SA</small></p><ul><li>Řádek 1: <b>název</b> (česky, případně originál).</li><li>Řádek 2: <b>datace</b> (rok / rozmezí / „kolem“ / století), <b>sloh a fáze</b>, místo nebo sbírka.</li><li>Řádek 3: materiál, technika, rozměry, autor.</li><li>Řádek 4: <b>zdroj a licence</b> obrázku.</li><li>Popisky v této lekci jsou psané přesně v tomto duchu – můžeš je převzít.</li></ul></div>
+      <div class="card"><h3>Struktura 10–14 slidů</h3><ol class="kroky"><li>Titul: období, datace, jméno, třída.</li><li>Časová osa / mapa období s fázemi (jeden slide).</li><li>8–12 památek: každá vlastní slide s velkým obrázkem a popiskem – architektura, sochařství, malířství, užité umění; postupuj chronologicky.</li><li>Jeden slide „u nás“ (české památky období).</li><li>Zdroje obrázků.</li><li>Export: Soubor › Exportovat › <b>Adobe PDF (interaktivní)</b>, stránky, Zobrazit po exportu; zkontroluj velikost (obrázky stačí 150 ppi) a spusť Ctrl+L.</li></ol></div>
+    </div>
+  </div>
+</section>
+
+<section class="section epocha" id="e-paleolit">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Paleolit</h2><p class="podtitul">starší doba kamenná – lovci mamutů · <b>cca 40 000 – 10 000 př. n. l.</b></p></div>
+      <p>Nejstarší umění lidstva: jeskynní malby zvířat, drobné venuše a rytiny lovců doby ledové.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Aurignacien <em>40–28 tis. let</em></span> <span class="chip">Gravettien <em>28–20 tis. let</em></span> <span class="chip">Magdalénien <em>17–12 tis. let</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>Umění se rodí uprostřed poslední doby ledové. Krátce po Laschampské geomagnetické události (před cca 41 000 lety) se v Evropě usazuje člověk dnešního typu a s ním se objevují první obrazy: malby lvů a nosorožců v jeskyni Chauvet, „lví muž“ vyřezaný z mamutoviny, kostěné flétny. Umění tedy není pozdním luxusem civilizace – vzniká spolu s moderním člověkem.</p><p>Malby vznikaly hluboko v jeskyních, mimo obytné prostory, často na těžko přístupných místech. Nebyly určeny k prohlížení, ale k rituálu – loveckou magií, uctíváním zvířecích předků nebo šamanskými obřady. Malíři používali okr, uhel a manganovou čerň, foukali barvu přes ruku (negativní otisky) a využívali vypoukliny skály jako těla zvířat. Zobrazují se téměř výhradně zvířata; člověk je vzácný a schematický.</p><p>Drobná plastika – tzv. venuše – zdůrazňuje plodnost: mohutné boky a prsa, potlačený obličej. Věstonická venuše (cca 29 000 let) je nejstarší keramikou světa. Na konci paleolitu (magdalénien) vznikají nejslavnější „galerie“ Lascaux a Altamira s polychromními stády býků, koní a jelenů.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Zobrazení zvířat (býk, kůň, mamut, jelen) – téměř bez lidí</li><li>Malba na skalní stěny hluboko v jeskyních, okr a uhel</li><li>Drobné plastiky venuší z kamene, kosti a hlíny</li><li>Rytiny na kostech, zdobené zbraně a nástroje</li><li>Magický a rituální účel, nikoli dekorace</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Přírodní úkryty a jeskyně; na Moravě (Dolní Věstonice, Předmostí) chaty z mamutích kostí a kůží.</li><li><b>Sochařství</b>: Venuše (Willendorf, Věstonice, Petřkovice), lví muž, zvířecí sošky z mamutoviny a pálené hlíny, reliéfy ve skále.</li><li><b>Malířství</b>: Jeskynní malby a rytiny: Chauvet, Lascaux, Altamira, Niaux, Rouffignac; v Čechách Mladečské jeskyně bez maleb – malba je u nás vzácná.</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Anonymní šamani a malíři, Karel Absolon (objevitel Věstonické venuše), Zdeněk Burian (rekonstrukce pravěku)</p><p><b>U nás:</b> Dolní Věstonice a Pavlov – lovci mamutů, Věstonická venuše a nejstarší keramika; Petřkovická venuše; Předmostí u Přerova.</p><p><b>Souvislosti:</b> Vrchol poslední doby ledové (Würm): extrémní chlad, ledovce nad Skandinávií a Alpami, mamutí step. Nutnost fyzického i psychického úkrytu pod zemí. Umění vzniká krátce po Laschampské geomagnetické události, kdy zesláblo magnetické pole Země.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_chauvet.webp" alt="Jeskyně Chauvet (Francie)" loading="lazy" data-zoom><figcaption><b>Jeskyně Chauvet (Francie)</b>Koně kreslení uhlem se stínováním, cca 36 000 let – nejstarší velké figurální malby Evropy.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_lascaux.webp" alt="Lascaux (Francie)" loading="lazy" data-zoom><figcaption><b>Lascaux (Francie)</b>„Síň býků“, cca 17 000 let; přes 600 maleb objevených roku 1940 čtyřmi chlapci.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_altamira.webp" alt="Altamira (Španělsko)" loading="lazy" data-zoom><figcaption><b>Altamira (Španělsko)</b>Polychromní bizoni na stropě, využívající vypoukliny skály. Objevena 1879 – pro Páleše rok nástupu Michaela.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_vestonicka_venuse.webp" alt="Věstonická venuše" loading="lazy" data-zoom><figcaption><b>Věstonická venuše</b>Pálená hlína, 11,5 cm, cca 29 000 let. Nejstarší keramická soška na světě (objev 1925).<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_willendorf.webp" alt="Willendorfská venuše" loading="lazy" data-zoom><figcaption><b>Willendorfská venuše</b>Vápenec, 11 cm, cca 29 000 let. Symbol plodnosti bez obličeje.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_otisky_rukou.webp" alt="Otisky rukou" loading="lazy" data-zoom><figcaption><b>Otisky rukou</b>Negativní otisky foukané barvou – „podpis“ pravěkých tvůrců (Cueva de las Manos, Argentina).<small>Wikimedia Commons</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#paleolit" target="_blank" rel="noopener">Časová osa dějin umění – Paleolit</a>.</p>
+  </div>
+</section>
+<section class="section epocha" id="e-mezolit">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Mezolit</h2><p class="podtitul">střední doba kamenná · <b>cca 10 000 – 6 000 př. n. l.</b></p></div>
+      <p>Po oteplení mizí mamuti i velké jeskynní galerie; lovci lesa tvoří drobné rytiny, geometrické znaky a skalní malby loveckých scén.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Epipaleolit <em>10–9 tis. př. n. l.</em></span> <span class="chip">Vlastní mezolit <em>9–6 tis. př. n. l.</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>S koncem doby ledové (cca 11 700 let) se tundra mění v les. Mizí stáda mamutů a sobů a s nimi i důvod pro velké jeskynní svatyně. Menší, pohyblivé skupiny lovců, rybářů a sběračů žijí u řek a jezer.</p><p>Umění se zmenšuje a schematizuje: na skalách východního Španělska (Valltorta, Alpera) se poprvé objevují živé scény lovců s luky a tanečníků – člověk vstupuje do obrazu jako hlavní hrdina. Rozvíjí se drobná mikrolitická industrie, rytiny na jantaru a kostech, první geometrické znaky. V Amazonii (Serranía de la Lindosa) vznikají ve stejné době tisíce červených maleb ledovcové fauny.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Drobné, schematické figury v pohybu</li><li>Lovecké a taneční scény – člověk jako hrdina</li><li>Geometrické znaky, ornament na nástrojích</li><li>Skalní přístřešky místo hlubokých jeskyní</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Sezónní tábory, chaty z proutí a kůží, první dlouhodobější sídliště u vody.</li><li><b>Sochařství</b>: Drobné kostěné a jantarové přívěsky, zvířecí figurky.</li><li><b>Malířství</b>: Levantské skalní umění Španělska; malby v Amazonii; rytiny na oblázcích (azilien).</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Anonymní tvůrci</p><p><b>U nás:</b> Mezolitická sídliště v Polabí a v pískovcových převisech Českého ráje (Kokořínsko).</p><p><b>Souvislosti:</b> Prudké oteplení na začátku holocénu, vzestup hladiny moří (zaplavení Doggerlandu mezi Británií a Evropou), rozšíření lesa.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="mezolit"><img src="../img/dejiny/pravek_amazonie.webp" alt="Serranía de la Lindosa (Kolumbie)" loading="lazy" data-zoom><figcaption><b>Serranía de la Lindosa (Kolumbie)</b>Skalní malby staré cca 12 500 let s ledovcovou faunou – objeveny roku 2020.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="mezolit"><img src="../img/dejiny/mezolit_valltorta.webp" alt="Lovci z Valltorty (Španělsko)" loading="lazy" data-zoom><figcaption><b>Lovci z Valltorty (Španělsko)</b>Schematičtí lučištníci v pohybu – levantské skalní umění.<small>Wikimedia Commons</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#mezolit" target="_blank" rel="noopener">Časová osa dějin umění – Mezolit</a>.</p>
+  </div>
+</section>
+<section class="section epocha" id="e-neolit">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Neolit</h2><p class="podtitul">mladší doba kamenná – první zemědělci · <b>cca 9 500 – 4 300 př. n. l. (u nás od 5 500)</b></p></div>
+      <p>Neolitická revoluce: zemědělství, trvalé vesnice, keramika s geometrickým ornamentem a první svatyně.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Předkeramický neolit <em>9 500–7 000 př. n. l.</em></span> <span class="chip">Lineární keramika <em>5 500–5 000 př. n. l.</em></span> <span class="chip">Moravská malovaná <em>4 700–4 000 př. n. l.</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>Zemědělství vzniká na Blízkém východě v „úrodném půlměsíci“ a šíří se do Evropy; do Čech a na Moravu přichází kolem roku 5 500 př. n. l. s kulturou s lineární keramikou. Člověk poprvé přetváří krajinu: kácí les, staví dlouhé kůlové domy a hliněné pece, chová dobytek.</p><p>Umění se proměňuje od naturalistického zvířete k abstraktnímu znaku. Na keramice se objevuje rytý a malovaný geometrický ornament (spirály, meandry, vlnice) – podle Worringera výraz „pudu k abstrakci“, potřeby řádu tváří v tvář nevyzpytatelné úrodě a počasí. Vznikají ženské idoly (kult plodnosti a Velké Matky) a domácí kultovní předměty.</p><p>Překvapením posledních desetiletí je Göbekli Tepe v Turecku: monumentální kruhové svatyně s pilíři ve tvaru T a reliéfy zvířat, postavené kolem 9 500 př. n. l. ještě lovci-sběrači. Chrám tedy možná předcházel vesnici. Çatalhöyük (7 500–5 700 př. n. l.) je první „město“ s nástěnnými malbami a sochami.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Geometrický ornament na keramice (lineární, vypíchaná, moravská malovaná)</li><li>Trvalé domy a vesnice, dlouhé domy</li><li>Ženské idoly – kult plodnosti</li><li>První monumentální svatyně (Göbekli Tepe)</li><li>Broušené kamenné nástroje</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Dlouhé kůlové domy (u nás Bylany u Kutné Hory), hliněné domy Çatalhöyüku, svatyně Göbekli Tepe, rondely – kruhové příkopové areály na Moravě.</li><li><b>Sochařství</b>: Hliněné venuše a idoly, zoomorfní nádoby, reliéfy na pilířích Göbekli Tepe.</li><li><b>Malířství</b>: Malovaná keramika (moravská malovaná keramika, Cucuteni-Trypillia), nástěnné malby v Çatalhöyüku.</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Anonymní zemědělské komunity, Klaus Schmidt (výzkum Göbekli Tepe)</p><p><b>U nás:</b> Bylany u Kutné Hory (dlouhé domy), Vedrovice, moravská malovaná keramika, rondel v Kolíně – jedny z nejstarších monumentálních staveb Evropy.</p><p><b>Souvislosti:</b> Holocénní oteplení, ústup ledovců; zemědělství vzniká po mladším dryasu. Ochlazení 8,2 tisíce let (6 200 př. n. l.) vyhání zemědělce z Anatolie do Evropy.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="neolit"><img src="../img/dejiny/neolit_gobekli.webp" alt="Göbekli Tepe (Turecko)" loading="lazy" data-zoom><figcaption><b>Göbekli Tepe (Turecko)</b>Pilíře ve tvaru T s reliéfy lišek, hadů a jeřábů, cca 9 500 př. n. l. – nejstarší chrám světa.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="neolit"><img src="../img/dejiny/neolit_catalhoyuk.webp" alt="Çatalhöyük (Turecko)" loading="lazy" data-zoom><figcaption><b>Çatalhöyük (Turecko)</b>Nástěnná malba a reliéfy v domech prvního „města“, 7. tisíciletí př. n. l.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="neolit"><img src="../img/dejiny/neolit_moravska_malovana.webp" alt="Moravská malovaná keramika" loading="lazy" data-zoom><figcaption><b>Moravská malovaná keramika</b>Lengyelská kultura, 5. tisíciletí př. n. l. – malovaný geometrický ornament.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="neolit"><img src="../img/dejiny/neolit_newgrange.webp" alt="Newgrange (Irsko)" loading="lazy" data-zoom><figcaption><b>Newgrange (Irsko)</b>Chodbová hrobka z 3 200 př. n. l., do níž o zimním slunovratu vniká slunce – přechod k eneolitu.<small>Wikimedia Commons</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#neolit" target="_blank" rel="noopener">Časová osa dějin umění – Neolit</a>.</p>
+  </div>
+</section>
+<section class="section epocha" id="e-eneolit">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Eneolit</h2><p class="podtitul">pozdní doba kamenná – doba měděná · <b>cca 4 300 – 2 200 př. n. l.</b></p></div>
+      <p>Doba prvních kovů, oradla, kola a megalitů – Stonehenge, Carnac, muž z ledovce Ötzi.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Časný eneolit <em>4 300–3 500</em></span> <span class="chip">Střední eneolit <em>3 500–2 800</em></span> <span class="chip">Pozdní eneolit <em>2 800–2 200</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>Měď se začíná tavit a odlévat, objevuje se kolo, vůz a oradlo tažené dobytkem. Společnost se rozvrstvuje – bohaté hroby náčelníků, opevněná výšinná sídliště. V západní Evropě vrcholí megalitická architektura: menhiry, dolmeny, kromlechy (Stonehenge, Carnac), orientované podle Slunce a Měsíce.</p><p>Ötzi, muž z alpského ledovce (cca 3 300 př. n. l.), nese měděnou sekeru, luk, tetování a oděv z kůží – ukazuje, jak vypadal každodenní život té doby. Na východě zatím vznikají první města v Mezopotámii a písmo; pravěk Evropy a starověk Blízkého východu běží souběžně.</p><p>V českých zemích jde o kultury nálevkovitých pohárů, řivnáčskou, šňůrovou a zvoncovitých pohárů. Keramika je zdobena šňůrovými otisky, objevují se první měděné šperky a dýky.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Měď a zlato – první kovy</li><li>Megality: menhir, dolmen, kromlech</li><li>Astronomická orientace staveb</li><li>Kolo, vůz, oradlo; bohaté hroby elit</li><li>Šňůrová keramika, zvoncovité poháry</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Stonehenge (3 000–2 000 př. n. l.), Carnac, Newgrange; kolové stavby na jezerech v Alpách; výšinná hradiště.</li><li><b>Sochařství</b>: Menhiry-stély se schematickými postavami, měděné a zlaté šperky, idoly.</li><li><b>Malířství</b>: Rytá a šňůrová výzdoba keramiky, skalní rytiny v Alpách (Val Camonica).</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Ötzi – muž z ledovce, Stavitelé Stonehenge</p><p><b>U nás:</b> Menhiry v Klobukách a Drahomyšli, hradiště Homolka u Stehelčevsi, řivnáčská kultura, hrob lukostřelce (zvoncovité poháry).</p><p><b>Souvislosti:</b> Teplé a vlhké „atlantické“ období vrcholí a přechází v sušší subboreál; vysychání Sahary (3 900 př. n. l.) žene obyvatelstvo k Nilu. Na konci období megasucho 4,2 tisíce let.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="eneolit"><img src="../img/dejiny/neolit_stonehenge.webp" alt="Stonehenge (Anglie)" loading="lazy" data-zoom><figcaption><b>Stonehenge (Anglie)</b>Kruh sarsenových trilitů orientovaný na letní slunovrat, 3 000–2 000 př. n. l.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="eneolit"><img src="../img/dejiny/neolit_otzi.webp" alt="Ötzi – rekonstrukce" loading="lazy" data-zoom><figcaption><b>Ötzi – rekonstrukce</b>Muž z ledovce v Ötztalských Alpách, cca 3 300 př. n. l., s měděnou sekerou a tetováním.<small>Wikimedia Commons</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#eneolit" target="_blank" rel="noopener">Časová osa dějin umění – Eneolit</a>.</p>
+  </div>
+</section>
+<section class="section epocha" id="e-bronz">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Doba bronzová</h2><p class="podtitul">únětická, mohylová, popelnicová pole · <b>cca 2 200 – 800 př. n. l.</b></p></div>
+      <p>Bronz (měď + cín) přináší nové zbraně, šperky a dálkový obchod; umění je abstraktní, sluneční a ornamentální.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Starší (únětická) <em>2 200–1 600</em></span> <span class="chip">Střední (mohylová) <em>1 600–1 300</em></span> <span class="chip">Mladší (popelnicová pole) <em>1 300–800</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>Slitina mědi a cínu vyžaduje obchod na velké vzdálenosti (cín z Cornwallu a Krušných hor, jantar z Baltu) – Evropa se propojuje. Vznikají bohaté náčelnické hroby (mohyly), hradiště a depoty bronzových předmětů obětované bohům do vody a bažin.</p><p>Umění doby bronzové je převážně užité a abstraktní: spirály, soustředné kruhy, sluneční kotouče. Sluneční vůz z Trundholmu (Dánsko) a disk z Nebry (nejstarší zobrazení oblohy, cca 1 600 př. n. l.) ukazují kult Slunce a znalost astronomie. Figurální umění je vzácné – skalní rytiny lodí a bojovníků ve Skandinávii.</p><p>Ve Středomoří téže doby vrcholí mínojská a mykénská kultura a v Egyptě Nová říše; ve střední Evropě mluvíme o únětické kultuře (pojmenované podle Únětic u Prahy), mohylových kulturách a kulturách popelnicových polí (žárové pohřbívání).</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Bronzové zbraně, šperky a nádoby, tepání a odlévání</li><li>Sluneční symbolika, spirály, kruhy</li><li>Depoty (obětiny) v bažinách a řekách</li><li>Mohyly a hradiště; později žárové hroby v popelnicích</li><li>Dálkový obchod: cín, jantar, sůl</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Opevněná hradiště, mohylová pohřebiště, kolové osady.</li><li><b>Sochařství</b>: Bronzové figurky, sluneční vůz z Trundholmu, kultovní nádobky a vozíky.</li><li><b>Malířství</b>: Rytý ornament na bronzu a keramice, skalní rytiny (Tanum, Val Camonica).</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Únětická kultura, Lužická kultura, Knovízská kultura</p><p><b>U nás:</b> Únětice u Prahy – eponymní naleziště; depoty bronzů; kultovní nádobka z Kolínska; hradiště Plešivec.</p><p><b>Souvislosti:</b> Období začíná megasuchem 4,2 tisíce let a končí kolapsem doby bronzové (sucho, nájezdy, zánik obchodu s cínem kolem 1 200 př. n. l.).</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="bronz"><img src="../img/dejiny/bronz_slunecni_vuz.webp" alt="Sluneční vůz z Trundholmu (Dánsko)" loading="lazy" data-zoom><figcaption><b>Sluneční vůz z Trundholmu (Dánsko)</b>Bronz a zlatý plech, cca 1 400 př. n. l. – kůň táhne Slunce po obloze.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="bronz"><img src="../img/dejiny/bronz_nadobka.webp" alt="Kultovní nádobka z Kolínska" loading="lazy" data-zoom><figcaption><b>Kultovní nádobka z Kolínska</b>Doba bronzová, české země.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="bronz"><img src="../img/dejiny/bronz_nebra.webp" alt="Disk z Nebry (Německo)" loading="lazy" data-zoom><figcaption><b>Disk z Nebry (Německo)</b>Bronz se zlatými intarziemi Slunce, Měsíce a Plejád, cca 1 600 př. n. l.<small>foto: Dbachmann · CC BY-SA 3.0</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#bronz" target="_blank" rel="noopener">Časová osa dějin umění – Doba bronzová</a>.</p>
+  </div>
+</section>
+<section class="section epocha" id="e-zelezo">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Doba železná</h2><p class="podtitul">halštat a latén – Keltové · <b>cca 800 př. n. l. – přelom letopočtu</b></p></div>
+      <p>Železo, keltská oppida, mince a dynamický spirálový ornament laténského umění.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Halštat <em>800–450 př. n. l.</em></span> <span class="chip">Latén <em>450 př. n. l. – 0</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>Železo je dostupnější než bronz – zbraně a nástroje se rozšiřují mezi všechny vrstvy. Starší doba železná (halštat, 800–450 př. n. l.) je dobou knížecích mohyl s vozy a orientálními importy (Hochdorf, Vix). Mladší doba železná (latén, 450 př. n. l. – 0) patří Keltům, prvnímu etniku u nás známému jménem (Bójové).</p><p>Keltské umění je abstraktní, dynamické a ornamentální: propletené spirály, trojlisty (triskely), stylizované masky a zvířata na sponách, náramcích a mečích. Keltové razí zlaté mince (duhovky), zakládají oppida – první městské útvary – a ovládají sklářství a hrnčířský kruh.</p><p>Zatímco střední Evropa žije v „pravěku“, ve Středomoří vrcholí řecká klasika a rozmach Říma. Kolem přelomu letopočtu Kelty vytlačují Germáni a do Podunají přichází Řím – pro naše území začíná doba římská.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Železné zbraně a nástroje</li><li>Keltský ornament: spirála, triskel, maska</li><li>Oppida (Závist, Stradonice, Staré Hradisko)</li><li>Mince, sklo, hrnčířský kruh</li><li>Knížecí mohyly halštatu s vozy</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Oppida s hradbami (murus gallicus), dvorce, čtyřúhelníkové valy (viereckschanze).</li><li><b>Sochařství</b>: Kamenná hlava z Mšeckých Žehrovic, keltské stély, bronzové figurky, zdobené spony.</li><li><b>Malířství</b>: Malovaná keramika, email a korál na kovu, mince s abstraktní stylizací.</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Keltové (Bójové), Bylanská kultura, Germáni (Markomani)</p><p><b>U nás:</b> Hlava Kelta z Mšeckých Žehrovic, oppidum Závist u Prahy, Stradonice, duhovky; komorové hroby bylanské kultury (Plaňany).</p><p><b>Souvislosti:</b> Kolem 800 př. n. l. vlhké a chladné období (tzv. „Homérovo minimum“ sluneční aktivity) – expanze Keltů; od 250 př. n. l. římské klimatické optimum.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="zelezo"><img src="../img/dejiny/zelezo_keltsky_sperk.webp" alt="Keltský bronzový šperk (Cerhýnky)" loading="lazy" data-zoom><figcaption><b>Keltský bronzový šperk (Cerhýnky)</b>Mladší doba železná, laténský styl.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="zelezo"><img src="../img/dejiny/zelezo_ozdoba.webp" alt="Ozdoba doby železné" loading="lazy" data-zoom><figcaption><b>Ozdoba doby železné</b>Užité umění halštatského období.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="zelezo"><img src="../img/dejiny/zelezo_msecke_zehrovice.webp" alt="Hlava Kelta z Mšeckých Žehrovic" loading="lazy" data-zoom><figcaption><b>Hlava Kelta z Mšeckých Žehrovic</b>Opuka, 2. stol. př. n. l. – nejslavnější keltská plastika střední Evropy.<small>foto: CeStu · CC BY 3.0</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#zelezo" target="_blank" rel="noopener">Časová osa dějin umění – Doba železná</a>.</p>
+  </div>
+</section>
+
+
+<section class="section" id="l17-svet">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Souvislosti</span><h2>Mimo Evropu ve stejné době</h2></div><p>Komise ocení jednu až dvě ukázky, že svět nebyla jen Evropa – a datace, která to zařadí vedle evropských epoch.</p></div>
+    <div class="cols-3 kompakt">
+    <div class="card epocha-k" id="e-svet_nejstarsi">
+      <h3>Nejstarší umění světa <small>cca 75 000 – 10 000 let</small></h3>
+      <p class="podtitul">Afrika, Indonésie, Amerika</p>
+      <p>Symbolické myšlení začíná v Africe (Blombos, 75 000 let); nejstarší figurální malby jsou dnes na Sulawesi (45 000 let).</p>
+      <ul><li>Rytý okr, korálky, otisky rukou</li><li>Zvířata a lovecké scény</li><li>Skalní přístřešky na všech kontinentech</li><li>Symbolika starší než evropské jeskyně</li></ul>
+      <p><b>Jména:</b> <br><b>U nás:</b> —</p>
+      <div class="dila mini"><figure data-ep="svet_nejstarsi"><img src="../img/dejiny/pravek_migrace_mapa.webp" alt="Šíření člověka z Afriky" loading="lazy" data-zoom><figcaption><b>Šíření člověka z Afriky</b>Mapa migrací Homo sapiens – umění vzniká souběžně na několika kontinentech.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="svet_nejstarsi"><img src="../img/dejiny/svet_sulawesi.webp" alt="Jeskyně Leang Tedongnge (Sulawesi)" loading="lazy" data-zoom><figcaption><b>Jeskyně Leang Tedongnge (Sulawesi)</b>V této jeskyni je malba prasete bradavičnatého stará cca 45 500 let – nejstarší datovaná figurální malba světa.<small>foto: Oktaviana · CC BY-SA 4.0</small></figcaption></figure></div>
+      <p class="note"><a href="https://svoboda-koduje.github.io/dejiny_umeni/#svet_nejstarsi" target="_blank" rel="noopener">Víc na časové ose</a></p>
+    </div>
+    <div class="card epocha-k" id="e-svet_australie">
+      <h3>Umění původních Australanů <small>cca 40 000 let – dodnes</small></h3>
+      <p class="podtitul">nejdelší nepřetržitá tradice</p>
+      <p>Skalní malby v Kakadu a Kimberley, rentgenový styl a tečkovaná malba Snění – tradice trvající desítky tisíc let až do současných galerií.</p>
+      <ul><li>Rentgenový styl</li><li>Tečkovaná malba, mapy Snění</li><li>Okr, bílá hlinka, kůra</li><li>Umění jako obřad a vlastnictví příběhu</li></ul>
+      <p><b>Jména:</b> Emily Kame Kngwarreye, Albert Namatjira, Clifford Possum<br><b>U nás:</b> —</p>
+      <div class="dila mini"><figure data-ep="svet_australie"><img src="../img/dejiny/svet_kakadu.webp" alt="Rentgenový styl (Ubirr, Kakadu)" loading="lazy" data-zoom><figcaption><b>Rentgenový styl (Ubirr, Kakadu)</b>Arnhemská země – postavy a ryby malované tak, že jsou vidět kosti a vnitřní orgány skrz tělo.<small>foto: Nigel Malone · CC BY-SA 1.0</small></figcaption></figure></div>
+      <p class="note"><a href="https://svoboda-koduje.github.io/dejiny_umeni/#svet_australie" target="_blank" rel="noopener">Víc na časové ose</a></p>
+    </div></div>
+  </div>
+</section>
+
+<section class="section" id="l17-poznavacka">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Procvič</span><h2>Poznávačka</h2></div><p>Skryj popisky, zamíchej a říkej si ke každému obrázku: název, datace, období, souvislost. Najetím myší popisek odhalíš.</p></div>
+    <div data-poznavacka>
+      <div class="poznavacka-ctrl"><button class="btn btn-small btn-primary" type="button" data-skryt>Skrýt popisky (poznávačka)</button><button class="btn btn-small btn-ghost" type="button" data-michat>Zamíchat</button><span class="hint">23 památek</span></div>
+      <div class="dila"><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_chauvet.webp" alt="Jeskyně Chauvet (Francie)" loading="lazy" data-zoom><figcaption><b>Jeskyně Chauvet (Francie)</b>Koně kreslení uhlem se stínováním, cca 36 000 let – nejstarší velké figurální malby Evropy.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_lascaux.webp" alt="Lascaux (Francie)" loading="lazy" data-zoom><figcaption><b>Lascaux (Francie)</b>„Síň býků“, cca 17 000 let; přes 600 maleb objevených roku 1940 čtyřmi chlapci.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_altamira.webp" alt="Altamira (Španělsko)" loading="lazy" data-zoom><figcaption><b>Altamira (Španělsko)</b>Polychromní bizoni na stropě, využívající vypoukliny skály. Objevena 1879 – pro Páleše rok nástupu Michaela.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_vestonicka_venuse.webp" alt="Věstonická venuše" loading="lazy" data-zoom><figcaption><b>Věstonická venuše</b>Pálená hlína, 11,5 cm, cca 29 000 let. Nejstarší keramická soška na světě (objev 1925).<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_willendorf.webp" alt="Willendorfská venuše" loading="lazy" data-zoom><figcaption><b>Willendorfská venuše</b>Vápenec, 11 cm, cca 29 000 let. Symbol plodnosti bez obličeje.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="paleolit"><img src="../img/dejiny/paleolit_otisky_rukou.webp" alt="Otisky rukou" loading="lazy" data-zoom><figcaption><b>Otisky rukou</b>Negativní otisky foukané barvou – „podpis“ pravěkých tvůrců (Cueva de las Manos, Argentina).<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="mezolit"><img src="../img/dejiny/pravek_amazonie.webp" alt="Serranía de la Lindosa (Kolumbie)" loading="lazy" data-zoom><figcaption><b>Serranía de la Lindosa (Kolumbie)</b>Skalní malby staré cca 12 500 let s ledovcovou faunou – objeveny roku 2020.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="mezolit"><img src="../img/dejiny/mezolit_valltorta.webp" alt="Lovci z Valltorty (Španělsko)" loading="lazy" data-zoom><figcaption><b>Lovci z Valltorty (Španělsko)</b>Schematičtí lučištníci v pohybu – levantské skalní umění.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="neolit"><img src="../img/dejiny/neolit_gobekli.webp" alt="Göbekli Tepe (Turecko)" loading="lazy" data-zoom><figcaption><b>Göbekli Tepe (Turecko)</b>Pilíře ve tvaru T s reliéfy lišek, hadů a jeřábů, cca 9 500 př. n. l. – nejstarší chrám světa.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="neolit"><img src="../img/dejiny/neolit_catalhoyuk.webp" alt="Çatalhöyük (Turecko)" loading="lazy" data-zoom><figcaption><b>Çatalhöyük (Turecko)</b>Nástěnná malba a reliéfy v domech prvního „města“, 7. tisíciletí př. n. l.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="neolit"><img src="../img/dejiny/neolit_moravska_malovana.webp" alt="Moravská malovaná keramika" loading="lazy" data-zoom><figcaption><b>Moravská malovaná keramika</b>Lengyelská kultura, 5. tisíciletí př. n. l. – malovaný geometrický ornament.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="neolit"><img src="../img/dejiny/neolit_newgrange.webp" alt="Newgrange (Irsko)" loading="lazy" data-zoom><figcaption><b>Newgrange (Irsko)</b>Chodbová hrobka z 3 200 př. n. l., do níž o zimním slunovratu vniká slunce – přechod k eneolitu.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="eneolit"><img src="../img/dejiny/neolit_stonehenge.webp" alt="Stonehenge (Anglie)" loading="lazy" data-zoom><figcaption><b>Stonehenge (Anglie)</b>Kruh sarsenových trilitů orientovaný na letní slunovrat, 3 000–2 000 př. n. l.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="eneolit"><img src="../img/dejiny/neolit_otzi.webp" alt="Ötzi – rekonstrukce" loading="lazy" data-zoom><figcaption><b>Ötzi – rekonstrukce</b>Muž z ledovce v Ötztalských Alpách, cca 3 300 př. n. l., s měděnou sekerou a tetováním.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="bronz"><img src="../img/dejiny/bronz_slunecni_vuz.webp" alt="Sluneční vůz z Trundholmu (Dánsko)" loading="lazy" data-zoom><figcaption><b>Sluneční vůz z Trundholmu (Dánsko)</b>Bronz a zlatý plech, cca 1 400 př. n. l. – kůň táhne Slunce po obloze.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="bronz"><img src="../img/dejiny/bronz_nadobka.webp" alt="Kultovní nádobka z Kolínska" loading="lazy" data-zoom><figcaption><b>Kultovní nádobka z Kolínska</b>Doba bronzová, české země.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="bronz"><img src="../img/dejiny/bronz_nebra.webp" alt="Disk z Nebry (Německo)" loading="lazy" data-zoom><figcaption><b>Disk z Nebry (Německo)</b>Bronz se zlatými intarziemi Slunce, Měsíce a Plejád, cca 1 600 př. n. l.<small>foto: Dbachmann · CC BY-SA 3.0</small></figcaption></figure><figure data-ep="zelezo"><img src="../img/dejiny/zelezo_keltsky_sperk.webp" alt="Keltský bronzový šperk (Cerhýnky)" loading="lazy" data-zoom><figcaption><b>Keltský bronzový šperk (Cerhýnky)</b>Mladší doba železná, laténský styl.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="zelezo"><img src="../img/dejiny/zelezo_ozdoba.webp" alt="Ozdoba doby železné" loading="lazy" data-zoom><figcaption><b>Ozdoba doby železné</b>Užité umění halštatského období.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="zelezo"><img src="../img/dejiny/zelezo_msecke_zehrovice.webp" alt="Hlava Kelta z Mšeckých Žehrovic" loading="lazy" data-zoom><figcaption><b>Hlava Kelta z Mšeckých Žehrovic</b>Opuka, 2. stol. př. n. l. – nejslavnější keltská plastika střední Evropy.<small>foto: CeStu · CC BY 3.0</small></figcaption></figure><figure data-ep="svet_nejstarsi"><img src="../img/dejiny/pravek_migrace_mapa.webp" alt="Šíření člověka z Afriky" loading="lazy" data-zoom><figcaption><b>Šíření člověka z Afriky</b>Mapa migrací Homo sapiens – umění vzniká souběžně na několika kontinentech.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="svet_nejstarsi"><img src="../img/dejiny/svet_sulawesi.webp" alt="Jeskyně Leang Tedongnge (Sulawesi)" loading="lazy" data-zoom><figcaption><b>Jeskyně Leang Tedongnge (Sulawesi)</b>V této jeskyni je malba prasete bradavičnatého stará cca 45 500 let – nejstarší datovaná figurální malba světa.<small>foto: Oktaviana · CC BY-SA 4.0</small></figcaption></figure><figure data-ep="svet_australie"><img src="../img/dejiny/svet_kakadu.webp" alt="Rentgenový styl (Ubirr, Kakadu)" loading="lazy" data-zoom><figcaption><b>Rentgenový styl (Ubirr, Kakadu)</b>Arnhemská země – postavy a ryby malované tak, že jsou vidět kosti a vnitřní orgány skrz tělo.<small>foto: Nigel Malone · CC BY-SA 1.0</small></figcaption></figure></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l17-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div><p>Většinu času sežere hledání obrázků a psaní popisků – proto měj v hlavě 8–10 památek, které umíš, a jejich datace.</p></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Výběr</b><p>Projdi připravené obrázky, vyber 8–12 památek napříč fázemi období a druhy umění. Seřaď chronologicky.</p></div></li>
+        <li><span class="t">3–8<small>min</small></span><div><b>Šablona</b><p>InDesign 1920 × 1080, vzorová stránka (hlavička, číslo), styly Titulek/Popisek/Datace/Zdroj, objektový styl rámečku. Titulní slide.</p></div></li>
+        <li><span class="t">8–11<small>min</small></span><div><b>Osa období</b><p>Slide s fázemi a daty (obdélníky + text) – ukáže, že období chápeš v čase.</p></div></li>
+        <li><span class="t">11–24<small>min</small></span><div><b>Památky</b><p>Na každý slide: umístit obrázek, přizpůsobit rámečku, popisek 3–4 řádky podle vzoru. Cca 1 minuta na slide – popisky piš stručně, mluvit budeš u obhajoby.</p></div></li>
+        <li><span class="t">24–27<small>min</small></span><div><b>U nás + zdroje</b><p>Slide s českými památkami období; poslední slide zdroje obrázků (soubor, autor, licence).</p></div></li>
+        <li><span class="t">27–30<small>min</small></span><div><b>Kontrola a export</b><p>Pravopis (Ctrl+I), datace a názvy, žádný roztažený obrázek, jednotné velikosti písma. Export interaktivní PDF, otevřít, Ctrl+L, projít.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Co říct komisi na začátek</h3>
+          <p>„Prezentaci jsem sestavil v InDesignu jako PDF 16 : 9 s jednotnou šablonou a popisky název – datace – místo – technika – zdroj. Období pravěku charakterizuji takto: …“ (viz Přehled období výše – 5 vět). „Památky jsem vybral tak, aby pokryly fáze období a architekturu, sochařství i malířství, včetně českých příkladů.“</p>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l17-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Popisek jen s názvem – chybí datace a souvislosti, které zadání výslovně chce.</div>
+      <div class="tip chyba"><b>Chyba</b>Obrázky roztažené nepoměrně, malé, rozmazané nebo s vodoznakem; bez uvedení zdroje.</div>
+      <div class="tip chyba"><b>Chyba</b>Prezentace 4 : 3 nebo A4 na výšku, každý slide jiný layout a písmo; text v odstavcích místo popisků.</div>
+      <div class="tip chyba"><b>Chyba</b>Památky zaměněné mezi obdobími (Pantheon římský × pařížský, Theodorik v renesanci, Stonehenge v paleolitu).</div>
+      <div class="tip chyba"><b>Chyba</b>Obhajoba bez úvodní charakteristiky – žák hned čte popisky; komise se ptá „a co je pro to období typické?“.</div>
+      <div class="tip chyba"><b>Chyba</b>Chybí české památky a vazba na dnešek (co z období vidíš v Pardubicích, v Praze).</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l17-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise"><li><details><summary>Charakterizuj pravěkých kultur jako celek.</summary><div class="odp">Pravěk je nejdelší kapitola dějin umění – od prvních maleb v jeskyních doby ledové (před 40 000 lety) po keltská oppida na prahu letopočtu. Umění vzniká bez písma, bez měst a bez jmen autorů: víme, <b>co</b> lidé vytvořili, ale <b>proč</b> musíme vykládat z nálezů. Periodizace podle materiálu nástrojů: doba kamenná (paleolit, mezolit, neolit, eneolit), bronzová, železná.</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Paleolit?</summary><div class="odp">cca 40 000 – 10 000 př. n. l.. Nejstarší umění lidstva: jeskynní malby zvířat, drobné venuše a rytiny lovců doby ledové. Znaky: Zobrazení zvířat (býk, kůň, mamut, jelen) – téměř bez lidí; Malba na skalní stěny hluboko v jeskyních, okr a uhel; Drobné plastiky venuší z kamene, kosti a hlíny; Rytiny na kostech, zdobené zbraně a nástroje; Magický a rituální účel, nikoli dekorace. Jména: Anonymní šamani a malíři, Karel Absolon (objevitel Věstonické venuše), Zdeněk Burian (rekonstrukce pravěku). U nás: Dolní Věstonice a Pavlov – lovci mamutů, Věstonická venuše a nejstarší keramika; Petřkovická venuše; Předmostí u Přerova.</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Mezolit?</summary><div class="odp">cca 10 000 – 6 000 př. n. l.. Po oteplení mizí mamuti i velké jeskynní galerie; lovci lesa tvoří drobné rytiny, geometrické znaky a skalní malby loveckých scén. Znaky: Drobné, schematické figury v pohybu; Lovecké a taneční scény – člověk jako hrdina; Geometrické znaky, ornament na nástrojích; Skalní přístřešky místo hlubokých jeskyní. Jména: Anonymní tvůrci. U nás: Mezolitická sídliště v Polabí a v pískovcových převisech Českého ráje (Kokořínsko).</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Neolit?</summary><div class="odp">cca 9 500 – 4 300 př. n. l. (u nás od 5 500). Neolitická revoluce: zemědělství, trvalé vesnice, keramika s geometrickým ornamentem a první svatyně. Znaky: Geometrický ornament na keramice (lineární, vypíchaná, moravská malovaná); Trvalé domy a vesnice, dlouhé domy; Ženské idoly – kult plodnosti; První monumentální svatyně (Göbekli Tepe); Broušené kamenné nástroje. Jména: Anonymní zemědělské komunity, Klaus Schmidt (výzkum Göbekli Tepe). U nás: Bylany u Kutné Hory (dlouhé domy), Vedrovice, moravská malovaná keramika, rondel v Kolíně – jedny z nejstarších monumentálních staveb Evropy.</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Eneolit?</summary><div class="odp">cca 4 300 – 2 200 př. n. l.. Doba prvních kovů, oradla, kola a megalitů – Stonehenge, Carnac, muž z ledovce Ötzi. Znaky: Měď a zlato – první kovy; Megality: menhir, dolmen, kromlech; Astronomická orientace staveb; Kolo, vůz, oradlo; bohaté hroby elit; Šňůrová keramika, zvoncovité poháry. Jména: Ötzi – muž z ledovce, Stavitelé Stonehenge. U nás: Menhiry v Klobukách a Drahomyšli, hradiště Homolka u Stehelčevsi, řivnáčská kultura, hrob lukostřelce (zvoncovité poháry).</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Doba bronzová?</summary><div class="odp">cca 2 200 – 800 př. n. l.. Bronz (měď + cín) přináší nové zbraně, šperky a dálkový obchod; umění je abstraktní, sluneční a ornamentální. Znaky: Bronzové zbraně, šperky a nádoby, tepání a odlévání; Sluneční symbolika, spirály, kruhy; Depoty (obětiny) v bažinách a řekách; Mohyly a hradiště; později žárové hroby v popelnicích; Dálkový obchod: cín, jantar, sůl. Jména: Únětická kultura, Lužická kultura, Knovízská kultura. U nás: Únětice u Prahy – eponymní naleziště; depoty bronzů; kultovní nádobka z Kolínska; hradiště Plešivec.</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Doba železná?</summary><div class="odp">cca 800 př. n. l. – přelom letopočtu. Železo, keltská oppida, mince a dynamický spirálový ornament laténského umění. Znaky: Železné zbraně a nástroje; Keltský ornament: spirála, triskel, maska; Oppida (Závist, Stradonice, Staré Hradisko); Mince, sklo, hrnčířský kruh; Knížecí mohyly halštatu s vozy. Jména: Keltové (Bójové), Bylanská kultura, Germáni (Markomani). U nás: Hlava Kelta z Mšeckých Žehrovic, oppidum Závist u Prahy, Stradonice, duhovky; komorové hroby bylanské kultury (Plaňany).</div></details></li><li><details><summary>Proč jsi vybral právě tyto památky a co o každé řekneš?</summary><div class="odp">Ke každému obrázku: <b>název, datace, místo/sbírka, materiál a technika, sloh/fáze, autor</b> (pokud je znám) a jednu souvislost – k čemu dílo sloužilo, co bylo nového, co z něj převzaly další epochy. Vybírej tak, aby každá fáze období měla aspoň jednu architekturu, jednu sochu/plastiku a jednu malbu či užité umění.</div></details></li><li><details><summary>Odkud jsou obrázky a smíš je použít?</summary><div class="odp">Z Wikimedia Commons – volná díla (autor zemřel před více než 70 lety) nebo fotografie pod licencí CC BY / CC BY-SA, u kterých uvádím autora fotografie a licenci v popisku nebo na posledním slidu „Zdroje“. Pro školní prezentaci platí i citační výjimka, ale zdroj uvádím vždy.</div></details></li><li><details><summary>V jakém programu jsi prezentaci dělal a proč PDF?</summary><div class="odp">InDesign (vzorové stránky, styly, obrázky umístěné jako vazby, export do interaktivního PDF 16 : 9) nebo Illustrator/PowerPoint. PDF se otevře všude stejně, drží písma i obrázky, spustí se na celou obrazovku (Ctrl+L) a listuje se šipkami.</div></details></li></ul>
+  </div>
+</section>
+
+<section class="section" id="l17-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz17" data-quiz='[
+      {
+            "q": "Do kterého období patří „Sluneční vůz z Trundholmu (Dánsko)“?",
+            "o": [
+                  "Mezolit",
+                  "Doba bronzová",
+                  "Doba železná",
+                  "Paleolit"
+            ],
+            "a": 1,
+            "w": "Sluneční vůz z Trundholmu (Dánsko): Bronz a zlatý plech, cca 1 400 př. n. l. – kůň táhne Slunce po obloze. (cca 2 200 – 800 př. n. l.)."
+      },
+      {
+            "q": "Do kterého období patří „Kultovní nádobka z Kolínska“?",
+            "o": [
+                  "Doba bronzová",
+                  "Doba železná",
+                  "Paleolit",
+                  "Eneolit"
+            ],
+            "a": 0,
+            "w": "Kultovní nádobka z Kolínska: Doba bronzová, české země. (cca 2 200 – 800 př. n. l.)."
+      },
+      {
+            "q": "Do kterého období patří „Newgrange (Irsko)“?",
+            "o": [
+                  "Doba bronzová",
+                  "Neolit",
+                  "Eneolit",
+                  "Mezolit"
+            ],
+            "a": 1,
+            "w": "Newgrange (Irsko): Chodbová hrobka z 3 200 př. n. l., do níž o zimním slunovratu vniká slunce – přechod k eneolitu. (cca 9 500 – 4 300 př. n. l. (u nás od 5 500))."
+      },
+      {
+            "q": "Do kterého období patří „Ötzi – rekonstrukce“?",
+            "o": [
+                  "Eneolit",
+                  "Doba bronzová",
+                  "Neolit",
+                  "Paleolit"
+            ],
+            "a": 0,
+            "w": "Ötzi – rekonstrukce: Muž z ledovce v Ötztalských Alpách, cca 3 300 př. n. l., s měděnou sekerou a tetováním. (cca 4 300 – 2 200 př. n. l.)."
+      },
+      {
+            "q": "Období „Neolit“ datujeme přibližně",
+            "o": [
+                  "cca 9 500 – 4 300 př. n. l. (u nás od 5 500)",
+                  "cca 800 př. n. l. – přelom letopočtu",
+                  "cca 4 300 – 2 200 př. n. l.",
+                  "cca 10 000 – 6 000 př. n. l."
+            ],
+            "a": 0,
+            "w": "Neolitická revoluce: zemědělství, trvalé vesnice, keramika s geometrickým ornamentem a první svatyně."
+      },
+      {
+            "q": "Období „Doba železná“ datujeme přibližně",
+            "o": [
+                  "cca 10 000 – 6 000 př. n. l.",
+                  "cca 800 př. n. l. – přelom letopočtu",
+                  "cca 2 200 – 800 př. n. l.",
+                  "cca 40 000 – 10 000 př. n. l."
+            ],
+            "a": 1,
+            "w": "Železo, keltská oppida, mince a dynamický spirálový ornament laténského umění."
+      },
+      {
+            "q": "„Mohyly a hradiště; později žárové hroby v popelnicích“ je typické pro",
+            "o": [
+                  "Neolit",
+                  "Eneolit",
+                  "Doba bronzová",
+                  "Doba železná"
+            ],
+            "a": 2,
+            "w": "Doba bronzová (cca 2 200 – 800 př. n. l.): Bronz (měď + cín) přináší nové zbraně, šperky a dálkový obchod; umění je abstraktní, sluneční a ornamentální."
+      },
+      {
+            "q": "„Oppida (Závist, Stradonice, Staré Hradisko)“ je typické pro",
+            "o": [
+                  "Mezolit",
+                  "Eneolit",
+                  "Doba železná",
+                  "Doba bronzová"
+            ],
+            "a": 2,
+            "w": "Doba železná (cca 800 př. n. l. – přelom letopočtu): Železo, keltská oppida, mince a dynamický spirálový ornament laténského umění."
+      },
+      {
+            "q": "„První monumentální svatyně (Göbekli Tepe)“ je typické pro",
+            "o": [
+                  "Doba železná",
+                  "Neolit",
+                  "Eneolit",
+                  "Mezolit"
+            ],
+            "a": 1,
+            "w": "Neolit (cca 9 500 – 4 300 př. n. l. (u nás od 5 500)): Neolitická revoluce: zemědělství, trvalé vesnice, keramika s geometrickým ornamentem a první svatyně."
+      }
+]'></div>
+  </div>
+</section>
+
+<section class="section" id="l17-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="https://svoboda-koduje.github.io/dejiny_umeni/#osa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><circle cx="7" cy="12" r="2"/><circle cx="17" cy="12" r="2"/></svg><div><b>Časová osa dějin umění</b><span>Interaktivní osa všech epoch s detaily a obrázky.</span></div></a>
+      <a class="link-card" href="https://svoboda-koduje.github.io/dejiny_umeni/#prehled" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg><div><b>Přehledová tabulka slohů</b><span>Znaky, architektura, sochařství, malířství vedle sebe.</span></div></a>
+      <a class="link-card" href="https://svoboda-koduje.github.io/dejiny_umeni/#mapa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg><div><b>Mapa světa a umění mimo Evropu</b><span>Kde se co dělo ve stejné době.</span></div></a>
+      <a class="link-card" href="https://commons.wikimedia.org/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><div><b>Wikimedia Commons</b><span>Volné obrázky děl – vždy zkontroluj licenci a uveď autora.</span></div></a>
+      <a class="link-card" href="../lekce/16-perspektiva-kompozice.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20L12 4l9 16z"/></svg><div><b>Lekce 16: výtvarná teorie</b><span>Perspektiva, kánon, zlatý řez – pojmy, které se k památkám hodí.</span></div></a>
+      <a class="link-card" href="../zdroje.html#obrazky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg><div><b>Zdroje obrázků tohoto webu</b><span>Licence použitých ukázek.</span></div></a>
+    </div>
+  </div>
+</section>
+<div class="wrap"><nav class="pager" aria-label="Další a předchozí lekce"><a class="prev" href="../lekce/16-perspektiva-kompozice.html"><small>← Předchozí lekce</small><b>16 · Perspektiva, techniky, kompozice, zlatý řez, modulor</b></a><a class="next" href="../lekce/18-dejiny-starovek.html"><small>Další lekce →</small><b>18 · Dějiny umění – starověk</b></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="../img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="../zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="../zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/interaktivni.js"></script>
+</body>
+</html>

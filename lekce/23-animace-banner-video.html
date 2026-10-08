@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>23 · Reklamní animovaná webová grafika | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Maturitní otázka 23: animovaný banner 250 × 250 px jako tlačítko do e-shopu exportovaný do GIF, a reklamní video scéna ve Photoshopu Full HD 1920 × 1080, 25 fps, min. 5 s, animace polohy, krytí a stylu na časové ose, render h.264 MP4; pojmy HDTV, rozlišení, RGB, kmitočet snímků.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="23 · Reklamní animovaná webová grafika">
+<meta property="og:description" content="Maturitní otázka 23: animovaný banner 250 × 250 px jako tlačítko do e-shopu exportovaný do GIF, a reklamní video scéna ve Photoshopu Full HD 1920 × 1080, 25 fps, min. 5 s, animace polohy, krytí a stylu na časové ose, render h.264 MP4; pojmy HDTV, rozlišení, RGB, kmitočet snímků.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styl.css">
+</head>
+<body data-page="23-animace-banner-video.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="../videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>OTÁZKA 23 / 23</b><span>Adobe Photoshop</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="../img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="../index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="../lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="../lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="../lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="../lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="../lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="../lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true" class="active"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="../lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="../lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="../lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="../lekce/23-animace-banner-video.html" class="active"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="../lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="../lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="../lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="../lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="../lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="../lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="../lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="../lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="../lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="../lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="../lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="../lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="../lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="../kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="../cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="../videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="../zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-photoshop">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Maturitní otázka 23</span><span class="blok">· Adobe Photoshop</span></p>
+    <h1>Reklamní animovaná webová grafika</h1>
+    <p class="lead">Dva animované výstupy pro web. <b>Banner 250 × 250 px</b>, který vypadá jako tlačítko do e-shopu a propaguje výrobek z podkladů – s pohyblivými prvky, export do <b>GIF</b>. A <b>video scéna ve Photoshopu</b>: Full HD <b>1920 × 1080</b>, 150 dpi, RGB, alespoň <b>5 sekund</b>, <b>25 fps</b>, animace <b>polohy, krytí a stylu</b> na časové ose, render <b>h.264 (MP4)</b>. V teorii: postupy pro GIF i MP4, kompozice a zamýšlený účinek, a pojmy <b>HDTV, obrazové rozlišení, barevný prostor RGB, kmitočet snímků</b>.</p>
+    <ul class="zadani"><li><b>Illustrator / Photoshop</b>banner 250 × 250 px → GIF</li><li><b>Photoshop</b>video 1920 × 1080, 25 fps, ≥ 5 s → MP4 h.264</li><li><b>Podklady</b>obrázky výrobku</li><li><b>Teorie</b>HDTV, rozlišení, RGB, fps</li></ul>
+    <nav class="subnav" aria-label="Obsah lekce"><a href="#l23-otazka">Co se losuje</a><a href="#l23-banner">Banner jako tlačítko</a><a href="#l23-gif">Animace snímků → GIF</a><a href="#l23-lab">Laboratoř animace</a><a href="#l23-video">Video na časové ose</a><a href="#l23-pojmy">HDTV, rozlišení, RGB, fps</a><a href="#l23-postup">Postup pro 30 minut</a><a href="#l23-chyby">Časté chyby</a><a href="#l23-komise">Otázky komise</a><a href="#l23-kviz">Kvíz</a></nav>
+  </div>
+</section>
+<section class="section" id="l23-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li><b>Banner 250 × 250 px</b> pro web (Illustrator a/nebo Photoshop) propagující výrobek z podkladů; má působit jako <b>tlačítko</b> odkazující na e-shop; s <b>animovanými prvky</b>; export do <b>GIF</b>.</li>
+          <li><b>Scéna ve Photoshopu</b> → video: HDTV / Full HD <b>1920 × 1080 px</b>, 150 dpi, <b>RGB</b>, délka <b>≥ 5 s</b>, <b>25 fps</b>; téma: reklamní propagace výrobku z podkladů; využít <b>polohu, krytí a styl</b> na časové ose; render <b>h.264 (MP4)</b> ve Full HD.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>Illustrator + Photoshop (Časová osa)</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Postupy pro vytvoření obou souborů – <b>GIF i MP4</b>.</li>
+          <li><b>Obrazovou kompozici</b> obou souborů a zamýšlený <b>účinek na diváka</b>.</li>
+          <li>Pojmy <b>HDTV, obrazové rozlišení, barevný prostor RGB, kmitočet snímků</b>.</li>
+        </ul>
+        <p class="note">Animaci pro sociální sítě máš ze 3. ročníku: <a href="https://svoboda-koduje.github.io/enviro-projekty-3g/vyuka/03-animace-socialni-site.html" target="_blank" rel="noopener">Grafika pro klima – animace</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l23-banner">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Soubor 1</span><h2>Banner 250 × 250 px jako tlačítko do e-shopu</h2></div>
+      <p>Čtvercový banner (IAB „Square“ 250 × 250) má jediný úkol: přimět ke kliknutí. Proto vypadá jako tlačítko – má jasnou výzvu k akci.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Kompozice banneru</h3><ul><li><b>Produkt</b> (fotografie z podkladů, vyříznutá maskou) – dominanta, cca 50 % plochy.</li><li><b>Titulek</b> (2–4 slova: „Nová kolekce“, „−30 %“), <b>cena</b> nebo benefit.</li><li><b>CTA tlačítko</b>: „Koupit“, „Do e-shopu“, „Zjistit více“ – kontrastní barva, zaoblený obdélník, šipka; vizuálně stisknutelné (stín, světlý okraj).</li><li><b>Logo</b> malé v rohu; <b>rámeček</b> 1 px, aby banner na stránce nesplýval.</li><li>Málo prvků, velký kontrast, čitelnost z dálky; písmo min. 12–14 px; bezpečná zóna 10 px od okraje.</li><li>Barvy sRGB; pozor na malé rozměry – detaily fotky zmizí.</li></ul></div>
+      <div class="card"><h3>Co animovat (a co ne)</h3><ul><li><b>Vhodné</b>: produkt „přijíždí“ zleva, titulek se objeví (krytí), CTA tlačítko pulzuje nebo se zhoupne, cena „nabíhá“, lesk přejede přes tlačítko, šipka se posune.</li><li><b>Smyčka</b> 3–8 s, 3–5 fází, každý snímek čitelný; poslední snímek = kompletní sdělení (zůstane, když animace skončí); u reklamních sítí max. 15–30 s a často max. 3 smyčky.</li><li><b>Ne</b>: blikání (epilepsie, zákaz v sítích), rychlé střihy, nečitelný text v pohybu, příliš mnoho pohybujících se prvků.</li><li>Velikost souboru: cíl do 150 kB (GIF s 256 barvami, málo snímků, ploché barvy).</li></ul></div>
+      <div class="card"><h3>Illustrator nebo Photoshop?</h3><ul><li><b>Illustrator</b>: čistá vektorová grafika tlačítka, textu a loga; snímky animace na <b>plátnech</b> (Alt+tažení plátna), export pro obrazovky → PNG. Animace a GIF pak ve Photoshopu.</li><li><b>Photoshop</b>: fotografii produktu, masky, efekty a <b>Časovou osu</b> – animaci snímků nebo videa a export GIF. Ideální kombinace: grafika z Illustratoru (vložená jako inteligentní objekt) + animace ve Photoshopu.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l23-gif">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Časová osa</span><h2>Animace snímků a export GIF</h2></div>
+      <p><span class="menu-path">Okna <i>›</i> Časová osa</span> umí dva režimy: <b>animaci snímků</b> (frame animation – jako flipbook) a <b>videovou časovou osu</b> (klíčové snímky). Pro GIF banner stačí snímky.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <ol class="steps">
+          <li>Dokument <b>250 × 250 px</b>, 72 ppi, RGB. Vrstvy: pozadí, produkt, titulek, cena, CTA, logo, lesk (každý prvek zvlášť).</li>
+          <li><span class="menu-path">Okna <i>›</i> Časová osa</span> › <b>Vytvořit animaci snímků</b>. Snímek 1: viditelné jen pozadí a logo. Nastav <b>zpoždění</b> (0,5 s).</li>
+          <li><b>Duplikovat snímek</b> (ikona ⧉): snímek 2 – zapni produkt (posuň ho nástrojem Přesun na cílovou pozici); snímek 3 – titulek; snímek 4 – cena + CTA; snímek 5 – lesk přes CTA; poslední snímek 2–3 s.</li>
+          <li><b>Doplnit</b> (Tween, ikona ⋯): mezi snímky 1–2 přidej 5 mezisnímků s parametry Poloha + Krytí → produkt plynule přijíždí. Totéž u titulku (krytí). Zpoždění mezisnímků 0,05–0,1 s.</li>
+          <li><b>Opakování</b>: Stále (nebo 3×). Přehrát mezerníkem.</li>
+          <li><span class="menu-path">Soubor <i>›</i> Exportovat <i>›</i> Uložit pro web (starší)</span>: <b>GIF</b>, 128–256 barev, Selektivní paleta, Rozklad 50–100 % (dithering) pro fotku, bez průhlednosti (nebo s), <b>Možnosti opakování: Stále</b>, zkontroluj velikost (kB) a náhled v prohlížeči. Uložit → <em>banner_250.gif</em>.</li>
+          <li>Otevři GIF v prohlížeči – animace běží, banner „ťuká“ jako tlačítko.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>GIF – co o něm říct</h3>
+        <ul>
+          <li>Graphics Interchange Format (1987), bezztrátová LZW komprese, <b>indexovaná paleta max. 256 barev</b> (fotky se rozpadají – dithering), 1bitová průhlednost, <b>více snímků v jednom souboru se zpožděním a smyčkou</b> – proto animace.</li>
+          <li>Přehraje ho každý prohlížeč, e-mail i chat bez přehrávače; bez zvuku; velký soubor při mnoha snímcích a velké ploše (pro 250 × 250 v pořádku).</li>
+          <li>Alternativy: <b>animovaný PNG (APNG)</b>, <b>WebP</b>, <b>HTML5 banner</b> (CSS/JS, Adobe Animate, Google Web Designer – dnes standard reklamních sítí), <b>MP4/WebM</b> video pro sociální sítě.</li>
+          <li>Snímková animace × videová časová osa: snímky = diskrétní stavy (flipbook), časová osa = klíčové snímky a interpolace (plynulé) – z časové osy lze také exportovat GIF (Soubor › Exportovat › Uložit pro web) nebo video.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l23-lab">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Vyzkoušej</span><h2>Laboratoř animace</h2></div>
+      <p>Banner 250 × 250 jako snímková animace. Měň počet mezisnímků a zpoždění a sleduj plynulost – a kolik snímků (a kB) to stojí.</p>
+    </div>
+    <div class="lab" data-widget="animace">
+      <div class="lab-head"><h3>Snímková animace banneru</h3><span class="hint">Poloha, krytí, styl</span></div>
+      <div class="lab-body wide">
+        <div class="lab-stage pad"><div data-stage style="width:100%"></div></div>
+        <div class="lab-ctrl">
+          <label><span>Mezisnímky (Tween) <output>5</output></span><input type="range" min="0" max="15" value="5" data-tween></label>
+          <label><span>Zpoždění mezisnímku <output>0.08</output> s</span><input type="range" min="0.03" max="0.3" step="0.01" value="0.08" data-delay></label>
+          <label><span>Pauza na posledním snímku <output>2</output> s</span><input type="range" min="0.5" max="4" step="0.5" value="2" data-hold></label>
+          <label class="check"><input type="checkbox" data-puls checked> Pulzující tlačítko (styl)</label>
+          <div class="row"><button class="btn btn-small btn-primary" type="button" data-play>Přehrát</button><button class="btn btn-small btn-ghost" type="button" data-stop>Stop</button></div>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l23-video">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Soubor 2</span><h2>Video scéna na časové ose Photoshopu</h2></div>
+      <p>Photoshop umí jednoduché motion-design video: vrstvy mají na časové ose klíčové snímky pro <b>Polohu</b>, <b>Krytí</b> a <b>Styl</b> (styly vrstvy – stín, záře, přechod), u inteligentních objektů i Transformaci.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <ol class="steps">
+          <li><kbd>Ctrl</kbd>+<kbd>N</kbd> › <b>Film a video</b> › <b>HDTV 1080p</b> (1920 × 1080 px, čtvercové pixely, 72 → nastav <b>150 ppi</b> podle zadání – na video to nemá vliv), RGB 8 bit, <b>Kmitočet snímků 25</b> (Časová osa › nabídka › Nastavit kmitočet snímků › 25 fps). Vodítka bezpečné oblasti zobrazí dokument automaticky.</li>
+          <li>Vrstvy scény: pozadí (přechod/fotka), <b>produkt</b> (inteligentní objekt – lze animovat Transformaci), titulek, slogan, cena/CTA, logo. Každý prvek vlastní vrstva.</li>
+          <li><span class="menu-path">Okna <i>›</i> Časová osa</span> › <b>Vytvořit videovou časovou osu</b>. Každá vrstva je stopa s trváním; roztáhni všechny na <b>5+ s</b> (konec pracovní oblasti). Čas 00:00 až 00:05:00 při 25 fps = 125 snímků.</li>
+          <li>Rozbal stopu vrstvy (▸): <b>Poloha</b>, <b>Krytí</b>, <b>Styl</b> (u inteligentního objektu <b>Transformace</b> místo Polohy). Klikni na stopky ⏱ u vlastnosti = <b>klíčový snímek</b> v aktuálním čase. Přesuň přehrávací hlavu, změň hodnotu → nový klíčový snímek, Photoshop interpoluje.</li>
+          <li><b>Poloha</b>: produkt v čase 0 s mimo obraz vlevo, v 1 s na místě. <b>Krytí</b>: titulek 0 % v 1 s → 100 % v 1,8 s. <b>Styl</b>: na CTA tlačítko styl vrstvy Vnější záře / Stín: klíčový snímek v 3 s (záře 0) → 3,5 s (záře silná) → 4 s (0) = puls. Pravý klik na klíčový snímek: <em>Lineární</em> / <em>Zastavit</em> interpolace.</li>
+          <li>Přehrát (mezerník); <b>Přechody</b> (ikona) – prolnutí mezi klipy; lze přidat zvukovou stopu (MP3).</li>
+          <li><span class="menu-path">Soubor <i>›</i> Exportovat <i>›</i> Renderovat video</span>: Adobe Media Encoder, formát <b>H.264</b>, přednastavení <b>Vysoká kvalita</b> (nebo YouTube 1080p), velikost dokumentu 1920 × 1080, kmitočet 25 fps, rozsah: celý dokument, přípona <b>.mp4</b>. Render 1–2 minuty.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Kompozice a účinek na diváka</h3>
+        <ul>
+          <li><b>Bezpečné oblasti</b> (title safe 90 %, action safe 80 %) – text uvnitř.</li>
+          <li><b>Pravidlo třetin</b>: produkt na průsečíku, text v protilehlé třetině; <b>čtecí směr</b> zleva doprava, shora dolů – animace ho respektuje (nejdřív produkt, pak titulek, pak CTA).</li>
+          <li><b>Hierarchie</b>: 1 produkt, 1 sdělení, 1 výzva. Každý prvek má „vstup“ (ease in – zpomalení na konci pohybu působí přirozeně), krátké „držení“ a případně „výstup“.</li>
+          <li><b>Rytmus</b>: 5 s = 125 snímků; vstup produktu 0–1 s, titulek 1–2 s, cena 2–3 s, CTA puls 3–4,5 s, logo stále. Nic nesmí blikat rychleji než 3× za sekundu.</li>
+          <li><b>Barva a kontrast</b>: RGB sRGB; produkt teplý na studeném pozadí (nebo naopak), CTA v komplementární barvě.</li>
+          <li><b>Účinek</b>: pozornost (pohyb přitahuje), rozpoznání (produkt a značka), touha (benefit/cena), akce (CTA). Zamýšlený efekt umět pojmenovat: „svěží, rychlé, mladé“ nebo „klidné, prémiové“.</li>
+        </ul>
+        <p class="tip"><b>Styl vrstvy jako animace</b>Komise chce vidět tři druhy klíčových snímků: Poloha (pohyb), Krytí (objevení) a Styl (změna stínu/záře/přechodu) – ukaž každé na jiné vrstvě.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l23-pojmy">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Teorie</span><h2>HDTV, obrazové rozlišení, RGB, kmitočet snímků</h2></div>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>HDTV</h3><p>High-Definition Television – televize s vysokým rozlišením. Standardy: <b>720p</b> (1280 × 720), <b>1080i/1080p</b> (1920 × 1080 – „Full HD“), poměr stran <b>16 : 9</b>, čtvercové pixely; <b>p</b> = progresivní (celé snímky), <b>i</b> = prokládané (půlsnímky – liché/sudé řádky). Dál <b>UHD/4K</b> 3840 × 2160, 8K 7680 × 4320. Starší SD: PAL 720 × 576 (25 fps), NTSC 720 × 480 (29,97 fps). Full HD = 2 073 600 pixelů.</p></div>
+      <div class="card"><h3>Obrazové rozlišení</h3><p>Počet pixelů na šířku × výšku (1920 × 1080). U videa a obrazovky <b>ppi nehraje roli</b> – zadání „150 dpi“ je jen metadata dokumentu; rozhoduje počet pixelů. Větší rozlišení = víc detailů, větší datový tok. Pixel aspect ratio: u HD čtvercové (1,0); u starého PAL DV obdélníkové (1,09). Rozdíl proti tisku: tisk 300 ppi při fyzické velikosti.</p></div>
+      <div class="card"><h3>Barevný prostor RGB</h3><p>Video i obrazovky pracují aditivně v RGB (červená, zelená, modrá, 8 bit = 16,7 mil. barev). Pro web a běžné video <b>sRGB</b> (bílý bod D65). Video kodeky ukládají barvy v YCbCr (jas + dva barevné rozdíly, s podvzorkováním 4:2:0) odvozeném z RGB – proto h.264 nezachová jemné barevné hrany; HDTV standard barev Rec. 709 ≈ sRGB; 4K/HDR Rec. 2020. CMYK ve videu nemá smysl.</p></div>
+      <div class="card"><h3>Kmitočet snímků (fps)</h3><p>Frames per second – kolik snímků za sekundu. Film 24 fps, evropská TV (PAL) <b>25 fps</b>, americká 29,97/30 fps, hry a sport 50/60 fps, zpomalené záběry 120+. 5 s při 25 fps = <b>125 snímků</b>. Pod ~12 fps vnímáme trhání; GIF bannery mívají 10–15 fps (zpoždění 0,07–0,1 s). Kmitočet se nastavuje v Časové ose a při renderu musí odpovídat.</p></div>
+      <div class="card"><h3>Kodek a kontejner</h3><p><b>h.264 (AVC)</b> = kodek – komprese videa (ztrátová, mezisnímková: I/P/B snímky); <b>MP4</b> = kontejner (obal pro video + zvuk + metadata). Další kodeky: h.265/HEVC, VP9, AV1 (web), ProRes/DNxHD (střih, bezztrátovější). Datový tok (bitrate) – Mb/s; pro Full HD web 8–12 Mb/s. Zvuk AAC.</p></div>
+      <div class="card"><h3>Další pojmy</h3><p><b>Klíčový snímek</b> (keyframe) – hodnota vlastnosti v čase; mezi klíčovými snímky program interpoluje (lineárně / s easingem). <b>Časová osa</b>, <b>stopa</b>, <b>pracovní oblast</b>, <b>timecode</b> (hh:mm:ss:ff). <b>Smyčka</b> (loop), <b>zpoždění snímku</b> (delay). <b>Poměr stran</b> 16:9 / 1:1 (Instagram) / 9:16 (stories).</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l23-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div><p>Dva soubory – rozděl čas 12 + 15 minut, 3 minuty rezerva. Grafika jednoduchá, animace čitelná.</p></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–5<small>min</small></span><div><b>Banner – grafika</b><p>Photoshop 250 × 250 px RGB 72 ppi. Vrstvy: pozadí (barva/přechod), produkt (Umístit, maska), titulek, cena, CTA (zaoblený obdélník + text + stín = tlačítko), logo, rámeček 1 px.</p></div></li>
+        <li><span class="t">5–10<small>min</small></span><div><b>Banner – animace snímků</b><p>Časová osa › animace snímků: 5 snímků (pozadí → produkt → titulek → cena+CTA → lesk), Tween 4–5 mezisnímků u produktu (poloha+krytí), zpoždění 0,08 s, poslední 2 s, Stále.</p></div></li>
+        <li><span class="t">10–12<small>min</small></span><div><b>GIF export</b><p>Uložit pro web: GIF 128 barev, dithering 70 %, Stále; kontrola kB; otevřít v prohlížeči. Ulož i PSD.</p></div></li>
+        <li><span class="t">12–17<small>min</small></span><div><b>Video – dokument a scéna</b><p>Nový › Film a video › HDTV 1080p, 25 fps, RGB, 150 ppi. Vrstvy: pozadí, produkt (inteligentní objekt), titulek, slogan, CTA se stylem Vnější záře, logo. Kompozice ve třetinách, text v bezpečné zóně.</p></div></li>
+        <li><span class="t">17–25<small>min</small></span><div><b>Klíčové snímky</b><p>Videová časová osa, délka 6 s. Produkt: Transformace/Poloha 0 s mimo → 1 s na místě. Titulek: Krytí 0→100 % (1–1,8 s). Slogan: Poloha zdola (2–2,6 s). CTA: Styl záře 0→100→0 (3–4 s) + opakovat. Logo: krytí 0→100 (4,5–5 s). Přehrát.</p></div></li>
+        <li><span class="t">25–29<small>min</small></span><div><b>Render</b><p>Exportovat › Renderovat video: H.264, Vysoká kvalita, 1920 × 1080, 25 fps, .mp4. Během renderu si připrav výklad.</p></div></li>
+        <li><span class="t">29–30<small>min</small></span><div><b>Kontrola</b><p>Přehrát MP4 (délka ≥ 5 s, Full HD – vlastnosti souboru), GIF v prohlížeči. Ulož PSD obou.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Co říct komisi</h3>
+          <p>„Banner 250 × 250 px je čtvercový formát IAB, RGB 72 ppi; kompozice: produkt dominanta, titulek, cena a CTA tlačítko se stínem, aby vypadal stisknutelně. Animace snímků v Časové ose: pět stavů, mezisnímky polohy a krytí, poslední snímek drží 2 s, smyčka; export GIF 128 barev s ditheringem, 90 kB. Video: dokument HDTV 1080p 1920 × 1080 px, 25 fps, RGB; videová časová osa 6 s; klíčové snímky Polohy (produkt vjíždí), Krytí (titulek se objeví) a Stylu (záře tlačítka pulzuje); render H.264 do MP4 ve Full HD. HDTV je standard 16 : 9 s rozlišením 1920 × 1080, 25 fps je evropský kmitočet, RGB aditivní prostor obrazovek, rozlišení je počet pixelů.“</p>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l23-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Banner v CMYK nebo v mm; text pod 12 px nečitelný; GIF bez smyčky (přehraje se jednou a zmizí).</div>
+      <div class="tip chyba"><b>Chyba</b>Animace bez posledního „držícího“ snímku – sdělení není nikdy celé vidět.</div>
+      <div class="tip chyba"><b>Chyba</b>Video renderované v 30 fps nebo 1280 × 720; délka 3 s; kodek jiný než h.264 / formát MOV místo MP4.</div>
+      <div class="tip chyba"><b>Chyba</b>Použita jen Poloha; chybí klíčové snímky Krytí a Stylu, které zadání výslovně jmenuje.</div>
+      <div class="tip chyba"><b>Chyba</b>Text mimo bezpečnou oblast, blikání rychleji než 3 Hz, deset pohybujících se prvků.</div>
+      <div class="tip chyba"><b>Chyba</b>HDTV vysvětlené jako „kvalita“; dpi u videa považováno za rozhodující; fps zaměněno s délkou.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l23-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Jak jsi vytvořil animovaný GIF?</summary><div class="odp">Ve Photoshopu dokument 250 × 250 px RGB, prvky na samostatných vrstvách, Časová osa › animace snímků: pět snímků s různou viditelností a polohou vrstev, Doplnit (tween) pro plynulý pohyb a krytí, zpoždění snímků, opakování Stále; Uložit pro web jako GIF (256/128 barev, dithering). GIF je indexovaný bezztrátový formát s více snímky v jednom souboru, přehraje ho každý prohlížeč.</div></details></li>
+      <li><details><summary>Jak jsi vytvořil video a co znamená h.264?</summary><div class="odp">Dokument HDTV 1080p (1920 × 1080, 25 fps, RGB), videová časová osa, klíčové snímky Polohy/Transformace, Krytí a Stylu vrstvy na 5–6 s, Renderovat video → Adobe Media Encoder, H.264, Vysoká kvalita, MP4. H.264 (AVC) je ztrátový mezisnímkový videokodek, MP4 je kontejner pro video, zvuk a metadata.</div></details></li>
+      <li><details><summary>Co je HDTV?</summary><div class="odp">Televize s vysokým rozlišením: 720p (1280 × 720) a 1080i/p (1920 × 1080 = Full HD), poměr 16 : 9, čtvercové pixely, p = progresivní, i = prokládané. Nástupce SD (PAL 720 × 576). Dál UHD 4K 3840 × 2160.</div></details></li>
+      <li><details><summary>Co je obrazové rozlišení u videa a proč nezáleží na dpi?</summary><div class="odp">Počet pixelů na šířku a výšku (1920 × 1080). Obrazovka zobrazuje pixely 1 : 1, dpi/ppi je údaj pro tisk (hustota při fyzické velikosti) – u videa jen metadata. Zadaných 150 dpi nastavím v dokumentu, ale na výsledek nemá vliv.</div></details></li>
+      <li><details><summary>Proč je video v RGB a ne v CMYK?</summary><div class="odp">Obrazovky vyzařují světlo – aditivní míchání RGB (sRGB/Rec. 709). CMYK je subtraktivní model pro tisk barvivy; ve videu nemá smysl. Kodek barvy interně ukládá jako YCbCr odvozené z RGB.</div></details></li>
+      <li><details><summary>Co je kmitočet snímků a proč 25?</summary><div class="odp">Počet snímků za sekundu (fps). 25 fps je evropský televizní standard (PAL), film 24, USA 30, hry 60. 5 s při 25 fps = 125 snímků. Nastavuje se v časové ose a musí odpovídat při renderu; pod 12 fps vnímáme trhání.</div></details></li>
+      <li><details><summary>Jak jsi řešil kompozici a účinek na diváka?</summary><div class="odp">Třetiny, bezpečné oblasti, jedna dominanta (produkt), hierarchie produkt → titulek → cena → CTA v čtecím směru, kontrast barev, pohyb s easingem, poslední stav drží; zamýšlený účinek: upoutat pohybem, rozpoznat produkt a značku, nabídnout benefit, vyzvat k akci – banner jako tlačítko.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l23-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz23" data-quiz='[
+      {"q":"Full HD má rozlišení","o":["1280 × 720","1920 × 1080","3840 × 2160","720 × 576"],"a":1,"w":"1080p = 1920 × 1080 px, 16 : 9. 1280 × 720 je HD 720p, 3840 × 2160 UHD 4K."},
+      {"q":"5 sekund videa při 25 fps je","o":["50 snímků","100 snímků","125 snímků","250 snímků"],"a":2,"w":"25 snímků za sekundu × 5 s = 125."},
+      {"q":"GIF zobrazí maximálně","o":["16,7 mil. barev","65 536 barev","256 barev","16 barev"],"a":2,"w":"Indexovaná paleta 8 bitů; proto fotky v GIFu potřebují dithering."},
+      {"q":"h.264 je","o":["kontejner","videokodek","barevný prostor","kmitočet snímků"],"a":1,"w":"Kodek (komprese videa); MP4 je kontejner, do kterého se h.264 video ukládá."},
+      {"q":"Ve videové časové ose Photoshopu lze u běžné vrstvy animovat","o":["jen polohu","polohu, krytí a styl vrstvy","jen krytí","barevný režim"],"a":1,"w":"Klíčové snímky Polohy, Krytí a Stylu; u inteligentního objektu Transformace místo Polohy."},
+      {"q":"Aby se animovaný GIF přehrával stále dokola, nastavíš","o":["dithering","Možnosti opakování: Stále","256 barev","průhlednost"],"a":1,"w":"V dialogu Uložit pro web nebo v panelu Časová osa (vlevo dole)."},
+      {"q":"Evropský televizní kmitočet snímků je","o":["24 fps","25 fps","29,97 fps","60 fps"],"a":1,"w":"PAL 25 fps; film 24, NTSC 29,97/30, hry 60."},
+      {"q":"U videa pro obrazovku rozhoduje o kvalitě","o":["hodnota dpi","počet pixelů (rozlišení) a datový tok","barevný režim CMYK","velikost v mm"],"a":1,"w":"dpi je údaj pro tisk; na obrazovce se zobrazují pixely 1 : 1."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l23-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy a videa</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="../videa.html#v-ps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>Videa: typografická animace ve Photoshopu</b><span>Tři YouTube tutoriály k časové ose a animaci textu.</span></div></a>
+      <a class="link-card" href="https://svoboda-koduje.github.io/enviro-projekty-3g/vyuka/03-animace-socialni-site.html" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><div><b>Grafika pro klima: animace pro sociální sítě</b><span>Formáty, délky a zásady animací ze 3. ročníku.</span></div></a>
+      <a class="link-card" href="../lekce/02-illustrator-zaklady.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8"/></svg><div><b>Lekce 02: bannery v Illustratoru</b><span>Statický a animovaný banner z pláten.</span></div></a>
+      <a class="link-card" href="../lekce/01-formaty-souboru.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><div><b>Lekce 01: formáty souborů</b><span>GIF, PNG, JPEG, video – co kam.</span></div></a>
+    </div>
+  </div>
+</section>
+<div class="wrap"><nav class="pager" aria-label="Další a předchozí lekce"><a class="prev" href="../lekce/11-mockup.html"><small>← Předchozí lekce</small><b>11 · Photoshop – transformace, vytvoření mock-upu</b></a><a class="next" href="../lekce/06-pismo-typografie.html"><small>Další lekce →</small><b>06 · Písmo a typografie</b></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="../img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="../zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="../zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/interaktivni.js"></script>
+</body>
+</html>

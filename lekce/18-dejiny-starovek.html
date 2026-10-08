@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>18 · Dějiny umění – starověk | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Maturitní otázka 18: obrazová prezentace památek starověku s popisky (název, datace, souvislosti) uložená do PDF; charakteristika starověkých kultur a jednotlivých památek.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="18 · Dějiny umění – starověk">
+<meta property="og:description" content="Maturitní otázka 18: obrazová prezentace památek starověku s popisky (název, datace, souvislosti) uložená do PDF; charakteristika starověkých kultur a jednotlivých památek.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styl.css">
+</head>
+<body data-page="18-dejiny-starovek.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="../videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>OTÁZKA 18 / 23</b><span>Dějiny umění</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="../img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="../index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="../lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="../lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="../lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="../lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="../lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="../lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="../lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="../lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="../lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="../lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="../lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="../lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="../lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="../lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="../lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="../lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="../lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="../lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="../lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true" class="active"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="../lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="../lekce/18-dejiny-starovek.html" class="active"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="../lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="../lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="../kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="../cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="../videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="../zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-dejiny">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Maturitní otázka 18</span><span class="blok">· Dějiny umění</span></p>
+    <h1>Dějiny umění – starověk</h1>
+    <p class="lead">Sestavíš <b>obrazovou prezentaci</b> vybraných památek starověku – každý obrázek s <b>popiskem</b> (název, přibližná datace, místo, technika, sloh, autor) – a uložíš ji do <b>PDF</b>. U obhajoby ji spustíš, nejdřív <b>charakterizuješ období</b> jako celek a pak mluvíš ke každému obrázku: co to je, kdy, proč je to důležité a jaké má kulturní a výtvarné souvislosti. Tahle lekce má 7 epoch, 38 památek s popisky k převzetí a poznávačku.</p>
+    <ul class="zadani"><li><b>Editor</b>InDesign / Illustrator / PowerPoint – 16 : 9</li><li><b>Výstup</b>PDF prezentace s popisky</li><li><b>Teorie</b>charakteristika starověkých kultur + památky</li><li><b>Obrázky</b>Wikimedia Commons – volná díla a CC</li></ul>
+    <nav class="subnav" aria-label="Obsah lekce"><a href="#l18-otazka">Co se losuje</a><a href="#l18-prehled">Přehled období</a><a href="#l18-prezentace">Jak na prezentaci</a><a href="#e-mezopotamie">Mezopotámie</a><a href="#e-egypt">Starověký Egypt</a><a href="#e-egejske">Egejské kultury</a><a href="#e-recko">Řecká antika</a><a href="#e-etruskove">Umění Etrusků</a><a href="#e-rim">Římská antika</a><a href="#e-krestanska_antika">Křesťanská antika</a><a href="#l18-svet">Mimo Evropu</a><a href="#l18-poznavacka">Poznávačka</a><a href="#l18-postup">Postup pro 30 minut</a><a href="#l18-chyby">Časté chyby</a><a href="#l18-komise">Otázky komise</a><a href="#l18-kviz">Kvíz</a></nav>
+  </div>
+</section>
+<section class="section" id="l18-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Ve zvoleném grafickém editoru <b>jednoduchá obrazová prezentace</b> obrázků dokumentujících vybrané památky starověku.</li>
+          <li>Ke každému obrázku <b>popisek</b>: název, <b>přibližná datace</b> a další související údaje (místo, materiál/technika, sloh, autor).</li>
+          <li>Prezentaci uložit do <b>PDF</b>.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>podklady: obrázky k období (nebo vlastní z Commons)</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Spustit prezentaci a nejdřív <b>charakterizovat starověkých kultur</b> jako celek (časové vymezení, společnost, funkce umění, materiály, hlavní fáze).</li>
+          <li>Pak ke <b>každému obrázku</b>: charakteristika konkrétní památky + <b>kulturní a výtvarně-dějinné souvislosti</b> (co předcházelo, co následovalo, k čemu sloužilo, čím je typické).</li>
+        </ul>
+        <p class="note">Celý přehled všech období s mapou, osou a vyhledáváním: <a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a>. Výtvarná teorie (perspektiva, kánon): <a href="../lekce/16-perspektiva-kompozice.html">lekce 16</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l18-prehled">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Charakteristika období</span><h2>Starověk v kostce</h2></div><p>Starověk začíná písmem a městy (Mezopotámie, Egypt kolem 3000 př. n. l.) a končí pádem západořímské říše (476). Umění slouží bohům a vládcům: chrámy, hrobky, sochy panovníků – a v Řecku poprvé člověk jako míra všeho: kánon, kontrapost, řády. Řím přebírá řecké formy a přidává inženýrství (oblouk, klenba, beton). Křesťanská antika přenáší antické formy do nového obsahu.</p></div>
+    <div class="osa-epochy"><a class="osa-ep" href="#e-mezopotamie"><b>Mezopotámie</b><span>cca 3 500 – 539 př. n. l.</span></a><a class="osa-ep" href="#e-egypt"><b>Starověký Egypt</b><span>cca 3 100 – 30 př. n. l.</span></a><a class="osa-ep" href="#e-egejske"><b>Egejské kultury</b><span>cca 2 000 – 1 100 př. n. l.</span></a><a class="osa-ep" href="#e-recko"><b>Řecká antika</b><span>cca 800 – 146 př. n. l.</span></a><a class="osa-ep" href="#e-etruskove"><b>Umění Etrusků</b><span>cca 800 – 200 př. n. l.</span></a><a class="osa-ep" href="#e-rim"><b>Římská antika</b><span>cca 500 př. n. l. – 476 n. l.</span></a><a class="osa-ep" href="#e-krestanska_antika"><b>Křesťanská antika</b><span>cca 200 – 550 n. l.</span></a></div>
+    <div class="card" style="margin-top:18px"><h3>Co říct na úvod obhajoby (2 minuty)</h3><ul class="kroky"><li><b>Mezopotámie</b> – Sumer, Babylon, Asýrie: zikkurat, klínové písmo, Chammurapiho zákoník, Ištařina brána – glazované cihly, reliéfy králů a lvů.</li><li><b>Egypt</b> – pyramidy (Džoser, Gíza), chrámy (Karnak, Abú Simbel), kánon postavy z profilu, hieratická velikost, posmrtný kult – Tutanchamon, Nefertiti; 3000 let téměř neměnného stylu.</li><li><b>Egejské kultury</b> – Kréta (Knóssos, fresky, býk) a Mykény (Lví brána, zlatá maska); <b>Řecko</b> – archaické (kúros), klasické (Parthenón, Polykleitos, Feidias), helénismus (Pergamon, Láokoón); řády dórský, iónský, korintský.</li><li><b>Etruskové</b> – hrobky s freskami, sarkofágy manželů, terakota; <b>Řím</b> – Koloseum, Pantheon, akvadukty, vítězné oblouky, portrét (verismus), mozaika, Pompeje.</li><li><b>Křesťanská antika</b> – katakomby, Dobrý pastýř, bazilika, mozaiky Ravenny – symbol místo těla.</li><li><b>Mimo Evropu</b> – Persie (Persepolis), Indie (Mohendžodaro, stúpa), Čína (terakotová armáda, bronz, tušová malba), Mezoamerika (Olmékové, Mayové), Andy (Nazca, Machu Picchu), Afrika (Ife, Benin).</li></ul></div>
+  </div>
+</section>
+
+<section class="section" id="l18-prezentace">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Jak sestavit prezentaci s popisky</h2></div><p>Stejný postup pro všechny čtyři otázky z dějin umění. Rozhoduje výběr památek, správné popisky a čistý jednotný layout – ne efekty.</p></div>
+    <div class="cols">
+      <div class="card"><h3>Dokument</h3><ul><li><b>InDesign</b>: Nový › Web, 1920 × 1080 px (16 : 9), RGB; vzorová stránka s názvem období v hlavičce, číslem stránky a místem pro popisek; <b>objektový styl</b> pro rámeček obrázku (přizpůsobit proporčně, zarovnat na střed).</li><li>Odstavcové styly: <b>Titulek</b> (Barlow Condensed 56 px), <b>Popisek</b> (24 px), <b>Datace</b> (tučně, barevně), <b>Zdroj</b> (14 px, šedě).</li><li>Alternativa: Illustrator s plátny 1920 × 1080, nebo PowerPoint 16 : 9 – ale ukaž, že umíš layout (mřížka, zarovnání, kontrast).</li><li>Obrázky: Umístit (Ctrl+D) jako vazby, nikdy neroztahovat nepoměrně; u svislých obrazů dva vedle sebe.</li></ul></div>
+      <div class="card"><h3>Popisek – vzor</h3><p class="popisek-vzor"><b>Katedrála v Chartres</b><br>1194–1220, vrcholná gotika, Francie<br>kámen, žebrová klenba, 176 vitráží<br><small>foto: Wikimedia Commons, CC BY-SA</small></p><ul><li>Řádek 1: <b>název</b> (česky, případně originál).</li><li>Řádek 2: <b>datace</b> (rok / rozmezí / „kolem“ / století), <b>sloh a fáze</b>, místo nebo sbírka.</li><li>Řádek 3: materiál, technika, rozměry, autor.</li><li>Řádek 4: <b>zdroj a licence</b> obrázku.</li><li>Popisky v této lekci jsou psané přesně v tomto duchu – můžeš je převzít.</li></ul></div>
+      <div class="card"><h3>Struktura 10–14 slidů</h3><ol class="kroky"><li>Titul: období, datace, jméno, třída.</li><li>Časová osa / mapa období s fázemi (jeden slide).</li><li>8–12 památek: každá vlastní slide s velkým obrázkem a popiskem – architektura, sochařství, malířství, užité umění; postupuj chronologicky.</li><li>Jeden slide „u nás“ (české památky období).</li><li>Zdroje obrázků.</li><li>Export: Soubor › Exportovat › <b>Adobe PDF (interaktivní)</b>, stránky, Zobrazit po exportu; zkontroluj velikost (obrázky stačí 150 ppi) a spusť Ctrl+L.</li></ol></div>
+    </div>
+  </div>
+</section>
+
+<section class="section epocha" id="e-mezopotamie">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Mezopotámie</h2><p class="podtitul">Sumer, Akkad, Babylon, Asýrie · <b>cca 3 500 – 539 př. n. l.</b></p></div>
+      <p>Země mezi Eufratem a Tigridem: první města, klínové písmo, zikkuraty a reliéfy králů.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Sumer <em>3 500–2 300</em></span> <span class="chip">Akkad a Babylon <em>2 300–1 100</em></span> <span class="chip">Asýrie <em>900–612</em></span> <span class="chip">Nový Babylon <em>626–539</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>V úrodné nížině mezi Eufratem a Tigridem vznikají kolem roku 3 500 př. n. l. první města (Uruk, Ur, Lagaš) a s nimi klínové písmo, kalendář, právo a stát. Sumery vystřídali Akkadové, Babyloňané (Chammurapi, cca 1 750 př. n. l.), Asyřané a Novobabylonská říše (Nabukadnezar II.), kterou roku 539 př. n. l. dobyli Peršané.</p><p>Architektura je z nepálených a pálených cihel – kámen chybí. Dominantou města je zikkurat, stupňovitá chrámová věž (biblická babylonská věž). Paláce zdobí glazované cihly (Ištařina brána s draky a býky) a asyrské kamenné reliéfy s loveckými a válečnými scénami – patos síly a moci.</p><p>Sochařství vytváří strnulé modlící se postavy s obrovskýma očima (Tell Asmar), okřídlené býky lamassu hlídající brány a portréty vládců. Chammurapiho zákoník je vytesán do dioritové stély pod reliéfem krále přijímajícího zákony od boha Slunce Šamaše.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Cihlová architektura, zikkurat</li><li>Klínové písmo na hliněných tabulkách</li><li>Reliéfy vládců a lovů, lamassu</li><li>Glazované cihly, lapis lazuli, zlato</li><li>Strnulá frontální figura s velkýma očima</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Zikkurat v Uru (cca 2 100 př. n. l.), Ištařina brána a visuté zahrady v Babylonu, asyrské paláce v Ninive a Chorsábádu.</li><li><b>Sochařství</b>: Sošky modlících se z Tell Asmar, standarta z Uru, Chammurapiho stéla, lamassu, reliéf Lov lvů (Aššurbanipal).</li><li><b>Malířství</b>: Mozaiky z mušlí a lapisu (standarta z Uru), glazované reliéfy, pečetní válečky.</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Gilgameš (epos), Sargon Akkadský, Chammurapi, Aššurbanipal, Nabukadnezar II.</p><p><b>U nás:</b> Přímé památky u nás nejsou; české expedice (Bedřich Hrozný rozluštil chetitštinu, 1915) patří k dějinám orientalistiky.</p><p><b>Souvislosti:</b> Zavlažovací zemědělství závislé na řekách; megasucho 4,2 tisíce let (2 200 př. n. l.) zničilo Akkadskou říši. Zasolování půdy vedlo k úpadku Sumeru.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="mezopotamie"><img src="../img/dejiny/mezopotamie_zikkurat_ur.webp" alt="Zikkurat v Uru (Irák)" loading="lazy" data-zoom><figcaption><b>Zikkurat v Uru (Irák)</b>Chrámová věž měsíčního boha Nanny, cca 2 100 př. n. l., rekonstruovaná ve 20. století.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="mezopotamie"><img src="../img/dejiny/mezopotamie_istarina_brana.webp" alt="Ištařina brána (Babylon)" loading="lazy" data-zoom><figcaption><b>Ištařina brána (Babylon)</b>Glazované cihly s draky a býky, cca 575 př. n. l. Dnes v Pergamonském muzeu v Berlíně.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="mezopotamie"><img src="../img/dejiny/mezopotamie_chammurapi.webp" alt="Chammurapiho stéla" loading="lazy" data-zoom><figcaption><b>Chammurapiho stéla</b>Diorit, cca 1 750 př. n. l., Louvre – král přijímá zákony od boha Šamaše.<small>foto: Rama · CC BY-SA 3.0 fr</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#mezopotamie" target="_blank" rel="noopener">Časová osa dějin umění – Mezopotámie</a>.</p>
+  </div>
+</section>
+<section class="section epocha" id="e-egypt">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Starověký Egypt</h2><p class="podtitul">Stará, Střední a Nová říše · <b>cca 3 100 – 30 př. n. l.</b></p></div>
+      <p>Tři tisíce let neměnného kánonu: pyramidy, chrámy, hieroglyfy a umění pro věčnost.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Stará říše <em>2 700–2 180</em></span> <span class="chip">Střední říše <em>2 055–1 650</em></span> <span class="chip">Nová říše <em>1 550–1 070</em></span> <span class="chip">Pozdní a ptolemaiovská <em>664–30</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>Egyptská civilizace vznikla sjednocením Horního a Dolního Egypta kolem roku 3 100 př. n. l., když vysychající Sahara zahnala obyvatelstvo k Nilu. Každoroční záplavy dávaly zemi řád a jistotu, který se otiskl do umění: faraon je bůh, vše má své pevné místo (princip Maat).</p><p>Stará říše (2 700–2 180) je dobou pyramid: Džoserova stupňovitá pyramida v Sakkáře (architekt Imhotep), Cheopsova v Gíze (146 m). Střední říše přináší skalní hrobky a literaturu, Nová říše (1 550–1 070) obrovské chrámy v Karnaku a Luxoru, Údolí králů, Abú Simbel. Krátká Achnatonova reforma (Amarna, cca 1 350) uvolnila kánon – busta Nefertiti, portréty královské rodiny. Tutanchamonova hrobka (objevena 1922) ukazuje bohatství pohřební výbavy.</p><p>Kánon zobrazení: hlava a nohy z profilu, oko a ramena zepředu; velikost postavy podle významu; přísná symetrie a klid. Sochy jsou frontální, blokové, určené pro věčnost v hrobce (ka). Malba je plošná, bez perspektivy, doplněná hieroglyfy.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Kánon: profil + čelní pohled, hierarchie velikostí</li><li>Monumentální kamenná architektura (pyramida, pylon, hypostyl)</li><li>Umění pro posmrtný život</li><li>Frontální, blokové sochy</li><li>Hieroglyfy, papyrus, malba na omítce</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Mastaba → stupňovitá → pravá pyramida; chrámy s pylony a hypostylovými sály (Karnak), skalní chrámy (Abú Simbel), Údolí králů.</li><li><b>Sochařství</b>: Rachefova socha, písař, Nefertiti, kolosy Memnonovy, Tutanchamonova maska; reliéf zapuštěný i vystouplý.</li><li><b>Malířství</b>: Hrobky v Údolí králů a šlechtické hrobky (Nebamon), Kniha mrtvých na papyru, fajjúmské portréty (římská doba).</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Imhotep, Cheops, Hatšepsut, Achnaton a Nefertiti, Tutanchamon, Ramesse II., Kleopatra VII.</p><p><b>U nás:</b> Český egyptologický ústav UK zkoumá pohřebiště v Abúsíru (Zbyněk Žába, Miroslav Verner, Miroslav Bárta); Náprstkovo muzeum.</p><p><b>Souvislosti:</b> Záplavové zemědělství Nilu dává jistotu a periodicitu – základ neměnného kánonu. Krize přicházejí se suchem: konec Staré říše (4,2 tisíce let), kolaps doby bronzové a nájezdy mořských národů.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="egypt"><img src="../img/dejiny/egypt_dzoser.webp" alt="Džoserova pyramida v Sakkáře" loading="lazy" data-zoom><figcaption><b>Džoserova pyramida v Sakkáře</b>Nejstarší kamenná monumentální stavba světa, architekt Imhotep, cca 2 650 př. n. l.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egypt"><img src="../img/dejiny/egypt_giza.webp" alt="Pyramidy v Gíze" loading="lazy" data-zoom><figcaption><b>Pyramidy v Gíze</b>Cheops, Rachef a Menkaure, cca 2 560–2 500 př. n. l. Jediný dochovaný div světa.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egypt"><img src="../img/dejiny/egypt_karnak.webp" alt="Hypostylový sál v Karnaku" loading="lazy" data-zoom><figcaption><b>Hypostylový sál v Karnaku</b>134 sloupů jako zkamenělý rákosový háj – řád (Maat) nad vodami chaosu. Nová říše.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egypt"><img src="../img/dejiny/egypt_abu_simbel.webp" alt="Abú Simbel" loading="lazy" data-zoom><figcaption><b>Abú Simbel</b>Skalní chrám Ramesse II., 13. stol. př. n. l.; v 60. letech 20. století přesunut kvůli Asuánské přehradě.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egypt"><img src="../img/dejiny/egypt_nefertiti.webp" alt="Busta Nefertiti" loading="lazy" data-zoom><figcaption><b>Busta Nefertiti</b>Vápenec a sádra, cca 1 345 př. n. l., dílna sochaře Thutmose v Amarně.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egypt"><img src="../img/dejiny/egypt_tutanchamon.webp" alt="Tutanchamonova maska" loading="lazy" data-zoom><figcaption><b>Tutanchamonova maska</b>Zlato, lapis lazuli, 11 kg, cca 1 323 př. n. l. Objevil Howard Carter 1922.<small>Wikimedia Commons</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#egypt" target="_blank" rel="noopener">Časová osa dějin umění – Starověký Egypt</a>.</p>
+  </div>
+</section>
+<section class="section epocha" id="e-egejske">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Egejské kultury</h2><p class="podtitul">Kréta (mínojská) a Mykény · <b>cca 2 000 – 1 100 př. n. l.</b></p></div>
+      <p>Radostné fresky krétských paláců a kyklopské hradby Mykén – předehra řeckého umění.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Mínojská Kréta <em>2 000–1 450</em></span> <span class="chip">Mykénské Řecko <em>1 600–1 100</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>Na Krétě vzkvétá od 2 000 př. n. l. mínojská kultura (podle bájného krále Mínóa): palácové komplexy bez hradeb (Knóssos, Faistos) s labyrintem místností, světlíky a kanalizací, zdobené freskami delfínů, lilií, tanečnic a skoků přes býka. Umění je hravé, pohyblivé, „extravertní“ – svět Středomoří je přátelský.</p><p>Kolem 1 600 př. n. l. vybuchla sopka Théra (Santorini); tsunami a popel oslabily Krétu, kterou ovládli válečnější Mykéňané z pevniny. Mykénská kultura (Mykény, Tíryns, Pylos) staví kyklopské hradby, Lví bránu a kupolové hrobky (Átreova pokladnice); zlaté masky z šachtových hrobů („Agamemnonova maska“) objevil Heinrich Schliemann. Homérova Ilias odráží svět mykénských králů a trojské války.</p><p>Kolem 1 200 př. n. l. mykénský svět zaniká (kolaps doby bronzové) – následují „temná staletí“ bez písma, z nichž se rodí Řecko.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Palácová architektura bez hradeb (Kréta) × kyklopské hradby (Mykény)</li><li>Fresky s přírodními motivy, pohyb, radost</li><li>Keramika mořského stylu (chobotnice)</li><li>Zlaté masky, kupolové hrobky</li><li>Lineární písmo A a B</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Palác v Knóssu, Lví brána v Mykénách, Átreova pokladnice (nepravá kupole), megaron – předchůdce řeckého chrámu.</li><li><b>Sochařství</b>: Bohyně s hady (fajáns), rhyton ve tvaru býčí hlavy, Lví brána – nejstarší monumentální plastika Evropy.</li><li><b>Malířství</b>: Fresky v Knóssu a Akrotiri (Théra): Princ s liliemi, Delfíni, Skok přes býka; malovaná keramika.</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Mínós (legenda), Daidalos (legenda), Arthur Evans, Heinrich Schliemann</p><p><b>U nás:</b> Doba bronzová u nás (mohylové kultury) je současníkem Mykén; jantar z Baltu putoval přes naše území do Řecka.</p><p><b>Souvislosti:</b> Teplá doba bronzová ve Středomoří; výbuch Théry (cca 1 600 př. n. l.) a sucho kolem 1 200 př. n. l. ukončují obě kultury.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="egejske"><img src="../img/dejiny/egejske_lvi_brana.webp" alt="Lví brána v Mykénách" loading="lazy" data-zoom><figcaption><b>Lví brána v Mykénách</b>Cca 1 250 př. n. l. – kyklopské zdivo a reliéf lvic nad překladem.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egejske"><img src="../img/dejiny/egejske_knossos_byk.webp" alt="Skok přes býka (Knóssos)" loading="lazy" data-zoom><figcaption><b>Skok přes býka (Knóssos)</b>Freska z paláce, cca 1 450 př. n. l., Archeologické muzeum Heraklion.<small>unknown ancient artist · volné dílo</small></figcaption></figure><figure data-ep="egejske"><img src="../img/dejiny/egejske_maska.webp" alt="Agamemnonova maska" loading="lazy" data-zoom><figcaption><b>Agamemnonova maska</b>Zlato, cca 1 550 př. n. l., Národní muzeum Athény.<small>foto: DieBuche · CC BY-SA 3.0</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#egejske" target="_blank" rel="noopener">Časová osa dějin umění – Egejské kultury</a>.</p>
+  </div>
+</section>
+<section class="section epocha" id="e-recko">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Řecká antika</h2><p class="podtitul">archaické, klasické a helénistické období · <b>cca 800 – 146 př. n. l.</b></p></div>
+      <p>Kolébka evropského umění: chrám s řády sloupů, ideální lidské tělo, divadlo a filosofie – „člověk mírou všech věcí“.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Geometrické <em>900–700</em></span> <span class="chip">Archaické <em>700–480</em></span> <span class="chip">Klasické <em>480–323</em></span> <span class="chip">Helénistické <em>323–146</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>Po temných staletích vzniká z městských států (polis) nová kultura. Geometrické období (900–700) zná jen abstraktní ornament na vázách; archaické období (700–480) přináší první chrámy a strnulé sochy mladíků (kúros) a dívek (koré) s „archaickým úsměvem“ – vliv Egypta. Vítězství nad Peršany (480) otevírá klasické období (480–323): Periklovy Athény, Parthenón (Iktinos, Kallikratés, sochař Feidiás), Myrónův Diskobolos, Polykleitův kánon proporcí, Práxitelés. Alexandrovy výboje přinášejí helénismus (323–146): patos, pohyb a emoce (Laokoón, Níké Samothrácká, Pergamský oltář).</p><p>Řecký chrám je „sochou“ v krajině: sloupy dórského, iónského a korintského řádu, optické korekce, harmonie proporcí. Sochařství objevuje kontrapost, anatomii a ideál krásy (kalokagathia – jednota krásy a dobra). Malba se dochovala hlavně na vázách (černofigurové, červenofigurové). Divadlo v Epidauru, olympijské hry a filosofie (Sókratés, Platón, Aristotelés) tvoří základ evropského myšlení.</p><p>Řekové poprvé zobrazují člověka jako svobodnou bytost a svět jako poznatelný kosmos – proto se k nim Evropa vrací v renesanci i klasicismu.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Sloupové řády: dórský, iónský, korintský</li><li>Ideální nahé tělo, kontrapost, kánon proporcí</li><li>Míra, harmonie, symetrie – lidské měřítko</li><li>Vázové malířství (černo- a červenofigurové)</li><li>Helénistický patos a pohyb</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Parthenón, Erechtheion s karyatidami, Propylaje, Diův chrám v Olympii, divadlo v Epidauru, Mauzoleum v Halikarnassu, Pergamský oltář.</li><li><b>Sochařství</b>: Kúros a koré; Myrón, Polykleitos, Feidiás, Práxitelés, Lýsippos; Venuše Mélská, Níké Samothrácká, Laokoón.</li><li><b>Malířství</b>: Exekiás, Eufronios (vázy); nástěnná malba známa z římských kopií; mozaiky (Alexandrova bitva).</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Feidiás, Iktinos a Kallikratés, Myrón, Polykleitos, Práxitelés, Lýsippos, Periklés, Alexandr Veliký</p><p><b>U nás:</b> Antické sbírky Národního muzea a Univerzity Karlovy (odlitky); Keltové u nás obchodovali s řeckým světem (Bójové).</p><p><b>Souvislosti:</b> Řecké klimatické optimum – stabilní teplé počasí, rozkvět mořeplavby a obchodu; „Homérovo minimum“ (cca 800 př. n. l.) na počátku.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="recko"><img src="../img/dejiny/recko_parthenon.webp" alt="Parthenón (Athény)" loading="lazy" data-zoom><figcaption><b>Parthenón (Athény)</b>447–432 př. n. l., dórský chrám Athény Parthenos; sochařská výzdoba Feidiás.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="recko"><img src="../img/dejiny/recko_akropolis.webp" alt="Athénská Akropole" loading="lazy" data-zoom><figcaption><b>Athénská Akropole</b>Posvátný okrsek nad městem – Parthenón, Erechtheion, Propylaje.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="recko"><img src="../img/dejiny/recko_erechtheion.webp" alt="Erechtheion – síň karyatid" loading="lazy" data-zoom><figcaption><b>Erechtheion – síň karyatid</b>Iónský chrám, 421–406 př. n. l.; sloupy nahrazeny postavami dívek.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="recko"><img src="../img/dejiny/recko_rady.webp" alt="Řecké sloupové řády" loading="lazy" data-zoom><figcaption><b>Řecké sloupové řády</b>Dórský, iónský a korintský řád – základ evropské architektury až do 20. století.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="recko"><img src="../img/dejiny/recko_epidauros.webp" alt="Divadlo v Epidauru" loading="lazy" data-zoom><figcaption><b>Divadlo v Epidauru</b>4. stol. př. n. l., architekt Polykleitos mladší; 14 000 diváků, dokonalá akustika.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="recko"><img src="../img/dejiny/recko_pergamon.webp" alt="Pergamský oltář" loading="lazy" data-zoom><figcaption><b>Pergamský oltář</b>Helénismus, cca 180 př. n. l.; gigantomachie – boj bohů s giganty, patos a pohyb.<small>Wikimedia Commons</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#recko" target="_blank" rel="noopener">Časová osa dějin umění – Řecká antika</a>.</p>
+  </div>
+</section>
+<section class="section epocha" id="e-etruskove">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Umění Etrusků</h2><p class="podtitul">předřímská Itálie · <b>cca 800 – 200 př. n. l.</b></p></div>
+      <p>Tajemný národ střední Itálie: malované hrobky, terakotové sarkofágy manželů, bronzová vlčice a oblouk, který převzal Řím.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Villanovská <em>900–700</em></span> <span class="chip">Orientalizující <em>700–600</em></span> <span class="chip">Archaická a klasická <em>600–300</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>Etruskové obývali Toskánsko a Lazio a vytvořili spolek dvanácti měst. Jejich jazyk dosud plně nerozumíme; umění známe hlavně z nekropolí – „měst mrtvých“ (Cerveteri, Tarquinia). Kruhové mohylové hrobky (tumuly) napodobují interiéry domů a jsou vymalovány veselými hostinami, tanečníky, hudebníky a hrami – smrt jako pokračování života.</p><p>Sochařství pracuje s terakotou a bronzem: Apollón z Vejí, sarkofág manželů z Cerveteri (usmívající se pár na hostině), Kapitolská vlčice, Chiméra z Arezza. Etruskové znají klenbu a oblouk, kanalizaci (Cloaca Maxima) a chrám na vysokém podiu – vše převzal Řím, který je ve 3. století př. n. l. pohltil.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Nekropole s malovanými hrobkami</li><li>Terakotová plastika, sarkofágy</li><li>Bronzové odlévání (vlčice, Chiméra)</li><li>Oblouk a klenba</li><li>Radostný vztah ke smrti</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Tumuly v Cerveteri, městské hradby, chrám na podiu (Veje), oblouk.</li><li><b>Sochařství</b>: Sarkofág manželů, Apollón z Vejí, Kapitolská vlčice, Chiméra z Arezza, Řečník (Arringatore).</li><li><b>Malířství</b>: Hrobky v Tarquinii (hrobka Leopardů, Býků, Augurů), zrcadla s rytinami.</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Vulca z Vejí (sochař), Lars Porsenna</p><p><b>U nás:</b> Etruské bronzy a zboží se dostávaly přes Alpy i k Keltům ve střední Evropě (situly).</p><p><b>Souvislosti:</b> Železná doba a mírné klima střední Itálie; rozvoj obchodu s Řeky a Féničany.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="etruskove"><img src="../img/dejiny/etruskove_sarkofag.webp" alt="Sarkofág manželů (Cerveteri)" loading="lazy" data-zoom><figcaption><b>Sarkofág manželů (Cerveteri)</b>Terakota, cca 520 př. n. l., Villa Giulia v Římě.<small>foto: Lupachiotto64 · CC BY-SA 4.0</small></figcaption></figure><figure data-ep="etruskove"><img src="../img/dejiny/etruskove_tarquinia.webp" alt="Hrobka Leopardů (Tarquinia)" loading="lazy" data-zoom><figcaption><b>Hrobka Leopardů (Tarquinia)</b>Nástěnná malba hostiny, cca 470 př. n. l.<small>AlMare · volné dílo</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#etruskove" target="_blank" rel="noopener">Časová osa dějin umění – Umění Etrusků</a>.</p>
+  </div>
+</section>
+<section class="section epocha" id="e-rim">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Římská antika</h2><p class="podtitul">republika a císařství · <b>cca 500 př. n. l. – 476 n. l.</b></p></div>
+      <p>Inženýrství a moc: beton, klenba, akvadukty, Koloseum, Pantheon a realistický portrét vládců světové říše.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Republika <em>509–27 př. n. l.</em></span> <span class="chip">Principát <em>27 př. n. l. – 284</em></span> <span class="chip">Pozdní císařství <em>284–476</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>Řím převzal od Etrusků oblouk a od Řeků řády a sochařský ideál, ale přidal praktický duch: beton (opus caementicium), klenbu a kupoli, silnice, akvadukty, lázně, baziliky a amfiteátry. Architektura slouží státu a masám: Koloseum (80 n. l.) pro 50 000 diváků, Pantheon (cca 125) s kupolí o průměru 43 m, Trajánův sloup a vítězné oblouky oslavující císaře.</p><p>Sochařství vyniká portrétem – veristické busty republikánských politiků s každou vráskou (úcta k předkům, voskové masky) a idealizované sochy císařů (Augustus z Prima Porta). Malířství známe z Pompejí a Herculanea, které roku 79 zasypal Vesuv: čtyři pompejské styly, iluzivní architektury, krajiny, zátiší a mozaiky.</p><p>Za římského klimatického optima se říše rozprostírá od Británie po Egypt; její rozdělení (395) a pád Západořímské říše (476) uzavírají starověk. Římské právo, latina a města však tvoří základ Evropy.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Oblouk, klenba, kupole, beton</li><li>Užitková a reprezentativní architektura (fórum, bazilika, lázně, amfiteátr)</li><li>Realistický portrét</li><li>Historický reliéf (Trajánův sloup)</li><li>Nástěnná malba a mozaika (Pompeje)</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Pantheon, Koloseum, Pont du Gard, Forum Romanum, Trajánovo fórum, Caracallovy lázně, Diokleciánův palác ve Splitu.</li><li><b>Sochařství</b>: Augustus z Prima Porta, jezdecká socha Marka Aurelia, busty, sarkofágy, Trajánův sloup.</li><li><b>Malířství</b>: Pompejské styly, Villa dei Misteri, fajjúmské portréty, mozaiky.</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Vitruvius, Augustus, Apollodóros z Damašku, Hadrián, Konstantin Veliký</p><p><b>U nás:</b> Římská pevnost v Mušově na Moravě (Markomanské války, Marcus Aurelius u Hronu), nálezy římských importů; Antické sbírky.</p><p><b>Souvislosti:</b> Římské klimatické optimum (250 př. n. l. – 400 n. l.) sytí říši; jeho konec, sucha a stěhování národů přispívají k pádu Říma. Výbuch Vesuvu 79 n. l. konzervuje Pompeje.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="rim"><img src="../img/dejiny/rim_akvadukt.webp" alt="Pont du Gard (Francie)" loading="lazy" data-zoom><figcaption><b>Pont du Gard (Francie)</b>Akvadukt z 1. stol. n. l., 49 m vysoký; voda pro Nîmes – inženýrství jako umění.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="rim"><img src="../img/dejiny/rim_tetrarchove.webp" alt="Tetrarchové (Benátky)" loading="lazy" data-zoom><figcaption><b>Tetrarchové (Benátky)</b>Porfyr, cca 300 n. l. – pozdně antický přechod od realismu k strnulé symbolice.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="rim"><img src="../img/dejiny/rim_pantheon.webp" alt="Pantheon (Řím)" loading="lazy" data-zoom><figcaption><b>Pantheon (Řím)</b>Kupole o průměru 43,3 m s okulem, cca 125 n. l.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="rim"><img src="../img/dejiny/rim_koloseum.webp" alt="Koloseum" loading="lazy" data-zoom><figcaption><b>Koloseum</b>Flaviovský amfiteátr, 72–80 n. l.<small>Wikimedia Commons</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#rim" target="_blank" rel="noopener">Časová osa dějin umění – Římská antika</a>.</p>
+  </div>
+</section>
+<section class="section epocha" id="e-krestanska_antika">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Epocha</span><h2>Křesťanská antika</h2><p class="podtitul">raně křesťanské umění · <b>cca 200 – 550 n. l.</b></p></div>
+      <p>Z katakomb do bazilik: symboly ryby a Dobrého pastýře, mozaiky se zlatým pozadím – umění nové víry.</p>
+    </div>
+    <div class="faze-chips"><span class="chip">Katakombové <em>200–313</em></span> <span class="chip">Konstantinovské <em>313–400</em></span> <span class="chip">Ravennské <em>400–550</em></span></div>
+    <div class="cols-2">
+      <div class="card"><h3>Charakteristika</h3><p>První křesťané tvoří skrytě v římských katakombách: jednoduché symboly (ryba, kotva, Kristův monogram), Dobrý pastýř, orantky. Po Milánském ediktu (313) císař Konstantin staví první velké kostely – baziliky (podélné, se sloupy, s apsidou) a centrální stavby (Santa Costanza, baptisteria).</p><p>Umění přebírá antické formy, ale mění jejich smysl: tělo se odhmotňuje, důležitý je pohled a gesto, zlaté pozadí ruší prostor. Vrcholem jsou mozaiky v Ravenně (mauzoleum Gally Placidie, Sant'Apollinare Nuovo, San Vitale) – most k Byzanci. Vznikají iluminované rukopisy (Rossanský kodex) a řezby ze slonoviny.</p></div>
+      <div>
+        <div class="card"><h3>Hlavní znaky</h3><ul><li>Symbolika (ryba, beránek, pastýř, chí-ró)</li><li>Bazilika a centrála</li><li>Mozaika se zlatým pozadím</li><li>Odhmotnění těla, frontálnost</li><li>Sarkofágy s biblickými výjevy</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Architektura · sochařství · malířství</h3><ul><li><b>Architektura</b>: Stará bazilika sv. Petra, Santa Maria Maggiore, Santa Costanza, Lateránské baptisterium, mauzoleum Gally Placidie.</li><li><b>Sochařství</b>: Sarkofág Junia Bassa, slonovinové diptychy, Dobrý pastýř (socha).</li><li><b>Malířství</b>: Katakomby Priscilly a Kalixta, mozaiky Ravenny, Rossanský kodex.</li></ul></div>
+        <div class="card" style="margin-top:14px"><h3>Osobnosti a Česko</h3><p><b>Jména:</b> Konstantin Veliký, Galla Placidia, sv. Ambrož, Theodorich</p><p><b>U nás:</b> Křesťanství přichází až v 9. století (Velká Morava); raně křesťanské formy (rotunda, bazilika) ovlivnily naše nejstarší kostely.</p><p><b>Souvislosti:</b> Konec římského klimatického optima, ochlazení a sucha ve 3.–5. století, stěhování národů; rok 536 a justiniánský mor uzavírají antiku.</p></div>
+      </div>
+    </div>
+    <h3 class="dila-h">Památky k prezentaci <small>klikni pro zvětšení · popisky = vzor pro tvoje slidy</small></h3>
+    <div class="dila"><figure data-ep="krestanska_antika"><img src="../img/dejiny/krestanska_dobry_pastyr.webp" alt="Dobrý pastýř (Ravenna)" loading="lazy" data-zoom><figcaption><b>Dobrý pastýř (Ravenna)</b>Mozaika v mauzoleu Gally Placidie, cca 425 – Kristus jako antický pastýř.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="krestanska_antika"><img src="../img/dejiny/krestanska_sant_apollinare.webp" alt="Sant'Apollinare Nuovo (Ravenna)" loading="lazy" data-zoom><figcaption><b>Sant'Apollinare Nuovo (Ravenna)</b>Průvod mučedníků, 6. století – rytmus, frontálnost, zlaté pozadí.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="krestanska_antika"><img src="../img/dejiny/krestanska_santa_costanza.webp" alt="Santa Costanza (Řím)" loading="lazy" data-zoom><figcaption><b>Santa Costanza (Řím)</b>Mozaika klenby, 4. století – vinná réva, ptáci, antický dekor s novým smyslem.<small>Wikimedia Commons</small></figcaption></figure></div>
+    <p class="note">Podrobněji na webu <a href="https://svoboda-koduje.github.io/dejiny_umeni/#krestanska_antika" target="_blank" rel="noopener">Časová osa dějin umění – Křesťanská antika</a>.</p>
+  </div>
+</section>
+
+
+<section class="section" id="l18-svet">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Souvislosti</span><h2>Mimo Evropu ve stejné době</h2></div><p>Komise ocení jednu až dvě ukázky, že svět nebyla jen Evropa – a datace, která to zařadí vedle evropských epoch.</p></div>
+    <div class="cols-3 kompakt">
+    <div class="card epocha-k" id="e-svet_persie">
+      <h3>Persie <small>550 př. n. l. – 651 n. l.</small></h3>
+      <p class="podtitul">Achaimenovci a Sásánovci</p>
+      <p>Persepolis – palácové město s reliéfy sta národů; sásánovské stříbro a klenby, most mezi Mezopotámií a islámem.</p>
+      <ul><li>Sloupová apadana, býčí hlavice</li><li>Reliéfy procesí, králů a lvů</li><li>Glazované cihly, zlato, stříbro</li><li>Klenba (Ktésifón)</li></ul>
+      <p><b>Jména:</b> Kýros II., Dareios I., Chosrau I.<br><b>U nás:</b> —</p>
+      <div class="dila mini"><figure data-ep="svet_persie"><img src="../img/dejiny/svet_persie_persepolis.webp" alt="Apadana v Persepoli" loading="lazy" data-zoom><figcaption><b>Apadana v Persepoli</b>Reliéfy poddaných národů, 5. stol. př. n. l.<small>foto: Diego Delso · CC BY-SA 4.0</small></figcaption></figure></div>
+      <p class="note"><a href="https://svoboda-koduje.github.io/dejiny_umeni/#svet_persie" target="_blank" rel="noopener">Víc na časové ose</a></p>
+    </div>
+    <div class="card epocha-k" id="e-svet_indie">
+      <h3>Indie <small>2 600 př. n. l. – 1750</small></h3>
+      <p class="podtitul">Harappa, buddhistické a hinduistické umění, Mughalové</p>
+      <p>Od plánovaných měst na Indu přes stúpy, jeskyně v Adžantě a chrámy plné soch po Tádž Mahal.</p>
+      <ul><li>Stúpa, jeskynní chrám, chrámová věž (šikhara)</li><li>Bohatá figurální plastika, tanec, erotika</li><li>Buddha, Šiva Natarádža, jóga</li><li>Mughalská miniatura a mramor</li></ul>
+      <p><b>Jména:</b> Ašóka, Šáhdžahán<br><b>U nás:</b> Sbírky Náprstkova muzea a Národní galerie; indolog Vincenc Lesný, cestovatel Otakar Feistmantel.</p>
+      <div class="dila mini"><figure data-ep="svet_indie"><img src="../img/dejiny/svet_indie_tadz.webp" alt="Tádž Mahal (Ágra)" loading="lazy" data-zoom><figcaption><b>Tádž Mahal (Ágra)</b>1632–1653, mauzoleum Mumtáz Mahal – bílý mramor, symetrie, zahrada.<small>foto: Taj_Mahal,_Agra,_India_edit2.jpg: Yann; edited by King of Hearts derivative work: Jbarta (talk) · CC BY-SA 3.0</small></figcaption></figure><figure data-ep="svet_indie"><img src="../img/dejiny/svet_indie_siva.webp" alt="Šiva Natarádža" loading="lazy" data-zoom><figcaption><b>Šiva Natarádža</b>Bronz Čóla, 11. století – kosmický tanec stvoření a zániku.<small>Unknown authorUnknown author · volné dílo</small></figcaption></figure></div>
+      <p class="note"><a href="https://svoboda-koduje.github.io/dejiny_umeni/#svet_indie" target="_blank" rel="noopener">Víc na časové ose</a></p>
+    </div>
+    <div class="card epocha-k" id="e-svet_cina">
+      <h3>Čína <small>1 600 př. n. l. – 1911</small></h3>
+      <p class="podtitul">bronzy, terakotová armáda, tušová malba, porcelán</p>
+      <p>Tři tisíce let císařské tradice: rituální bronzy, Velká zeď, terakotová armáda, kaligrafie, krajina tuší a porcelán.</p>
+      <ul><li>Bronz, nefrit, lak, hedvábí, porcelán</li><li>Kaligrafie a tušová krajina</li><li>Prázdno a mlha, svitek</li><li>Palác, pagoda, zahrada</li></ul>
+      <p><b>Jména:</b> Čchin Š'-chuang-ti, Fan Kchuan, Wang Si-č' (kaligraf), Šen Čou<br><b>U nás:</b> Sbírky asijského umění Národní galerie (palác Kinských), Náprstkovo muzeum.</p>
+      <div class="dila mini"><figure data-ep="svet_cina"><img src="../img/dejiny/svet_cina_terakota.webp" alt="Terakotová armáda (Si-an)" loading="lazy" data-zoom><figcaption><b>Terakotová armáda (Si-an)</b>Cca 210 př. n. l., 8 000 vojáků v životní velikosti.<small>foto: Joe Hart from Southampton, United Kingdom · CC BY 2.0</small></figcaption></figure><figure data-ep="svet_cina"><img src="../img/dejiny/svet_cina_fankuan.webp" alt="Fan Kchuan: Cestovatelé mezi horami a potoky" loading="lazy" data-zoom><figcaption><b>Fan Kchuan: Cestovatelé mezi horami a potoky</b>Cca 1000, Tchaj-pej – monumentální tušová krajina.<small>Fan Kuan · volné dílo</small></figcaption></figure></div>
+      <p class="note"><a href="https://svoboda-koduje.github.io/dejiny_umeni/#svet_cina" target="_blank" rel="noopener">Víc na časové ose</a></p>
+    </div>
+    <div class="card epocha-k" id="e-svet_mezoamerika">
+      <h3>Mezoamerika <small>1 200 př. n. l. – 1521</small></h3>
+      <p class="podtitul">Olmékové, Teotihuacán, Mayové, Aztékové</p>
+      <p>Stupňovité pyramidy, kalendář, obří olmécké hlavy a mayské stély – civilizace nezávislé na Starém světě.</p>
+      <ul><li>Stupňovitá pyramida s chrámem na vrcholu</li><li>Kalendář, astronomie, hieroglyfy</li><li>Stély vládců, kolosální hlavy</li><li>Nefrit, obsidián, peří, keramika</li></ul>
+      <p><b>Jména:</b> Pakal Veliký, Moctezuma II.<br><b>U nás:</b> Sbírky Náprstkova muzea; Alberto Vojtěch Frič (sběratel a cestovatel).</p>
+      <div class="dila mini"><figure data-ep="svet_mezoamerika"><img src="../img/dejiny/svet_maya_chichen.webp" alt="El Castillo (Chichén Itzá)" loading="lazy" data-zoom><figcaption><b>El Castillo (Chichén Itzá)</b>Kukulkánova pyramida, 9.–12. stol. – o rovnodennosti se po schodišti „plazí had“ ze stínů.<small>foto: Daniel Schwen · CC BY-SA 4.0</small></figcaption></figure><figure data-ep="svet_mezoamerika"><img src="../img/dejiny/svet_olmek_hlava.webp" alt="Olmécká kolosální hlava" loading="lazy" data-zoom><figcaption><b>Olmécká kolosální hlava</b>San Lorenzo, cca 900 př. n. l., čedič, 2–3 m.<small>foto: Mesoamerican · CC BY-SA 4.0</small></figcaption></figure></div>
+      <p class="note"><a href="https://svoboda-koduje.github.io/dejiny_umeni/#svet_mezoamerika" target="_blank" rel="noopener">Víc na časové ose</a></p>
+    </div>
+    <div class="card epocha-k" id="e-svet_andy">
+      <h3>Andské kultury <small>900 př. n. l. – 1533</small></h3>
+      <p class="podtitul">Chavín, Nazca, Moche, Inkové</p>
+      <p>Obrazce v poušti Nazca, portrétní keramika Moche, zlato a kamenné zdivo Inků – Machu Picchu.</p>
+      <ul><li>Geoglyfy Nazca</li><li>Textilie a keramika jako hlavní média</li><li>Kamenné zdivo bez malty (Inkové)</li><li>Zlato = pot Slunce, stříbro = slzy Měsíce</li></ul>
+      <p><b>Jména:</b> Pachacútec, Atahualpa<br><b>U nás:</b> —</p>
+      <div class="dila mini"><figure data-ep="svet_andy"><img src="../img/dejiny/svet_andy_machupicchu.webp" alt="Machu Picchu" loading="lazy" data-zoom><figcaption><b>Machu Picchu</b>Cca 1450, Peru – incké město v Andách.<small>foto: Pedro Szekely at https://www.flickr.com/photos/pedrosz/ · CC BY-SA 2.0</small></figcaption></figure><figure data-ep="svet_andy"><img src="../img/dejiny/svet_andy_nazca.webp" alt="Kolibřík z Nazca" loading="lazy" data-zoom><figcaption><b>Kolibřík z Nazca</b>Geoglyf dlouhý 93 m, cca 200 př. n. l. – 600 n. l.<small>foto: Diego Delso · CC BY-SA 4.0</small></figcaption></figure></div>
+      <p class="note"><a href="https://svoboda-koduje.github.io/dejiny_umeni/#svet_andy" target="_blank" rel="noopener">Víc na časové ose</a></p>
+    </div>
+    <div class="card epocha-k" id="e-svet_afrika">
+      <h3>Subsaharská Afrika <small>500 př. n. l. – 1900</small></h3>
+      <p class="podtitul">Nok, Ife, Benin, Velké Zimbabwe, masky</p>
+      <p>Terakoty Nok, bronzové hlavy z Ife a Beninu, kamenné hradby Zimbabwe a masky, které inspirovaly Picassa.</p>
+      <ul><li>Terakota, bronz (ztracený vosk), dřevo, slonovina</li><li>Portrét a stylizace vedle sebe</li><li>Maska jako součást tance a obřadu</li><li>Královský dvůr jako objednavatel</li></ul>
+      <p><b>Jména:</b> Oba (králové) Beninu, El Anatsui (současnost)<br><b>U nás:</b> Náprstkovo muzeum (sbírky Emila Holuba), sbírka afrického umění Národní galerie.</p>
+      <div class="dila mini"><figure data-ep="svet_afrika"><img src="../img/dejiny/svet_afrika_ife.webp" alt="Hlava krále z Ife" loading="lazy" data-zoom><figcaption><b>Hlava krále z Ife</b>Bronz, 12.–14. století – naturalistický portrét.<small>foto: Vassil · CC0</small></figcaption></figure><figure data-ep="svet_afrika"><img src="../img/dejiny/svet_afrika_benin.webp" alt="Beninský bronzový reliéf" loading="lazy" data-zoom><figcaption><b>Beninský bronzový reliéf</b>16.–17. století, Britské muzeum.<small>foto: Photograph by Mike Peel (www.mikepeel.net). · CC BY-SA 4.0</small></figcaption></figure></div>
+      <p class="note"><a href="https://svoboda-koduje.github.io/dejiny_umeni/#svet_afrika" target="_blank" rel="noopener">Víc na časové ose</a></p>
+    </div></div>
+  </div>
+</section>
+
+<section class="section" id="l18-poznavacka">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Procvič</span><h2>Poznávačka</h2></div><p>Skryj popisky, zamíchej a říkej si ke každému obrázku: název, datace, období, souvislost. Najetím myší popisek odhalíš.</p></div>
+    <div data-poznavacka>
+      <div class="poznavacka-ctrl"><button class="btn btn-small btn-primary" type="button" data-skryt>Skrýt popisky (poznávačka)</button><button class="btn btn-small btn-ghost" type="button" data-michat>Zamíchat</button><span class="hint">38 památek</span></div>
+      <div class="dila"><figure data-ep="mezopotamie"><img src="../img/dejiny/mezopotamie_zikkurat_ur.webp" alt="Zikkurat v Uru (Irák)" loading="lazy" data-zoom><figcaption><b>Zikkurat v Uru (Irák)</b>Chrámová věž měsíčního boha Nanny, cca 2 100 př. n. l., rekonstruovaná ve 20. století.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="mezopotamie"><img src="../img/dejiny/mezopotamie_istarina_brana.webp" alt="Ištařina brána (Babylon)" loading="lazy" data-zoom><figcaption><b>Ištařina brána (Babylon)</b>Glazované cihly s draky a býky, cca 575 př. n. l. Dnes v Pergamonském muzeu v Berlíně.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="mezopotamie"><img src="../img/dejiny/mezopotamie_chammurapi.webp" alt="Chammurapiho stéla" loading="lazy" data-zoom><figcaption><b>Chammurapiho stéla</b>Diorit, cca 1 750 př. n. l., Louvre – král přijímá zákony od boha Šamaše.<small>foto: Rama · CC BY-SA 3.0 fr</small></figcaption></figure><figure data-ep="egypt"><img src="../img/dejiny/egypt_dzoser.webp" alt="Džoserova pyramida v Sakkáře" loading="lazy" data-zoom><figcaption><b>Džoserova pyramida v Sakkáře</b>Nejstarší kamenná monumentální stavba světa, architekt Imhotep, cca 2 650 př. n. l.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egypt"><img src="../img/dejiny/egypt_giza.webp" alt="Pyramidy v Gíze" loading="lazy" data-zoom><figcaption><b>Pyramidy v Gíze</b>Cheops, Rachef a Menkaure, cca 2 560–2 500 př. n. l. Jediný dochovaný div světa.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egypt"><img src="../img/dejiny/egypt_karnak.webp" alt="Hypostylový sál v Karnaku" loading="lazy" data-zoom><figcaption><b>Hypostylový sál v Karnaku</b>134 sloupů jako zkamenělý rákosový háj – řád (Maat) nad vodami chaosu. Nová říše.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egypt"><img src="../img/dejiny/egypt_abu_simbel.webp" alt="Abú Simbel" loading="lazy" data-zoom><figcaption><b>Abú Simbel</b>Skalní chrám Ramesse II., 13. stol. př. n. l.; v 60. letech 20. století přesunut kvůli Asuánské přehradě.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egypt"><img src="../img/dejiny/egypt_nefertiti.webp" alt="Busta Nefertiti" loading="lazy" data-zoom><figcaption><b>Busta Nefertiti</b>Vápenec a sádra, cca 1 345 př. n. l., dílna sochaře Thutmose v Amarně.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egypt"><img src="../img/dejiny/egypt_tutanchamon.webp" alt="Tutanchamonova maska" loading="lazy" data-zoom><figcaption><b>Tutanchamonova maska</b>Zlato, lapis lazuli, 11 kg, cca 1 323 př. n. l. Objevil Howard Carter 1922.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egejske"><img src="../img/dejiny/egejske_lvi_brana.webp" alt="Lví brána v Mykénách" loading="lazy" data-zoom><figcaption><b>Lví brána v Mykénách</b>Cca 1 250 př. n. l. – kyklopské zdivo a reliéf lvic nad překladem.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="egejske"><img src="../img/dejiny/egejske_knossos_byk.webp" alt="Skok přes býka (Knóssos)" loading="lazy" data-zoom><figcaption><b>Skok přes býka (Knóssos)</b>Freska z paláce, cca 1 450 př. n. l., Archeologické muzeum Heraklion.<small>unknown ancient artist · volné dílo</small></figcaption></figure><figure data-ep="egejske"><img src="../img/dejiny/egejske_maska.webp" alt="Agamemnonova maska" loading="lazy" data-zoom><figcaption><b>Agamemnonova maska</b>Zlato, cca 1 550 př. n. l., Národní muzeum Athény.<small>foto: DieBuche · CC BY-SA 3.0</small></figcaption></figure><figure data-ep="recko"><img src="../img/dejiny/recko_parthenon.webp" alt="Parthenón (Athény)" loading="lazy" data-zoom><figcaption><b>Parthenón (Athény)</b>447–432 př. n. l., dórský chrám Athény Parthenos; sochařská výzdoba Feidiás.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="recko"><img src="../img/dejiny/recko_akropolis.webp" alt="Athénská Akropole" loading="lazy" data-zoom><figcaption><b>Athénská Akropole</b>Posvátný okrsek nad městem – Parthenón, Erechtheion, Propylaje.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="recko"><img src="../img/dejiny/recko_erechtheion.webp" alt="Erechtheion – síň karyatid" loading="lazy" data-zoom><figcaption><b>Erechtheion – síň karyatid</b>Iónský chrám, 421–406 př. n. l.; sloupy nahrazeny postavami dívek.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="recko"><img src="../img/dejiny/recko_rady.webp" alt="Řecké sloupové řády" loading="lazy" data-zoom><figcaption><b>Řecké sloupové řády</b>Dórský, iónský a korintský řád – základ evropské architektury až do 20. století.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="recko"><img src="../img/dejiny/recko_epidauros.webp" alt="Divadlo v Epidauru" loading="lazy" data-zoom><figcaption><b>Divadlo v Epidauru</b>4. stol. př. n. l., architekt Polykleitos mladší; 14 000 diváků, dokonalá akustika.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="recko"><img src="../img/dejiny/recko_pergamon.webp" alt="Pergamský oltář" loading="lazy" data-zoom><figcaption><b>Pergamský oltář</b>Helénismus, cca 180 př. n. l.; gigantomachie – boj bohů s giganty, patos a pohyb.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="etruskove"><img src="../img/dejiny/etruskove_sarkofag.webp" alt="Sarkofág manželů (Cerveteri)" loading="lazy" data-zoom><figcaption><b>Sarkofág manželů (Cerveteri)</b>Terakota, cca 520 př. n. l., Villa Giulia v Římě.<small>foto: Lupachiotto64 · CC BY-SA 4.0</small></figcaption></figure><figure data-ep="etruskove"><img src="../img/dejiny/etruskove_tarquinia.webp" alt="Hrobka Leopardů (Tarquinia)" loading="lazy" data-zoom><figcaption><b>Hrobka Leopardů (Tarquinia)</b>Nástěnná malba hostiny, cca 470 př. n. l.<small>AlMare · volné dílo</small></figcaption></figure><figure data-ep="rim"><img src="../img/dejiny/rim_akvadukt.webp" alt="Pont du Gard (Francie)" loading="lazy" data-zoom><figcaption><b>Pont du Gard (Francie)</b>Akvadukt z 1. stol. n. l., 49 m vysoký; voda pro Nîmes – inženýrství jako umění.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="rim"><img src="../img/dejiny/rim_tetrarchove.webp" alt="Tetrarchové (Benátky)" loading="lazy" data-zoom><figcaption><b>Tetrarchové (Benátky)</b>Porfyr, cca 300 n. l. – pozdně antický přechod od realismu k strnulé symbolice.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="rim"><img src="../img/dejiny/rim_pantheon.webp" alt="Pantheon (Řím)" loading="lazy" data-zoom><figcaption><b>Pantheon (Řím)</b>Kupole o průměru 43,3 m s okulem, cca 125 n. l.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="rim"><img src="../img/dejiny/rim_koloseum.webp" alt="Koloseum" loading="lazy" data-zoom><figcaption><b>Koloseum</b>Flaviovský amfiteátr, 72–80 n. l.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="krestanska_antika"><img src="../img/dejiny/krestanska_dobry_pastyr.webp" alt="Dobrý pastýř (Ravenna)" loading="lazy" data-zoom><figcaption><b>Dobrý pastýř (Ravenna)</b>Mozaika v mauzoleu Gally Placidie, cca 425 – Kristus jako antický pastýř.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="krestanska_antika"><img src="../img/dejiny/krestanska_sant_apollinare.webp" alt="Sant'Apollinare Nuovo (Ravenna)" loading="lazy" data-zoom><figcaption><b>Sant'Apollinare Nuovo (Ravenna)</b>Průvod mučedníků, 6. století – rytmus, frontálnost, zlaté pozadí.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="krestanska_antika"><img src="../img/dejiny/krestanska_santa_costanza.webp" alt="Santa Costanza (Řím)" loading="lazy" data-zoom><figcaption><b>Santa Costanza (Řím)</b>Mozaika klenby, 4. století – vinná réva, ptáci, antický dekor s novým smyslem.<small>Wikimedia Commons</small></figcaption></figure><figure data-ep="svet_persie"><img src="../img/dejiny/svet_persie_persepolis.webp" alt="Apadana v Persepoli" loading="lazy" data-zoom><figcaption><b>Apadana v Persepoli</b>Reliéfy poddaných národů, 5. stol. př. n. l.<small>foto: Diego Delso · CC BY-SA 4.0</small></figcaption></figure><figure data-ep="svet_indie"><img src="../img/dejiny/svet_indie_tadz.webp" alt="Tádž Mahal (Ágra)" loading="lazy" data-zoom><figcaption><b>Tádž Mahal (Ágra)</b>1632–1653, mauzoleum Mumtáz Mahal – bílý mramor, symetrie, zahrada.<small>foto: Taj_Mahal,_Agra,_India_edit2.jpg: Yann; edited by King of Hearts derivative work: Jbarta (talk) · CC BY-SA 3.0</small></figcaption></figure><figure data-ep="svet_indie"><img src="../img/dejiny/svet_indie_siva.webp" alt="Šiva Natarádža" loading="lazy" data-zoom><figcaption><b>Šiva Natarádža</b>Bronz Čóla, 11. století – kosmický tanec stvoření a zániku.<small>Unknown authorUnknown author · volné dílo</small></figcaption></figure><figure data-ep="svet_cina"><img src="../img/dejiny/svet_cina_terakota.webp" alt="Terakotová armáda (Si-an)" loading="lazy" data-zoom><figcaption><b>Terakotová armáda (Si-an)</b>Cca 210 př. n. l., 8 000 vojáků v životní velikosti.<small>foto: Joe Hart from Southampton, United Kingdom · CC BY 2.0</small></figcaption></figure><figure data-ep="svet_cina"><img src="../img/dejiny/svet_cina_fankuan.webp" alt="Fan Kchuan: Cestovatelé mezi horami a potoky" loading="lazy" data-zoom><figcaption><b>Fan Kchuan: Cestovatelé mezi horami a potoky</b>Cca 1000, Tchaj-pej – monumentální tušová krajina.<small>Fan Kuan · volné dílo</small></figcaption></figure><figure data-ep="svet_mezoamerika"><img src="../img/dejiny/svet_maya_chichen.webp" alt="El Castillo (Chichén Itzá)" loading="lazy" data-zoom><figcaption><b>El Castillo (Chichén Itzá)</b>Kukulkánova pyramida, 9.–12. stol. – o rovnodennosti se po schodišti „plazí had“ ze stínů.<small>foto: Daniel Schwen · CC BY-SA 4.0</small></figcaption></figure><figure data-ep="svet_mezoamerika"><img src="../img/dejiny/svet_olmek_hlava.webp" alt="Olmécká kolosální hlava" loading="lazy" data-zoom><figcaption><b>Olmécká kolosální hlava</b>San Lorenzo, cca 900 př. n. l., čedič, 2–3 m.<small>foto: Mesoamerican · CC BY-SA 4.0</small></figcaption></figure><figure data-ep="svet_andy"><img src="../img/dejiny/svet_andy_machupicchu.webp" alt="Machu Picchu" loading="lazy" data-zoom><figcaption><b>Machu Picchu</b>Cca 1450, Peru – incké město v Andách.<small>foto: Pedro Szekely at https://www.flickr.com/photos/pedrosz/ · CC BY-SA 2.0</small></figcaption></figure><figure data-ep="svet_andy"><img src="../img/dejiny/svet_andy_nazca.webp" alt="Kolibřík z Nazca" loading="lazy" data-zoom><figcaption><b>Kolibřík z Nazca</b>Geoglyf dlouhý 93 m, cca 200 př. n. l. – 600 n. l.<small>foto: Diego Delso · CC BY-SA 4.0</small></figcaption></figure><figure data-ep="svet_afrika"><img src="../img/dejiny/svet_afrika_ife.webp" alt="Hlava krále z Ife" loading="lazy" data-zoom><figcaption><b>Hlava krále z Ife</b>Bronz, 12.–14. století – naturalistický portrét.<small>foto: Vassil · CC0</small></figcaption></figure><figure data-ep="svet_afrika"><img src="../img/dejiny/svet_afrika_benin.webp" alt="Beninský bronzový reliéf" loading="lazy" data-zoom><figcaption><b>Beninský bronzový reliéf</b>16.–17. století, Britské muzeum.<small>foto: Photograph by Mike Peel (www.mikepeel.net). · CC BY-SA 4.0</small></figcaption></figure></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l18-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div><p>Většinu času sežere hledání obrázků a psaní popisků – proto měj v hlavě 8–10 památek, které umíš, a jejich datace.</p></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Výběr</b><p>Projdi připravené obrázky, vyber 8–12 památek napříč fázemi období a druhy umění. Seřaď chronologicky.</p></div></li>
+        <li><span class="t">3–8<small>min</small></span><div><b>Šablona</b><p>InDesign 1920 × 1080, vzorová stránka (hlavička, číslo), styly Titulek/Popisek/Datace/Zdroj, objektový styl rámečku. Titulní slide.</p></div></li>
+        <li><span class="t">8–11<small>min</small></span><div><b>Osa období</b><p>Slide s fázemi a daty (obdélníky + text) – ukáže, že období chápeš v čase.</p></div></li>
+        <li><span class="t">11–24<small>min</small></span><div><b>Památky</b><p>Na každý slide: umístit obrázek, přizpůsobit rámečku, popisek 3–4 řádky podle vzoru. Cca 1 minuta na slide – popisky piš stručně, mluvit budeš u obhajoby.</p></div></li>
+        <li><span class="t">24–27<small>min</small></span><div><b>U nás + zdroje</b><p>Slide s českými památkami období; poslední slide zdroje obrázků (soubor, autor, licence).</p></div></li>
+        <li><span class="t">27–30<small>min</small></span><div><b>Kontrola a export</b><p>Pravopis (Ctrl+I), datace a názvy, žádný roztažený obrázek, jednotné velikosti písma. Export interaktivní PDF, otevřít, Ctrl+L, projít.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Co říct komisi na začátek</h3>
+          <p>„Prezentaci jsem sestavil v InDesignu jako PDF 16 : 9 s jednotnou šablonou a popisky název – datace – místo – technika – zdroj. Období starověku charakterizuji takto: …“ (viz Přehled období výše – 5 vět). „Památky jsem vybral tak, aby pokryly fáze období a architekturu, sochařství i malířství, včetně českých příkladů.“</p>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l18-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Popisek jen s názvem – chybí datace a souvislosti, které zadání výslovně chce.</div>
+      <div class="tip chyba"><b>Chyba</b>Obrázky roztažené nepoměrně, malé, rozmazané nebo s vodoznakem; bez uvedení zdroje.</div>
+      <div class="tip chyba"><b>Chyba</b>Prezentace 4 : 3 nebo A4 na výšku, každý slide jiný layout a písmo; text v odstavcích místo popisků.</div>
+      <div class="tip chyba"><b>Chyba</b>Památky zaměněné mezi obdobími (Pantheon římský × pařížský, Theodorik v renesanci, Stonehenge v paleolitu).</div>
+      <div class="tip chyba"><b>Chyba</b>Obhajoba bez úvodní charakteristiky – žák hned čte popisky; komise se ptá „a co je pro to období typické?“.</div>
+      <div class="tip chyba"><b>Chyba</b>Chybí české památky a vazba na dnešek (co z období vidíš v Pardubicích, v Praze).</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l18-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise"><li><details><summary>Charakterizuj starověkých kultur jako celek.</summary><div class="odp">Starověk začíná písmem a městy (Mezopotámie, Egypt kolem 3000 př. n. l.) a končí pádem západořímské říše (476). Umění slouží bohům a vládcům: chrámy, hrobky, sochy panovníků – a v Řecku poprvé člověk jako míra všeho: kánon, kontrapost, řády. Řím přebírá řecké formy a přidává inženýrství (oblouk, klenba, beton). Křesťanská antika přenáší antické formy do nového obsahu.</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Mezopotámie?</summary><div class="odp">cca 3 500 – 539 př. n. l.. Země mezi Eufratem a Tigridem: první města, klínové písmo, zikkuraty a reliéfy králů. Znaky: Cihlová architektura, zikkurat; Klínové písmo na hliněných tabulkách; Reliéfy vládců a lovů, lamassu; Glazované cihly, lapis lazuli, zlato; Strnulá frontální figura s velkýma očima. Jména: Gilgameš (epos), Sargon Akkadský, Chammurapi, Aššurbanipal, Nabukadnezar II.. U nás: Přímé památky u nás nejsou; české expedice (Bedřich Hrozný rozluštil chetitštinu, 1915) patří k dějinám orientalistiky.</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Starověký Egypt?</summary><div class="odp">cca 3 100 – 30 př. n. l.. Tři tisíce let neměnného kánonu: pyramidy, chrámy, hieroglyfy a umění pro věčnost. Znaky: Kánon: profil + čelní pohled, hierarchie velikostí; Monumentální kamenná architektura (pyramida, pylon, hypostyl); Umění pro posmrtný život; Frontální, blokové sochy; Hieroglyfy, papyrus, malba na omítce. Jména: Imhotep, Cheops, Hatšepsut, Achnaton a Nefertiti, Tutanchamon, Ramesse II.. U nás: Český egyptologický ústav UK zkoumá pohřebiště v Abúsíru (Zbyněk Žába, Miroslav Verner, Miroslav Bárta); Náprstkovo muzeum.</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Egejské kultury?</summary><div class="odp">cca 2 000 – 1 100 př. n. l.. Radostné fresky krétských paláců a kyklopské hradby Mykén – předehra řeckého umění. Znaky: Palácová architektura bez hradeb (Kréta) × kyklopské hradby (Mykény); Fresky s přírodními motivy, pohyb, radost; Keramika mořského stylu (chobotnice); Zlaté masky, kupolové hrobky; Lineární písmo A a B. Jména: Mínós (legenda), Daidalos (legenda), Arthur Evans, Heinrich Schliemann. U nás: Doba bronzová u nás (mohylové kultury) je současníkem Mykén; jantar z Baltu putoval přes naše území do Řecka.</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Řecká antika?</summary><div class="odp">cca 800 – 146 př. n. l.. Kolébka evropského umění: chrám s řády sloupů, ideální lidské tělo, divadlo a filosofie – „člověk mírou všech věcí“. Znaky: Sloupové řády: dórský, iónský, korintský; Ideální nahé tělo, kontrapost, kánon proporcí; Míra, harmonie, symetrie – lidské měřítko; Vázové malířství (černo- a červenofigurové); Helénistický patos a pohyb. Jména: Feidiás, Iktinos a Kallikratés, Myrón, Polykleitos, Práxitelés, Lýsippos. U nás: Antické sbírky Národního muzea a Univerzity Karlovy (odlitky); Keltové u nás obchodovali s řeckým světem (Bójové).</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Umění Etrusků?</summary><div class="odp">cca 800 – 200 př. n. l.. Tajemný národ střední Itálie: malované hrobky, terakotové sarkofágy manželů, bronzová vlčice a oblouk, který převzal Řím. Znaky: Nekropole s malovanými hrobkami; Terakotová plastika, sarkofágy; Bronzové odlévání (vlčice, Chiméra); Oblouk a klenba; Radostný vztah ke smrti. Jména: Vulca z Vejí (sochař), Lars Porsenna. U nás: Etruské bronzy a zboží se dostávaly přes Alpy i k Keltům ve střední Evropě (situly).</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Římská antika?</summary><div class="odp">cca 500 př. n. l. – 476 n. l.. Inženýrství a moc: beton, klenba, akvadukty, Koloseum, Pantheon a realistický portrét vládců světové říše. Znaky: Oblouk, klenba, kupole, beton; Užitková a reprezentativní architektura (fórum, bazilika, lázně, amfiteátr); Realistický portrét; Historický reliéf (Trajánův sloup); Nástěnná malba a mozaika (Pompeje). Jména: Vitruvius, Augustus, Apollodóros z Damašku, Hadrián, Konstantin Veliký. U nás: Římská pevnost v Mušově na Moravě (Markomanské války, Marcus Aurelius u Hronu), nálezy římských importů; Antické sbírky.</div></details></li><li><details><summary>Jaké jsou hlavní znaky období Křesťanská antika?</summary><div class="odp">cca 200 – 550 n. l.. Z katakomb do bazilik: symboly ryby a Dobrého pastýře, mozaiky se zlatým pozadím – umění nové víry. Znaky: Symbolika (ryba, beránek, pastýř, chí-ró); Bazilika a centrála; Mozaika se zlatým pozadím; Odhmotnění těla, frontálnost; Sarkofágy s biblickými výjevy. Jména: Konstantin Veliký, Galla Placidia, sv. Ambrož, Theodorich. U nás: Křesťanství přichází až v 9. století (Velká Morava); raně křesťanské formy (rotunda, bazilika) ovlivnily naše nejstarší kostely.</div></details></li><li><details><summary>Proč jsi vybral právě tyto památky a co o každé řekneš?</summary><div class="odp">Ke každému obrázku: <b>název, datace, místo/sbírka, materiál a technika, sloh/fáze, autor</b> (pokud je znám) a jednu souvislost – k čemu dílo sloužilo, co bylo nového, co z něj převzaly další epochy. Vybírej tak, aby každá fáze období měla aspoň jednu architekturu, jednu sochu/plastiku a jednu malbu či užité umění.</div></details></li><li><details><summary>Odkud jsou obrázky a smíš je použít?</summary><div class="odp">Z Wikimedia Commons – volná díla (autor zemřel před více než 70 lety) nebo fotografie pod licencí CC BY / CC BY-SA, u kterých uvádím autora fotografie a licenci v popisku nebo na posledním slidu „Zdroje“. Pro školní prezentaci platí i citační výjimka, ale zdroj uvádím vždy.</div></details></li><li><details><summary>V jakém programu jsi prezentaci dělal a proč PDF?</summary><div class="odp">InDesign (vzorové stránky, styly, obrázky umístěné jako vazby, export do interaktivního PDF 16 : 9) nebo Illustrator/PowerPoint. PDF se otevře všude stejně, drží písma i obrázky, spustí se na celou obrazovku (Ctrl+L) a listuje se šipkami.</div></details></li></ul>
+  </div>
+</section>
+
+<section class="section" id="l18-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz18" data-quiz='[
+      {
+            "q": "Do kterého období patří „Sant&#39;Apollinare Nuovo (Ravenna)“?",
+            "o": [
+                  "Křesťanská antika",
+                  "Umění Etrusků",
+                  "Egejské kultury",
+                  "Římská antika"
+            ],
+            "a": 0,
+            "w": "Sant&#39;Apollinare Nuovo (Ravenna): Průvod mučedníků, 6. století – rytmus, frontálnost, zlaté pozadí. (cca 200 – 550 n. l.)."
+      },
+      {
+            "q": "Do kterého období patří „Zikkurat v Uru (Irák)“?",
+            "o": [
+                  "Řecká antika",
+                  "Starověký Egypt",
+                  "Římská antika",
+                  "Mezopotámie"
+            ],
+            "a": 3,
+            "w": "Zikkurat v Uru (Irák): Chrámová věž měsíčního boha Nanny, cca 2 100 př. n. l., rekonstruovaná ve 20. století. (cca 3 500 – 539 př. n. l.)."
+      },
+      {
+            "q": "Do kterého období patří „Tetrarchové (Benátky)“?",
+            "o": [
+                  "Starověký Egypt",
+                  "Umění Etrusků",
+                  "Římská antika",
+                  "Řecká antika"
+            ],
+            "a": 2,
+            "w": "Tetrarchové (Benátky): Porfyr, cca 300 n. l. – pozdně antický přechod od realismu k strnulé symbolice. (cca 500 př. n. l. – 476 n. l.)."
+      },
+      {
+            "q": "Do kterého období patří „Pont du Gard (Francie)“?",
+            "o": [
+                  "Křesťanská antika",
+                  "Umění Etrusků",
+                  "Mezopotámie",
+                  "Římská antika"
+            ],
+            "a": 3,
+            "w": "Pont du Gard (Francie): Akvadukt z 1. stol. n. l., 49 m vysoký; voda pro Nîmes – inženýrství jako umění. (cca 500 př. n. l. – 476 n. l.)."
+      },
+      {
+            "q": "Období „Řecká antika“ datujeme přibližně",
+            "o": [
+                  "cca 800 – 200 př. n. l.",
+                  "cca 500 př. n. l. – 476 n. l.",
+                  "cca 3 500 – 539 př. n. l.",
+                  "cca 800 – 146 př. n. l."
+            ],
+            "a": 3,
+            "w": "Kolébka evropského umění: chrám s řády sloupů, ideální lidské tělo, divadlo a filosofie – „člověk mírou všech věcí“."
+      },
+      {
+            "q": "Období „Starověký Egypt“ datujeme přibližně",
+            "o": [
+                  "cca 200 – 550 n. l.",
+                  "cca 800 – 200 př. n. l.",
+                  "cca 3 100 – 30 př. n. l.",
+                  "cca 500 př. n. l. – 476 n. l."
+            ],
+            "a": 2,
+            "w": "Tři tisíce let neměnného kánonu: pyramidy, chrámy, hieroglyfy a umění pro věčnost."
+      },
+      {
+            "q": "„Sloupové řády: dórský, iónský, korintský“ je typické pro",
+            "o": [
+                  "Římská antika",
+                  "Umění Etrusků",
+                  "Řecká antika",
+                  "Křesťanská antika"
+            ],
+            "a": 2,
+            "w": "Řecká antika (cca 800 – 146 př. n. l.): Kolébka evropského umění: chrám s řády sloupů, ideální lidské tělo, divadlo a filosofie – „člověk mírou všech věcí“."
+      },
+      {
+            "q": "„Glazované cihly, lapis lazuli, zlato“ je typické pro",
+            "o": [
+                  "Řecká antika",
+                  "Egejské kultury",
+                  "Mezopotámie",
+                  "Křesťanská antika"
+            ],
+            "a": 2,
+            "w": "Mezopotámie (cca 3 500 – 539 př. n. l.): Země mezi Eufratem a Tigridem: první města, klínové písmo, zikkuraty a reliéfy králů."
+      },
+      {
+            "q": "„Frontální, blokové sochy“ je typické pro",
+            "o": [
+                  "Starověký Egypt",
+                  "Mezopotámie",
+                  "Římská antika",
+                  "Řecká antika"
+            ],
+            "a": 0,
+            "w": "Starověký Egypt (cca 3 100 – 30 př. n. l.): Tři tisíce let neměnného kánonu: pyramidy, chrámy, hieroglyfy a umění pro věčnost."
+      }
+]'></div>
+  </div>
+</section>
+
+<section class="section" id="l18-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="https://svoboda-koduje.github.io/dejiny_umeni/#osa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><circle cx="7" cy="12" r="2"/><circle cx="17" cy="12" r="2"/></svg><div><b>Časová osa dějin umění</b><span>Interaktivní osa všech epoch s detaily a obrázky.</span></div></a>
+      <a class="link-card" href="https://svoboda-koduje.github.io/dejiny_umeni/#prehled" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/></svg><div><b>Přehledová tabulka slohů</b><span>Znaky, architektura, sochařství, malířství vedle sebe.</span></div></a>
+      <a class="link-card" href="https://svoboda-koduje.github.io/dejiny_umeni/#mapa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg><div><b>Mapa světa a umění mimo Evropu</b><span>Kde se co dělo ve stejné době.</span></div></a>
+      <a class="link-card" href="https://commons.wikimedia.org/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><div><b>Wikimedia Commons</b><span>Volné obrázky děl – vždy zkontroluj licenci a uveď autora.</span></div></a>
+      <a class="link-card" href="../lekce/16-perspektiva-kompozice.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20L12 4l9 16z"/></svg><div><b>Lekce 16: výtvarná teorie</b><span>Perspektiva, kánon, zlatý řez – pojmy, které se k památkám hodí.</span></div></a>
+      <a class="link-card" href="../zdroje.html#obrazky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg><div><b>Zdroje obrázků tohoto webu</b><span>Licence použitých ukázek.</span></div></a>
+    </div>
+  </div>
+</section>
+<div class="wrap"><nav class="pager" aria-label="Další a předchozí lekce"><a class="prev" href="../lekce/17-dejiny-pravek.html"><small>← Předchozí lekce</small><b>17 · Dějiny umění – pravěk</b></a><a class="next" href="../lekce/19-dejiny-stredovek.html"><small>Další lekce →</small><b>19 · Dějiny umění – středověk</b></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="../img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="../zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="../zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/interaktivni.js"></script>
+</body>
+</html>

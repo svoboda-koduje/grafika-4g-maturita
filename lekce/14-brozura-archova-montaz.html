@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>14 · InDesign – sazba brožury + archová montáž | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Maturitní otázka 14: osmistránková brožura A5 se spadávkou, obálkou a tiráží, automatické číslování bez obálky a tiráže, TypoSkript, export do archové montáže pro oboustranný tisk na A3; pojmy výrobní, tiskový a knižní arch, knižní vazby V1–V9, povinné údaje tiráže.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="14 · InDesign – sazba brožury + archová montáž">
+<meta property="og:description" content="Maturitní otázka 14: osmistránková brožura A5 se spadávkou, obálkou a tiráží, automatické číslování bez obálky a tiráže, TypoSkript, export do archové montáže pro oboustranný tisk na A3; pojmy výrobní, tiskový a knižní arch, knižní vazby V1–V9, povinné údaje tiráže.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styl.css">
+</head>
+<body data-page="14-brozura-archova-montaz.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="../videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>OTÁZKA 14 / 23</b><span>InDesign a typografie</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="../img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="../index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="../lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="../lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="../lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="../lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="../lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="../lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="../lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="../lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="../lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="../lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true" class="active"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="../lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="../lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="../lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="../lekce/14-brozura-archova-montaz.html" class="active"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="../lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="../lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="../lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="../lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="../lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="../lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="../lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="../lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="../lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="../kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="../cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="../videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="../zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-indesign">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Maturitní otázka 14</span><span class="blok">· InDesign a typografie</span></p>
+    <h1>InDesign – sazba brožury + archová montáž</h1>
+    <p class="lead">Brožura A5 o osmi stranách: první strana obálka, poslední <b>tiráž</b>, paginace přes vzorovou stránku bez čísel na obálce a tiráži, typografická kontrola a <b>TypoSkript</b>, a nakonec export do <b>archové montáže</b> – dvě stránky vedle sebe na každou stranu listu A3 v pořadí, které po složení a sešití dá správnou brožuru. V teorii: výrobní, tiskový a knižní arch, vazby V1–V9 a tiráž.</p>
+    <ul class="zadani"><li><b>InDesign</b>8 stran A5 + spadávka 3 mm</li><li><b>Podklady</b>textový soubor</li><li><b>Výstup</b>archová montáž na A3 na šířku</li><li><b>Teorie</b>archy, vazby V1–V9, tiráž</li></ul>
+    <nav class="subnav" aria-label="Obsah lekce"><a href="#l14-otazka">Co se losuje</a><a href="#l14-dokument">Dokument a paginace</a><a href="#l14-montaz">Archová montáž</a><a href="#l14-archy">Výrobní, tiskový, knižní arch</a><a href="#l14-vazby">Vazby V1–V9</a><a href="#l14-tiraz">Tiráž</a><a href="#l14-postup">Postup pro 30 minut</a><a href="#l14-chyby">Časté chyby</a><a href="#l14-komise">Otázky komise</a><a href="#l14-kviz">Kvíz</a></nav>
+  </div>
+</section>
+<section class="section" id="l14-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li><b>Osmistránková brožura A5</b> se spadávkou 3 mm z připraveného textu.</li>
+          <li>Strana 1 = <b>obálka</b>, poslední strana = <b>tiráž</b>; automatické číslování přes vzorovou stránku, ale obálka a tiráž <b>bez číslic</b>.</li>
+          <li>Typografická kontrola funkcemi Hledat a nahradit + <b>TypoSkript</b>.</li>
+          <li>Export do <b>archové montáže</b> pro oboustranný tisk na <b>A3 na šířku</b>: na každou stranu listu dvě stránky vedle sebe (4 stránky na list) ve změněném pořadí.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>InDesign + Tisk brožury</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Strukturu dokumentu a nastavení výstupu pro archovou montáž.</li>
+          <li>Pojmy <b>výrobní arch, tiskový arch, knižní arch</b>.</li>
+          <li>Typy knižních vazeb <b>V1 až V9</b>.</li>
+          <li>Jaké údaje musí nezbytně být v <b>tiráži</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l14-dokument">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 1</span><h2>Dokument, obálka, tiráž, paginace</h2></div>
+      <p>Osm stran je nejmenší smysluplná brožura pro vazbu V1 (sešitová): dva archy A3 přeložené napůl, vložené do sebe, sešité ve hřbetu.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <ol class="steps">
+          <li><b>Nový dokument</b>: A5 na výšku (148 × 210 mm), <b>8 stran</b>, protilehlé stránky zapnuté, okraje 15/18/15/15 mm, spadávka <b>3 mm</b>, FOGRA39.</li>
+          <li><b>Vzorová stránka A</b>: zápatí s <em>Aktuálním číslem stránky</em> vně (na levé stránce vlevo, na pravé vpravo). Případně název brožury v záhlaví.</li>
+          <li><b>Stránky 1 (obálka) a 8 (tiráž)</b>: v panelu Stránky jim přiřaď vzor <b>[Žádný]</b> – tím zmizí číslo. (Alternativa: Volby číslování a oddílů – začít oddíl na str. 2 s číslem 2; ale vzor Žádný je čistší.)</li>
+          <li><b>Obálka</b>: název, podtitul, dominantní obrázek nebo barevná plocha dotažená na spadávku. Text 10 mm od kraje.</li>
+          <li><b>Text</b>: <kbd>Ctrl</kbd>+<kbd>D</kbd>, <kbd>Shift</kbd>+klik na straně 2 – automaticky se naleje přes strany 2–7. Styly Nadpis / Text / Popisek jako v <a href="../lekce/04-odstavcove-styly.html">lekci 04</a>.</li>
+          <li><b>Tiráž</b> na straně 8 (viz níže), menším stupněm, obvykle dole, vlevo nebo na střed – tiráž je jedna z mála věcí, kde je osová sazba přípustná.</li>
+          <li><b>Typografie</b>: Hledat a nahradit (dvojité mezery, spojovník → pomlčka), TypoSkript (pevné mezery, uvozovky), dynamická kontrola pravopisu, Nerozdělovat řádky.</li>
+        </ol>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:16px">
+          <h3>Struktura 8 stran</h3>
+          <div class="table-scroll"><table class="tech-table"><thead><tr><th>Strana</th><th>Obsah</th><th>Vzor</th></tr></thead><tbody>
+            <tr><th>1</th><td>přední obálka – název, obrázek</td><td>Žádný (bez čísla)</td></tr>
+            <tr><th>2</th><td>úvod / editorial, případně obsah</td><td>A</td></tr>
+            <tr><th>3–6</th><td>text, nadpisy, obrázky</td><td>A</td></tr>
+            <tr><th>7</th><td>závěr textu</td><td>A</td></tr>
+            <tr><th>8</th><td>tiráž (zadní obálka)</td><td>Žádný (bez čísla)</td></tr>
+          </tbody></table></div>
+        </div>
+        <p class="tip"><b>Dělitelnost čtyřmi</b>Každý list A3 přeložený napůl dává 4 stránky A5. Proto musí mít brožura pro vazbu V1 počet stran dělitelný 4 (8, 12, 16…). Kdyby měl text jen 7 stran, osmá zůstane prázdná (vakát) – nikdy nevynechávej stránku.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l14-montaz">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 2</span><h2>Archová montáž (vyřazení stránek)</h2></div>
+      <p>Archová montáž = rozmístění stránek na tiskový arch tak, aby po vytištění, složení a snesení byly ve správném pořadí. V InDesignu to dělá <span class="menu-path">Soubor <i>›</i> Tisk brožury</span>.</p>
+    </div>
+    <div class="lab" data-widget="montaz">
+      <div class="lab-head"><h3>Archová montáž pro vazbu V1</h3><span class="hint">Které stránky jsou na kterém listu A3</span></div>
+      <div class="lab-body wide">
+        <div class="lab-stage pad"><svg viewBox="0 0 640 360" aria-label="Listy A3 s rozmístěnými stránkami brožury"></svg></div>
+        <div class="lab-ctrl">
+          <label><span>Počet stran brožury</span><div class="seg" data-n><button type="button" data-v="8" aria-pressed="true">8</button><button type="button" data-v="12">12</button><button type="button" data-v="16">16</button></div></label>
+          <div class="readout" data-out></div>
+          <p>Pravidlo: na každé straně listu je vlevo a vpravo dvojice stránek, jejichž <b>součet je vždy počet stran + 1</b>. Vnější list nese první a poslední stránku.</p>
+        </div>
+      </div>
+    </div>
+    <div class="cols-2" style="margin-top:22px">
+      <div class="card">
+        <h3>Tisk brožury v InDesignu</h3>
+        <ol class="steps">
+          <li><span class="menu-path">Soubor <i>›</i> Tisk brožury</span>. Typ brožury: <b>Sešitová vazba (2 stránky)</b> – 2-up Saddle Stitch. To je vazba V1.</li>
+          <li><em>Nastavení tisku</em> → tiskárna: <b>PostScript / Adobe PDF</b> (nebo tiskárna PDF), formát papíru <b>A3</b>, <b>na šířku</b>, oboustranně (duplex, otáčet podle krátké strany). Zapni <em>Značky tiskárny</em> a <em>Použít spadávku z dokumentu</em> – jinak se spadávka v montáži ztratí.</li>
+          <li>Záložka <em>Náhled</em>: zkontroluj, že na prvním listu je 8 | 1 a na rubu 2 | 7.</li>
+          <li>Výstup: PDF (přes virtuální tiskárnu) nebo přímo tisk. Název souboru podle zadání.</li>
+          <li>Pokud nemáš PDF tiskárnu: zapiš pořadí ručně – nový dokument A3 na šířku, 4 stránky, umístěné stránky z PDF brožury (<kbd>Ctrl</kbd>+<kbd>D</kbd> umí vložit PDF po stránkách) v pořadí 8|1, 2|7, 6|3, 4|5.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Další typy montáže</h3>
+        <ul>
+          <li><b>Sešitová (V1)</b>: listy vložené do sebe, stránky z opačných konců na jednom listu (8|1). Hřbet se sešije drátem. Pro 8–64 stran.</li>
+          <li><b>Lepená (V2)</b>: brožura složená ze <b>složek</b> (signatur) po 8 nebo 16 stranách; každá složka má vlastní pořadí; složky se snášejí za sebou (ne do sebe). Pro knihy.</li>
+          <li><b>Obracení archu</b>: <em>tisk překlápěním</em> (líc a rub ze stejné předlohy) vs. <em>tisk obracením</em> – ovlivňuje, kde je rub stránky.</li>
+          <li><b>Creep (vytlačení)</b>: u tlustých sešitových brožur se vnitřní listy po složení vysunou; montáž vnitřní stránky posouvá ke hřbetu. V Tisku brožury pole <em>Vytlačení</em>.</li>
+          <li>Speciální programy pro montáž: Montax Imposer, Quite Imposing, archová montáž v RIPu tiskárny. V praxi dnes montáž dělá tiskárna – od grafika chce PDF po stránkách.</li>
+        </ul>
+        <p class="note"><a href="https://www.montax-imposer.cz/o-archove-montazi" target="_blank" rel="noopener">Ukázky typů archové montáže (Montax)</a> · video <a href="../videa.html#v-kniha">Archová montáž v InDesignu</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l14-archy">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Teorie</span><h2>Výrobní, tiskový a knižní arch</h2></div>
+      <p>Tři pojmy z polygrafie, které komise u této otázky chce slyšet přesně.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Výrobní arch</h3><p>Arch papíru v rozměru, na který je tiskový stroj stavěný a ve kterém se papír nakupuje (např. 700 × 1000 mm – B1, 610 × 860 mm – SRA/B2). Určuje ekonomiku výroby: kolik stránek se na něj vejde, kolik se odřeže. <b>Výrobní arch = fyzický list papíru pro tiskový stroj.</b></p></div>
+      <div class="card"><h3>Tiskový arch</h3><p>Potištěná plocha jednoho průchodu strojem – obsahuje <b>archovou montáž</b> stránek (např. 16 stran A5 na B2) včetně ořezových značek, pasovacích křížů, kontrolních škál a názvu zakázky. Tiskne se z jedné sady tiskových desek (C, M, Y, K). <b>Tiskový arch = vyřazené stránky na jednom listu.</b></p></div>
+      <div class="card"><h3>Knižní arch</h3><p>Jednotka rozsahu knihy: <b>16 stran</b> (tiskový arch složený třikrát) nebo 8 stran (dvakrát). Složený knižní arch = <b>složka (signatura)</b>; snesené složky tvoří knižní blok. Rozsah knihy se udává v arších: „12 archů“ = 192 stran. Proto má mít kniha počet stran dělitelný 16 (nebo aspoň 8 či 4).</p></div>
+      <div class="card"><h3>Autorský arch (navíc)</h3><p>Jednotka rozsahu <b>textu</b>, ne papíru: 36 000 znaků včetně mezer (nebo 20 normostran). Používá se ve smlouvách s autory a překladateli. Nepleť s knižním archem.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l14-vazby">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Teorie</span><h2>Knižní vazby V1–V9</h2></div>
+      <p>Česká klasifikace podle ČSN. V1–V4 jsou měkké vazby, V5–V6 polotuhé, V7–V9 tuhé (pevné). Číslo říká, jak je blok spojen a jaké má desky.</p>
+    </div>
+    <div class="vazby">
+      <div><svg viewBox="0 0 100 60"><path d="M10 10h80v40H10z" fill="#FBF0C4" stroke="#23272D"/><line x1="50" y1="10" x2="50" y2="50" stroke="#23272D" stroke-dasharray="3 2"/><circle cx="50" cy="22" r="2" fill="#23272D"/><circle cx="50" cy="38" r="2" fill="#23272D"/></svg><b>V1</b>sešitová – listy přeložené a <b>sešité drátem ve hřbetu</b>; brožury, časopisy, sešity do cca 64 stran</div>
+      <div><svg viewBox="0 0 100 60"><path d="M20 10h60v40H20z" fill="#fff" stroke="#23272D"/><rect x="14" y="10" width="6" height="40" fill="#B4532A"/></svg><b>V2</b>lepená, měkká obálka (paperback) – blok ofrézovaný ve hřbetu a <b>lepený</b> do obálky z kartonu; knihy, katalogy</div>
+      <div><svg viewBox="0 0 100 60"><path d="M20 10h60v40H20z" fill="#fff" stroke="#23272D"/><path d="M14 10v40" stroke="#23272D" stroke-width="3"/><path d="M8 20h8M8 40h8" stroke="#23272D"/></svg><b>V3</b>měkká obálka, blok <b>sešitý drátem z boku</b> (boční šití); silnější sešity, bloky, výkazy</div>
+      <div><svg viewBox="0 0 100 60"><path d="M20 10h60v40H20z" fill="#fff" stroke="#23272D"/><path d="M14 10v40" stroke="#23272D" stroke-width="3"/><path d="M20 15c3-3 6 3 9 0M20 30c3-3 6 3 9 0M20 45c3-3 6 3 9 0" fill="none" stroke="#B4532A"/></svg><b>V4</b>měkká obálka, blok <b>šitý nitěmi</b> ze složek, hřbet zalepený do obálky; kvalitnější paperbacky, učebnice</div>
+      <div><svg viewBox="0 0 100 60"><path d="M20 8h60v44H20z" fill="#fff" stroke="#23272D"/><rect x="12" y="8" width="8" height="44" fill="#D8D3C8" stroke="#23272D"/></svg><b>V5</b>polotuhá – blok lepený, <b>poloplátěné desky</b> z tužšího kartonu s plátěným hřbetem; sešity, deníky</div>
+      <div><svg viewBox="0 0 100 60"><path d="M20 8h60v44H20z" fill="#fff" stroke="#23272D"/><rect x="12" y="8" width="8" height="44" fill="#D8D3C8" stroke="#23272D"/><path d="M20 16c3-3 6 3 9 0M20 36c3-3 6 3 9 0" fill="none" stroke="#B4532A"/></svg><b>V6</b>polotuhá, blok <b>šitý nitěmi</b>, měkké přebalové desky; leporela, dětské knihy, sešity</div>
+      <div><svg viewBox="0 0 100 60"><rect x="8" y="6" width="84" height="48" rx="2" fill="#4E7A45" stroke="#23272D"/><path d="M22 10h58v40H22z" fill="#fff"/><rect x="8" y="6" width="12" height="48" fill="#23272D" opacity=".8"/></svg><b>V7</b>tuhá, <b>poloplátěná</b> – lepenkové desky, hřbet a rohy potažené plátnem, plochy papírem</div>
+      <div><svg viewBox="0 0 100 60"><rect x="8" y="6" width="84" height="48" rx="2" fill="#2E4FA3" stroke="#23272D"/><path d="M22 10h58v40H22z" fill="#fff"/><path d="M19 6v48M85 6v48" stroke="#23272D" stroke-dasharray="2 2"/></svg><b>V8</b>tuhá, <b>celopapírová / laminovaná</b> (hardcover) – lepenkové desky celé potažené potištěným papírem; nejběžnější pevná vazba, naše cvičení</div>
+      <div><svg viewBox="0 0 100 60"><rect x="8" y="6" width="84" height="48" rx="2" fill="#8C5A2B" stroke="#23272D"/><path d="M22 10h58v40H22z" fill="#fff"/><rect x="8" y="6" width="84" height="48" rx="2" fill="none" stroke="#C69A5B" stroke-width="2"/></svg><b>V9</b>tuhá, <b>celoplátěná / celokožená</b> – desky potažené plátnem, koženkou nebo kůží, s přebalem; reprezentativní knihy</div>
+    </div>
+    <p class="tip" style="margin-top:20px"><b>Co to znamená pro obálku</b>U V1 je obálka součástí vnějšího archu (4 stránky navíc). U V2 je obálka samostatný díl: zadní + hřbet + přední, spadávka 3 mm. U V8 samostatný potah desek: spadávka 15 mm na zahnutí, hřbetní drážky 8 mm, síla lepenky 2 mm; blok je k deskám připojen předsádkou. Kalkulačka: <a href="../kontrola.html#k-obalky">kontrola › obálky</a>.</p>
+  </div>
+</section>
+
+<section class="section" id="l14-tiraz">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Teorie</span><h2>Tiráž</h2></div>
+      <p>Tiráž (fr. <em>tirage</em> – náklad) je soupis technických a vydavatelských údajů o publikaci. U knihy na posledním listu; v časopisech různě (často u obsahu). Na rubu titulního listu je <b>impresum</b> (autorská tiráž) s copyrightem a ISBN.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <h3>Zákonem povinné údaje (zákon č. 37/1995 Sb., o neperiodických publikacích)</h3>
+        <ul>
+          <li><b>Název díla</b> a <b>jméno autora</b> (u překladu též překladatel a původní název díla a nakladatele)</li>
+          <li><b>Označení nositele autorských práv</b> (© jméno, rok)</li>
+          <li><b>Nakladatel</b> – obchodní jméno a sídlo (adresa)</li>
+          <li><b>Tiskárna</b> (výrobce) – jméno a adresa</li>
+          <li><b>Rok prvního vydání</b> nebo pořadí vydání a rok</li>
+          <li><b>ISBN</b>, bylo-li přiděleno (povinně v impresu)</li>
+        </ul>
+        <p class="note">Kniha bez těchto údajů nesmí být veřejně šířena. Krajský úřad může uložit vydavateli pokutu do 50 000 Kč a tomu, kdo ji šíří, do 25 000 Kč. Do 30 dnů od vydání se odevzdávají <b>povinné výtisky</b> (NK ČR 2×, MZK Brno, VK Olomouc, krajská knihovna) a plní nabídková povinnost dalším knihovnám.</p>
+      </div>
+      <div class="card">
+        <h3>Nepovinné (ale obvyklé) údaje</h3>
+        <ul>
+          <li>autor typografické úpravy / grafik, ilustrátor, fotograf</li>
+          <li>odpovědný, výtvarný a technický redaktor, editor, korektor</li>
+          <li>autor předmluvy a doslovu</li>
+          <li>písmo (použité fonty), papír, <b>počet stran</b>, počet knižních archů</li>
+          <li>edice a svazek, vydání (1. vydání), náklad (výše nákladu)</li>
+          <li>doporučená prodejní cena (DPC), web nakladatele</li>
+        </ul>
+        <h3>Vzor tiráže brožury</h3>
+        <p class="sazba" style="font-size:13.5px;padding:12px 14px;border:1px solid var(--line);border-radius:6px;text-align:center;line-height:1.5">Jan Novák<br><b>Pardubice za jeden den</b><br>Fotografie: Jan Novák · Grafická úprava a sazba: Jan Novák<br>Písmo Barlow a Source Serif · Papír 115 g/m² matná křída<br>Vydala SPŠE a VOŠ Pardubice, Karla IV. 13, 530 02 Pardubice, 2027<br>Vytiskla Tiskárna XY, s. r. o., Ulice 1, 530 02 Pardubice<br>1. vydání · 8 stran · Náklad 100 výtisků<br>© Jan Novák, 2027<br>ISBN 978-80-000-0000-0</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l14-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Dokument</b><p>A5, 8 stran, protilehlé, okraje 15/18/15/15, spadávka 3, FOGRA39.</p></div></li>
+        <li><span class="t">3–6<small>min</small></span><div><b>Vzor a paginace</b><p>Číslo stránky na A-Vzor vně dole. Stránkám 1 a 8 přiřadit vzor Žádný.</p></div></li>
+        <li><span class="t">6–9<small>min</small></span><div><b>Text</b><p>Umístit, Shift+klik na stranu 2 → strany 2–7. Styly Nadpis/Text/Popisek.</p></div></li>
+        <li><span class="t">9–15<small>min</small></span><div><b>Obálka a tiráž</b><p>Str. 1: název, plocha/obrázek na spadávku. Str. 8: tiráž s povinnými údaji (autor, název, ©, vydavatel + adresa, tiskárna + adresa, rok, ISBN).</p></div></li>
+        <li><span class="t">15–21<small>min</small></span><div><b>Typografie</b><p>Hledat a nahradit: dvojité mezery, spojovník → pomlčka, pevné mezery k/s/v/z. TypoSkript. Kontrola pravopisu. Sirotci/vdovy přes styl.</p></div></li>
+        <li><span class="t">21–24<small>min</small></span><div><b>Záloha: PDF/X po stránkách</b><p>Soubor › Exportovat › PDF/X-1a, značky, spadávka, FOGRA39. (Kdyby montáž selhala, máš tisková data.)</p></div></li>
+        <li><span class="t">24–30<small>min</small></span><div><b>Archová montáž</b><p>Soubor › Tisk brožury: Sešitová vazba (2 stránky); Nastavení tisku: Adobe PDF / PostScript, A3 na šířku, oboustranně, značky, spadávka z dokumentu. Náhled: 8|1, 2|7, 6|3, 4|5. Uložit PDF.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Co ukázat komisi</h3>
+          <ul>
+            <li>Panel Stránky: vzor A na 2–7, Žádný na 1 a 8.</li>
+            <li>Skryté znaky: žádné prázdné odstavce, pevné mezery po TypoSkriptu.</li>
+            <li>Náhled Tisku brožury s pořadím stránek – a vysvětlit součet (9).</li>
+            <li>Tiráž: ukázat na prst každý povinný údaj.</li>
+            <li>Vazba V1 – proč 8 stran, proč dva listy A3.</li>
+          </ul>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l14-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Čísla stránek i na obálce a tiráži. Správně: vzor Žádný nebo oddíl.</div>
+      <div class="tip chyba"><b>Chyba</b>Montáž bez spadávky a značek (v Tisku brožury zapomenuté „Použít spadávku z dokumentu“ a Značky).</div>
+      <div class="tip chyba"><b>Chyba</b>PDF exportované jako dvoustrany (slepené) místo po stránkách – tiskárna to nerozdělí.</div>
+      <div class="tip chyba"><b>Chyba</b>Tiráž bez tiskárny a adresy nakladatele, bez roku vydání – chybí zákonné údaje.</div>
+      <div class="tip chyba"><b>Chyba</b>Počet stran nedělitelný 4; prázdná stránka „vyřešená“ smazáním.</div>
+      <div class="tip chyba"><b>Chyba</b>Záměna knižního a autorského archu; V2 popsaná jako šitá vazba.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l14-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Co je archová montáž a jak jsi ji vytvořil?</summary><div class="odp">Rozmístění stránek na tiskový arch tak, aby po složení a snesení byly ve správném pořadí. V InDesignu Soubor › Tisk brožury, typ Sešitová vazba (2 stránky), papír A3 na šířku, oboustranně, značky a spadávka z dokumentu. Pro 8 stran: list 1 líc 8|1, rub 2|7; list 2 líc 6|3, rub 4|5 – součet dvojic je vždy 9.</div></details></li>
+      <li><details><summary>Vysvětli pojmy výrobní, tiskový a knižní arch.</summary><div class="odp">Výrobní arch = fyzický list papíru v rozměru pro tiskový stroj (B1 700 × 1000 mm). Tiskový arch = potištěný arch s vyřazenými stránkami, značkami a škálami – jeden průchod strojem. Knižní arch = jednotka rozsahu knihy, 16 stran (složený tiskový arch = složka/signatura). Autorský arch je jednotka textu (36 000 znaků) – nesouvisí s papírem.</div></details></li>
+      <li><details><summary>Jaké jsou typy knižních vazeb?</summary><div class="odp">Měkké: V1 sešitová drátem ve hřbetu, V2 lepená (paperback), V3 sešitá drátem z boku, V4 šitá nitěmi s měkkou obálkou. Polotuhé: V5 lepená s poloplátěnými deskami, V6 šitá s měkkými deskami. Tuhé: V7 poloplátěná, V8 celopapírová/laminovaná (hardcover), V9 celoplátěná nebo kožená.</div></details></li>
+      <li><details><summary>Proč musí být počet stran dělitelný čtyřmi?</summary><div class="odp">Jeden list přeložený napůl dává 4 stránky. U V1 jsou listy vložené do sebe, takže počet stran musí být násobek 4 (u knih ze 16stránkových složek ideálně násobek 16, minimálně 8). Chybějící stránky se doplní vakáty, nikdy se nevynechávají.</div></details></li>
+      <li><details><summary>Jaké údaje musí být v tiráži?</summary><div class="odp">Ze zákona: název díla, autor (u překladu překladatel a původní název), nositel autorských práv ©, nakladatel s adresou, tiskárna s adresou, rok vydání (pořadí vydání) a ISBN, pokud bylo přiděleno. Nepovinně grafik, redaktor, písmo, papír, počet stran, náklad, cena.</div></details></li>
+      <li><details><summary>Jak jsi zajistil, že obálka a tiráž nemají číslo stránky?</summary><div class="odp">Číslo je na vzorové stránce A; stránkám 1 a 8 jsem v panelu Stránky přiřadil vzor [Žádný]. Alternativa: lokálně odemknout prvek vzoru (Ctrl+Shift+klik) a smazat, nebo začít nový oddíl.</div></details></li>
+      <li><details><summary>Co dělá TypoSkript a co jsi musel udělat ručně?</summary><div class="odp">TypoSkript doplní pevné mezery za jednopísmenné předložky a spojky, opraví uvozovky, trojtečky, násobné mezery, mezery kolem interpunkce. Ručně (Hledat a nahradit): spojovníky na pomlčky v rozsazích, pevné mezery mezi číslem a jednotkou, znak ×, odentrované řádky; a kontrola pravopisu.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l14-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz14" data-quiz='[
+      {"q":"U osmistránkové brožury V1 je na líci prvního listu A3 dvojice stránek","o":["1 | 2","8 | 1","4 | 5","2 | 7"],"a":1,"w":"Vnější list nese první a poslední stránku: 8 | 1, rub 2 | 7. Součet je vždy 9."},
+      {"q":"Vazba V8 je","o":["sešitová drátem","lepená měkká (paperback)","tuhá celopapírová (hardcover)","šitá nitěmi s měkkou obálkou"],"a":2,"w":"V8 = pevné lepenkové desky potažené potištěným papírem (laminovaným); V2 je paperback, V1 sešitová, V4 šitá měkká."},
+      {"q":"Knižní arch má","o":["4 strany","8 stran","16 stran","36 000 znaků"],"a":2,"w":"Knižní arch = 16 stran (složený tiskový arch). 36 000 znaků je autorský arch."},
+      {"q":"Který údaj v tiráži zákon nevyžaduje?","o":["jméno a adresa tiskárny","rok vydání","náklad (počet výtisků)","nakladatel a adresa"],"a":2,"w":"Náklad je nepovinný. Povinné: název, autor, ©, nakladatel + adresa, tiskárna + adresa, rok/pořadí vydání, ISBN."},
+      {"q":"V dialogu Tisk brožury pro vazbu V1 zvolíš typ","o":["Lepená vazba (2 stránky)","Sešitová vazba (2 stránky)","Sešitová vazba (po sobě jdoucí)","Žádný"],"a":1,"w":"2-up Saddle Stitch = sešitová vazba, dvě stránky vedle sebe na list."},
+      {"q":"Spadávka se do archové montáže dostane, když","o":["je v dokumentu nastavená – automaticky","v Nastavení tisku zapneš Použít spadávku z dokumentu a Značky","exportuješ PDF/A","nastavíš papír A3"],"a":1,"w":"Tisk brožury spadávku ignoruje, dokud ji v Nastavení tisku nezapneš spolu se značkami tiskárny."},
+      {"q":"Arch papíru v rozměru pro tiskový stroj (např. B1) je","o":["tiskový arch","knižní arch","výrobní arch","autorský arch"],"a":2,"w":"Výrobní arch je fyzický list papíru; tiskový arch je potištěný s montáží; knižní arch je 16 stran."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l14-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy a videa</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="../videa.html#v-kniha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>Videa: archová montáž, export tiskového bloku, výroba knihy v tiskárně</b><span>Jak kniha vzniká od archu po vazbu.</span></div></a>
+      <a class="link-card" href="https://www.montax-imposer.cz/o-archove-montazi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16"/><path d="M12 4v16M3 12h18"/></svg><div><b>O archové montáži</b><span>Typy montáží s obrázky.</span></div></a>
+      <a class="link-card" href="https://www.polygraficketahaky.cz/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><div><b>Polygrafické taháky</b><span>Vazby, formáty, papír, spadávky.</span></div></a>
+      <a class="link-card" href="../cviceni.html#c-kniha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><div><b>Cvičení: sazba knihy a obálky</b><span>Popis knihy, tiráž, V2/V8.</span></div></a>
+    </div>
+  </div>
+</section>
+<div class="wrap"><nav class="pager" aria-label="Další a předchozí lekce"><a class="prev" href="../lekce/21-import-wordu.html"><small>← Předchozí lekce</small><b>21 · InDesign – import textu z Wordu, znakové a odstavcové styly</b></a><a class="next" href="../lekce/15-dl-letak.html"><small>Další lekce →</small><b>15 · Grafická úprava DL letáku</b></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="../img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="../zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="../zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/interaktivni.js"></script>
+</body>
+</html>

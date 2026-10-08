@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontrola před odevzdáním | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Kontrolní seznam nejčastějších chyb v sazbě a grafice ze zpětné vazby ke cvičením 4.G: odstavcové styly, dělení slov, sirotci a vdovy, pevné mezery, pomlčky, CMYK a 300 ppi, PDF/X se spadávkou, obálky V2 a V8, portfolio.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="Kontrola před odevzdáním">
+<meta property="og:description" content="Kontrolní seznam nejčastějších chyb v sazbě a grafice ze zpětné vazby ke cvičením 4.G: odstavcové styly, dělení slov, sirotci a vdovy, pevné mezery, pomlčky, CMYK a 300 ppi, PDF/X se spadávkou, obálky V2 a V8, portfolio.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styl.css">
+</head>
+<body data-page="kontrola.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>K MATURITĚ</b><span>Kontrola před odevzdáním</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true" class="active">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="kontrola.html" class="active"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-indesign">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Průřezová stránka</span><span class="blok">· platí pro všechna cvičení i pro maturitu</span></p>
+    <h1>Kontrola před odevzdáním</h1>
+    <p class="lead">Tohle jsou chyby, které se ve zpětné vazbě ke cvičením v Teamsech opakují pořád dokola. Každá z nich stojí body – ve cvičení i u maturity. Projdi seznam před každým odevzdáním, dokud ti nepřejde do krve. Zaškrtnutí se ukládá jen ve tvém prohlížeči.</p>
+    <ul class="zadani"><li><b>1</b>Založení dokumentu</li><li><b>2</b>Odstavcové styly</li><li><b>3</b>Text a typografie</li><li><b>4</b>Obrázky a barvy</li><li><b>5</b>Export PDF/X</li><li><b>6</b>Obálky a kniha</li><li><b>7</b>Portfolio</li></ul>
+    <nav class="subnav" aria-label="Obsah"><a href="#k-dokument">Dokument</a><a href="#k-styly">Odstavcové styly</a><a href="#k-text">Text a typografie</a><a href="#k-obrazky">Obrázky a barvy</a><a href="#k-export">Export PDF/X</a><a href="#k-obalky">Obálky a kniha</a><a href="#k-portfolio">Portfolio</a><a href="#k-ukazky">Interaktivní ukázky</a><a href="#k-skripty">Skripty</a></nav>
+  </div>
+</section>
+
+<section class="section" id="k-dokument">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">1 · Založení dokumentu</span><h2>Chyby, které se táhnou celou prací</h2></div>
+      <p>Špatně založený dokument se opravuje nejhůř. U maturity máš na založení tři minuty – udělej to pořádně.</p>
+    </div>
+    <div class="cols-2">
+      <div>
+        <ul class="checklist" data-checklist="dokument">
+          <li><label><input type="checkbox"><span><b>Správný formát a orientace.</b> Formátová řada A/B/C podle zadání (A4 210 × 297 mm, A5 148 × 210 mm, B5 176 × 250 mm, DL 110 × 220 mm). Kniha jen B6–B4.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Spadávka 3 mm</b> po všech čtyřech stranách (u obálky V8 <b>15 mm</b>). Bez spadávky nelze tiskovinu správně oříznout.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Protilehlé stránky</b> zapnuté u periodika a knihy (dvoustránková sazba), vypnuté u manuálu loga a jednostranných tiskovin.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Okraje zrcadla sazby</b> nastavené podle typu tiskoviny – u knihy alespoň 20 mm od okraje stránky k sazebnímu obrazci. Textová pole respektují <b>vnitřní fialové okraje</b>.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Barevný režim CMYK</b> a pracovní prostor <b>Coated FOGRA39</b> (<span class="menu-path">Úpravy <i>›</i> Nastavení barev</span>) u všeho, co jde do tisku. RGB jen pro web a obrazovku.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Vzorová stránka</b> s automatickým číslem stránky (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>); obálka a tiráž bez číslic.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Počet stran dělitelný 4</b> u brožury a knihy (archová montáž, vazba V1).</span></label></li>
+          <li><label><input type="checkbox"><span><b>Lokalizovaný font</b> s českou diakritikou a jazyk odstavcového stylu <b>Čeština</b> (jinak nefunguje dělení slov ani kontrola pravopisu).</span></label></li>
+        </ul>
+        <p><button class="btn btn-small btn-ghost" type="button" data-reset>Vynulovat zaškrtnutí</button></p>
+      </div>
+      <figure class="svg-fig" style="margin:0">
+        <img src="img/navody/periodikum-nastaveni.webp" alt="Dialog Nový dokument v InDesignu: A4, 16 stran, protilehlé stránky, okraje 20/25/25/20 mm, spadávka 3 mm" data-zoom width="1400" height="788" style="border-radius:6px">
+        <figcaption>Doporučené založení periodika: A4, 16 stran, protilehlé stránky, okraje nahoře 20 mm, dole 25 mm, uvnitř 25 mm, vně 20 mm, spadávka 3 mm na všech stranách.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="k-styly">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">2 · Odstavcové styly</span><h2>Vše, co se opakuje, řeší styl – ne ruční formátování</h2></div>
+      <p>Odstavcové, znakové a objektové styly jsou jádrem InDesignu. Komise pozná na první pohled, jestli je sazba „nastylovaná“, nebo naklikaná ručně.</p>
+    </div>
+    <div class="cols-2">
+      <div>
+        <ul class="checklist" data-checklist="styly">
+          <li><label><input type="checkbox"><span><b>Kapitoly začínají na nové stránce</b> přes styl nadpisu: <span class="menu-path">Volby rozdělování odstavců <i>›</i> Začátek odstavce <i>›</i> Na následující stránce</span>. Nikdy ne prázdnými řádky.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Nerozdělovat řádky</b> (Keep Lines Together) zapnuté ve stylu základního textu, aby nevznikali <b>sirotci a vdovy</b> a nezůstávaly volné řádky v textových polích.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Dělení slov</b>: slovo se dělí nejméně <b>před posledními třemi písmeny</b> (ne dvěma). Vypnuto: dělení slov s velkým písmenem, dělení posledního slova, dělení mezi sloupci.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Vyrovnání párů (kerning) na hodnotě Optické</b> v odstavcových stylech. Metrické jen u písem s kvalitními kerningovými tabulkami.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Mezera za odstavcem</b> ve stylu místo prázdného řádku <kbd>Enter</kbd>. Prázdné odstavce rozbíjejí sazbu i export do ePub.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Popisné texty (popisky)</b> zarovnané <b>do bloku vlevo</b> nebo na levý praporek, ne na střed.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Lokální změny</b> typografických parametrů (přepsané hodnoty mimo styl, značené „+“ u názvu stylu) přenesené do stylu – ručně přes <em>Předefinovat styl</em> nebo <a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/Ek7bCjiFkPVCtp4StAuYbHAB5fqNSUqhXwvA4aolYgDovg?e=Bo3d8P" target="_blank" rel="noopener">skriptem z OneDrive</a>.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Jeden článek = jedno provázané textové pole.</b> Sloupcová sazba, zarovnání a odsazení se řeší přes volby rámečku a styly, ne rozsekáním článku do mnoha polí.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Dvousloupcová sazba</b> u časopisu A4 (<span class="menu-path">Objekt <i>›</i> Volby textového rámečku <i>›</i> Sloupce</span>). Řádek přes celé zrcadlo unavuje při čtení.</span></label></li>
+        </ul>
+        <p><button class="btn btn-small btn-ghost" type="button" data-reset>Vynulovat zaškrtnutí</button></p>
+      </div>
+      <div class="screens">
+        <figure><img src="img/navody/chyby-periodika-4.webp" alt="Volby rozdělování odstavců: zapnuto Nerozdělovat řádky" width="1400" height="788"><figcaption><b>Nerozdělovat řádky</b> – Volby rozdělování odstavců ve stylu základního textu.</figcaption></figure>
+        <figure><img src="img/navody/chyby-periodika-5.webp" alt="Dělení slov: po prvních 2 písmenech, před posledními 3 písmeny; vypnuto dělení slov s velkými písmeny, posledního slova a mezi sloupci" width="1400" height="788"><figcaption><b>Dělení slov</b> – před posledními 3 písmeny; vypnout dělení slov velkými písmeny, posledního slova a přes sloupce.</figcaption></figure>
+        <figure><img src="img/navody/chyby-periodika-2.webp" alt="Základní formáty znaků: Vyrovnání párů nastavené na Optické" width="1400" height="788"><figcaption><b>Kerning Optický</b> v základních formátech znaků odstavcového stylu.</figcaption></figure>
+        <figure><img src="img/navody/chyby-periodika-3.webp" alt="Další formáty znaků: Jazyk nastaven na Čeština" width="1400" height="788"><figcaption><b>Jazyk Čeština</b> v dalších formátech znaků – jinak InDesign dělí slova anglicky.</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="k-text">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">3 · Text a typografie</span><h2>Drobnosti, které dělají profesionální sazbu</h2></div>
+      <p>Většinu z nich opraví <a href="#k-skripty">TypoSkript</a> a funkce Hledat a nahradit. Ale musíš vědět, co hledat, a umět to komisi vysvětlit.</p>
+    </div>
+    <div class="cols-2">
+      <div>
+        <ul class="checklist" data-checklist="text">
+          <li><label><input type="checkbox"><span><b>Žádné <kbd>Enter</kbd> uvnitř věty.</b> Nový odstavec = <kbd>Enter</kbd>, nic jiného. Vynucené zalomení řádku (<kbd>Shift</kbd>+<kbd>Enter</kbd>) rozbíjí práci odstavcových stylů. „Odentrované“ řádky uvnitř vět najdeš <a href="https://spsecz-my.sharepoint.com/:u:/g/personal/svoboda_spse_cz/ETBV34pPy8dKkKt8tlcsEKsBcrN6MxY_tBZOw8-g8Y3Mwg?e=fXLRyA" target="_blank" rel="noopener">vyhledávacím dotazem GREP</a> (<kbd>Ctrl</kbd>+<kbd>F</kbd>).</span></label></li>
+          <li><label><input type="checkbox"><span><b>TypoSkript</b> aplikovaný na celý dokument – pevné mezery za jednopísmennými předložkami a spojkami (k, s, v, z, a, i, o, u), správné uvozovky „“, trojtečka a další.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Spojovníky opravené na pomlčky</b> v celém dokumentu (Hledat a nahradit <i>›</i> Dotaz <i>›</i> pomlčka na en pomlčku). Spojovník: Brno-Královo Pole, 2-3×; pomlčka: „Praha – Brno“, rozsah 10–12 h.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Pevná mezera</b> (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>X</kbd>) mezi číslovkou a jednotkou: 300 dpi, 15 mm, 50 %, 19. století. Zkratka letopočtu s tečkou („19.“) nesmí zůstat na konci řádku – vypadá jako konec věty.</span></label></li>
+          <li><label><input type="checkbox"><span><b>PSČ a město na jednom řádku</b> – 530 02 Pardubice spojené pevnými mezerami.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Znaménko krát „×“</b> místo písmene „x“ (<span class="menu-path">Okna <i>›</i> Text a tabulky <i>›</i> Glyfy <i>›</i> Matematická znaménka</span>), s mezerami: 210 × 297 mm.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Dynamická kontrola pravopisu zapnutá</b> (<span class="menu-path">Úpravy <i>›</i> Kontrola pravopisu <i>›</i> Dynamická kontrola pravopisu</span>) a překlepy opravené. Komise překlepy vidí jako první.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Dělení slov podle pravidel</b>: nedělíme slova s velkým písmenem (jména), nedělíme poslední slovo odstavce, nedělíme mezi sloupci a stránkami, nenecháváme jednopísmenné části.</span></label></li>
+        </ul>
+        <p><button class="btn btn-small btn-ghost" type="button" data-reset>Vynulovat zaškrtnutí</button></p>
+      </div>
+      <div>
+        <figure class="svg-fig" style="margin:0 0 14px">
+          <img src="img/navody/chyby-enter.webp" alt="Vlevo chybná sazba s vynuceným zalomením a předložkou na konci řádku, vpravo opravená verze" data-zoom width="1400" height="788" style="border-radius:6px">
+          <figcaption>Vlevo: vynucené zalomení za „Milí čtenáři,“ a předložka „z“ na konci řádku. Vpravo: odstavec ukončený jen <kbd>Enter</kbd>, pevné mezery, správné dělení „ne-jen“ a „pří-běhy“.</figcaption>
+        </figure>
+        <div class="porovnani">
+          <div class="spatne sazba"><p>Časopis vychází od roku 2019 a má 24 stran. Formát je 210 x 297 mm, tisk 300 dpi. Redakce sídlí v Pardubicích, Karla IV. 13, 530 02 Pardubice. Rozhovor najdete na stranách 10-12.</p></div>
+          <div class="dobre sazba"><p>Časopis vychází od roku <span class="ok">2019</span> a&nbsp;má <span class="ok">24&nbsp;stran</span>. Formát je <span class="ok">210&nbsp;×&nbsp;297&nbsp;mm</span>, tisk <span class="ok">300&nbsp;dpi</span>. Redakce sídlí v&nbsp;Pardubicích, Karla&nbsp;IV.&nbsp;13, <span class="ok">530&nbsp;02&nbsp;Pardubice</span>. Rozhovor najdete na stranách <span class="ok">10–12</span>.</p></div>
+        </div>
+        <p class="note" style="margin-top:10px">Zvýrazněná místa: pevné mezery u čísel a jednotek, znaménko ×, PSČ s městem, pomlčka v rozsahu, předložky v a k s pevnou mezerou.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="k-obrazky">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">4 · Obrázky a barvy</span><h2>Tisk je nemilosrdný: CMYK, 300 ppi, správný formát</h2></div>
+      <p>Co na monitoru vypadá dobře, v tiskárně selže. Tiskárna kontroluje efektivní ppi, barevný režim a formáty vložených souborů.</p>
+    </div>
+    <div class="cols-2">
+      <div>
+        <ul class="checklist" data-checklist="obrazky">
+          <li><label><input type="checkbox"><span><b>Veškerá grafika ve CMYK</b>, 300 dpi, a <b>efektivní ppi v sazbě nejméně 300</b> (panel Vazby – efektivní ppi se mění zmenšením nebo zvětšením obrázku v rámečku).</span></label></li>
+          <li><label><input type="checkbox"><span><b>PNG není tiskový formát.</b> Obrázek s průhledným pozadím uprav ve Photoshopu a ulož jako <b>PSD</b> (nebo TIFF s alfa kanálem) – ten do sazby vlož.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Žádné RGB obrázky v tiskovém dokumentu</b> – zkontroluj v panelu Vazby (sloupec Barevný prostor) nebo v Kontrole před výstupem.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Podkladové barevné plochy a fotky na kraji stránky dotažené až na hranici spadávky</b>, jinak po oříznutí zůstane bílý proužek.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Černý text 100 % K</b> (ne sytá černá ze čtyř barev), velké černé plochy naopak sytá černá (např. C 60 M 40 Y 40 K 100).</span></label></li>
+          <li><label><input type="checkbox"><span><b>Fotky legálně</b> – vlastní, nebo s licencí, která tisk dovoluje; zdroj uvedený v tiráži.</span></label></li>
+        </ul>
+        <p><button class="btn btn-small btn-ghost" type="button" data-reset>Vynulovat zaškrtnutí</button></p>
+      </div>
+      <div class="lab stack" data-widget="ppi">
+        <div class="lab-head"><h3>Efektivní ppi</h3><span class="hint">Jak zmenšení v rámečku mění rozlišení</span></div>
+        <div class="lab-body">
+          <div class="lab-stage pad"><svg viewBox="0 0 420 300" aria-label="Obrázek vložený do rámečku a jeho efektivní rozlišení"></svg></div>
+          <div class="lab-ctrl">
+            <label><span>Šířka obrázku v pixelech <output>2400</output></span><input type="range" min="600" max="6000" step="100" value="2400" data-px></label>
+            <label><span>Šířka rámečku v sazbě (mm) <output>120</output></span><input type="range" min="30" max="300" step="5" value="120" data-mm></label>
+            <div class="readout" data-out></div>
+            <p>Efektivní ppi = počet pixelů ÷ šířka v palcích (1 palec = 25,4 mm). Skutečné ppi uložené v souboru (72, 300…) nehraje roli – rozhoduje, na jakou šířku pixely rozprostřeš.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="k-export">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">5 · Export PDF/X</span><h2>Bez spadávky a značek se nedá tisknout</h2></div>
+      <p>Tiskové PDF má přesně dané náležitosti. Komise si PDF otevře a první, co uvidí, jsou (nebo nejsou) ořezové značky.</p>
+    </div>
+    <div class="cols-2">
+      <div>
+        <ul class="checklist" data-checklist="export">
+          <li><label><input type="checkbox"><span><b>Přednastavení PDF/X-1a:2001</b> (<span class="menu-path">Soubor <i>›</i> Exportovat <i>›</i> Adobe PDF (tisk)</span>).</span></label></li>
+          <li><label><input type="checkbox"><span><b>Značky a spadávky</b>: zapnuté <b>Ořezové značky</b>, <b>Značky spadávky</b> a <b>Použít nastavení spadávky z dokumentu</b> (3 mm). Nic jiného.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Výstup</b>: převod barev „Převést do cílového (zachovat čísla)“, cíl a <b>profil výstupního záměru Coated FOGRA39 (ISO 12647-2:2004)</b>.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Stránky, ne dvojstránky</b> – tiskový blok knihy i periodika se exportuje po jednotlivých stránkách. Slepené dvoustrany tiskárna nerozdělí.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Interaktivní PDF (iPDF) knihy</b> také bez slepených dvoustránek; má záložky a hypervazby z obsahu.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Sbalený projekt</b> (<span class="menu-path">Soubor <i>›</i> Sbalit</span>) včetně složek <em>Links</em> a <em>Document fonts</em>, zazipovaný, pojmenovaný podle zadání (PRIJMENI_JMENO_4G_…).</span></label></li>
+          <li><label><input type="checkbox"><span><b>Výsledné PDF otevřené a zkontrolované</b> – v Acrobatu <span class="menu-path">Nástroje <i>›</i> Tisková produkce <i>›</i> Náhled výstupu</span> ukáže profil, barevné prostory a přetisk.</span></label></li>
+        </ul>
+        <p><button class="btn btn-small btn-ghost" type="button" data-reset>Vynulovat zaškrtnutí</button></p>
+      </div>
+      <div class="screens">
+        <figure><img src="img/navody/obalka-export-2.webp" alt="Export Adobe PDF, karta Značky a spadávky: Ořezové značky, Značky spadávky, Použít nastavení spadávky z dokumentu" width="1400" height="788"><figcaption>Karta <b>Značky a spadávky</b>: jen ořezové značky, značky spadávky a spadávka z dokumentu.</figcaption></figure>
+        <figure><img src="img/navody/obalka-export-3.webp" alt="Export Adobe PDF, karta Výstup: Převést do cílového (zachovat čísla), cíl Pracovní CMYK – Coated FOGRA39" width="1400" height="788"><figcaption>Karta <b>Výstup</b>: převod do cílového profilu Coated FOGRA39, stejný profil výstupního záměru PDF/X.</figcaption></figure>
+        <figure><img src="img/navody/fogra39-2.webp" alt="Úpravy – Nastavení barev: pracovní prostor CMYK Coated FOGRA39 (ISO 12647-2:2004)" width="1400" height="788"><figcaption><b>Nastavení barev</b> dokumentu: pracovní prostor CMYK = Coated FOGRA39 (ISO 12647-2:2004).</figcaption></figure>
+        <figure><img src="img/navody/obalka-export-1.webp" alt="Export Adobe PDF, karta Všeobecné: přednastavení PDF/X-1a:2001, rozsah stránek" width="1400" height="788"><figcaption>Karta <b>Všeobecné</b>: přednastavení PDF/X-1a:2001, export po stránkách.</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="k-obalky">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">6 · Obálky a kniha</span><h2>Hřbet, drážky, spadávka 15 mm a čárový kód</h2></div>
+      <p>Obálka je samostatný jednostránkový dokument. Její rozměr se počítá – nehádá.</p>
+    </div>
+    <div class="cols-2">
+      <div>
+        <ul class="checklist" data-checklist="obalky">
+          <li><label><input type="checkbox"><span><b>Šířka hřbetu vypočtená</b>: počet stran × koeficient papíru (80 g = 0,053; 90 g = 0,06; 100 g = 0,065; 120 g = 0,075). 150 stran na 80g papíru = 7,95 mm.</span></label></li>
+          <li><label><input type="checkbox"><span><b>V2 (měkká vazba)</b>: zadní strana + hřbet + přední strana, spadávka 3 mm, text nejméně 10 mm od kraje, ořezové značky nezasahují do čistého formátu.</span></label></li>
+          <li><label><input type="checkbox"><span><b>V8 (pevná vazba)</b>: spadávka <b>15 mm</b> (zahnutí přes desky), <b>hřbetní drážky 8 mm</b> po obou stranách hřbetu + síla kartonu 2 mm; ručně doplněné <b>čtyři linky nahoře a čtyři dole</b> k vodítkům označující drážky a okraje hřbetu.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Přebal</b>: jako V8 bez drážek, rozšířený o vnější záložky (A5 6–8 cm, B5 8–10 cm, A4 10–12 cm).</span></label></li>
+          <li><label><input type="checkbox"><span><b>Vektorový čárový kód</b> ISBN (kniha) nebo ISSN (periodikum) na zadní obálce – vygenerovaný jako SVG, v Illustratoru převedený do EPS/CMYK. Velikost EAN-13 37,3 × 25,9 mm (80–200 %).</span></label></li>
+          <li><label><input type="checkbox"><span><b>Tiskový blok knihy</b>: signet, patitul, frontispis, hlavní titul, impresum (autorská tiráž s copyrightem a ISBN), text, obsah, tiráž na posledním listu se zákonnými údaji.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Pozadí obálky dotažené na hranici spadávky</b>, logo nakladatelství a text na hřbetu správně otočené (u českých knih zpravidla zdola nahoru).</span></label></li>
+        </ul>
+        <p><button class="btn btn-small btn-ghost" type="button" data-reset>Vynulovat zaškrtnutí</button></p>
+      </div>
+      <div class="lab stack" data-widget="hrbet">
+        <div class="lab-head"><h3>Kalkulačka obálky</h3><span class="hint">Hřbet, V2, V8 a přebal</span></div>
+        <div class="lab-body">
+          <div class="lab-stage pad"><svg viewBox="0 0 520 300" aria-label="Rozvržení obálky knihy s rozměry"></svg></div>
+          <div class="lab-ctrl">
+            <label><span>Formát knihy</span><select data-format><option value="A5">A5 – 148 × 210 mm</option><option value="B5" selected>B5 – 176 × 250 mm</option><option value="A4">A4 – 210 × 297 mm</option><option value="B6">B6 – 125 × 176 mm</option><option value="B4">B4 – 250 × 353 mm</option></select></label>
+            <label><span>Počet stran <output>100</output></span><input type="range" min="100" max="400" step="4" value="100" data-strany></label>
+            <label><span>Papír bloku</span><select data-papir><option value="0.053">80 g (0,053)</option><option value="0.083">80 g old style (0,083)</option><option value="0.06">90 g (0,06)</option><option value="0.065">100 g (0,065)</option><option value="0.075">120 g (0,075)</option></select></label>
+            <div class="seg" data-typ><button type="button" data-v="V2" aria-pressed="true">V2</button><button type="button" data-v="V8">V8</button><button type="button" data-v="P">Přebal</button></div>
+            <div class="readout" data-out></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="k-portfolio">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">7 · Portfolio a popis práce</span><h2>Každá práce musí být správně popsaná</h2></div>
+      <p>U maturity popisuješ vlastní práci slovy – stejné údaje, které patří k práci v portfoliu, musíš umět říct komisi.</p>
+    </div>
+    <div class="cols-2">
+      <div>
+        <ul class="checklist" data-checklist="portfolio">
+          <li><label><input type="checkbox"><span><b>Typ práce</b> – co to je (obálka časopisu, logo, mock-up, digitální malba, DL leták…).</span></label></li>
+          <li><label><input type="checkbox"><span><b>Software</b>, ve kterém práce vznikla (Illustrator, Photoshop, InDesign, Acrobat…), případně kombinace.</span></label></li>
+          <li><label><input type="checkbox"><span><b>Rozměry</b> výsledku (210 × 297 mm; 1920 × 1080 px; 250 × 250 px).</span></label></li>
+          <li><label><input type="checkbox"><span><b>Grafický formát výsledného souboru</b> (PDF/X-1a, JPEG, GIF, MP4 h.264, ePub…).</span></label></li>
+          <li><label><input type="checkbox"><span><b>Barevný model a rozlišení</b> (CMYK FOGRA39, 300 dpi; RGB, 150 dpi; sRGB 72 ppi pro web).</span></label></li>
+          <li><label><input type="checkbox"><span><b>U ručních prací</b>: formát papíru (A3, A4) a technika (měkká tužka, vodové barvy, akvarel, tuš…).</span></label></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Vzor popisu práce</h3>
+        <p class="sazba" style="padding:14px 16px;border:1px solid var(--line);border-radius:6px"><b>Obálka autorského periodika „Hattrick“</b><br>Adobe Photoshop (úprava fotografie, maska) + Adobe InDesign (sazba). Formát A4 210 × 297 mm + 3 mm spadávka. Tiskové PDF/X-1a:2001, CMYK, výstupní profil Coated FOGRA39, 300 dpi, efektivní ppi vložených obrázků 320–410. Písmo Barlow Condensed (titulky) a Source Serif (texty). Fotografie vlastní.</p>
+        <p class="tip"><b>U maturity</b>Přesně takto „přečti“ komisi svůj soubor: typ, program, rozměr, formát, barvy, rozlišení. Je to minuta, která zarámuje celou obhajobu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="k-ukazky">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Interaktivní ukázky</span><h2>Vyzkoušej si, co se děje v sazbě</h2></div>
+      <p>Tři ukázky k nejčastějším chybám. Další najdeš v jednotlivých lekcích.</p>
+    </div>
+    <div class="lab" data-widget="sirotci" style="margin-bottom:22px">
+      <div class="lab-head"><h3>Sirotci a vdovy</h3><span class="hint">Co udělá volba „Nerozdělovat řádky“</span></div>
+      <div class="lab-body">
+        <div class="lab-stage pad"><div data-stage></div></div>
+        <div class="lab-ctrl">
+          <label class="check"><input type="checkbox" data-keep> Nerozdělovat řádky (Keep Lines Together)</label>
+          <label><span>Výška sloupce <output>9</output> řádků</span><input type="range" min="6" max="12" value="9" data-vyska></label>
+          <div class="readout"><b>Sirotek</b> = první řádek odstavce osaměle na konci sloupce.<br><b>Vdova</b> = poslední řádek odstavce osaměle na začátku sloupce.<br>Se zapnutou volbou InDesign drží alespoň 2 řádky na začátku i na konci odstavce pohromadě.</div>
+        </div>
+      </div>
+    </div>
+    <div class="lab" data-widget="deleni" style="margin-bottom:22px">
+      <div class="lab-head"><h3>Dělení slov</h3><span class="hint">Před posledními dvěma, nebo třemi písmeny?</span></div>
+      <div class="lab-body">
+        <div class="lab-stage pad"><div data-stage class="sazba"></div></div>
+        <div class="lab-ctrl">
+          <label><span>Před posledními písmeny <output>3</output></span><input type="range" min="2" max="4" value="3" data-min></label>
+          <label class="check"><input type="checkbox" data-velka> Dělit slova s velkým písmenem</label>
+          <label class="check"><input type="checkbox" data-posledni> Dělit poslední slovo odstavce</label>
+          <label><span>Šířka sloupce <output>230</output> px</span><input type="range" min="170" max="320" value="230" data-sirka></label>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+    <div class="lab" data-widget="spadavka">
+      <div class="lab-head"><h3>Spadávka a ořezové značky</h3><span class="hint">Proč musí být pozadí dotažené za okraj</span></div>
+      <div class="lab-body">
+        <div class="lab-stage pad"><svg viewBox="0 0 520 200" aria-label="Stránka se spadávkou, ořezovými značkami a simulací oříznutí"></svg></div>
+        <div class="lab-ctrl">
+          <label><span>Spadávka <output>3</output> mm</span><input type="range" min="0" max="5" step="1" value="3" data-bleed></label>
+          <label class="check"><input type="checkbox" data-dotazeno checked> Pozadí dotažené na hranici spadávky</label>
+          <label class="check"><input type="checkbox" data-znacky checked> Ořezové značky a značky spadávky</label>
+          <label><span>Nepřesnost řezu v tiskárně <output>1.5</output> mm</span><input type="range" min="0" max="3" step=".5" value="1.5" data-rez></label>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="k-skripty">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Skripty a nástroje</span><h2>Co ti opraví většinu chyb automaticky</h2></div>
+      <p>Skripty a dotazy jsou ke stažení na školním OneDrive. Instalace trvá dvě minuty, ušetří hodiny.</p>
+    </div>
+    <div class="links-grid">
+      <a class="link-card" href="https://spsecz-my.sharepoint.com/:u:/g/personal/svoboda_spse_cz/IQCxoibOwMc2T6gd43icRGicAU562Fj13kVw0gqMe6L9fuA?e=" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg><div><b>TypoSkript</b><span>Opraví nejčastější typografické chyby v celém dokumentu najednou: pevné mezery za jednopísmennými předložkami, uvozovky, pomlčky, násobné mezery. Zkopíruj do složky Scripts Panel.</span></div></a>
+      <a class="link-card" href="https://spsecz-my.sharepoint.com/:u:/g/personal/svoboda_spse_cz/ETBV34pPy8dKkKt8tlcsEKsBcrN6MxY_tBZOw8-g8Y3Mwg?e=fXLRyA" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><div><b>Dotaz GREP: odentrované řádky</b><span>Vyhledávací dotaz pro Ctrl+F, který najde konce odstavců uvnitř vět. Vlož do <code>AppData\Roaming\Adobe\InDesign\Version 21.0\cs_CZ\Find-Change Queries\GREP</code>.</span></div></a>
+      <a class="link-card" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/Ek7bCjiFkPVCtp4StAuYbHAB5fqNSUqhXwvA4aolYgDovg?e=Bo3d8P" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 8h8v8H8z"/></svg><div><b>Skript: aktualizace lokálních změn do stylů</b><span>Přenese ruční přepsání typografických parametrů zpět do odstavcových stylů – zmizí „+“ u názvů stylů.</span></div></a>
+      <a class="link-card" href="zdroje.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 11l4 4 4-4M4 19h16"/></svg><div><b>Všechny zdroje</b><span>Typografický manuál, ČSN 01 6910, generátor čárových kódů, instalace TypoSkriptu krok za krokem, doporučená literatura.</span></div></a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/interaktivni.js"></script>
+</body>
+</html>

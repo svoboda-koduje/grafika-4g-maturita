@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Úvod | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Výukový web pro žáky 4. ročníku oboru IT – Počítačová grafika na SPŠE a VOŠ Pardubice: 23 lekcí k 23 maturitním otázkám z předmětu Grafika – teorie, postupy pro 30 minut práce u počítače, interaktivní ukázky, kvízy a kontrolní seznamy.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="Úvod">
+<meta property="og:description" content="Výukový web pro žáky 4. ročníku oboru IT – Počítačová grafika na SPŠE a VOŠ Pardubice: 23 lekcí k 23 maturitním otázkám z předmětu Grafika – teorie, postupy pro 30 minut práce u počítače, interaktivní ukázky, kvízy a kontrolní seznamy.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styl.css">
+</head>
+<body data-page="index.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>4. ROČNÍK</b><span>Grafika · 23 maturitních otázek</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="index.html" class="active"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="panel on" id="uvod" aria-label="Úvod">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-meta">Grafika (GR) · 4. ročník · IT – Počítačová grafika · 3 hodiny týdně · 84 hodin za rok · profilová maturitní zkouška</p>
+        <h1>23 otázek, <em>30 minut</em> a 15 minut před komisí</h1>
+        <p class="lead">Z předmětu Grafika maturuješ u počítače. Vylosuješ si jednu z 23 otázek, jejichž názvy už znáš. Plné znění se dozvíš až u zkoušky – proto každá lekce na tomto webu pokrývá <b>celou teorii i všechny praktické dovednosti</b>, které se u dané otázky mohou objevit. Web navazuje na weby Kresba, Malba a Grafika pro klima a doplňuje cvičení z Teamsů.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="#uvod-mapa">Vybrat otázku
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn btn-ghost" href="#uvod-prubeh">Jak zkouška probíhá</a>
+          <a class="btn btn-ghost" href="kontrola.html">Kontrola před odevzdáním</a>
+        </div>
+      </div>
+      <figure class="hero-art" style="margin:0">
+        <svg class="hero-svg" viewBox="0 0 520 400" role="img" aria-label="Ilustrace: dvoustrana sazby se zrcadlem, spadávkou a ořezovými značkami, vedle barevný kruh CMYK a vektorové logo">
+          <rect width="520" height="400" fill="#FFFDF8"/>
+          <!-- dvoustrana -->
+          <g transform="translate(26 40)">
+            <rect x="0" y="0" width="300" height="212" fill="#fff" stroke="#23272D" stroke-width="1.2"/>
+            <line x1="150" y1="0" x2="150" y2="212" stroke="#23272D" stroke-width=".8" stroke-dasharray="3 3"/>
+            <!-- spadávka -->
+            <rect x="-9" y="-9" width="318" height="230" fill="none" stroke="#D33" stroke-width=".8" stroke-dasharray="4 3"/>
+            <!-- ořezové značky -->
+            <g stroke="#23272D" stroke-width="1">
+              <path d="M-14 0H-24M0 -14V-24M314 0h10M300 -14V-24M-14 212H-24M0 226V236M314 212h10M300 226v10"/>
+            </g>
+            <!-- zrcadlo (fialové okraje) -->
+            <rect x="22" y="20" width="110" height="172" fill="none" stroke="#A24BDB" stroke-width="1"/>
+            <rect x="168" y="20" width="110" height="172" fill="none" stroke="#A24BDB" stroke-width="1"/>
+            <!-- text levá: dva sloupce -->
+            <g fill="#D8D3C8">
+              <rect x="22" y="20" width="110" height="26" fill="#23272D" opacity=".85"/>
+              <g>
+                <rect x="22" y="56" width="52" height="3"/><rect x="22" y="63" width="52" height="3"/><rect x="22" y="70" width="48" height="3"/><rect x="22" y="77" width="52" height="3"/><rect x="22" y="84" width="40" height="3"/>
+                <rect x="22" y="96" width="52" height="3"/><rect x="22" y="103" width="52" height="3"/><rect x="22" y="110" width="50" height="3"/><rect x="22" y="117" width="52" height="3"/><rect x="22" y="124" width="34" height="3"/>
+                <rect x="22" y="136" width="52" height="3"/><rect x="22" y="143" width="52" height="3"/><rect x="22" y="150" width="46" height="3"/><rect x="22" y="157" width="52" height="3"/><rect x="22" y="164" width="52" height="3"/><rect x="22" y="171" width="30" height="3"/>
+              </g>
+              <g>
+                <rect x="80" y="56" width="52" height="3"/><rect x="80" y="63" width="52" height="3"/><rect x="80" y="70" width="52" height="3"/><rect x="80" y="77" width="44" height="3"/>
+                <rect x="80" y="89" width="52" height="40" fill="#38C4F0" opacity=".55"/>
+                <rect x="80" y="136" width="52" height="3"/><rect x="80" y="143" width="52" height="3"/><rect x="80" y="150" width="52" height="3"/><rect x="80" y="157" width="52" height="3"/><rect x="80" y="164" width="52" height="3"/><rect x="80" y="171" width="24" height="3"/>
+              </g>
+            </g>
+            <!-- pravá: obrázek přes spadávku + text -->
+            <path d="M168 -9H309V120H168Z" fill="#B4532A" opacity=".75"/>
+            <path d="M168 60 C200 30 240 100 309 50 V120 H168Z" fill="#C69A5B" opacity=".8"/>
+            <circle cx="282" cy="30" r="12" fill="#FBF0C4"/>
+            <g fill="#D8D3C8">
+              <rect x="168" y="132" width="110" height="3"/><rect x="168" y="139" width="110" height="3"/><rect x="168" y="146" width="104" height="3"/><rect x="168" y="153" width="110" height="3"/><rect x="168" y="160" width="110" height="3"/><rect x="168" y="167" width="80" height="3"/>
+              <rect x="168" y="179" width="110" height="3"/><rect x="168" y="186" width="60" height="3"/>
+            </g>
+            <text x="150" y="206" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-size="8" fill="#585E66">12 · 13</text>
+          </g>
+          <!-- kruh CMYK -->
+          <g transform="translate(420 100)">
+            <circle cx="-18" cy="-12" r="34" fill="#00A3D9" opacity=".8"/>
+            <circle cx="18" cy="-12" r="34" fill="#C8257A" opacity=".8" style="mix-blend-mode:multiply"/>
+            <circle cx="0" cy="18" r="34" fill="#F2D230" opacity=".85" style="mix-blend-mode:multiply"/>
+            <circle cx="0" cy="-2" r="9" fill="#23272D"/>
+            <text x="0" y="68" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="13" fill="#23272D" letter-spacing="2">CMYK</text>
+          </g>
+          <!-- vektorové logo s kotevními body -->
+          <g transform="translate(372 230)">
+            <path d="M10 70 C10 20 60 10 90 30 C120 50 110 90 70 92 C40 94 20 80 30 56 C38 36 70 36 70 56" fill="none" stroke="#23272D" stroke-width="3" stroke-linecap="round"/>
+            <g fill="#fff" stroke="#38C4F0" stroke-width="1.5"><rect x="7" y="67" width="6" height="6"/><rect x="87" y="27" width="6" height="6"/><rect x="67" y="89" width="6" height="6"/><rect x="27" y="53" width="6" height="6"/><rect x="67" y="53" width="6" height="6"/></g>
+            <line x1="90" y1="30" x2="118" y2="12" stroke="#38C4F0" stroke-width="1"/><circle cx="118" cy="12" r="3" fill="#38C4F0"/>
+            <text x="60" y="124" text-anchor="middle" font-family="Barlow Condensed, Arial Narrow, sans-serif" font-weight="800" font-size="20" fill="#23272D" letter-spacing="3">LOGO</text>
+          </g>
+          <!-- popisky -->
+          <g font-family="Caveat, cursive" font-size="15" fill="#B4532A">
+            <text x="14" y="312">spadávka 3 mm</text>
+            <text x="150" y="330">zrcadlo sazby</text>
+            <text x="250" y="312">ořezové značky</text>
+          </g>
+          <path d="M60 300 C50 285 36 280 24 272" fill="none" stroke="#B4532A" stroke-width="1.2"/>
+          <path d="M190 318 C180 300 160 280 150 250" fill="none" stroke="#B4532A" stroke-width="1.2"/>
+          <path d="M300 300 C320 290 345 285 352 266" fill="none" stroke="#B4532A" stroke-width="1.2"/>
+        </svg>
+        <figcaption>Tři věci, které se u maturity z Grafiky objeví téměř vždy: správně založený dokument, barvy pro tisk a čistá vektorová grafika.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="uvod-prubeh">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Jak zkouška probíhá</span><h2>Losuješ otázku, pracuješ 30 minut, obhajuješ 15 minut</h2></div>
+      <p>Zkouška je praktická i teoretická zároveň. Komise nehodnotí jen výsledný soubor, ale hlavně to, jestli umíš svůj postup vysvětlit a odpovědět na doplňující otázky.</p>
+    </div>
+    <div class="cols">
+      <div class="card reveal"><h3>1 · Losování</h3><p>Vylosuješ jednu z <b>23 otázek</b>. Teprve teď se dozvíš plné znění zadání – praktickou i teoretickou část. Nejdřív si ho celé přečti, podtrhni si, co se po tobě chce, a teprve pak otevři program.</p></div>
+      <div class="card reveal"><h3>2 · 30 minut u počítače</h3><p>Samostatná práce v Illustratoru, Photoshopu, InDesignu nebo Acrobatu. V maturitním počítači máš <b>připravené podklady</b> – zdrojové texty, obrázky, grafické soubory. Většinu práce ale musíš udělat sám.</p></div>
+      <div class="card reveal"><h3>3 · 15 minut před komisí</h3><p>Vysvětlíš postup, který jsi ve cvičení použil, odpovíš na teorii a na doplňující otázky. Pomáhá mít otevřený hotový soubor a <b>mluvit nad ním</b>: „tady jsem nastavil…, protože…“.</p></div>
+      <div class="card reveal"><h3>Dějiny umění</h3><p>U otázek 17–20 máš v počítači připravené <b>obrázky výtvarných děl pojmenované jen čísly</b>. Dílo, autora, dobu a souvislosti musíš poznat sám. Na webu si proto zkoušej poznávačky se skrytými popisky.</p></div>
+    </div>
+    <div class="cols-2" style="margin-top:28px">
+      <div class="card tint">
+        <h3>Strategie na 30 minut</h3>
+        <ol class="steps">
+          <li><b>2 minuty – čtení.</b> Přečti celé zadání dvakrát. Vypiš si na papír, co má být ve výsledném souboru (formát, rozměr, spadávka, barevný režim, export).</li>
+          <li><b>3 minuty – založení dokumentu.</b> Správná velikost, orientace, spadávka 3 mm, barevný režim, profil Coated FOGRA39 u tisku. Chyba tady se vleče celou práci.</li>
+          <li><b>18 minut – vlastní práce.</b> Nejdřív hrubá kostra (všechny požadované prvky na místě), teprve potom detaily. Komise chce vidět splněné zadání, ne jeden dokonalý detail.</li>
+          <li><b>5 minut – kontrola a export.</b> Projdi <a href="kontrola.html">kontrolní seznam</a>, vyexportuj soubor ve správném formátu a otevři ho, jestli je v pořádku.</li>
+          <li><b>2 minuty – příprava na obhajobu.</b> Srovnej si v hlavě tři věty: co jsem udělal, jak jsem to udělal, proč zrovna takto.</li>
+        </ol>
+        <div class="timer" data-timer></div>
+        <p class="note" style="margin-top:10px">Časovač slouží k tréninku doma: pusť si ho a zkus celé cvičení z libovolné lekce stihnout včetně exportu.</p>
+      </div>
+      <div class="card">
+        <h3>Co komise hodnotí</h3>
+        <ul>
+          <li><b>Splnění zadání</b> – všechny požadované prvky a parametry (formát, rozlišení, barevný režim, spadávka, správný export).</li>
+          <li><b>Technickou správnost</b> – odstavcové styly místo ručního formátování, CMYK a 300 ppi u tisku, PDF/X s ořezovými značkami, správná vektorizace.</li>
+          <li><b>Typografii a pravopis</b> – pevné mezery, pomlčky, dělení slov, sirotci a vdovy, dynamická kontrola pravopisu.</li>
+          <li><b>Teorii</b> – pojmy, principy a souvislosti z každé lekce, včetně toho, proč se věci dělají tak, jak se dělají.</li>
+          <li><b>Výklad</b> – schopnost srozumitelně a odborně popsat vlastní postup.</li>
+        </ul>
+        <p class="tip"><b>Tip</b>U každé lekce najdeš sekci <em>Na co se komise ptá</em>. Zkus na otázky odpovídat nahlas – nejlépe někomu, kdo grafice nerozumí.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="uvod-mapa">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Mapa lekcí</span><h2>23 lekcí = 23 maturitních otázek</h2></div>
+      <p>Lekce jsou seřazené do šesti skupin podle programů a témat, ne podle čísel otázek – tak se učí nejlépe. Číslo otázky je u každé lekce. Zelená fajfka se objeví, až splníš kvíz lekce bez chyby.</p>
+    </div>
+    <div class="prubeh" data-prubeh style="margin-bottom:22px"><span>0 z 23 kvízů splněno</span><div class="bar"><i></i></div></div>
+    <div class="mapa-lekci"><div class="blok sk-zaklady"><h3>Základy grafiky</h3><ul><li><a href="lekce/01-formaty-souboru.html" data-lekce="01"><span class="n">01</span><span>Formáty grafických souborů</span></a></li><li><a href="lekce/05-barevne-modely.html" data-lekce="05"><span class="n">05</span><span>Barevné modely a jejich praktická aplikace</span></a></li><li><a href="lekce/22-typy-pdf.html" data-lekce="22"><span class="n">22</span><span>PDF – typy PDF, vytvoření a úpravy</span></a></li></ul></div><div class="blok sk-illustrator"><h3>Adobe Illustrator</h3><ul><li><a href="lekce/02-illustrator-zaklady.html" data-lekce="02"><span class="n">02</span><span>Adobe Illustrator – základní ovládání</span></a></li><li><a href="lekce/09-tvorba-loga.html" data-lekce="09"><span class="n">09</span><span>Illustrator – tvorba loga, základní zásady</span></a></li><li><a href="lekce/13-vektory-vzorky-symboly.html" data-lekce="13"><span class="n">13</span><span>Illustrator – vektorové objekty, vzorek a symbol</span></a></li></ul></div><div class="blok sk-photoshop"><h3>Adobe Photoshop</h3><ul><li><a href="lekce/03-photoshop-zaklady.html" data-lekce="03"><span class="n">03</span><span>Adobe Photoshop – základní ovládání</span></a></li><li><a href="lekce/10-digitalni-malba.html" data-lekce="10"><span class="n">10</span><span>Photoshop – digitální malba, štětce a stopy</span></a></li><li><a href="lekce/11-mockup.html" data-lekce="11"><span class="n">11</span><span>Photoshop – transformace, vytvoření mock-upu</span></a></li><li><a href="lekce/23-animace-banner-video.html" data-lekce="23"><span class="n">23</span><span>Reklamní animovaná webová grafika</span></a></li></ul></div><div class="blok sk-indesign"><h3>InDesign a typografie</h3><ul><li><a href="lekce/06-pismo-typografie.html" data-lekce="06"><span class="n">06</span><span>Písmo a typografie</span></a></li><li><a href="lekce/04-odstavcove-styly.html" data-lekce="04"><span class="n">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah</span></a></li><li><a href="lekce/21-import-wordu.html" data-lekce="21"><span class="n">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly</span></a></li><li><a href="lekce/14-brozura-archova-montaz.html" data-lekce="14"><span class="n">14</span><span>InDesign – sazba brožury + archová montáž</span></a></li><li><a href="lekce/15-dl-letak.html" data-lekce="15"><span class="n">15</span><span>Grafická úprava DL letáku</span></a></li><li><a href="lekce/07-manual-loga.html" data-lekce="07"><span class="n">07</span><span>InDesign – manuál loga</span></a></li><li><a href="lekce/12-e-knihy.html" data-lekce="12"><span class="n">12</span><span>InDesign – formáty e-knih, ePub, mobi</span></a></li></ul></div><div class="blok sk-design"><h3>Design a výtvarná teorie</h3><ul><li><a href="lekce/08-obalovy-design.html" data-lekce="08"><span class="n">08</span><span>Obalový design</span></a></li><li><a href="lekce/16-perspektiva-kompozice.html" data-lekce="16"><span class="n">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor</span></a></li></ul></div><div class="blok sk-dejiny"><h3>Dějiny umění</h3><ul><li><a href="lekce/17-dejiny-pravek.html" data-lekce="17"><span class="n">17</span><span>Dějiny umění – pravěk</span></a></li><li><a href="lekce/18-dejiny-starovek.html" data-lekce="18"><span class="n">18</span><span>Dějiny umění – starověk</span></a></li><li><a href="lekce/19-dejiny-stredovek.html" data-lekce="19"><span class="n">19</span><span>Dějiny umění – středověk</span></a></li><li><a href="lekce/20-dejiny-novovek.html" data-lekce="20"><span class="n">20</span><span>Dějiny umění – novověk</span></a></li></ul></div></div>
+    <h3 style="font:700 1.4rem var(--cond);margin:32px 0 10px">Podle čísla otázky</h3>
+    <div class="cislovane"><a href="lekce/01-formaty-souboru.html" data-lekce="01" title="Formáty grafických souborů">1</a><a href="lekce/02-illustrator-zaklady.html" data-lekce="02" title="Adobe Illustrator – základní ovládání">2</a><a href="lekce/03-photoshop-zaklady.html" data-lekce="03" title="Adobe Photoshop – základní ovládání">3</a><a href="lekce/04-odstavcove-styly.html" data-lekce="04" title="InDesign – odstavcové styly, vzorové stránky, obsah">4</a><a href="lekce/05-barevne-modely.html" data-lekce="05" title="Barevné modely a jejich praktická aplikace">5</a><a href="lekce/06-pismo-typografie.html" data-lekce="06" title="Písmo a typografie">6</a><a href="lekce/07-manual-loga.html" data-lekce="07" title="InDesign – manuál loga">7</a><a href="lekce/08-obalovy-design.html" data-lekce="08" title="Obalový design">8</a><a href="lekce/09-tvorba-loga.html" data-lekce="09" title="Illustrator – tvorba loga, základní zásady">9</a><a href="lekce/10-digitalni-malba.html" data-lekce="10" title="Photoshop – digitální malba, štětce a stopy">10</a><a href="lekce/11-mockup.html" data-lekce="11" title="Photoshop – transformace, vytvoření mock-upu">11</a><a href="lekce/12-e-knihy.html" data-lekce="12" title="InDesign – formáty e-knih, ePub, mobi">12</a><a href="lekce/13-vektory-vzorky-symboly.html" data-lekce="13" title="Illustrator – vektorové objekty, vzorek a symbol">13</a><a href="lekce/14-brozura-archova-montaz.html" data-lekce="14" title="InDesign – sazba brožury + archová montáž">14</a><a href="lekce/15-dl-letak.html" data-lekce="15" title="Grafická úprava DL letáku">15</a><a href="lekce/16-perspektiva-kompozice.html" data-lekce="16" title="Perspektiva, techniky, kompozice, zlatý řez, modulor">16</a><a href="lekce/17-dejiny-pravek.html" data-lekce="17" title="Dějiny umění – pravěk">17</a><a href="lekce/18-dejiny-starovek.html" data-lekce="18" title="Dějiny umění – starověk">18</a><a href="lekce/19-dejiny-stredovek.html" data-lekce="19" title="Dějiny umění – středověk">19</a><a href="lekce/20-dejiny-novovek.html" data-lekce="20" title="Dějiny umění – novověk">20</a><a href="lekce/21-import-wordu.html" data-lekce="21" title="InDesign – import textu z Wordu, znakové a odstavcové styly">21</a><a href="lekce/22-typy-pdf.html" data-lekce="22" title="PDF – typy PDF, vytvoření a úpravy">22</a><a href="lekce/23-animace-banner-video.html" data-lekce="23" title="Reklamní animovaná webová grafika">23</a></div>
+  </div>
+</section>
+
+<section class="section" id="uvod-struktura">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Jak jsou lekce stavěné</span><h2>Stejná kostra u každé otázky</h2></div>
+      <p>Každá lekce má stejné části, aby ses v ní rychle orientoval i ve stresu týden před maturitou.</p>
+    </div>
+    <div class="cols">
+      <div class="card reveal"><h3>Co se losuje</h3><p>Název otázky, jaké dovednosti praktická část zpravidla prověřuje a jaká teorie k ní patří. Bez plného znění – to se dozvíš až u zkoušky.</p></div>
+      <div class="card reveal"><h3>Teorie</h3><p>Pojmy a souvislosti, které musíš umět vysvětlit. Odkazy na podrobnější weby Kresba, Malba, Grafika pro klima a Dějiny umění, kde už látku máš.</p></div>
+      <div class="card reveal"><h3>Postup pro 30 minut</h3><p>Krok za krokem: založení dokumentu, pracovní postup, export. Včetně konkrétních nabídek a voleb v programu a časového odhadu.</p></div>
+      <div class="card reveal"><h3>Interaktivní ukázka</h3><p>Ukázky, kde si věc vyzkoušíš: dělení slov, spadávka, kerning, výpočet hřbetu, archová montáž, barevné modely, zlatý řez…</p></div>
+      <div class="card reveal"><h3>Časté chyby</h3><p>Chyby, které se opakují ve zpětné vazbě ke cvičením v Teamsech. Většina z nich stojí body i u maturity.</p></div>
+      <div class="card reveal"><h3>Komise a kvíz</h3><p>Typické doplňující otázky komise s odpověďmi a krátký kvíz. Stav kvízů se ukládá jen v tvém prohlížeči.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="uvod-plan">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Tematický plán 4. ročníku</span><h2>První pololetí tvoříš, druhé opakuješ</h2></div>
+      <p>Dvě velká cvičení prvního pololetí – <b>autorské periodikum</b> a <b>sazba knihy</b> s obálkami V2/V8 – jsou zároveň přípravou na většinu InDesignových otázek.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <h3>Blok 1 · Periodika a publikace (48 hodin)</h3>
+        <ul>
+          <li>Obálka periodika a její modifikace pro další čísla (6 h)</li>
+          <li>Layout periodika, znakové, odstavcové a objektové styly, vzorové stránky (3 h)</li>
+          <li>Sazba rubrik, typografická a gramatická pravidla, strukturování článků (6 h)</li>
+          <li>Úprava bitmapové a vektorové grafiky periodika (6 h), převod na e-zin (3 h)</li>
+          <li>Obálka knihy – přední strana, hřbet, zadní strana, záložky (3 h)</li>
+          <li>Layout knihy, styly, vzorové stránky (6 h); sazba tiskového bloku včetně předsádky, patitulu, titulu, frontispisu, impresa, tiráže a obsahu (12 h)</li>
+          <li>Export do PDF/X, převod do ePub, mobi a e-bookového PDF (3 h)</li>
+        </ul>
+        <p><a class="btn btn-small btn-ghost" href="cviceni.html">Zadání cvičení a harmonogram</a></p>
+      </div>
+      <div class="card">
+        <h3>Blok 2 · Příprava k maturitě (36 hodin)</h3>
+        <ul>
+          <li>Opakování postupů ve vektorovém a bitmapovém editoru (12 h) → lekce <a href="lekce/02-illustrator-zaklady.html">02</a>, <a href="lekce/09-tvorba-loga.html">09</a>, <a href="lekce/13-vektory-vzorky-symboly.html">13</a>, <a href="lekce/03-photoshop-zaklady.html">03</a>, <a href="lekce/10-digitalni-malba.html">10</a>, <a href="lekce/11-mockup.html">11</a>, <a href="lekce/23-animace-banner-video.html">23</a></li>
+          <li>Opakování typografických pravidel (6 h) → lekce <a href="lekce/06-pismo-typografie.html">06</a>, <a href="lekce/04-odstavcove-styly.html">04</a>, <a href="lekce/21-import-wordu.html">21</a></li>
+          <li>Opakování grafických zásad (6 h) → lekce <a href="lekce/09-tvorba-loga.html">09</a>, <a href="lekce/07-manual-loga.html">07</a>, <a href="lekce/08-obalovy-design.html">08</a>, <a href="lekce/16-perspektiva-kompozice.html">16</a></li>
+          <li>Zásady sazby publikace, periodika, merkantilií a akcidenčních tiskovin (6 h) → lekce <a href="lekce/14-brozura-archova-montaz.html">14</a>, <a href="lekce/15-dl-letak.html">15</a>, <a href="lekce/12-e-knihy.html">12</a></li>
+          <li>Veškerá grafická teorie – formáty, barevné modely, rozlišení (6 h) → lekce <a href="lekce/01-formaty-souboru.html">01</a>, <a href="lekce/05-barevne-modely.html">05</a>, <a href="lekce/22-typy-pdf.html">22</a></li>
+        </ul>
+        <p class="tip"><b>Angličtina</b>Z angličtiny maturuješ také. Odborné termíny k počítačové grafice (bleed, crop marks, kerning, leading, raster, vector…) si procvič ve <a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">výukové aplikaci odborných anglických termínů</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="uvod-odkazy">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Podklady</span><h2>Kde co najdeš</h2></div>
+      <p>Výukové soubory, videotutoriály a skripty zůstávají na školním OneDrive (přihlášení školním účtem Microsoft). Teoretické weby z nižších ročníků jsou veřejné.</p>
+    </div>
+    <div class="links-grid">
+      <a class="link-card" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg><div><b>Výukové soubory 4.G</b><span>Typografický manuál, návody, vzorové sazby, skripty – sdílená složka na OneDrive.</span></div></a>
+      <a class="link-card" href="videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>Videotutoriály</b><span>Nahrané postupy k periodiku, knize, obálkám, exportům a e-knihám, roztříděné podle lekcí.</span></div></a>
+      <a class="link-card" href="zdroje.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><div><b>Skripty a zdroje</b><span>TypoSkript, dotazy GREP pro Hledat a nahradit, skript pro aktualizaci stylů, generátory čárových kódů, literatura.</span></div></a>
+      <a class="link-card" href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M6 12v6M12 12v6M18 12v6M4 18h16M12 4l8 5H4z"/></svg><div><b>Časová osa dějin umění</b><span>Interaktivní osa epoch a slohů, mapa světa, rychlý přehled – základ pro otázky 17–20.</span></div></a>
+      <a class="link-card" href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 10-10-3-3L5 16z"/><path d="M13 7l3 3"/></svg><div><b>Základy kresby (1. ročník)</b><span>Perspektiva, proporce, kompozice, kánon – teorie k otázce 16.</span></div></a>
+      <a class="link-card" href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="9" r="1.5" fill="currentColor"/><circle cx="15" cy="9" r="1.5" fill="currentColor"/><circle cx="8" cy="14" r="1.5" fill="currentColor"/></svg><div><b>Ruční a digitální malba (2. ročník)</b><span>Malířské techniky, barvy, digitální malba na tabletu – k otázkám 10 a 16.</span></div></a>
+      <a class="link-card" href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg><div><b>Grafika pro klima (3. ročník)</b><span>Barevná paleta, moodboard, animace pro sociální sítě, obal a POS/POP – k otázkám 5, 8 a 23.</span></div></a>
+      <a class="link-card" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg><div><b>Odborné anglické termíny</b><span>Slovíčka počítačové grafiky k maturitě z angličtiny.</span></div></a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/interaktivni.js"></script>
+</body>
+</html>

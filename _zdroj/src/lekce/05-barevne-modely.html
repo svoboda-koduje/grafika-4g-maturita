@@ -1,0 +1,264 @@
+<!--META {"title": "05 · Barevné modely a jejich praktická aplikace", "description": "Maturitní otázka 5: barevné modely RGB, CMYK, Lab a HSB, aditivní a subtraktivní míchání, jas, sytost a odstín, gamut a barevné prostory (sRGB, Adobe RGB, FOGRA39), praktická práce ve Photoshopu – vrstvy, inverze, odbarvení, kanály.", "lead": "Praktická část se dělá ve Photoshopu: jeden obrázek ve <b>třech kopiích vedle sebe</b>, každá ve vlastní vrstvě – jedna <b>invertovaná</b>, druhá s <b>nejnižší sytostí</b>, třetí původní, ale se <b>separovaným jedním barevným kanálem</b>. V teorii: modely <b>Lab, RGB a CMYK</b> předvedené ve Photoshopu (včetně panelu Kanály), pojmy <b>jas, sytost, odstín</b> v praxi a pojem <b>gamut</b>.", "stitky": [["Photoshop", "vrstvy, úpravy, kanály"], ["Podklady", "připravený obrázek"], ["Teorie", "RGB, CMYK, Lab, HSB"], ["Pojem", "gamut a barevné prostory"]], "subnav": [["l5-otazka", "Co se losuje"], ["l5-michani", "Aditivní a subtraktivní míchání"], ["l5-modely", "RGB, CMYK, Lab, HSB"], ["l5-lab", "Laboratoř barev"], ["l5-gamut", "Gamut a barevné prostory"], ["l5-photoshop", "Ve Photoshopu"], ["l5-postup", "Postup pro 30 minut"], ["l5-chyby", "Časté chyby"], ["l5-komise", "Otázky komise"], ["l5-kviz", "Kvíz"]]} -->
+<section class="section" id="l5-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Dokument ve Photoshopu, na jednom plátně <b>tři kopie připraveného obrázku vedle sebe</b>, každá ve <b>vlastní vrstvě</b>.</li>
+          <li>Jedna kopie <b>barevně invertovaná</b>, druhá se <b>sytostí sníženou na minimum</b>, třetí v původní podobě s <b>vyseparovaným jedním barevným kanálem</b>.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>Photoshop</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Barevné modely <b>Lab, RGB a CMYK</b> + jejich praktické použití ve Photoshopu (panel <b>Kanály</b>).</li>
+          <li>Pojmy <b>jas, sytost, odstín</b> a jejich praktické použití na obrazových dokumentech.</li>
+          <li>Co znamená pojem <b>gamut</b>.</li>
+        </ul>
+        <p class="note">Teorii barev pro 3. ročník máš na webu <a href="{{enviro_paleta}}" target="_blank" rel="noopener">Grafika pro klima – Barevná paleta</a>; ve 2. ročníku v <a href="{{malba}}" target="_blank" rel="noopener">Malbě</a> (barevný kruh, teplé a studené).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l5-michani">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Princip</span><h2>Aditivní a subtraktivní míchání</h2></div>
+      <p>Světlo se sčítá, barviva se odčítají. To je celý rozdíl mezi monitorem a tiskárnou.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <div class="cols-2" style="gap:14px">
+          <figure class="svg-fig" style="margin:0">
+            <svg viewBox="0 0 200 190" role="img" aria-label="Aditivní míchání: červený, zelený a modrý kruh se překrývají do bílé">
+              <rect width="200" height="190" fill="#111"/>
+              <g style="mix-blend-mode:screen"><circle cx="80" cy="70" r="50" fill="#f00"/><circle cx="120" cy="70" r="50" fill="#0f0"/><circle cx="100" cy="110" r="50" fill="#00f"/></g>
+              <text x="100" y="180" text-anchor="middle" fill="#fff" font-family="Barlow Condensed,sans-serif" font-weight="700" font-size="13">RGB · ADITIVNÍ · světlo</text>
+            </svg>
+          </figure>
+          <figure class="svg-fig" style="margin:0">
+            <svg viewBox="0 0 200 190" role="img" aria-label="Subtraktivní míchání: azurový, purpurový a žlutý kruh se překrývají do černé">
+              <rect width="200" height="190" fill="#fff"/>
+              <g style="mix-blend-mode:multiply"><circle cx="80" cy="70" r="50" fill="#00AEEF"/><circle cx="120" cy="70" r="50" fill="#EC008C"/><circle cx="100" cy="110" r="50" fill="#FFF200"/></g>
+              <text x="100" y="180" text-anchor="middle" fill="#111" font-family="Barlow Condensed,sans-serif" font-weight="700" font-size="13">CMY(K) · SUBTRAKTIVNÍ · barvivo</text>
+            </svg>
+          </figure>
+        </div>
+        <p style="margin-top:12px"><b>Aditivní</b>: základní barvy světla <b>červená, zelená, modrá</b> (RGB) se sčítají; překryv dvou dává doplňkovou barvu ke třetí (R+G = žlutá, G+B = azurová, R+B = purpurová), všechny tři = <b>bílá</b>. Monitor, projektor, fotoaparát, web.</p>
+        <p><b>Subtraktivní</b>: barviva <b>azurová, purpurová, žlutá</b> (CMY) odečítají ze světla část spektra; překryv dvou dává základní barvu světla (C+M = modrá, M+Y = červená, C+Y = zelená), všechny tři = teoreticky <b>černá</b> – v praxi špinavě hnědá, proto se přidává <b>K</b> (černá, „key“). Tisk, malba.</p>
+      </div>
+      <div class="card">
+        <h3>Jak to vysvětlit komisi za minutu</h3>
+        <ol class="steps">
+          <li>Monitor vyzařuje světlo – začíná od černé a <b>přidává</b> R, G, B. Víc světla = světlejší. Vše = bílá.</li>
+          <li>Papír světlo odráží – začíná od bílé a barvivo <b>ubírá</b>. Víc barvy = tmavší. Vše = černá (+ K pro hlubokou černou a text).</li>
+          <li>Proto jsou RGB a CMY navzájem doplňkové (azurová = bílá − červená) a proto sytá monitorová zelená nejde vytisknout – tiskový <b>gamut</b> je menší.</li>
+          <li>Oba modely jsou <b>závislé na zařízení</b> (jiný monitor, jiná tiskárna = jiná barva). <b>Lab</b> je nezávislý – popisuje barvu tak, jak ji vidí člověk, a slouží jako referenční prostor pro převody.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l5-modely">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Modely</span><h2>RGB, CMYK, Lab a HSB</h2></div>
+      <p>Model = způsob, jak barvu popsat čísly. Prostor = konkrétní rozsah barev, který zařízení umí (sRGB, Adobe RGB, FOGRA39).</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>RGB</h3><p>Tři kanály 0–255 (8 bit) → 16,7 mil. barev. Zapisuje se dekadicky (255, 0, 0) nebo hexadecimálně (#FF0000). Krychle: v počátku černá, v protějším rohu bílá, doplňkové barvy v protilehlých vrcholech. <b>Použití</b>: obrazovky, web, fotoaparáty, digitální malba. Ve Photoshopu výchozí režim.</p></div>
+      <div class="card"><h3>CMYK</h3><p>Čtyři kanály 0–100 % krytí barvy. Subtraktivní, pro tisk. Součet krytí (TAC) u FOGRA39 max. 300–330 %. Černý text 100 % K, sytá černá např. 60/40/40/100. <b>Převod z RGB je ztrátový</b> – barvy mimo gamut se posunou. Dělá se až na konci práce, s profilem (Coated FOGRA39 pro křídový papír, Uncoated pro ofsetový).</p></div>
+      <div class="card"><h3>Lab (CIELAB)</h3><p><b>L</b> = jas (0 černá – 100 bílá), <b>a</b> = osa zelená (−) ↔ červená (+), <b>b</b> = osa modrá (−) ↔ žlutá (+). Nezávislý na zařízení, obsahuje všechny viditelné barvy – největší gamut. Referenční prostor pro správu barev (ICC profily převádějí RGB → Lab → CMYK). <b>Praxe</b>: doostření jen kanálu L (bez barevných artefaktů), změna barvy bez změny jasu, měření barev (ΔE).</p></div>
+      <div class="card"><h3>HSB (HSV) a HSL</h3><p><b>H</b> odstín (hue, 0–360° na barevném kruhu), <b>S</b> sytost (0 % šedá – 100 % čistá barva), <b>B</b> jas (brightness/value, 0 % černá – 100 %). Odpovídá lidskému vnímání, používá se v dialogu výběru barvy a v úpravě <em>Odstín a sytost</em>. Kužel: nasycené barvy na obvodu podstavy, k vrcholu klesá jas, ke středu sytost.</p></div>
+      <div class="card"><h3>Stupně šedi, Bitová mapa, Indexovaná, Duplex</h3><p><b>Stupně šedi</b>: jeden kanál 0–255. <b>Bitová mapa</b>: 1 bit, jen černá a bílá (perokresba, rastr). <b>Indexovaná</b>: paleta max. 256 barev (GIF, PNG-8). <b>Duplex/Duotone</b>: stupně šedi tištěné dvěma (až čtyřmi) přímými barvami – ekonomický tisk s tónem (viz návod <em>Duplex ve Photoshopu</em>).</p></div>
+      <div class="card"><h3>Jas, sytost, odstín v praxi</h3><p><b>Odstín</b> (hue): „jaká barva“ – červená, modrá; posun odstínu změní barvu auta. <b>Sytost</b> (saturation): „kolik barvy“ – 0 % = šedá; snížení sytosti na minimum = odbarvení (ne převod do stupňů šedi – režim zůstává RGB). <b>Jas</b> (brightness/lightness): „kolik světla“. Photoshop: <span class="menu-path">Obraz <i>›</i> Přizpůsobení <i>›</i> Odstín a sytost</span> (<kbd>Ctrl</kbd>+<kbd>U</kbd>), <em>Jas a kontrast</em>, <em>Živost</em>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l5-lab">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Vyzkoušej</span><h2>Laboratoř barev</h2></div>
+      <p>Jedna barva, čtyři popisy. Posuň RGB a sleduj, jak se mění CMYK, HSB a Lab – a jestli barva vůbec jde vytisknout.</p>
+    </div>
+    <div class="lab" data-widget="barvy">
+      <div class="lab-head"><h3>RGB → CMYK · HSB · Lab</h3><span class="hint">Převody jsou orientační (bez ICC profilu)</span></div>
+      <div class="lab-body wide">
+        <div class="lab-stage pad"><div data-stage style="width:100%"></div></div>
+        <div class="lab-ctrl">
+          <label><span>R <output>30</output></span><input type="range" min="0" max="255" value="30" data-r style="accent-color:#d00"></label>
+          <label><span>G <output>200</output></span><input type="range" min="0" max="255" value="200" data-g style="accent-color:#0a0"></label>
+          <label><span>B <output>80</output></span><input type="range" min="0" max="255" value="80" data-b style="accent-color:#00d"></label>
+          <div class="row"><button class="btn btn-small btn-ghost" type="button" data-set="255,0,0">Červená</button><button class="btn btn-small btn-ghost" type="button" data-set="0,255,0">Zelená RGB</button><button class="btn btn-small btn-ghost" type="button" data-set="0,174,239">Azurová</button><button class="btn btn-small btn-ghost" type="button" data-set="128,128,128">Šedá</button></div>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l5-gamut">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Pojem</span><h2>Gamut a barevné prostory</h2></div>
+      <p><b>Gamut</b> je rozsah barev, které dané zařízení nebo barevný prostor dokáže zobrazit či reprodukovat. Zobrazuje se v chromatickém diagramu CIE 1931 („podkova“ = všechny viditelné barvy).</p>
+    </div>
+    <div class="cols-2">
+      <figure class="svg-fig" style="margin:0">
+        <svg viewBox="0 0 420 380" role="img" aria-label="Chromatický diagram CIE 1931 s vyznačenými gamuty: viditelné barvy, Adobe RGB, sRGB a CMYK FOGRA39">
+          <defs>
+            <linearGradient id="gx" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#4a3bd8"/><stop offset=".35" stop-color="#19c4a8"/><stop offset=".6" stop-color="#8ad13b"/><stop offset=".8" stop-color="#f2c32a"/><stop offset="1" stop-color="#d8362a"/></linearGradient>
+          </defs>
+          <rect width="420" height="380" fill="#fff"/>
+          <g transform="translate(40 20) scale(380)">
+            <path d="M.1741 .0050 L.1440 .0297 L.1241 .0578 L.0913 .1327 L.0454 .2950 L.0082 .5384 L.0139 .7502 L.0743 .8338 L.1547 .8059 L.2296 .7543 L.3016 .6923 L.3731 .6245 L.4441 .5547 L.5125 .4866 L.5752 .4242 L.6270 .3725 L.6658 .3340 L.6915 .3083 L.7079 .2920 L.7140 .2859 L.7347 .2653 Z" fill="url(#gx)" opacity=".9" transform="translate(0 .9) scale(1 -1)"/>
+            <g fill="none" stroke-width=".006" transform="translate(0 .9) scale(1 -1)">
+              <polygon points=".64,.33 .21,.71 .15,.06" stroke="#23272D" stroke-dasharray=".02 .012"/>
+              <polygon points=".64,.33 .30,.60 .15,.06" stroke="#23272D"/>
+              <polygon points=".62,.345 .50,.455 .36,.56 .20,.50 .145,.22 .20,.13 .40,.17" stroke="#fff" stroke-width=".008"/>
+            </g>
+            <circle cx=".3127" cy=".571" r=".012" fill="#fff" stroke="#23272D" stroke-width=".004"/>
+          </g>
+          <g font-family="Barlow,sans-serif" font-size="12" fill="#23272D">
+            <text x="60" y="340">x</text><text x="20" y="40">y</text>
+            <text x="250" y="60">viditelné barvy (CIE 1931)</text>
+            <text x="250" y="80" font-weight="700">— — Adobe RGB (1998)</text>
+            <text x="250" y="100" font-weight="700">—— sRGB (monitory, web)</text>
+            <text x="250" y="120" font-weight="700" fill="#585E66">—— CMYK Coated FOGRA39 (bílá)</text>
+            <text x="250" y="140">○ bílý bod D65</text>
+          </g>
+        </svg>
+        <figcaption>Schematický chromatický diagram: tiskový gamut CMYK je menší než sRGB hlavně v sytých zelených, modrých a oranžových; naopak některé azurové a žluté tiskne CMYK lépe, než sRGB zobrazí.</figcaption>
+      </figure>
+      <div class="card">
+        <h3>Barevné prostory</h3>
+        <ul>
+          <li><b>sRGB</b> (1996, HP + Microsoft) – standard webu, Windows, běžných monitorů; nejmenší z RGB prostorů, bílý bod D65 (6504 K). Pro web vždy sRGB.</li>
+          <li><b>Adobe RGB (1998)</b> – větší gamut v zelené a azurové; pro fotografy a tisk, lepší pokrytí CMYK. Na webu bez profilu vypadá vybledle.</li>
+          <li><b>ProPhoto RGB</b> (Kodak) – 91 % viditelných barev, pro 16bitové zpracování RAW; <b>Wide Gamut RGB</b>; <b>Display P3</b> (Apple, kino).</li>
+          <li><b>CMYK Coated FOGRA39</b> (ISO 12647-2) – evropský ofset na křídový papír, náš standard; <b>Uncoated FOGRA29/47</b> – nenatíraný papír (menší gamut); <b>SWOP</b> – USA; <b>Japan Color</b>.</li>
+          <li><b>Lab / CIE XYZ</b> – nezávislé referenční prostory, obsahují vše viditelné.</li>
+        </ul>
+        <h3>Převod mimo gamut (záměr reprodukce)</h3>
+        <ul>
+          <li><b>Perceptuální</b> – celý gamut se plynule „stlačí“, zachová vztahy barev; pro fotografie.</li>
+          <li><b>Relativní kolorimetrický</b> – barvy uvnitř gamutu zůstanou, barvy mimo se nahradí nejbližší; výchozí pro grafiku a většinu tisku.</li>
+          <li><b>Sytost</b> – živé barvy bez ohledu na přesnost; grafy, prezentace.</li>
+          <li><b>Absolutní kolorimetrický</b> – simuluje i bílou papíru; nátisky.</li>
+        </ul>
+        <p class="note">Ve Photoshopu <span class="menu-path">Zobrazení <i>›</i> Varování gamutu</span> (<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd>) vyšedí barvy, které CMYK netiskne; <span class="menu-path">Zobrazení <i>›</i> Kontrolní náhled barev</span> (<kbd>Ctrl</kbd>+<kbd>Y</kbd>) simuluje tisk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l5-photoshop">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Praxe</span><h2>Modely ve Photoshopu: režimy, kanály, úpravy</h2></div>
+      <p>Co komisi předvedeš přímo v programu.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Režim dokumentu</h3><p><span class="menu-path">Obraz <i>›</i> Režim</span>: RGB, CMYK, Lab, Stupně šedi, Bitová mapa, Indexovaná, Duplex, 8/16/32 bitů na kanál. Přepnutí RGB → CMYK je převod s profilem (Nastavení barev: Coated FOGRA39). Pracuj v RGB (víc filtrů a funkcí, větší gamut), do CMYK převeď na konci – nebo pro tisk rovnou v CMYK, pokud zadání chce (A3 malba, lekce 10).</p></div>
+      <div class="card"><h3>Panel Kanály</h3><p><span class="menu-path">Okna <i>›</i> Kanály</span>: v RGB vidíš složený + R, G, B; v CMYK složený + C, M, Y, K; v Lab složený + L, a, b. Každý kanál je obrázek ve stupních šedi = „kolik této složky“. Klik na kanál ho zobrazí samostatně; <kbd>Ctrl</kbd>+klik načte jeho jas jako výběr. <b>Separace kanálu</b>: vyber kanál, <kbd>Ctrl</kbd>+<kbd>A</kbd>, <kbd>Ctrl</kbd>+<kbd>C</kbd>, nová vrstva, <kbd>Ctrl</kbd>+<kbd>V</kbd> – nebo vypni ostatní kanály (očička) pro ukázku. Alfa kanály = uložené výběry/masky.</p></div>
+      <div class="card"><h3>Inverze</h3><p><span class="menu-path">Obraz <i>›</i> Přizpůsobení <i>›</i> Invertovat</span> (<kbd>Ctrl</kbd>+<kbd>I</kbd>): každý kanál 255 − hodnota → negativ (doplňkové barvy: červená ↔ azurová). Lepší nedestruktivně: vrstva úprav <em>Invertovat</em> s ořezovou maskou na konkrétní vrstvu (<kbd>Alt</kbd>+klik mezi vrstvami).</p></div>
+      <div class="card"><h3>Sytost na minimum</h3><p><kbd>Ctrl</kbd>+<kbd>U</kbd> Odstín a sytost: Sytost −100 → obraz šedý, ale <b>stále v RGB</b> (tři stejné kanály). Alternativy: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd> Odbarvit; vrstva úprav Černobílý (lze řídit tóny); převod do Stupňů šedi (mění režim celého dokumentu – ne, když mají ostatní kopie zůstat barevné).</p></div>
+      <div class="card"><h3>Jas, sytost, odstín na fotce</h3><p>Odstín a sytost: posun Odstínu o 180° = doplňkové barvy; výběr jen červených (Úpravy: Červené) změní barvu trička. Živost (Vibrance) zvyšuje sytost šetrně k pleti. Křivky/Úrovně řídí jas a kontrast; v Lab režimu Křivky na L nezmění barvu.</p></div>
+      <div class="card"><h3>Lab trik</h3><p>Obraz › Režim › Barva Lab; Kanály: vyber L; Filtr › Zostření › Doostřit – zostří jen jas, bez barevných lemů. Zpět do RGB. Nebo v Lab vyměň kanály a/b pro surreální barvy. Komise ráda slyší praktický důvod existence Lab.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l5-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Dokument</b><p>Otevři připravený obrázek, zjisti rozměr (Obraz › Velikost obrazu). Nový dokument RGB 8 bit, šířka = 3 × šířka obrázku + mezery, výška = výška obrázku + okraj (nebo Obraz › Velikost plátna – šířka 300 %, ukotvení vlevo).</p></div></li>
+        <li><span class="t">3–7<small>min</small></span><div><b>Tři vrstvy</b><p>Vlož obrázek, pojmenuj vrstvu <em>1 inverze</em>; <kbd>Ctrl</kbd>+<kbd>J</kbd> 2× → <em>2 odbarvení</em>, <em>3 kanál</em>. Nástrojem Přesun (<kbd>V</kbd>) rozmísti vedle sebe; Zarovnat (vybrat 3 vrstvy › Rozmístit vodorovně).</p></div></li>
+        <li><span class="t">7–11<small>min</small></span><div><b>Inverze</b><p>Vrstva 1 aktivní: vrstva úprav Invertovat + ořezová maska (Alt+klik mezi vrstvami), nebo <kbd>Ctrl</kbd>+<kbd>I</kbd> přímo.</p></div></li>
+        <li><span class="t">11–15<small>min</small></span><div><b>Sytost na minimum</b><p>Vrstva 2: vrstva úprav Odstín a sytost (Sytost −100) s ořezovou maskou. Ukaž v Kanálech, že R = G = B.</p></div></li>
+        <li><span class="t">15–21<small>min</small></span><div><b>Separace kanálu</b><p>Vrstva 3: v panelu Kanály klikni na Červený (nebo jiný); <kbd>Ctrl</kbd>+<kbd>A</kbd>, <kbd>Ctrl</kbd>+<kbd>C</kbd>; zpět na RGB; nová vrstva nad vrstvou 3, <kbd>Ctrl</kbd>+<kbd>V</kbd> → šedý obraz kanálu; pojmenuj <em>3 kanál R</em>. Nebo nech vrstvu 3 barevnou a kanál ukaž přepnutím v panelu Kanály – obojí umět vysvětlit.</p></div></li>
+        <li><span class="t">21–26<small>min</small></span><div><b>Popisky a kontrola</b><p>Textová vrstva pod každou kopií: „Inverze (Ctrl+I)“, „Sytost −100 (Ctrl+U)“, „Kanál R“. Zkontroluj, že každý obrázek je v samostatné vrstvě a nic není sloučené.</p></div></li>
+        <li><span class="t">26–30<small>min</small></span><div><b>Uložení</b><p>PSD (vrstvy) + JPEG/PNG pro ukázku. Připrav si přepnutí Režimu do Lab a CMYK a panel Kanály pro výklad.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Výklad nad hotovým souborem</h3>
+          <ol class="steps">
+            <li>„Dokument je RGB 8 bit – aditivní model, tři kanály.“ Ukaž Kanály.</li>
+            <li>„Inverze = 255 minus hodnota v každém kanálu; červená → azurová.“</li>
+            <li>„Sytost −100: odstín a jas zůstaly, barva zmizela; HSB model.“ Ukaž Ctrl+U a kanály R = G = B.</li>
+            <li>„Kanál R je stupně šedi = množství červené; kde je obraz světlý, bylo hodně červené.“</li>
+            <li>Přepni Obraz › Režim › CMYK: „čtyři kanály, subtraktivní, pro tisk; převod s profilem FOGRA39; syté barvy se posunuly – gamut.“ Zpět (Ctrl+Z).</li>
+            <li>Přepni do Lab: „L jas, a zelená–červená, b modrá–žlutá; nezávislý na zařízení.“</li>
+            <li>Varování gamutu (Ctrl+Shift+Y): „šedě barvy, které CMYK nevytiskne.“</li>
+          </ol>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l5-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>„Odbarvení“ převodem celého dokumentu do stupňů šedi – odbarví se všechny tři kopie. Správně vrstva úprav s ořezovou maskou.</div>
+      <div class="tip chyba"><b>Chyba</b>Tři kopie sloučené do jedné vrstvy; úpravy destruktivně bez možnosti ukázat původní stav.</div>
+      <div class="tip chyba"><b>Chyba</b>Záměna modelu (RGB, CMYK) a prostoru (sRGB, FOGRA39); „CMYK je pro web“.</div>
+      <div class="tip chyba"><b>Chyba</b>Gamut vysvětlený jako „počet barev“ – je to rozsah (množina) barev, které zařízení umí.</div>
+      <div class="tip chyba"><b>Chyba</b>Tvrzení, že K v CMYK je „key“ nebo „black“ bez vysvětlení, proč se přidává (nečistá černá z CMY, text, úspora barvy).</div>
+      <div class="tip chyba"><b>Chyba</b>Převod do CMYK bez nastaveného profilu (výchozí U.S. Web Coated SWOP) – na evropský ofset patří Coated FOGRA39.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l5-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Vysvětli modely RGB, CMYK a Lab.</summary><div class="odp">RGB – aditivní, světlo, tři kanály 0–255, obrazovky a web, závislý na zařízení. CMYK – subtraktivní, barviva, čtyři kanály 0–100 %, tisk, menší gamut, závislý na zařízení; K pro čistou černou a text. Lab – jas L a dvě barevné osy a (zelená–červená), b (modrá–žlutá), nezávislý na zařízení, obsahuje všechny viditelné barvy, referenční pro převody; prakticky pro doostření jasu bez barevných artefaktů.</div></details></li>
+      <li><details><summary>Co je gamut?</summary><div class="odp">Rozsah (množina) barev, které zařízení nebo barevný prostor dokáže zobrazit či reprodukovat; zakresluje se v chromatickém diagramu CIE. Lab > Adobe RGB > sRGB > CMYK FOGRA39; proto se syté monitorové barvy v tisku posunou. Photoshop: Varování gamutu, Kontrolní náhled barev.</div></details></li>
+      <li><details><summary>Co je jas, sytost a odstín?</summary><div class="odp">Odstín (hue) – poloha na barevném kruhu (0–360°), „jaká barva“. Sytost (saturation) – čistota barvy, 0 % šedá, 100 % čistá. Jas (brightness) – množství světla, 0 % černá. Ve Photoshopu Odstín a sytost (Ctrl+U): sytost −100 odbarví; posun odstínu změní barvu; Živost šetří pleťové tóny.</div></details></li>
+      <li><details><summary>Jaký je rozdíl mezi barevným modelem a barevným prostorem?</summary><div class="odp">Model je způsob popisu barvy čísly (RGB, CMYK, Lab, HSB). Prostor je konkrétní standardizovaný rozsah barev v rámci modelu s definovanými primárními barvami a bílým bodem (sRGB, Adobe RGB, ProPhoto; Coated FOGRA39, SWOP). Dvě stejná čísla RGB v různých prostorech jsou různé barvy – proto ICC profily.</div></details></li>
+      <li><details><summary>Jak jsi udělal separaci kanálu a co kanál zobrazuje?</summary><div class="odp">V panelu Kanály jsem vybral kanál (např. Červený), zkopíroval ho a vložil do nové vrstvy – vznikl obraz ve stupních šedi, kde světlá místa znamenají hodně červené. Kanál je 8bitový obrázek s množstvím dané složky; Ctrl+klik načte kanál jako výběr; alfa kanály uchovávají výběry.</div></details></li>
+      <li><details><summary>Proč se inverzí červená změní na azurovou?</summary><div class="odp">Inverze počítá 255 − hodnota v každém kanálu: (255, 0, 0) → (0, 255, 255) = azurová. Doplňkové barvy RGB a CMY leží v protilehlých vrcholech barevné krychle.</div></details></li>
+      <li><details><summary>Kdy převést dokument do CMYK?</summary><div class="odp">Až na konci práce, s profilem Coated FOGRA39 (Nastavení barev), nebo hned při založení, pokud je výstup jen tisk a chci vidět tiskové barvy od začátku (A3 digitální malba). Převod je ztrátový – zpět do RGB se původní barvy nevrátí.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l5-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz5" data-quiz='[
+      {"q":"Aditivní míchání všech tří základních barev dává","o":["černou","bílou","šedou","hnědou"],"a":1,"w":"Světla se sčítají: R + G + B = bílá. Subtraktivní C + M + Y = (teoreticky) černá."},
+      {"q":"Model nezávislý na zařízení s největším gamutem je","o":["sRGB","CMYK","Lab","HSB"],"a":2,"w":"CIELAB popisuje barvu tak, jak ji vidí člověk, a slouží jako referenční prostor pro správu barev."},
+      {"q":"Gamut je","o":["počet barev v obrázku","rozsah barev, které zařízení dokáže reprodukovat","barevná hloubka","jas obrazovky"],"a":1,"w":"Zobrazuje se v chromatickém diagramu CIE 1931; CMYK má menší gamut než sRGB."},
+      {"q":"Sytost −100 v Odstínu a sytosti","o":["převede dokument do stupňů šedi","odbarví obraz, režim zůstane RGB","invertuje barvy","změní odstín o 180°"],"a":1,"w":"Obraz zešedne (R = G = B), ale dokument zůstane v RGB a ostatní vrstvy barevné."},
+      {"q":"Inverzí barvy (255, 0, 0) vznikne","o":["(0, 255, 255) azurová","(255, 255, 0) žlutá","(0, 0, 0) černá","(255, 0, 255) purpurová"],"a":0,"w":"Inverze = 255 − hodnota v každém kanálu; červená ↔ azurová jsou doplňkové."},
+      {"q":"Standardní profil pro evropský ofsetový tisk na křídový papír je","o":["U.S. Web Coated SWOP","Coated FOGRA39 (ISO 12647-2)","sRGB IEC61966-2.1","Japan Color 2001"],"a":1,"w":"Nastavení barev › pracovní prostor CMYK: Coated FOGRA39. Uncoated FOGRA29/47 pro nenatíraný papír."},
+      {"q":"Kanál ve Photoshopu je","o":["barevná vrstva","obrázek ve stupních šedi s množstvím dané barevné složky","filtr","výběr nástrojem laso"],"a":1,"w":"RGB má 3 kanály, CMYK 4, Lab 3 (L, a, b); světlá místa v kanálu = hodně složky."},
+      {"q":"HSB popisuje barvu pomocí","o":["tří světel","odstínu, sytosti a jasu","čtyř barviv","jasu a dvou barevných os"],"a":1,"w":"Hue (0–360°), Saturation (0–100 %), Brightness (0–100 %) – odpovídá lidskému vnímání."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l5-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="{{enviro_paleta}}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="9" r="1.5" fill="currentColor"/><circle cx="15" cy="9" r="1.5" fill="currentColor"/><circle cx="8" cy="14" r="1.5" fill="currentColor"/></svg><div><b>Grafika pro klima: Barevná paleta</b><span>Teorie barev, harmonie, psychologie barev (3. ročník).</span></div></a>
+      <a class="link-card" href="{{malba}}#barvy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg><div><b>Malba: barevný kruh, teplé a studené</b><span>Míchání barev v praxi (2. ročník).</span></div></a>
+      <a class="link-card" href="{{onedrive}}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg><div><b>OneDrive: Barvy a barevné modely</b><span>Barevné modely, barevný prostor, proč vidíme barevně, duplex ve Photoshopu.</span></div></a>
+      <a class="link-card" href="{{L3}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg><div><b>Lekce 03: Photoshop – masky, kanály, výběry</b><span>Kanály podrobně, DPI, RGB × CMYK.</span></div></a>
+    </div>
+  </div>
+</section>

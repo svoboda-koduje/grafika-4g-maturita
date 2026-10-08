@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>03 · Adobe Photoshop – základní ovládání softwaru | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Maturitní otázka 3: dokument A4 na šířku ve Photoshopu, maskování a prolnutí dvou obrázků, uložení pro web a pro tisk; masky, kanály, nástroje výběru, podokno Vybrat a maskovat, DPI v praxi, RGB a CMYK.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="03 · Adobe Photoshop – základní ovládání softwaru">
+<meta property="og:description" content="Maturitní otázka 3: dokument A4 na šířku ve Photoshopu, maskování a prolnutí dvou obrázků, uložení pro web a pro tisk; masky, kanály, nástroje výběru, podokno Vybrat a maskovat, DPI v praxi, RGB a CMYK.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styl.css">
+</head>
+<body data-page="03-photoshop-zaklady.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="../videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>OTÁZKA 3 / 23</b><span>Adobe Photoshop</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="../img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="../index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="../lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="../lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="../lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="../lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="../lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="../lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true" class="active"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="../lekce/03-photoshop-zaklady.html" class="active"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="../lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="../lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="../lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="../lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="../lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="../lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="../lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="../lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="../lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="../lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="../lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="../lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="../lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="../lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="../lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="../lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="../kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="../cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="../videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="../zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-photoshop">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Maturitní otázka 3</span><span class="blok">· Adobe Photoshop</span></p>
+    <h1>Adobe Photoshop – základní ovládání</h1>
+    <p class="lead">Dokument <b>A4 na šířku</b>, do něj dva připravené obrázky: část jednoho <b>vymaskuješ</b> tak, aby se <b>prolínala</b> s druhým. Uložíš dvakrát – jednou ve formátu <b>pro web</b>, podruhé <b>pro tisk</b>. V teorii: <b>masky, kanály a nástroje výběru</b>, nejpoužívanější nástroje, panely a nabídky, podokno <b>Vybrat a maskovat</b>, co je <b>DPI</b> a jak ho řešíme, a rozdíl <b>RGB × CMYK</b>.</p>
+    <ul class="zadani"><li><b>Photoshop</b>A4 na šířku, 300 ppi</li><li><b>Podklady</b>dva obrázky</li><li><b>Výstup</b>JPEG/PNG pro web + TIFF/PDF pro tisk</li><li><b>Teorie</b>masky, kanály, výběry, DPI</li></ul>
+    <nav class="subnav" aria-label="Obsah lekce"><a href="#l3-otazka">Co se losuje</a><a href="#l3-rozhrani">Nástroje, panely, nabídky</a><a href="#l3-vybery">Nástroje výběru</a><a href="#l3-masky">Masky a kanály</a><a href="#l3-dpi">DPI a rozlišení</a><a href="#l3-rgb-cmyk">RGB × CMYK a uložení</a><a href="#l3-postup">Postup pro 30 minut</a><a href="#l3-chyby">Časté chyby</a><a href="#l3-komise">Otázky komise</a><a href="#l3-kviz">Kvíz</a></nav>
+  </div>
+</section>
+<section class="section" id="l3-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Dokument <b>A4 na šířku</b> ve Photoshopu.</li>
+          <li>Připravený obrázek upravit tak, aby jeho část byla <b>vymaskovaná</b> a <b>prolínala se</b> s druhým připraveným obrázkem.</li>
+          <li>Uložit do dvou formátů: jeden <b>pro web</b>, druhý <b>pro tisk</b>.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>Photoshop</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Použití <b>masek, kanálů</b> a základních <b>nástrojů pro výběr</b>.</li>
+          <li>Nejpoužívanější <b>nástroje, panely a nabídky</b>; podokno <b>Vybrat a maskovat</b>.</li>
+          <li>Co znamená <b>DPI</b> a jak ho v praxi řešíme.</li>
+          <li>Rozdíl mezi režimy <b>RGB a CMYK</b> (podrobně <a href="../lekce/05-barevne-modely.html">lekce 05</a>).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l3-rozhrani">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Základy</span><h2>Nástroje, panely a nabídky</h2></div>
+      <p>Photoshop je bitmapový editor: pracuješ s pixely ve vrstvách. Nedestruktivní práce = masky vrstev, vrstvy úprav, inteligentní objekty.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <h3>Nejpoužívanější nástroje</h3>
+        <div class="table-scroll"><table class="tech-table">
+          <thead><tr><th>Nástroj</th><th>Klávesa</th><th>K čemu</th></tr></thead>
+          <tbody>
+            <tr><th>Přesun</th><td><kbd>V</kbd></td><td>posun vrstev a výběrů; automatický výběr vrstvy</td></tr>
+            <tr><th>Výběr obdélníkem / elipsou</th><td><kbd>M</kbd></td><td>geometrické výběry; Shift = přidat, Alt = odebrat</td></tr>
+            <tr><th>Laso / Mnohoúhelníkové / Magnetické</th><td><kbd>L</kbd></td><td>volné výběry; magnetické sleduje hrany</td></tr>
+            <tr><th>Výběr objektu / Rychlý výběr / Kouzelná hůlka</th><td><kbd>W</kbd></td><td>automatické výběry podle obsahu / hran / barvy (tolerance)</td></tr>
+            <tr><th>Oříznutí</th><td><kbd>C</kbd></td><td>ořez, narovnání, poměr stran a rozlišení</td></tr>
+            <tr><th>Kapátko</th><td><kbd>I</kbd></td><td>barva z obrazu</td></tr>
+            <tr><th>Retušovací štětec / Záplata / Klonovací razítko</th><td><kbd>J</kbd> / <kbd>S</kbd></td><td>retuš, odstranění objektů</td></tr>
+            <tr><th>Štětec / Guma</th><td><kbd>B</kbd> / <kbd>E</kbd></td><td>malba, kreslení do masky; velikost <kbd>[</kbd> <kbd>]</kbd>, tvrdost <kbd>Shift</kbd>+<kbd>[</kbd> <kbd>]</kbd></td></tr>
+            <tr><th>Přechod / Plechovka</th><td><kbd>G</kbd></td><td>přechod (i do masky!), výplň</td></tr>
+            <tr><th>Text</th><td><kbd>T</kbd></td><td>textová vrstva (vektorová)</td></tr>
+            <tr><th>Pero</th><td><kbd>P</kbd></td><td>cesty, přesné výběry, vektorové masky</td></tr>
+            <tr><th>Tvar</th><td><kbd>U</kbd></td><td>vektorové tvary (obdélník, elipsa, vlastní)</td></tr>
+            <tr><th>Lupa / Ruka</th><td><kbd>Z</kbd> / <kbd>H</kbd></td><td><kbd>Ctrl</kbd>+<kbd>0</kbd> na obrazovku, <kbd>Ctrl</kbd>+<kbd>1</kbd> 100 %</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="card">
+        <h3>Panely</h3>
+        <ul>
+          <li><b>Vrstvy</b> (<kbd>F7</kbd>): pořadí, krytí, režimy prolnutí, masky, vrstvy úprav, skupiny, inteligentní objekty, styly vrstvy (fx).</li>
+          <li><b>Kanály</b>: R, G, B (C, M, Y, K) + alfa kanály (uložené výběry).</li>
+          <li><b>Cesty</b>: vektorové cesty z Pera, převod na výběr.</li>
+          <li><b>Historie</b>: kroky zpět, snímky; <b>Vlastnosti</b>: parametry vrstvy úprav / masky (hustota, prolnutí).</li>
+          <li><b>Přizpůsobení</b>: vrstvy úprav (Úrovně, Křivky, Odstín a sytost, Černobílý…).</li>
+          <li><b>Barvy</b>, <b>Vzorník</b>, <b>Štětce</b>, <b>Nastavení štětce</b>, <b>Znaky</b>, <b>Odstavec</b>, <b>Informace</b>, <b>Navigátor</b>, <b>Časová osa</b>.</li>
+        </ul>
+        <h3>Nabídky</h3>
+        <ul>
+          <li><b>Soubor</b>: Nový, Otevřít, Umístit vložené/propojené, Uložit jako, Exportovat (Exportovat jako, Uložit pro web), Automaticky, Skripty.</li>
+          <li><b>Úpravy</b>: Zpět, Vyplnit (podle obsahu), Libovolná transformace (<kbd>Ctrl</kbd>+<kbd>T</kbd>), Nastavení barev, Předvolby.</li>
+          <li><b>Obraz</b>: Režim, Přizpůsobení, Velikost obrazu, Velikost plátna, Otočení.</li>
+          <li><b>Vrstva</b>: Nová, Maska vrstvy, Vrstva úprav, Inteligentní objekty, Styl vrstvy, Sloučit.</li>
+          <li><b>Výběr</b>: Vše, Zrušit, Inverzní, Rozsah barev, Vybrat a maskovat, Změnit (rozšířit, zúžit, prolnout), Uložit výběr.</li>
+          <li><b>Filtr</b>: Camera Raw, Rozostření, Zostření, Zkreslení, Galerie filtrů; inteligentní filtry na inteligentním objektu.</li>
+          <li><b>Zobrazení</b>: Kontrolní náhled barev, Varování gamutu, Pravítka, Vodítka; <b>Okna</b>: panely, pracovní plochy.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l3-vybery">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Výběr</span><h2>Nástroje výběru a Vybrat a maskovat</h2></div>
+      <p>Výběr říká, kde úprava platí. Z výběru vzniká maska. Čím lepší výběr, tím čistší prolnutí.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Geometrické a ruční</h3><p>Obdélník, elipsa (Shift = čtverec/kruh, Alt = od středu), laso (volné), mnohoúhelníkové laso (klikáním), magnetické laso (drží se hran). Kombinace: <kbd>Shift</kbd> přidat, <kbd>Alt</kbd> odebrat, <kbd>Shift</kbd>+<kbd>Alt</kbd> průnik. Mezerník během tažení posune výběr.</p></div>
+      <div class="card"><h3>Automatické</h3><p><b>Výběr objektu</b> (AI – rámeček kolem objektu), <b>Rychlý výběr</b> (štětec hledá hrany), <b>Kouzelná hůlka</b> (podobné barvy, Tolerance 0–255, Souvislé), <span class="menu-path">Výběr <i>›</i> Objekt / Nebe / Rozsah barev</span>. Pro složité hrany (vlasy, srst) následuje Vybrat a maskovat.</p></div>
+      <div class="card"><h3>Pero (přesné)</h3><p>Cesta z kotevních bodů kolem objektu s ostrými hranami (produkt, budova); panel Cesty › Načíst cestu jako výběr (prolnutí 0,5–1 px). Nejpřesnější, ale pomalé.</p></div>
+      <div class="card"><h3>Úpravy výběru</h3><p><span class="menu-path">Výběr <i>›</i> Změnit</span>: Okraj, Vyhladit, Rozšířit, Zúžit, <b>Prolnout</b> (<kbd>Shift</kbd>+<kbd>F6</kbd> – měkký okraj v px). <b>Inverzní</b> <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>I</kbd>. <b>Uložit výběr</b> → alfa kanál; <b>Načíst výběr</b> z kanálu nebo <kbd>Ctrl</kbd>+klik na miniaturu vrstvy/masky.</p></div>
+      <div class="card"><h3>Vybrat a maskovat (Select and Mask)</h3><p><span class="menu-path">Výběr <i>›</i> Vybrat a maskovat</span> (<kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>R</kbd>) – samostatné podokno pro zpřesnění výběru: <b>Režim zobrazení</b> (Cibulová slupka, Pochodující mravenci, Překrytí, Na černé/bílé, Vrstvy), nástroje <b>Rychlý výběr</b>, <b>Zpřesnit hranu – štětec</b> (vlasy, srst), <b>Štětec</b>, <b>Výběr objektu</b>, <b>Laso</b>; vpravo <b>Detekce hrany</b> (Poloměr, Inteligentní poloměr), <b>Globální zpřesnění</b> (Vyhladit, Prolnout, Kontrast, Posunout hranu), <b>Odstranit barvy okrajů</b>, a <b>Výstup do</b>: Výběr, Maska vrstvy, Nová vrstva (s maskou), Nový dokument. Pro zadání: Výstup do <b>Maska vrstvy</b>.</p></div>
+      <div class="card"><h3>Rychlá maska</h3><p><kbd>Q</kbd> přepne do Rychlé masky: výběr maluješ štětcem (červený překryv = nevybráno). <kbd>Q</kbd> zpět = výběr. Dobré pro ruční úpravy hranic.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l3-masky">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Jádro otázky</span><h2>Masky a kanály</h2></div>
+      <p>Maska vrstvy je obrázek ve stupních šedi připnutý k vrstvě: <b>bílá odkrývá, černá skrývá, šedá je průhlednost</b>. Nic nemažeš – kdykoli se dá vrátit.</p>
+    </div>
+    <div class="lab" data-widget="maska">
+      <div class="lab-head"><h3>Maska vrstvy a prolnutí</h3><span class="hint">Dva obrázky, jedna maska</span></div>
+      <div class="lab-body wide">
+        <div class="lab-stage pad"><div data-stage style="width:100%"></div></div>
+        <div class="lab-ctrl">
+          <label><span>Typ masky</span><div class="seg" data-typ><button type="button" data-v="grad" aria-pressed="true">Přechod</button><button type="button" data-v="kruh">Kruh (prolnutý)</button><button type="button" data-v="ostry">Ostrý výběr</button></div></label>
+          <label><span>Měkkost (prolnutí) <output>40</output> %</span><input type="range" min="0" max="100" value="40" data-soft></label>
+          <label><span>Poloha <output>50</output> %</span><input type="range" min="0" max="100" value="50" data-pos></label>
+          <label class="check"><input type="checkbox" data-inv> Invertovat masku (Ctrl+I)</label>
+          <label class="check"><input type="checkbox" data-show> Zobrazit masku samostatně (Alt+klik)</label>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+    <div class="cols-2" style="margin-top:22px">
+      <div class="card">
+        <h3>Maska vrstvy – postup prolnutí</h3>
+        <ol class="steps">
+          <li>Obrázek A jako spodní vrstva, obrázek B nad ním (Umístit vložené → inteligentní objekt).</li>
+          <li>Vrstva B aktivní → tlačítko <b>Přidat masku vrstvy</b> (dole v panelu Vrstvy) – bílá maska = vše vidět. (S aktivním výběrem vznikne maska z výběru.)</li>
+          <li>Klikni na <b>miniaturu masky</b> (ne obrázku!). Nástroj <b>Přechod</b> (<kbd>G</kbd>), černá → bílá, táhni přes obraz: B plynule přechází do A.</li>
+          <li>Nebo <b>Štětec</b> (<kbd>B</kbd>) černou barvou s měkkým okrajem a krytím 30–50 % – ručně „odmaluješ“ části B. Bílou vrátíš zpět. <kbd>X</kbd> prohazuje barvy.</li>
+          <li>Panel <b>Vlastnosti</b> masky: <b>Hustota</b> (síla masky), <b>Prolnutí</b> (změkčení hrany), <em>Vybrat a maskovat</em>, <em>Rozsah barev</em>, <em>Invertovat</em>.</li>
+          <li><kbd>Shift</kbd>+klik na masku ji vypne (červený křížek), <kbd>Alt</kbd>+klik zobrazí masku samotnou, <kbd>Ctrl</kbd>+klik načte jako výběr. Pravý klik: Použít masku (trvale), Odstranit, Přidat masku k výběru.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Druhy masek a kanály</h3>
+        <ul>
+          <li><b>Maska vrstvy</b> (pixelová) – stupně šedi, maluje se štětcem/přechodem.</li>
+          <li><b>Vektorová maska</b> – z cesty Pera, ostré hrany, škálovatelná (Vrstva › Vektorová maska).</li>
+          <li><b>Ořezová maska</b> (Clipping mask) – vrstva se zobrazí jen tam, kde má spodní vrstva pixely (<kbd>Alt</kbd>+klik mezi vrstvami, <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>G</kbd>): text vyplněný fotkou, úprava jen jedné vrstvy.</li>
+          <li><b>Rychlá maska</b> (<kbd>Q</kbd>) – dočasná, pro tvorbu výběru.</li>
+          <li><b>Maska na vrstvě úprav</b> – úprava platí jen v bílé části.</li>
+          <li><b>Kanály</b>: barevné (R, G, B / C, M, Y, K / L, a, b) ukazují množství složky; <b>alfa kanály</b> = uložené výběry/masky (Výběr › Uložit výběr); maska vrstvy je vlastně dočasný alfa kanál (v panelu Kanály ho uvidíš kurzívou). Trik: výběr podle kanálu s největším kontrastem (<kbd>Ctrl</kbd>+klik na kanál Modrá pro oblohu) → maska.</li>
+          <li><b>Režimy prolnutí</b> vrstvy (Násobit, Závoj, Překrýt…) a <b>Krytí</b> jsou další způsob prolnutí – kombinuje se s maskou.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l3-dpi">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Teorie</span><h2>DPI, PPI a rozlišení v praxi</h2></div>
+      <p>Rozlišení neříká, kolik pixelů obrázek má – říká, jak hustě se vytisknou. Rozhodující je počet pixelů vůči výsledné velikosti.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <ul>
+          <li><b>ppi</b> (pixels per inch) – hustota pixelů obrazu při tisku; <b>dpi</b> (dots per inch) – body tiskárny (1200–2400 dpi u laseru, 2540 dpi u osvitu). V praxi se říká „dpi“ i obrázkům.</li>
+          <li><b>Tisk</b>: 300 ppi při výsledné velikosti (ofset, křída); 150–200 ppi pro velkoformát (billboard 50–100 ppi, dívá se z dálky); 600 ppi pro perokresbu/bitovou mapu.</li>
+          <li><b>Obrazovka</b>: rozhoduje jen počet pixelů (1920 × 1080 Full HD; 72/96 ppi je historická konvence, Retina 2×). Údaj ppi v souboru nic nemění.</li>
+          <li><b>Výpočet</b>: pixely = cm / 2,54 × ppi. A4 na šířku 297 × 210 mm při 300 ppi = <b>3508 × 2480 px</b>. Fotka 4000 × 3000 px vytiskneš na 33,9 × 25,4 cm při 300 ppi.</li>
+          <li><b>Velikost obrazu</b> (<kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>I</kbd>): <b>bez převzorkování</b> měníš jen ppi ↔ rozměr v cm (pixely zůstávají) – tak zjistíš, jak velký tisk fotka unese. <b>S převzorkováním</b> měníš počet pixelů: zmenšení v pořádku, <b>zvětšení domýšlí pixely</b> (Zachovat detaily 2.0) – kvalita klesá, u maturity přiznat.</li>
+          <li><b>Efektivní ppi</b> v InDesignu/Illustratoru: ppi po změně měřítka v rámečku (zmenšení ppi zvyšuje, zvětšení snižuje) – viz kalkulačka v <a href="../kontrola.html#k-obrazky">kontrole</a>.</li>
+        </ul>
+      </div>
+      <div class="lab stack" data-widget="ppi">
+        <div class="lab-head"><h3>Kolik pixelů potřebuji</h3><span class="hint">Efektivní ppi</span></div>
+        <div class="lab-body">
+          <div class="lab-stage pad"><svg viewBox="0 0 420 300" aria-label="Obrázek a jeho efektivní rozlišení"></svg></div>
+          <div class="lab-ctrl">
+            <label><span>Šířka obrázku v pixelech <output>3508</output></span><input type="range" min="600" max="6000" step="100" value="3500" data-px></label>
+            <label><span>Šířka v tisku (mm) <output>297</output></span><input type="range" min="30" max="300" step="5" value="295" data-mm></label>
+            <div class="readout" data-out></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l3-rgb-cmyk">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Výstup</span><h2>RGB × CMYK a uložení pro web a pro tisk</h2></div>
+      <p>Stejný dokument, dva výstupy. Rozdíl je v barevném režimu, rozlišení, formátu a kompresi.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <h3>RGB × CMYK</h3>
+        <ul>
+          <li><b>RGB</b>: aditivní, světlo, 3 kanály 0–255, obrazovky a web, větší gamut, všechny filtry a funkce Photoshopu. Pracovní režim.</li>
+          <li><b>CMYK</b>: subtraktivní, barviva, 4 kanály 0–100 %, tisk, menší gamut (syté modré, zelené, oranžové se posunou), některé filtry nedostupné, větší soubor. Profil Coated FOGRA39.</li>
+          <li>Převod <span class="menu-path">Obraz <i>›</i> Režim <i>›</i> Barva CMYK</span> až na konci (nebo Uložit jako s převodem). Před tím <span class="menu-path">Zobrazení <i>›</i> Kontrolní náhled barev</span> (<kbd>Ctrl</kbd>+<kbd>Y</kbd>) ukáže, jak bude vypadat tisk; <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Y</kbd> varování gamutu.</li>
+          <li>Podrobně: <a href="../lekce/05-barevne-modely.html">lekce 05</a>.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Dva soubory</h3>
+        <div class="table-scroll"><table class="tech-table">
+          <thead><tr><th></th><th>Pro web</th><th>Pro tisk</th></tr></thead>
+          <tbody>
+            <tr><th>Režim</th><td>RGB (sRGB)</td><td>CMYK (Coated FOGRA39)</td></tr>
+            <tr><th>Rozměr</th><td>např. 1920 × 1358 px (ppi nerozhoduje)</td><td>297 × 210 mm při 300 ppi = 3508 × 2480 px</td></tr>
+            <tr><th>Formát</th><td><b>JPEG</b> kvalita 60–80 % (fotka), nebo PNG-24 (grafika, průhlednost), WebP</td><td><b>TIFF</b> (LZW, bez vrstev) nebo <b>JPEG</b> kvalita 12, nebo <b>Photoshop PDF</b> (PDF/X-1a)</td></tr>
+            <tr><th>Jak</th><td><span class="menu-path">Soubor <i>›</i> Exportovat <i>›</i> Exportovat jako</span> (nebo Uložit pro web): formát, velikost, Převést na sRGB, vložit profil</td><td><span class="menu-path">Soubor <i>›</i> Uložit jako</span> TIFF/JPEG/PDF po převodu do CMYK; vložit profil barev</td></tr>
+            <tr><th>Velikost</th><td>stovky kB</td><td>desítky MB</td></tr>
+          </tbody>
+        </table></div>
+        <p class="note">Pracovní soubor vždy <b>PSD</b> s vrstvami a maskou – ten odevzdej také, komise chce vidět masku.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l3-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Dokument</b><p><kbd>Ctrl</kbd>+<kbd>N</kbd> › Tisk › A4, <b>na šířku</b>, <b>300 ppi</b>, RGB 8 bit, bílé pozadí (3508 × 2480 px). Ulož PSD.</p></div></li>
+        <li><span class="t">3–7<small>min</small></span><div><b>Obrázky</b><p><span class="menu-path">Soubor <i>›</i> Umístit vložené</span> obrázek A → inteligentní objekt, <kbd>Ctrl</kbd>+<kbd>T</kbd> přizpůsobit (Shift drží poměr), Enter. Totéž obrázek B nad něj. Zkontroluj, že nejsou zvětšené nad 100 % (Vlastnosti / Velikost obrazu).</p></div></li>
+        <li><span class="t">7–12<small>min</small></span><div><b>Výběr</b><p>Na vrstvě B: Výběr objektu / Rychlý výběr → objekt nebo oblast, která má zůstat. <span class="menu-path">Výběr <i>›</i> Vybrat a maskovat</span>: zpřesnit hranu, Prolnout 1–2 px, Posunout hranu −10 %, Odstranit barvy okrajů, Výstup: <b>Maska vrstvy</b>.</p></div></li>
+        <li><span class="t">12–18<small>min</small></span><div><b>Prolnutí</b><p>Na masce B: nástroj Přechod (černá→bílá, lineární) nebo měkký štětec s krytím 40 % – část B plynule přejde do A. Panel Vlastnosti › Prolnutí 5–20 px. Případně režim prolnutí vrstvy (Násobit/Závoj) nebo Krytí 80 % pro jemnější spojení.</p></div></li>
+        <li><span class="t">18–22<small>min</small></span><div><b>Doladění</b><p>Vrstva úprav Křivky/Odstín a sytost s ořezovou maskou na B, aby barevně seděla k A. Text (název) – volitelně. Ulož PSD.</p></div></li>
+        <li><span class="t">22–26<small>min</small></span><div><b>Pro web</b><p><span class="menu-path">Soubor <i>›</i> Exportovat <i>›</i> Exportovat jako</span>: JPEG, kvalita 70 %, velikost 1920 px na šířku, Převést na sRGB. Název <em>…_web.jpg</em>.</p></div></li>
+        <li><span class="t">26–30<small>min</small></span><div><b>Pro tisk</b><p>Obraz › Režim › Barva CMYK (sloučit – ano, pracuješ na kopii; nebo nejdřív Duplikovat dokument). Uložit jako <b>TIFF</b> (LZW, bez vrstev, profil FOGRA39) nebo JPEG 12 / Photoshop PDF PDF/X-1a. Název <em>…_tisk.tif</em>. Otevři oba a porovnej velikosti.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Co ukázat při obhajobě</h3>
+          <ul>
+            <li>Panel Vrstvy: B s maskou – Alt+klik na masku (ukázat šedi), Shift+klik (vypnout/zapnout) = „nic nemažu“.</li>
+            <li>Panel Kanály: R, G, B + maska vrstvy jako dočasný kanál; Ctrl+klik = výběr.</li>
+            <li>Vybrat a maskovat: otevřít, ukázat režimy zobrazení, Zpřesnit hranu, Výstup.</li>
+            <li>Velikost obrazu: 3508 × 2480 px = 297 × 210 mm při 300 ppi; bez převzorkování změnit na 150 ppi → 594 mm (stejné pixely).</li>
+            <li>Režim CMYK + Ctrl+Y: rozdíl barev; proč web RGB a tisk CMYK.</li>
+            <li>Dva soubory: velikost v kB/MB, formát, režim – Vlastnosti souboru.</li>
+          </ul>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l3-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Prolnutí gumou (destruktivně) místo masky – nejde vrátit, komise to pozná (chybí maska).</div>
+      <div class="tip chyba"><b>Chyba</b>Malování do obrázku místo do masky (není vybraná miniatura masky) – černé šmouhy.</div>
+      <div class="tip chyba"><b>Chyba</b>Dokument A4 na výšku, 72 ppi, nebo obrázky zvětšené na 300 % – rozmazané.</div>
+      <div class="tip chyba"><b>Chyba</b>„Pro tisk“ uložen JPEG v RGB s 72 ppi; „pro web“ TIFF 30 MB.</div>
+      <div class="tip chyba"><b>Chyba</b>Převod do CMYK na jediném pracovním souboru bez zálohy PSD; sloučené vrstvy, maska pryč.</div>
+      <div class="tip chyba"><b>Chyba</b>DPI vysvětlené jako „kvalita obrázku“ – správně hustota pixelů při tisku; o kvalitě rozhoduje počet pixelů vůči velikosti.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l3-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Co je maska vrstvy a proč ji používat místo gumy?</summary><div class="odp">Obrázek ve stupních šedi připnutý k vrstvě: bílá odkrývá, černá skrývá, šedá dává průhlednost. Pixely vrstvy zůstávají – maska se dá kdykoli upravit, vypnout, invertovat, změkčit (Vlastnosti › Prolnutí). Guma pixely trvale smaže.</div></details></li>
+      <li><details><summary>Jak jsi vytvořil prolnutí dvou obrázků?</summary><div class="odp">Dva obrázky jako inteligentní objekty ve vrstvách, na horní vrstvě maska z výběru (Vybrat a maskovat › Výstup: maska vrstvy), pak přechodem/štětcem do masky plynulý přechod, Prolnutí masky ve Vlastnostech; barevné sladění vrstvou úprav s ořezovou maskou.</div></details></li>
+      <li><details><summary>K čemu slouží podokno Vybrat a maskovat?</summary><div class="odp">Ke zpřesnění výběru: režimy zobrazení (cibulová slupka, na černé/bílé, překrytí), Zpřesnit hranu – štětec pro vlasy a srst, detekce hrany s poloměrem, globální zpřesnění (vyhladit, prolnout, kontrast, posunout hranu), odstranění barevných okrajů a výstup do výběru, masky vrstvy nebo nové vrstvy.</div></details></li>
+      <li><details><summary>Co jsou kanály a jak souvisejí s maskami?</summary><div class="odp">Barevné kanály (R, G, B nebo C, M, Y, K) jsou obrazy ve stupních šedi s množstvím složky; alfa kanály uchovávají výběry (Výběr › Uložit výběr). Maska vrstvy je dočasný alfa kanál – v panelu Kanály ji vidím kurzívou; Ctrl+klik na kanál načte jeho jas jako výběr (např. oblohu z kanálu Modrá).</div></details></li>
+      <li><details><summary>Co znamená DPI a jak ho v praxi řešíš?</summary><div class="odp">Hustota bodů/pixelů na palec. Pro ofsetový tisk 300 ppi při výsledné velikosti: A4 = 3508 × 2480 px; pro obrazovku rozhoduje jen počet pixelů. Ve Velikosti obrazu bez převzorkování zjistím, jak velký tisk fotka unese; zvětšování s převzorkováním kvalitu snižuje. V sazbě hlídám efektivní ppi.</div></details></li>
+      <li><details><summary>Jaký je rozdíl mezi RGB a CMYK?</summary><div class="odp">RGB aditivní (světlo, obrazovky, 3 kanály, větší gamut, pracovní režim), CMYK subtraktivní (barviva, tisk, 4 kanály, menší gamut, profil FOGRA39). Pracuji v RGB, pro tisk převedu na konci; Kontrolní náhled barev a Varování gamutu ukáží posuny.</div></details></li>
+      <li><details><summary>Jaké nástroje výběru znáš a kdy který použít?</summary><div class="odp">Obdélník/elipsa (geometrie), laso/mnohoúhelníkové/magnetické (ruční), výběr objektu/rychlý výběr/kouzelná hůlka (automatika podle obsahu, hran, barvy), Rozsah barev, Pero (přesné hrany), Rychlá maska (malování výběru). Kombinace Shift/Alt, úpravy Výběr › Změnit, prolnutí, inverze, uložení do alfa kanálu.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l3-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz3" data-quiz='[
+      {"q":"V masce vrstvy černá barva","o":["odkrývá","skrývá","zesvětluje","invertuje"],"a":1,"w":"Bílá odkrývá, černá skrývá, šedá dává částečnou průhlednost."},
+      {"q":"A4 na šířku při 300 ppi má","o":["1920 × 1080 px","2480 × 3508 px","3508 × 2480 px","297 × 210 px"],"a":2,"w":"297 mm / 25,4 × 300 = 3508 px; 210 mm → 2480 px."},
+      {"q":"Podokno Vybrat a maskovat otevřeš","o":["Ctrl+I","Alt+Ctrl+R","Ctrl+T","Shift+F6"],"a":1,"w":"Výběr › Vybrat a maskovat (Alt+Ctrl+R). Shift+F6 je Prolnout výběr, Ctrl+T transformace."},
+      {"q":"Ořezová maska (Alt+klik mezi vrstvami)","o":["ořízne plátno","zobrazí horní vrstvu jen tam, kde má spodní pixely","smaže spodní vrstvu","vytvoří alfa kanál"],"a":1,"w":"Clipping mask – např. vrstva úprav platí jen pro jednu vrstvu, nebo fotka uvnitř textu."},
+      {"q":"Změna rozlišení ve Velikosti obrazu bez převzorkování","o":["přidá pixely","odebere pixely","změní jen rozměr v cm, pixely zůstanou","změní barevný režim"],"a":2,"w":"Resample vypnuté: 3000 px je při 300 ppi 25,4 cm, při 150 ppi 50,8 cm – stejné pixely."},
+      {"q":"Pro tisk uložíš soubor jako","o":["JPEG RGB 72 ppi","TIFF/JPEG 12 v CMYK 300 ppi","GIF","PNG-8"],"a":1,"w":"CMYK s profilem FOGRA39, 300 ppi při výsledné velikosti; pracovní PSD navíc."},
+      {"q":"Alt+klik na miniaturu masky","o":["masku smaže","zobrazí masku samotnou ve stupních šedi","masku vypne","načte masku jako výběr"],"a":1,"w":"Shift+klik masku vypne, Ctrl+klik načte jako výběr, Alt+klik zobrazí."},
+      {"q":"Alfa kanál je","o":["barevný kanál","uložený výběr / maska v panelu Kanály","vrstva úprav","filtr"],"a":1,"w":"Výběr › Uložit výběr vytvoří alfa kanál; maska vrstvy je dočasný alfa kanál."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l3-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy a videa</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="../videa.html#v-ps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>Videa: maskování vlasů, srsti, brýlí, oblečení</b><span>Krátké ukázky Vybrat a maskovat v praxi.</span></div></a>
+      <a class="link-card" href="../lekce/05-barevne-modely.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/></svg><div><b>Lekce 05: barevné modely</b><span>RGB, CMYK, kanály podrobně.</span></div></a>
+      <a class="link-card" href="../lekce/11-mockup.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 8h8v8H8z"/></svg><div><b>Lekce 11: mock-up a inteligentní objekty</b><span>Masky a inteligentní objekty v další otázce.</span></div></a>
+      <a class="link-card" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg><div><b>OneDrive: Vychytávky pro Photoshop</b><span>Plátno A3 pro tisk, filtry a styly vrstev, duplex.</span></div></a>
+    </div>
+  </div>
+</section>
+<div class="wrap"><nav class="pager" aria-label="Další a předchozí lekce"><a class="prev" href="../lekce/13-vektory-vzorky-symboly.html"><small>← Předchozí lekce</small><b>13 · Illustrator – vektorové objekty, vzorek a symbol</b></a><a class="next" href="../lekce/10-digitalni-malba.html"><small>Další lekce →</small><b>10 · Photoshop – digitální malba, štětce a stopy</b></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="../img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="../zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="../zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/interaktivni.js"></script>
+</body>
+</html>

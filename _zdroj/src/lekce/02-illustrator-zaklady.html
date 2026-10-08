@@ -1,0 +1,247 @@
+<!--META {"title": "02 · Adobe Illustrator – základní ovládání softwaru", "description": "Maturitní otázka 2: tři dokumenty v Illustratoru – statický webový banner, animovaný banner (GIF přes Photoshop) a tiskový dokument se spadávkou a ořezovými značkami; základní nástroje, plátna, panely Cestář a Zarovnání, export do správných formátů.", "lead": "Tři dokumenty, tři různé výstupy: <b>statický webový banner</b> do bitmapy pro web, <b>animovaný banner</b> s pohybem, který jde spustit v prohlížeči (GIF – animaci dokončíš ve Photoshopu), a <b>tiskový dokument</b> se spadávkou, ořezovými značkami a výstupním profilem. Všechny tři obsahují text, vektorové tvary a alespoň jednu bitmapu. V teorii: základní nástroje, práce s <b>plátny</b> a nejpoužívanější panely včetně <b>Cestáře</b> a <b>Zarovnání</b>.", "stitky": [["Illustrator", "3 dokumenty / 3 plátna"], ["Photoshop", "animovaný GIF"], ["Výstup", "PNG/JPEG, GIF, PDF/X"], ["Teorie", "nástroje, plátna, Cestář, Zarovnání"]], "subnav": [["l2-otazka", "Co se losuje"], ["l2-rozhrani", "Rozhraní a nástroje"], ["l2-platna", "Plátna"], ["l2-cestar", "Cestář a Zarovnání"], ["l2-bannery", "Bannery"], ["l2-tisk", "Tiskový dokument"], ["l2-postup", "Postup pro 30 minut"], ["l2-chyby", "Časté chyby"], ["l2-komise", "Otázky komise"], ["l2-kviz", "Kvíz"]]} -->
+<section class="section" id="l2-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Tři dokumenty: <b>statický webový banner</b>, <b>animovaný webový banner</b> a <b>tiskový dokument</b> se spadávkou a ořezovými značkami.</li>
+          <li>Každý povinně s <b>textem</b>, <b>vektorovými geometrickými objekty</b> a alespoň jedním <b>bitmapovým prvkem</b>.</li>
+          <li>Export: statický banner do <b>bitmapy pro web</b>; animovaný tak, aby zachoval animaci a šel spustit v prohlížeči (<b>GIF</b>, i s pomocí Photoshopu); tiskový s <b>výstupním profilem</b> tak, aby šel vytisknout a oříznout na spadávku.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>Illustrator + Photoshop</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Základní nástroje Illustratoru a jak jsi je v dokumentech použil.</li>
+          <li>Práce s <b>plátny</b> (artboards) – vysvětlit a prakticky předvést.</li>
+          <li>Nejpoužívanější panely včetně <b>Cestář</b> (Pathfinder) a <b>Zarovnání</b> (Align).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l2-rozhrani">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Základy</span><h2>Rozhraní, nástroje a panely</h2></div>
+      <p>Illustrator je vektorový editor: kreslíš objekty z cest (kotevní body + segmenty), každý má výplň a tah. Tohle musíš umět ukázat se zavřenýma očima.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <h3>Nejdůležitější nástroje (zkratky)</h3>
+        <div class="table-scroll"><table class="tech-table">
+          <thead><tr><th>Nástroj</th><th>Klávesa</th><th>K čemu</th></tr></thead>
+          <tbody>
+            <tr><th>Výběr</th><td><kbd>V</kbd></td><td>celé objekty, přesun, změna velikosti (Shift = proporce)</td></tr>
+            <tr><th>Přímý výběr</th><td><kbd>A</kbd></td><td>kotevní body a segmenty, úprava tvaru</td></tr>
+            <tr><th>Pero</th><td><kbd>P</kbd></td><td>kreslení cest; Shift = úhly po 45°; Alt mění táhla</td></tr>
+            <tr><th>Zakřivení</th><td><kbd>Shift</kbd>+<kbd>~</kbd></td><td>jednodušší kreslení křivek</td></tr>
+            <tr><th>Text</th><td><kbd>T</kbd></td><td>bodový text (klik), odstavcový (tažení), text na cestě</td></tr>
+            <tr><th>Obdélník / Elipsa / Mnohoúhelník / Hvězda</th><td><kbd>M</kbd> / <kbd>L</kbd></td><td>geometrické objekty; klik = dialog s rozměry; Shift = čtverec/kruh; Alt = od středu</td></tr>
+            <tr><th>Otočení / Měřítko / Zrcadlení</th><td><kbd>R</kbd> / <kbd>S</kbd> / <kbd>O</kbd></td><td>transformace; Alt+klik = dialog + Kopírovat</td></tr>
+            <tr><th>Tvarovač</th><td><kbd>Shift</kbd>+<kbd>M</kbd></td><td>slučování a odečítání tažením – rychlý Cestář</td></tr>
+            <tr><th>Kapátko</th><td><kbd>I</kbd></td><td>přebírá vzhled (výplň, tah, text)</td></tr>
+            <tr><th>Přechod</th><td><kbd>G</kbd></td><td>úprava směru přechodové výplně</td></tr>
+            <tr><th>Plátno</th><td><kbd>Shift</kbd>+<kbd>O</kbd></td><td>úprava, přidání a přejmenování pláten</td></tr>
+            <tr><th>Lupa / Ruka</th><td><kbd>Z</kbd> / <kbd>H</kbd> (mezerník)</td><td>navigace; <kbd>Ctrl</kbd>+<kbd>0</kbd> přizpůsobit plátno</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="card">
+        <h3>Nejpoužívanější panely (Okna)</h3>
+        <ul>
+          <li><b>Vlastnosti</b> – kontextový panel; <b>Vrstvy</b> (<kbd>F7</kbd>) – pořadí, zamykání, skrývání.</li>
+          <li><b>Barvy</b>, <b>Vzorník</b> (swatches, globální barvy, přímé Pantone), <b>Přechod</b>, <b>Průhlednost</b> (krytí, režimy prolnutí, masky krytí).</li>
+          <li><b>Tah</b> – tloušťka, zakončení, spoje, čárkování, šipky, profil tahu.</li>
+          <li><b>Zarovnání</b> (<kbd>Shift</kbd>+<kbd>F7</kbd>) a <b>Cestář</b> (<kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>F9</kbd>) – níže.</li>
+          <li><b>Transformovat</b> – X, Y, Š, V, úhel; <b>Plátna</b> – seznam pláten.</li>
+          <li><b>Znaky</b> / <b>Odstavec</b> / <b>Glyfy</b> – typografie; <b>Styly grafiky</b>, <b>Vzhled</b> (více výplní a tahů na jednom objektu, efekty).</li>
+          <li><b>Symboly</b>, <b>Štětce</b>, <b>Knihovny CC</b>; <b>Vazby</b> (vložené × propojené bitmapy); <b>Exportovat pro obrazovky</b>, <b>Exportovat zdroje</b>.</li>
+        </ul>
+        <h3>Výplň a tah</h3>
+        <p>Každý objekt má <b>výplň</b> (fill) a <b>tah</b> (stroke); přepínání <kbd>X</kbd>, prohození <kbd>Shift</kbd>+<kbd>X</kbd>, bez barvy <kbd>/</kbd>. Tah má tloušťku v pt, zarovnání na střed/dovnitř/ven cesty, zakončení (useknuté, oblé, přesahující), spoje (ostrý, oblý, zkosený). <span class="menu-path">Objekt <i>›</i> Cesta <i>›</i> Obrysová cesta</span> převede tah na výplň (pro tisk a řezání).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l2-platna">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Plátna</span><h2>Práce s plátny (artboards)</h2></div>
+      <p>Plátno je tisknutelná/exportovatelná oblast. V jednom dokumentu jich může být až 1000 – tři zadané dokumenty klidně udělej jako tři plátna v jednom souboru (a vysvětli to).</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Vytvoření</h3><p>Při založení dokumentu: počet pláten, rozestup, mřížka. Později nástroj <b>Plátno</b> (<kbd>Shift</kbd>+<kbd>O</kbd>): tažením nové, <kbd>Alt</kbd>+tažení kopie i s obsahem, <kbd>Enter</kbd> = Volby plátna (název, rozměr, orientace). Panel <b>Plátna</b>: nové, duplikovat, přeuspořádat, přejmenovat (názvy se stanou názvy exportovaných souborů!).</p></div>
+      <div class="card"><h3>Vlastnosti</h3><p>Každé plátno má vlastní rozměr a orientaci, ale <b>celý dokument má jeden barevný režim</b> (RGB nebo CMYK – Soubor › Barevný režim dokumentu) a <b>jedny efekty rastru</b> (72 pro web, 300 pro tisk). Proto čistě tiskový dokument v CMYK a bannery v RGB jsou často lepší ve dvou souborech. Spadávka se nastavuje pro dokument (všechna plátna stejně).</p></div>
+      <div class="card"><h3>Export a tisk po plátnech</h3><p><b>Exportovat pro obrazovky</b>: každé plátno = soubor, formát PNG/JPEG/SVG/PDF, měřítko (1×, 2× pro Retina), přípona. <b>Uložit jako PDF</b>: rozsah pláten → vícestránkové PDF. <b>Tisk</b>: Rozsah pláten, nebo Ignorovat plátna. <b>Exportovat jako</b> s volbou <em>Použít plátna</em>. Zkratka pro přepínání pláten: panel Plátna nebo <kbd>Shift</kbd>+<kbd>PgUp/PgDn</kbd>.</p></div>
+      <div class="card"><h3>K čemu v praxi</h3><p>Varianty loga, sada ikon, bannery v různých rozměrech, stránky letáku, líc a rub vizitky, mock-up více obrazovek. Objekty mimo plátno se netisknou ani neexportují (ale zůstávají v souboru) – odkládací plocha.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l2-cestar">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Panely</span><h2>Cestář a Zarovnání</h2></div>
+      <p>Dva panely, bez kterých se neobejde žádné logo ani ikona. Klikni na operaci a sleduj, co se stane s kruhem a obdélníkem.</p>
+    </div>
+    <div class="lab" data-widget="cestar">
+      <div class="lab-head"><h3>Cestář (Pathfinder)</h3><span class="hint">Režimy tvaru a cestáře</span></div>
+      <div class="lab-body wide">
+        <div class="lab-stage pad"><svg viewBox="0 0 640 300" aria-label="Kruh a obdélník po aplikaci operace Cestáře"></svg></div>
+        <div class="lab-ctrl">
+          <div class="seg" data-op style="flex-wrap:wrap"><button type="button" data-v="none" aria-pressed="true">Výchozí</button><button type="button" data-v="unite">Sjednotit</button><button type="button" data-v="minus">Odečíst přední</button><button type="button" data-v="intersect">Průsečík</button><button type="button" data-v="exclude">Vyloučit</button><button type="button" data-v="divide">Rozdělit</button></div>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+    <div class="cols-2" style="margin-top:22px">
+      <div class="card">
+        <h3>Cestář – přehled</h3>
+        <p><b>Režimy tvaru</b> (horní řada): <b>Sjednotit</b> (Unite – jeden tvar), <b>Odečíst přední</b> (Minus Front – přední objekt vyřízne díru do zadního), <b>Průsečík</b> (Intersect – zůstane jen překryv), <b>Vyloučit</b> (Exclude – překryv zmizí). S <kbd>Alt</kbd> vznikne <b>složený tvar</b> (živý, editovatelný); tlačítko <em>Rozdělit</em> (Expand) ho zafixuje.</p>
+        <p><b>Cestáře</b> (dolní řada): <b>Rozdělit</b> (Divide – všechny překryvy na samostatné plochy), <b>Oříznout</b> (Trim – odstraní skryté části), <b>Sloučit</b> (Merge – jako Trim + sloučí stejné barvy), <b>Oříznout podle horního</b> (Crop), <b>Obrys</b> (Outline – jen čáry), <b>Odečíst zadní</b> (Minus Back). Výsledek je skupina – rozdělíš <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>G</kbd>.</p>
+        <p>Alternativy: nástroj <b>Tvarovač</b> (Shift+M – táhni přes oblasti = sjednotit, Alt+táhni = odečíst), <b>Složené cesty</b> (Objekt › Složená cesta › Vytvořit, Ctrl+8 – díra v objektu bez Cestáře, např. písmeno O).</p>
+      </div>
+      <div class="card">
+        <h3>Zarovnání (Align)</h3>
+        <p><b>Zarovnat objekty</b>: vlevo / na střed vodorovně / vpravo; nahoru / na střed svisle / dolů. <b>Rozmístit objekty</b>: podle středů nebo hran rovnoměrně. <b>Rozmístit mezery</b>: stejné mezery mezi objekty (zadat hodnotu).</p>
+        <p><b>Zarovnat na</b>: <em>Výběr</em> (vůči sobě), <em>Klíčový objekt</em> (klikni na objekt, ke kterému se ostatní zarovnají – zobrazí se modrý obrys), <em>Plátno</em> (např. logo přesně na střed banneru). Volba <em>Zarovnat na obrysy</em> počítá s tloušťkou tahu.</p>
+        <p>V praxi: vybrat vše na banneru → Zarovnat na plátno → vodorovně na střed. Ikony v řadě: Rozmístit mezery vodorovně 10 px. Inteligentní vodítka (<kbd>Ctrl</kbd>+<kbd>U</kbd>) pomáhají při tažení.</p>
+        <p class="tip"><b>Komise se ptá</b>„K čemu je klíčový objekt?“ – <em>Určuje, který objekt se nehýbe a k němu se ostatní zarovnají.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l2-bannery">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Dokumenty 1 a 2</span><h2>Statický a animovaný webový banner</h2></div>
+      <p>Banner = reklamní plocha na webu v pixelech, RGB, malý soubor. Illustrator udělá grafiku; animaci složíš ve Photoshopu (nebo v Illustratoru nakreslíš snímky na plátnech).</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Dokument pro web</h3><p><span class="menu-path">Soubor <i>›</i> Nový <i>›</i> Web</span>: pixely, RGB, efekty rastru 72 ppi, <b>Zarovnat na obrazové body</b> (ostré hrany). Běžné rozměry (IAB): <b>728 × 90</b> leaderboard, <b>300 × 250</b> medium rectangle, <b>160 × 600</b> skyscraper, <b>320 × 50</b> mobil, <b>970 × 250</b> billboard, <b>250 × 250</b> čtverec. Obsah: logo, titulek, výzva k akci (tlačítko), produkt (bitmapa).</p></div>
+      <div class="card"><h3>Statický banner – export</h3><p>Soubor › Exportovat › <b>Exportovat pro obrazovky</b> (Alt+Ctrl+E): plátno, formát <b>PNG</b> (průhlednost, ostrá grafika) nebo <b>JPEG</b> (fotografie, menší soubor), měřítko 1× (+ 2× pro Retina), <em>Vyhlazení: optimalizované pro text</em>. Starší cesta: Exportovat › Uložit pro web (starší) – náhled velikosti, GIF/JPEG/PNG. Cíl: pod 150 kB.</p></div>
+      <div class="card"><h3>Animovaný banner – Illustrator</h3><p>Nakresli <b>snímky animace na plátnech</b> (3–6 pláten stejného rozměru: text se posouvá, tlačítko pulzuje, produkt přijíždí). Panel Plátna: duplikuj plátno a posuň objekty. Export pro obrazovky → PNG všech pláten (soubor_1.png, _2.png…).</p></div>
+      <div class="card"><h3>Animovaný banner – Photoshop → GIF</h3><p>Soubor › Skripty › <b>Načíst soubory do zásobníku</b> (PNG snímky jako vrstvy). <span class="menu-path">Okna <i>›</i> Časová osa</span> › <b>Vytvořit animaci snímků</b> › nabídka panelu › <em>Vytvořit snímky z vrstev</em>. Nastav zpoždění (0,5 s), opakování <em>Stále</em>; <em>Doplnit</em> (Tween) přidá mezisnímky. <span class="menu-path">Soubor <i>›</i> Exportovat <i>›</i> Uložit pro web (starší)</span> › <b>GIF</b>, 256 barev, dithering, Možnosti opakování: Stále. Otevřít v prohlížeči – animace běží. (Alternativa: Illustrator › Exportovat › SVG s CSS animací, nebo Animate.)</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l2-tisk">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Dokument 3</span><h2>Tiskový dokument se spadávkou a značkami</h2></div>
+      <p>Leták, plakát nebo vizitka – jedno; důležité je správné založení a export PDF/X. Postup je ve sdíleném návodu <em>Uložení dokumentu se spadávkou v Illustratoru</em>.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <ol class="steps">
+          <li><span class="menu-path">Soubor <i>›</i> Nový <i>›</i> Tisk</span>: mm, <b>CMYK</b>, efekty rastru <b>300 ppi</b>, formát (A5), <b>spadávka 3 mm</b> na všech stranách (červený rámeček kolem plátna).</li>
+          <li>Pozadí a objekty na kraji <b>dotáhni až na červenou hranici spadávky</b>. Text 5–10 mm od okraje.</li>
+          <li>Bitmapa: <span class="menu-path">Soubor <i>›</i> Umístit</span> – CMYK, 300 ppi; <em>Vložit</em> (embed) pro jistotu, nebo nechat propojenou a sbalit (Soubor › Sbalit). Panel Vazby ukáže ppi a prostor.</li>
+          <li>Barvy z Vzorníku v CMYK (ne RGB vzorky – kontrola: Vzorník › zobrazit CMYK). Text 100 % K.</li>
+          <li>Text pro jistotu na křivky (<kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>O</kbd>) – na kopii; nebo nech text a PDF písma vloží.</li>
+          <li><span class="menu-path">Soubor <i>›</i> Uložit jako <i>›</i> Adobe PDF</span>: přednastavení <b>PDF/X-1a:2001</b>; <em>Značky a spadávky</em>: <b>Ořezové značky</b> + <b>Použít spadávku dokumentu</b>; <em>Výstup</em>: Převést do cílového, Coated FOGRA39, profil výstupního záměru FOGRA39; vypnout <em>Zachovat možnosti úprav</em>.</li>
+          <li>Otevři PDF: vidíš značky a 3 mm spadávky – tiskárna podle značek ořízne.</li>
+        </ol>
+      </div>
+      <div class="screens">
+        <figure><img src="../img/navody/ai-spadavka-1.webp" alt="Illustrator: Nový dokument – nastavení spadávky 3 mm" width="1400" height="788"><figcaption>Nový dokument: spadávka minimálně 3 mm po všech stranách.</figcaption></figure>
+        <figure><img src="../img/navody/ai-spadavka-2.webp" alt="Illustrator: barevné pozadí dotažené na hranici spadávky" width="1400" height="788"><figcaption>Pozadí dotažené na červený okraj spadávky.</figcaption></figure>
+        <figure><img src="../img/navody/ai-spadavka-3.webp" alt="Illustrator: Uložit jako Adobe PDF" width="1400" height="788"><figcaption>Uložit jako → Adobe PDF.</figcaption></figure>
+        <figure><img src="../img/navody/ai-spadavka-6.webp" alt="Výsledné PDF/X s ořezovými značkami a spadávkou" width="1400" height="788"><figcaption>Výsledek: PDF/X s ořezovými značkami; spadávka po oříznutí odpadne.</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l2-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Web dokument</b><p>Nový › Web, RGB, 72 ppi, plátno 1: 728 × 90 (nebo 300 × 250). Panel Plátna: přidej plátna 2–5 stejného rozměru pro animaci.</p></div></li>
+        <li><span class="t">3–10<small>min</small></span><div><b>Statický banner</b><p>Pozadí (obdélník, přechod), logo z tvarů přes Cestář (Sjednotit/Odečíst), text (titulek + CTA tlačítko), umístěná bitmapa (produkt). Zarovnání na plátno. Export pro obrazovky → PNG 1× (a JPEG pro srovnání velikosti).</p></div></li>
+        <li><span class="t">10–15<small>min</small></span><div><b>Snímky animace</b><p>Alt+tažení plátna 4× (kopie s obsahem); na každém posuň text / změň velikost tlačítka. Export pro obrazovky → všechna plátna PNG.</p></div></li>
+        <li><span class="t">15–20<small>min</small></span><div><b>GIF ve Photoshopu</b><p>Skripty › Načíst soubory do zásobníku; Časová osa › animace snímků › Vytvořit snímky z vrstev; 0,4 s; Stále. Uložit pro web › GIF. Otevřít v prohlížeči.</p></div></li>
+        <li><span class="t">20–27<small>min</small></span><div><b>Tiskový dokument</b><p>Nový › Tisk, A5, CMYK, 300 ppi, spadávka 3. Pozadí na spadávku, text, tvary (hvězda, kruh s tahem), umístěná CMYK bitmapa. Uložit jako PDF/X-1a + značky + spadávka + FOGRA39.</p></div></li>
+        <li><span class="t">27–30<small>min</small></span><div><b>Kontrola</b><p>Tři výstupy otevřené: PNG v prohlížeči, GIF v prohlížeči (běží), PDF v Acrobatu (značky). Ulož AI soubory. Připrav Cestář a Zarovnání k předvedení.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Co předvést v teorii</h3>
+          <ul>
+            <li><b>Plátna</b>: panel Plátna, nástroj Shift+O, Alt+tažení kopie, přejmenování, export po plátnech – ukaž na svém souboru s bannery.</li>
+            <li><b>Cestář</b>: dva tvary → Sjednotit; Alt+Odečíst = složený tvar → Rozdělit.</li>
+            <li><b>Zarovnání</b>: klíčový objekt, zarovnat na plátno, rozmístit mezery.</li>
+            <li><b>Nástroje</b>: Výběr vs. Přímý výběr na jednom tvaru; Pero – tři body; Text; Měřítko s Alt (dialog, kopie).</li>
+            <li><b>Rozdíl web × tisk</b>: RGB/px/72 vs. CMYK/mm/300/spadávka; export PNG vs. PDF/X.</li>
+          </ul>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l2-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Tiskový dokument v RGB nebo bez spadávky; pozadí končí na hraně plátna – po oříznutí bílý proužek.</div>
+      <div class="tip chyba"><b>Chyba</b>Banner v mm a CMYK, export bez „Zarovnat na obrazové body“ – rozmazané hrany.</div>
+      <div class="tip chyba"><b>Chyba</b>PDF uložené s možnostmi úprav Illustratoru a bez standardu PDF/X – velký soubor, bez výstupního záměru.</div>
+      <div class="tip chyba"><b>Chyba</b>Bitmapa jen propojená (ne vložená) a soubor odevzdaný bez ní – chybějící vazba.</div>
+      <div class="tip chyba"><b>Chyba</b>„Animovaný banner“ = jeden obrázek s rozmazaným pohybem; GIF bez nastavení opakování.</div>
+      <div class="tip chyba"><b>Chyba</b>Záměna Cestář (operace s tvary) a Zarovnání (poloha); neznalost klíčového objektu.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l2-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Co je plátno a jak s ním pracuješ?</summary><div class="odp">Plátno (artboard) je tisknutelná a exportovatelná oblast dokumentu; dokument může mít až 1000 pláten různých rozměrů (ale jeden barevný režim). Vytvářím je při založení nebo nástrojem Plátno (Shift+O), Alt+tažením kopíruji i s obsahem, v panelu Plátna přejmenovávám a řadím. Exportuji po plátnech (Exportovat pro obrazovky, PDF s rozsahem pláten). Používám je pro varianty bannerů a snímky animace.</div></details></li>
+      <li><details><summary>Vysvětli panel Cestář.</summary><div class="odp">Operace s překrývajícími se tvary: režimy tvaru Sjednotit, Odečíst přední, Průsečík, Vyloučit (s Alt vzniká editovatelný složený tvar; Rozdělit ho zafixuje) a cestáře Rozdělit, Oříznout, Sloučit, Oříznout podle horního, Obrys, Odečíst zadní. Používá se při tvorbě log a ikon z geometrických tvarů.</div></details></li>
+      <li><details><summary>Vysvětli panel Zarovnání.</summary><div class="odp">Zarovnání objektů k sobě, ke klíčovému objektu nebo k plátnu (vlevo, střed, vpravo, nahoru, střed, dolů); rozmístění objektů podle středů/hran; rozmístění mezer na zadanou hodnotu. Klíčový objekt (klik ve výběru) zůstává na místě. Volba Zarovnat na obrysy respektuje tloušťku tahu.</div></details></li>
+      <li><details><summary>Jaký je rozdíl mezi nástroji Výběr a Přímý výběr?</summary><div class="odp">Výběr (V) vybírá celé objekty a skupiny – přesun, změna velikosti, otočení. Přímý výběr (A) vybírá jednotlivé kotevní body a segmenty cesty – mění tvar objektu; v skupině vybere jeden objekt. Skupinový výběr vybírá objekt v zanořených skupinách.</div></details></li>
+      <li><details><summary>Jak jsi vytvořil animovaný banner a proč v Photoshopu?</summary><div class="odp">Snímky jsem nakreslil v Illustratoru na plátnech a vyexportoval do PNG; ve Photoshopu jsem je načetl do zásobníku, v Časové ose vytvořil animaci snímků, nastavil zpoždění a opakování Stále a uložil pro web jako GIF. Illustrator sám GIF animaci neumí; GIF je formát s 256 barvami, který přehraje každý prohlížeč.</div></details></li>
+      <li><details><summary>Čím se liší webový a tiskový dokument v Illustratoru?</summary><div class="odp">Web: pixely, RGB, efekty rastru 72 ppi, zarovnání na pixely, export PNG/JPEG/SVG. Tisk: mm, CMYK, efekty rastru 300 ppi, spadávka 3 mm, barvy ze vzorníku CMYK, bitmapy 300 ppi, export PDF/X-1a s ořezovými značkami, spadávkou a výstupním profilem Coated FOGRA39.</div></details></li>
+      <li><details><summary>Jak vložíš bitmapu a jaký je rozdíl mezi propojením a vložením?</summary><div class="odp">Soubor › Umístit. Propojená (link) – soubor zůstává venku, AI je menší, změny v souboru se promítnou, ale musí se přibalit (Sbalit). Vložená (embed) – data jsou v AI, soubor větší, ale samostatný. Panel Vazby ukáže stav, ppi a barevný prostor.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l2-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz2" data-quiz='[
+      {"q":"Nástroj Plátno má zkratku","o":["Shift+O","Shift+M","Shift+P","Ctrl+O"],"a":0,"w":"Shift+O; Shift+M je Tvarovač."},
+      {"q":"Operace Cestáře, při které přední objekt vyřízne díru do zadního, je","o":["Sjednotit","Odečíst přední","Průsečík","Vyloučit"],"a":1,"w":"Minus Front. Průsečík nechá jen překryv, Vyloučit překryv odstraní."},
+      {"q":"Klíčový objekt v panelu Zarovnání","o":["se zarovná ke všem ostatním","zůstane na místě a ostatní se zarovnají k němu","se smaže","určuje plátno"],"a":1,"w":"Klikneš na něj ve výběru (modrý obrys) – stane se referencí."},
+      {"q":"Správné založení webového banneru je","o":["mm, CMYK, 300 ppi","px, RGB, 72 ppi, zarovnat na obrazové body","px, CMYK, 72 ppi","mm, RGB, 300 ppi"],"a":1,"w":"Web = pixely, RGB, efekty rastru 72 ppi, ostré hrany díky zarovnání na pixely."},
+      {"q":"Animovaný GIF z pláten Illustratoru vytvoříš","o":["přímo exportem z Illustratoru","exportem PNG snímků a animací snímků ve Photoshopu","uložením jako PDF","Cestářem"],"a":1,"w":"Photoshop: Načíst soubory do zásobníku → Časová osa → Vytvořit snímky z vrstev → Uložit pro web GIF."},
+      {"q":"V jednom dokumentu Illustratoru","o":["může mít každé plátno jiný barevný režim","mají všechna plátna stejný barevný režim","nesmí být víc než 10 pláten","musí být plátna stejně velká"],"a":1,"w":"Barevný režim (RGB/CMYK) a efekty rastru jsou vlastnosti dokumentu; plátna mohou mít různé rozměry."},
+      {"q":"Aby po oříznutí nezůstal bílý proužek, musí","o":["být text u kraje","pozadí sahat až na hranici spadávky","být plátno větší","být použit RGB"],"a":1,"w":"Spadávka 3 mm + objekty dotažené na červenou hranici; v PDF ořezové značky a spadávka z dokumentu."},
+      {"q":"Tah převedeš na výplň (obrys) příkazem","o":["Objekt › Cesta › Obrysová cesta","Objekt › Rozdělit","Text › Vytvořit obrysy","Efekt › Stylizovat"],"a":0,"w":"Outline Stroke – pro řezání, gravírování a jistotu v tisku."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l2-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy a videa</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="../videa.html#v-ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>Videonávody pro Illustrator</b><span>Zkratky, zaoblení bodů, deformace, textury, loga – krátké ukázky na OneDrive.</span></div></a>
+      <a class="link-card" href="{{enviro_anim}}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z" fill="currentColor"/></svg><div><b>Grafika pro klima: animace pro sociální sítě</b><span>Animovaná grafika ze 3. ročníku.</span></div></a>
+      <a class="link-card" href="{{L9}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg><div><b>Lekce 09: tvorba loga</b><span>Cestář a geometrie v praxi.</span></div></a>
+      <a class="link-card" href="{{L23}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M8 5v14"/></svg><div><b>Lekce 23: animovaný banner a video</b><span>GIF a MP4 podrobně.</span></div></a>
+    </div>
+  </div>
+</section>

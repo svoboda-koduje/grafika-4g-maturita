@@ -1,0 +1,247 @@
+<!--META {"title": "01 · Formáty grafických souborů", "description": "Maturitní otázka 1: bitmapové a vektorové formáty (JPEG, PNG, GIF, TIFF, BMP, RAW, PSD, SVG, AI, EPS, PDF), jejich vlastnosti, komprese, průhlednost, barevné režimy, rozlišení; které formáty jsou pro tisk a které pro web; porovnání editorů.", "lead": "Základní otázka celé grafiky. Musíš umět v libovolném 2D editoru <b>vytvořit a uložit</b> jednoduché soubory v nejběžnějších bitmapových i vektorových formátech tak, aby na nich šlo vysvětlit <b>výplně a tahy, rozlišení, barevné režimy a průhlednost</b> – a pak u každého formátu říct, k čemu je, jestli je pro tisk nebo pro web, jaké má výhody a nevýhody, a ve kterém editoru se dělá nejsnáz.", "stitky": [["Editor", "Illustrator, Photoshop, případně InDesign"], ["Výstup", "sada souborů v různých formátech"], ["Teorie", "bitmapa × vektor, komprese, barevné režimy"], ["Porovnání", "editory a jejich omezení"]], "subnav": [["l1-otazka", "Co se losuje"], ["l1-princip", "Bitmapa × vektor"], ["l1-bitmapove", "Bitmapové formáty"], ["l1-vektorove", "Vektorové formáty"], ["l1-tisk-web", "Tisk × web"], ["l1-editory", "Editory"], ["l1-postup", "Postup pro 30 minut"], ["l1-chyby", "Časté chyby"], ["l1-komise", "Otázky komise"], ["l1-kviz", "Kvíz"]]} -->
+<section class="section" id="l1-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>V 2D editoru postupně <b>vytvořit jednoduché soubory</b> v nejběžnějších <b>vektorových a bitmapových</b> formátech a <b>uložit/exportovat</b> je do cílových formátů.</li>
+          <li>V každém souboru takové prvky, na kterých jde vysvětlit charakteristiku formátu: <b>výplně a tahy</b>, <b>rozlišení</b>, <b>barevné režimy</b>, <b>kanály průhlednosti</b>…</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>Illustrator + Photoshop</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Popsat vektorové a bitmapové formáty, jejich praktické využití; které jsou <b>pro tisk</b> a které <b>pro web</b> a jiné netiskové použití; vzájemné výhody a nevýhody.</li>
+          <li>Jaké <b>editory</b> jsi použil a jaké mají přednosti či omezení při tvorbě souborů exportovatelných do daných formátů.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l1-princip">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Princip</span><h2>Bitmapa × vektor</h2></div>
+      <p>Bitmapa je mřížka barevných bodů (pixelů). Vektor je matematický popis tvarů (body, křivky, výplně, tahy). Rozdíl je nejvíc vidět při zvětšení.</p>
+    </div>
+    <div class="lab" data-widget="bitvek">
+      <div class="lab-head"><h3>Zvětšení bitmapy a vektoru</h3><span class="hint">Stejný tvar, dvě reprezentace</span></div>
+      <div class="lab-body wide">
+        <div class="lab-stage pad"><svg viewBox="0 0 640 300" aria-label="Vlevo bitmapová verze tvaru, vpravo vektorová, při různém zvětšení"></svg></div>
+        <div class="lab-ctrl">
+          <label><span>Zvětšení <output>2</output>×</span><input type="range" min="1" max="16" step="1" value="2" data-zoom></label>
+          <label><span>Rozlišení bitmapy <output>24</output> px</span><input type="range" min="8" max="64" step="4" value="24" data-res></label>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+    <div class="cols-2" style="margin-top:22px">
+      <div class="card">
+        <h3>Bitmapová (rastrová) grafika</h3>
+        <ul>
+          <li>Obraz = <b>mřížka pixelů</b>, každý má barvu. Vlastnosti: <b>rozměr v px</b>, <b>rozlišení</b> (ppi – kolik px na palec při tisku), <b>barevná hloubka</b> (8 bit/kanál = 16,7 mil. barev; 1 bit = ČB; 8 bit indexovaná = 256 barev), <b>barevný režim</b> (RGB, CMYK, stupně šedi, Lab, indexovaná), <b>kanály</b> (R, G, B + alfa pro průhlednost).</li>
+          <li>Hodí se pro <b>fotografie</b>, malbu, textury, vše s plynulými přechody.</li>
+          <li>Nevýhoda: při zvětšení ztrácí kvalitu (pixelizace, rozmazání), velké soubory, rozlišení se musí plánovat předem (300 ppi tisk, 72–150 ppi obrazovka).</li>
+          <li>Editory: Photoshop, GIMP, Affinity Photo, Krita, malířské programy.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Vektorová grafika</h3>
+        <ul>
+          <li>Obraz = <b>objekty</b> popsané matematicky: kotevní body, Bézierovy křivky, <b>výplň</b> (fill) a <b>tah</b> (stroke) s barvou, tloušťkou, zakončením. Text zůstává textem (nebo se převede na křivky).</li>
+          <li>Hodí se pro <b>loga, ikony, písmo, schémata, ilustrace s plochami</b>, tiskoviny – vše, co se bude zvětšovat nebo řezat/gravírovat.</li>
+          <li>Výhody: <b>libovolné zvětšení bez ztráty</b>, malé soubory, snadné úpravy, nezávislost na rozlišení. Nevýhoda: neumí fotorealismus; složité ilustrace jsou náročné na výpočet.</li>
+          <li>Editory: Illustrator, Inkscape, Affinity Designer, CorelDRAW; InDesign (sazba, kombinuje obojí).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l1-bitmapove">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Přehled</span><h2>Bitmapové formáty</h2></div>
+      <p>Co si u každého formátu pamatovat: komprese (ztrátová × bezztrátová), barvy, průhlednost, vrstvy, animace, tisk × web.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="tech-table">
+        <thead><tr><th>Formát</th><th>Komprese</th><th>Barvy / režimy</th><th>Průhlednost</th><th>Hlavní použití</th><th>Tisk?</th></tr></thead>
+        <tbody>
+          <tr><th>JPEG (.jpg)</th><td><b>ztrátová</b> (DCT); nastavitelná kvalita; každé uložení kazí obraz</td><td>24 bit RGB, CMYK, šedá; <b>ne indexované</b></td><td><b>ne</b></td><td>fotografie na webu, foťáky; obrázky s přechody; <b>ne</b> pro ostré hrany a text (artefakty, Gibbsův jev)</td><td class="ok-ico">ano – při kvalitě 10–12, CMYK, 300 ppi</td></tr>
+          <tr><th>PNG</th><td>bezztrátová (LZ77/Deflate)</td><td>PNG-8 (256 barev), PNG-24 (16,7 mil.), až 48 bit</td><td><b>ano</b> – alfa kanál (8/16 bit, i poloprůhlednost)</td><td>web: loga, ikony, screenshoty, grafika s průhledností; kancelář</td><td class="no-ico">ne – jen RGB, bez CMYK; do sazby PSD/TIFF</td></tr>
+          <tr><th>GIF</th><td>bezztrátová LZW</td><td>indexovaná paleta max. <b>256 barev</b></td><td>ano – 1 bit (bez poloprůhlednosti)</td><td><b>animace</b>, jednoduchá grafika s plochami, bannery; prokládané načítání</td><td class="no-ico">ne</td></tr>
+          <tr><th>TIFF</th><td>bezztrátová (LZW, ZIP) nebo žádná; i JPEG</td><td>RGB, CMYK, Lab, šedá, 8/16 bit; vrstvy, alfa</td><td>ano (alfa kanál)</td><td><b>tisk, DTP, archivace, skenování</b>; univerzální výměnný formát</td><td class="ok-ico">ano – standard pro tisk</td></tr>
+          <tr><th>PSD</th><td>bezztrátová (RLE)</td><td>vše; vrstvy, masky, inteligentní objekty, kanály, cesty</td><td>ano</td><td>pracovní formát Photoshopu; <b>do InDesignu s průhledností</b> (místo PNG)</td><td class="ok-ico">ano – přímo do sazby</td></tr>
+          <tr><th>BMP</th><td>bez komprese (nebo RLE)</td><td>1–24 bit</td><td>ne</td><td>Windows, starší systémy; velké soubory</td><td>technicky ano, v praxi ne</td></tr>
+          <tr><th>RAW (CR2, NEF, DNG…)</th><td>bezztrátová, „surová“ data snímače</td><td>12–14 bit/kanál, lineární</td><td>ne</td><td>digitální negativ z fotoaparátu; vyvolání v Camera Raw/Lightroom (expozice, vyvážení bílé)</td><td class="no-ico">ne – nejdřív vyvolat do TIFF/JPEG</td></tr>
+          <tr><th>WebP / AVIF / HEIC</th><td>ztrátová i bezztrátová, moderní</td><td>RGB, alfa, animace</td><td>ano</td><td>moderní web (menší než JPEG/PNG), mobily (HEIC)</td><td class="no-ico">ne</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tip" style="margin-top:18px"><b>Pamatuj</b>Fotka na web = JPEG (nebo WebP). Logo/ikona na web = SVG nebo PNG s průhledností. Animace = GIF (nebo video). Fotka do tisku = TIFF/JPEG max. kvalita, CMYK, 300 ppi. Průhlednost do tisku = PSD/TIFF s alfa, <b>ne PNG</b>.</p>
+  </div>
+</section>
+
+<section class="section" id="l1-vektorove">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Přehled</span><h2>Vektorové formáty</h2></div>
+      <p>Vektorové formáty často mohou obsahovat i bitmapy (vložené nebo připojené) – jsou to „kontejnery“.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="tech-table">
+        <thead><tr><th>Formát</th><th>Co obsahuje</th><th>Použití</th><th>Tisk?</th></tr></thead>
+        <tbody>
+          <tr><th>AI</th><td>nativní formát Illustratoru: objekty, vrstvy, plátna, efekty, symboly, vložené bitmapy; uvnitř PDF kompatibilní část</td><td>pracovní soubor; umístění do InDesignu a Photoshopu</td><td class="ok-ico">ano (přes InDesign/PDF)</td></tr>
+          <tr><th>EPS</th><td>Encapsulated PostScript: vektory, bitmapy, separace, vložená písma; dnes zastaralý, nahrazený PDF; bez průhledností (zploští)</td><td>starší tiskárny, loga, čárové kódy, výměna s jinými programy</td><td class="ok-ico">ano – po kontrole (CMYK, text v křivkách)</td></tr>
+          <tr><th>PDF</th><td>Portable Document Format (Adobe, ISO 32000): text, písma, vektory, bitmapy, průhlednosti, interaktivita; vypadá všude stejně</td><td><b>univerzální výměnný a tiskový formát</b>: PDF/X tisk, PDF/A archiv, interaktivní PDF, web</td><td class="ok-ico">ano – PDF/X je tiskový standard</td></tr>
+          <tr><th>SVG</th><td>Scalable Vector Graphics: XML text popisující tvary, text, přechody, filtry; lze animovat CSS/JS</td><td><b>web</b> (loga, ikony, grafy), výměna, laserové řezání</td><td class="no-ico">ne přímo – jen RGB; pro tisk převést do PDF/EPS v CMYK</td></tr>
+          <tr><th>DXF / DWG</th><td>CAD výkresy (AutoCAD)</td><td>technika, řezací plotry, strojírenství</td><td>—</td></tr>
+          <tr><th>CDR</th><td>nativní CorelDRAW</td><td>reklamní výroba, řezaná reklama</td><td>ano (v Corelu)</td></tr>
+          <tr><th>INDD</th><td>nativní InDesign: sazba, styly, vazby na obrázky (Links) – obrázky nejsou uvnitř!</td><td>pracovní soubor sazby; předává se sbalený (Soubor › Sbalit)</td><td class="ok-ico">ano – exportem do PDF/X</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l1-tisk-web">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Rozhodování</span><h2>Který formát pro tisk a který pro web</h2></div>
+      <p>Tisk chce CMYK, 300 ppi, bezztrátovost nebo maximální kvalitu, vektory kde to jde, spadávku. Web chce RGB (sRGB), malé soubory, 72–150 ppi (rozhoduje počet pixelů), průhlednost a rychlé načítání.</p>
+    </div>
+    <div class="cols-2">
+      <div class="lab stack" data-widget="formatvyber">
+        <div class="lab-head"><h3>Poradce formátu</h3><span class="hint">Vyber situaci</span></div>
+        <div class="lab-body">
+          <div class="lab-ctrl">
+            <label><span>Co ukládáš?</span><select data-co><option value="foto">Fotografie</option><option value="logo">Logo / ikona / schéma</option><option value="pruhled">Grafika s průhledným pozadím</option><option value="anim">Krátká animace</option><option value="sazba">Celá tiskovina (sazba)</option><option value="malba">Digitální malba s vrstvami</option><option value="archiv">Dokument k dlouhodobé archivaci</option></select></label>
+            <label><span>Kam?</span><div class="seg" data-kam><button type="button" data-v="tisk" aria-pressed="true">Tisk</button><button type="button" data-v="web">Web / obrazovka</button><button type="button" data-v="prace">Další úpravy</button></div></label>
+            <div class="readout" data-out></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Parametry, které rozhodují</h3>
+        <ul>
+          <li><b>Barevný režim</b>: tisk CMYK (profil Coated FOGRA39), obrazovka RGB (sRGB). RGB obrázek v tiskovém PDF se převede nekontrolovaně.</li>
+          <li><b>Rozlišení</b>: tisk 300 ppi při výsledné velikosti (efektivní ppi); obrazovka – rozhoduje počet pixelů (1920 px na šířku pro Full HD), údaj „72 dpi“ je jen metadata.</li>
+          <li><b>Komprese</b>: ztrátová (JPEG) zmenšuje soubor a kazí obraz; bezztrátová (PNG, TIFF LZW, ZIP) zachová vše. Pracovní soubory vždy bezztrátově.</li>
+          <li><b>Průhlednost</b>: alfa kanál (PNG-24, TIFF, PSD), 1bitová (GIF, PNG-8), v PDF průhlednost objektů; JPEG žádná.</li>
+          <li><b>Vrstvy a editovatelnost</b>: PSD, AI, INDD – pracovní; TIFF umí vrstvy, ale nedoporučuje se je tam nechávat pro tisk.</li>
+          <li><b>Písma</b>: v PDF vložená (embedded), v EPS/SVG převést na křivky; AI uchová text.</li>
+          <li><b>Metadata a profily</b>: ICC profil vložený v souboru (sRGB, FOGRA39) říká, jak barvy interpretovat.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l1-editory">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Porovnání</span><h2>Editory a jejich přednosti a omezení</h2></div>
+      <p>Komise se ptá, proč jsi ten který soubor udělal právě v tom programu. Odpověď: každý editor má „domácí“ formáty.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Adobe Illustrator (vektor)</h3><p><b>Umí snadno</b>: AI, EPS, PDF, SVG; export bitmap PNG/JPEG/GIF (Exportovat pro obrazovky, Uložit pro web – s velikostí a rozlišením, průhledné PNG); více pláten = více souborů najednou.<br><b>Omezení</b>: bitmapy jen vkládá (needituje pixely); export JPEG z vektoru vždy rastrování; při uložení SVG pozor na text (převést na obrysy) a efekty (rastrují se).</p></div>
+      <div class="card"><h3>Adobe Photoshop (bitmapa)</h3><p><b>Umí snadno</b>: PSD, TIFF, JPEG, PNG, GIF (i animovaný – časová osa), BMP, RAW přes Camera Raw; CMYK převody; režimy a kanály; Uložit pro web (starší).<br><b>Omezení</b>: vektor umí jen omezeně (tvary, text, cesty); „Photoshop PDF“ a EPS obsahují rastr; SVG export jen z tvarových vrstev; nelze zvětšovat bez ztráty.</p></div>
+      <div class="card"><h3>Adobe InDesign (sazba)</h3><p><b>Umí snadno</b>: INDD, PDF (tiskové PDF/X, interaktivní), ePub, JPEG/PNG export stránek, IDML pro starší verze; kombinuje vektor, bitmapy a text.<br><b>Omezení</b>: needituje obsah obrázků ani křivky vložených vektorů (jen rámečky a jednoduché tvary); bitmapy jsou vazby (Links), ne obsah souboru – nutno sbalit.</p></div>
+      <div class="card"><h3>Další</h3><p><b>GIMP, Krita, Affinity Photo</b> – bitmapové alternativy; <b>Inkscape, Affinity Designer, CorelDRAW</b> – vektorové; <b>Acrobat Pro</b> – úpravy PDF, předtisková kontrola, převod do PDF/X a PDF/A; <b>Camera Raw / Lightroom</b> – RAW.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l1-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div><p>Cíl: sada 6–8 souborů, na každém jde něco ukázat. Nedělej složitou grafiku – stačí tvary s výplní, tahem, přechodem, text a jeden průhledný prvek.</p></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Složka a plán</b><p>Založ složku <em>formaty</em>. Napiš si seznam: AI, EPS, PDF, SVG | PSD, TIFF, JPEG, PNG-24, PNG-8/GIF (+ animovaný GIF, pokud stihneš).</p></div></li>
+        <li><span class="t">3–10<small>min</small></span><div><b>Illustrator – vektorový zdroj</b><p>Nový dokument Tisk, A5, CMYK, 300 ppi efekty. Nakresli: obdélník s výplní a tahem 3 pt, kruh s přechodem, text, čáru s čárkovaným tahem, hvězdu s poloprůhlednou výplní. Ulož <b>AI</b>. Uložit jako <b>EPS</b> (text v křivkách – kopie), <b>PDF</b> (tisk, PDF/X-1a). Exportovat <b>SVG</b> (text: převést na obrysy nebo SVG písmo).</p></div></li>
+        <li><span class="t">10–14<small>min</small></span><div><b>Illustrator – bitmapové exporty</b><p>Exportovat pro obrazovky: <b>PNG</b> (průhledné pozadí, 2× měřítko) a <b>JPEG</b> (bílé pozadí, kvalita 80 %) v RGB – ukážeš rozdíl: PNG má průhlednost, JPEG ne, JPEG má artefakty na hranách.</p></div></li>
+        <li><span class="t">14–22<small>min</small></span><div><b>Photoshop – bitmapový zdroj</b><p>Nový dokument 150 × 100 mm, 300 ppi, RGB. Vrstvy: přechod, tvar, text, vymaskovaný obrázek s průhledným pozadím. Ulož <b>PSD</b>. Pak: <b>TIFF</b> (převést do CMYK, LZW, bez vrstev – tisk), <b>JPEG</b> (kvalita 12, CMYK pro tisk; a kopie RGB kvalita 6 pro web – ukaž rozdíl velikosti), <b>PNG-24</b> s průhledností (RGB), <b>GIF</b>/PNG-8 (Exportovat › Uložit pro web, 256 barev – ukaž posterizaci přechodu).</p></div></li>
+        <li><span class="t">22–26<small>min</small></span><div><b>Volitelně: animovaný GIF</b><p>Okna › Časová osa › Vytvořit animaci snímků, 3 snímky (posun tvaru), 0,3 s, smyčka. Uložit pro web › GIF.</p></div></li>
+        <li><span class="t">26–30<small>min</small></span><div><b>Kontrola</b><p>V Průzkumníku zobraz velikosti souborů (seřaď podle velikosti – skvělý argument pro obhajobu). Otevři PNG a JPEG v prohlížeči, SVG v prohlížeči, PDF v Acrobatu (Náhled výstupu – CMYK). Připrav si pořadí výkladu: vektor → bitmapa → tisk/web.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Co u každého souboru říct</h3>
+          <p>„Tento soubor je <b>(formát)</b>, vytvořil jsem ho v <b>(editor)</b>, je <b>(vektor/bitmapa)</b>, barevný režim <b>(RGB/CMYK)</b>, rozlišení <b>(px / ppi)</b>, komprese <b>(ztrátová/bezztrátová/žádná)</b>, průhlednost <b>(ano/ne)</b>, velikost <b>(kB)</b>. Hodí se pro <b>(tisk/web)</b>, protože …“</p>
+          <h3>Rozdíly, které ukážeš prstem</h3>
+          <ul>
+            <li>SVG/PDF při zvětšení ostré; PNG/JPEG se rozpadne na pixely.</li>
+            <li>JPEG kolem textu „šum“ (artefakty); PNG čisté hrany.</li>
+            <li>PNG-8/GIF: přechod rozpadlý na pruhy (256 barev).</li>
+            <li>TIFF CMYK: tmavší zelená a modrá než v RGB (gamut).</li>
+            <li>Velikosti: BMP/TIFF bez komprese největší, JPEG nejmenší, SVG nejmenší vůbec.</li>
+          </ul>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l1-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>PNG vložený do tiskové sazby („má průhlednost“). Správně PSD/TIFF s alfa kanálem – PNG je jen RGB.</div>
+      <div class="tip chyba"><b>Chyba</b>Logo dodané jako JPEG – bílé pozadí, artefakty, nejde zvětšit. Logo je vždy vektor (AI/PDF/SVG).</div>
+      <div class="tip chyba"><b>Chyba</b>„Nastavil jsem 300 dpi“ u obrázku 800 px – v tisku má 7 cm. Rozhoduje počet pixelů, ne číslo v metadatech.</div>
+      <div class="tip chyba"><b>Chyba</b>Opakované ukládání JPEG při úpravách – každé uložení degraduje. Pracovat v PSD/TIFF, JPEG až na konec.</div>
+      <div class="tip chyba"><b>Chyba</b>SVG s textem bez převodu na křivky – na počítači bez fontu se změní písmo.</div>
+      <div class="tip chyba"><b>Chyba</b>Záměna pojmů: dpi (tiskové body) × ppi (pixely obrazu); komprese × rozlišení; formát × barevný režim.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l1-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Jaký je rozdíl mezi bitmapovou a vektorovou grafikou?</summary><div class="odp">Bitmapa je mřížka pixelů s barvou – má pevný rozměr v px a při zvětšení ztrácí kvalitu; hodí se pro fotografie. Vektor je matematický popis objektů (body, křivky, výplně, tahy) – zvětšuje se bez ztráty, soubory jsou malé; hodí se pro loga, písmo, schémata.</div></details></li>
+      <li><details><summary>Které formáty jsou vhodné pro tisk a proč?</summary><div class="odp">PDF/X (vektor + bitmapy, vložená písma, CMYK, spadávka), TIFF a JPEG v maximální kvalitě (CMYK, 300 ppi), PSD do sazby, EPS pro starší postupy. Tisk vyžaduje CMYK, dostatečné rozlišení a bezztrátovost nebo minimální kompresi.</div></details></li>
+      <li><details><summary>Které formáty jsou pro web a proč?</summary><div class="odp">JPEG pro fotografie (malý soubor), PNG pro grafiku s průhledností a ostrými hranami, SVG pro loga a ikony (vektor, škálovatelné), GIF pro jednoduché animace, WebP/AVIF jako moderní náhrada. Web chce RGB a malé soubory; rozhoduje počet pixelů, ne ppi.</div></details></li>
+      <li><details><summary>Co je ztrátová a bezztrátová komprese?</summary><div class="odp">Ztrátová (JPEG) zahazuje informaci, kterou oko nevnímá – menší soubor, ale artefakty a degradace při opakovaném uložení. Bezztrátová (PNG, TIFF LZW/ZIP, GIF LZW) zmenší soubor bez ztráty dat. Pracovní soubory vždy bezztrátově.</div></details></li>
+      <li><details><summary>Proč se PNG nehodí do tisku, když má průhlednost?</summary><div class="odp">PNG je pouze RGB, bez CMYK a bez barevného profilu pro tisk; tiskový RIP ho převede nekontrolovaně. Průhlednost do sazby zajistí PSD nebo TIFF s alfa kanálem v CMYK.</div></details></li>
+      <li><details><summary>Jaký je rozdíl mezi dpi a ppi?</summary><div class="odp">ppi = pixely obrazu na palec (rozlišení bitmapy v tisku), dpi = tiskové body na palec (jemnost tiskového zařízení, např. 2400 dpi). V praxi se oba pojmy zaměňují; pro tisk fotografií potřebujeme 300 ppi při výsledné velikosti.</div></details></li>
+      <li><details><summary>Jaké editory jsi použil a jaká mají omezení?</summary><div class="odp">Illustrator pro vektorové formáty (AI, EPS, PDF, SVG) a jejich bitmapové exporty – neumí editovat pixely. Photoshop pro bitmapy (PSD, TIFF, JPEG, PNG, GIF, animace) a převody režimů – vektor jen omezeně, nelze bezztrátově zvětšit. InDesign sazbu a PDF/X – obrázky jen jako vazby.</div></details></li>
+      <li><details><summary>Co je alfa kanál?</summary><div class="odp">Čtvrtý kanál bitmapy (vedle R, G, B), který pro každý pixel ukládá průhlednost 0–255. Mají ho PNG-24, TIFF, PSD; GIF a PNG-8 jen 1bitovou průhlednost (pixel je buď viditelný, nebo ne); JPEG žádnou.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l1-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz1" data-quiz='[
+      {"q":"Který formát má ztrátovou kompresi?","o":["PNG","TIFF","JPEG","GIF"],"a":2,"w":"JPEG (DCT komprese) – každé uložení obraz degraduje. PNG, TIFF (LZW/ZIP) a GIF (LZW) jsou bezztrátové."},
+      {"q":"Do tiskové sazby s průhledným pozadím vložíš","o":["PNG","PSD nebo TIFF s alfa kanálem","JPEG","GIF"],"a":1,"w":"PNG je jen RGB – není tiskový formát. PSD/TIFF umí CMYK i alfa kanál."},
+      {"q":"GIF zobrazí nejvýše","o":["16 barev","256 barev","65 536 barev","16,7 milionu barev"],"a":1,"w":"Indexovaná paleta 8 bitů = 256 barev; proto se přechody rozpadají na pruhy."},
+      {"q":"Vektorový formát pro web je","o":["SVG","EPS","TIFF","PSD"],"a":0,"w":"SVG je XML s vektory, prohlížeče ho vykreslují nativně a škáluje bez ztráty."},
+      {"q":"Formát EPS je dnes","o":["standard pro web","zastaralý, nahrazený PDF","jen pro bitmapy","nativní formát Photoshopu"],"a":1,"w":"EPS (PostScript) nahradilo PDF; používá se ještě pro loga a čárové kódy ve starších postupech."},
+      {"q":"RAW je","o":["bezztrátový formát surových dat ze snímače fotoaparátu","komprimovaný formát pro web","vektorový formát","formát pro tisk"],"a":0,"w":"Digitální negativ – vyvolává se v Camera Raw/Lightroom do TIFF/JPEG; do tisku přímo nejde."},
+      {"q":"U bitmapy pro tisk rozhoduje","o":["číslo dpi v metadatech","počet pixelů vzhledem k výsledné velikosti (efektivní ppi ≥ 300)","formát souboru","velikost v kB"],"a":1,"w":"800 px vytiskneš kvalitně jen na 6,8 cm; údaj „300 dpi“ sám o sobě pixely nepřidá."},
+      {"q":"Který formát umí vrstvy, masky a inteligentní objekty?","o":["JPEG","PNG","PSD","SVG"],"a":2,"w":"PSD je pracovní formát Photoshopu; TIFF umí vrstvy také, ale do tisku se dává zploštělý."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l1-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="{{L5}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/></svg><div><b>Lekce 05: barevné modely</b><span>RGB, CMYK, Lab a gamut – proč se barvy v tisku mění.</span></div></a>
+      <a class="link-card" href="{{L22}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><div><b>Lekce 22: typy PDF</b><span>PDF/X, PDF/A, interaktivní, optimalizované.</span></div></a>
+      <a class="link-card" href="../kontrola.html#k-obrazky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><div><b>Kontrola: obrázky a barvy</b><span>Efektivní ppi, CMYK, formáty do sazby.</span></div></a>
+      <a class="link-card" href="{{onedrive}}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg><div><b>OneDrive: Grafické formáty.pdf</b><span>Přehled formátů ze sdílené složky.</span></div></a>
+    </div>
+  </div>
+</section>

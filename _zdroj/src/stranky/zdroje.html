@@ -1,0 +1,112 @@
+<!--META {"title": "Zdroje a skripty", "description": "Skripty pro InDesign (TypoSkript, dotazy GREP, aktualizace stylů), generátory čárových kódů, Typografický manuál, ČSN 01 6910, doporučená literatura a zdroje obrazových ukázek.", "stitek_b": "K MATURITĚ", "stitek_s": "Zdroje a skripty"} -->
+<section class="stage-head stage-indesign">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Zdroje</span><span class="blok">· skripty, normy, literatura</span></p>
+    <h1>Zdroje a skripty</h1>
+    <p class="lead">Všechno, co potřebuješ nainstalovat nebo mít po ruce. Soubory jsou na školním OneDrive ve složce <a href="{{onedrive}}" target="_blank" rel="noopener">Výukové soubory 4.G</a>; sem dávám jen odkazy a návod, kam co patří.</p>
+    <nav class="subnav" aria-label="Obsah"><a href="#z-skripty">Skripty pro InDesign</a><a href="#z-kody">Čárové kódy</a><a href="#z-manual">Typografický manuál a normy</a><a href="#z-online">Online nástroje</a><a href="#z-literatura">Literatura</a><a href="#obrazky">Zdroje obrázků</a></nav>
+  </div>
+</section>
+
+<section class="section" id="z-skripty">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">InDesign</span><h2>Skripty a vyhledávací dotazy</h2></div><p>Tři pomocníci, které u maturity smíš použít, pokud je máš nainstalované – ale musíš vědět, co dělají, a umět to vysvětlit.</p></div>
+    <div class="cols-2">
+      <div>
+        <div class="card" style="margin-bottom:16px">
+          <h3>TypoSkript</h3>
+          <p>Skript pro panel <span class="menu-path">Okna <i>›</i> Pomůcky <i>›</i> Skripty</span>. Opraví v celém dokumentu najednou nejčastější typografické chyby: pevné mezery za jednopísmennými předložkami a spojkami, české uvozovky „“, pomlčky, trojtečku, násobné mezery, mezery před interpunkcí.</p>
+          <ol class="steps">
+            <li>Stáhni aktuální verzi z <a href="https://typoskript.cz/aktualni-verze/" target="_blank" rel="noopener">typoskript.cz</a> (nebo z <a href="{{typoskript}}" target="_blank" rel="noopener">OneDrive</a>) a rozbal.</li>
+            <li>Stiskni <kbd>Win</kbd>+<kbd>R</kbd> a napiš <code>%appdata%\Adobe\InDesign</code> (skryté složky musí být zobrazené).</li>
+            <li>Soubor skriptu vlož do <code>Version 21.0\cs_CZ\Scripts\Scripts Panel</code>.</li>
+            <li>V InDesignu otevři panel Skripty, dvojklikem skript spusť, zaškrtni volby a ulož si je.</li>
+          </ol>
+        </div>
+        <div class="card" style="margin-bottom:16px">
+          <h3>Vyhledávací dotaz GREP – odentrované řádky</h3>
+          <p>Dotaz pro <kbd>Ctrl</kbd>+<kbd>F</kbd>, který najde konce odstavců uprostřed vět (malé písmeno za koncem odstavce). Vlož ho do <code>AppData\Roaming\Adobe\InDesign\Version 21.0\cs_CZ\Find-Change Queries\GREP</code>. <a href="{{skript_grep}}" target="_blank" rel="noopener">Stáhnout z OneDrive</a>.</p>
+          <p class="note">Ruční varianta: v GREP hledej <code>(\l)\r(\l)</code> a nahraď <code>$1 $2</code> – malé písmeno, konec odstavce, malé písmeno → mezera.</p>
+        </div>
+        <div class="card">
+          <h3>Skript – aktualizace lokálních změn do stylů</h3>
+          <p>Když v textu ručně přepíšeš parametr stylu (u názvu stylu se objeví „+“), skript lokální změny přenese zpět do odstavcového stylu. <a href="{{skript_styly}}" target="_blank" rel="noopener">Stáhnout z OneDrive</a>. Ručně: pravým tlačítkem na styl › <em>Předefinovat styl</em>.</p>
+        </div>
+      </div>
+      <div class="screens">
+        <figure><img src="img/navody/typoskript-5.webp" alt="Průzkumník: skrytá složka AppData, cesta ke složce Scripts Panel" width="1287" height="910"><figcaption>Cesta k panelu skriptů – složka AppData je skrytá, zapni zobrazení skrytých složek.</figcaption></figure>
+        <figure><img src="img/navody/typoskript-6.webp" alt="Dialog TypoSkriptu s volbami oprav" width="1287" height="910"><figcaption>Volby TypoSkriptu – zaškrtni a ulož, aby se opravy aplikovaly stejně v každém dokumentu.</figcaption></figure>
+        <figure><img src="img/navody/hledat-nahradit.webp" alt="Hledat a nahradit: mezera + a → pevná mezera" width="1400" height="788"><figcaption><b>Hledat a nahradit</b> bez skriptu: hledej „mezera a“, nahraď „mezera a + nedělitelná mezera“ (Prázdné místo › Nedělitelná mezera).</figcaption></figure>
+        <figure><img src="img/navody/ctrlf-opravy.webp" alt="Nejčastější automatické opravy pomocí Ctrl+F" width="542" height="542"><figcaption>Nejčastější automatické opravy přes <kbd>Ctrl</kbd>+<kbd>F</kbd>: spojovník → pomlčka, dvojité mezery, uvozovky.</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="z-kody">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">ISBN · ISSN · EAN</span><h2>Čárové kódy</h2></div><p>Na zadní obálku knihy patří ISBN, na periodikum ISSN. Vždy vektorově, v CMYK (100 % K).</p></div>
+    <div class="cols-2">
+      <div class="card">
+        <ol class="steps">
+          <li>Otevři <a href="https://products.aspose.app/barcode/generate#result" target="_blank" rel="noopener">online generátor čárových kódů</a>, zvol typ EAN-13 / ISBN a vlož číslo.</li>
+          <li>Stáhni jako <b>SVG</b> (vektor).</li>
+          <li>V Illustratoru otevři, barevný režim dokumentu přepni na CMYK, zkontroluj, že je kód 100 % černá, a ulož jako <b>EPS</b> (nebo rovnou vlož SVG do InDesignu).</li>
+          <li>Umísti na zadní obálku. Oficiální velikost EAN-13 je <b>37,3 × 25,9 mm</b>; povolené zmenšení na 80 % a zvětšení až na 200 %. Kolem kódu nech klidovou zónu, nikdy ho nedeformuj.</li>
+        </ol>
+        <p class="note">ISSN pro cvičení: 1214-4029 (funkční výchozí kód). Vlastní ISBN se přiděluje přes Národní agenturu ISBN (Národní knihovna ČR); vydání knihy s ISBN má zákonné povinnosti – povinné výtisky do 30 dnů (<a href="{{L14}}#l14-tiraz">lekce 14</a>).</p>
+      </div>
+      <figure class="svg-fig" style="margin:0"><img src="img/navody/isbn-generator.webp" alt="Online generátor čárového kódu: vložení ISBN, výběr formátu SVG" data-zoom width="1110" height="680" style="border-radius:6px"><figcaption>Generátor: vlož ISBN, zvol SVG, stáhni; v Illustratoru převeď do CMYK a ulož jako EPS.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="z-manual">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Normy a příručky</span><h2>Typografický manuál a ČSN 01 6910</h2></div><p>Dva dokumenty, které jsou ve 4. ročníku stěžejním studijním podkladem. Oba jsou ve sdílené složce.</p></div>
+    <div class="cols">
+      <div class="card"><h3>Typografický manuál (Vladimír Beran a kol.)</h3><p>Kapitoly Písmo (znaky, písmová osnova, kresba znaku, měření písma, typ, rodina, klasifikace), Sazba (mezislovní mezera, vyplňování řádků, proklad, odstavec, zarovnaný a nezarovnaný text, dělení slov, znaménka, čísla a zkratky, hladká a smíšená sazba, korekturní znaménka), Návrh (typografické pravítko, rukopis, počítání znaků, sazební obrazec, formáty papíru) a Dodatky (výroba písma, papír, tiskové techniky, dokončovací výroba). K otázkám <a href="{{L6}}">06</a>, <a href="{{L14}}">14</a>, <a href="{{L15}}">15</a>.</p></div>
+      <div class="card"><h3>ČSN 01 6910 – Úprava dokumentů zpracovaných textovými procesory</h3><p>Česká státní norma pro úpravu písemností: mezery, interpunkce, pomlčky a spojovníky, čísla, data, jednotky, zkratky, adresy, členění textu. Komise se u otázky 04 ptá, jak musí být odstavcové styly nastavené, aby vyhovovaly „typografickým a gramatickým pravidlům a ČSN“.</p></div>
+      <div class="card"><h3>Grafický design (Zdeno Kolesár) a Logotvorba</h3><p>Teorie grafického designu, vizuální komunikace, značka. K otázkám <a href="{{L7}}">07</a>, <a href="{{L9}}">09</a>, <a href="{{L8}}">08</a>.</p></div>
+      <div class="card"><h3>Vlastnosti dobrého loga (Jan Tippman, UGD)</h3><p>Definice logo / logotyp / piktogram / grafická značka, členění dle vizuálního motivu a doby užívání, identifikační, sémantická, estetická a technologická kritéria – přesně v rozsahu otázek 07 a 09. <a href="https://www.unie-grafickeho-designu.cz/" target="_blank" rel="noopener">unie-grafickeho-designu.cz</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="z-online">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Web</span><h2>Online nástroje a hry</h2></div><p>Volně dostupné zdroje, které se hodí k procvičování.</p></div>
+    <div class="links-grid">
+      <a class="link-card" href="https://type.method.ac/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19L12 5l7 14M8 14h8"/></svg><div><b>KERNING – online hra (KernType)</b><span>Posouvej písmena, dokud není vyrovnání správné. Nejlepší trénink na otázku 06.</span></div></a>
+      <a class="link-card" href="https://www.polygraficketahaky.cz/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><div><b>Polygrafické taháky</b><span>Přehledně: formáty, vazby, spadávky, barvy, rastr, papír – k otázkám 14, 15, 22.</span></div></a>
+      <a class="link-card" href="https://www.montax-imposer.cz/o-archove-montazi" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16"/><path d="M12 4v16M3 12h18"/></svg><div><b>O archové montáži (Montax Imposer)</b><span>Typy archové montáže s obrázky – k otázce 14.</span></div></a>
+      <a class="link-card" href="https://stockindesign.com/20-free-must-have-scripts-for-indesign-users/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg><div><b>20 skriptů pro InDesign zdarma</b><span>Skriptování v InDesignu – další užitečné skripty.</span></div></a>
+      <a class="link-card" href="https://www.canva.com/learn/hidden-meanings-behind-50-worlds-recognizable-logos/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg><div><b>Skryté významy ve známých logách</b><span>Nápaditost při tvorbě loga – k otázce 09.</span></div></a>
+      <a class="link-card" href="https://www.cucocreative.co.uk/articles/its-2018-is-it-time-for-responsive-logos/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/></svg><div><b>Responzivní loga</b><span>Jak se logo zjednodušuje pro malé velikosti – k otázkám 07 a 09.</span></div></a>
+      <a class="link-card" href="https://logooftheday.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 6 6.5.5-5 4 1.5 6.5L12 16.5 6.5 20 8 13.5l-5-4 6.5-.5z"/></svg><div><b>Logo of the Day</b><span>Přehled nových log – inspirace a analýza.</span></div></a>
+      <div class="link-card"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg><div><b>Návrh charakteru postavy</b><span>Character design – k otázce 10 (herní postava ze tří pohledů): <a href="https://99designs.com/blog/art-illustration/character-design/" target="_blank" rel="noopener">průvodce 99designs</a>, <a href="https://www.creativebloq.com/character-design/tips-5132643" target="_blank" rel="noopener">27 tipů (Creative Bloq)</a>.</span></div></div>
+      <a class="link-card" href="https://czechtongue.cz/category/citanka/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4zM20 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg><div><b>Čítanka – czechtongue.cz</b><span>Web o češtině (pravopis, jazykové zajímavosti); rubrika Čítanka nabízí ukázky z české literatury – delší souvislý text na cvičnou sazbu knihy nebo periodika.</span></div></a>
+      <a class="link-card" href="https://www.cesky-jazyk.cz/citanka/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4zM20 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg><div><b>Čítanka – cesky-jazyk.cz</b><span>Ukázky z děl českých i světových autorů řazené podle období a autorů – vyber si text k otázkám 4, 14 a 21. Zdroj uveď v tiráži.</span></div></a>
+      <a class="link-card" href="https://driftbooks.eu/kde-stahovat-ceske-elektronicke-knihy-legalne-a-zdarma/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4zM20 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg><div><b>Legální e-knihy zdarma</b><span>Přehled, kde stáhnout celé české knihy jako volná díla (Městská knihovna v Praze, Gutenberg…) – celý text pro sazbu knihy nebo e-knihy (otázka 12).</span></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="z-literatura">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Knihy</span><h2>Doporučená literatura pro Grafiku a Grafickou tvorbu</h2></div><p>Většinu najdeš ve školní nebo krajské knihovně.</p></div>
+    <div class="cols">
+      <div class="card"><h3>Typografie a design</h3><ul><li>Vladimír Beran a kol.: <b>Typografický manuál</b></li><li>Zdeno Kolesár: <b>Grafický design</b></li><li>David Dabner a kol.: <b>Škola grafického designu</b></li><li>Matthew Healey: <b>Design loga</b></li></ul></div>
+      <div class="card"><h3>Kresba a anatomie</h3><ul><li>Andrew Loomis: <b>Učebnice kresby</b></li><li>Martin Ševčík: <b>Portrét a hlava</b></li><li>Vicenç Ballestar: <b>Kresba</b></li><li>Steve Huston: <b>Kresba postavy</b></li><li>Jan Štípek: <b>Základy nauky o stavbách</b> (lidské proporce)</li></ul></div>
+      <div class="card"><h3>Dějiny umění a architektury</h3><ul><li>Bohumír Mráz: <b>Dějiny výtvarné kultury 1–4</b></li><li>Carol Davidson Cragoe: <b>Abeceda architektury</b></li><li>Larry Gonick: <b>Komiksová historie světa 1–5</b></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="obrazky">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Licence</span><h2>Zdroje obrazových ukázek</h2></div><p>Obrázky výtvarných děl v lekcích 17–20 pocházejí z Wikimedia Commons – volná díla (public domain) a díla pod otevřenými licencemi CC BY / CC BY-SA, u kterých je uveden autor fotografie a licence přímo v popisku. Stejná sada je použitá na webu <a href="{{dejiny}}" target="_blank" rel="noopener">Časová osa dějin umění</a>, kde je i úplný seznam zdrojů. Screenshoty z programů Adobe jsou vlastní výukové materiály školy; ilustrace a schémata na tomto webu jsou kreslené v SVG přímo pro něj.</p></div>
+    <details class="licence-wrap"><summary>Seznam použitých obrazových ukázek (lekce 17–20) s autorem a licencí</summary>{{LICENCE}}</details>
+    <p class="note">Při vlastní práci (periodikum, kniha, obaly) platí totéž: používej vlastní fotografie, nebo zdroje s licencí, která tisk dovoluje, a zdroj uveď v tiráži. Vyhledávání na Wikimedia Commons: filtr <em>Licence</em>, u každého souboru záložka s podmínkami užití.</p>
+  </div>
+</section>

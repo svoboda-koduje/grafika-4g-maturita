@@ -1,0 +1,234 @@
+<!--META {"title": "11 · Adobe Photoshop – transformační nástroje, vytvoření mock-upu", "description": "Maturitní otázka 11: mock-up ve Photoshopu s inteligentním objektem jako vyměnitelnou plochou, maskami vrstev, transformacemi (pokřivení, perspektiva) a polostínem; princip inteligentních objektů, struktura mock-upu, uložení pro tisk a pro web.", "lead": "Z připravených obrázků postavíš <b>soubor typu mock-up</b>: vrstvy a masky nastavené tak, aby existovala <b>plocha pro libovolný obrázek</b>, který se v mock-upu prezentuje – přes <b>inteligentní objekt</b>. Výsledek má působit <b>prostorově</b>, s mírným <b>polostínem</b> zasahujícím zhruba do poloviny plochy. V teorii: princip inteligentních objektů, struktura mock-upu, masky, a jak uložit pro tisk a jak pro web.", "stitky": [["Photoshop", "inteligentní objekty, transformace"], ["Podklady", "sada obrázků"], ["Efekt", "prostor + polostín"], ["Výstup", "PSD mock-up + tisk/web"]], "subnav": [["l11-otazka", "Co se losuje"], ["l11-smart", "Inteligentní objekty"], ["l11-transformace", "Transformační nástroje"], ["l11-lab", "Laboratoř mock-upu"], ["l11-struktura", "Struktura mock-upu"], ["l11-stin", "Polostín a světlo"], ["l11-ulozeni", "Uložení pro tisk a web"], ["l11-postup", "Postup pro 30 minut"], ["l11-chyby", "Časté chyby"], ["l11-komise", "Otázky komise"], ["l11-kviz", "Kvíz"]]} -->
+<section class="section" id="l11-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Z připravených obrázků jeden soubor <b>typu mock-up</b>: vrstvy a <b>masky vrstev</b> tak, aby existovala plocha pro aplikaci libovolného obrázku.</li>
+          <li>Použít <b>inteligentní objekty</b> (smart objects).</li>
+          <li>Prezentace má vytvořit <b>dojem prostorové plochy</b> s mírným <b>polostínem</b> zasahujícím přibližně do poloviny plochy.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>Photoshop</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Princip práce s <b>inteligentními objekty</b>.</li>
+          <li>Na vlastním dokumentu: <b>strukturu rozvržení mock-upu</b>, využití <b>masek vrstev</b>, inteligentních objektů a dalších prvků.</li>
+          <li>Jak uložit mock-up <b>pro tisk</b> a jak jinak <b>pro web</b>.</li>
+        </ul>
+        <p class="note">Vlastní nahrávka <em>Vytvoření jednoduchého mock-up souboru pomocí inteligentního objektu</em> je na <a href="../videa.html#v-ps">stránce videí</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l11-smart">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Teorie</span><h2>Inteligentní objekty (smart objects)</h2></div>
+      <p>Inteligentní objekt je <b>kontejner</b>, který uchovává původní data (bitmapu, vektor, RAW, jiný PSD) a zobrazuje je ve vrstvě. Transformace a filtry se aplikují nedestruktivně – originál zůstává.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Jak vzniká</h3><ul><li><span class="menu-path">Soubor <i>›</i> Umístit vložené</span> (Place Embedded) – data uvnitř PSD; <span class="menu-path">Umístit propojené</span> – odkaz na soubor (změna souboru = aktualizace).</li><li>Pravý klik na vrstvu › <b>Převést na inteligentní objekt</b> (i více vrstev najednou → jeden objekt).</li><li>Přetažení z Illustratoru = vektorový inteligentní objekt (upravuje se v Illustratoru).</li><li>Otevření RAW → inteligentní objekt Camera Raw.</li></ul></div>
+      <div class="card"><h3>Co umí</h3><ul><li><b>Nedestruktivní transformace</b>: zmenši a zase zvětši bez ztráty (do původního rozlišení); pokřivení, perspektiva, otočení – kdykoli změnitelné (Ctrl+T ukáže původní rámeček).</li><li><b>Inteligentní filtry</b>: Rozostření, Zostření, Camera Raw… s maskou a možností úpravy parametrů.</li><li><b>Úprava obsahu</b>: dvojklik na miniaturu → otevře se obsah (.psb) v novém okně; uložíš (Ctrl+S) → všechny instance se aktualizují. <b>To je princip mock-upu.</b></li><li><b>Instance</b>: Ctrl+J duplikuje propojenou instanci (změna obsahu se promítne do všech); pravý klik › <em>Nový inteligentní objekt kopírováním</em> = nezávislá kopie.</li><li><b>Nahradit obsah</b>: pravý klik › Nahradit obsah – vyměníš obrázek za jiný soubor.</li></ul></div>
+      <div class="card"><h3>Omezení</h3><ul><li>Nelze přímo malovat ani retušovat do inteligentního objektu – jen do jeho obsahu nebo přes masku/vrstvu nad ním. <em>Rastrovat vrstvu</em> objekt zruší.</li><li>Větší soubor (uchovává originál).</li><li>Transformace Pokřivit a Perspektiva fungují, ale Loutkové pokřivení a některé filtry omezeně (nebo přes inteligentní filtr).</li><li>Panel <b>Vlastnosti</b> ukazuje typ (vložený/propojený), rozlišení a tlačítka Převést na propojený / Vložit.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l11-transformace">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Nástroje</span><h2>Transformační nástroje</h2></div>
+      <p><kbd>Ctrl</kbd>+<kbd>T</kbd> = Libovolná transformace. Pravý klik uvnitř rámečku nabídne všechny režimy. Na inteligentním objektu jsou všechny vratné.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="tech-table">
+        <thead><tr><th>Transformace</th><th>Jak</th><th>Použití v mock-upu</th></tr></thead>
+        <tbody>
+          <tr><th>Měřítko</th><td>tažení za úchyt; Shift přepíná proporce (od CC 2019 drží proporce bez Shiftu); Alt od středu</td><td>přizpůsobit obrázek ploše</td></tr>
+          <tr><th>Otočení</th><td>kurzor vně rámečku; Shift po 15°; vstup úhlu v pruhu voleb</td><td>natočení plochy</td></tr>
+          <tr><th>Zkosení (Skew)</th><td>Ctrl+Shift+tažení za střed hrany</td><td>rovnoběžné naklonění</td></tr>
+          <tr><th>Deformace (Distort)</th><td>Ctrl+tažení za roh – každý roh nezávisle</td><td><b>nejčastější pro mock-up</b>: čtyři rohy na čtyři rohy plochy (obrazovka, papír, cedule)</td></tr>
+          <tr><th>Perspektiva</th><td>Ctrl+Alt+Shift+tažení za roh – symetrické sbíhání</td><td>plocha v perspektivě (deska v prostoru)</td></tr>
+          <tr><th>Pokřivit (Warp)</th><td>tlačítko v pruhu voleb; mřížka 3×3 / vlastní; předvolby (oblouk, vlajka, válec…)</td><td>hrnek, láhev, tričko, vlající plátno, zvlněný papír</td></tr>
+          <tr><th>Loutkové pokřivení</th><td>Úpravy › Loutkové pokřivení – špendlíky</td><td>ohýbání tvarů (ne pro inteligentní objekt přímo)</td></tr>
+          <tr><th>Perspektivní pokřivení</th><td>Úpravy › Perspektivní pokřivení – roviny</td><td>změna perspektivy fotografie podkladu</td></tr>
+          <tr><th>Převrátit / Otočit 90°, 180°</th><td>Úpravy › Transformovat</td><td>zrcadlení plochy</td></tr>
+          <tr><th>Mapa posunu (Filtr › Zkreslení › Posunout)</th><td>potřebuje mapu z podkladu (PSD ve stupních šedi)</td><td>obrázek sleduje záhyby látky/papíru – pokročilý mock-up</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l11-lab">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Vyzkoušej</span><h2>Laboratoř mock-upu</h2></div>
+      <p>Plocha v prostoru, vyměnitelný obsah a polostín. Posouvej a sleduj, kdy výsledek působí přirozeně.</p>
+    </div>
+    <div class="lab" data-widget="mockup">
+      <div class="lab-head"><h3>Mock-up: perspektiva, obsah, stín</h3><span class="hint">Simulace inteligentního objektu</span></div>
+      <div class="lab-body wide">
+        <div class="lab-stage pad"><div data-stage style="width:100%"></div></div>
+        <div class="lab-ctrl">
+          <label><span>Obsah inteligentního objektu</span><div class="seg" data-obsah><button type="button" data-v="a" aria-pressed="true">Plakát A</button><button type="button" data-v="b">Plakát B</button><button type="button" data-v="c">Vlastní barva</button></div></label>
+          <label><span>Perspektiva (otočení Y) <output>25</output>°</span><input type="range" min="-45" max="45" value="25" data-roty></label>
+          <label><span>Náklon (X) <output>8</output>°</span><input type="range" min="-30" max="30" value="8" data-rotx></label>
+          <label><span>Polostín – dosah <output>50</output> %</span><input type="range" min="0" max="100" value="50" data-shade></label>
+          <label><span>Měkkost stínu <output>40</output> px</span><input type="range" min="0" max="80" value="40" data-blur></label>
+          <label class="check"><input type="checkbox" data-odlesk checked> Odlesk / textura podkladu (režim Násobit)</label>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l11-struktura">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Jádro otázky</span><h2>Struktura mock-upu ve vrstvách</h2></div>
+      <p>Mock-up je šablona: kdokoli otevře PSD, dvojklikem nahradí obsah inteligentního objektu a dostane realistickou prezentaci. Proto má pevnou strukturu.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <h3>Vrstvy odshora dolů</h3>
+        <ol style="padding-left:1.2em;margin:0 0 14px">
+          <li><b>Efekty</b> (skupina): odlesky, textura papíru/látky v režimu <em>Násobit</em> nebo <em>Překrýt</em>, vinětace – všechno s nízkým krytím, přes objekt.</li>
+          <li><b>Stíny na objektu</b>: vrstva v režimu <em>Násobit</em>, měkký štětec / přechod, připnutá ořezovou maskou k ploše (stín jen na ploše).</li>
+          <li><b>SEM VLOŽ SVŮJ DESIGN</b> – <b>inteligentní objekt</b> s transformací (Deformace/Perspektiva/Pokřivit) na tvar plochy; <b>maska vrstvy</b> ořezává přesahy nebo tvar (zaoblené rohy, hrnek). Pojmenovaný velkými písmeny – konvence mock-upů.</li>
+          <li><b>Plocha / objekt</b>: fotografie nebo kresba nosiče (deska, cedule, obrazovka, papír) – s případnou maskou.</li>
+          <li><b>Polostín</b>: vržený stín objektu na podklad (měkký, Násobit, Gaussovské rozostření, krytí 40–60 %), případně vrstva úprav Křivky s maskou pro ztmavení.</li>
+          <li><b>Pozadí</b>: stůl, zeď, přechod, barva (vrstva výplně – lze měnit).</li>
+        </ol>
+        <p class="note">Skupiny pojmenuj, barevně označ; zamkni vše kromě inteligentního objektu. Přidej instrukční vrstvu (text „dvojklikem upravte“), kterou si uživatel skryje.</p>
+      </div>
+      <div class="card">
+        <h3>Masky v mock-upu</h3>
+        <ul>
+          <li><b>Maska vrstvy na inteligentním objektu</b>: ořízne design na tvar plochy (např. rohy desky, průhled okna). Maluje se černou/bílou nebo z výběru plochy (Ctrl+klik na vrstvu plochy → přidat masku).</li>
+          <li><b>Ořezová maska</b> (Alt+klik mezi vrstvami): stíny a odlesky „sedí“ jen na designu; design jen na ploše.</li>
+          <li><b>Maska na skupině</b>: jedna maska pro design + stíny + odlesky najednou.</li>
+          <li><b>Vektorová maska</b>: přesné hrany obrazovky z cesty.</li>
+          <li>Masku propojit/odpojit s vrstvou (řetízek) – při posunu designu uvnitř plochy musí maska zůstat na místě → odpojit.</li>
+        </ul>
+        <h3>Jak si uživatel mock-up použije</h3>
+        <ol class="steps">
+          <li>Otevře PSD, dvojklik na miniaturu vrstvy „SEM VLOŽ SVŮJ DESIGN“.</li>
+          <li>Otevře se .psb s rovným obdélníkem (původní obsah) – vloží svůj obrázek na stejnou velikost, uloží (Ctrl+S), zavře.</li>
+          <li>V mock-upu je nový design automaticky v perspektivě, s maskou, stíny a odlesky.</li>
+          <li>Exportuje JPEG/PNG pro prezentaci nebo TIFF/PDF pro tisk.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l11-stin">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Efekt prostoru</span><h2>Polostín, perspektiva a světlo</h2></div>
+      <p>„Dojem prostorové plochy s mírným polostínem do poloviny plochy“ – to je zadání. Polostín (penumbra) je měkký přechod stínu, ne tvrdá hrana.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Prostor</h3><ul><li><b>Perspektiva</b> designu: Deformace rohů na plochu v podkladové fotce, nebo Perspektiva na rovnou desku (vzdálenější hrana kratší). Mírně – přehnaná perspektiva vypadá lacině.</li><li><b>Vržený stín</b> pod objektem: kopie siluety plochy, černá, posun podle světla, <em>Filtr › Rozostření › Gaussovské</em> 15–40 px, Násobit, krytí 50 %. Blíž k objektu tmavší a ostřejší (kontaktní stín), dál světlejší.</li><li><b>Hloubka ostrosti</b>: lehké rozostření pozadí; <b>vinětace</b> rohů.</li></ul></div>
+      <div class="card"><h3>Polostín na ploše (do poloviny)</h3><ul><li>Nová vrstva nad designem, ořezová maska k designu, režim <b>Násobit</b>.</li><li>Nástroj Přechod (<kbd>G</kbd>): černá → průhledná, lineární, táhni od jedné hrany asi <b>do poloviny plochy</b>; nebo velký měkký štětec (krytí 20 %).</li><li>Krytí vrstvy 30–50 %, případně <em>Gaussovské rozostření</em> pro měkkost. Barva stínu: ne čistá černá – tmavý odstín podkladu (teplý/studený podle světla).</li><li>Světlo z jedné strany: polostín na opačné straně, odlesk (bílý přechod, Závoj, 10 %) na osvětlené.</li><li>Alternativa: <em>Styl vrstvy › Vnitřní stín</em> (velikost 100+ px) nebo <em>Přechodová výplň</em> v Násobit s ořezovou maskou – oboje editovatelné.</li></ul></div>
+      <div class="card"><h3>Reálnost</h3><ul><li>Design přebírá světlo podkladu: vrstva úprav Křivky s ořezovou maskou (mírné ztmavení ve stínu).</li><li>Textura podkladu (papír, látka) přes design v režimu Násobit/Překrýt 10–30 %.</li><li>Barevné sladění: vrstva úprav Vyvážení barev na celý mock-up.</li><li>Drobná nedokonalost (lehké zrno – Filtr › Šum) sjednotí fotografii a vložený design.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l11-ulozeni">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Výstup</span><h2>Uložení pro tisk a pro web</h2></div>
+    </div>
+    <div class="cols-2">
+      <div class="card"><h3>Mock-up jako šablona</h3><p><b>PSD</b> (nebo PSB nad 2 GB) s vrstvami, inteligentními objekty, maskami – to je produkt. Vložené objekty (ne propojené), aby fungoval i jinde. Název vrstvy pro výměnu, instrukce. Rozlišení podle cíle: 300 ppi, A4/A3 pro tiskové prezentace; 3000–4000 px pro web.</p></div>
+      <div class="card"><h3>Výsledná prezentace</h3><ul><li><b>Tisk</b> (portfolio, katalog): Obraz › Režim › CMYK (na kopii), 300 ppi při výsledné velikosti, <b>TIFF</b> (LZW) nebo <b>JPEG 12</b>, případně <b>Photoshop PDF</b> (PDF/X-1a). Vložit profil FOGRA39.</li><li><b>Web</b> (portfolio online, Behance, prezentace klientovi): RGB sRGB, zmenšit na 1920–2500 px, <b>JPEG 70–80 %</b> nebo PNG-24, Exportovat jako / Uložit pro web, velikost do 500 kB; alternativně WebP.</li><li>Nikdy nesloučit originál – export z kopie nebo Exportovat jako (nemění dokument).</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l11-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Dokument</b><p>Otevři připravenou fotografii podkladu (nebo nový A4 300 ppi RGB s přechodovým pozadím). Ulož PSD „mockup“.</p></div></li>
+        <li><span class="t">3–8<small>min</small></span><div><b>Plocha</b><p>Pokud podklad nemá plochu: vrstva „deska“ – obdélník s výplní (světle šedá), Ctrl+T › Perspektiva/Deformace mírně do prostoru; styl vrstvy Vržený stín nebo ruční stín (kopie, černá, rozostření 25 px, Násobit 50 %).</p></div></li>
+        <li><span class="t">8–14<small>min</small></span><div><b>Inteligentní objekt</b><p>Umístit vložené → jeden z připravených obrázků (nebo nový obdélník → Převést na inteligentní objekt). Přejmenuj „SEM VLOŽ SVŮJ DESIGN“. Ctrl+T › Deformace: rohy na rohy plochy. Enter.</p></div></li>
+        <li><span class="t">14–18<small>min</small></span><div><b>Maska</b><p>Ctrl+klik na vrstvu desky → výběr; aktivní inteligentní objekt → Přidat masku vrstvy: design jen na ploše. Odpojit masku od vrstvy (řetízek) – aby šel design posouvat.</p></div></li>
+        <li><span class="t">18–23<small>min</small></span><div><b>Polostín a odlesk</b><p>Nová vrstva nad objektem, ořezová maska (Alt+klik), Násobit, přechod černá→průhledná od jedné hrany do poloviny, krytí 40 %. Druhá vrstva Závoj s bílým přechodem 10 % z druhé strany. Volitelně textura podkladu Násobit 20 %.</p></div></li>
+        <li><span class="t">23–27<small>min</small></span><div><b>Test výměny</b><p>Dvojklik na inteligentní objekt → vlož jiný připravený obrázek → Ctrl+S → zavřít: mock-up se aktualizoval i s perspektivou, maskou a stínem. To ukážeš komisi.</p></div></li>
+        <li><span class="t">27–30<small>min</small></span><div><b>Uložení</b><p>PSD (šablona). Exportovat jako JPEG sRGB 2000 px (web). Kopie → CMYK → TIFF 300 ppi (tisk). Pojmenuj.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Co říct komisi</h3>
+          <p>„Mock-up má pozadí, plochu s vrženým stínem, inteligentní objekt s designem transformovaný Deformací do perspektivy plochy a ořezaný maskou vrstvy, nad ním vrstvu polostínu v režimu Násobit s ořezovou maskou – přechod od hrany do poloviny plochy – a odlesk v režimu Závoj. Inteligentní objekt uchovává původní obrázek: dvojklikem otevřu obsah, vyměním obrázek, uložím a transformace i maska zůstanou. Pro web exportuji JPEG v sRGB, pro tisk převedu kopii do CMYK FOGRA39 a uložím TIFF 300 ppi.“</p>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l11-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Design vložený jako obyčejná rastrová vrstva – po transformaci degraduje a nejde vyměnit. Musí být inteligentní objekt.</div>
+      <div class="tip chyba"><b>Chyba</b>Přesahy designu ořezané gumou místo masky; maska propojená s vrstvou se posouvá spolu s designem.</div>
+      <div class="tip chyba"><b>Chyba</b>Stín jako tvrdá černá plocha s krytím 100 %; stín na špatné straně vůči světlu; polostín přes celou plochu.</div>
+      <div class="tip chyba"><b>Chyba</b>Přehnaná perspektiva, design „plave“ nad plochou (chybí kontaktní stín, textura, barevné sladění).</div>
+      <div class="tip chyba"><b>Chyba</b>Mock-up uložen jen jako JPEG – šablona je pryč. Správně PSD + exporty.</div>
+      <div class="tip chyba"><b>Chyba</b>Neumí předvést výměnu obsahu (dvojklik → .psb → uložit).</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l11-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Co je inteligentní objekt a proč je základem mock-upu?</summary><div class="odp">Kontejner, který uchovává původní data a zobrazuje je ve vrstvě; transformace a filtry jsou nedestruktivní a kdykoli změnitelné. Dvojklik otevře obsah, po uložení se všechny instance aktualizují – proto lze v mock-upu vyměnit design a perspektiva, maska i stíny zůstanou.</div></details></li>
+      <li><details><summary>Popiš strukturu svého mock-upu.</summary><div class="odp">Odspodu: pozadí, plocha (nosič) s vrženým stínem, inteligentní objekt s designem v perspektivě a maskou vrstvy, polostín v Násobit s ořezovou maskou, odlesk v Závoj, textura/efekty; vrstvy pojmenované, zamčené kromě objektu pro výměnu.</div></details></li>
+      <li><details><summary>Jak jsi vytvořil dojem prostoru a polostín?</summary><div class="odp">Design transformován Deformací/Perspektivou na plochu, vržený stín pod plochou (rozostřený, Násobit), polostín na ploše přechodem černá→průhledná v režimu Násobit od hrany do poloviny plochy s krytím 40 %, odlesk z osvětlené strany, textura podkladu přes design.</div></details></li>
+      <li><details><summary>Jaký je rozdíl mezi Deformací, Perspektivou a Pokřivením?</summary><div class="odp">Deformace (Ctrl+tažení rohu) posouvá každý roh nezávisle – na libovolný čtyřúhelník. Perspektiva (Ctrl+Alt+Shift) sbíhá symetricky. Pokřivit ohýbá podle mřížky nebo předvolby – pro válce, látku, oblouky. Na inteligentním objektu všechny vratné.</div></details></li>
+      <li><details><summary>Jak uložíš mock-up pro tisk a jak pro web?</summary><div class="odp">Šablona: PSD s vrstvami a vloženými inteligentními objekty. Tisk: kopie do CMYK (FOGRA39), 300 ppi, TIFF nebo JPEG 12 / PDF/X. Web: sRGB, 1920–2500 px, JPEG 70–80 % nebo PNG, Exportovat jako.</div></details></li>
+      <li><details><summary>Proč masku odpojit od vrstvy?</summary><div class="odp">Propojená maska se posouvá a transformuje spolu s obsahem; u mock-upu má maska držet tvar plochy, zatímco design uvnitř posouvám nebo měním – proto řetízek mezi miniaturami vypnu.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l11-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz11" data-quiz='[
+      {"q":"Obsah inteligentního objektu upravíš","o":["malováním do vrstvy","dvojklikem na miniaturu a uložením obsahu","rastrováním","Ctrl+T"],"a":1,"w":"Otevře se .psb; po Ctrl+S se aktualizují všechny instance včetně transformací."},
+      {"q":"Transformace, která posouvá každý roh nezávisle, je","o":["Měřítko","Zkosení","Deformace","Otočení"],"a":2,"w":"Deformace (Ctrl+tažení za roh) – nejčastější pro mock-up ploch."},
+      {"q":"Polostín na ploše se obvykle dělá","o":["černou vrstvou s krytím 100 %","přechodem černá→průhledná v režimu Násobit s ořezovou maskou","gumou","inverzí"],"a":1,"w":"Měkký, od hrany do poloviny plochy, krytí 30–50 %."},
+      {"q":"Ořezová maska zajistí, že","o":["vrstva stínu je vidět jen na designu pod ní","plátno se ořízne","vrstva se zamkne","vznikne alfa kanál"],"a":0,"w":"Alt+klik mezi vrstvami – stín/odlesk/textura jen na ploše designu."},
+      {"q":"Odpojení masky od vrstvy (řetízek)","o":["masku smaže","umožní posouvat obsah bez posunu masky","masku invertuje","sloučí vrstvy"],"a":1,"w":"Maska drží tvar plochy, design uvnitř lze posouvat a měnit."},
+      {"q":"Mock-up jako šablonu uložíš jako","o":["JPEG","PNG","PSD s inteligentními objekty","GIF"],"a":2,"w":"Jen PSD zachová vrstvy, masky a vyměnitelný inteligentní objekt."},
+      {"q":"Inteligentní objekt zmenšený a opět zvětšený","o":["ztratí kvalitu","zachová původní kvalitu do původního rozlišení","se rastruje","změní režim"],"a":1,"w":"Transformace jsou nedestruktivní – počítají se z originálu."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l11-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy a videa</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="../videa.html#v-ps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>Video: mock-up pomocí inteligentního objektu</b><span>Vlastní nahrávka + mock-up na zdi, obálky knihy, loga na oblečení.</span></div></a>
+      <a class="link-card" href="{{L3}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 15l5-5 4 4 3-3 6 6"/></svg><div><b>Lekce 03: masky a výběry</b><span>Základ pro masky v mock-upu.</span></div></a>
+      <a class="link-card" href="{{L8}}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M12 11l9-4M12 11L3 7M12 11v10"/></svg><div><b>Lekce 08: obalový design</b><span>3D vizualizace obalu je také mock-up.</span></div></a>
+      <a class="link-card" href="{{onedrive}}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg><div><b>OneDrive: Trifold_Leaflet_Mockup.psd</b><span>Profesionální mock-up k prostudování struktury vrstev.</span></div></a>
+    </div>
+  </div>
+</section>

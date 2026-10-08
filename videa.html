@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Videotutoriály | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Přehled nahraných videotutoriálů k sazbě periodika, knihy, obálek, exportům PDF/X a ePub a dalším postupům, roztříděný podle maturitních otázek. Videa jsou uložená na školním OneDrive.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="Videotutoriály">
+<meta property="og:description" content="Přehled nahraných videotutoriálů k sazbě periodika, knihy, obálek, exportům PDF/X a ePub a dalším postupům, roztříděný podle maturitních otázek. Videa jsou uložená na školním OneDrive.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styl.css">
+</head>
+<body data-page="videa.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>K MATURITĚ</b><span>Videotutoriály</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true" class="active">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="videa.html" class="active"><span class="num">+</span><span>Videotutoriály</span></a><a href="zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-indesign">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Přehled</span><span class="blok">· videa na školním OneDrive</span></p>
+    <h1>Videotutoriály</h1>
+    <p class="lead">Nahrané postupy k periodiku, knize, obálkám a exportům jsou uložené ve dvou sdílených složkách na školním OneDrive (přihlášení školním účtem Microsoft). Tady je máš roztříděné podle lekcí, abys věděl, které video k čemu patří. Česky mluvené tutoriály DTPko.cz z YouTube jsou vložené přímo.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgBsMie3M1okQ7g4IVhI68beAUF3tx3zk4Y2C67ARbQtynQ?e=S4OoFC" target="_blank" rel="noopener">Složka videí 1 (OneDrive)</a>
+      <a class="btn btn-ghost" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgDRoAgwE7GoTZOF1_uRhSyFAWQTPbhqH0UPXeD8cEDhO6o?e=kEVC4S" target="_blank" rel="noopener">Složka videí 2 (OneDrive)</a>
+      <a class="btn btn-ghost" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory 4.G</a>
+    </div>
+    <nav class="subnav" aria-label="Obsah"><a href="#v-periodikum">Periodikum</a><a href="#v-kniha">Kniha a obálky</a><a href="#v-export">Exporty a e-knihy</a><a href="#v-yt">InDesign česky (YouTube)</a><a href="#v-ps">Photoshop</a><a href="#v-ai">Illustrator</a><a href="#v-audio">Poslech</a></nav>
+  </div>
+</section>
+
+<section class="section" id="v-periodikum">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Autorské periodikum</span><h2>Sazba časopisu v InDesignu</h2></div><p>K lekcím <a href="lekce/04-odstavcove-styly.html">04</a>, <a href="lekce/06-pismo-typografie.html">06</a>, <a href="lekce/21-import-wordu.html">21</a> a ke <a href="cviceni.html#c-periodikum">cvičení periodikum</a>.</p></div>
+    <div class="cols">
+      <div class="card"><h3>01 · Úprava článků, rubrik, paginace, styly</h3><p>Založení dokumentu periodika, vzorové stránky s číslováním, odstavcové a znakové styly, rubriky.</p><p class="note">Složka 01 AUTORSKÁ PERIODIKA</p></div>
+      <div class="card"><h3>02 · Fotografie legálně z netu, editace v PSD a INDD</h3><p>Kde brát fotografie legálně, úprava pro tisk ve Photoshopu (CMYK, 300 ppi), vložení do sazby a obtékání.</p></div>
+      <div class="card"><h3>03 · Znakové a odstavcové styly a TypoSkript</h3><p>Nastavení stylů podle typografických pravidel (dělení slov, kerning, nerozdělovat řádky) a aplikace TypoSkriptu.</p></div>
+      <div class="card"><h3>03 · Generování obsahu v periodiku</h3><p>Obsah vygenerovaný z odstavcového stylu nadpisů rubrik, styl obsahu s vodicími znaky.</p></div>
+      <div class="card"><h3>04 · Generování kódu ISSN</h3><p>Vektorový čárový kód ISSN pro zadní obálku periodika.</p></div>
+      <div class="card"><h3>05 · Online publikování periodika (e-zin)</h3><p>Převod časopisu na webovou podobu přímo z InDesignu (Publish Online).</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="v-kniha">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Sazba publikace</span><h2>Kniha, obálky V2 a V8, archová montáž</h2></div><p>K lekcím <a href="lekce/04-odstavcove-styly.html">04</a>, <a href="lekce/14-brozura-archova-montaz.html">14</a>, <a href="lekce/12-e-knihy.html">12</a> a ke <a href="cviceni.html#c-kniha">cvičení kniha</a>.</p></div>
+    <div class="cols">
+      <div class="card"><h3>01 · Příprava zrcadla sazby, nalití textu, příprava stránek</h3><p>Okraje nejméně 20 mm, spadávka 3 mm, provázaná textová pole přes celý blok, automatické přidávání stránek.</p><p class="note">Složka 02 SAZBA PUBLIKACE</p></div>
+      <div class="card"><h3>02 · Export tiskového bloku knihy do PDF</h3><p>PDF/X-1a, ořezové značky, značky spadávky, Coated FOGRA39, export po stránkách.</p></div>
+      <div class="card"><h3>Nastavení obálky V2 pro publikaci</h3><p>Samostatný dokument obálky: zadní strana + hřbet + přední strana, výpočet hřbetu, spadávka 3 mm.</p></div>
+      <div class="card"><h3>Doplnění hřbetních značek na obálku V2</h3><p>Vodítka a linky vyznačující hřbet pro tiskárnu.</p></div>
+      <div class="card"><h3>Archová montáž v InDesignu</h3><p>Tisk brožury / Print Booklet – archová montáž pro vazbu V1 na A3, pořadí stránek.</p></div>
+      <div class="card"><h3>Sbalení projektu včetně písem a grafiky</h3><p>Soubor › Sbalit: složky Links a Document fonts, zazipování a odevzdání.</p></div>
+      <div class="card"><h3>Náhrada pevných mezer bez TypoSkriptu</h3><p>Hledat a nahradit (GREP) pro jednopísmenné předložky a spojky, když nemůžeš použít skript.</p></div>
+      <div class="card"><h3>Převod z PDF do editovatelného souboru</h3><p>Jak dostat text z PDF zpět do InDesignu, když chybí zdrojový soubor.</p></div>
+      <div class="card"><h3>UGD 42 · Příprava dat k tisku (Martin Novotný)</h3><p>Přednáška Unie grafického designu o předtiskové přípravě – spadávky, přetisk, barvy, profily, kontrola PDF. Doporučeno k lekcím 22 a 14.</p></div>
+      <div class="card"><h3>Výroba knihy – ofsetový tisk (Rain Jindřichův Hradec)</h3><p>Jak kniha vzniká v tiskárně: ofset, skládání archů, snášení, vazba, ořez. K pojmům výrobní, tiskový a knižní arch.</p></div>
+      <div class="card"><h3>Generování a úprava QR kódu</h3><p>QR kód jako vektor do sazby – složka Typografie – polygrafie.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="v-export">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">E-knihy</span><h2>ePub, mobi a e-bookové PDF</h2></div><p>K lekci <a href="lekce/12-e-knihy.html">12</a> a <a href="lekce/22-typy-pdf.html">22</a>.</p></div>
+    <div class="cols">
+      <div class="card"><h3>03 · Export ePub, konverze do mobi a PDF e-book</h3><p>Nastavení exportu ePub (reflowable), obálka, konverze v Calibre, optimalizované PDF.</p></div>
+      <div class="card"><h3>04 · Opravy a úpravy v InDesignu pro správný export ePub</h3><p>Styly pro export, pořadí článků, TOC, obrázky ukotvené v textu – co ePub rozbije a jak to opravit.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="v-yt">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">YouTube · DTPko.cz</span><h2>InDesign česky – doporučené tutoriály</h2></div><p>Kliknutím se načte přehrávač YouTube (do té doby se nic nestahuje).</p></div>
+    <div class="videos">
+      <div class="video" data-yt="aFKEQvSddBQ" data-t="Základy a tipy, jak správně vytvořit dokument"><button class="play" type="button" aria-label="Přehrát"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.7C55.2.3 34 .3 34 .3S12.8.3 7.5 1.7A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#B4532A"/><path d="M27 34.3 45 24 27 13.7z" fill="#fff"/></svg></button><div class="v-body"><h4>Základy a tipy, jak správně vytvořit dokument</h4><p>Nejčastější chyby při tvorbě dokumentu, zpracování textů a typografie.</p></div></div>
+      <div class="video" data-yt="5BldAtM4yd0" data-t="10 tipů pro snadnější práci"><button class="play" type="button" aria-label="Přehrát"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.7C55.2.3 34 .3 34 .3S12.8.3 7.5 1.7A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#B4532A"/><path d="M27 34.3 45 24 27 13.7z" fill="#fff"/></svg></button><div class="v-body"><h4>10 tipů pro snadnější práci v InDesignu</h4><p>Zkratky a postupy, které zrychlí sazbu.</p></div></div>
+      <div class="video" data-yt="aoLC6BppjIE" data-t="Připravujeme časopis krok za krokem – 1. díl"><button class="play" type="button" aria-label="Přehrát"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.7C55.2.3 34 .3 34 .3S12.8.3 7.5 1.7A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#B4532A"/><path d="M27 34.3 45 24 27 13.7z" fill="#fff"/></svg></button><div class="v-body"><h4>Připravujeme časopis krok za krokem – 1. díl</h4><p>Založení, zrcadlo, vzorové stránky.</p></div></div>
+      <div class="video" data-yt="f1QXwoDMUp0" data-t="Připravujeme časopis krok za krokem – 2. díl"><button class="play" type="button" aria-label="Přehrát"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.7C55.2.3 34 .3 34 .3S12.8.3 7.5 1.7A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#B4532A"/><path d="M27 34.3 45 24 27 13.7z" fill="#fff"/></svg></button><div class="v-body"><h4>Připravujeme časopis krok za krokem – 2. díl</h4><p>Styly, sazba článků, obrázky.</p></div></div>
+      <div class="video" data-yt="pWyRMvDxerc" data-t="Vložení obrázku a obtékání textu"><button class="play" type="button" aria-label="Přehrát"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.7C55.2.3 34 .3 34 .3S12.8.3 7.5 1.7A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#B4532A"/><path d="M27 34.3 45 24 27 13.7z" fill="#fff"/></svg></button><div class="v-body"><h4>Vložení obrázku do InDesignu a obtékání textu</h4><p>K otázce 04 – obtékání textu kolem obrázku.</p></div></div>
+      <div class="video" data-yt="KfpPxvQ6hHI" data-t="7 tipů pro InDesign"><button class="play" type="button" aria-label="Přehrát"><svg viewBox="0 0 68 48"><path d="M66.5 7.7A8.5 8.5 0 0 0 60.5 1.7C55.2.3 34 .3 34 .3S12.8.3 7.5 1.7A8.5 8.5 0 0 0 1.5 7.7C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3z" fill="#B4532A"/><path d="M27 34.3 45 24 27 13.7z" fill="#fff"/></svg></button><div class="v-body"><h4>7 tipů pro InDesign, o kterých jste možná nevěděli</h4><p>Drobné vychytávky pro rychlejší práci.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="v-ps">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Photoshop</span><h2>Masky, mock-upy, animace</h2></div><p>K lekcím <a href="lekce/03-photoshop-zaklady.html">03</a>, <a href="lekce/10-digitalni-malba.html">10</a>, <a href="lekce/11-mockup.html">11</a>, <a href="lekce/23-animace-banner-video.html">23</a>. Krátké tutoriály jsou ve složce <em>Krátké užitečné tutoriály</em>.</p></div>
+    <div class="cols">
+      <div class="card"><h3>Mock-up pomocí inteligentního objektu</h3><p>Vlastní nahrávka: vytvoření jednoduchého mock-up souboru ve Photoshopu – inteligentní objekt, maska, polostín. Základ otázky 11.</p><p><a class="btn btn-small btn-ghost" href="https://spsecz-my.sharepoint.com/:v:/g/personal/svoboda_spse_cz/Eczs1pi_0LpOgMDPkv7pEXEBqxIjiFNY4gPO6ezdduJEAA?e=lx6B14" target="_blank" rel="noopener">Přehrát na OneDrive</a></p></div>
+      <div class="card"><h3>Maskování</h3><p>Krátké ukázky: maskování vlasů, srsti, brýlí, oblečení, pozadí za rybou. Nástroj Vybrat a maskovat v praxi (otázka 03).</p></div>
+      <div class="card"><h3>Mock-upy</h3><p>Mock-up na zdi, mock-up obálky knihy, mock-up loga na oblečení – jak se výsledek deformuje podle podkladu (otázka 11).</p></div>
+      <div class="card"><h3>Efekty a nástroje</h3><p>Perspektivní deformace, přidání páry, 3D štětcový efekt, doostření podrastrované ikony, chytré zkratky.</p></div>
+      <div class="card"><h3>Typografická animace ve Photoshopu</h3><p>Tři YouTube tutoriály k animaci textu na časové ose (k otázce 23): <a href="https://www.youtube.com/watch?v=G0ZwhP9FFpA" target="_blank" rel="noopener">typografická animace</a>, <a href="https://www.youtube.com/watch?v=hB-ONAZacxY" target="_blank" rel="noopener">animace s externím videem</a>, <a href="https://www.youtube.com/watch?v=HZy3llFM-d4" target="_blank" rel="noopener">časová osa při animaci textu</a>.</p></div>
+      <div class="card"><h3>Digitální malba</h3><p>Čtyři delší tutoriály digitální malby (Photoshop, MediBang) ve složce <em>Digitální malba › Tutoriály digitální malby</em> – postup od skici po kolorování (otázka 10).</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="v-ai">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Illustrator</span><h2>Krátké videonávody</h2></div><p>K lekcím <a href="lekce/02-illustrator-zaklady.html">02</a>, <a href="lekce/09-tvorba-loga.html">09</a>, <a href="lekce/13-vektory-vzorky-symboly.html">13</a>. Složka <em>Krátké užitečné tutoriály › Videonávody pro Illustrator</em>.</p></div>
+    <div class="cols">
+      <div class="card"><h3>Logo</h3><p>Správná inverze loga, vnější bílé pole okolo loga (ochranná zóna), mock-up loga na fotce objektu, obtah kolem blízkých písmen.</p></div>
+      <div class="card"><h3>Objekty a efekty</h3><p>Zaoblení vektorových bodů, skupinové zakřivení linií, deformační nástroje, chytré aktivní propojení dvou objektů, prolnutí písmen, text na rotační cestě, text do libovolného tvaru.</p></div>
+      <div class="card"><h3>Vzorky, textury, štětce</h3><p>Polotónový vzorek, půltóny, lineární, radiální a kombinovaná textura, správná aplikace textury, vytvoření stopy štětce – k otázce 13 (vzorek a symbol).</p></div>
+      <div class="card"><h3>Zkratky a barvy</h3><p>Nesmírně užitečné zkratky (tři díly), rychlé definování a generování hodnot barev, barevný gradient, zkopírování efektů vrstev.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="v-audio">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Poslech</span><h2>Zajímavosti o písmu a tisku (audio)</h2></div><p>Složka <em>Zajímavosti o písmu</em> na OneDrive – krátké audio pořady vhodné do sluchátek cestou do školy. K otázkám 06, 01 a 22.</p></div>
+    <div class="cols">
+      <div class="card"><h3>Proč písmo lže a jak se měří</h3><p>Optické korekce v písmu, písmová osnova, měření stupně písma.</p></div>
+      <div class="card"><h3>Tvary písmen určila technologie a historické omyly</h3><p>Od tesaného písma přes knihtisk k obrazovce.</p></div>
+      <div class="card"><h3>Jak tiskový rastr klame naše oči</h3><p>Autotypický rastr, lineatura, proč CMYK „funguje“.</p></div>
+      <div class="card"><h3>Proč je výtisk tmavší než monitor</h3><p>Gamut, nárůst tiskového bodu, profil FOGRA39.</p></div>
+      <div class="card"><h3>Bod zvratu mezi ofsetem a digitálem</h3><p>Kdy se vyplatí ofset a kdy digitální tisk.</p></div>
+      <div class="card"><h3>Komplexní analýza tiskových technik</h3><p>Ofset, flexotisk, sítotisk, hlubotisk, digitál – přehled.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/interaktivni.js"></script>
+</body>
+</html>

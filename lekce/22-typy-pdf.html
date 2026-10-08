@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>22 · PDF – typy PDF, jejich vytvoření a úpravy | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Maturitní otázka 22: typy PDF (PDF/X pro tisk, PDF/A pro archivaci, interaktivní PDF s tlačítky, hypervazbami a stavy objektů, optimalizované PDF pro web), export z InDesignu, Illustratoru a Photoshopu, zabezpečení heslem, úpravy a revizní nástroje v Acrobat Pro.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="22 · PDF – typy PDF, jejich vytvoření a úpravy">
+<meta property="og:description" content="Maturitní otázka 22: typy PDF (PDF/X pro tisk, PDF/A pro archivaci, interaktivní PDF s tlačítky, hypervazbami a stavy objektů, optimalizované PDF pro web), export z InDesignu, Illustratoru a Photoshopu, zabezpečení heslem, úpravy a revizní nástroje v Acrobat Pro.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styl.css">
+</head>
+<body data-page="22-typy-pdf.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="../videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>OTÁZKA 22 / 23</b><span>Základy grafiky</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="../img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="../index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true" class="active"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="../lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="../lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="../lekce/22-typy-pdf.html" class="active"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="../lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="../lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="../lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="../lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="../lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="../lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="../lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="../lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="../lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="../lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="../lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="../lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="../lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="../lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="../lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="../lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="../lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="../lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="../lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="../lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="../kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="../cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="../videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="../zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-zaklady">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Maturitní otázka 22</span><span class="blok">· Základy grafiky</span></p>
+    <h1>PDF – typy PDF, vytvoření a úpravy</h1>
+    <p class="lead">PDF není jeden formát, ale rodina. Tady vytvoříš ve <b>třech editorech</b> (InDesign, Illustrator, Photoshop) soubory a vyexportuješ je do <b>čtyř typů PDF</b>: <b>interaktivní vícestránkové</b> (tlačítka, hypervazby, stavy objektů), <b>PDF/A</b>, <b>PDF/X</b> pro tisk a <b>optimalizované pro web</b>. V teorii: rozdíly mezi typy, zaheslování a omezení úprav, a editace i revizní nástroje v <b>Acrobat Pro</b>.</p>
+    <ul class="zadani"><li><b>InDesign</b>interaktivní PDF, PDF/X</li><li><b>Illustrator</b>PDF/X, PDF/A</li><li><b>Photoshop</b>Photoshop PDF, web</li><li><b>Acrobat Pro</b>zabezpečení, úpravy, poznámky</li></ul>
+    <nav class="subnav" aria-label="Obsah lekce"><a href="#l22-otazka">Co se losuje</a><a href="#l22-typy">Čtyři typy PDF</a><a href="#l22-interaktivni">Interaktivní PDF</a><a href="#l22-export">Export z programů</a><a href="#l22-acrobat">Acrobat Pro</a><a href="#l22-postup">Postup pro 30 minut</a><a href="#l22-chyby">Časté chyby</a><a href="#l22-komise">Otázky komise</a><a href="#l22-kviz">Kvíz</a></nav>
+  </div>
+</section>
+<section class="section" id="l22-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Ve třech editorech (<b>InDesign, Illustrator, Photoshop</b>) vytvořit soubory s textem a grafikou a vyexportovat je do PDF.</li>
+          <li>Alespoň jedno PDF <b>interaktivní a vícestránkové</b> s prvky pro pohyb v dokumentu: <b>tlačítka, hypervazby, stavy objektů</b>…</li>
+          <li>Jedno PDF typu <b>PDF/A</b>, jedno <b>PDF/X</b> se všemi náležitostmi pro tisk, jedno <b>optimalizované pro web</b>.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>InDesign + Illustrator + Photoshop + Acrobat</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Základní typy PDF, k čemu a jak se v praxi používají, <b>rozdíly</b> mezi nimi.</li>
+          <li>Jak PDF <b>zaheslovat a omezit úpravy</b>.</li>
+          <li>V <b>Acrobat Pro</b> ukázat <b>editaci PDF</b> a <b>poznámkové (revizní) nástroje</b>.</li>
+          <li>Jak jsi využil jednotlivé editory k výrobě jednotlivých PDF.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l22-typy">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Teorie</span><h2>PDF a jeho čtyři nejdůležitější podoby</h2></div>
+      <p>PDF (Portable Document Format, Adobe 1993, ISO 32000 od 2008) zobrazí dokument všude stejně: nese text, vložená písma, vektory, bitmapy, průhlednosti, odkazy, formuláře, multimédia. Normy ISO definují <b>podmnožiny</b> pro konkrétní účel.</p>
+    </div>
+    <div class="pdfy">
+      <div><b>PDF/X</b><small>ISO 15930 · tisk (eXchange)</small><p>Podmnožina pro spolehlivou předtiskovou výměnu: všechna písma vložená, barvy CMYK + přímé (X-1a) nebo i RGB se správou barev (X-4), definovaný <b>výstupní záměr</b> (Coated FOGRA39), spadávka a ořezové značky, žádné formuláře, JavaScript, šifrování. <b>PDF/X-1a:2001</b> – průhlednosti sloučené, nejbezpečnější; <b>PDF/X-4</b> – živé průhlednosti a vrstvy, moderní tiskárny.</p></div>
+      <div><b>PDF/A</b><small>ISO 19005 · archivace</small><p>Pro dlouhodobé uchování: vše vložené (písma, barevné profily), bez šifrování, bez JavaScriptu, bez externích odkazů na obsah, metadata XMP. <b>PDF/A-1b</b> (vizuální shoda), <b>A-1a</b> (+ struktura/tagy pro přístupnost), <b>A-2</b> (JPEG2000, průhlednosti, vrstvy), <b>A-3</b> (lze vložit libovolné přílohy – e-faktury). Úřady, datové schránky, knihovny.</p></div>
+      <div><b>Interaktivní PDF</b><small>iPDF · obrazovka</small><p>PDF s navigací a akcemi: <b>hypervazby</b> (odkazy v obsahu, URL), <b>záložky</b>, <b>tlačítka</b> s akcemi (jít na stránku, otevřít URL, zobrazit/skrýt), <b>stavy objektů</b> (multi-state – přepínání obrázků), formulářová pole, videa, přechody stránek. Z InDesignu <em>Adobe PDF (interaktivní)</em>. Prezentace, katalogy, e-knihy iPDF, formuláře.</p></div>
+      <div><b>Optimalizované pro web</b><small>Nejmenší velikost · online</small><p>Malý soubor pro stahování a prohlížení: bitmapy převzorkované na 100–150 ppi s JPEG kompresí, RGB (sRGB), bez značek a spadávky, <b>rychlé zobrazení webu</b> (linearizace – stránky se načítají postupně), vložená jen podmnožina písem. Z InDesignu přednastavení <em>Nejmenší velikost souboru</em>; v Acrobatu <em>Zmenšit velikost</em> / <em>Optimalizátor PDF</em>.</p></div>
+    </div>
+    <div class="table-scroll" style="margin-top:22px">
+      <table class="tech-table">
+        <thead><tr><th>Vlastnost</th><th>PDF/X-1a</th><th>PDF/A</th><th>Interaktivní</th><th>Web</th></tr></thead>
+        <tbody>
+          <tr><th>Účel</th><td>tisk</td><td>archiv</td><td>obrazovka, navigace</td><td>stažení, rychlé zobrazení</td></tr>
+          <tr><th>Barvy</th><td>CMYK + přímé, výstupní záměr FOGRA39</td><td>jakékoli s vloženým profilem</td><td>RGB</td><td>RGB (sRGB)</td></tr>
+          <tr><th>Rozlišení bitmap</th><td>300 ppi</td><td>původní / 300</td><td>150 ppi</td><td>72–150 ppi, JPEG</td></tr>
+          <tr><th>Písma</th><td>vložená celá / podmnožina</td><td>vložená povinně</td><td>vložená</td><td>podmnožina</td></tr>
+          <tr><th>Spadávka a značky</th><td class="ok-ico">ano</td><td>ne</td><td>ne</td><td>ne</td></tr>
+          <tr><th>Odkazy, tlačítka, JS</th><td class="no-ico">zakázány</td><td class="no-ico">JS zakázán, odkazy omezeně</td><td class="ok-ico">ano</td><td>odkazy ano</td></tr>
+          <tr><th>Šifrování / heslo</th><td class="no-ico">zakázáno</td><td class="no-ico">zakázáno</td><td>možné</td><td>možné</td></tr>
+          <tr><th>Průhlednost</th><td>sloučená (X-4: živá)</td><td>A-1 ne, A-2 ano</td><td>ano</td><td>ano</td></tr>
+          <tr><th>Stránky × dvojstránky</th><td>po stránkách</td><td>po stránkách</td><td>stránky nebo dvojstránky</td><td>stránky</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l22-interaktivni">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">InDesign</span><h2>Interaktivní PDF: hypervazby, tlačítka, stavy objektů</h2></div>
+      <p>Interaktivita se nastavuje v InDesignu v panelech <span class="menu-path">Okna <i>›</i> Interaktivní</span>. Pracovní plocha <em>Interaktivní pro PDF</em> je má všechny pohromadě.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Hypervazby</h3><p>Panel <b>Hypervazby</b>: vyber text/objekt › Nová hypervazba › cíl <em>URL</em>, <em>Stránka</em>, <em>Textová kotva</em>, <em>E-mail</em>. Vzhled: neviditelný obdélník (nebo zvýraznění). Obsah vygenerovaný přes Formát › Obsah se stává hypervazbami automaticky (zaškrtnout <em>Vytvořit záložky PDF</em>). Křížové odkazy (panel Křížové odkazy) – „viz str. 12“ živě.</p></div>
+      <div class="card"><h3>Záložky</h3><p>Panel <b>Záložky</b>: strom v levém panelu Acrobatu. Vznikají z obsahu nebo ručně (Nová záložka z vybraného textu). Pro e-knihu iPDF povinné.</p></div>
+      <div class="card"><h3>Tlačítka</h3><p>Panel <b>Tlačítka a formuláře</b>: vyber objekt › Převést na tlačítko. Událost <em>Při uvolnění</em>, akce: <b>Jít na další/předchozí/první stránku</b>, <b>Jít na stránku</b>, <b>Jít na URL</b>, <b>Zobrazit/skrýt tlačítka a formuláře</b>, <b>Jít na další stav</b>. Vzhled: Normální / Přejetí (rollover) / Kliknutí – tři varianty grafiky. Navigační lišta na vzorové stránce (← →) = tlačítka na vzoru.</p></div>
+      <div class="card"><h3>Stavy objektů (multi-state)</h3><p>Panel <b>Stavy objektů</b>: vyber více objektů (obrázků) na sobě › <em>Převést výběr na objekt s více stavy</em>. Každý stav = jeden obrázek. Tlačítka s akcí <em>Jít na další stav / předchozí stav / stav č.</em> přepínají – galerie, prezentace variant loga. <b>Pozor</b>: do interaktivního PDF se objekt s více stavy exportuje jen tehdy, když ho ovládají tlačítka (InDesign ho převede na sadu zobraz/skryj); funguje v Acrobatu a Readeru, ne v prohlížečích (Chrome, Edge).</p></div>
+      <div class="card"><h3>Formuláře, média, přechody</h3><p>Textová pole, zaškrtávací políčka, přepínače, rozbalovací seznamy, tlačítko Odeslat/Vymazat (panel Tlačítka a formuláře). Video/zvuk: Umístit MP4/MP3, panel Média. Přechody stránek (panel Přechody stránek) pro prezentace na celou obrazovku.</p></div>
+      <div class="card"><h3>Export</h3><p><span class="menu-path">Soubor <i>›</i> Exportovat <i>›</i> Adobe PDF (interaktivní)</span>: Stránky (ne dvojstránky, u knihy!), <em>Zobrazit po exportu</em>, <em>Vložit miniatury stránek</em>, <em>Vytvořit tagované PDF</em>, Zobrazení: Přizpůsobit stránku, Rozvržení: Jednotlivá stránka; Přechody; Formuláře a média: Zahrnout vše; Komprese JPEG, 150 ppi; Zabezpečení: zde lze nastavit hesla.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l22-export">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Tři programy</span><h2>Export PDF z InDesignu, Illustratoru a Photoshopu</h2></div>
+      <p>Každý program umí PDF, ale jiné typy jinak snadno. To je přesně ta „přednost či omezení“, na kterou se ptá teorie.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>InDesign</h3><ul><li><b>Adobe PDF (tisk)</b>: přednastavení <em>PDF/X-1a:2001</em>, <em>PDF/X-4:2008</em>, <em>Tisk ve vysoké kvalitě</em>, <em>Nejmenší velikost souboru</em>; záložky Všeobecné (stránky/dvojstránky, záložky, hypervazby), Komprese, Značky a spadávky, Výstup (profil), Zabezpečení.</li><li><b>Adobe PDF (interaktivní)</b>: tlačítka, média, formuláře, přechody.</li><li><b>PDF/A</b>: InDesign přímo neexportuje – vytvoř PDF/X nebo tiskové PDF a v Acrobatu <em>Uložit jako jiný › Archivovatelné PDF (PDF/A)</em> / Předtisková kontrola › Převést na PDF/A.</li><li>Nejlepší pro vícestránkové a interaktivní PDF.</li></ul></div>
+      <div class="card"><h3>Illustrator</h3><ul><li><span class="menu-path">Soubor <i>›</i> Uložit jako <i>›</i> Adobe PDF</span>: přednastavení <em>PDF/X-1a</em>, <em>PDF/X-4</em>, <em>PDF/A-1b</em> (!), <em>Tisk ve vysoké kvalitě</em>, <em>Nejmenší velikost</em>. Záložka Značky a spadávky (ořezové značky, spadávka z dokumentu), Výstup (FOGRA39), Zabezpečení (hesla).</li><li>Více pláten = vícestránkové PDF (Uložit všechna plátna). Volba <em>Zachovat možnosti úprav Illustratoru</em> zvětší soubor – pro tisk vypnout.</li><li>Nejlepší pro vektorové PDF/X a <b>PDF/A přímo</b>; neumí tlačítka.</li></ul></div>
+      <div class="card"><h3>Photoshop</h3><ul><li><span class="menu-path">Soubor <i>›</i> Uložit jako <i>›</i> Photoshop PDF</span>: přednastavení včetně PDF/X-1a, PDF/X-4, PDF/A-1b, Nejmenší velikost; volba <em>Zachovat možnosti úprav Photoshopu</em> (vrstvy – vypnout pro tisk). Vše je rastr (kromě textových a tvarových vrstev, které zůstanou vektorové).</li><li>Vícestránkové: <span class="menu-path">Soubor <i>›</i> Automaticky <i>›</i> Prezentace PDF</span> (více obrázků → PDF, i s přechody).</li><li>Nejlepší pro bitmapové PDF (fotografie, malba) a <b>PDF optimalizované pro web</b> (Uložit pro web neumí PDF – použij Nejmenší velikost / JPEG kompresi).</li></ul></div>
+      <div class="card"><h3>Acrobat Pro</h3><ul><li><b>Převod</b>: Předtisková kontrola (Preflight) › profily PDF/X-1a, PDF/X-4, PDF/A-1b, A-2b – <em>Analyzovat a opravit</em>; Uložit jako jiný › Archivovatelné PDF / PDF optimalizované / Zmenšit velikost.</li><li><b>Kontrola</b>: Náhled výstupu (profily, barevné prostory, přetisk), Preflight report (chybějící písma, nízké rozlišení, RGB objekty).</li><li>Sloučení souborů, pořadí stránek, oříznutí, vodoznak, číslování Batesovo, redakce (začernění).</li></ul></div>
+    </div>
+    <div class="screens" style="margin-top:22px">
+      <figure><img src="../img/navody/pdfa.webp" alt="Uložení archivovatelného PDF/A" width="1400" height="788"><figcaption>Uložení PDF/A (archivovatelné) – návod ze sdílené složky.</figcaption></figure>
+      <figure><img src="../img/navody/ai-spadavka-4.webp" alt="Illustrator: Uložit jako Adobe PDF, standard PDF/X-1a" width="1400" height="788"><figcaption>Illustrator: Uložit jako Adobe PDF, standard PDF/X-1a:2001.</figcaption></figure>
+      <figure><img src="../img/navody/ai-spadavka-5.webp" alt="Illustrator: Značky a spadávky – ořezové značky a spadávka z dokumentu" width="1400" height="788"><figcaption>Illustrator: Značky a spadávky – ořezové značky + použít spadávku dokumentu.</figcaption></figure>
+      <figure><img src="../img/navody/ai-spadavka-6.webp" alt="Výsledné PDF/X se spadávkou a ořezovými značkami" width="1400" height="788"><figcaption>Výsledné PDF/X: spadávka a ořezové značky, podle kterých tiskárna ořízne.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l22-acrobat">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Acrobat Pro</span><h2>Zabezpečení, úpravy a revizní nástroje</h2></div>
+      <p>Komise chce vidět tři věci v Acrobatu: zaheslovat, upravit, okomentovat.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Zabezpečení heslem</h3><p><span class="menu-path">Nástroje <i>›</i> Zabezpečit <i>›</i> Zabezpečit heslem</span> (nebo Soubor › Vlastnosti › Zabezpečení › Zabezpečení heslem). Dva druhy hesla: <b>heslo pro otevření dokumentu</b> (bez něj se neotevře) a <b>heslo pro oprávnění</b> (vlastníka), které omezuje <b>tisk</b> (žádný / nízké rozlišení / vysoké), <b>změny</b> (žádné / vyplnění formulářů a podpis / poznámky / vkládání stránek / vše kromě extrakce), <b>kopírování textu a obrázků</b>, <b>přístup čteček obrazovky</b>. Šifrování AES 256 bit (kompatibilita Acrobat X+). <b>PDF/X a PDF/A šifrování zakazují</b> – zabezpečené PDF nelze poslat do tiskárny. Při exportu z InDesignu/Illustratoru je záložka Zabezpečení přímo v dialogu.</p></div>
+      <div class="card"><h3>Úpravy PDF</h3><p><span class="menu-path">Nástroje <i>›</i> Upravit PDF</span>: úprava textu (vložená písma musí být v systému, jinak náhrada), přidat text, obrázek, odkaz, záhlaví a zápatí, vodoznak, pozadí, číslování; <em>Uspořádat stránky</em> (otočit, smazat, vložit, extrahovat, rozdělit); <em>Oříznout stránky</em>; <em>Redigovat</em> (trvalé odstranění obsahu); <em>Připravit formulář</em> (automatické rozpoznání polí); <em>Exportovat PDF</em> do Wordu/Excelu/obrázků; <em>Rozpoznat text</em> (OCR skenů). Pro grafika: <em>Tisková produkce</em> › Náhled výstupu, Sloučení průhledností, Nastavit políčka stránky (TrimBox, BleedBox), Přidat značky tiskárny.</p></div>
+      <div class="card"><h3>Revizní (poznámkové) nástroje</h3><p><span class="menu-path">Nástroje <i>›</i> Poznámka</span>: <b>lístek s poznámkou</b>, <b>zvýraznění</b>, podtržení, přeškrtnutí, <b>nahradit text</b> / <b>vložit text</b> (korektury), textové pole, bublina, tužka, razítko (Schváleno, Důvěrné), tvary a šipky, připojit soubor, měření. Všechny poznámky v panelu <em>Poznámky</em> se jménem autora, časem, stavem (přijato/odmítnuto), odpověďmi. <b>Sdílená recenze</b> přes Document Cloud nebo e-mail; <em>Souhrn poznámek</em> do PDF. Korektor tak označí chyby přímo v PDF a grafik je opraví v InDesignu – poznámky z PDF lze importovat zpět do InDesignu (panel Poznámky PDF).</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l22-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div><p>Čtyři PDF ze tří programů. Grafika jednoduchá – důležité jsou parametry exportu.</p></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–10<small>min</small></span><div><b>InDesign → interaktivní vícestránkové PDF</b><p>Nový dokument A4 na šířku (obrazovka: Web, 1920 × 1080 px, RGB), 4 stránky. Vzorová stránka: dvě tlačítka ← → (Tlačítka a formuláře: Jít na předchozí/další stránku) + tlačítko Domů. Str. 1: nadpis, obsah s hypervazbami na stránky 2–4 (panel Hypervazby, cíl Stránka). Str. 2: tři obrázky (nebo barevné obdélníky) na sobě → Stavy objektů › převést na objekt s více stavy; tlačítka „Další stav“. Str. 3: text s hypervazbou na URL školy. Str. 4: tiráž. Export: Adobe PDF (interaktivní), Stránky, zobrazit po exportu, záložky z obsahu. Otevřít v Acrobatu, proklikat.</p></div></li>
+        <li><span class="t">10–17<small>min</small></span><div><b>Illustrator → PDF/X a PDF/A</b><p>Nový dokument Tisk A5, CMYK, spadávka 3 mm; text, obdélník s výplní přes spadávku, vložený obrázek, logo z tvarů. Uložit jako Adobe PDF › <b>PDF/X-1a:2001</b>, Značky a spadávky: ořezové značky + spadávka dokumentu, Výstup: Coated FOGRA39, bez možností úprav. Pak znovu Uložit jako Adobe PDF › <b>PDF/A-1b:2005 (RGB nebo CMYK)</b> – jiný název.</p></div></li>
+        <li><span class="t">17–23<small>min</small></span><div><b>Photoshop → PDF optimalizované pro web</b><p>Dokument 1600 × 900 px RGB: fotografie + text + tvar. Uložit jako Photoshop PDF › přednastavení <b>Nejmenší velikost souboru</b> (JPEG komprese, převzorkování 100 ppi, sRGB), vypnout Zachovat možnosti úprav. Porovnej velikost s verzí „Tisk ve vysoké kvalitě“.</p></div></li>
+        <li><span class="t">23–28<small>min</small></span><div><b>Acrobat Pro</b><p>Otevři interaktivní PDF: Zabezpečit heslem (otevření + oprávnění: tisk ne, změny jen poznámky) → ulož kopii. Otevři PDF/X: Náhled výstupu (FOGRA39, CMYK). Upravit PDF: změň slovo. Poznámky: zvýraznění + lístek + nahradit text. Zkus Preflight › PDF/A kontrola na souboru z Illustratoru.</p></div></li>
+        <li><span class="t">28–30<small>min</small></span><div><b>Kontrola</b><p>Čtyři (pět) souborů ve složce s názvy: 01_interaktivni.pdf, 02_tisk_PDFX.pdf, 03_archiv_PDFA.pdf, 04_web.pdf, 05_zabezpecene.pdf. Vlastnosti dokumentu (Ctrl+D) ukazují verzi, standard a zabezpečení – to komisi ukaž.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Soubor › Vlastnosti (Ctrl+D) – důkaz pro komisi</h3>
+          <ul>
+            <li><b>Popis</b>: aplikace, verze PDF (1.3 pro X-1a, 1.6 pro X-4), velikost, počet stránek.</li>
+            <li><b>Zabezpečení</b>: metoda, co je povoleno (tisk, kopírování, změny).</li>
+            <li><b>Písma</b>: vložená (Embedded) / vložená podmnožina (Subset) – u tisku všechna.</li>
+            <li><b>Vlastní / Další</b>: standard PDF/X nebo PDF/A, výstupní záměr, stav tagování, rychlé zobrazení webu Ano/Ne.</li>
+          </ul>
+          <p class="note">V Acrobatu se u PDF/A a PDF/X zobrazí modrý pruh „Tento soubor splňuje standard …“ – dokud ho neupravíš.</p>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l22-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Tiskové PDF exportované jako „Interaktivní“ nebo „Tisk ve vysoké kvalitě“ bez značek a výstupního profilu – není to PDF/X.</div>
+      <div class="tip chyba"><b>Chyba</b>Interaktivní PDF knihy se slepenými dvojstránkami; tlačítka jen na jedné stránce místo na vzoru.</div>
+      <div class="tip chyba"><b>Chyba</b>PDF/X zaheslované – tiskárna ho neotevře v RIPu; PDF/X a PDF/A šifrování nedovolují.</div>
+      <div class="tip chyba"><b>Chyba</b>„Optimalizované pro web“ s 300 ppi obrázky v CMYK – 40 MB soubor.</div>
+      <div class="tip chyba"><b>Chyba</b>PDF/A s nevloženými písmy nebo s odkazy na externí obsah – neprojde kontrolou.</div>
+      <div class="tip chyba"><b>Chyba</b>Nerozlišení hesla pro otevření a hesla pro oprávnění; nerozlišení úprav obsahu (Upravit PDF) a poznámek (Poznámka).</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l22-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Jaké jsou základní typy PDF a k čemu slouží?</summary><div class="odp">PDF/X – tisk (písma vložená, CMYK, výstupní záměr, spadávka, značky; X-1a bez průhledností, X-4 s nimi). PDF/A – archivace (vše vložené, bez šifrování a JavaScriptu, metadata; A-1b, A-2b, A-3). Interaktivní PDF – obrazovka (hypervazby, záložky, tlačítka, stavy objektů, formuláře, média). Optimalizované pro web – malý soubor (JPEG 100–150 ppi, RGB, rychlé zobrazení webu).</div></details></li>
+      <li><details><summary>Jaký je rozdíl mezi PDF/X-1a a PDF/X-4?</summary><div class="odp">X-1a (2001): jen CMYK a přímé barvy, průhlednosti sloučené, PDF 1.3 – nejkompatibilnější. X-4 (2008/2010): živé průhlednosti a vrstvy, povoleny RGB a Lab objekty se správou barev (ICC), PDF 1.6 – pro moderní RIPy, menší riziko chyb při slučování.</div></details></li>
+      <li><details><summary>Jak PDF zaheslovat a omezit úpravy?</summary><div class="odp">V Acrobatu Nástroje › Zabezpečit › Zabezpečit heslem (nebo při exportu v záložce Zabezpečení): heslo pro otevření dokumentu a/nebo heslo pro oprávnění, kterým omezím tisk, změny (žádné / jen poznámky / formuláře), kopírování textu a obrázků, přístup čteček. Šifrování AES 256. U PDF/X a PDF/A je zakázané.</div></details></li>
+      <li><details><summary>Jak jsi vytvořil interaktivní prvky?</summary><div class="odp">V InDesignu: hypervazby (panel Hypervazby – na stránku, URL, kotvu), záložky z obsahu, tlačítka (panel Tlačítka a formuláře – převést objekt na tlačítko, akce Jít na stránku/URL, vzhled normální/přejetí/kliknutí, na vzorové stránce), objekt s více stavy (panel Stavy objektů + tlačítka Jít na další stav). Export Adobe PDF (interaktivní) po stránkách.</div></details></li>
+      <li><details><summary>Které revizní nástroje má Acrobat a k čemu jsou?</summary><div class="odp">Nástroj Poznámka: lístek, zvýraznění, podtržení, přeškrtnutí, nahrazení a vložení textu (korektury), textové pole, tužka, razítka, tvary, přílohy. Poznámky mají autora, čas, stav a odpovědi; lze je sdílet (recenze) a souhrn exportovat. Korektor značí chyby v PDF, grafik je importuje do InDesignu (Poznámky PDF) a opraví v sazbě.</div></details></li>
+      <li><details><summary>Jak jsi využil jednotlivé editory?</summary><div class="odp">InDesign – vícestránkové interaktivní PDF (tlačítka, stavy, hypervazby) a PDF/X sazby. Illustrator – vektorový PDF/X s profilem a značkami a PDF/A přímo z dialogu Uložit jako. Photoshop – bitmapový dokument uložený jako Photoshop PDF s nejmenší velikostí pro web. Acrobat Pro – zabezpečení, úpravy, poznámky, Preflight a převod na PDF/A.</div></details></li>
+      <li><details><summary>Co znamená „rychlé zobrazení webu“?</summary><div class="odp">Linearizované PDF: objekty jsou v souboru uspořádané tak, že prohlížeč zobrazí první stránku dřív, než stáhne celý soubor. Nastavuje se v Acrobatu (Předvolby › Dokumenty / Uložit jako optimalizované) nebo je součástí přednastavení Nejmenší velikost.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l22-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz22" data-quiz='[
+      {"q":"PDF určené pro dlouhodobou archivaci je","o":["PDF/X","PDF/A","PDF/E","interaktivní PDF"],"a":1,"w":"PDF/A (ISO 19005): vše vložené, bez šifrování a JavaScriptu, metadata XMP."},
+      {"q":"PDF/X-1a oproti PDF/X-4","o":["umí živé průhlednosti","má sloučené průhlednosti a jen CMYK + přímé barvy","povoluje JavaScript","je určené pro web"],"a":1,"w":"X-1a je starší a nejkompatibilnější; X-4 zachovává průhlednosti, vrstvy a objekty RGB se správou barev."},
+      {"q":"Tlačítka a stavy objektů pro interaktivní PDF vytvoříš v","o":["Photoshopu","Illustratoru","InDesignu","Acrobat Readeru"],"a":2,"w":"Panely Tlačítka a formuláře, Stavy objektů, Hypervazby; export Adobe PDF (interaktivní)."},
+      {"q":"Zabezpečené (zaheslované) PDF","o":["je vhodné pro tiskárnu","nemůže být PDF/X ani PDF/A","má vždy menší velikost","nelze otevřít v Acrobatu"],"a":1,"w":"Normy PDF/X a PDF/A šifrování zakazují – tiskový RIP by soubor nezpracoval."},
+      {"q":"Heslo pro oprávnění (vlastníka) slouží k","o":["otevření dokumentu","omezení tisku, úprav a kopírování","podpisu dokumentu","komprimaci"],"a":1,"w":"Heslo pro otevření brání otevření; heslo pro oprávnění omezuje, co smí uživatel s otevřeným dokumentem dělat."},
+      {"q":"PDF optimalizované pro web má typicky","o":["CMYK a 300 ppi","RGB, JPEG kompresi, 100–150 ppi, rychlé zobrazení webu","ořezové značky","vložené všechny fonty v plném rozsahu"],"a":1,"w":"Cílem je malý soubor a rychlé načtení; tiskové parametry jsou zbytečné."},
+      {"q":"Korekturní označení „nahradit text“ najdeš v Acrobatu v nástroji","o":["Upravit PDF","Poznámka","Uspořádat stránky","Zabezpečit"],"a":1,"w":"Nástroj Poznámka obsahuje revizní značky (zvýraznit, přeškrtnout, nahradit, vložit text, lístek, razítka). Upravit PDF mění obsah."},
+      {"q":"Který program uloží PDF/A přímo z dialogu Uložit jako?","o":["InDesign","Illustrator","jen Acrobat","žádný"],"a":1,"w":"Illustrator (i Photoshop) má přednastavení PDF/A-1b; InDesign PDF/A neexportuje – převádí se v Acrobatu."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l22-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy a videa</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="../videa.html#v-kniha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>Video: UGD 42 – Příprava dat k tisku</b><span>Přednáška Unie grafického designu o předtiskové přípravě a PDF.</span></div></a>
+      <a class="link-card" href="../kontrola.html#k-export"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><div><b>Kontrola: export PDF/X</b><span>Značky, spadávka, výstupní profil, po stránkách.</span></div></a>
+      <a class="link-card" href="../lekce/12-e-knihy.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4zM20 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg><div><b>Lekce 12: e-knihy</b><span>PDF versus ePub a mobi.</span></div></a>
+      <a class="link-card" href="../lekce/04-odstavcove-styly.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg><div><b>Lekce 04: vícestránkový dokument</b><span>Obsah, záložky, hypervazby vznikají ze stylů.</span></div></a>
+    </div>
+  </div>
+</section>
+<div class="wrap"><nav class="pager" aria-label="Další a předchozí lekce"><a class="prev" href="../lekce/05-barevne-modely.html"><small>← Předchozí lekce</small><b>05 · Barevné modely a jejich praktická aplikace</b></a><a class="next" href="../lekce/02-illustrator-zaklady.html"><small>Další lekce →</small><b>02 · Adobe Illustrator – základní ovládání</b></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="../img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="../zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="../zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/interaktivni.js"></script>
+</body>
+</html>

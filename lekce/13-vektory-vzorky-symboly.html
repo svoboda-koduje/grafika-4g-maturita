@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>13 · Illustrator – vektorové objekty, nabídky Objekt a Výběr, vzorek a symbol | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Maturitní otázka 13: mapové ikony pro fiktivního průvodce jako symboly v knihovně symbolů, nabídky Objekt a Výběr v Illustratoru (transformace, uspořádání, seskupení, cesty, složené cesty, obálky, rozdělit, výběr stejných), vytvoření vzorku a symbolu, export tiskového PDF.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="13 · Illustrator – vektorové objekty, nabídky Objekt a Výběr, vzorek a symbol">
+<meta property="og:description" content="Maturitní otázka 13: mapové ikony pro fiktivního průvodce jako symboly v knihovně symbolů, nabídky Objekt a Výběr v Illustratoru (transformace, uspořádání, seskupení, cesty, složené cesty, obálky, rozdělit, výběr stejných), vytvoření vzorku a symbolu, export tiskového PDF.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styl.css">
+</head>
+<body data-page="13-vektory-vzorky-symboly.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="../videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>OTÁZKA 13 / 23</b><span>Adobe Illustrator</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="../img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="../index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="../lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="../lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="../lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true" class="active"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="../lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="../lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="../lekce/13-vektory-vzorky-symboly.html" class="active"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="../lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="../lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="../lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="../lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="../lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="../lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="../lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="../lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="../lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="../lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="../lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="../lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="../lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="../lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="../lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="../lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="../lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="../kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="../cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="../videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="../zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-illustrator">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Maturitní otázka 13</span><span class="blok">· Adobe Illustrator</span></p>
+    <h1>Illustrator – vektorové objekty, vzorek a symbol</h1>
+    <p class="lead">Pro fiktivního <b>mapového průvodce</b> vytvoříš v Illustratoru <b>alespoň pět typů mapových ikon</b> a připravíš je jako <b>symboly v knihovně symbolů</b>. Použiješ nabídku <b>Objekt</b> a další nástroje, mapu doplníš připravenými texty a obrázky a vyexportuješ <b>tiskové PDF</b> se všemi náležitostmi. V teorii: nabídky <b>Objekt</b> a <b>Výběr</b> a jejich aplikace, a předvedení tvorby objektu typu <b>vzorek</b> a <b>symbol</b>.</p>
+    <ul class="zadani"><li><b>Illustrator</b>mapa + knihovna symbolů</li><li><b>Podklady</b>texty a obrázky</li><li><b>Výstup</b>tiskové PDF/X</li><li><b>Teorie</b>nabídky Objekt a Výběr, vzorek, symbol</li></ul>
+    <nav class="subnav" aria-label="Obsah lekce"><a href="#l13-otazka">Co se losuje</a><a href="#l13-objekt">Nabídka Objekt</a><a href="#l13-vyber">Nabídka Výběr</a><a href="#l13-symboly">Symboly</a><a href="#l13-vzorky">Vzorky</a><a href="#l13-mapa">Mapové ikony a mapa</a><a href="#l13-postup">Postup pro 30 minut</a><a href="#l13-chyby">Časté chyby</a><a href="#l13-komise">Otázky komise</a><a href="#l13-kviz">Kvíz</a></nav>
+  </div>
+</section>
+<section class="section" id="l13-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Alespoň <b>pět typů mapových ikon</b> (např. muzeum, restaurace, nádraží, park, rozhledna) pro fiktivního mapového průvodce.</li>
+          <li>Ikony připravené jako <b>symboly v knihovně symbolů</b> – vytvořené pomocí nabídky <b>Objekt</b> a dalších nástrojů.</li>
+          <li>Výsledný soubor průvodce (mapa s ikonami, texty a obrázky z podkladů) exportovaný do <b>tiskového PDF</b> se všemi parametry.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>Illustrator</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Jak se pracuje s nabídkami <b>Objekt</b> a <b>Výběr</b> a jak je aplikovat při práci s vektorovými objekty.</li>
+          <li>Předvést vytvoření objektu typu <b>vzorek</b> (pattern) a objektu typu <b>symbol</b>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l13-objekt">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Nabídka Objekt</span><h2>Co umí nabídka Objekt</h2></div>
+      <p>Nabídka Objekt je „strojovna“ Illustratoru: transformace, pořadí, skupiny, cesty, tvary, obálky, rastrování. Nauč se ji po blocích.</p>
+    </div>
+    <div class="table-scroll">
+      <table class="tech-table">
+        <thead><tr><th>Položka</th><th>Co dělá</th><th>Použití u ikon a mapy</th></tr></thead>
+        <tbody>
+          <tr><th>Transformovat</th><td>Transformovat znovu (<kbd>Ctrl</kbd>+<kbd>D</kbd>), Posun, Otočení, Zrcadlení, Měřítko, Zkosení, Transformovat jednotlivě, Vynulovat ohraničovací rámeček</td><td>Otočit kopii o 45° a Ctrl+D = paprsky, ozubené kolo; Měřítko s „Měnit tahy a efekty“ pro ikony v různých velikostech</td></tr>
+          <tr><th>Uspořádat</th><td>Přenést dopředu/dozadu, posunout o krok (<kbd>Ctrl</kbd>+<kbd>]</kbd> / <kbd>[</kbd>), Odeslat na aktuální vrstvu</td><td>Ikona nad mapou, popisek nad ikonou, podklad dole</td></tr>
+          <tr><th>Zarovnat</th><td>totéž jako panel Zarovnání</td><td>Ikony v legendě rovnoměrně</td></tr>
+          <tr><th>Seskupit / Rozdělit skupinu</th><td><kbd>Ctrl</kbd>+<kbd>G</kbd> / <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>G</kbd>; Izolovaný režim (dvojklik)</td><td>Každá ikona = skupina před převodem na symbol</td></tr>
+          <tr><th>Zamknout / Odemknout, Skrýt / Zobrazit</th><td><kbd>Ctrl</kbd>+<kbd>2</kbd>, <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>2</kbd>, <kbd>Ctrl</kbd>+<kbd>3</kbd></td><td>Zamknout mapový podklad při rozmisťování ikon</td></tr>
+          <tr><th>Rozdělit (Expand) / Rozdělit vzhled</th><td>Převede tahy, efekty, přechody, symboly, text na obyčejné cesty</td><td>Před Cestářem a před uložením symbolu; zafixovat živé efekty</td></tr>
+          <tr><th>Rastrovat</th><td>Vektor → bitmapa (rozlišení, pozadí, vyhlazení)</td><td>Výjimečně; spíš ne</td></tr>
+          <tr><th>Vytvořit mřížku přechodů / Obrysová cesta / Oříznout obraz</th><td>Mesh, převod tahu na výplň, ořez bitmapy</td><td>Obrysová cesta u ikon s tahy – stejná tloušťka při změně měřítka</td></tr>
+          <tr><th>Cesta</th><td>Spojit (<kbd>Ctrl</kbd>+<kbd>J</kbd>), Průměr, Obrysová cesta, Posun cesty (offset), Zjednodušit, Přidat kotevní body, Odstranit kotevní body, Rozdělit objekty pod, Rozdělit na mřížku, Vyčistit</td><td>Posun cesty = ochranná zóna / obrys ikony; Rozdělit na mřížku = síť pro legendu</td></tr>
+          <tr><th>Tvar</th><td>Rozdělit tvar, Převést na tvar (živé tvary)</td><td>Živé zaoblené rohy u podkladového kolečka ikony</td></tr>
+          <tr><th>Vzorek</th><td>Vytvořit, Upravit vzorek, Pořadí dlaždic</td><td>Vzorek pro plochy mapy (les, voda, zástavba)</td></tr>
+          <tr><th>Prolnutí (Blend)</th><td>Vytvořit, Volby (kroky), Rozdělit</td><td>Přechodové tvary; výjimečně</td></tr>
+          <tr><th>Obálka (Envelope Distort)</th><td>Vytvořit z pokřivení / mřížky / horního objektu</td><td>Text do tvaru (oblouk nad mapou)</td></tr>
+          <tr><th>Obtékání textu</th><td>Vytvořit, Volby</td><td>Text obtéká mapu nebo obrázek</td></tr>
+          <tr><th>Ořezová maska</th><td>Vytvořit (<kbd>Ctrl</kbd>+<kbd>7</kbd>), Uvolnit</td><td>Oříznout bitmapovou mapu/fotku do obdélníku nebo kruhu</td></tr>
+          <tr><th>Složená cesta</th><td>Vytvořit (<kbd>Ctrl</kbd>+<kbd>8</kbd>), Uvolnit</td><td>Díra v ikoně (prstenec, písmeno O) bez Cestáře</td></tr>
+          <tr><th>Plátna</th><td>Převést na plátna, Přeuspořádat, Přizpůsobit kresbě</td><td>Každá ikona na vlastním plátně pro export</td></tr>
+          <tr><th>Graf</th><td>Typ, Data, Design</td><td>Graf návštěvnosti v průvodci</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l13-vyber">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Nabídka Výběr</span><h2>Co umí nabídka Výběr</h2></div>
+      <p>Výběr v Illustratoru je víc než klikání: umí vybrat všechno stejné barvy, všechny instance symbolu nebo všechny objekty na plátně.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <ul>
+          <li><b>Vybrat vše</b> <kbd>Ctrl</kbd>+<kbd>A</kbd>, <b>Vše na aktivním plátně</b> <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>A</kbd>, <b>Zrušit výběr</b> <kbd>Shift</kbd>+<kbd>Ctrl</kbd>+<kbd>A</kbd>, <b>Znovu vybrat</b> <kbd>Ctrl</kbd>+<kbd>6</kbd>, <b>Obrátit výběr</b>.</li>
+          <li><b>Objekt nad / pod</b> – postupné vybírání ve stohu.</li>
+          <li><b>Stejné</b>: Vzhled, Atributy vzhledu, Režim prolnutí, Výplň a tah, Barva výplně, Krytí, Barva tahu, Tloušťka tahu, Styl grafiky, Tvar, <b>Instance symbolu</b>, Posloupnost odkazů, Rodina písma… – vybere všechny objekty se stejnou vlastností jako aktuální. <b>Nejsilnější nástroj pro hromadné úpravy.</b></li>
+          <li><b>Objekt</b>: Stejné na všech vrstvách, Směrové body, Stopy štětce, Ořezové masky, Zbloudilé body, Všechny textové objekty, Bodové/odstavcové textové objekty, Zavádějící objekty.</li>
+          <li><b>Začít globální úpravy</b> – podobné objekty (stejná ikona kreslená ručně vícekrát) upravíš najednou.</li>
+          <li><b>Uložit výběr</b> / Upravit výběr – pojmenovaný výběr („všechny ikony muzeí“).</li>
+          <li>Ve <b>Vrstvách</b>: klik na kolečko vpravo = vybrat obsah vrstvy/skupiny; <kbd>Alt</kbd>+klik na název vrstvy = vybrat vše ve vrstvě.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Příklady z mapy</h3>
+        <ul>
+          <li>„Všechny modré plochy (voda) chci tmavší“ → klik na jednu, <span class="menu-path">Výběr <i>›</i> Stejné <i>›</i> Barva výplně</span>, změnit barvu. Nebo globální barva ve Vzorníku.</li>
+          <li>„Všechny ikony restaurací zvětšit“ → <span class="menu-path">Výběr <i>›</i> Stejné <i>›</i> Instance symbolu</span> → Měřítko (nebo nástroj Změna velikosti symbolů).</li>
+          <li>„Zamknutý podklad, chci vybrat jen ikony“ → podklad <kbd>Ctrl</kbd>+<kbd>2</kbd>, <kbd>Ctrl</kbd>+<kbd>A</kbd> vybere jen odemčené.</li>
+          <li>„Zbloudilé body po Cestáři“ → <span class="menu-path">Výběr <i>›</i> Objekt <i>›</i> Zbloudilé body</span> → Delete; <span class="menu-path">Objekt <i>›</i> Cesta <i>›</i> Vyčistit</span>.</li>
+          <li>Klik s <kbd>Shift</kbd> přidává/odebírá; tažení lasem (<kbd>Q</kbd>) vybírá body; <kbd>Ctrl</kbd>+klik v skupině = Přímý výběr.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l13-symboly">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Objekt typu symbol</span><h2>Symboly a knihovna symbolů</h2></div>
+      <p>Symbol je <b>předloha uložená v panelu Symboly</b>; na plátně se používají <b>instance</b>. Upravíš předlohu – změní se všechny instance. Soubor je menší, mapa se dvěma sty ikonami zůstane svižná.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <h3>Vytvoření symbolu</h3>
+        <ol class="steps">
+          <li>Nakresli ikonu z tvarů (kruh podkladu + piktogram), vše do skupiny (<kbd>Ctrl</kbd>+<kbd>G</kbd>). Tahy převeď na obrysy (Objekt › Cesta › Obrysová cesta), efekty rozděl (Rozdělit vzhled).</li>
+          <li>Otevři panel <span class="menu-path">Okna <i>›</i> Symboly</span>. Přetáhni skupinu do panelu nebo <kbd>F8</kbd> / tlačítko <em>Nový symbol</em>.</li>
+          <li>Dialog: <b>Název</b> (muzeum), <b>Typ exportu</b>: Filmový klip / Grafika (pro Animate – nepodstatné), <b>Typ symbolu</b>: <b>Statický</b> (ikona) nebo <b>Dynamický</b> (instance mohou mít různé barvy – Přímý výběr uvnitř instance), <b>Registrace</b> (bod ukotvení – střed nebo spodek špendlíku), <em>Zapnout vodítka pro 9 řezů</em> (jen pro UI).</li>
+          <li>Instance na plátno: přetáhni z panelu nebo <em>Umístit instanci symbolu</em>. Nástroj <b>Rozprašovač symbolů</b> (<kbd>Shift</kbd>+<kbd>S</kbd>) + posun/změna velikosti/otáčení/obarvení/krytí/styl symbolů – pro stromy v parku.</li>
+          <li><b>Úprava symbolu</b>: dvojklik na instanci (izolovaný režim) nebo <em>Upravit symbol</em> – změna se promítne do všech instancí. <em>Přerušit vazbu</em> udělá z instance obyčejnou skupinu. <em>Nahradit symbol</em> vymění typ ikony u vybraných instancí.</li>
+          <li><b>Knihovna symbolů</b>: nabídka panelu › <em>Uložit knihovnu symbolů</em> → soubor .ai v Symbols; otevřeš v jiném dokumentu přes <em>Otevřít knihovnu symbolů › Jiná knihovna</em>. Nebo přetáhnout do <b>Knihoven CC</b> (sdílení mezi aplikacemi). Vestavěné knihovny: Mapy, Weby, Příroda…</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Symbol × skupina × kopie</h3>
+        <ul>
+          <li><b>Kopie</b> (Ctrl+C/V): nezávislé objekty; 200 ikon = 200× data; změna = 200× ručně.</li>
+          <li><b>Skupina</b>: jen „obal“ pro více objektů, žádná vazba mezi kopiemi.</li>
+          <li><b>Instance symbolu</b>: odkaz na předlohu; data jednou; hromadná změna; lze měnit měřítko, otočení, krytí, u dynamických i barvy; export SVG zachová jako <code>&lt;use&gt;</code>.</li>
+          <li>Pro Animate/SVG animace: symboly jako objekty na scéně.</li>
+        </ul>
+        <h3>Mapové ikony – zásady</h3>
+        <ul>
+          <li>Jednotný styl: stejný podklad (kruh/špendlík), stejná tloušťka, stejná velikost mřížky (např. 24 × 24 jednotek), piktogram z 2–4 tvarů.</li>
+          <li>Barevné kódování kategorií (kultura, jídlo, doprava, příroda), ale piktogram funguje i černobíle.</li>
+          <li>Registrační bod symbolu ve špičce špendlíku – špička ukazuje přesné místo.</li>
+          <li>Legenda: každý symbol + popis; ikony v legendě jsou tytéž instance.</li>
+          <li>Minimální velikost v tisku 5–6 mm; v mapě 7–10 mm.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l13-vzorky">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Objekt typu vzorek</span><h2>Vzorky (patterns)</h2></div>
+      <p>Vzorek je <b>dlaždice uložená ve Vzorníku</b>, která se opakuje jako výplň (nebo tah) objektu. Na mapě: les, voda, pole, zástavba, šrafura parku.</p>
+    </div>
+    <div class="lab" data-widget="vzorek">
+      <div class="lab-head"><h3>Dlaždice → vzorek</h3><span class="hint">Typ dlaždice, velikost, posun</span></div>
+      <div class="lab-body wide">
+        <div class="lab-stage pad"><svg viewBox="0 0 640 300" aria-label="Vlevo dlaždice vzorku, vpravo plocha vyplněná opakováním"></svg></div>
+        <div class="lab-ctrl">
+          <label><span>Typ dlaždice</span><div class="seg" data-typ><button type="button" data-v="grid" aria-pressed="true">Mřížka</button><button type="button" data-v="brick">Cihla po řádcích</button><button type="button" data-v="hex">Šestiúhelník</button></div></label>
+          <label><span>Velikost dlaždice <output>40</output> px</span><input type="range" min="20" max="80" value="40" data-vel></label>
+          <label><span>Motiv</span><div class="seg" data-motiv><button type="button" data-v="strom" aria-pressed="true">Stromy (les)</button><button type="button" data-v="vlna">Vlnky (voda)</button><button type="button" data-v="srafy">Šrafura (park)</button></div></label>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+    <div class="cols-2" style="margin-top:22px">
+      <div class="card">
+        <h3>Vytvoření vzorku (Objekt › Vzorek › Vytvořit)</h3>
+        <ol class="steps">
+          <li>Nakresli motiv dlaždice (strom = trojúhelník + obdélník; vlnka = křivka tahem). Bez pozadí, nebo s pozadím jako obdélník vespod.</li>
+          <li>Vyber motiv → <span class="menu-path">Objekt <i>›</i> Vzorek <i>›</i> Vytvořit</span>. Illustrator přejde do <b>režimu úprav vzorku</b> a vzorek uloží do Vzorníku.</li>
+          <li>Panel <b>Volby vzorku</b>: <b>Název</b>; <b>Typ dlaždice</b>: Mřížka, Cihla po řádcích, Cihla po sloupcích, Šestiúhelník po sloupcích/řádcích; <b>Posun cihel</b> (1/2, 1/3…); <b>Šířka/Výška</b> dlaždice (nebo <em>Upravit velikost dlaždice podle kresby</em> + <b>mezera</b> vodorovně/svisle); <b>Překrytí</b> (který soused je nahoře); <b>Kopie</b> 3×3 / 5×5 pro náhled; <em>Ztlumit kopie</em>; <em>Zobrazit okraj dlaždice</em>.</li>
+          <li>Motiv můžeš v režimu úprav dál kreslit a měnit; náhled opakování je živý. <b>Hotovo</b> nahoře (nebo Esc) ukončí režim.</li>
+          <li>Aplikace: vyber objekt (plocha lesa), ve Vzorníku klikni na vzorek jako <b>výplň</b> (nebo tah). Vzorek se dlaždicuje od počátku pravítek.</li>
+          <li><b>Úprava</b>: dvojklik na vzorek ve Vzorníku → znovu režim úprav; změna se promítne do všech objektů s tímto vzorkem.</li>
+          <li><b>Transformace vzorku bez objektu</b>: nástroj Měřítko/Otočení, v dialogu zaškrtnout jen <em>Transformovat vzorky</em> (a odškrtnout Objekty); nebo <kbd>~</kbd> při tažení. Předvolby › Všeobecné › Transformovat dlaždice vzorku.</li>
+          <li>Pro tisk/PDF v pořádku (vektor); pro starší workflow <em>Objekt › Rozdělit</em> převede vzorek na reálné objekty (velký soubor).</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Vzorek × symbol – rozdíl pro komisi</h3>
+        <ul>
+          <li><b>Vzorek</b> je <b>výplň</b> – vlastnost objektu, opakuje se automaticky podle dlaždice, nelze kliknout na jednotlivý strom. Hodí se na plochy a textury.</li>
+          <li><b>Symbol</b> je <b>objekt</b> – instance umisťuješ ručně (nebo rozprašovačem), každou lze posunout, zvětšit; hodí se na ikony, opakované prvky.</li>
+          <li>Oba šetří velikost souboru a umožňují hromadnou změnu z jedné předlohy.</li>
+          <li>Vzorek žije ve Vzorníku (Swatches), symbol v panelu Symboly; oba lze uložit jako knihovnu a sdílet.</li>
+        </ul>
+        <h3>Ostatní „typy objektů“, které můžeš zmínit</h3>
+        <p>Štětce (kaligrafický, rozptylový, kresebný, vzorkový, štětinový) – vzorkový štětec = vzorek na tahu (hranice, cesty, železnice na mapě); Styly grafiky (uložený vzhled); Přechody; Mřížka přechodů; Živé tvary; Složené tvary; Obálky.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l13-mapa">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Praxe</span><h2>Mapový průvodce: ikony, mapa, legenda, export</h2></div>
+      <p>Nestavíš skutečnou mapu – stavíš stylizovanou mapku s ikonami, legendou a texty z podkladů. Komise hodnotí techniku, ne kartografii.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Pět ikon (příklady)</h3><p><b>Muzeum</b> (budova se sloupy: obdélník + 3 tenké obdélníky + trojúhelník), <b>Restaurace</b> (vidlička a nůž: obdélníky + Cestář), <b>Nádraží</b> (vlak: zaoblený obdélník + okna + kola), <b>Park</b> (strom: kruh/trojúhelník + kmen), <b>Rozhledna</b> (trojúhelník + příčky), <b>Hrad</b> (cimbuří: obdélník − čtverce), <b>Informace</b> (písmeno i v kruhu), <b>Parkoviště</b> (P). Každá na podkladovém kruhu Ø 24 nebo špendlíku.</p></div>
+      <div class="card"><h3>Mapa</h3><p>Podklad: obdélník s výplní (světlá), plochy (zeleň, voda) s <b>vzorky</b>, cesty jako tahy s profilem nebo vzorkovým štětcem (železnice – čárkovaná), řeka jako křivka s tahem; vrstvy: Podklad (zamknout), Plochy, Cesty, Ikony, Texty. Pokud máš v podkladech bitmapovou mapu: Umístit, ořezová maska, vrstva zamknout, ikony nahoru.</p></div>
+      <div class="card"><h3>Texty a obrázky z podkladů</h3><p>Umístit text (odstavcový textový rámeček, styl odstavce), fotografie Umístit + ořezová maska (kruh/obdélník), popisky k ikonám (textový rámeček se stejným stylem, zarovnání), název průvodce, legenda (symboly + text, Rozmístit mezery).</p></div>
+      <div class="card"><h3>Export tiskového PDF</h3><p>Dokument: Tisk, A4/A3, CMYK, 300 ppi, spadávka 3 mm; podklad na spadávku. Uložit jako Adobe PDF: <b>PDF/X-1a</b>, ořezové značky + spadávka dokumentu, výstup Coated FOGRA39, bez možností úprav; bitmapy CMYK 300 ppi (panel Vazby), text na obrysy nebo vložená písma. Symboly a vzorky zůstávají vektorové – PDF je malé.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l13-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Dokument a vrstvy</b><p>Tisk, A4 na šířku, CMYK, 300 ppi, spadávka 3. Vrstvy: Podklad, Plochy, Cesty, Ikony, Texty, Legenda. Mřížka 24 pt pro ikony mimo plátno.</p></div></li>
+        <li><span class="t">3–13<small>min</small></span><div><b>Pět ikon → symboly</b><p>Pro každou: kruh Ø 24 + piktogram z 2–4 tvarů (Cestář, Zarovnání, Transformovat znovu); Obrysová cesta; seskupit; F8 → symbol, název, statický, registrace střed. Smaž originály z plátna (zůstanou v panelu).</p></div></li>
+        <li><span class="t">13–17<small>min</small></span><div><b>Vzorek</b><p>Strom (trojúhelník + obdélník) → Objekt › Vzorek › Vytvořit: cihla po řádcích, mezera 4, název „les“. Hotovo. Vlnka → vzorek „voda“ (mřížka).</p></div></li>
+        <li><span class="t">17–23<small>min</small></span><div><b>Mapa</b><p>Podklad obdélník na spadávku; plochy lesa a vody (Pero) s vzorky; cesty tahy 2–4 pt, železnice čárkovaná; řeka. Umístit instance symbolů na místa; Výběr › Stejné › Instance symbolu pro kontrolu.</p></div></li>
+        <li><span class="t">23–27<small>min</small></span><div><b>Texty, obrázky, legenda</b><p>Název, text z podkladů do rámečku, 2 fotky s ořezovou maskou, legenda: 5 instancí + popisky, Rozmístit mezery.</p></div></li>
+        <li><span class="t">27–30<small>min</small></span><div><b>Uložení a export</b><p>Uložit knihovnu symbolů (.ai); AI; PDF/X-1a se značkami, spadávkou, FOGRA39. Otevřít PDF.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Co předvést v teorii</h3>
+          <ul>
+            <li>Dvojklik na instanci → úprava symbolu → všechny ikony se změní. Přerušit vazbu. Nahradit symbol.</li>
+            <li>Dvojklik na vzorek ve Vzorníku → režim úprav → změna barvy stromů → celý les se změní. Volby vzorku: typ dlaždice, posun.</li>
+            <li>Nabídka Objekt: Transformovat znovu (paprsky), Uspořádat, Seskupit, Zamknout, Rozdělit vzhled, Cesta › Posun cesty, Složená cesta, Ořezová maska.</li>
+            <li>Nabídka Výběr: Stejné › Barva výplně / Instance symbolu; Objekt › Zbloudilé body; Uložit výběr.</li>
+            <li>Rozprašovač symbolů (Shift+S) – stromy v parku.</li>
+          </ul>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l13-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Ikony zkopírované Ctrl+C/V místo symbolů – zadání výslovně chce knihovnu symbolů.</div>
+      <div class="tip chyba"><b>Chyba</b>Symbol vytvořený s tahy bez Obrysové cesty – při změně měřítka instancí se tloušťky rozjedou (nebo nastav „Měnit tahy a efekty“).</div>
+      <div class="tip chyba"><b>Chyba</b>Vzorek „udělaný“ kopírováním stromů po ploše; nebo vzorek se zbytky okraje dlaždice (bílé pruhy) – zkontroluj mezery a překrytí.</div>
+      <div class="tip chyba"><b>Chyba</b>Nestejný styl ikon (různé tloušťky, velikosti, bez podkladu); ikony nečitelné pod 6 mm.</div>
+      <div class="tip chyba"><b>Chyba</b>Export bez značek/spadávky, RGB dokument, bitmapy 72 ppi.</div>
+      <div class="tip chyba"><b>Chyba</b>Neumí ukázat nabídku Výběr › Stejné; zaměňuje vzorek a symbol.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l13-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Co je symbol a jaký je rozdíl oproti kopii objektu?</summary><div class="odp">Symbol je předloha v panelu Symboly; na plátně jsou instance odkazující na předlohu. Data jsou v souboru jednou, úprava předlohy se promítne do všech instancí, lze je hromadně vybrat (Výběr › Stejné › Instance symbolu), nahradit jiným symbolem, rozprašovat. Kopie jsou nezávislé objekty – každá změna ručně, větší soubor.</div></details></li>
+      <li><details><summary>Jak jsi vytvořil knihovnu symbolů?</summary><div class="odp">Každou ikonu jsem seskupil, tahy převedl na obrysy a přetáhl do panelu Symboly (F8) – název, statický typ, registrace. Nabídka panelu › Uložit knihovnu symbolů uloží .ai soubor, který lze otevřít v jiném dokumentu přes Otevřít knihovnu symbolů › Jiná knihovna, případně sdílet přes Knihovny CC.</div></details></li>
+      <li><details><summary>Co je vzorek a jak vzniká?</summary><div class="odp">Dlaždice uložená ve Vzorníku, která se opakuje jako výplň nebo tah objektu. Objekt › Vzorek › Vytvořit otevře režim úprav s panelem Volby vzorku: typ dlaždice (mřížka, cihla, šestiúhelník), posun, velikost a mezery, překrytí, náhled kopií. Dvojklik ve Vzorníku vzorek upraví všude. Transformace vzorku bez objektu přes volbu Transformovat vzorky.</div></details></li>
+      <li><details><summary>Jaký je rozdíl mezi vzorkem a symbolem?</summary><div class="odp">Vzorek je výplň – vlastnost objektu, opakuje se automaticky, jednotlivé motivy nelze posouvat; pro plochy a textury. Symbol je objekt – instance umisťuji ručně, každou lze transformovat; pro ikony. Oba mají jednu předlohu a hromadnou změnu.</div></details></li>
+      <li><details><summary>Co najdu v nabídce Objekt a k čemu jsi ji použil?</summary><div class="odp">Transformovat (otočení, měřítko, Transformovat znovu), Uspořádat (pořadí), Seskupit, Zamknout/Skrýt, Rozdělit a Rozdělit vzhled, Rastrovat, Cesta (Spojit, Obrysová cesta, Posun cesty, Zjednodušit), Tvar, Vzorek, Prolnutí, Obálka, Obtékání textu, Ořezová maska, Složená cesta, Plátna, Graf. Použil jsem Transformovat znovu pro paprsky rozhledny, Obrysovou cestu před symbolem, Složenou cestu pro díru v ikoně, Ořezovou masku pro fotky, Vzorek pro les.</div></details></li>
+      <li><details><summary>Co umí nabídka Výběr navíc oproti klikání?</summary><div class="odp">Vybrat vše / na plátně / obrátit; Objekt nad/pod; Stejné (vzhled, výplň, tah, tloušťka, krytí, instance symbolu, písmo…) pro hromadné úpravy; Objekt (zbloudilé body, ořezové masky, textové objekty, stopy štětce); globální úpravy; Uložit výběr.</div></details></li>
+      <li><details><summary>Jak jsi zajistil tiskové náležitosti PDF?</summary><div class="odp">Dokument CMYK se spadávkou 3 mm, podklad dotažený na spadávku, bitmapy CMYK 300 ppi, export PDF/X-1a s ořezovými značkami, spadávkou z dokumentu a výstupním profilem Coated FOGRA39, bez možností úprav Illustratoru.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l13-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz13" data-quiz='[
+      {"q":"Nový symbol z vybraných objektů vytvoříš klávesou","o":["F7","F8","Ctrl+8","Shift+S"],"a":1,"w":"F8 (nebo přetažení do panelu Symboly). Ctrl+8 je složená cesta, Shift+S rozprašovač symbolů."},
+      {"q":"Úprava předlohy symbolu","o":["změní jen jednu instanci","změní všechny instance","vytvoří nový symbol","není možná"],"a":1,"w":"V tom je smysl symbolů – jedna předloha, mnoho instancí."},
+      {"q":"Vzorek v Illustratoru je uložen","o":["v panelu Symboly","ve Vzorníku (Swatches)","v panelu Štětce","ve Vrstvách"],"a":1,"w":"Vzorek je typ vzorku barvy – aplikuje se jako výplň nebo tah."},
+      {"q":"Příkaz Výběr › Stejné › Instance symbolu","o":["vybere všechny objekty stejné barvy","vybere všechny instance téhož symbolu","nahradí symbol","smaže symboly"],"a":1,"w":"Hromadný výběr instancí pro změnu velikosti, nahrazení nebo smazání."},
+      {"q":"Transformovat znovu (Ctrl+D) použiješ, když","o":["chceš smazat objekt","opakuješ poslední transformaci – např. otočení kopie o 45°","měníš barvu","vytváříš vzorek"],"a":1,"w":"Otočení s Alt (kopie) + Ctrl+D několikrát = paprsky, ozubené kolo, číselník."},
+      {"q":"Před uložením ikony jako symbol je vhodné","o":["rastrovat ji","převést tahy na obrysy a rozdělit vzhled","smazat výplně","vložit do vzorku"],"a":1,"w":"Jinak se při změně měřítka instancí tloušťky tahů a efekty chovají nepředvídatelně."},
+      {"q":"Typ dlaždice vzorku „Cihla po řádcích“ znamená","o":["dlaždice v mřížce","řádky posunuté o část šířky (jako zdivo)","šestiúhelníkové dlaždice","náhodné rozmístění"],"a":1,"w":"Posun cihel (1/2, 1/3…) nastavíš ve Volbách vzorku."},
+      {"q":"Díru do ikony (prstenec) bez Cestáře uděláš příkazem","o":["Objekt › Složená cesta › Vytvořit (Ctrl+8)","Objekt › Rastrovat","Výběr › Obrátit","Objekt › Zamknout"],"a":0,"w":"Složená cesta s pravidlem sudý–lichý vytvoří průhlednou díru."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l13-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy a videa</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="../videa.html#v-ai"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>Videa: polotónový vzorek, textury, štětce, zaoblení bodů</b><span>Krátké návody pro Illustrator na OneDrive.</span></div></a>
+      <a class="link-card" href="../lekce/02-illustrator-zaklady.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8"/></svg><div><b>Lekce 02: nástroje, Cestář, Zarovnání</b><span>Základy, na kterých ikony stojí.</span></div></a>
+      <a class="link-card" href="../lekce/09-tvorba-loga.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg><div><b>Lekce 09: tvorba loga</b><span>Geometrická konstrukce symbolu.</span></div></a>
+      <a class="link-card" href="../kontrola.html#k-export"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><div><b>Kontrola: export PDF/X</b><span>Značky, spadávka, profil.</span></div></a>
+    </div>
+  </div>
+</section>
+<div class="wrap"><nav class="pager" aria-label="Další a předchozí lekce"><a class="prev" href="../lekce/09-tvorba-loga.html"><small>← Předchozí lekce</small><b>09 · Illustrator – tvorba loga, základní zásady</b></a><a class="next" href="../lekce/03-photoshop-zaklady.html"><small>Další lekce →</small><b>03 · Adobe Photoshop – základní ovládání</b></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="../img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="../zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="../zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/interaktivni.js"></script>
+</body>
+</html>

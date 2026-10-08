@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>12 · InDesign – formáty e-knih, ePub, mobi | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Maturitní otázka 12: elektronická publikace z InDesignu – příprava stylů a provázaných rámečků, styl obsahu pro hypertextový TOC, bitmapová obálka navržená v InDesignu, export do ePub; výhody a nevýhody ePub, mobi a PDF.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="12 · InDesign – formáty e-knih, ePub, mobi">
+<meta property="og:description" content="Maturitní otázka 12: elektronická publikace z InDesignu – příprava stylů a provázaných rámečků, styl obsahu pro hypertextový TOC, bitmapová obálka navržená v InDesignu, export do ePub; výhody a nevýhody ePub, mobi a PDF.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styl.css">
+</head>
+<body data-page="12-e-knihy.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="../videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>OTÁZKA 12 / 23</b><span>InDesign a typografie</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="../img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="../index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="../lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="../lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="../lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="../lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="../lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="../lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="../lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="../lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="../lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="../lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true" class="active"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="../lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="../lekce/04-odstavcove-styly.html"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="../lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="../lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="../lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="../lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="../lekce/12-e-knihy.html" class="active"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="../lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="../lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="../lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="../lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="../lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="../lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="../kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="../cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="../videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="../zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-indesign">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Maturitní otázka 12</span><span class="blok">· InDesign a typografie</span></p>
+    <h1>InDesign – formáty e-knih, ePub, mobi</h1>
+    <p class="lead">Z připraveného textu uděláš v InDesignu <b>e-knihu ve formátu ePub</b> s klikacím obsahem (TOC) – po kliknutí na název kapitoly se čtenář dostane na kapitolu. Obálku navrhneš v samostatném InDesign dokumentu a vyexportuješ jako <b>bitmapu</b> (JPEG/PNG), kterou k ePubu připojíš. V teorii: jak jsi soubor připravil, styly a styl obsahu, obálka, a <b>výhody a nevýhody ePub, mobi a PDF</b>.</p>
+    <ul class="zadani"><li><b>InDesign</b>export ePub (reflowable)</li><li><b>Podklady</b>textový soubor</li><li><b>Obálka</b>bitmapa z InDesignu, 2560 × 1600 px</li><li><b>Teorie</b>ePub × mobi × PDF</li></ul>
+    <nav class="subnav" aria-label="Obsah lekce"><a href="#l12-otazka">Co se losuje</a><a href="#l12-formaty">ePub, mobi, PDF</a><a href="#l12-priprava">Příprava v InDesignu</a><a href="#l12-toc">Styl obsahu a TOC</a><a href="#l12-obalka">Obálka</a><a href="#l12-export">Export a kontrola</a><a href="#l12-postup">Postup pro 30 minut</a><a href="#l12-chyby">Časté chyby</a><a href="#l12-komise">Otázky komise</a><a href="#l12-kviz">Kvíz</a></nav>
+  </div>
+</section>
+<section class="section" id="l12-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Z připraveného textu vytvořit v InDesignu <b>elektronickou publikaci</b> a vyexportovat do <b>ePub</b>.</li>
+          <li>Pečlivě <b>provázaná textová pole</b> a nastavený <b>styl obsahu</b>, aby ePub měl <b>hypertextový TOC</b> – kliknutím na kapitolu v obsahu skočíš na kapitolu.</li>
+          <li><b>Bitmapová obálka</b> navržená v samostatném InDesign souboru a připojená k ePubu.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>InDesign (+ čtečka ePub ke kontrole)</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Příprava souboru pro export, <b>nastavení odstavcových stylů a stylu obsahu</b>.</li>
+          <li>Návrh a <b>implementace bitmapové obálky</b>.</li>
+          <li><b>Výhody a nevýhody ePub, mobi a PDF</b> včetně základních charakteristik.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l12-formaty">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Teorie</span><h2>ePub, mobi a PDF</h2></div>
+      <p>Tři formáty, tři filozofie: text, který se přelévá podle obrazovky (ePub, mobi), nebo pevná stránka (PDF).</p>
+    </div>
+    <div class="table-scroll">
+      <table class="tech-table">
+        <thead><tr><th></th><th>ePub</th><th>mobi / AZW / KF8</th><th>PDF</th></tr></thead>
+        <tbody>
+          <tr><th>Co to je</th><td>Otevřený standard (IDPF/W3C), ZIP archiv s XHTML, CSS, obrázky a metadaty (OPF, NCX/nav). Verze ePub 2 a ePub 3 (audio, video, skripty, pevné rozvržení).</td><td>Proprietární formát Amazonu pro Kindle (mobi, novější AZW3/KF8, dnes KFX). Vzniká konverzí z ePub (Calibre, Kindle Previewer). Od 2022 Amazon přijímá přímo ePub.</td><td>Portable Document Format (Adobe, ISO 32000). Pevné stránky s písmy, vektory a bitmapami; vypadá všude stejně.</td></tr>
+          <tr><th>Rozvržení</th><td><b>Reflowable</b> (přelévatelné) – text se přizpůsobí velikosti obrazovky a písma; nebo <b>fixed layout</b> pro obrazové knihy.</td><td>Reflowable; omezené CSS.</td><td><b>Pevné</b> – stránka se jen zmenšuje/zvětšuje; na mobilu nutné zoomovat.</td></tr>
+          <tr><th>Výhody</th><td>Čtenář mění písmo, velikost, pozadí; malý soubor; hypertextový obsah; funguje na všech čtečkách kromě starých Kindle; přístupnost (čtečky obrazovky).</td><td>Nativní pro Kindle (největší trh); DRM a prodej přes Amazon.</td><td>Přesná typografie a layout; obrázky, tabulky, poznámky na místě; tisk; interaktivní prvky, formuláře; jeden soubor pro obrazovku i tisk.</td></tr>
+          <tr><th>Nevýhody</th><td>Grafik nemá kontrolu nad vzhledem; složité tabulky, obtékání a sazba se rozpadají; různé čtečky zobrazují různě.</td><td>Uzavřený, svázaný s Amazonem; horší typografie; nutná konverze.</td><td>Na malém displeji nečitelné bez zoomu; velký soubor; nelze měnit písmo; nevhodné pro dlouhé čtení na telefonu.</td></tr>
+          <tr><th>Kdy použít</th><td>Beletrie, texty, učebnice – vše, co se čte na různých zařízeních.</td><td>Distribuce přes Amazon Kindle.</td><td>Obrazové publikace, katalogy, manuály, tisk, archivace (PDF/A), interaktivní dokumenty (iPDF).</td></tr>
+          <tr><th>Z InDesignu</th><td>Soubor › Exportovat › <b>EPUB (přelévatelné rozvržení)</b> nebo <b>EPUB (pevné rozvržení)</b>.</td><td>Export ePub → konverze v <b>Calibre</b> (ve sdílené složce) nebo Kindle Previewer.</td><td>Soubor › Exportovat › Adobe PDF (tisk) / (interaktivní).</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="tip" style="margin-top:18px"><b>Jedna věta pro komisi</b>„ePub je přelévatelný otevřený formát pro čtečky, mobi je totéž v uzavřené podobě pro Kindle, PDF je pevná stránka pro tisk a obrazové knihy.“</p>
+  </div>
+</section>
+
+<section class="section" id="l12-priprava">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 1</span><h2>Příprava dokumentu pro export</h2></div>
+      <p>ePub nebere stránky, ale <b>tok textu</b>: pořadí rámečků, odstavcové styly (→ CSS třídy) a ukotvené objekty. Co není ve story nebo není ukotvené, vypadne nebo skončí na konci.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Jedna story</h3><p>Celý text knihy v <b>jedné provázané story</b> (automatické nalití). Více samostatných story = ePub je seřadí podle pozice nebo podle panelu Články – nespolehlivé. Obálka a tiráž mohou být vlastní rámečky, ale pořadí urči v panelu <span class="menu-path">Okna <i>›</i> Články</span>.</p></div>
+      <div class="card"><h3>Styly = CSS</h3><p>Každý odstavcový styl se stane třídou CSS. Pojmenuj je bez diakritiky a mezer (Kapitola, Text, Motto). Ve stylu v záložce <b>Export – značkování</b> přiřaď HTML tag: Kapitola → <code>h1</code>, Podkapitola → <code>h2</code>, Text → <code>p</code>. U Kapitoly zaškrtni <b>Rozdělit dokument EPUB</b> – každá kapitola bude samostatný XHTML soubor (rychlejší načítání, správné skoky).</p></div>
+      <div class="card"><h3>Žádné lokální formátování</h3><p>Lokální přepsání (naklikané tučné) se exportuje jako inline <code>span</code> se stylem – rozbíjí to CSS a čtečky ho ignorují. Tučné a kurzíva přes <b>znakové styly</b> (Export: <code>strong</code>, <code>em</code>). Odstavce odděluj mezerou za (styl), ne prázdnými řádky – prázdné odstavce v ePubu dělají díry.</p></div>
+      <div class="card"><h3>Obrázky ukotvené</h3><p>Obrázek musí být <b>ukotvený v textu</b> (přetáhni modrý čtvereček rámečku do textu, nebo Objekt › Ukotvený objekt › Vložit). Volný obrázek skončí na konci knihy. Ve <em>Volby exportu objektu</em> nastav alternativní text a velikost relativně k šířce textu (např. 100 %).</p></div>
+      <div class="card"><h3>Co ePub neumí</h3><p>Obtékání kolem tvaru, sloupce, vícesloupcové tabulky se slučováním, tabulátory a vodicí znaky, pevné zalomení řádků, různá písma (jen pokud vložíš fonty a čtečka je povolí), přesné umístění. Pro tyto věci je PDF.</p></div>
+      <div class="card"><h3>Metadata</h3><p><span class="menu-path">Soubor <i>›</i> Informace o souboru</span>: název, autor, popis, klíčová slova, copyright – ePub je přebírá (titul, tvůrce, jazyk <code>cs</code>). Název souboru bez diakritiky.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l12-toc">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 2</span><h2>Styl obsahu a hypertextový TOC</h2></div>
+      <p>V ePubu existují dva obsahy: <b>navigační TOC</b> (menu čtečky – vzniká ze stylu obsahu) a případně obsah vysázený v textu knihy (generovaný InDesignem jako text). Pro hypertextovou navigaci je klíčový ten první.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <ol class="steps">
+          <li><span class="menu-path">Formát <i>›</i> Styly obsahu</span> › <em>Nový</em>: název stylu obsahu např. <b>TOC-ePub</b>. Do seznamu <em>Zahrnout odstavcové styly</em> přidej <b>Kapitola</b> (úroveň 1) a případně Podkapitola (úroveň 2). Styl záznamu nevadí – do navigace jde jen text a cíl.</li>
+          <li>Při exportu ePub v záložce <b>Navigace</b> zvol <em>Navigační obsah: Více úrovní (styl obsahu)</em> a vyber <b>TOC-ePub</b>. Čtečka tak zobrazí klikací obsah ve svém menu.</li>
+          <li>Chceš-li obsah i <b>v textu</b> (na začátku knihy jako stránku „Obsah“): <span class="menu-path">Formát <i>›</i> Obsah</span> se stejným stylem obsahu, umísti na začátek story; InDesign při exportu z něj udělá hypertextové odkazy (zaškrtni <em>Vytvořit záložky PDF</em> – pro ePub se převedou na odkazy). Vodicí znaky a čísla stránek v ePubu nemají smysl – v nastavení obsahu zvol <em>Číslo stránky: Bez čísla stránky</em> pro verzi do ePubu.</li>
+          <li>Každá kapitola začíná odstavcem se stylem Kapitola → s volbou <em>Rozdělit dokument EPUB</em> vznikne vlastní soubor a TOC na něj odkazuje.</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Jak to vypadá uvnitř ePubu</h3>
+        <p>ePub je ZIP: <code>mimetype</code>, <code>META-INF/container.xml</code>, <code>OEBPS/content.opf</code> (metadata, seznam souborů, pořadí čtení – spine), <code>toc.ncx</code> / <code>nav.xhtml</code> (navigace), <code>*.xhtml</code> (kapitoly), <code>*.css</code>, <code>image/</code>, <code>font/</code>. Přejmenuj <code>.epub</code> na <code>.zip</code> a podívej se dovnitř – komise to ocení.</p>
+        <h3>Kontrola</h3>
+        <ul>
+          <li>Otevři ePub v čtečce: Adobe Digital Editions, Calibre, Thorium Reader, Books (macOS), Google Play Books. V Edge/Chrome s doplňkem.</li>
+          <li>Zkontroluj: obálka, TOC v menu klikací, kapitoly na nové „stránce“, obrázky na místě, tučné/kurzíva, žádné díry.</li>
+          <li>Validace: <a href="https://github.com/w3c/epubcheck" target="_blank" rel="noopener">EPUBCheck</a> (Calibre ho umí spustit).</li>
+          <li>Převod do mobi/AZW3: Calibre › Převést knihy › výstup MOBI/AZW3, obálka se přenese.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l12-obalka">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 3</span><h2>Bitmapová obálka</h2></div>
+      <p>Obálka e-knihy je <b>obrázek</b> (JPEG/PNG), ne stránka. Navrhneš ji v InDesignu jako samostatný dokument a vyexportuješ jako bitmapu – ePub ji použije jako obálku v knihovně čtečky.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Rozměr</h3><p>Doporučení (Amazon KDP i Apple): poměr <b>1,6 : 1</b> (výška : šířka), ideálně <b>2560 × 1600 px</b>, minimálně 1000 × 625 px, max. 10 000 px. Výška alespoň 2500 px pro HD displeje. V InDesignu dokument např. <b>100 × 160 mm</b> (nebo 1600 × 2560 px v režimu Web) – poměr sedí.</p></div>
+      <div class="card"><h3>Návrh</h3><p>Název knihy velkým, čitelným písmem (v náhledu knihovny je obálka 1–2 cm vysoká!), jméno autora, dominantní obrázek nebo barevná plocha. Žádné jemné detaily a drobný text. Barvy v RGB – obrazovka. Bez spadávky a ořezových značek.</p></div>
+      <div class="card"><h3>Export bitmapy</h3><p><span class="menu-path">Soubor <i>›</i> Exportovat <i>›</i> JPEG</span> (nebo PNG): kvalita Maximální, rozlišení tak, aby vyšlo ≈2560 px na výšku (pro 160 mm = <b>406 ppi</b>; pro px dokument 72 ppi), barevný prostor RGB, bez spadávky. Alternativa: <span class="menu-path">Soubor <i>›</i> Exportovat <i>›</i> PNG</span>.</p></div>
+      <div class="card"><h3>Implementace do ePubu</h3><p>Při exportu ePub v záložce <b>Všeobecné › Obálka</b>: <em>Zvolit obrázek</em> → vyber vyexportovaný JPEG. (Volba <em>Rastrovat první stránku</em> udělá obálku z první stránky dokumentu – horší kvalita, ale nouzově funguje.) InDesign obrázek vloží jako <code>cover.jpg</code> a označí ho v metadatech.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l12-export">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 4</span><h2>Export ePub (přelévatelné rozvržení)</h2></div>
+      <p><span class="menu-path">Soubor <i>›</i> Exportovat <i>›</i> EPUB (přelévatelné rozvržení)</span>. Projdi záložky zleva doprava.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <ul>
+          <li><b>Všeobecné</b>: verze EPUB 3.0; Obálka: Zvolit obrázek; Navigační obsah: Více úrovní (styl obsahu) → TOC-ePub; Pořadí obsahu: Podle rozvržení stránek (jedna story) nebo Stejné jako v panelu Články; Rozdělit dokument: podle odstavcového stylu Kapitola.</li>
+          <li><b>Text</b>: poznámky pod čarou na konci kapitoly / vyskakovací; odstranit vynucená zalomení řádků ✓; odrážky a číslování mapovat na seznamy.</li>
+          <li><b>Objekt</b>: zachovat vzhled z rozvržení; rozlišení 150 ppi; velikost relativně ke stránce.</li>
+          <li><b>Převod obrázků</b>: automaticky (JPEG pro fotky, PNG pro grafiku), kvalita vysoká.</li>
+          <li><b>CSS</b>: generovat CSS ✓, zachovat lokální přepsání ✗ (pokud máš čistý dokument), vložit písma ✓ (pokud licence dovoluje).</li>
+          <li><b>JavaScript</b>: nic. <b>Metadata</b>: název, tvůrce, jazyk cs, vydavatel, datum.</li>
+          <li><b>Aplikace prohlížení</b>: otevřít po exportu v Digital Editions / Calibre.</li>
+        </ul>
+      </div>
+      <div class="screens">
+        <figure><img src="../img/navody/epub-export.webp" alt="Dialog exportu ePub v InDesignu – záložka Všeobecné s obálkou a navigačním obsahem" width="1400" height="788"><figcaption>Export EPUB: verze, obálka z obrázku, navigační obsah ze stylu obsahu, rozdělení podle stylu.</figcaption></figure>
+        <figure><img src="../img/navody/epub-nastaveni.webp" alt="Správné nastavení souboru ePub v exportu z InDesignu" width="883" height="735"><figcaption>Doporučené volby exportu ePub ze sdílené složky.</figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l12-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Dokument knihy</b><p>A5, protilehlé, okraje 18 mm (pro ePub nehrají roli, ale dokument musí být čistý). Uložit.</p></div></li>
+        <li><span class="t">3–6<small>min</small></span><div><b>Nalití textu</b><p><kbd>Ctrl</kbd>+<kbd>D</kbd> + <kbd>Shift</kbd>+klik → jedna story přes všechny stránky. Skryté znaky: smazat prázdné odstavce (^p^p → ^p).</p></div></li>
+        <li><span class="t">6–12<small>min</small></span><div><b>Styly</b><p>Kapitola (h1, nová stránka, Rozdělit dokument EPUB), Podkapitola (h2), Text (p, zarážka, mezera za 0 nebo malá), Motto; znakové Tučné (strong), Kurzíva (em). Aplikovat na všechny nadpisy.</p></div></li>
+        <li><span class="t">12–15<small>min</small></span><div><b>Styl obsahu</b><p>Formát › Styly obsahu › Nový TOC-ePub: Kapitola úroveň 1. Volitelně Formát › Obsah na začátek story bez čísel stránek.</p></div></li>
+        <li><span class="t">15–21<small>min</small></span><div><b>Obálka</b><p>Nový dokument 100 × 160 mm (RGB, Web/Mobilní): název, autor, plocha/obrázek. Export JPEG, maximální kvalita, 406 ppi (≈2560 px výška), RGB. Uložit INDD obálky.</p></div></li>
+        <li><span class="t">21–26<small>min</small></span><div><b>Export ePub</b><p>EPUB (přelévatelné): obálka ze souboru, navigační obsah TOC-ePub, rozdělit podle Kapitola, odstranit vynucená zalomení, CSS generovat, metadata (název, autor, cs).</p></div></li>
+        <li><span class="t">26–30<small>min</small></span><div><b>Kontrola</b><p>Otevřít v čtečce: obálka, TOC klikací, kapitoly. Případně Calibre → MOBI/AZW3. Připravit výklad.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Pokud nefunguje TOC</h3>
+          <ul>
+            <li>Kapitoly nemají styl Kapitola (zkontroluj panel stylů bez „+“).</li>
+            <li>V exportu je Navigační obsah „Žádný“ nebo „Názvy souborů“.</li>
+            <li>Styl obsahu neobsahuje styl Kapitola.</li>
+            <li>Text je ve více nespojených story – čtečka skáče jinam.</li>
+          </ul>
+          <h3>Pokud chybí obálka</h3>
+          <ul>
+            <li>Soubor JPEG je CMYK – musí být RGB.</li>
+            <li>Obrázek větší než 10 000 px nebo menší než 1000 × 625.</li>
+            <li>V exportu zvoleno „Žádná“ místo „Zvolit obrázek“.</li>
+          </ul>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l12-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Více nespojených textových polí – ePub má kapitoly v jiném pořadí nebo rozsekané.</div>
+      <div class="tip chyba"><b>Chyba</b>Prázdné řádky mezi odstavci a vynucená zalomení – v čtečce díry a rozbité odstavce.</div>
+      <div class="tip chyba"><b>Chyba</b>Nadpisy bez stylu Kapitola → žádný TOC, kniha jako jeden dlouhý soubor.</div>
+      <div class="tip chyba"><b>Chyba</b>Obálka exportovaná v CMYK nebo malá (600 px); obálka „udělaná“ jako první stránka textu.</div>
+      <div class="tip chyba"><b>Chyba</b>Obrázky neukotvené – skončí na konci knihy; obrázky 300 ppi CMYK TIFF – obrovský soubor.</div>
+      <div class="tip chyba"><b>Chyba</b>iPDF knihy se slepenými dvoustránkami; ePub exportovaný jako „pevné rozvržení“ pro textovou knihu.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l12-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Jaký je rozdíl mezi ePub, mobi a PDF?</summary><div class="odp">ePub – otevřený přelévatelný formát (XHTML + CSS v ZIPu), text se přizpůsobuje obrazovce, čtenář mění písmo; mobi/AZW – uzavřený formát Amazonu pro Kindle, vzniká konverzí z ePub; PDF – pevné stránky s přesnou typografií, pro tisk a obrazové knihy, na malém displeji nutný zoom.</div></details></li>
+      <li><details><summary>Jak jsi připravil dokument pro export do ePub?</summary><div class="odp">Jedna provázaná story bez prázdných odstavců a vynucených zalomení; odstavcové styly s HTML značkami (Kapitola → h1 s rozdělením dokumentu, Text → p), znakové styly pro tučné a kurzívu; obrázky ukotvené v textu; metadata v Informacích o souboru.</div></details></li>
+      <li><details><summary>Jak vznikne hypertextový obsah (TOC)?</summary><div class="odp">Vytvořím styl obsahu (Formát › Styly obsahu) se stylem Kapitola; při exportu ePub zvolím Navigační obsah: Více úrovní (styl obsahu). Čtečka zobrazí klikací obsah. Volitelně i obsah v textu přes Formát › Obsah – InDesign z něj udělá odkazy.</div></details></li>
+      <li><details><summary>Jak jsi navrhl a připojil obálku?</summary><div class="odp">Samostatný dokument InDesignu v poměru 1,6 : 1 (100 × 160 mm), velký název a autor, RGB. Export JPEG v maximální kvalitě tak, aby měl ≈2560 × 1600 px. V exportu ePub: Obálka › Zvolit obrázek. Minimální rozměr obálky je 1000 × 625 px.</div></details></li>
+      <li><details><summary>Proč se v ePubu nepoužívají čísla stránek a vodicí znaky?</summary><div class="odp">Text se přelévá podle zařízení a velikosti písma – stránky neexistují, mění se s každým nastavením. Navigace je odkazová (TOC), ne číselná. Tabulátory a vodicí znaky CSS v čtečkách nepodporují.</div></details></li>
+      <li><details><summary>Jak z ePubu uděláš mobi?</summary><div class="odp">Konverzí v Calibre (Převést knihy › MOBI nebo AZW3) nebo v Kindle Previewer. Amazon dnes přijímá i ePub přímo. Obálka a TOC se při konverzi zachovají.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l12-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz12" data-quiz='[
+      {"q":"ePub je uvnitř","o":["jedno velké PDF","ZIP archiv s XHTML, CSS, obrázky a metadaty","textový soubor TXT","soubor InDesignu"],"a":1,"w":"Přejmenuj .epub na .zip a rozbal – uvidíš kapitoly XHTML, CSS, obrázky, content.opf a navigaci."},
+      {"q":"Hypertextový TOC v ePubu vznikne","o":["z ručně napsaného obsahu","ze stylu obsahu zvoleného v exportu jako navigační obsah","z čísel stránek","automaticky z tučných řádků"],"a":1,"w":"Formát › Styly obsahu (styl Kapitola) → v exportu Navigační obsah: Více úrovní (styl obsahu)."},
+      {"q":"Doporučený rozměr obálky e-knihy je","o":["210 × 297 mm CMYK","2560 × 1600 px RGB","640 × 480 px","A5 se spadávkou"],"a":1,"w":"Poměr 1,6 : 1, výška alespoň 2500 px, RGB, JPEG/PNG. Minimum 1000 × 625 px."},
+      {"q":"Formát mobi je určen pro","o":["Apple Books","čtečky Kindle (Amazon)","tisk","Android obecně"],"a":1,"w":"mobi/AZW je proprietární formát Amazonu; vzniká konverzí z ePub (Calibre)."},
+      {"q":"Obrázek, který není ukotvený v textu, se v ePubu","o":["zobrazí na správném místě","objeví na konci knihy nebo vypadne","zvětší","převede na text"],"a":1,"w":"ePub zná jen tok textu; obrázek musí být ukotvený (anchored) v místě, kde má být."},
+      {"q":"Hlavní výhoda přelévatelného ePubu oproti PDF je","o":["přesná typografie","text se přizpůsobí obrazovce a čtenář mění písmo","menší počet souborů","možnost tisku"],"a":1,"w":"Reflow – stejná kniha čitelná na telefonu, čtečce i tabletu; cenou je ztráta kontroly nad vzhledem."},
+      {"q":"Aby každá kapitola byla v ePubu samostatný soubor, ve stylu Kapitola zaškrtneš","o":["Nerozdělovat řádky","Rozdělit dokument EPUB","Začátek odstavce: Kdekoli","Vytvořit záložky"],"a":1,"w":"Export – značkování › Rozdělit dokument EPUB; zároveň mapování na h1."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l12-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy a videa</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="../videa.html#v-export"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>Videa: export ePub, mobi, e-book PDF; opravy pro ePub</b><span>Dva nahrané tutoriály k závěru sazby knihy.</span></div></a>
+      <a class="link-card" href="https://calibre-ebook.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4zM20 5h-6a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h7z"/></svg><div><b>Calibre</b><span>Správa a konverze e-knih (ePub → mobi/AZW3), čtečka, EPUBCheck. Instalátor je i ve sdílené složce.</span></div></a>
+      <a class="link-card" href="../lekce/22-typy-pdf.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><div><b>Lekce 22: typy PDF</b><span>Interaktivní a optimalizované PDF jako alternativa e-knihy.</span></div></a>
+      <a class="link-card" href="../cviceni.html#c-kniha"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><div><b>Cvičení: kniha – ePub a iPDF</b><span>Poslední fáze pololetní práce.</span></div></a>
+    </div>
+  </div>
+</section>
+<div class="wrap"><nav class="pager" aria-label="Další a předchozí lekce"><a class="prev" href="../lekce/07-manual-loga.html"><small>← Předchozí lekce</small><b>07 · InDesign – manuál loga</b></a><a class="next" href="../lekce/08-obalovy-design.html"><small>Další lekce →</small><b>08 · Obalový design</b></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="../img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="../zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="../zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/interaktivni.js"></script>
+</body>
+</html>

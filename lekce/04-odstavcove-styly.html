@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>04 · InDesign – odstavcové styly, vzorové stránky, generování obsahu | Grafika 4.G – příprava k maturitě</title>
+<meta name="description" content="Maturitní otázka 4: vícestránkový dokument v InDesignu s provázanými textovými rámečky, dvousloupcovou sazbou, odstavcovými styly, vygenerovaným obsahem s vodicími znaky, vzorovou stránkou s číslováním, obtékáním textu a exportem do PDF/X.">
+<meta name="theme-color" content="#23272D">
+<meta property="og:title" content="04 · InDesign – odstavcové styly, vzorové stránky, generování obsahu">
+<meta property="og:description" content="Maturitní otázka 4: vícestránkový dokument v InDesignu s provázanými textovými rámečky, dvousloupcovou sazbou, odstavcovými styly, vygenerovaným obsahem s vodicími znaky, vzorovou stránkou s číslováním, obtékáním textu a exportem do PDF/X.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%2323272D'/%3E%3Ctext x='12' y='17' text-anchor='middle' font-family='Arial Black,Arial' font-weight='900' font-size='14' fill='%23F4F0E7'%3EGr%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Barlow+Condensed:wght@600;700;800&family=Caveat:wght@600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styl.css">
+</head>
+<body data-page="04-odstavcove-styly.html">
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div class="topbar">
+  <div class="wrap">
+    <nav aria-label="Školní odkazy">
+      <a class="skola" href="https://i4.spse.cz/">Intranet</a>
+      <a class="skola" href="https://supl.spse.cz/">Suplování</a>
+      <a class="skola" href="https://rozvrh.spse.cz/">Rozvrh</a>
+      <a class="od" href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19 10a4 4 0 0 1-1 8z"/></svg>Výukové soubory 4.G (OneDrive)</a>
+      <a class="od" href="../videa.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg>Videotutoriály</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener" title="Rozcestník vysokých škol s tvůrčími obory"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Vysoké školy</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener" title="Přehled dobrovolných výtvarných a grafických soutěží"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Soutěže</a>
+      <a class="od ext" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener" title="Odborné anglické termíny pro počítačovou grafiku"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Angličtina</a>
+    </nav>
+    <div class="lesson" id="etapaInfo"><b>OTÁZKA 4 / 23</b><span>InDesign a typografie</span></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Úvod – Grafika, 4. ročník">
+      <img src="../img/logo-spse.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+      <span class="brand-sub"><strong>Grafika – příprava k maturitě</strong>IT – Počítačová grafika, 4. ročník</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Lekce
+    </button>
+    <nav class="main-nav" id="menu" aria-label="Lekce a maturitní otázky">
+      <ul><li><a href="../index.html"><span class="num">⌂</span>Úvod</a></li><li class="grp sk-zaklady"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Základy grafiky</span><span class="short">Základy</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Základy grafiky</span><a href="../lekce/01-formaty-souboru.html"><span class="num">01</span><span>Formáty grafických souborů<small>bitmapa × vektor, tisk × web</small></span></a><a href="../lekce/05-barevne-modely.html"><span class="num">05</span><span>Barevné modely a jejich praktická aplikace<small>RGB, CMYK, Lab, HSB, gamut</small></span></a><a href="../lekce/22-typy-pdf.html"><span class="num">22</span><span>PDF – typy PDF, vytvoření a úpravy<small>PDF/X, PDF/A, interaktivní, web</small></span></a></div></li><li class="grp sk-illustrator"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Illustrator</span><span class="short">Illustrator</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Illustrator</span><a href="../lekce/02-illustrator-zaklady.html"><span class="num">02</span><span>Adobe Illustrator – základní ovládání<small>plátna, Cestář, bannery, spadávka</small></span></a><a href="../lekce/09-tvorba-loga.html"><span class="num">09</span><span>Illustrator – tvorba loga, základní zásady<small>zásady, varianty, chyby</small></span></a><a href="../lekce/13-vektory-vzorky-symboly.html"><span class="num">13</span><span>Illustrator – vektorové objekty, vzorek a symbol<small>Objekt, Výběr, knihovna symbolů</small></span></a></div></li><li class="grp sk-photoshop"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Adobe Photoshop</span><span class="short">Photoshop</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Adobe Photoshop</span><a href="../lekce/03-photoshop-zaklady.html"><span class="num">03</span><span>Adobe Photoshop – základní ovládání<small>masky, kanály, výběry, DPI</small></span></a><a href="../lekce/10-digitalni-malba.html"><span class="num">10</span><span>Photoshop – digitální malba, štětce a stopy<small>A3 CMYK, štětce, vrstvy</small></span></a><a href="../lekce/11-mockup.html"><span class="num">11</span><span>Photoshop – transformace, vytvoření mock-upu<small>inteligentní objekty, masky</small></span></a><a href="../lekce/23-animace-banner-video.html"><span class="num">23</span><span>Reklamní animovaná webová grafika<small>GIF banner, video Full HD</small></span></a></div></li><li class="grp sk-indesign"><button type="button" aria-expanded="false" aria-haspopup="true" class="active"><span class="full">InDesign a typografie</span><span class="short">InDesign</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">InDesign a typografie</span><a href="../lekce/06-pismo-typografie.html"><span class="num">06</span><span>Písmo a typografie<small>osnova, kerning, proklad, pravidla</small></span></a><a href="../lekce/04-odstavcove-styly.html" class="active"><span class="num">04</span><span>InDesign – odstavcové styly, vzorové stránky, obsah<small>styly, paginace, generovaný obsah</small></span></a><a href="../lekce/21-import-wordu.html"><span class="num">21</span><span>InDesign – import textu z Wordu, znakové a odstavcové styly<small>turistický průvodce A4 → A5</small></span></a><a href="../lekce/14-brozura-archova-montaz.html"><span class="num">14</span><span>InDesign – sazba brožury + archová montáž<small>A5, tiráž, vazby V1–V9</small></span></a><a href="../lekce/15-dl-letak.html"><span class="num">15</span><span>Grafická úprava DL letáku<small>třetiny, ohyby, zrcadlo sazby</small></span></a><a href="../lekce/07-manual-loga.html"><span class="num">07</span><span>InDesign – manuál loga<small>šablona, kapitoly, kritéria loga</small></span></a><a href="../lekce/12-e-knihy.html"><span class="num">12</span><span>InDesign – formáty e-knih, ePub, mobi<small>TOC, obálka, export</small></span></a></div></li><li class="grp sk-design"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Design a výtvarná teorie</span><span class="short">Design</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Design a výtvarná teorie</span><a href="../lekce/08-obalovy-design.html"><span class="num">08</span><span>Obalový design<small>2D síť, 3D vizualizace, e-shop</small></span></a><a href="../lekce/16-perspektiva-kompozice.html"><span class="num">16</span><span>Perspektiva, techniky, kompozice, zlatý řez, modulor<small>výtvarná teorie v prezentaci</small></span></a></div></li><li class="grp sk-dejiny"><button type="button" aria-expanded="false" aria-haspopup="true"><span class="full">Dějiny umění</span><span class="short">Dějiny</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">Dějiny umění</span><a href="../lekce/17-dejiny-pravek.html"><span class="num">17</span><span>Dějiny umění – pravěk<small>paleolit až doba železná</small></span></a><a href="../lekce/18-dejiny-starovek.html"><span class="num">18</span><span>Dějiny umění – starověk<small>Egypt, Mezopotámie, Řecko, Řím</small></span></a><a href="../lekce/19-dejiny-stredovek.html"><span class="num">19</span><span>Dějiny umění – středověk<small>Byzanc, románský sloh, gotika</small></span></a><a href="../lekce/20-dejiny-novovek.html"><span class="num">20</span><span>Dějiny umění – novověk<small>renesance až současnost</small></span></a></div></li><li class="grp sk-plus"><button type="button" aria-expanded="false" aria-haspopup="true">K maturitě<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button><div class="drop"><span class="grp-label">K maturitě</span><a href="../kontrola.html"><span class="num">+</span><span>Kontrola před odevzdáním</span></a><a href="../cviceni.html"><span class="num">+</span><span>Cvičení 1. pololetí</span></a><a href="../videa.html"><span class="num">+</span><span>Videotutoriály</span></a><a href="../zdroje.html"><span class="num">+</span><span>Zdroje a skripty</span></a></div></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-4 9 4-9 4z"/><path d="M7 11v4c0 1.5 2.5 3 5 3s5-1.5 5-3v-4"/></svg>Rozcestník vysokých škol s tvůrčími obory</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3a3 3 0 0 1-3 4M7 5H4a3 3 0 0 0 3 4"/></svg>Výtvarné a grafické soutěže</a></li><li class="jen-mobil"><a class="back" href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h7M7.5 5v2c0 3-2 6-4.5 7.5M5 9c1.5 2.5 3.5 4.5 6 5.5"/><path d="M13 19l3.5-9 3.5 9M14.3 16h4.4"/></svg>Odborné anglické termíny</a></li></ul>
+    </nav>
+  </div>
+</header>
+
+<main id="obsah">
+<section class="stage-head stage-indesign">
+  <div class="wrap">
+    <p class="kicker"><span class="otazka-num">Maturitní otázka 4</span><span class="blok">· InDesign a typografie</span></p>
+    <h1>InDesign – odstavcové styly, vzorové stránky, obsah</h1>
+    <p class="lead">Tohle je zmenšené periodikum: několik stran A4, text nalitý do <b>provázaných rámečků</b> ve dvou sloupcích, nejméně tři <b>odstavcové styly</b>, z jednoho z nich <b>vygenerovaný obsah</b> s vodicími znaky, <b>vzorová stránka</b> s automatickým číslováním, obrázek s <b>obtékáním</b>, typografické a gramatické opravy a export do <b>PDF/X</b>. V teorii: parametry odstavcových stylů, princip vzorových stránek a instance výplně a tahu na rámečcích a textu.</p>
+    <ul class="zadani"><li><b>InDesign</b>vícestránkový dokument A4</li><li><b>Podklady</b>textový soubor + obrázek v maturitním PC</li><li><b>Výstup</b>PDF/X s výstupním profilem</li><li><b>Teorie</b>styly, vzorové stránky, výplň a tah</li></ul>
+    <nav class="subnav" aria-label="Obsah lekce"><a href="#l4-otazka">Co se losuje</a><a href="#l4-dokument">Dokument a zrcadlo</a><a href="#l4-ramecky">Provázané rámečky a sloupce</a><a href="#l4-styly">Odstavcové styly</a><a href="#l4-vzorove">Vzorové stránky</a><a href="#l4-obsah">Generovaný obsah</a><a href="#l4-obtekani">Obtékání a výplň/tah</a><a href="#l4-postup">Postup pro 30 minut</a><a href="#l4-chyby">Časté chyby</a><a href="#l4-komise">Otázky komise</a><a href="#l4-kviz">Kvíz</a></nav>
+  </div>
+</section>
+<section class="section" id="l4-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Vícestránkový dokument A4 (typicky 8 stran) z <b>připraveného textového souboru</b>.</li>
+          <li><b>Provázaná textová pole</b> s <b>dvousloupcovou</b> sazbou.</li>
+          <li>Alespoň <b>tři odstavcové styly</b> (nadpis, podnadpis, základní text) a z jednoho z nich <b>vygenerovaný obsah</b> s vlastním stylem a <b>vodicími znaky</b> (tečkami k číslu stránky).</li>
+          <li><b>Vzorová stránka</b> s automatickým číslem stránky.</li>
+          <li>Obrázek s <b>obtékáním textu</b>; typografické a gramatické opravy (TypoSkript, Hledat a nahradit, kontrola pravopisu).</li>
+          <li>Export do <b>PDF/X</b> s vhodným výstupním profilem (Coated FOGRA39).</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>podklady: TXT/DOCX + obrázek</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li><b>Parametry odstavcových stylů</b> – k čemu slouží a jak je nastavit, aby vyhovovaly typografickým pravidlům, gramatice a <b>ČSN 01 6910</b>.</li>
+          <li>Princip práce se <b>vzorovými stránkami</b>.</li>
+          <li>Předvést <b>výplň a tah</b> na textových rámečcích a na textu samotném; výhody a nevýhody.</li>
+        </ul>
+        <p class="note">Všechno z toho jsi dělal při sazbě periodika a knihy – tady to děláš v malém a pod časem.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l4-dokument">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 1</span><h2>Dokument a zrcadlo sazby</h2></div>
+      <p>Zrcadlo sazby (sazební obrazec) je plocha na stránce vymezená okraji, do které se sází text. V InDesignu ji vidíš jako fialový obdélník – textové rámečky ho mají respektovat.</p>
+    </div>
+    <div class="cols-2">
+      <div class="lab" data-widget="zrcadlo">
+        <div class="lab-head"><h3>Zrcadlo sazby a sloupce</h3><span class="hint">Okraje, sloupce, mezera mezi sloupci</span></div>
+        <div class="lab-body stack">
+          <div class="lab-stage pad"><svg viewBox="0 0 640 330" aria-label="Dvoustrana A4 s okraji, sazebním obrazcem a sloupci"></svg></div>
+          <div class="lab-ctrl">
+            <div class="cols" style="gap:10px">
+              <label><span>Nahoře <output>20</output> mm</span><input type="range" min="8" max="40" value="20" data-top></label>
+              <label><span>Dole <output>25</output> mm</span><input type="range" min="8" max="40" value="25" data-bot></label>
+              <label><span>Uvnitř (u hřbetu) <output>25</output> mm</span><input type="range" min="8" max="40" value="25" data-in></label>
+              <label><span>Vně <output>20</output> mm</span><input type="range" min="8" max="40" value="20" data-out-m></label>
+              <label><span>Sloupce <output>2</output></span><input type="range" min="1" max="4" value="2" data-cols></label>
+              <label><span>Mezera mezi sloupci <output>5</output> mm</span><input type="range" min="3" max="12" value="5" data-gut></label>
+            </div>
+            <div class="readout" data-out></div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Založení dokumentu (3 minuty)</h3>
+        <ol class="steps">
+          <li><span class="menu-path">Soubor <i>›</i> Nový <i>›</i> Dokument</span>, záložka <b>Tisk</b>, A4, jednotky mm, počet stran podle zadání (8), <b>Protilehlé stránky</b> zapnuté (dvoustránková sazba).</li>
+          <li><b>Sloupce</b>: 2, mezera 5 mm – sloupce se zapíšou do zrcadla a textový rámeček je pak sám přebírá (nebo je nastavíš u rámečku).</li>
+          <li><b>Okraje</b>: nahoře 20, dole 25, uvnitř 25, vně 20 mm (u hřbetu víc kvůli vazbě, dole víc kvůli optickému středu). Spadávka 3 mm.</li>
+          <li><span class="menu-path">Úpravy <i>›</i> Nastavení barev</span>: pracovní prostor CMYK <b>Coated FOGRA39</b>. Řeší se jednou, platí pro celý dokument.</li>
+          <li>Ulož jako INDD s názvem podle zadání. Zapni skryté znaky (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd>) – uvidíš mezery, konce odstavců a vynucená zalomení.</li>
+        </ol>
+        <p class="tip"><b>Proč okraje nejsou stejné</b>Vnitřní okraj se v hřbetu „ztrácí“ ve vazbě, dolní okraj má být opticky větší než horní (optický střed je výš než geometrický). Klasický poměr okrajů vnitřní : horní : vnější : dolní bývá 2 : 3 : 4 : 6 nebo jednodušší 1 : 1 : 1,5 : 2.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l4-ramecky">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 2</span><h2>Provázané rámečky a sloupce</h2></div>
+      <p>Jeden článek = jeden příběh textu (story) tekoucí přes provázané rámečky. Sloupce nejsou samostatná pole, ale vlastnost rámečku.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Umístění textu</h3><p><span class="menu-path">Soubor <i>›</i> Umístit</span> (<kbd>Ctrl</kbd>+<kbd>D</kbd>), vyber TXT/DOCX. Kurzor se „nabije“ textem. <b>Automatické nalití</b>: podrž <kbd>Shift</kbd> a klikni do zrcadla první stránky – InDesign vytvoří provázané rámečky na všech stránkách (a přidá stránky, pokud je text delší). Bez Shiftu klikáš po stránkách ručně, nebo <kbd>Alt</kbd> pro poloautomatické nalévání.</p></div>
+      <div class="card"><h3>Provázání</h3><p>Každý rámeček má vstupní a výstupní port (malý čtvereček). Červené <b>+</b> na výstupu = přesazený text (overset). Klikni na port a pak do dalšího rámečku – text teče dál. <span class="menu-path">Zobrazení <i>›</i> Zobrazit navázání textu</span> ukáže modré spojnice. Jedna story má jeden začátek a jeden konec.</p></div>
+      <div class="card"><h3>Sloupce v rámečku</h3><p><span class="menu-path">Objekt <i>›</i> Volby textového rámečku</span> (<kbd>Ctrl</kbd>+<kbd>B</kbd>): počet sloupců 2, mezera 5 mm, vyrovnat sloupce. Nadpis přes oba sloupce: v odstavcovém stylu <em>Rozdělit sloupce › Rozpětí sloupců › Všechny</em>. Tím nemusíš nadpis vytahovat do samostatného pole.</p></div>
+      <div class="card"><h3>Proč ne více polí</h3><p>Rozsekaný článek do nezávislých polí: po každé opravě textu musíš ručně přesouvat text mezi poli, obsah se nevygeneruje správně, ePub ztratí pořadí. Provázané rámečky + styly = všechno se přepočítá samo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l4-styly">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 3</span><h2>Odstavcové styly</h2></div>
+      <p>Styl = pojmenovaná sada parametrů odstavce. Změníš styl, změní se všechny odstavce najednou. Tři styly jsou minimum: <em>Nadpis</em>, <em>Podnadpis</em>, <em>Základní text</em>; k tomu <em>Obsah</em> a <em>Popisek</em>.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <h3>Parametry stylu a jejich správné nastavení</h3>
+        <div class="table-scroll">
+        <table class="tech-table">
+          <thead><tr><th>Záložka</th><th>Co nastavit</th><th>Proč</th></tr></thead>
+          <tbody>
+            <tr><th>Základní formáty znaků</th><td>písmo, řez, stupeň, proklad, <b>kerning Optický</b>, prostrkání 0</td><td>šedý tón sazby, čitelnost</td></tr>
+            <tr><th>Další formáty znaků</th><td><b>Jazyk: Čeština</b></td><td>dělení slov a kontrola pravopisu podle češtiny</td></tr>
+            <tr><th>Odsazení a mezery</th><td>zarovnání do bloku (text) / vlevo (popisky); zarážka 1. řádku nebo mezera za odstavcem</td><td>ČSN: odstavce se oddělují buď zarážkou, nebo mezerou, ne prázdným řádkem</td></tr>
+            <tr><th>Volby rozdělování odstavců</th><td><b>Nerozdělovat řádky</b> (2 na začátku, 2 na konci); u nadpisu <em>Nerozdělovat od následujících: 2 řádky</em>; u kapitoly <em>Začátek odstavce: na následující stránce</em></td><td>sirotci a vdovy, nadpis nikdy sám dole</td></tr>
+            <tr><th>Dělení slov</th><td>zapnuto u textu, <b>po prvních 2, před posledními 3</b> písmeny, max. 3 za sebou; vypnout dělení velkých písmen, posledního slova, přes sloupec; u nadpisů dělení vypnout</td><td>pravidla dělení</td></tr>
+            <tr><th>Zarovnání (Justification)</th><td>mezislovní mezera min. 80 % – opt. 100 % – max. 133 %, mezery znaků 0, poslední řádek vlevo</td><td>bez „řek“ v blokové sazbě</td></tr>
+            <tr><th>Mřížka účaří</th><td>Zarovnat na účaří u základního textu</td><td>řádky v sousedních sloupcích a na rubu v zákrytu (registr)</td></tr>
+            <tr><th>Tabulátory</th><td>u stylu obsahu: pravý tabulátor na šířku sloupce, <b>vodicí znak „.“</b></td><td>tečky mezi názvem a číslem stránky</td></tr>
+            <tr><th>Odrážky a číslování, iniciály</th><td>podle potřeby (seznamy, iniciála na začátku článku)</td><td>strukturování textu</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:16px">
+          <h3>Jak styly vytvořit rychle</h3>
+          <ol class="steps">
+            <li>Naformátuj ručně jeden odstavec základního textu (písmo, 9,5/13 pt, do bloku, zarážka 4 mm).</li>
+            <li>Panel <b>Odstavcové styly</b> (<kbd>F11</kbd>) › <em>Nový odstavcový styl</em> – styl převezme formátování. Zaškrtni <em>Aplikovat styl na výběr</em>. Pojmenuj <em>Text</em>.</li>
+            <li>Nadpis: nový styl <em>Nadpis</em> založený <em>Na základě: Text</em>, změň písmo a stupeň, mezera za 3 mm, Rozpětí sloupců: všechny, <em>Nerozdělovat od následujících 2 řádky</em>.</li>
+            <li><em>Podnadpis</em> založený na Nadpisu, menší stupeň. <em>Popisek</em> založený na Textu, menší, vlevo.</li>
+            <li>Aplikuj: klik do odstavce + klik na styl. Klávesová zkratka ve stylu (numerická klávesnice) zrychlí práci.</li>
+            <li>Lokální přepsání (znak „+“ u názvu stylu) odstraníš <kbd>Alt</kbd>+klik na styl nebo přeneseš do stylu <em>Předefinovat styl</em> (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>).</li>
+          </ol>
+        </div>
+        <div class="screens">
+          <figure><img src="../img/navody/chyby-periodika-4.webp" alt="Volby rozdělování odstavců – Nerozdělovat řádky" width="1400" height="788"><figcaption>Volby rozdělování odstavců: Nerozdělovat řádky zapnuto.</figcaption></figure>
+          <figure><img src="../img/navody/chyby-periodika-5.webp" alt="Dělení slov – před posledními 3 písmeny" width="1400" height="788"><figcaption>Dělení slov: před posledními 3 písmeny, bez velkých písmen, posledního slova a přes sloupce.</figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l4-vzorove">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 4</span><h2>Vzorové stránky a číslování</h2></div>
+      <p>Vzorová stránka (master) je šablona: co na ni dáš, objeví se na všech stránkách, které ji používají. Číslo stránky je speciální znak, který se na každé stránce přepočítá.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <h3>Princip vzorových stránek</h3>
+        <ul>
+          <li>Panel <b>Stránky</b> (<kbd>F12</kbd>): nahoře vzorové stránky (A-Vzor), dole stránky dokumentu. Dvojklikem na A-Vzor ji otevřeš.</li>
+          <li>Na vzor patří: <b>číslo stránky</b>, záhlaví/zápatí (název periodika, rubrika), linky, logo, pozadí – vše, co se opakuje.</li>
+          <li>Textový rámeček v zápatí → <span class="menu-path">Text <i>›</i> Vložit speciální znak <i>›</i> Značky <i>›</i> Aktuální číslo stránky</span> (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>). Na vzoru se zobrazí „A“, na stránkách skutečné číslo.</li>
+          <li>Prvky ze vzoru jsou na stránce zamčené. Uvolníš je <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+klik (lokální přepsání).</li>
+          <li>Více vzorů: B-Vzor pro rubriku, <em>Žádný</em> pro obálku a tiráž (bez čísla). Přetažením vzoru na stránku ji přiřadíš; <em>Aplikovat vzor na stránky</em> pro rozsah.</li>
+          <li>Vzor může vycházet z jiného vzoru (B na základě A) – hierarchie jako u stylů.</li>
+          <li><b>Číslování od jiné stránky</b>: <em>Volby číslování a oddílů</em> – začátek oddílu, počáteční číslo, formát číslic (1, i, A).</li>
+        </ul>
+      </div>
+      <figure class="svg-fig" style="margin:0">
+        <svg viewBox="0 0 520 300" role="img" aria-label="Schéma: vzorová stránka A s číslem stránky a záhlavím se promítá na stránky dokumentu 2–7; obálka má vzor Žádný">
+          <rect width="520" height="300" fill="#fff"/>
+          <g transform="translate(20 20)">
+            <rect width="150" height="100" fill="#FBF0C4" stroke="#23272D"/>
+            <text x="75" y="18" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="700" font-size="13">A-Vzor (dvoustrana)</text>
+            <line x1="75" y1="24" x2="75" y2="100" stroke="#23272D" stroke-dasharray="3 3"/>
+            <rect x="10" y="28" width="55" height="8" fill="#23272D" opacity=".7"/><rect x="85" y="28" width="55" height="8" fill="#23272D" opacity=".7"/>
+            <text x="14" y="94" font-family="Barlow,sans-serif" font-size="11" fill="#B4532A">A</text><text x="130" y="94" font-family="Barlow,sans-serif" font-size="11" fill="#B4532A">A</text>
+            <text x="12" y="46" font-size="9" font-family="Barlow,sans-serif" fill="#585E66">záhlaví</text>
+            <text x="30" y="94" font-size="9" font-family="Barlow,sans-serif" fill="#585E66">← číslo stránky (Ctrl+Alt+Shift+N)</text>
+          </g>
+          <g transform="translate(200 20)">
+            <rect width="110" height="100" fill="#EAE4D6" stroke="#23272D"/>
+            <text x="55" y="18" text-anchor="middle" font-family="Barlow Condensed,sans-serif" font-weight="700" font-size="13">[Žádný]</text>
+            <text x="55" y="60" text-anchor="middle" font-size="10" font-family="Barlow,sans-serif" fill="#585E66">pro obálku, tiráž</text>
+          </g>
+          <g font-family="Barlow,sans-serif" font-size="11">
+            <g transform="translate(20 160)">
+              <rect width="60" height="80" fill="#fff" stroke="#23272D"/><text x="30" y="46" text-anchor="middle" font-size="10" fill="#585E66">obálka</text><text x="30" y="74" text-anchor="middle" font-size="9" fill="#999">Žádný</text>
+            </g>
+            <g transform="translate(95 160)"><rect width="60" height="80" fill="#fff" stroke="#23272D"/><rect x="5" y="6" width="22" height="4" fill="#23272D" opacity=".7"/><text x="8" y="74" font-size="10" fill="#B4532A">2</text></g>
+            <g transform="translate(155 160)"><rect width="60" height="80" fill="#fff" stroke="#23272D"/><rect x="33" y="6" width="22" height="4" fill="#23272D" opacity=".7"/><text x="48" y="74" font-size="10" fill="#B4532A">3</text></g>
+            <g transform="translate(230 160)"><rect width="60" height="80" fill="#fff" stroke="#23272D"/><rect x="5" y="6" width="22" height="4" fill="#23272D" opacity=".7"/><text x="8" y="74" font-size="10" fill="#B4532A">4</text></g>
+            <g transform="translate(290 160)"><rect width="60" height="80" fill="#fff" stroke="#23272D"/><rect x="33" y="6" width="22" height="4" fill="#23272D" opacity=".7"/><text x="48" y="74" font-size="10" fill="#B4532A">5</text></g>
+            <g transform="translate(365 160)"><rect width="60" height="80" fill="#fff" stroke="#23272D"/><rect x="5" y="6" width="22" height="4" fill="#23272D" opacity=".7"/><text x="8" y="74" font-size="10" fill="#B4532A">6</text></g>
+            <g transform="translate(425 160)"><rect width="60" height="80" fill="#fff" stroke="#23272D"/><rect x="33" y="6" width="22" height="4" fill="#23272D" opacity=".7"/><text x="48" y="74" font-size="10" fill="#B4532A">7</text></g>
+            <text x="20" y="268" fill="#585E66">stránky dokumentu – A-Vzor dodává záhlaví a číslo, které se samo přepočítá</text>
+          </g>
+          <path d="M95 125 C95 150 110 150 125 160" fill="none" stroke="#B4532A" stroke-width="1.5"/>
+          <path d="M95 125 C150 140 300 140 455 160" fill="none" stroke="#B4532A" stroke-width="1.5"/>
+          <path d="M255 125 C255 150 100 140 50 160" fill="none" stroke="#999" stroke-width="1.5" stroke-dasharray="4 3"/>
+        </svg>
+        <figcaption>Vzor A se promítá na stránky 2–7, obálka používá vzor Žádný. Číslo stránky je jeden znak, který se na každé stránce přepočítá.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l4-obsah">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 5</span><h2>Generovaný obsah s vodicími znaky</h2></div>
+      <p>Obsah InDesign sestaví sám ze všech odstavců, které mají zvolený styl (Nadpis). Výsledek je text se stylem <em>Obsah</em>, který upravíš jako každý jiný – a po změnách ho jen aktualizuješ.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <ol class="steps">
+          <li>Vytvoř styl <b>Obsah</b> (na základě Textu): vlevo, bez zarážky, mezera za 1 mm. V záložce <b>Tabulátory</b>: pravý tabulátor na pravém okraji sloupce, do pole <em>Vodicí znak</em> napiš tečku „.“ (případně tečku a mezeru pro řidší tečky).</li>
+          <li><span class="menu-path">Formát <i>›</i> Obsah</span>: v levém seznamu <em>Ostatní styly</em> vyber <b>Nadpis</b> → <em>Přidat</em>. Vpravo nastav <em>Styl záznamu: Obsah</em>, <em>Číslo stránky: Za záznamem</em>, <em>Mezi záznamem a číslem</em>: <code>^t</code> (tabulátor). Nadpis obsahu („Obsah“) se stylem Nadpis. Zaškrtni <em>Nahradit existující obsah</em> pro pozdější aktualizaci.</li>
+          <li>OK → kurzor je nabitý obsahem, klikni do rámečku na stránce obsahu (obvykle strana 2 nebo 3).</li>
+          <li>Po úpravách textu: klik do obsahu › <span class="menu-path">Formát <i>›</i> Aktualizovat obsah</span>. Obsah neupravuj ručně – přepíše se.</li>
+          <li>Do stylu Obsah můžeš přidat číslo stránky v <b>znakovém stylu</b> (tučně) – nastavuje se v dialogu Obsah › <em>Styl: Číslo stránky</em>.</li>
+        </ol>
+        <p class="note">Stejný mechanismus vytváří záložky a hypertextový obsah pro interaktivní PDF a ePub (lekce <a href="../lekce/12-e-knihy.html">12</a>, <a href="../lekce/22-typy-pdf.html">22</a>) – v dialogu Obsah zaškrtni <em>Vytvořit záložky PDF</em>.</p>
+      </div>
+      <div class="card">
+        <h3>Jak má obsah vypadat</h3>
+        <div class="sazba" style="padding:16px 20px;border:1px solid var(--line);border-radius:6px;max-width:420px">
+          <p style="font-family:var(--cond);font-weight:700;font-size:1.5rem;margin:0 0 .5em">Obsah</p>
+          <p style="display:flex;margin:0 0 .3em"><span>Editorial</span><span style="flex:1;border-bottom:1px dotted #222;margin:0 4px 5px"></span><b>2</b></p>
+          <p style="display:flex;margin:0 0 .3em"><span>Rozhovor: Dominik Szoboszlai</span><span style="flex:1;border-bottom:1px dotted #222;margin:0 4px 5px"></span><b>4</b></p>
+          <p style="display:flex;margin:0 0 .3em"><span>Reportáž z tribuny</span><span style="flex:1;border-bottom:1px dotted #222;margin:0 4px 5px"></span><b>6</b></p>
+          <p style="display:flex;margin:0"><span>Tabulka ligy</span><span style="flex:1;border-bottom:1px dotted #222;margin:0 4px 5px"></span><b>8</b></p>
+        </div>
+        <p style="margin-top:14px">Název záznamu vlevo, číslo stránky vpravo na pravém tabulátoru, mezi nimi vodicí znak (tečky). Číslo stránky nikdy nezapisuj ručně – při každé změně sazby se posune.</p>
+        <p class="tip"><b>Komise se ráda ptá</b>„Z čeho se obsah generuje?“ – <em>Z odstavců, které mají přiřazený zvolený odstavcový styl (Nadpis).</em> „Co když přidám článek?“ – <em>Aktualizovat obsah.</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l4-obtekani">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 6</span><h2>Obtékání textu, výplň a tah</h2></div>
+      <p>Obrázek umístěný do sazby a text, který ho obtéká. A k tomu teorie, kterou komise chce vidět předvedenou: co udělá výplň a tah na rámečku a co na textu.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Umístění obrázku</h3><p><kbd>Ctrl</kbd>+<kbd>D</kbd>, klikni (nebo táhni) – vznikne grafický rámeček s obrázkem. <span class="menu-path">Objekt <i>›</i> Přizpůsobení <i>›</i> Přizpůsobit obsah proporcionálně</span> nebo <em>Vyplnit rámeček</em>. Panel <b>Vazby</b> ukáže efektivní ppi (musí být ≥ 300) a barevný prostor (CMYK). Obrázek nikdy nekopíruj přes schránku – vždy Umístit, aby zůstala vazba na soubor.</p></div>
+      <div class="card"><h3>Obtékání textu</h3><p><span class="menu-path">Okna <i>›</i> Obtékání textu</span> (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>W</kbd>): <b>Obtékat kolem ohraničovacího rámečku</b> s odsazením 3–4 mm na všech stranách. <em>Obtékat kolem tvaru objektu</em> používá ořezovou cestu nebo alfa kanál (PSD s průhledností). Text obtéká jen ze stran – „jump“ přes objekt zapneš volbou <em>Přeskočit objekt</em>. Obtékání se nastavuje na objektu (obrázku), ne na textu; text, který obtékat nemá (popisek), má v Volbách textového rámečku <em>Ignorovat obtékání textu</em>.</p></div>
+      <div class="card"><h3>Výplň a tah rámečku</h3><p>Textový rámeček může mít vlastní <b>výplň</b> (podkladová barva – např. rámeček s tabulkou nebo upoutávkou) a <b>tah</b> (obrys). Panel Barvy/Vzorník, nástroj Výběr. Výhoda: rychlé grafické oddělení boxu; vnitřní odsazení textu přes Volby textového rámečku › <em>Vsazení</em>. Nevýhoda: barevná plocha musí být v CMYK, text na barvě hůř čitelný, u výplně až ke kraji stránky nutná spadávka.</p></div>
+      <div class="card"><h3>Výplň a tah na textu</h3><p>Nástroj Text, vyber znaky: výplň mění barvu písma, <b>tah na textu</b> obtahuje obrysy znaků. Pro titulky efekt obrysového písma; v hladkém textu nikdy – tah mění kresbu písma a zhoršuje čitelnost; tenké tahy (0,25 pt) se v tisku ztrácejí. Pro ikonu „ikonky“ v barvě: znakový styl. Objektový styl na rámeček = výplň + tah + vsazení + obtékání pojmenované a opakovatelné.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l4-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div><p>Pořadí, které nejvíc šetří čas: dokument → vzor → nalití → styly → obsah → obrázek → opravy → export.</p></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Dokument</b><p>A4, 8 stran, protilehlé, 2 sloupce / 5 mm, okraje 20/25/25/20, spadávka 3 mm, FOGRA39. Uložit.</p></div></li>
+        <li><span class="t">3–6<small>min</small></span><div><b>Vzorová stránka</b><p>A-Vzor: zápatí s číslem stránky (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd>) vně, záhlaví s názvem. Stránce 1 přiřaď vzor Žádný (obálka/titul).</p></div></li>
+        <li><span class="t">6–9<small>min</small></span><div><b>Nalití textu</b><p><kbd>Ctrl</kbd>+<kbd>D</kbd> → <kbd>Shift</kbd>+klik do zrcadla na straně 2 → provázané rámečky přes celý dokument. Zkontroluj, že nikde nesvítí červené +.</p></div></li>
+        <li><span class="t">9–16<small>min</small></span><div><b>Styly</b><p>Text (do bloku, 9,5/13, zarážka, čeština, dělení, nerozdělovat řádky, optický kerning) → Nadpis (rozpětí sloupců, mezera za, nerozdělovat od následujících) → Podnadpis → Popisek → Obsah (tabulátor s tečkami). Aplikuj na všechny odstavce.</p></div></li>
+        <li><span class="t">16–19<small>min</small></span><div><b>Obsah</b><p>Formát › Obsah: styl Nadpis, záznam Obsah, číslo za záznamem, ^t. Umísti na stranu 2 (nebo 3).</p></div></li>
+        <li><span class="t">19–22<small>min</small></span><div><b>Obrázek</b><p>Umístit, přizpůsobit, obtékání kolem ohraničovacího rámečku 3 mm, popisek stylem Popisek. Vazby: ppi ≥ 300, CMYK.</p></div></li>
+        <li><span class="t">22–26<small>min</small></span><div><b>Typografické a gramatické opravy</b><p>TypoSkript (pokud je), Hledat a nahradit: dvojité mezery, spojovník → pomlčka, pevné mezery za k/s/v/z. Dynamická kontrola pravopisu – oprav podtržené. Aktualizovat obsah.</p></div></li>
+        <li><span class="t">26–30<small>min</small></span><div><b>Export PDF/X</b><p>Soubor › Exportovat › Adobe PDF (tisk): PDF/X-1a:2001, ořezové značky + značky spadávky + spadávka z dokumentu, Výstup: Coated FOGRA39. Otevřít a zkontrolovat.</p></div></li>
+      </ul>
+      <div>
+        <div class="screens">
+          <figure><img src="../img/navody/periodikum-nastaveni.webp" alt="Nový dokument – nastavení periodika" width="1400" height="788"><figcaption>Nový dokument: A4, protilehlé stránky, okraje, spadávka 3 mm.</figcaption></figure>
+          <figure><img src="../img/navody/pdfx-export.webp" alt="Export PDF/X-1a s profilem Coated FOGRA39 a značkami" width="682" height="592"><figcaption>Export: PDF/X-1a:2001, Coated FOGRA39, ořezové značky, značky spadávky, spadávka z dokumentu.</figcaption></figure>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l4-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Článek rozsekaný do mnoha samostatných textových polí místo jednoho provázaného. Sloupce se řeší ve Volbách textového rámečku.</div>
+      <div class="tip chyba"><b>Chyba</b>Ruční formátování místo stylů; styly s „+“ (lokální změny) nepřenesené do stylu.</div>
+      <div class="tip chyba"><b>Chyba</b>Mezery mezi odstavci prázdným řádkem, Enter uvnitř věty, Shift+Enter.</div>
+      <div class="tip chyba"><b>Chyba</b>Kerning Metrický, dělení před posledními 2 písmeny, nezapnuté Nerozdělovat řádky → sirotci, vdovy, prázdné řádky v polích.</div>
+      <div class="tip chyba"><b>Chyba</b>Obsah napsaný ručně, čísla stránek neodpovídají. Správně: Formát › Obsah + Aktualizovat.</div>
+      <div class="tip chyba"><b>Chyba</b>Číslo stránky napsané na každé stránce ručně místo znaku na vzorové stránce; číslo i na obálce.</div>
+      <div class="tip chyba"><b>Chyba</b>Obrázek RGB, PNG, efektivní ppi 150; textová pole přes fialové okraje zrcadla.</div>
+      <div class="tip chyba"><b>Chyba</b>Export „Interaktivní PDF“ nebo PDF bez značek a spadávky místo PDF/X-1a s FOGRA39.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l4-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>K čemu slouží odstavcový styl a čím se liší od znakového a objektového?</summary><div class="odp"><b>Odstavcový</b> styl formátuje celý odstavec (písmo, zarovnání, mezery, dělení, rozdělování) – aplikuje se na odstavec. <b>Znakový</b> styl formátuje jen vybrané znaky uvnitř odstavce (tučné slovo, číslo stránky v obsahu, ikona). <b>Objektový</b> styl formátuje rámeček – výplň, tah, vsazení, sloupce, obtékání, efekty. Změna stylu se promítne všude, kde je použit.</div></details></li>
+      <li><details><summary>Jaké parametry stylu základního textu musí vyhovovat typografickým pravidlům a ČSN?</summary><div class="odp">Jazyk čeština; dělení slov podle pravidel (3 písmena, ne velká písmena, ne poslední slovo, ne přes sloupce); Nerozdělovat řádky proti sirotkům a vdovám; optický kerning; oddělení odstavců zarážkou nebo mezerou za (ne prázdným řádkem); zarovnání do bloku s rozumnou mezislovní mezerou; proklad cca 120 % stupně; popisky vlevo.</div></details></li>
+      <li><details><summary>Co je vzorová stránka a jak funguje číslo stránky?</summary><div class="odp">Šablona, jejíž obsah se zobrazuje na všech stránkách, které ji používají. Číslo stránky je speciální znak „Aktuální číslo stránky“ vložený do rámečku na vzoru; na každé stránce se nahradí skutečným číslem. Stránkám bez čísla (obálka, tiráž) přiřadíme vzor Žádný nebo prvek lokálně odemkneme a smažeme.</div></details></li>
+      <li><details><summary>Z čeho InDesign generuje obsah a co se stane po změně textu?</summary><div class="odp">Z odstavců s vybraným odstavcovým stylem (Nadpis). Vytvoří text se stylem záznamu (Obsah), s číslem stránky za tabulátorem a vodicími znaky z nastavení tabulátoru. Po změně textu se obsah aktualizuje (Formát › Aktualizovat obsah) – ručně se nikdy neupravuje.</div></details></li>
+      <li><details><summary>Jak funguje provázání textových rámečků a co znamená červené plus?</summary><div class="odp">Rámečky mají vstupní a výstupní port; text teče z jednoho do druhého jako jedna story. Červené + na výstupním portu = přesazený text, který se nevešel – musí se provázat další rámeček nebo text zkrátit. Automatické nalití (Shift+klik) vytvoří provázané rámečky a stránky samo.</div></details></li>
+      <li><details><summary>Jaký je rozdíl mezi výplní a tahem na rámečku a na textu?</summary><div class="odp">Na rámečku: výplň = podkladová plocha boxu, tah = obrys boxu – hodí se pro boxy, tabulky, upoutávky; plochy musí být v CMYK a ke kraji se spadávkou. Na textu: výplň = barva písma, tah = obtažení obrysu znaků – jen pro titulky, v hladké sazbě zhoršuje čitelnost a tenké tahy se netisknou.</div></details></li>
+      <li><details><summary>Proč export PDF/X-1a a co musí obsahovat?</summary><div class="odp">PDF/X je tisková podmnožina PDF: všechna písma vložená, barvy jen CMYK (a přímé), žádné průhlednosti neslučené (X-1a), definovaný výstupní záměr – profil Coated FOGRA39. Pro tisk musí mít ořezové značky, značky spadávky a spadávku 3 mm, export po stránkách.</div></details></li>
+      <li><details><summary>Jak se nastaví obtékání a kde?</summary><div class="odp">V panelu Obtékání textu na objektu (obrázku), ne na textu: kolem ohraničovacího rámečku s odsazením (nejčastěji), nebo kolem tvaru objektu podle ořezové cesty/alfa kanálu. Odsazení 3–4 mm. Popisek, který nemá uhýbat, má v Volbách textového rámečku „Ignorovat obtékání textu“.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l4-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz4" data-quiz='[
+      {"q":"Znak pro automatické číslo stránky vložíš zkratkou","o":["Ctrl+Shift+N","Ctrl+Alt+Shift+N","Ctrl+Alt+N","Ctrl+N"],"a":1,"w":"Ctrl+Alt+Shift+N vloží „Aktuální číslo stránky“ – na vzorové stránce se zobrazí jako A, na stránkách jako číslo."},
+      {"q":"Obsah se generuje z odstavců, které mají","o":["znakový styl","zvolený odstavcový styl","objektový styl","ručně vložený tabulátor"],"a":1,"w":"Formát › Obsah – vybereš odstavcový styl (Nadpis), ze všech odstavců s tímto stylem vznikne obsah."},
+      {"q":"Červené + u textového rámečku znamená","o":["chybu pravopisu","rámeček je zamčený","přesazený text, který se nevešel","chybějící písmo"],"a":2,"w":"Overset text – provázat další rámeček, zvětšit ho nebo text zkrátit."},
+      {"q":"Dvousloupcová sazba článku se správně řeší","o":["dvěma samostatnými textovými poli","Volbami textového rámečku › Sloupce","tabulkou se dvěma buňkami","mezerníkem"],"a":1,"w":"Sloupce jsou vlastnost rámečku (Ctrl+B). Článek zůstává jednou provázanou story."},
+      {"q":"Vodicí znaky (tečky) v obsahu nastavíš","o":["napsáním teček","ve stylu Obsah v záložce Tabulátory","v dialogu Obsah › Vodicí znak","v panelu Glyfy"],"a":1,"w":"Pravý tabulátor s vodicím znakem „.“ v odstavcovém stylu záznamu obsahu."},
+      {"q":"Nadpis nesmí zůstat sám dole na stránce. Řeší to volba","o":["Nerozdělovat řádky","Nerozdělovat od následujících: 2 řádky","Začátek odstavce: kdekoli","Dělení slov"],"a":1,"w":"Keep with Next – nadpis se drží s následujícími dvěma řádky textu."},
+      {"q":"Obtékání textu se nastavuje","o":["na textovém rámečku, který má obtékat","na objektu (obrázku), který je obtékán","v odstavcovém stylu","ve vzorové stránce"],"a":1,"w":"Panel Obtékání textu (Ctrl+Alt+W) na obrázku; text, který nemá uhýbat, má „Ignorovat obtékání textu“."},
+      {"q":"Správné přednastavení exportu pro tisk je","o":["Nejmenší velikost souboru","Interaktivní PDF","PDF/X-1a:2001 s Coated FOGRA39","Tisk ve vysoké kvalitě bez značek"],"a":2,"w":"PDF/X-1a, ořezové značky, značky spadávky, spadávka z dokumentu, výstupní záměr Coated FOGRA39."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l4-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy a videa</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="../videa.html#v-periodikum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>Videa: periodikum 01, 03 a obsah</b><span>Úprava článků, rubrik, paginace, styly; generování obsahu.</span></div></a>
+      <a class="link-card" href="../videa.html#v-yt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>DTPko.cz: Připravujeme časopis krok za krokem</b><span>Český videotutoriál ve dvou dílech + vložení obrázku a obtékání.</span></div></a>
+      <a class="link-card" href="../cviceni.html#c-periodikum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg><div><b>Cvičení: autorské periodikum</b><span>Plné zadání pololetní práce, která tuhle otázku trénuje.</span></div></a>
+      <a class="link-card" href="../kontrola.html#k-styly"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 6"/></svg><div><b>Kontrola: odstavcové styly</b><span>Co zkontrolovat před exportem.</span></div></a>
+      <a class="link-card" href="../lekce/22-typy-pdf.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5"/></svg><div><b>Lekce 22: typy PDF</b><span>PDF/X podrobně – co se při exportu děje.</span></div></a>
+    </div>
+  </div>
+</section>
+<div class="wrap"><nav class="pager" aria-label="Další a předchozí lekce"><a class="prev" href="../lekce/06-pismo-typografie.html"><small>← Předchozí lekce</small><b>06 · Písmo a typografie</b></a><a class="next" href="../lekce/21-import-wordu.html"><small>Další lekce →</small><b>21 · InDesign – import textu z Wordu, znakové a odstavcové styly</b></a></nav></div>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="../img/logo-spse-bila.png" alt="SPŠE a VOŠ Pardubice" width="600" height="168">
+        <p>Střední průmyslová škola elektrotechnická a Vyšší odborná škola Pardubice<br>Karla IV. 13, 530 02 Pardubice</p>
+        <p>Obor 18-20-M/01 Informační technologie · zaměření Počítačová grafika · předmět Grafika (GR), 4. ročník, 2026/2027</p>
+      </div>
+      <div>
+        <h4>Výukové weby</h4>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-kresba/" target="_blank" rel="noopener">Základy kresby (1. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/graficka-tvorba-malba/" target="_blank" rel="noopener">Ruční a digitální malba (2. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/enviro-projekty-3g/" target="_blank" rel="noopener">Grafika pro klima (3. ročník)</a></p>
+        <p><a href="https://svoboda-koduje.github.io/dejiny_umeni/" target="_blank" rel="noopener">Časová osa dějin umění</a></p>
+        <p><a href="https://svoboda-koduje.github.io/odborne_anglicke_terminy/#obor=pg&rocnik=1" target="_blank" rel="noopener">Odborné anglické termíny</a></p>
+      </div>
+      <div>
+        <h4>Rozcestníky</h4>
+        <p><a href="https://svoboda-koduje.github.io/vysoke_skoly_s_tvurcimy_obory/" target="_blank" rel="noopener">Vysoké školy s tvůrčími obory</a></p>
+        <p><a href="https://svoboda-koduje.github.io/spse_seznam_soutezi/" target="_blank" rel="noopener">Dobrovolné soutěže</a></p>
+        <p><a href="https://spsecz-my.sharepoint.com/:f:/g/personal/svoboda_spse_cz/IgCL6VptB1jkQJ0z_LQ3RH-0ARRZTTk3KSLjiuqF4ULQWRo?e=bpRrNk" target="_blank" rel="noopener">Výukové soubory na OneDrive</a></p>
+        <p><a href="../zdroje.html">Skripty, dotazy GREP, TypoSkript</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026/2027 Mgr. Jaroslav Svoboda, SPŠE a VOŠ Pardubice · obrazové ukázky děl: Wikimedia Commons (volná díla a otevřené licence, viz <a href="../zdroje.html#obrazky">zdroje</a>)</span>
+      <span>Web je statický, bez sledování. Vlastní poznámky a stav kvízů se ukládají jen ve vašem prohlížeči.</span>
+    </div>
+  </div>
+  <button class="totop" id="totop" type="button" aria-label="Nahoru"><svg class="ring" viewBox="0 0 54 54"><circle cx="27" cy="27" r="25"/></svg><svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+</footer>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/interaktivni.js"></script>
+</body>
+</html>

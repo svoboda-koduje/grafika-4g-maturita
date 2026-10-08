@@ -1,0 +1,252 @@
+<!--META {"title": "10 · Adobe Photoshop – digitální malba, práce se štětci a stopami", "description": "Maturitní otázka 10: plátno A3 na šířku v CMYK s tiskovým rozlišením a profilem FOGRA39, skica herní postavy ze tří pohledů na grafickém tabletu, tři uložené štětce (linka, překryvné plochy, velké plochy), vrstvy, uložení s parametry pro tisk; využití digitální malby v praxi.", "lead": "Plátno <b>A3 na šířku</b>, od začátku v <b>CMYK</b>, s rozlišením a <b>výstupním profilem pro tisk</b>. Na <b>grafickém tabletu</b> namaluješ skicu <b>herní postavy ze tří pohledů</b> (přední, boční, zadní). Během práce si uložíš <b>alespoň tři štětce</b> s různým nastavením – tenký neprůhledný pro linku, poloprůhledný s nižší hustotou pro překryvné plochy a velký průhledný pro velké plochy. Pracuješ ve <b>vrstvách</b> a uložíš tak, aby byly zachovány parametry pro tiskovou reprodukci.", "stitky": [["Photoshop", "A3 na šířku, CMYK, 300 ppi, FOGRA39"], ["Tablet", "Wacom Intuos – přítlak"], ["Štětce", "3 uložené předvolby"], ["Výstup", "TIFF/PSD pro tisk"]], "subnav": [["l10-otazka", "Co se losuje"], ["l10-platno", "Plátno A3 pro tisk"], ["l10-stetce", "Štětce a stopy"], ["l10-lab", "Laboratoř štětce"], ["l10-postava", "Postava ze tří pohledů"], ["l10-vrstvy", "Vrstvy a postup malby"], ["l10-praxe", "Digitální malba v praxi"], ["l10-postup", "Postup pro 30 minut"], ["l10-chyby", "Časté chyby"], ["l10-komise", "Otázky komise"], ["l10-kviz", "Kvíz"]]} -->
+<section class="section" id="l10-otazka">
+  <div class="wrap">
+    <div class="otazka">
+      <div class="ot-prak">
+        <h3><span class="badge">Praktická část</span> Co se obvykle chce</h3>
+        <ul>
+          <li>Plátno <b>A3 na šířku</b>, dokument od začátku v <b>CMYK</b>, odpovídající <b>rozlišení pro tisk</b> a vhodný <b>výstupní cílový profil</b>.</li>
+          <li>S grafickým tabletem <b>skica barevného návrhu herní postavy</b> ze tří pohledů – <b>přední, boční, zadní</b>.</li>
+          <li>Uložit alespoň <b>tři štětce</b>: 1) plná neprůhledná sytost + tenká stopa (čárová skica), 2) částečná průhlednost + snížená hustota (překryvné barevné plochy), 3) velká stopa + výrazná průhlednost (velké plochy).</li>
+          <li>Více <b>vrstev</b>; hotovou malbu uložit do formátu, který zachová parametry pro <b>tiskovou reprodukci</b>.</li>
+        </ul>
+        <div class="cas"><span>30 min u počítače</span><span>15 min obhajoba</span><span>Photoshop + tablet</span></div>
+      </div>
+      <div>
+        <h3><span class="badge light">Teoretická část</span> Co musíš umět vysvětlit</h3>
+        <ul>
+          <li>Jaké <b>typy štětců</b> jsi použil a jak jsi nastavil parametry dokumentu podle zadání.</li>
+          <li>Jak jsi pracoval s <b>vrstvami</b> a jaké další nástroje jsi využil.</li>
+          <li>Obecné možnosti a <b>využití digitální malby v grafické praxi</b> – kde a jak, jaká pravidla dodržovat.</li>
+        </ul>
+        <p class="note">Digitální malbu máš probranou ve 2. ročníku: <a href="{{malba}}#digital" target="_blank" rel="noopener">Malba – Tablet, A3 a export CMYK</a> a <a href="{{malba}}#charakter" target="_blank" rel="noopener">Charakter postavy</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l10-platno">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 1</span><h2>Plátno A3 pro tisk</h2></div>
+      <p>Tahle otázka je výjimka: pracuješ v CMYK od začátku. Důvod: zadání chce, abys od první stopy viděl barvy tak, jak se vytisknou.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <ol class="steps">
+          <li><span class="menu-path">Úpravy <i>›</i> Nastavení barev</span>: pracovní prostor CMYK <b>Coated FOGRA39 (ISO 12647-2:2004)</b>, RGB sRGB. (Jednou, platí pro všechny dokumenty.)</li>
+          <li><kbd>Ctrl</kbd>+<kbd>N</kbd> › <b>Tisk</b> › A3, <b>na šířku</b> (420 × 297 mm), <b>Rozlišení 300 ppi</b>, <b>Barevný režim: Barva CMYK, 8 bit</b>, pozadí bílé, <b>Profil barev: Coated FOGRA39</b> (Rozšířené volby). Výsledek: 4961 × 3508 px.</li>
+          <li>Ulož hned jako <b>PSD</b> (vrstvy). Zapni <span class="menu-path">Zobrazení <i>›</i> Varování gamutu</span> – v CMYK nic nesvítí, protože všechny barvy jsou tisknutelné; v panelu Barvy vybírej jezdci CMYK nebo z Vzorníku.</li>
+          <li>Tablet: ovladač Wacom nainstalovaný (návod na OneDrive), v Photoshopu <span class="menu-path">Úpravy <i>›</i> Předvolby <i>›</i> Nástroje</span>; v panelu Nastavení štětce <em>Dynamika tvaru › Řízení: Přítlak pera</em>. Leváci: nastavení v ovladači (orientace).</li>
+          <li>Proč CMYK od začátku: v RGB by sytá zelená/modrá/oranžová vypadala jinak než v tisku; CMYK má menší gamut (<a href="{{L5}}">lekce 05</a>). Nevýhody: některé filtry a režimy prolnutí v CMYK nefungují, soubor je větší (4 kanály), obraz pro web se musí převést do RGB.</li>
+        </ol>
+      </div>
+      <figure class="svg-fig" style="margin:0"><img src="../img/navody/ps-a3.webp" alt="Photoshop: Nový dokument – A3, 300 ppi, CMYK, profil Coated FOGRA39" data-zoom width="1400" height="788" style="border-radius:6px"><figcaption>Nový dokument: A3 na šířku, 300 pixelů/palec, Barva CMYK 8 bit, profil Coated FOGRA39 – návod ze sdílené složky.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l10-stetce">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 2</span><h2>Štětce a stopy: parametry a tři předvolby</h2></div>
+      <p>Štětec = stopa (tvar hrotu) + nastavení (velikost, tvrdost, krytí, hustota, dynamika). Tři předvolby ze zadání jsou tři základní „nástroje“ každé digitální malby.</p>
+    </div>
+    <div class="cols-2">
+      <div class="card">
+        <h3>Parametry v pruhu voleb a v panelu Nastavení štětce (F5)</h3>
+        <ul>
+          <li><b>Velikost</b> (px) – <kbd>[</kbd> <kbd>]</kbd>; <b>Tvrdost</b> (0–100 %) – ostrý × měkký okraj, <kbd>Shift</kbd>+<kbd>[</kbd> <kbd>]</kbd>.</li>
+          <li><b>Krytí</b> (opacity) – maximální neprůhlednost tahu; při jednom tahu se barva přes sebe nesčítá. Číslice 1–0 = 10–100 %.</li>
+          <li><b>Hustota / Tok</b> (flow) – kolik barvy se nanese při každém průchodu; nízký tok se v jednom tahu vrství jako skutečná barva. <kbd>Shift</kbd>+číslice.</li>
+          <li><b>Vyhlazení</b> – stabilizace tahu (10–30 % pro linky).</li>
+          <li><b>Dynamika tvaru</b> – kolísání velikosti řízené <b>přítlakem pera</b>, úhel, zaoblení; <b>Rozptyl</b>; <b>Textura</b>; <b>Dvojitý štětec</b>; <b>Dynamika barvy</b>; <b>Přenos</b> – kolísání krytí/toku přítlakem; <b>Nanášení</b> (wet, mix) pro mísení; <b>Rozestup</b> (spacing) – 1–25 %.</li>
+          <li><b>Režim prolnutí štětce</b> (Násobit pro stíny), <b>Airbrush</b> (hromadí se při držení).</li>
+          <li><b>Tvar hrotu</b>: kulatý tvrdý/měkký, plochý, štětinový, texturované stopy (uhel, pastel); vlastní stopa: <span class="menu-path">Úpravy <i>›</i> Definovat přednastavení štětce</span> z výběru.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Tři štětce podle zadání (ulož do panelu Štětce › Nový štětec)</h3>
+        <div class="table-scroll"><table class="tech-table">
+          <thead><tr><th>Štětec</th><th>Nastavení</th><th>K čemu</th></tr></thead>
+          <tbody>
+            <tr><th>1 · Linka</th><td>kulatý, tvrdost 90–100 %, velikost 6–10 px, <b>krytí 100 %, tok 100 %</b>, dynamika tvaru: velikost řízená přítlakem (min. průměr 10 %), vyhlazení 20 %</td><td>čárová skica, kontury, detaily</td></tr>
+            <tr><th>2 · Překryvné plochy</th><td>kulatý, tvrdost 50–70 %, velikost 40–80 px, <b>krytí 50–60 %, tok 30–40 %</b>, přenos: krytí řízené přítlakem</td><td>lokální barvy, stíny a světla vrstvené přes sebe, modelace</td></tr>
+            <tr><th>3 · Velké plochy</th><td>kulatý měkký (tvrdost 0–20 %) nebo plochý, velikost 300–600 px, <b>krytí 20–30 %, tok 20 %</b>, airbrush</td><td>pozadí, podmalba, atmosféra, velké přechody</td></tr>
+          </tbody>
+        </table></div>
+        <p class="note">Panel <b>Štětce</b> (ne Nastavení štětce): tlačítko <em>Vytvořit nový štětec</em> → název (Linka, Plochy, Velké), zaškrtnout <em>Zahrnout nastavení nástroje</em> a <em>Zahrnout barvu</em> podle potřeby. Nabídka panelu › <em>Exportovat vybrané štětce</em> → soubor <b>.abr</b> – přenositelná sada (ulož ji k odevzdání).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l10-lab">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Vyzkoušej</span><h2>Laboratoř štětce</h2></div>
+      <p>Maluj myší nebo perem do plátna a sleduj, jak krytí, tok a tvrdost mění stopu. Tři tlačítka nastaví tři štětce ze zadání.</p>
+    </div>
+    <div class="lab" data-widget="stetec">
+      <div class="lab-head"><h3>Štětec: velikost, tvrdost, krytí, tok</h3><span class="hint">Táhni myší v plátně</span></div>
+      <div class="lab-body wide">
+        <div class="lab-stage pad"><div data-stage style="width:100%"></div></div>
+        <div class="lab-ctrl">
+          <div class="row"><button class="btn btn-small btn-ghost" type="button" data-preset="1">1 · Linka</button><button class="btn btn-small btn-ghost" type="button" data-preset="2">2 · Plochy</button><button class="btn btn-small btn-ghost" type="button" data-preset="3">3 · Velké</button><button class="btn btn-small btn-ghost" type="button" data-clear>Vymazat</button></div>
+          <label><span>Velikost <output>8</output> px</span><input type="range" min="2" max="120" value="8" data-size></label>
+          <label><span>Tvrdost <output>100</output> %</span><input type="range" min="0" max="100" value="100" data-hard></label>
+          <label><span>Krytí <output>100</output> %</span><input type="range" min="5" max="100" value="100" data-op></label>
+          <label><span>Tok <output>100</output> %</span><input type="range" min="5" max="100" value="100" data-flow></label>
+          <label><span>Barva</span><input type="color" value="#B4532A" data-col></label>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l10-postava">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 3</span><h2>Herní postava ze tří pohledů (character sheet)</h2></div>
+      <p>Přední, boční a zadní pohled na stejnou postavu ve stejném měřítku – tzv. <em>turnaround</em> / <em>model sheet</em>, podle kterého 3D modelář nebo animátor postavu staví.</p>
+    </div>
+    <div class="cols-2">
+      <figure class="svg-fig" style="margin:0">
+        <svg viewBox="0 0 640 300" role="img" aria-label="Schéma character sheetu: tři siluety postavy ve stejné výšce s vodorovnými vodicími linkami hlavy, ramen, pasu, kolen a chodidel">
+          <rect width="640" height="300" fill="#fff"/>
+          <g stroke="#B4532A" stroke-width="1" stroke-dasharray="5 4">
+            <line x1="20" y1="40" x2="620" y2="40"/><line x1="20" y1="75" x2="620" y2="75"/><line x1="20" y1="105" x2="620" y2="105"/><line x1="20" y1="150" x2="620" y2="150"/><line x1="20" y1="210" x2="620" y2="210"/><line x1="20" y1="270" x2="620" y2="270"/>
+          </g>
+          <g font-family="Barlow,sans-serif" font-size="11" fill="#B4532A"><text x="24" y="36">temeno</text><text x="24" y="71">brada</text><text x="24" y="101">ramena</text><text x="24" y="146">pas</text><text x="24" y="206">kolena</text><text x="24" y="266">chodidla</text></g>
+          <g fill="#23272D">
+            <g transform="translate(150 0)"><ellipse cx="0" cy="57" rx="16" ry="18"/><path d="M-22 100 Q0 90 22 100 L26 150 L-26 150Z"/><path d="M-26 100 L-40 160 L-30 162 L-20 110Z"/><path d="M26 100 L40 160 L30 162 L20 110Z"/><path d="M-22 150 L-16 270 L-4 270 L0 180 L4 270 L16 270 L22 150Z"/></g>
+            <g transform="translate(320 0)"><ellipse cx="2" cy="57" rx="17" ry="18"/><path d="M-12 100 Q4 92 14 100 L16 150 L-14 150Z"/><path d="M-2 102 L-6 160 L4 162 L8 108Z"/><path d="M-12 150 L-10 270 L6 270 L10 150Z"/><path d="M4 262 L22 268 L6 272Z"/></g>
+            <g transform="translate(490 0)"><ellipse cx="0" cy="57" rx="16" ry="18"/><path d="M-22 100 Q0 90 22 100 L26 150 L-26 150Z"/><path d="M-26 100 L-40 160 L-30 162 L-20 110Z"/><path d="M26 100 L40 160 L30 162 L20 110Z"/><path d="M-22 150 L-16 270 L-4 270 L0 180 L4 270 L16 270 L22 150Z"/></g>
+          </g>
+          <g font-family="Barlow Condensed,sans-serif" font-weight="700" font-size="13" fill="#585E66" text-anchor="middle"><text x="150" y="292">PŘEDNÍ</text><text x="320" y="292">BOČNÍ</text><text x="490" y="292">ZADNÍ</text></g>
+        </svg>
+        <figcaption>Vodorovné vodicí linky (temeno, brada, ramena, pas, kolena, chodidla) drží všechny tři pohledy ve stejné výšce a proporci. Kreslí se na samostatné vrstvě s nízkým krytím.</figcaption>
+      </figure>
+      <div class="card">
+        <h3>Jak na to rychle</h3>
+        <ol class="steps">
+          <li><b>Vodítka</b>: vrstva „linky“, štětec 1, vodorovné čáry (Shift+klik) na výšky hlavy, ramen, pasu, kolen, chodidel. Postava 7–8 hlav (realistická) nebo 3–5 hlav (stylizovaná, hra) – podle stylu hry.</li>
+          <li><b>Silueta</b>: štětec 3 nebo laso + výplň, jen tvar bez detailů – postava musí být rozpoznatelná jako černý obrys (tvarový jazyk: kruh = přátelský, čtverec = silný, trojúhelník = nebezpečný – viz <a href="{{malba}}#charakter" target="_blank" rel="noopener">Malba › Charakter</a>).</li>
+          <li><b>Přední pohled</b> nejdřív (symetrie: nakresli polovinu, duplikovat vrstvu, Úpravy › Transformovat › Převrátit vodorovně, sloučit), pak <b>boční</b> (stejné výšky, profil, kam jde nos a chodidla) a <b>zadní</b> (kopie přední siluety, změnit vnitřní kresbu – vlasy, záda, výstroj).</li>
+          <li><b>Lokální barvy</b> štětcem 2 na vrstvě pod linkou (nebo laso + výplň pro ploché barvy); 3–4 barvy postavy, stejná paleta na všech pohledech (Vzorník nebo kapátko <kbd>Alt</kbd>).</li>
+          <li><b>Stíny a světla</b> štětcem 2 v režimu Násobit (stíny) / Závoj (světla), jedno světlo shora. <b>Pozadí</b> štětcem 3 – neutrální, aby postava vystoupila.</li>
+          <li>Popisky: jméno postavy, pohledy, vzorky barev (swatche) – component sheet.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l10-vrstvy">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Krok 4</span><h2>Vrstvy a další nástroje</h2></div>
+      <p>Struktura vrstev je to, co komise uvidí jako první. Pojmenuj je.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Doporučená struktura vrstev</h3><ol style="padding-left:1.2em;margin:0"><li><b>Popisky</b> (text)</li><li><b>Linka</b> (štětec 1, režim Násobit)</li><li><b>Světla</b> (Závoj / Zesvětlit barvy)</li><li><b>Stíny</b> (Násobit)</li><li><b>Barvy – oděv / kůže / vlasy</b> (ploché barvy, každá zvlášť nebo s ořezovými maskami nad siluetou)</li><li><b>Silueta</b> (zamknout průhlednost 🔒 – pak maluješ jen uvnitř)</li><li><b>Vodítka</b> (krytí 30 %, nakonec skrýt)</li><li><b>Pozadí</b></li></ol><p class="note">Skupiny (Ctrl+G) pro každý pohled: Přední / Boční / Zadní.</p></div>
+      <div class="card"><h3>Vrstvové triky</h3><ul><li><b>Zamknout průhledné pixely</b> – malba jen tam, kde už něco je (stíny na oděvu bez přetahování).</li><li><b>Ořezová maska</b> (Alt+klik mezi vrstvami) – vrstva stínů připnutá k siluetě.</li><li><b>Režimy prolnutí</b>: Násobit (stín), Závoj / Zesvětlit barvy (světlo, záře), Překrýt (tónování), Barva (kolorování šedé podmalby).</li><li><b>Krytí vrstvy</b> × krytí štětce – dvě různé věci.</li><li><b>Maska vrstvy</b> místo gumy; <b>Vrstvy úprav</b> (Křivky, Odstín a sytost, Vyvážení barev) s ořezovou maskou na postavu.</li><li><b>Inteligentní objekt</b> pro vložené reference (nezničí se při transformaci).</li></ul></div>
+      <div class="card"><h3>Další nástroje malíře</h3><ul><li><b>Laso + výplň</b> (Alt+Backspace) – rychlé ploché barvy; <b>Kouzelná hůlka</b> na siluetu.</li><li><b>Rozmazávání / Prst</b>, <b>Mix štětec</b> – mísení barev; <b>Rozostření</b> – měkké přechody.</li><li><b>Převrátit plátno vodorovně</b> (Obraz › Otočení obrazu) – kontrola proporcí; <b>Otočení zobrazení</b> (R) – pohodlné tahy.</li><li><b>Kapátko</b> (Alt při štětci), <b>Vzorník</b> s paletou postavy, <b>Barevný kruh</b> (HUD: Alt+Shift+pravý klik).</li><li><b>Historie</b> / snímky; <b>Transformace</b> (Ctrl+T, Pokřivit, Loutkové pokřivení) pro úpravu pózy.</li><li><b>Přechod</b> a <b>Gradient map</b> pro atmosféru pozadí; <b>Filtr › Zostřit</b> na konec.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l10-praxe">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Teorie</span><h2>Digitální malba v grafické praxi</h2></div>
+      <p>Kde se používá, jaké má výhody a pravidla – to je druhá polovina obhajoby.</p>
+    </div>
+    <div class="cols">
+      <div class="card"><h3>Kde</h3><ul><li><b>Herní průmysl</b>: concept art (postavy, prostředí, props), character sheety, textury, UI, splash arty.</li><li><b>Film a animace</b>: concept design, matte painting (digitální kulisy – návod na OneDrive), storyboardy, pozadí.</li><li><b>Ilustrace</b>: knižní, časopisecká, dětská, obálky, editorial.</li><li><b>Reklama</b>: vizualizace, retuš a dokreslování fotografií, klíčové vizuály.</li><li><b>Komiks a webtoon</b>, karetní hry, merchandising, tetování, architektonické vizualizace (dokreslování renderů).</li></ul></div>
+      <div class="card"><h3>Výhody a nevýhody</h3><ul><li>+ Zpět, vrstvy, nekonečné opravy, kopírování, transformace, barevné úpravy, rychlé varianty, přímý výstup do tisku i na web, žádný materiál.</li><li>+ Reference a fotobash (fotky jako podklad), 3D podklady (Blender → malba přes render).</li><li>− Zpočátku „plastický“ vzhled, sklon k přetahování přes Ctrl+Z, závislost na tabletu a kalibraci monitoru, soubor A3/300 ppi má stovky MB.</li><li>Programy: Photoshop, Krita (zdarma), Clip Studio Paint, Procreate (iPad), Corel Painter, Autodesk SketchBook, Rebelle, Blender Grease Pencil.</li></ul></div>
+      <div class="card"><h3>Pravidla, která platí stejně jako v ruční malbě</h3><ul><li>Od celku k detailu: silueta → velké plochy → tóny → detaily. Detaily jen tam, kam se má divák dívat.</li><li>Jeden zdroj světla; tonální hodnoty důležitější než barva (zkontroluj ve stupních šedi – vrstva úprav Černobílý).</li><li>Omezená paleta (3–5 barev + odstíny); teplé × studené; barva stínu není černá.</li><li>Proporce a anatomie (kánon, lekce 16); kompozice (třetiny, zlatý řez); perspektiva u prostředí.</li><li>Málo štětců (3–5), velké tahy, převracet plátno, pracovat z referencí, ne obkreslovat cizí práce.</li><li>Technika: dokument pro cíl (tisk CMYK 300 ppi A3 / obrazovka sRGB), nedestruktivně, pravidelně ukládat (PSD), verze.</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l10-postup">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Praktická část</span><h2>Postup pro 30 minut</h2></div><p>Skica, ne hotová ilustrace. Komise hodnotí nastavení dokumentu, štětce, vrstvy a tři čitelné pohledy.</p></div>
+    <div class="cols-2">
+      <ul class="plan30">
+        <li><span class="t">0–3<small>min</small></span><div><b>Dokument</b><p>Nastavení barev FOGRA39 → Nový: A3 na šířku, 300 ppi, CMYK 8 bit, profil FOGRA39. Uložit PSD. Tablet: přítlak funguje?</p></div></li>
+        <li><span class="t">3–8<small>min</small></span><div><b>Tři štětce</b><p>Nastav a ulož Linka / Plochy / Velké (panel Štětce › nový štětec, zahrnout nastavení nástroje). Exportovat vybrané → .abr do složky.</p></div></li>
+        <li><span class="t">8–11<small>min</small></span><div><b>Vodítka a rozvržení</b><p>Vrstva Vodítka: 6 vodorovných linek, tři svislé osy pro tři pohledy. Vrstva Pozadí: štětec 3, neutrální tón.</p></div></li>
+        <li><span class="t">11–19<small>min</small></span><div><b>Siluety a linka</b><p>Přední silueta (polovina + zrcadlit), boční, zadní (kopie přední). Vrstva Linka štětcem 1: hlavní tvary, obličej jen náznak, výstroj.</p></div></li>
+        <li><span class="t">19–26<small>min</small></span><div><b>Barvy a stíny</b><p>Vrstvy Barvy (zamknout průhlednost / ořezové masky): 3–4 barvy štětcem 2 nebo laso+výplň, stejné na všech pohledech. Vrstva Stíny (Násobit) štětcem 2, světlo shora. Pár světel.</p></div></li>
+        <li><span class="t">26–30<small>min</small></span><div><b>Uložení</b><p>Popisky (text). Skrýt vodítka. Uložit PSD (vrstvy, CMYK, profil). <b>Uložit jako TIFF</b> (LZW, vložit profil, bez vrstev nebo s nimi) – tiskový výstup. Pro ukázku JPEG v RGB (Exportovat jako, sRGB) – vysvětlit rozdíl.</p></div></li>
+      </ul>
+      <div>
+        <div class="card">
+          <h3>Co říct komisi</h3>
+          <p>„Dokument je A3 na šířku, 4961 × 3508 px, 300 ppi, CMYK 8 bit s profilem Coated FOGRA39 – od začátku vidím tiskové barvy. Tři štětce: Linka (tvrdý, 8 px, krytí a tok 100 %, velikost přítlakem), Plochy (tvrdost 60 %, 60 px, krytí 50 %, tok 35 %), Velké (měkký, 400 px, krytí 25 %, tok 20 %, airbrush) – uložené v panelu Štětce a exportované do .abr. Vrstvy: pozadí, vodítka, silueta se zamčenou průhledností, barvy, stíny v Násobit, světla v Závoj, linka, popisky; skupiny pro tři pohledy. Uloženo jako PSD a TIFF s vloženým profilem – TIFF je bezztrátový, umí CMYK a tiskárna ho přijme.“</p>
+        </div>
+        <div class="timer" data-timer style="margin-top:16px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l10-chyby">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ze zpětné vazby</span><h2>Časté chyby</h2></div></div>
+    <div class="cols">
+      <div class="tip chyba"><b>Chyba</b>Dokument RGB 72 ppi „převedený potom“ – zadání chce CMYK a tiskové rozlišení od začátku.</div>
+      <div class="tip chyba"><b>Chyba</b>Štětce nastavené, ale neuložené (nejsou v panelu Štětce) – komise je chce vidět.</div>
+      <div class="tip chyba"><b>Chyba</b>Vše na jedné vrstvě; „vrstvy“ jen pro tři pohledy bez oddělení linky, barev, stínů.</div>
+      <div class="tip chyba"><b>Chyba</b>Tři pohledy v různém měřítku, bez vodítek – boční pohled vyšší než přední.</div>
+      <div class="tip chyba"><b>Chyba</b>Uložení jen JPEG v RGB – ztráta parametrů pro tisk. Správně PSD + TIFF CMYK s profilem.</div>
+      <div class="tip chyba"><b>Chyba</b>Zaměňování krytí a toku; nevyužitý přítlak pera (štětec bez dynamiky).</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l10-komise">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
+    <ul class="komise">
+      <li><details><summary>Jak jsi nastavil dokument a proč CMYK od začátku?</summary><div class="odp">A3 na šířku, 300 ppi (4961 × 3508 px), CMYK 8 bit, profil Coated FOGRA39 (nastavený i v Nastavení barev). V CMYK vidím od první stopy barvy tak, jak se vytisknou – RGB má větší gamut a syté barvy by se při převodu posunuly. Cena: méně filtrů, větší soubor, pro web převést do sRGB.</div></details></li>
+      <li><details><summary>Jaký je rozdíl mezi krytím a tokem štětce?</summary><div class="odp">Krytí je maximální neprůhlednost jednoho tahu – přejezdy v rámci tahu se nesčítají. Tok je množství barvy při každém průchodu – s nízkým tokem se barva v jednom tahu vrství jako skutečný štětec. Linka: obojí 100 %; plochy: krytí 50 %, tok 35 %; velké plochy: nízké obojí + airbrush.</div></details></li>
+      <li><details><summary>Jaké tři štětce jsi uložil a čím se liší?</summary><div class="odp">Linka – tvrdý kulatý, malý, plné krytí, velikost řízená přítlakem; Plochy – polotvrdý, střední, poloviční krytí a snížený tok, krytí řízené přítlakem, pro vrstvení barev; Velké plochy – měkký velký, nízké krytí a tok, airbrush, pro pozadí a přechody. Uložené v panelu Štětce se zahrnutým nastavením nástroje a exportované do .abr.</div></details></li>
+      <li><details><summary>Jak jsi pracoval s vrstvami?</summary><div class="odp">Oddělené vrstvy pozadí, vodítka, silueta (zamknutá průhlednost), barvy, stíny v režimu Násobit, světla v Závoj, linka, popisky; skupiny pro tři pohledy; ořezové masky pro stíny na siluetě; vrstvy úprav s ořezovou maskou pro barevné sladění; masky místo gumy.</div></details></li>
+      <li><details><summary>Proč tři pohledy a jak jsi zajistil stejnou proporci?</summary><div class="odp">Character sheet (turnaround) slouží 3D modelářům a animátorům – postava musí být ze všech stran konzistentní. Vodorovné vodicí linky (temeno, brada, ramena, pas, kolena, chodidla) na samostatné vrstvě drží stejnou výšku; zadní pohled vychází z kopie přední siluety.</div></details></li>
+      <li><details><summary>Kde se digitální malba používá a jaká pravidla platí?</summary><div class="odp">Concept art pro hry a film, ilustrace, matte painting, reklamní vizualizace a retuš, komiks, textury. Pravidla: od celku k detailu, jeden zdroj světla, tonální hodnoty před barvou, omezená paleta, proporce a kompozice, málo štětců, reference bez obkreslování, nedestruktivní práce, dokument podle cíle (tisk CMYK 300 ppi / web sRGB).</div></details></li>
+      <li><details><summary>Jaký formát zachová parametry pro tisk?</summary><div class="odp">TIFF (bezztrátový, CMYK, 300 ppi, vložený profil, může i vrstvy) nebo PSD; JPEG v maximální kvalitě CMYK jako nouzovka; PDF/X přes Photoshop PDF. Ne PNG (jen RGB), ne JPEG RGB 72 ppi.</div></details></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="l10-kviz">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Ověř si</span><h2>Kvíz</h2></div></div>
+    <div class="quiz" id="kviz10" data-quiz='[
+      {"q":"A3 na šířku při 300 ppi má přibližně","o":["3508 × 2480 px","4961 × 3508 px","1920 × 1080 px","420 × 297 px"],"a":1,"w":"420 mm / 25,4 × 300 = 4961 px, 297 mm → 3508 px."},
+      {"q":"Tok (flow) štětce určuje","o":["velikost stopy","maximální neprůhlednost tahu","množství barvy při každém průchodu","tvrdost okraje"],"a":2,"w":"S nízkým tokem se barva v jednom tahu vrství; krytí je strop neprůhlednosti tahu."},
+      {"q":"Štětec pro čárovou skicu má","o":["krytí 20 %, měkký okraj","krytí 100 %, tvrdý okraj, tenkou stopu","velkou stopu s airbrushem","režim Násobit"],"a":1,"w":"Plná sytost, tenká tvrdá stopa, velikost řízená přítlakem."},
+      {"q":"Uložené štětce exportuješ do souboru","o":[".psd",".abr",".tif",".acb"],"a":1,"w":"Panel Štětce › Exportovat vybrané štětce → .abr (Adobe Brush)."},
+      {"q":"Režim prolnutí vhodný pro vrstvu stínů je","o":["Závoj","Násobit","Rozdíl","Normální s krytím 100 %"],"a":1,"w":"Násobit (Multiply) ztmavuje; Závoj (Screen) zesvětluje – pro světla."},
+      {"q":"Zamknout průhledné pixely na vrstvě siluety způsobí, že","o":["vrstva nejde přesunout","maluješ jen tam, kde už jsou pixely","vrstva se sloučí","zmizí maska"],"a":1,"w":"Ideální pro stíny a barvy na postavě bez přetahování."},
+      {"q":"Výstupní profil pro evropský tisk na křídový papír je","o":["sRGB","Adobe RGB","Coated FOGRA39","U.S. Web Coated SWOP"],"a":2,"w":"Nastavení barev i Nový dokument: Coated FOGRA39 (ISO 12647-2:2004)."},
+      {"q":"Character sheet ze tří pohledů slouží hlavně","o":["pro tisk plakátu","3D modelářům a animátorům pro konzistentní postavu","pro web","pro logo"],"a":1,"w":"Turnaround/model sheet je standardní výstup concept artu."}
+    ]'></div>
+  </div>
+</section>
+
+<section class="section" id="l10-odkazy">
+  <div class="wrap">
+    <div class="section-head"><div><span class="kicker">Dál</span><h2>Odkazy a videa</h2></div></div>
+    <div class="odkazy-lekce">
+      <a class="link-card" href="{{malba}}#digital" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/></svg><div><b>Malba: Tablet, A3 a export CMYK</b><span>Nastavení Sketchbooku a Photoshopu, návody z 2. ročníku.</span></div></a>
+      <a class="link-card" href="{{malba}}#charakter" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg><div><b>Malba: Charakter postavy</b><span>Tvarový jazyk, silueta, generátor zadání.</span></div></a>
+      <a class="link-card" href="../videa.html#v-ps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></svg><div><b>Videa: tutoriály digitální malby</b><span>Čtyři delší tutoriály (Photoshop, MediBang) na OneDrive.</span></div></a>
+      <a class="link-card" href="https://www.creativebloq.com/character-design/tips-5132643" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.5 6 6.5.5-5 4 1.5 6.5L12 16.5 6.5 20 8 13.5l-5-4 6.5-.5z"/></svg><div><b>27 tipů pro návrh postavy (Creative Bloq)</b><span>+ návrh charakteru na 99designs (odkazy ze sdílené složky).</span></div></a>
+    </div>
+  </div>
+</section>

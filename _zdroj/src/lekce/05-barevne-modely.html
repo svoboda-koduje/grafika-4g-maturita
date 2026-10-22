@@ -1,4 +1,4 @@
-<!--META {"title": "05 · Barevné modely a jejich praktická aplikace", "description": "Maturitní otázka 5: barevné modely RGB, CMYK, Lab a HSB, aditivní a subtraktivní míchání, jas, sytost a odstín, gamut a barevné prostory (sRGB, Adobe RGB, FOGRA39), praktická práce ve Photoshopu – vrstvy, inverze, odbarvení, kanály.", "lead": "Praktická část se dělá ve Photoshopu: jeden obrázek ve <b>třech kopiích vedle sebe</b>, každá ve vlastní vrstvě – jedna <b>invertovaná</b>, druhá s <b>nejnižší sytostí</b>, třetí původní, ale se <b>separovaným jedním barevným kanálem</b>. V teorii: modely <b>Lab, RGB a CMYK</b> předvedené ve Photoshopu (včetně panelu Kanály), pojmy <b>jas, sytost, odstín</b> v praxi a pojem <b>gamut</b>.", "stitky": [["Photoshop", "vrstvy, úpravy, kanály"], ["Podklady", "připravený obrázek"], ["Teorie", "RGB, CMYK, Lab, HSB"], ["Pojem", "gamut a barevné prostory"]], "subnav": [["l5-otazka", "Co se losuje"], ["l5-michani", "Aditivní a subtraktivní míchání"], ["l5-modely", "RGB, CMYK, Lab, HSB"], ["l5-lab", "Laboratoř barev"], ["l5-gamut", "Gamut a barevné prostory"], ["l5-photoshop", "Ve Photoshopu"], ["l5-postup", "Postup pro 30 minut"], ["l5-chyby", "Časté chyby"], ["l5-komise", "Otázky komise"], ["l5-kviz", "Kvíz"]]} -->
+<!--META {"title": "05 · Barevné modely a jejich praktická aplikace", "description": "Maturitní otázka 5: barevné modely RGB, CMYK, Lab a HSB, aditivní a subtraktivní míchání, jas, sytost a odstín, gamut a barevné prostory (sRGB, Adobe RGB, FOGRA39), praktická práce ve Photoshopu – vrstvy, inverze, odbarvení, kanály.", "lead": "Praktická část se dělá ve Photoshopu: jeden obrázek ve <b>třech kopiích vedle sebe</b>, každá ve vlastní vrstvě – jedna <b>invertovaná</b>, druhá s <b>nejnižší sytostí</b>, třetí původní, ale se <b>separovaným jedním barevným kanálem</b>. V teorii: modely <b>Lab, RGB a CMYK</b> předvedené ve Photoshopu (včetně panelu Kanály), pojmy <b>jas, sytost, odstín</b> v praxi a pojem <b>gamut</b>.", "stitky": [["Photoshop", "vrstvy, úpravy, kanály"], ["Podklady", "připravený obrázek"], ["Teorie", "RGB, CMYK, Lab, HSB"], ["Pojem", "gamut a barevné prostory"]], "subnav": [["l5-otazka", "Co se losuje"], ["l5-michani", "Aditivní a subtraktivní míchání"], ["l5-modely", "RGB, CMYK, Lab, HSB"], ["l5-koule", "Barevná koule Lab"], ["l5-lab", "Laboratoř barev"], ["l5-gamut", "Gamut a barevné prostory"], ["l5-photoshop", "Ve Photoshopu"], ["l5-postup", "Postup pro 30 minut"], ["l5-chyby", "Časté chyby"], ["l5-komise", "Otázky komise"], ["l5-kviz", "Kvíz"]]} -->
 <section class="section" id="l5-otazka">
   <div class="wrap">
     <div class="otazka">
@@ -76,6 +76,64 @@
       <div class="card"><h3>HSB (HSV) a HSL</h3><p><b>H</b> odstín (hue, 0–360° na barevném kruhu), <b>S</b> sytost (0 % šedá – 100 % čistá barva), <b>B</b> jas (brightness/value, 0 % černá – 100 %). Odpovídá lidskému vnímání, používá se v dialogu výběru barvy a v úpravě <em>Odstín a sytost</em>. Kužel: nasycené barvy na obvodu podstavy, k vrcholu klesá jas, ke středu sytost.</p></div>
       <div class="card"><h3>Stupně šedi, Bitová mapa, Indexovaná, Duplex</h3><p><b>Stupně šedi</b>: jeden kanál 0–255. <b>Bitová mapa</b>: 1 bit, jen černá a bílá (perokresba, rastr). <b>Indexovaná</b>: paleta max. 256 barev (GIF, PNG-8). <b>Duplex/Duotone</b>: stupně šedi tištěné dvěma (až čtyřmi) přímými barvami – ekonomický tisk s tónem (viz návod <em>Duplex ve Photoshopu</em>).</p></div>
       <div class="card"><h3>Jas, sytost, odstín v praxi</h3><p><b>Odstín</b> (hue): „jaká barva“ – červená, modrá; posun odstínu změní barvu auta. <b>Sytost</b> (saturation): „kolik barvy“ – 0 % = šedá; snížení sytosti na minimum = odbarvení (ne převod do stupňů šedi – režim zůstává RGB). <b>Jas</b> (brightness/lightness): „kolik světla“. Photoshop: <span class="menu-path">Obraz <i>›</i> Přizpůsobení <i>›</i> Odstín a sytost</span> (<kbd>Ctrl</kbd>+<kbd>U</kbd>), <em>Jas a kontrast</em>, <em>Živost</em>.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="l5-koule">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="kicker">Vyzkoušej</span><h2>Barevná koule Lab: jeden prostor, pět modelů</h2></div>
+      <p>Lab popisuje všechny barvy, které vidí člověk. Ostatní modely z něj odvodíš: <b>stupně šedi</b> jsou jen osa L, <b>RGB</b> je uvnitř koule zdeformovaná krychle, <b>HSB</b> je jiný popis téže krychle a <b>CMYK</b> ještě menší těleso tiskových barev.</p>
+    </div>
+    <div class="lab" data-widget="labKoule">
+      <div class="lab-head"><h3>Lab → stupně šedi · RGB · HSB · CMYK</h3><span class="hint">Kouli otáčej tažením myši nebo prstu</span></div>
+      <div class="lab-body wide">
+        <div class="lab-stage koule-stage"><canvas role="img" aria-label="Otočná barevná koule Lab s vybranou barvou; podle zvoleného modelu ukazuje osu stupňů šedi, krychli RGB, souřadnice HSB nebo těleso tiskových barev CMYK"></canvas><div class="koule-txt" data-txt aria-live="polite"></div></div>
+        <div class="lab-ctrl">
+          <label><span>Model</span><div class="seg" data-mode><button type="button" data-v="lab" aria-pressed="true">Lab</button><button type="button" data-v="sedi">Šedi</button><button type="button" data-v="rgb">RGB</button><button type="button" data-v="hsb">HSB</button><button type="button" data-v="cmyk">CMYK</button></div></label>
+          <div class="koule-grp" data-grp="lab">
+            <label><span>L – světlost <output>55</output></span><input type="range" min="0" max="100" value="55" data-k="L"></label>
+            <label><span>a – zelená ↔ červená <output>0</output></span><input type="range" min="-128" max="127" value="0" data-k="la" style="accent-color:#C62828"></label>
+            <label><span>b – modrá ↔ žlutá <output>0</output></span><input type="range" min="-128" max="127" value="0" data-k="lb" style="accent-color:#C99A00"></label>
+          </div>
+          <div class="koule-grp" data-grp="rgb" hidden>
+            <label><span>R – červená <output>0</output></span><input type="range" min="0" max="255" value="0" data-k="r" style="accent-color:#d00"></label>
+            <label><span>G – zelená <output>0</output></span><input type="range" min="0" max="255" value="0" data-k="g" style="accent-color:#0a0"></label>
+            <label><span>B – modrá <output>0</output></span><input type="range" min="0" max="255" value="0" data-k="b" style="accent-color:#00d"></label>
+          </div>
+          <div class="koule-grp" data-grp="hsb" hidden>
+            <label><span>H – odstín (°) <output>0</output></span><input type="range" min="0" max="359" value="0" data-k="h"></label>
+            <label><span>S – sytost (%) <output>0</output></span><input type="range" min="0" max="100" value="0" data-k="s"></label>
+            <label><span>B – jas (%) <output>0</output></span><input type="range" min="0" max="100" value="0" data-k="v"></label>
+          </div>
+          <div class="row"><button class="btn btn-small btn-ghost" type="button" data-rgb="255,0,0">Červená</button><button class="btn btn-small btn-ghost" type="button" data-rgb="255,255,0">Žlutá</button><button class="btn btn-small btn-ghost" type="button" data-rgb="0,255,0">Zelená RGB</button><button class="btn btn-small btn-ghost" type="button" data-rgb="0,0,255">Modrá</button><button class="btn btn-small btn-ghost" type="button" data-lab="55,-37,-50">Azurová tisk</button><button class="btn btn-small btn-ghost" type="button" data-lab="50,0,0">Šedá</button><button class="btn btn-small btn-ghost" type="button" data-lab="60,-110,5">Jen v Lab</button></div>
+          <label class="check"><input type="checkbox" data-pruhl> Průhledné těleso</label>
+          <label class="check"><input type="checkbox" data-auto checked> Otáčet automaticky</label>
+          <div class="readout" data-out></div>
+        </div>
+      </div>
+    </div>
+    <div class="cols-2" style="margin-top:20px">
+      <div class="card">
+        <h3>Jak to s koulí vysvětlit komisi</h3>
+        <ol class="steps">
+          <li><b>Lab</b>: „Svislá osa je světlost L, vodorovně dvě osy protikladů – a zelená–červená, b modrá–žlutá. Lab obsahuje všechny viditelné barvy a nezávisí na zařízení.“</li>
+          <li><b>Stupně šedi</b>: „Když barvu promítnu na osu L, zahodím a i b – zůstane šedá se stejnou světlostí.“</li>
+          <li><b>RGB</b>: „Barvy monitoru tvoří uvnitř koule pokřivenou krychli; černá dole, bílá nahoře, šedá úhlopříčka leží na ose L.“</li>
+          <li><b>HSB</b>: „Tutéž krychli popíšu kolem šedé osy: odstín je úhel, sytost vzdálenost od osy, jas výška.“</li>
+          <li><b>CMYK</b>: „Tiskové barvy tvoří ještě menší těleso; co je mimo, tiskárna nevytiskne – to je gamut. K tiskne šedou osu.“</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h3>Na co si dát pozor</h3>
+        <ul>
+          <li>Koule je <b>schéma</b>. Skutečný prostor Lab nemá tvar koule a osy a, b sahají v programech od −128 do +127.</li>
+          <li><b>Jas B v HSB není světlost L v Lab.</b> Žlutá i modrá mají B = 100 %, ale žlutá má L kolem 97, modrá kolem 32 – v odstínech šedi je žlutá skoro bílá, modrá tmavá.</li>
+          <li>Převody RGB → CMYK a odhad gamutu tisku jsou tu orientační (bez ICC profilu); tiskové těleso vychází z přibližných hodnot standardu FOGRA39 pro křídový papír.</li>
+          <li>Ve Photoshopu si to ověříš: <span class="menu-path">Obraz <i>›</i> Režim <i>›</i> Barva Lab</span>, panel <b>Kanály</b> – kanál L je přesně ta šedá, kterou vidíš na ose.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -225,6 +283,7 @@
     <div class="section-head"><div><span class="kicker">Obhajoba</span><h2>Na co se komise ptá</h2></div></div>
     <ul class="komise">
       <li><details><summary>Vysvětli modely RGB, CMYK a Lab.</summary><div class="odp">RGB – aditivní, světlo, tři kanály 0–255, obrazovky a web, závislý na zařízení. CMYK – subtraktivní, barviva, čtyři kanály 0–100 %, tisk, menší gamut, závislý na zařízení; K pro čistou černou a text. Lab – jas L a dvě barevné osy a (zelená–červená), b (modrá–žlutá), nezávislý na zařízení, obsahuje všechny viditelné barvy, referenční pro převody; prakticky pro doostření jasu bez barevných artefaktů.</div></details></li>
+      <li><details><summary>Jak z modelu Lab odvodíš ostatní modely?</summary><div class="odp">Lab je referenční prostor všech viditelných barev: osa L (světlost) a dvě barevné osy a, b. Stupně šedi vzniknou promítnutím barvy na osu L (a = b = 0). RGB je podmnožina Lab – zdeformovaná krychle, jejíž šedá úhlopříčka leží na ose L; HSB popisuje stejnou krychli válcovými souřadnicemi (odstín = úhel, sytost = vzdálenost od osy, jas = výška). CMYK tvoří menší těleso tiskových barev – rozdíl objemů je gamut. Proto ICC profily převádějí RGB → Lab → CMYK.</div></details></li>
       <li><details><summary>Co je gamut?</summary><div class="odp">Rozsah (množina) barev, které zařízení nebo barevný prostor dokáže zobrazit či reprodukovat; zakresluje se v chromatickém diagramu CIE. Lab > Adobe RGB > sRGB > CMYK FOGRA39; proto se syté monitorové barvy v tisku posunou. Photoshop: Varování gamutu, Kontrolní náhled barev.</div></details></li>
       <li><details><summary>Co je jas, sytost a odstín?</summary><div class="odp">Odstín (hue) – poloha na barevném kruhu (0–360°), „jaká barva“. Sytost (saturation) – čistota barvy, 0 % šedá, 100 % čistá. Jas (brightness) – množství světla, 0 % černá. Ve Photoshopu Odstín a sytost (Ctrl+U): sytost −100 odbarví; posun odstínu změní barvu; Živost šetří pleťové tóny.</div></details></li>
       <li><details><summary>Jaký je rozdíl mezi barevným modelem a barevným prostorem?</summary><div class="odp">Model je způsob popisu barvy čísly (RGB, CMYK, Lab, HSB). Prostor je konkrétní standardizovaný rozsah barev v rámci modelu s definovanými primárními barvami a bílým bodem (sRGB, Adobe RGB, ProPhoto; Coated FOGRA39, SWOP). Dvě stejná čísla RGB v různých prostorech jsou různé barvy – proto ICC profily.</div></details></li>
@@ -246,7 +305,8 @@
       {"q":"Inverzí barvy (255, 0, 0) vznikne","o":["(0, 255, 255) azurová","(255, 255, 0) žlutá","(0, 0, 0) černá","(255, 0, 255) purpurová"],"a":0,"w":"Inverze = 255 − hodnota v každém kanálu; červená ↔ azurová jsou doplňkové."},
       {"q":"Standardní profil pro evropský ofsetový tisk na křídový papír je","o":["U.S. Web Coated SWOP","Coated FOGRA39 (ISO 12647-2)","sRGB IEC61966-2.1","Japan Color 2001"],"a":1,"w":"Nastavení barev › pracovní prostor CMYK: Coated FOGRA39. Uncoated FOGRA29/47 pro nenatíraný papír."},
       {"q":"Kanál ve Photoshopu je","o":["barevná vrstva","obrázek ve stupních šedi s množstvím dané barevné složky","filtr","výběr nástrojem laso"],"a":1,"w":"RGB má 3 kanály, CMYK 4, Lab 3 (L, a, b); světlá místa v kanálu = hodně složky."},
-      {"q":"HSB popisuje barvu pomocí","o":["tří světel","odstínu, sytosti a jasu","čtyř barviv","jasu a dvou barevných os"],"a":1,"w":"Hue (0–360°), Saturation (0–100 %), Brightness (0–100 %) – odpovídá lidskému vnímání."}
+      {"q":"HSB popisuje barvu pomocí","o":["tří světel","odstínu, sytosti a jasu","čtyř barviv","jasu a dvou barevných os"],"a":1,"w":"Hue (0–360°), Saturation (0–100 %), Brightness (0–100 %) – odpovídá lidskému vnímání."},
+      {"q":"Dvě barvy se stejnou hodnotou L a různými a, b se po převodu do stupňů šedi","o":["změní na stejnou šedou","změní na černou a bílou","nezmění","rozdělí do dvou kanálů"],"a":0,"w":"Stupně šedi = osa L koule Lab; a i b se vynulují, zůstane jen světlost."}
     ]'></div>
   </div>
 </section>

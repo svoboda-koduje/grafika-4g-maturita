@@ -855,3 +855,14 @@ img{height:auto}
 div.link-card:hover{transform:none;border-color:var(--line)}
 .link-card span a{color:var(--water);text-decoration:underline;text-underline-offset:2px}
 .link-card span a:hover{color:var(--sanguine)}
+/* Barevná koule Lab (lekce 05) */
+.koule-stage{display:flex;flex-direction:column}
+.koule-stage canvas{flex:none;cursor:grab}
+.koule-txt{padding:14px 20px 18px;border-top:1px solid var(--line);font-size:15.5px;line-height:1.6;color:var(--ink);background:var(--card)}
+.koule-txt b{color:var(--sanguine)}
+.koule-grp{display:flex;flex-direction:column;gap:16px}
+.koule-grp[hidden],.lab-ctrl label[hidden]{display:none}
+.koule-vzorek{display:flex;gap:6px;margin-bottom:8px}
+.koule-vzorek i{flex:1;height:34px;border-radius:5px;border:1px solid var(--line)}
+.lab-ctrl .readout .mimo{color:#A33;font-style:normal;font-weight:600}
+.lab-ctrl .seg[data-mode] button{padding:8px 9px}
